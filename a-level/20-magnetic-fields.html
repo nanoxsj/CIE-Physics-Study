@@ -1,0 +1,1273 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-Hans" xml:lang="zh-Hans"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.38">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>20 Magnetic fields – CIE Physics 9702</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../a-level/21-alternating-currents.html" rel="next">
+<link href="../a-level/19-capacitance.html" rel="prev">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-a2a938b4dd5711f7a799c87bd16ba44c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "没有结果",
+    "search-matching-documents-text": "匹配的文档",
+    "search-copy-link-title": "复制搜索链接",
+    "search-hide-matches-text": "隐藏其它匹配结果",
+    "search-more-match-text": "更多匹配结果",
+    "search-more-matches-text": "更多匹配结果",
+    "search-clear-button-title": "清除",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "取消",
+    "search-submit-button-title": "提交",
+    "search-label": "搜索"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../styles.css">
+</head>
+
+<body class="nav-sidebar docked quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="展开或折叠侧边栏导航" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../a-level/12-motion-in-a-circle.html">A Level</a></li><li class="breadcrumb-item"><a href="../a-level/20-magnetic-fields.html">20 Magnetic fields</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="展开或折叠侧边栏导航" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="搜索" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">CIE Physics 9702</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="搜索"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">学习首页</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">AS Level</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="展开或折叠此栏">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../as-level/01-physical-quantities-and-units.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">1 Physical quantities and units</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../as-level/02-kinematics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2 Kinematics</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../as-level/03-dynamics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">3 Dynamics</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">A Level</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="展开或折叠此栏">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/12-motion-in-a-circle.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">12 Motion in a circle</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/13-gravitational-fields.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">13 Gravitational fields</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/14-temperature.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">14 Temperature</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/15-ideal-gases.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">15 Ideal gases</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/16-thermodynamics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">16 Thermodynamics</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/17-oscillations.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">17 Oscillations</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/18-electric-fields.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">18 Electric fields</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/19-capacitance.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">19 Capacitance</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/20-magnetic-fields.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">20 Magnetic fields</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/21-alternating-currents.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">21 Alternating currents</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/22-quantum-physics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">22 Quantum physics</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/23-nuclear-physics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">23 Nuclear physics</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/24-medical-physics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">24 Medical physics</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/25-astronomy-and-cosmology.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">25 Astronomy and cosmology</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">该页面内容</h2>
+   
+  <ul>
+  <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link active" data-scroll-target="#learning-objectives">Learning objectives</a></li>
+  <li><a href="#concept-of-a-magnetic-field" id="toc-concept-of-a-magnetic-field" class="nav-link" data-scroll-target="#concept-of-a-magnetic-field">20.1 Concept of a magnetic field</a>
+  <ul class="collapse">
+  <li><a href="#magnetic-fields-and-field-lines" id="toc-magnetic-fields-and-field-lines" class="nav-link" data-scroll-target="#magnetic-fields-and-field-lines">Magnetic fields and field lines</a></li>
+  <li><a href="#common-notation" id="toc-common-notation" class="nav-link" data-scroll-target="#common-notation">Common notation</a></li>
+  </ul></li>
+  <li><a href="#force-on-a-current-carrying-conductor" id="toc-force-on-a-current-carrying-conductor" class="nav-link" data-scroll-target="#force-on-a-current-carrying-conductor">20.2 Force on a current-carrying conductor</a>
+  <ul class="collapse">
+  <li><a href="#magnetic-force-on-a-wire" id="toc-magnetic-force-on-a-wire" class="nav-link" data-scroll-target="#magnetic-force-on-a-wire">Magnetic force on a wire</a></li>
+  <li><a href="#direction-and-flux-density-definition" id="toc-direction-and-flux-density-definition" class="nav-link" data-scroll-target="#direction-and-flux-density-definition">Direction and flux-density definition</a></li>
+  </ul></li>
+  <li><a href="#force-on-a-moving-charge" id="toc-force-on-a-moving-charge" class="nav-link" data-scroll-target="#force-on-a-moving-charge">20.3 Force on a moving charge</a>
+  <ul class="collapse">
+  <li><a href="#magnetic-force-on-a-particle" id="toc-magnetic-force-on-a-particle" class="nav-link" data-scroll-target="#magnetic-force-on-a-particle">Magnetic force on a particle</a></li>
+  <li><a href="#circular-motion" id="toc-circular-motion" class="nav-link" data-scroll-target="#circular-motion">Circular motion</a></li>
+  <li><a href="#hall-effect" id="toc-hall-effect" class="nav-link" data-scroll-target="#hall-effect">Hall effect</a></li>
+  <li><a href="#velocity-selection" id="toc-velocity-selection" class="nav-link" data-scroll-target="#velocity-selection">Velocity selection</a></li>
+  </ul></li>
+  <li><a href="#magnetic-fields-due-to-currents" id="toc-magnetic-fields-due-to-currents" class="nav-link" data-scroll-target="#magnetic-fields-due-to-currents">20.4 Magnetic fields due to currents</a>
+  <ul class="collapse">
+  <li><a href="#field-patterns" id="toc-field-patterns" class="nav-link" data-scroll-target="#field-patterns">Field patterns</a></li>
+  <li><a href="#parallel-currents" id="toc-parallel-currents" class="nav-link" data-scroll-target="#parallel-currents">Parallel currents</a></li>
+  </ul></li>
+  <li><a href="#electromagnetic-induction" id="toc-electromagnetic-induction" class="nav-link" data-scroll-target="#electromagnetic-induction">20.5 Electromagnetic induction</a>
+  <ul class="collapse">
+  <li><a href="#magnetic-flux-and-flux-linkage" id="toc-magnetic-flux-and-flux-linkage" class="nav-link" data-scroll-target="#magnetic-flux-and-flux-linkage">Magnetic flux and flux linkage</a></li>
+  <li><a href="#faradays-law" id="toc-faradays-law" class="nav-link" data-scroll-target="#faradays-law">Faraday’s law</a></li>
+  <li><a href="#lenzs-law" id="toc-lenzs-law" class="nav-link" data-scroll-target="#lenzs-law">Lenz’s law</a></li>
+  <li><a href="#ways-to-change-flux-linkage" id="toc-ways-to-change-flux-linkage" class="nav-link" data-scroll-target="#ways-to-change-flux-linkage">Ways to change flux linkage</a></li>
+  </ul></li>
+  <li><a href="#structured-questions" id="toc-structured-questions" class="nav-link" data-scroll-target="#structured-questions">Structured Questions</a>
+  <ul class="collapse">
+  <li><a href="#magnetic-fields---easy" id="toc-magnetic-fields---easy" class="nav-link" data-scroll-target="#magnetic-fields---easy">20.1 Magnetic Fields - Easy</a></li>
+  <li><a href="#example-1-fields-around-wires-and-force-on-a-conductor-20.1-sq-easy-q1" id="toc-example-1-fields-around-wires-and-force-on-a-conductor-20.1-sq-easy-q1" class="nav-link" data-scroll-target="#example-1-fields-around-wires-and-force-on-a-conductor-20.1-sq-easy-q1">Example 1 · Fields around wires and force on a conductor · 20.1 SQ Easy Q1</a></li>
+  <li><a href="#example-2-flemings-rule-and-electron-circular-motion-20.1-sq-easy-q2" id="toc-example-2-flemings-rule-and-electron-circular-motion-20.1-sq-easy-q2" class="nav-link" data-scroll-target="#example-2-flemings-rule-and-electron-circular-motion-20.1-sq-easy-q2">Example 2 · Fleming’s rule and electron circular motion · 20.1 SQ Easy Q2</a></li>
+  <li><a href="#example-3-magnetic-directions-and-a-rectangular-loop-20.1-sq-easy-q3" id="toc-example-3-magnetic-directions-and-a-rectangular-loop-20.1-sq-easy-q3" class="nav-link" data-scroll-target="#example-3-magnetic-directions-and-a-rectangular-loop-20.1-sq-easy-q3">Example 3 · Magnetic directions and a rectangular loop · 20.1 SQ Easy Q3</a></li>
+  <li><a href="#magnetic-fields---medium" id="toc-magnetic-fields---medium" class="nav-link" data-scroll-target="#magnetic-fields---medium">20.1 Magnetic Fields - Medium</a></li>
+  <li><a href="#example-4-planning-an-induction-experiment-20.1-sq-medium-q1" id="toc-example-4-planning-an-induction-experiment-20.1-sq-medium-q1" class="nav-link" data-scroll-target="#example-4-planning-an-induction-experiment-20.1-sq-medium-q1">Example 4 · Planning an induction experiment · 20.1 SQ Medium Q1</a></li>
+  <li><a href="#example-5-hall-voltage-in-a-conducting-slice-20.1-sq-medium-q2" id="toc-example-5-hall-voltage-in-a-conducting-slice-20.1-sq-medium-q2" class="nav-link" data-scroll-target="#example-5-hall-voltage-in-a-conducting-slice-20.1-sq-medium-q2">Example 5 · Hall voltage in a conducting slice · 20.1 SQ Medium Q2</a></li>
+  <li><a href="#example-6-parallel-wires-and-solenoid-field-20.1-sq-medium-q3" id="toc-example-6-parallel-wires-and-solenoid-field-20.1-sq-medium-q3" class="nav-link" data-scroll-target="#example-6-parallel-wires-and-solenoid-field-20.1-sq-medium-q3">Example 6 · Parallel wires and solenoid field · 20.1 SQ Medium Q3</a></li>
+  <li><a href="#electromagnetic-induction---easy" id="toc-electromagnetic-induction---easy" class="nav-link" data-scroll-target="#electromagnetic-induction---easy">20.2 Electromagnetic Induction - Easy</a></li>
+  <li><a href="#example-7-faradays-law-and-lenzs-law-20.2-sq-easy-q1" id="toc-example-7-faradays-law-and-lenzs-law-20.2-sq-easy-q1" class="nav-link" data-scroll-target="#example-7-faradays-law-and-lenzs-law-20.2-sq-easy-q1">Example 7 · Faraday’s law and Lenz’s law · 20.2 SQ Easy Q1</a></li>
+  <li><a href="#example-8-flux-flux-linkage-and-rotating-coil-20.2-sq-easy-q2" id="toc-example-8-flux-flux-linkage-and-rotating-coil-20.2-sq-easy-q2" class="nav-link" data-scroll-target="#example-8-flux-flux-linkage-and-rotating-coil-20.2-sq-easy-q2">Example 8 · Flux, flux linkage and rotating coil · 20.2 SQ Easy Q2</a></li>
+  <li><a href="#example-9-magnet-and-coil-observations-20.2-sq-easy-q3" id="toc-example-9-magnet-and-coil-observations-20.2-sq-easy-q3" class="nav-link" data-scroll-target="#example-9-magnet-and-coil-observations-20.2-sq-easy-q3">Example 9 · Magnet and coil observations · 20.2 SQ Easy Q3</a></li>
+  <li><a href="#electromagnetic-induction---medium" id="toc-electromagnetic-induction---medium" class="nav-link" data-scroll-target="#electromagnetic-induction---medium">20.2 Electromagnetic Induction - Medium</a></li>
+  <li><a href="#example-10-reversing-current-in-a-solenoid-20.2-sq-medium-q1" id="toc-example-10-reversing-current-in-a-solenoid-20.2-sq-medium-q1" class="nav-link" data-scroll-target="#example-10-reversing-current-in-a-solenoid-20.2-sq-medium-q1">Example 10 · Reversing current in a solenoid · 20.2 SQ Medium Q1</a></li>
+  <li><a href="#example-11-nested-solenoids-and-lenzs-law-20.2-sq-medium-q2" id="toc-example-11-nested-solenoids-and-lenzs-law-20.2-sq-medium-q2" class="nav-link" data-scroll-target="#example-11-nested-solenoids-and-lenzs-law-20.2-sq-medium-q2">Example 11 · Nested solenoids and Lenz’s law · 20.2 SQ Medium Q2</a></li>
+  <li><a href="#example-12-changing-flux-density-through-a-square-coil-20.2-sq-medium-q3" id="toc-example-12-changing-flux-density-through-a-square-coil-20.2-sq-medium-q3" class="nav-link" data-scroll-target="#example-12-changing-flux-density-through-a-square-coil-20.2-sq-medium-q3">Example 12 · Changing flux density through a square coil · 20.2 SQ Medium Q3</a></li>
+  </ul></li>
+  <li><a href="#chapter-self-check" id="toc-chapter-self-check" class="nav-link" data-scroll-target="#chapter-self-check">Chapter self-check</a>
+  <ul class="collapse">
+  <li><a href="#original-topic-pdfs" id="toc-original-topic-pdfs" class="nav-link" data-scroll-target="#original-topic-pdfs">Original topic PDFs</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../a-level/12-motion-in-a-circle.html">A Level</a></li><li class="breadcrumb-item"><a href="../a-level/20-magnetic-fields.html">20 Magnetic fields</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">20 Magnetic fields</h1>
+<p class="subtitle lead">Magnetic forces, Hall effect, fields due to currents and electromagnetic induction</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="learning-objectives" class="level2">
+<h2 class="anchored" data-anchor-id="learning-objectives">Learning objectives</h2>
+<p>By the end of this chapter, you should be able to:</p>
+<ul>
+<li>represent magnetic fields using directed field lines;</li>
+<li>use <span class="math inline">\(F=BIL\sin\theta\)</span> and Fleming’s left-hand rule;</li>
+<li>use <span class="math inline">\(F=BQv\sin\theta\)</span> for moving charges;</li>
+<li>explain circular motion of charges in uniform magnetic fields;</li>
+<li>derive and use the Hall-voltage equation;</li>
+<li>sketch fields due to straight wires, coils and solenoids;</li>
+<li>explain forces between parallel current-carrying conductors;</li>
+<li>define magnetic flux and flux linkage;</li>
+<li>apply Faraday’s and Lenz’s laws.</li>
+</ul>
+</section>
+<section id="concept-of-a-magnetic-field" class="level2">
+<h2 class="anchored" data-anchor-id="concept-of-a-magnetic-field">20.1 Concept of a magnetic field</h2>
+<section id="magnetic-fields-and-field-lines" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="magnetic-fields-and-field-lines">Magnetic fields and field lines</h3>
+<p>A magnetic field is a field of force produced by moving charge or a permanent magnet. Field lines show the direction in which a north magnetic pole would move. Outside a bar magnet they run from north to south; inside the magnet they return from south to north.</p>
+<p>The tangent to a field line gives the local field direction. Closer spacing represents greater magnetic flux density. Field lines never cross.</p>
+</section>
+<section id="common-notation" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="common-notation">Common notation</h3>
+<ul>
+<li><span class="math inline">\(\odot\)</span> represents a vector out of the page, like the tip of an arrow.</li>
+<li><span class="math inline">\(\otimes\)</span> represents a vector into the page, like the tail feathers of an arrow.</li>
+</ul>
+<p>Use the right-hand grip rule for a current: thumb in the direction of conventional current, curled fingers in the direction of the magnetic field.</p>
+</section>
+</section>
+<section id="force-on-a-current-carrying-conductor" class="level2">
+<h2 class="anchored" data-anchor-id="force-on-a-current-carrying-conductor">20.2 Force on a current-carrying conductor</h2>
+<section id="magnetic-force-on-a-wire" class="level3 formula-panel">
+<h3 class="anchored" data-anchor-id="magnetic-force-on-a-wire">Magnetic force on a wire</h3>
+<p>For a straight conductor of active length <span class="math inline">\(L\)</span> carrying current <span class="math inline">\(I\)</span> in a uniform field of flux density <span class="math inline">\(B\)</span>,</p>
+<p><span class="math display">\[F=BIL\sin\theta,\]</span></p>
+<p>where <span class="math inline">\(\theta\)</span> is the angle between the current and the magnetic field. Force is maximum at <span class="math inline">\(90^\circ\)</span> and zero when the wire is parallel to the field.</p>
+</section>
+<section id="direction-and-flux-density-definition" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="direction-and-flux-density-definition">Direction and flux-density definition</h3>
+<p>Fleming’s left-hand rule gives mutually perpendicular directions:</p>
+<ul>
+<li>first finger: magnetic <strong>field</strong>;</li>
+<li>second finger: conventional <strong>current</strong>;</li>
+<li>thumb: <strong>force</strong> or motion.</li>
+</ul>
+<p>Magnetic flux density is the force per unit current per unit length on a wire placed perpendicular to the field:</p>
+<p><span class="math display">\[B=\frac{F}{IL}.\]</span></p>
+<p>Thus <span class="math inline">\(1\ \mathrm{T}=1\ \mathrm{N\ A^{-1}\ m^{-1}}\)</span>.</p>
+</section>
+</section>
+<section id="force-on-a-moving-charge" class="level2">
+<h2 class="anchored" data-anchor-id="force-on-a-moving-charge">20.3 Force on a moving charge</h2>
+<section id="magnetic-force-on-a-particle" class="level3 formula-panel">
+<h3 class="anchored" data-anchor-id="magnetic-force-on-a-particle">Magnetic force on a particle</h3>
+<p>For charge <span class="math inline">\(Q\)</span> moving at speed <span class="math inline">\(v\)</span>,</p>
+<p><span class="math display">\[F=BQv\sin\theta.\]</span></p>
+<p>The force direction for a positive charge follows the conventional-current direction in Fleming’s rule; reverse it for a negative charge. Magnetic force is perpendicular to velocity, so it changes direction but does no work and does not change speed.</p>
+</section>
+<section id="circular-motion" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="circular-motion">Circular motion</h3>
+<p>When <span class="math inline">\(\vec v\perp\vec B\)</span>, magnetic force supplies centripetal force:</p>
+<p><span class="math display">\[BQv=\frac{mv^2}{r}, \qquad r=\frac{mv}{|Q|B}.\]</span></p>
+<p>The angular speed and period are</p>
+<p><span class="math display">\[\omega=\frac{|Q|B}{m}, \qquad T=\frac{2\pi m}{|Q|B}.\]</span></p>
+<p>A velocity component parallel to the field is unchanged, producing a helical path.</p>
+</section>
+<section id="hall-effect" class="level3 formula-panel">
+<h3 class="anchored" data-anchor-id="hall-effect">Hall effect</h3>
+<p>Charge carriers moving through a conductor in a perpendicular magnetic field are deflected, producing a transverse Hall voltage. At equilibrium, electric and magnetic forces balance.</p>
+<p>For carrier number density <span class="math inline">\(n\)</span>, charge magnitude <span class="math inline">\(q\)</span>, current <span class="math inline">\(I\)</span> and sample thickness <span class="math inline">\(t\)</span>,</p>
+<p><span class="math display">\[V_H=\frac{BI}{ntq}.\]</span></p>
+<p>Hall polarity identifies the sign of charge carriers, while a calibrated Hall probe measures <span class="math inline">\(B\)</span>.</p>
+</section>
+<section id="velocity-selection" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="velocity-selection">Velocity selection</h3>
+<p>In crossed electric and magnetic fields, forces can oppose:</p>
+<p><span class="math display">\[QE=BQv.\]</span></p>
+<p>Particles pass undeflected only when</p>
+<p><span class="math display">\[v=\frac{E}{B}.\]</span></p>
+</section>
+</section>
+<section id="magnetic-fields-due-to-currents" class="level2">
+<h2 class="anchored" data-anchor-id="magnetic-fields-due-to-currents">20.4 Magnetic fields due to currents</h2>
+<section id="field-patterns" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="field-patterns">Field patterns</h3>
+<ul>
+<li>Long straight wire: concentric circular field lines.</li>
+<li>Flat circular coil: a dipole-like pattern, strongest through the centre.</li>
+<li>Long solenoid: strong, nearly uniform parallel field inside and weak return field outside.</li>
+</ul>
+<p>A ferrous core increases the field in a solenoid because it becomes magnetised and adds to the field produced by the current.</p>
+</section>
+<section id="parallel-currents" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="parallel-currents">Parallel currents</h3>
+<p>Each current-carrying wire lies in the magnetic field produced by the other. Currents in the same direction attract; currents in opposite directions repel. Newton’s third law gives equal and opposite forces on the two wires.</p>
+</section>
+</section>
+<section id="electromagnetic-induction" class="level2">
+<h2 class="anchored" data-anchor-id="electromagnetic-induction">20.5 Electromagnetic induction</h2>
+<section id="magnetic-flux-and-flux-linkage" class="level3 formula-panel">
+<h3 class="anchored" data-anchor-id="magnetic-flux-and-flux-linkage">Magnetic flux and flux linkage</h3>
+<p>Magnetic flux through area <span class="math inline">\(A\)</span> is</p>
+<p><span class="math display">\[\Phi=BA\cos\theta,\]</span></p>
+<p>where <span class="math inline">\(\theta\)</span> is the angle between <span class="math inline">\(\vec B\)</span> and the normal to the area. Its unit is the weber (Wb).</p>
+<p>For a coil of <span class="math inline">\(N\)</span> turns, magnetic flux linkage is</p>
+<p><span class="math display">\[N\Phi.\]</span></p>
+</section>
+<section id="faradays-law" class="level3 formula-panel">
+<h3 class="anchored" data-anchor-id="faradays-law">Faraday’s law</h3>
+<p>The magnitude of induced e.m.f. equals the rate of change of magnetic flux linkage:</p>
+<p><span class="math display">\[|\mathcal E|=\left|\frac{\Delta(N\Phi)}{\Delta t}\right|.\]</span></p>
+<p>A larger number of turns, stronger field, larger area or faster change produces a larger induced e.m.f.</p>
+</section>
+<section id="lenzs-law" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="lenzs-law">Lenz’s law</h3>
+<p>The induced current is in a direction that opposes the change producing it. Including direction,</p>
+<p><span class="math display">\[\mathcal E=-\frac{d(N\Phi)}{dt}.\]</span></p>
+<p>The minus sign expresses energy conservation: an induced current cannot reinforce the change that created it without external work.</p>
+</section>
+<section id="ways-to-change-flux-linkage" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="ways-to-change-flux-linkage">Ways to change flux linkage</h3>
+<p>An e.m.f. can be induced by changing magnetic flux density, coil area, coil orientation, number of linked turns, or relative position of magnet and coil. A stationary magnet and stationary coil produce no e.m.f. even when the flux is large; the flux linkage must change.</p>
+</section>
+</section>
+<section id="structured-questions" class="level2">
+<h2 class="anchored" data-anchor-id="structured-questions">Structured Questions</h2>
+<section id="magnetic-fields---easy" class="level3">
+<h3 class="anchored" data-anchor-id="magnetic-fields---easy">20.1 Magnetic Fields - Easy</h3>
+</section>
+<section id="example-1-fields-around-wires-and-force-on-a-conductor-20.1-sq-easy-q1" class="level3 question-card">
+<h3 class="anchored" data-anchor-id="example-1-fields-around-wires-and-force-on-a-conductor-20.1-sq-easy-q1">Example 1 · Fields around wires and force on a conductor · 20.1 SQ Easy Q1</h3>
+<p><strong>(a)</strong> A long straight wire passes through a piece of card. There is a current in the wire, as shown in Fig. 1.1a.</p>
+<p><img src="../assets/questions/magnetic-fields/wire-through-card.webp" class="question-figure img-fluid" alt="Current passing downwards through a card"></p>
+<p>The current in the wire produces a magnetic field around the wire.</p>
+<p><strong>(i)</strong> On Fig. 1.1b, draw the magnetic field around the wire. Show the direction by drawing an arrow on each field line. <code>[2]</code></p>
+<p><img src="../assets/questions/magnetic-fields/blank-field-around-wire.webp" class="question-figure img-fluid" alt="Top view of current into a card"></p>
+<p><strong>(ii)</strong> Two identical wires with the same current pass through a different piece of card. On Fig. 1.1c, draw the magnetic field around the wires. <code>[2]</code></p>
+<p><img src="../assets/questions/magnetic-fields/blank-field-around-two-wires.webp" class="question-figure img-fluid" alt="Two equal currents into a card"></p>
+<p><code>[4 marks]</code></p>
+<p><strong>(b)</strong> The current-carrying wire is placed in a uniform magnetic field.</p>
+<p><strong>(i)</strong> State the equation, and define all the variables, for the force on a current-carrying wire in a uniform magnetic field at different angles. <code>[2]</code></p>
+<p><strong>(ii)</strong> Describe how the wire should be placed to experience 1. the maximum force and 2. no force. <code>[2]</code></p>
+<p><code>[4 marks]</code></p>
+<p><strong>(c)</strong> A current-carrying conductor is placed at right angles to a uniform magnetic field of flux density <span class="math inline">\(15\times10^{-3}\ \mathrm{T}\)</span>. Its length is <span class="math inline">\(1.2\ \mathrm{m}\)</span> and current is <span class="math inline">\(1.5\ \mathrm{A}\)</span>. Calculate the magnetic force. <code>[2 marks]</code></p>
+<p><strong>(d)</strong> The conductor is rotated to <span class="math inline">\(30^\circ\)</span> to the magnetic field. Calculate the new force. <code>[2 marks]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<ul>
+<li><strong>(a)(i)</strong> Draw concentric circles centred on the wire <code>[1]</code>, clockwise because current is into the card. <code>[1]</code></li>
+<li><strong>(a)(ii)</strong> Draw clockwise circular fields around both wires, with the fields opposing between the wires and reinforcing outside. <code>[2]</code></li>
+<li><strong>(b)(i)</strong> <span class="math inline">\(F=BIL\sin\theta\)</span>, where <span class="math inline">\(B\)</span> is flux density, <span class="math inline">\(I\)</span> current, <span class="math inline">\(L\)</span> active length and <span class="math inline">\(\theta\)</span> the angle between current and field. <code>[2]</code></li>
+<li><strong>(b)(ii)</strong> Maximum force: wire perpendicular to the field. No force: wire parallel to the field. <code>[2]</code></li>
+<li><strong>(c)</strong> <span class="math inline">\(F=(15\times10^{-3})(1.5)(1.2)=2.7\times10^{-2}\ \mathrm{N}\)</span>. <code>[2]</code></li>
+<li><strong>(d)</strong> <span class="math inline">\(F=BIL\sin30^\circ=1.35\times10^{-2}\ \mathrm{N}\)</span>. <code>[2]</code></li>
+</ul>
+</details>
+</section>
+<section id="example-2-flemings-rule-and-electron-circular-motion-20.1-sq-easy-q2" class="level3 question-card">
+<h3 class="anchored" data-anchor-id="example-2-flemings-rule-and-electron-circular-motion-20.1-sq-easy-q2">Example 2 · Fleming’s rule and electron circular motion · 20.1 SQ Easy Q2</h3>
+<p><strong>(a)</strong> Fleming’s left-hand rule is shown in Fig. 1.1.</p>
+<p><img src="../assets/questions/magnetic-fields/fleming-left-hand-rule.webp" class="question-figure img-fluid" alt="Fleming's left-hand rule"></p>
+<p>State what is represented by the direction of <strong>(i)</strong> the thumb, <strong>(ii)</strong> the first finger and <strong>(iii)</strong> the second finger. <code>[3 marks]</code></p>
+<p><strong>(b)</strong> Fig. 1.2 shows a magnetic field.</p>
+<p><img src="../assets/questions/magnetic-fields/field-into-page.webp" class="question-figure img-fluid" alt="Crosses representing a field into the page"></p>
+<p><strong>(i)</strong> State whether the field acts into or out of the page. <code>[1]</code></p>
+<p><strong>(ii)</strong> An electron enters at A. Draw 1. the force arrow and 2. its path. <code>[4]</code></p>
+<p><img src="../assets/questions/magnetic-fields/electron-in-magnetic-field.webp" class="question-figure img-fluid" alt="Electron beam entering a field into the page"></p>
+<p><code>[5 marks]</code></p>
+<p><strong>(c)</strong> For <span class="math inline">\(F=Bqv\)</span>, <strong>(i)</strong> state the meanings of <span class="math inline">\(B\)</span>, <span class="math inline">\(q\)</span> and <span class="math inline">\(v\)</span>; <strong>(ii)</strong> state the name and equation of the force causing circular motion. <code>[6 marks]</code></p>
+<p><strong>(d)</strong> The electron speed is <span class="math inline">\(3.0\times10^6\ \mathrm{m\ s^{-1}}\)</span> and <span class="math inline">\(B=3.2\times10^{-3}\ \mathrm{T}\)</span>.</p>
+<p><strong>(i)</strong> Show that <span class="math inline">\(r=mv/(Bq)\)</span>. <code>[3]</code></p>
+<p><strong>(ii)</strong> Calculate <span class="math inline">\(r\)</span>. Use <span class="math inline">\(m_e=9.11\times10^{-31}\ \mathrm{kg}\)</span> and <span class="math inline">\(|e|=1.60\times10^{-19}\ \mathrm{C}\)</span>. <code>[2]</code></p>
+<p><code>[5 marks]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<ul>
+<li><strong>(a)</strong> Thumb: force/motion; first finger: magnetic field; second finger: conventional current. <code>[3]</code></li>
+<li><strong>(b)(i)</strong> Into the page. <code>[1]</code></li>
+<li><strong>(b)(ii)</strong> A positive charge moving right would be forced upwards, so the electron force is downwards. Draw a downward force arrow and a circular path curving downwards. <code>[4]</code></li>
+<li><strong>(c)(i)</strong> <span class="math inline">\(B\)</span>: magnetic flux density; <span class="math inline">\(q\)</span>: charge; <span class="math inline">\(v\)</span>: speed perpendicular to the field. <code>[3]</code></li>
+<li><strong>(c)(ii)</strong> Centripetal force, <span class="math inline">\(F=mv^2/r\)</span>. <code>[3]</code></li>
+<li><strong>(d)(i)</strong> Equate <span class="math inline">\(Bqv=mv^2/r\)</span> and rearrange to obtain <span class="math inline">\(r=mv/(Bq)\)</span>. <code>[3]</code></li>
+<li><strong>(d)(ii)</strong> <span class="math inline">\(r=(9.11\times10^{-31})(3.0\times10^6)/[(3.2\times10^{-3})(1.60\times10^{-19})]=5.3\times10^{-3}\ \mathrm{m}\)</span>. <code>[2]</code></li>
+</ul>
+</details>
+</section>
+<section id="example-3-magnetic-directions-and-a-rectangular-loop-20.1-sq-easy-q3" class="level3 question-card">
+<h3 class="anchored" data-anchor-id="example-3-magnetic-directions-and-a-rectangular-loop-20.1-sq-easy-q3">Example 3 · Magnetic directions and a rectangular loop · 20.1 SQ Easy Q3</h3>
+<p><strong>(a)</strong> Positive charges pass through different magnetic fields. State the missing direction between <span class="math inline">\(B\)</span>, <span class="math inline">\(v\)</span> and <span class="math inline">\(F\)</span> in each scenario in Table 1.1. <code>[5 marks]</code></p>
+<p><img src="../assets/questions/magnetic-fields/magnetic-directions-table.webp" class="question-figure img-fluid" alt="Five magnetic force direction scenarios"></p>
+<p><strong>(b)</strong> A rectangular loop ABCD, width <span class="math inline">\(6.0\ \mathrm{cm}\)</span> and length <span class="math inline">\(9.0\ \mathrm{cm}\)</span>, carries <span class="math inline">\(3.5\ \mathrm{A}\)</span> in a uniform <span class="math inline">\(0.75\ \mathrm{T}\)</span> field.</p>
+<p><img src="../assets/questions/magnetic-fields/rectangular-current-loop.webp" class="question-figure img-fluid" alt="Rectangular current loop in a horizontal magnetic field"></p>
+<p>Draw force arrows on <strong>(i)</strong> AB and <strong>(ii)</strong> CD. <code>[2 marks]</code></p>
+<p><strong>(c)</strong> Calculate the force on <strong>(i)</strong> AB <code>[2]</code> and <strong>(ii)</strong> BC <code>[1]</code>. <code>[3 marks]</code></p>
+<p><strong>(d)(i)</strong> Describe the motion after current is switched on. <code>[1]</code></p>
+<p><strong>(ii)</strong> State the effect on force on CD if 1. <span class="math inline">\(B\)</span> is halved, 2. length is multiplied by 4, 3. current is reduced by 20%. <code>[3]</code></p>
+<p><code>[4 marks]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<ul>
+<li><strong>(a)</strong> (i) <span class="math inline">\(F=0\)</span>; (ii) <span class="math inline">\(F=0\)</span>; (iii) <span class="math inline">\(B\)</span> into the page; (iv) <span class="math inline">\(B\)</span> out of the page; (v) <span class="math inline">\(F\)</span> into the page. <code>[5]</code></li>
+<li><strong>(b)</strong> Force on AB points down; force on CD points up. <code>[2]</code></li>
+<li><strong>(c)(i)</strong> <span class="math inline">\(F=BIL=(0.75)(3.5)(0.090)=0.24\ \mathrm{N}\)</span>. <code>[2]</code></li>
+<li><strong>(c)(ii)</strong> BC is parallel to the field, so <span class="math inline">\(F=0\)</span>. <code>[1]</code></li>
+<li><strong>(d)(i)</strong> The loop rotates anticlockwise. <code>[1]</code></li>
+<li><strong>(d)(ii)</strong> Force is halved; multiplied by 4; reduced to <span class="math inline">\(0.80\)</span> of its original value. <code>[3]</code></li>
+</ul>
+</details>
+</section>
+<section id="magnetic-fields---medium" class="level3">
+<h3 class="anchored" data-anchor-id="magnetic-fields---medium">20.1 Magnetic Fields - Medium</h3>
+</section>
+<section id="example-4-planning-an-induction-experiment-20.1-sq-medium-q1" class="level3 question-card">
+<h3 class="anchored" data-anchor-id="example-4-planning-an-induction-experiment-20.1-sq-medium-q1">Example 4 · Planning an induction experiment · 20.1 SQ Medium Q1</h3>
+<p>A circular coil P carrying alternating current produces a changing magnetic field. Similar coil Q is coaxial with P, with centre separation <span class="math inline">\(x\)</span>. An e.m.f. <span class="math inline">\(E\)</span> is induced in Q.</p>
+<p><img src="../assets/questions/magnetic-fields/two-coils-separation.webp" class="question-figure img-fluid" alt="Two coaxial coils P and Q separated by x"></p>
+<p>It is suggested that</p>
+<p><span class="math display">\[E=IZe^{-kx},\]</span></p>
+<p>where <span class="math inline">\(I\)</span> is current in P and <span class="math inline">\(k\)</span>, <span class="math inline">\(Z\)</span> are constants.</p>
+<p>Plan a laboratory experiment to test the relationship. Draw the arrangement and explain how results determine <span class="math inline">\(k\)</span> and <span class="math inline">\(Z\)</span>. Include procedure, measurements, control variables, analysis and safety. <code>[15 marks]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<ul>
+<li>Connect P to a sinusoidal signal generator/a.c. supply in series with an ammeter; connect Q to an a.c. voltmeter or oscilloscope. Support the coils coaxially on stands. <code>[3]</code></li>
+<li>Measure centre-to-centre <span class="math inline">\(x\)</span> with a ruler; account for half the width of each coil. <code>[2]</code></li>
+<li>Vary <span class="math inline">\(x\)</span> and record induced r.m.s. e.m.f. <span class="math inline">\(E\)</span>. Repeat and average. <code>[2]</code></li>
+<li>Keep <span class="math inline">\(I\)</span>, supply frequency, coil turns, coil geometry and relative orientation constant; use a variable resistor to maintain <span class="math inline">\(I\)</span>. <code>[3]</code></li>
+<li>Take logarithms: <span class="math inline">\(\ln E=-kx+\ln(IZ)\)</span>. Plot <span class="math inline">\(\ln E\)</span> against <span class="math inline">\(x\)</span>; a straight line supports the model. <code>[2]</code></li>
+<li><span class="math inline">\(k=-\)</span>gradient and <span class="math inline">\(Z=e^{\text{intercept}}/I\)</span>. <code>[2]</code></li>
+<li>Avoid touching a hot coil/use a modest current or switch off between readings. <code>[1]</code></li>
+</ul>
+</details>
+</section>
+<section id="example-5-hall-voltage-in-a-conducting-slice-20.1-sq-medium-q2" class="level3 question-card">
+<h3 class="anchored" data-anchor-id="example-5-hall-voltage-in-a-conducting-slice-20.1-sq-medium-q2">Example 5 · Hall voltage in a conducting slice · 20.1 SQ Medium Q2</h3>
+<p>A thin conducting slice has labelled faces and is normal to a uniform field <span class="math inline">\(B\)</span>. Electrons enter at right angles to face SRXY.</p>
+<p><img src="../assets/questions/magnetic-fields/hall-slice.webp" class="question-figure img-fluid" alt="Hall-effect conducting slice with labelled vertices"></p>
+<p><strong>(a)(i)</strong> Identify the two faces between which Hall voltage is produced. <code>[1]</code></p>
+<p><strong>(ii)</strong> State and explain which face is more positive. <code>[2]</code></p>
+<p><code>[3 marks]</code></p>
+<p><strong>(b)</strong> <span class="math inline">\(V_H=BI/(ntq)\)</span>.</p>
+<p><strong>(i)</strong> Use letters to identify distance <span class="math inline">\(t\)</span>. <code>[1]</code></p>
+<p><strong>(ii)</strong> Electrons are replaced by positive carriers moving in the same direction. State and explain the effect on Hall-voltage polarity. <code>[2]</code></p>
+<p><code>[3 marks]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<ul>
+<li><strong>(a)(i)</strong> Faces PSVY and QRWX. <code>[1]</code></li>
+<li><strong>(a)(ii)</strong> Electrons are deflected towards QRXW, which becomes negative; PSVY is more positive. <code>[2]</code></li>
+<li><strong>(b)(i)</strong> <span class="math inline">\(t\)</span> may be PV, SY, RX or QW. <code>[1]</code></li>
+<li><strong>(b)(ii)</strong> Positive and negative carriers are deflected in opposite directions for the same velocity, so charge sign and deflection both reverse; Hall polarity is unchanged. <code>[2]</code></li>
+</ul>
+</details>
+</section>
+<section id="example-6-parallel-wires-and-solenoid-field-20.1-sq-medium-q3" class="level3 question-card">
+<h3 class="anchored" data-anchor-id="example-6-parallel-wires-and-solenoid-field-20.1-sq-medium-q3">Example 6 · Parallel wires and solenoid field · 20.1 SQ Medium Q3</h3>
+<p><strong>(a)</strong> State and describe the conditions for a copper wire in a magnetic field to experience a magnetic force. <code>[2 marks]</code></p>
+<p><strong>(b)</strong> Two long parallel current-carrying wires are near each other in a vacuum. Explain why they exert magnetic forces on each other. <code>[3 marks]</code></p>
+<p><strong>(c)</strong> A long air-cored solenoid produces the field shown. Draw field-direction arrows at B, C and D. <code>[3 marks]</code></p>
+<p><img src="../assets/questions/magnetic-fields/solenoid-field-points.webp" class="question-figure img-fluid" alt="Cross-section of a solenoid with field points A to D"></p>
+<p><strong>(d)</strong> Compare flux density <strong>(i)</strong> at A and C and <strong>(ii)</strong> at A and D. <code>[2 marks]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<ul>
+<li><strong>(a)</strong> The wire must carry current and have a component of current perpendicular to the magnetic field. <code>[2]</code></li>
+<li><strong>(b)</strong> Each wire produces a circular magnetic field; the other current lies in this field and experiences <span class="math inline">\(F=BIL\)</span>. The forces are equal and opposite; same-direction currents attract and opposite-direction currents repel. <code>[3]</code></li>
+<li><strong>(c)</strong> C points right like A; B and D are in the external return field and point left. <code>[3]</code></li>
+<li><strong>(d)(i)</strong> A and C have approximately equal flux density in the uniform interior. <code>[1]</code></li>
+<li><strong>(d)(ii)</strong> Flux density at A is greater than at D because the external field is weaker. <code>[1]</code></li>
+</ul>
+</details>
+</section>
+<section id="electromagnetic-induction---easy" class="level3">
+<h3 class="anchored" data-anchor-id="electromagnetic-induction---easy">20.2 Electromagnetic Induction - Easy</h3>
+</section>
+<section id="example-7-faradays-law-and-lenzs-law-20.2-sq-easy-q1" class="level3 question-card">
+<h3 class="anchored" data-anchor-id="example-7-faradays-law-and-lenzs-law-20.2-sq-easy-q1">Example 7 · Faraday’s law and Lenz’s law · 20.2 SQ Easy Q1</h3>
+<p><strong>(a)</strong> State Faraday’s law <strong>(i)</strong> in words <code>[2]</code> and <strong>(ii)</strong> as an equation, defining all quantities <code>[2]</code>. <code>[4 marks]</code></p>
+<p><strong>(b)</strong> Complete: “The ______ of an induced e.m.f. is always set up in a way such that it ______ the change in magnetic flux ______ that causes it.” Use: <code>attracts opposes density direction linkage magnitude</code>. <code>[3 marks]</code></p>
+<p><strong>(c)</strong> Rewrite the equation in <strong>(a)(ii)</strong> to include Lenz’s law. <code>[1 mark]</code></p>
+<p><strong>(d)</strong> A small coil connected to a sensitive voltmeter is near a current-carrying solenoid. State two different ways to induce an e.m.f. in the coil. <code>[2 marks]</code></p>
+<p><img src="../assets/questions/magnetic-fields/coil-near-solenoid.webp" class="question-figure img-fluid" alt="Coil connected to a voltmeter beside a solenoid"></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<ul>
+<li><strong>(a)(i)</strong> Induced e.m.f. is proportional to the rate of change of magnetic flux linkage. <code>[2]</code></li>
+<li><strong>(a)(ii)</strong> <span class="math inline">\(|\mathcal E|=\Delta(N\Phi)/\Delta t\)</span>; define e.m.f., turns, flux and time. <code>[2]</code></li>
+<li><strong>(b)</strong> direction; opposes; linkage. <code>[3]</code></li>
+<li><strong>(c)</strong> <span class="math inline">\(\mathcal E=-d(N\Phi)/dt\)</span>. <code>[1]</code></li>
+<li><strong>(d)</strong> Move coil/solenoid relative to the other; change or switch the solenoid current. <code>[2]</code></li>
+</ul>
+</details>
+</section>
+<section id="example-8-flux-flux-linkage-and-rotating-coil-20.2-sq-easy-q2" class="level3 question-card">
+<h3 class="anchored" data-anchor-id="example-8-flux-flux-linkage-and-rotating-coil-20.2-sq-easy-q2">Example 8 · Flux, flux linkage and rotating coil · 20.2 SQ Easy Q2</h3>
+<p><strong>(a)(i)</strong> Define magnetic flux. <code>[2]</code> <strong>(ii)</strong> Write its equation when <span class="math inline">\(B\)</span> is not perpendicular to the area. <code>[1]</code> <code>[3 marks]</code></p>
+<p><strong>(b)</strong> A 500-turn circular coil of area <span class="math inline">\(0.1\ \mathrm{m^2}\)</span> has its plane perpendicular to a uniform <span class="math inline">\(80\ \mathrm{mT}\)</span> field. Calculate magnetic flux through the coil, with unit. <code>[3 marks]</code></p>
+<p><img src="../assets/questions/magnetic-fields/rotating-coil-in-field.webp" class="question-figure img-fluid" alt="Circular coil in a horizontal uniform magnetic field"></p>
+<p><strong>(c)(i)</strong> Define magnetic flux linkage. <code>[1]</code> <strong>(ii)</strong> Calculate its change when the coil rotates through <span class="math inline">\(90^\circ\)</span>. <code>[2]</code> <code>[3 marks]</code></p>
+<p><strong>(d)</strong> The rotation takes <span class="math inline">\(300\ \mathrm{ms}\)</span>. Calculate average induced e.m.f. <code>[3 marks]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<ul>
+<li><strong>(a)</strong> Flux is the product of flux density and area perpendicular to the field; <span class="math inline">\(\Phi=BA\cos\theta\)</span>. <code>[3]</code></li>
+<li><strong>(b)</strong> <span class="math inline">\(\Phi=(0.080)(0.10)=8.0\times10^{-3}\ \mathrm{Wb}\)</span>. <code>[3]</code></li>
+<li><strong>(c)</strong> Flux linkage is <span class="math inline">\(N\Phi\)</span>; change <span class="math inline">\(=500(8.0\times10^{-3})=4.0\ \mathrm{Wb\ turns}\)</span>. <code>[3]</code></li>
+<li><strong>(d)</strong> <span class="math inline">\(|\mathcal E|=4.0/0.300=13\ \mathrm{V}\)</span>. <code>[3]</code></li>
+</ul>
+</details>
+</section>
+<section id="example-9-magnet-and-coil-observations-20.2-sq-easy-q3" class="level3 question-card">
+<h3 class="anchored" data-anchor-id="example-9-magnet-and-coil-observations-20.2-sq-easy-q3">Example 9 · Magnet and coil observations · 20.2 SQ Easy Q3</h3>
+<p><strong>(a)</strong> Complete the SI table for magnetic flux, magnetic flux linkage, e.m.f. and magnetic flux density. <code>[4 marks]</code></p>
+<p><strong>(b)</strong> A magnet lowered into a coil deflects a centre-zero voltmeter to the right.</p>
+<p><img src="../assets/questions/magnetic-fields/magnet-coil-voltmeter.webp" class="question-figure img-fluid" alt="Magnet entering a coil connected to a voltmeter"></p>
+<p><img src="../assets/questions/magnetic-fields/voltmeter-deflection.webp" class="question-figure img-fluid" alt="Initial voltmeter deflection"></p>
+<p>Sketch the needle when <strong>(i)</strong> the magnet is held at rest and <strong>(ii)</strong> removed faster than it entered. <code>[4 marks]</code></p>
+<p><img src="../assets/questions/magnetic-fields/blank-voltmeter-observations.webp" class="question-figure img-fluid" alt="Blank voltmeter observations"></p>
+<p><strong>(c)</strong> A magnet moves towards and away at steady rate. Explain why <strong>(i)</strong> there is a reading, <strong>(ii)</strong> magnitude varies and <strong>(iii)</strong> values are positive and negative. <code>[5 marks]</code></p>
+<p><img src="../assets/questions/magnetic-fields/induced-voltage-time-graph.webp" class="question-figure img-fluid" alt="Alternating induced potential difference against time"></p>
+<p><strong>(d)</strong> The reading is <span class="math inline">\(1.5\ \mathrm{mV}\)</span> for <span class="math inline">\(2.0\ \mathrm{s}\)</span>. Calculate change in flux linkage. <code>[3 marks]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<ul>
+<li><strong>(a)</strong> <span class="math inline">\(\Phi\)</span>: Wb; <span class="math inline">\(N\Phi\)</span>: Wb turns; <span class="math inline">\(\mathcal E\)</span>: V; <span class="math inline">\(B\)</span>: T. <code>[4]</code></li>
+<li><strong>(b)(i)</strong> Needle at zero. <code>[1]</code> <strong>(ii)</strong> Deflection to the left with greater magnitude. <code>[3]</code></li>
+<li><strong>(c)(i)</strong> Movement changes flux linkage, inducing e.m.f. <code>[1]</code></li>
+<li><strong>(c)(ii)</strong> Rate of change varies with position, so e.m.f. magnitude varies. <code>[2]</code></li>
+<li><strong>(c)(iii)</strong> Direction of flux change reverses between approach and withdrawal, so induced polarity reverses. <code>[2]</code></li>
+<li><strong>(d)</strong> <span class="math inline">\(\Delta(N\Phi)=\mathcal E\Delta t=(1.5\times10^{-3})(2.0)=3.0\times10^{-3}\ \mathrm{Wb\ turns}\)</span>. <code>[3]</code></li>
+</ul>
+</details>
+</section>
+<section id="electromagnetic-induction---medium" class="level3">
+<h3 class="anchored" data-anchor-id="electromagnetic-induction---medium">20.2 Electromagnetic Induction - Medium</h3>
+</section>
+<section id="example-10-reversing-current-in-a-solenoid-20.2-sq-medium-q1" class="level3 question-card">
+<h3 class="anchored" data-anchor-id="example-10-reversing-current-in-a-solenoid-20.2-sq-medium-q1">Example 10 · Reversing current in a solenoid · 20.2 SQ Medium Q1</h3>
+<p><strong>(a)(i)</strong> Define magnetic flux. <code>[2]</code> <strong>(ii)</strong> State Faraday’s law. <code>[2]</code> <code>[4 marks]</code></p>
+<p><strong>(b)</strong> A 96-turn coil C surrounds a solenoid.</p>
+<p><img src="../assets/questions/magnetic-fields/coil-c-around-solenoid.webp" class="question-figure img-fluid" alt="Coil C wound around the centre of a solenoid"></p>
+<p>Flux is <span class="math inline">\(\Phi=6.8\times10^{-6}I\)</span> Wb. Calculate average induced e.m.f. when <span class="math inline">\(3.5\ \mathrm{A}\)</span> is reversed in <span class="math inline">\(2.4\ \mathrm{ms}\)</span>. <code>[2 marks]</code></p>
+<p><strong>(c)</strong> The d.c. supply is replaced by a sinusoidal alternating supply. Describe qualitatively the e.m.f. induced in C. <code>[2 marks]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<ul>
+<li><strong>(a)</strong> Flux is <span class="math inline">\(BA\)</span> normal to the field; Faraday’s law states induced e.m.f. equals rate of change of flux linkage. <code>[4]</code></li>
+<li><strong>(b)</strong> <span class="math inline">\(\Delta I=7.0\ \mathrm{A}\)</span>, so <span class="math inline">\(\Delta(N\Phi)=96(6.8\times10^{-6})(7.0)\)</span>. Divide by <span class="math inline">\(2.4\times10^{-3}\)</span> to obtain <span class="math inline">\(1.9\ \mathrm{V}\)</span>. <code>[2]</code></li>
+<li><strong>(c)</strong> A sinusoidal alternating e.m.f. is induced at the same frequency, with a quarter-cycle phase difference from current/flux. <code>[2]</code></li>
+</ul>
+</details>
+</section>
+<section id="example-11-nested-solenoids-and-lenzs-law-20.2-sq-medium-q2" class="level3 question-card">
+<h3 class="anchored" data-anchor-id="example-11-nested-solenoids-and-lenzs-law-20.2-sq-medium-q2">Example 11 · Nested solenoids and Lenz’s law · 20.2 SQ Medium Q2</h3>
+<p>A 2000-turn smaller solenoid of area <span class="math inline">\(1.2\times10^{-3}\ \mathrm{m^2}\)</span> is inside an 800-turn larger solenoid of area <span class="math inline">\(7.8\times10^{-3}\ \mathrm{m^2}\)</span>.</p>
+<p><img src="../assets/questions/magnetic-fields/nested-solenoids.webp" class="question-figure img-fluid" alt="Smaller solenoid inside a larger powered solenoid"></p>
+<p><strong>(a)</strong> Compare magnetic flux in the two solenoids. <code>[1]</code></p>
+<p><strong>(b)</strong> Compare magnetic flux linkage. <code>[1]</code></p>
+<p><strong>(c)</strong> State Lenz’s law. <code>[2]</code></p>
+<p><strong>(d)</strong> The smaller solenoid terminals are connected and it is removed. Explain why a force is needed. <code>[3 marks]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<ul>
+<li><strong>(a)</strong> The larger solenoid has greater flux because <span class="math inline">\(\Phi=BA\)</span> and its area is larger. <code>[1]</code></li>
+<li><strong>(b)</strong> Larger linkage is also greater: <span class="math inline">\(800(7.8)&gt;2000(1.2)\)</span> in common factors. <code>[1]</code></li>
+<li><strong>(c)</strong> Induced current acts in a direction that opposes the change causing it. <code>[2]</code></li>
+<li><strong>(d)</strong> Removal changes linkage and induces e.m.f./current in the smaller solenoid; its magnetic field interacts with the original field to produce an attractive force opposing removal. <code>[3]</code></li>
+</ul>
+</details>
+</section>
+<section id="example-12-changing-flux-density-through-a-square-coil-20.2-sq-medium-q3" class="level3 question-card">
+<h3 class="anchored" data-anchor-id="example-12-changing-flux-density-through-a-square-coil-20.2-sq-medium-q3">Example 12 · Changing flux density through a square coil · 20.2 SQ Medium Q3</h3>
+<p><strong>(a)</strong> Define magnetic flux linkage. <code>[2 marks]</code></p>
+<p><strong>(b)</strong> A stationary square coil, side <span class="math inline">\(10\ \mathrm{cm}\)</span> and 5 turns, has its plane perpendicular to the field.</p>
+<p><img src="../assets/questions/magnetic-fields/square-coil-in-field.webp" class="question-figure img-fluid" alt="Five-turn square coil in a field into the page"></p>
+<p>Flux density varies as shown.</p>
+<p><img src="../assets/questions/magnetic-fields/flux-density-time-graph.webp" class="question-figure img-fluid" alt="Flux density rising linearly to 200 mT at 0.30 s"></p>
+<p>Determine flux linkage at <span class="math inline">\(t=0.30\ \mathrm{s}\)</span>, with unit. <code>[3 marks]</code></p>
+<p><strong>(c)(i)</strong> State how the graph shows induced e.m.f. is constant from 0 to <span class="math inline">\(0.30\ \mathrm{s}\)</span>. <code>[1]</code> <strong>(ii)</strong> Calculate its magnitude. <code>[2]</code> <code>[3 marks]</code></p>
+<p><strong>(d)</strong> The procedure is repeated with coil terminals connected. State and explain the effect on the coil. <code>[3 marks]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<ul>
+<li><strong>(a)</strong> Product of magnetic flux through one turn and number of turns. <code>[2]</code></li>
+<li><strong>(b)</strong> <span class="math inline">\(N\Phi=NBA=5(0.200)(0.10^2)=1.0\times10^{-2}\ \mathrm{Wb\ turns}\)</span>. <code>[3]</code></li>
+<li><strong>(c)(i)</strong> <span class="math inline">\(B\)</span> and hence linkage change linearly, so their gradient is constant. <code>[1]</code></li>
+<li><strong>(c)(ii)</strong> <span class="math inline">\(|\mathcal E|=\Delta(N\Phi)/\Delta t=0.010/0.30=3.3\times10^{-2}\ \mathrm{V}\)</span>. <code>[2]</code></li>
+<li><strong>(d)</strong> Induced e.m.f. drives current. Forces act on current-carrying sides in the field, forcing opposite sides inward; alternatively, resistive heating raises coil temperature. <code>[3]</code></li>
+</ul>
+</details>
+</section>
+</section>
+<section id="chapter-self-check" class="level2">
+<h2 class="anchored" data-anchor-id="chapter-self-check">Chapter self-check</h2>
+<ul>
+<li>Can you use both hand rules without confusing conventional current and electron flow?</li>
+<li>Can you identify when magnetic force is zero or maximum?</li>
+<li>Can you derive the radius of a charged particle’s circular path?</li>
+<li>Can you explain Hall voltage from charge separation?</li>
+<li>Can you sketch wire, coil and solenoid field patterns?</li>
+<li>Can you distinguish magnetic flux from flux linkage?</li>
+<li>Can you use the area and the correct angle in <span class="math inline">\(\Phi=BA\cos\theta\)</span>?</li>
+<li>Can you explain the minus sign in Faraday-Lenz law?</li>
+</ul>
+<section id="original-topic-pdfs" class="level3">
+<h3 class="anchored" data-anchor-id="original-topic-pdfs">Original topic PDFs</h3>
+<ul>
+<li><a href="../resources/original-papers/magnetic-fields/20.1 Magnetic Fields - Easy.pdf.pdf">20.1 Magnetic Fields - Easy</a></li>
+<li><a href="../resources/original-papers/magnetic-fields/20.1 Magnetic Fields - Medium.pdf.pdf">20.1 Magnetic Fields - Medium</a></li>
+<li><a href="../resources/original-papers/magnetic-fields/20.2 Electromagnetic Induction - Easy.pdf.pdf">20.2 Electromagnetic Induction - Easy</a></li>
+<li><a href="../resources/original-papers/magnetic-fields/20.2 Electromagnetic Induction - Medium.pdf.pdf">20.2 Electromagnetic Induction - Medium</a></li>
+</ul>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll(".done-toggle input").forEach((input) => {
+    const key = `cie-physics-${input.dataset.progress}`;
+    input.checked = localStorage.getItem(key) === "true";
+    input.closest(".question-card")?.classList.toggle("is-complete", input.checked);
+    input.addEventListener("change", () => {
+      localStorage.setItem(key, input.checked);
+      input.closest(".question-card")?.classList.toggle("is-complete", input.checked);
+    });
+  });
+
+  document.querySelectorAll(".mc-question").forEach((card) => {
+    const answer = card.dataset.answer;
+    const feedback = card.querySelector(".mc-feedback");
+    const check = card.querySelector(".check-answer");
+    let selected = localStorage.getItem(`cie-physics-${card.id}-choice`) || "";
+
+    const showSelection = () => {
+      card.querySelectorAll(".mc-choice").forEach((choice) => {
+        choice.classList.toggle("is-selected", choice.dataset.choice === selected);
+      });
+    };
+    showSelection();
+
+    card.querySelectorAll(".mc-choice").forEach((choice) => {
+      choice.addEventListener("click", () => {
+        selected = choice.dataset.choice;
+        localStorage.setItem(`cie-physics-${card.id}-choice`, selected);
+        feedback.textContent = "";
+        feedback.className = "mc-feedback";
+        showSelection();
+      });
+    });
+
+    check?.addEventListener("click", () => {
+      if (!selected) {
+        feedback.textContent = "Select an answer first.";
+        feedback.className = "mc-feedback is-pending";
+        return;
+      }
+      const correct = selected === answer;
+      feedback.textContent = correct ? "Correct." : `Not quite. The correct answer is ${answer}.`;
+      feedback.className = `mc-feedback ${correct ? "is-correct" : "is-incorrect"}`;
+    });
+  });
+});
+</script>
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "已复制");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "已复制");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../a-level/19-capacitance.html" class="pagination-link" aria-label="19 Capacitance">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">19 Capacitance</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../a-level/21-alternating-currents.html" class="pagination-link" aria-label="21 Alternating currents">
+        <span class="nav-page-text">21 Alternating currents</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>

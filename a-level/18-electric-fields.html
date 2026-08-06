@@ -1,0 +1,1244 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-Hans" xml:lang="zh-Hans"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.38">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>18 Electric fields – CIE Physics 9702</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../a-level/19-capacitance.html" rel="next">
+<link href="../a-level/17-oscillations.html" rel="prev">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-a2a938b4dd5711f7a799c87bd16ba44c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "没有结果",
+    "search-matching-documents-text": "匹配的文档",
+    "search-copy-link-title": "复制搜索链接",
+    "search-hide-matches-text": "隐藏其它匹配结果",
+    "search-more-match-text": "更多匹配结果",
+    "search-more-matches-text": "更多匹配结果",
+    "search-clear-button-title": "清除",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "取消",
+    "search-submit-button-title": "提交",
+    "search-label": "搜索"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../styles.css">
+</head>
+
+<body class="nav-sidebar docked quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="展开或折叠侧边栏导航" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../a-level/12-motion-in-a-circle.html">A Level</a></li><li class="breadcrumb-item"><a href="../a-level/18-electric-fields.html">18 Electric fields</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="展开或折叠侧边栏导航" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="搜索" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">CIE Physics 9702</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="搜索"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">学习首页</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">AS Level</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="展开或折叠此栏">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../as-level/01-physical-quantities-and-units.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">1 Physical quantities and units</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../as-level/02-kinematics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2 Kinematics</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../as-level/03-dynamics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">3 Dynamics</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">A Level</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="展开或折叠此栏">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/12-motion-in-a-circle.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">12 Motion in a circle</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/13-gravitational-fields.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">13 Gravitational fields</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/14-temperature.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">14 Temperature</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/15-ideal-gases.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">15 Ideal gases</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/16-thermodynamics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">16 Thermodynamics</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/17-oscillations.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">17 Oscillations</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/18-electric-fields.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">18 Electric fields</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/19-capacitance.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">19 Capacitance</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/20-magnetic-fields.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">20 Magnetic fields</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/21-alternating-currents.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">21 Alternating currents</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/22-quantum-physics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">22 Quantum physics</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/23-nuclear-physics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">23 Nuclear physics</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/24-medical-physics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">24 Medical physics</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/25-astronomy-and-cosmology.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">25 Astronomy and cosmology</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">该页面内容</h2>
+   
+  <ul>
+  <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link active" data-scroll-target="#learning-objectives">Learning objectives</a></li>
+  <li><a href="#electric-fields-and-field-lines" id="toc-electric-fields-and-field-lines" class="nav-link" data-scroll-target="#electric-fields-and-field-lines">18.1 Electric fields and field lines</a>
+  <ul class="collapse">
+  <li><a href="#electric-field-and-electric-field-strength" id="toc-electric-field-and-electric-field-strength" class="nav-link" data-scroll-target="#electric-field-and-electric-field-strength">Electric field and electric field strength</a></li>
+  <li><a href="#force-on-a-charge" id="toc-force-on-a-charge" class="nav-link" data-scroll-target="#force-on-a-charge">Force on a charge</a></li>
+  <li><a href="#rules-for-electric-field-lines" id="toc-rules-for-electric-field-lines" class="nav-link" data-scroll-target="#rules-for-electric-field-lines">Rules for electric field lines</a></li>
+  </ul></li>
+  <li><a href="#uniform-electric-fields" id="toc-uniform-electric-fields" class="nav-link" data-scroll-target="#uniform-electric-fields">18.2 Uniform electric fields</a>
+  <ul class="collapse">
+  <li><a href="#field-between-parallel-plates" id="toc-field-between-parallel-plates" class="nav-link" data-scroll-target="#field-between-parallel-plates">Field between parallel plates</a></li>
+  <li><a href="#motion-parallel-to-the-field" id="toc-motion-parallel-to-the-field" class="nav-link" data-scroll-target="#motion-parallel-to-the-field">Motion parallel to the field</a></li>
+  <li><a href="#motion-entering-across-the-field" id="toc-motion-entering-across-the-field" class="nav-link" data-scroll-target="#motion-entering-across-the-field">Motion entering across the field</a></li>
+  </ul></li>
+  <li><a href="#electric-force-between-point-charges" id="toc-electric-force-between-point-charges" class="nav-link" data-scroll-target="#electric-force-between-point-charges">18.3 Electric force between point charges</a>
+  <ul class="collapse">
+  <li><a href="#point-charge-approximation" id="toc-point-charge-approximation" class="nav-link" data-scroll-target="#point-charge-approximation">Point-charge approximation</a></li>
+  <li><a href="#coulombs-law" id="toc-coulombs-law" class="nav-link" data-scroll-target="#coulombs-law">Coulomb’s law</a></li>
+  <li><a href="#inverse-square-behaviour-and-superposition" id="toc-inverse-square-behaviour-and-superposition" class="nav-link" data-scroll-target="#inverse-square-behaviour-and-superposition">Inverse-square behaviour and superposition</a></li>
+  </ul></li>
+  <li><a href="#electric-field-of-a-point-charge" id="toc-electric-field-of-a-point-charge" class="nav-link" data-scroll-target="#electric-field-of-a-point-charge">18.4 Electric field of a point charge</a>
+  <ul class="collapse">
+  <li><a href="#radial-electric-field" id="toc-radial-electric-field" class="nav-link" data-scroll-target="#radial-electric-field">Radial electric field</a></li>
+  <li><a href="#superposition-of-electric-fields" id="toc-superposition-of-electric-fields" class="nav-link" data-scroll-target="#superposition-of-electric-fields">Superposition of electric fields</a></li>
+  </ul></li>
+  <li><a href="#electric-potential" id="toc-electric-potential" class="nav-link" data-scroll-target="#electric-potential">18.5 Electric potential</a>
+  <ul class="collapse">
+  <li><a href="#definition-and-sign" id="toc-definition-and-sign" class="nav-link" data-scroll-target="#definition-and-sign">Definition and sign</a></li>
+  <li><a href="#potential-due-to-point-charges" id="toc-potential-due-to-point-charges" class="nav-link" data-scroll-target="#potential-due-to-point-charges">Potential due to point charges</a></li>
+  <li><a href="#potential-gradient" id="toc-potential-gradient" class="nav-link" data-scroll-target="#potential-gradient">Potential gradient</a></li>
+  <li><a href="#equipotential-surfaces" id="toc-equipotential-surfaces" class="nav-link" data-scroll-target="#equipotential-surfaces">Equipotential surfaces</a></li>
+  <li><a href="#electric-potential-energy" id="toc-electric-potential-energy" class="nav-link" data-scroll-target="#electric-potential-energy">Electric potential energy</a></li>
+  </ul></li>
+  <li><a href="#structured-questions" id="toc-structured-questions" class="nav-link" data-scroll-target="#structured-questions">Structured Questions</a>
+  <ul class="collapse">
+  <li><a href="#electric-fields---medium" id="toc-electric-fields---medium" class="nav-link" data-scroll-target="#electric-fields---medium">18.1 Electric Fields - Medium</a></li>
+  <li><a href="#example-1-coulombs-law-18.1-sq-medium-q1" id="toc-example-1-coulombs-law-18.1-sq-medium-q1" class="nav-link" data-scroll-target="#example-1-coulombs-law-18.1-sq-medium-q1">Example 1 · Coulomb’s law · 18.1 SQ Medium Q1</a></li>
+  <li><a href="#example-2-forces-between-point-charges-18.1-sq-medium-q2" id="toc-example-2-forces-between-point-charges-18.1-sq-medium-q2" class="nav-link" data-scroll-target="#example-2-forces-between-point-charges-18.1-sq-medium-q2">Example 2 · Forces between point charges · 18.1 SQ Medium Q2</a></li>
+  <li><a href="#example-3-parallel-plates-and-electron-deflection-18.1-sq-medium-q3" id="toc-example-3-parallel-plates-and-electron-deflection-18.1-sq-medium-q3" class="nav-link" data-scroll-target="#example-3-parallel-plates-and-electron-deflection-18.1-sq-medium-q3">Example 3 · Parallel plates and electron deflection · 18.1 SQ Medium Q3</a></li>
+  <li><a href="#electric-potential---medium" id="toc-electric-potential---medium" class="nav-link" data-scroll-target="#electric-potential---medium">18.2 Electric Potential - Medium</a></li>
+  <li><a href="#example-4-electric-field-and-potential-gradient-between-spheres-18.2-sq-medium-q1" id="toc-example-4-electric-field-and-potential-gradient-between-spheres-18.2-sq-medium-q1" class="nav-link" data-scroll-target="#example-4-electric-field-and-potential-gradient-between-spheres-18.2-sq-medium-q1">Example 4 · Electric field and potential gradient between spheres · 18.2 SQ Medium Q1</a></li>
+  <li><a href="#example-5-charged-sphere-and-electric-potential-energy-18.2-sq-medium-q2" id="toc-example-5-charged-sphere-and-electric-potential-energy-18.2-sq-medium-q2" class="nav-link" data-scroll-target="#example-5-charged-sphere-and-electric-potential-energy-18.2-sq-medium-q2">Example 5 · Charged sphere and electric potential energy · 18.2 SQ Medium Q2</a></li>
+  <li><a href="#example-6-potential-due-to-two-point-charges-18.2-sq-medium-q3" id="toc-example-6-potential-due-to-two-point-charges-18.2-sq-medium-q3" class="nav-link" data-scroll-target="#example-6-potential-due-to-two-point-charges-18.2-sq-medium-q3">Example 6 · Potential due to two point charges · 18.2 SQ Medium Q3</a></li>
+  </ul></li>
+  <li><a href="#chapter-self-check" id="toc-chapter-self-check" class="nav-link" data-scroll-target="#chapter-self-check">Chapter self-check</a>
+  <ul class="collapse">
+  <li><a href="#original-topic-pdfs" id="toc-original-topic-pdfs" class="nav-link" data-scroll-target="#original-topic-pdfs">Original topic PDFs</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../a-level/12-motion-in-a-circle.html">A Level</a></li><li class="breadcrumb-item"><a href="../a-level/18-electric-fields.html">18 Electric fields</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">18 Electric fields</h1>
+<p class="subtitle lead">Field lines, uniform fields, point charges, electric potential and potential energy</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="learning-objectives" class="level2">
+<h2 class="anchored" data-anchor-id="learning-objectives">Learning objectives</h2>
+<p>By the end of this chapter, you should be able to:</p>
+<ul>
+<li>define electric field strength as force per unit positive charge and use <span class="math inline">\(F=qE\)</span>;</li>
+<li>draw and interpret electric field lines;</li>
+<li>use <span class="math inline">\(E=\Delta V/\Delta d\)</span> for a uniform field between parallel plates;</li>
+<li>describe the motion of charged particles in a uniform electric field;</li>
+<li>apply Coulomb’s law to point charges and charged spheres;</li>
+<li>calculate the electric field strength due to a point charge;</li>
+<li>define and calculate electric potential;</li>
+<li>connect electric field strength with potential gradient;</li>
+<li>calculate the electric potential energy of two point charges.</li>
+</ul>
+</section>
+<section id="electric-fields-and-field-lines" class="level2">
+<h2 class="anchored" data-anchor-id="electric-fields-and-field-lines">18.1 Electric fields and field lines</h2>
+<section id="electric-field-and-electric-field-strength" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="electric-field-and-electric-field-strength">Electric field and electric field strength</h3>
+<p>An electric field is a region of space in which an electric charge experiences an electrostatic force. Electric field strength at a point is the force per unit positive charge acting on a stationary test charge at that point:</p>
+<p><span class="math display">\[E=\frac{F}{q}.\]</span></p>
+<p>Electric field strength is a vector. Its SI unit is <span class="math inline">\(\mathrm{N\ C^{-1}}\)</span>, which is equivalent to <span class="math inline">\(\mathrm{V\ m^{-1}}\)</span>.</p>
+<p>The word <strong>positive</strong> in the definition fixes the field direction. A positive charge experiences a force in the field direction; a negative charge experiences a force in the opposite direction.</p>
+</section>
+<section id="force-on-a-charge" class="level3 formula-panel">
+<h3 class="anchored" data-anchor-id="force-on-a-charge">Force on a charge</h3>
+<p>The force on charge <span class="math inline">\(q\)</span> in an electric field is</p>
+<p><span class="math display">\[\vec F=q\vec E.\]</span></p>
+<ul>
+<li>For <span class="math inline">\(q&gt;0\)</span>, <span class="math inline">\(\vec F\)</span> is parallel to <span class="math inline">\(\vec E\)</span>.</li>
+<li>For <span class="math inline">\(q&lt;0\)</span>, <span class="math inline">\(\vec F\)</span> is antiparallel to <span class="math inline">\(\vec E\)</span>.</li>
+<li>The force magnitude is <span class="math inline">\(|F|=|q|E\)</span>.</li>
+</ul>
+<p>In a uniform field the force is constant, so a particle of mass <span class="math inline">\(m\)</span> has constant acceleration</p>
+<p><span class="math display">\[\vec a=\frac{q\vec E}{m}.\]</span></p>
+</section>
+<section id="rules-for-electric-field-lines" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="rules-for-electric-field-lines">Rules for electric field lines</h3>
+<ul>
+<li>Arrows show the direction of force on a positive test charge.</li>
+<li>Lines leave positive charges and enter negative charges.</li>
+<li>Field lines meet a conducting surface at right angles.</li>
+<li>Lines never cross, because the field cannot have two directions at one point.</li>
+<li>Closer line spacing represents a stronger field.</li>
+<li>Equally spaced, parallel lines represent a uniform field.</li>
+</ul>
+<p>A positive point charge produces radial outward lines; a negative point charge produces radial inward lines. Between oppositely charged parallel plates, lines are straight, parallel and directed from the positive plate to the negative plate, except near the edges where fringing occurs.</p>
+</section>
+</section>
+<section id="uniform-electric-fields" class="level2">
+<h2 class="anchored" data-anchor-id="uniform-electric-fields">18.2 Uniform electric fields</h2>
+<section id="field-between-parallel-plates" class="level3 formula-panel">
+<h3 class="anchored" data-anchor-id="field-between-parallel-plates">Field between parallel plates</h3>
+<p>For a uniform field between parallel plates,</p>
+<p><span class="math display">\[E=\frac{|\Delta V|}{\Delta d},\]</span></p>
+<p>where <span class="math inline">\(\Delta V\)</span> is the potential difference and <span class="math inline">\(\Delta d\)</span> is the perpendicular plate separation. Use metres for separation.</p>
+<p>Increasing the potential difference increases the field strength; increasing the separation reduces it. This equation applies to a uniform field, not directly to the radial field of a point charge.</p>
+</section>
+<section id="motion-parallel-to-the-field" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="motion-parallel-to-the-field">Motion parallel to the field</h3>
+<p>A charged particle released from rest in a uniform field undergoes constant acceleration. A positive particle accelerates towards lower potential, in the field direction. A negative particle accelerates towards higher potential, opposite to the field direction.</p>
+<p>If the particle moves through a potential difference, energy conservation may be written as</p>
+<p><span class="math display">\[\Delta E_{\mathrm{k}}=-\Delta E_{\mathrm{p}}=-q\Delta V.\]</span></p>
+<p>The signs should be interpreted carefully: the electric potential energy of a negative charge decreases when it moves to a higher electric potential.</p>
+</section>
+<section id="motion-entering-across-the-field" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="motion-entering-across-the-field">Motion entering across the field</h3>
+<p>When a particle enters a uniform field with velocity perpendicular to the field:</p>
+<ul>
+<li>the velocity component perpendicular to the force remains constant;</li>
+<li>the velocity component parallel to the force changes uniformly;</li>
+<li>the path inside the field is parabolic;</li>
+<li>after leaving the field, the particle travels in a straight line tangent to the path at the exit.</li>
+</ul>
+<p>Greater <span class="math inline">\(|q|\)</span> or <span class="math inline">\(E\)</span> gives more deflection. Greater mass or entry speed gives less deflection. An uncharged particle is not deflected.</p>
+</section>
+</section>
+<section id="electric-force-between-point-charges" class="level2">
+<h2 class="anchored" data-anchor-id="electric-force-between-point-charges">18.3 Electric force between point charges</h2>
+<section id="point-charge-approximation" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="point-charge-approximation">Point-charge approximation</h3>
+<p>For a point outside a uniformly charged spherical conductor, the sphere’s charge may be treated as a point charge at its centre. Distances in Coulomb’s law must therefore be measured between the centres of the charges or spheres.</p>
+<p>This approximation does not describe the field inside the conducting material. In electrostatic equilibrium, the electric field inside a conductor is zero and its potential is constant.</p>
+</section>
+<section id="coulombs-law" class="level3 formula-panel">
+<h3 class="anchored" data-anchor-id="coulombs-law">Coulomb’s law</h3>
+<p>The magnitude of the electrostatic force between two point charges in free space is</p>
+<p><span class="math display">\[F=\frac{|Q_1Q_2|}{4\pi\varepsilon_0r^2}=k\frac{|Q_1Q_2|}{r^2},\]</span></p>
+<p>where</p>
+<p><span class="math display">\[k=\frac{1}{4\pi\varepsilon_0}\approx8.99\times10^9\ \mathrm{N\ m^2\ C^{-2}}.\]</span></p>
+<p>The force acts along the line joining the charges. Like charges repel and unlike charges attract. The two charges exert forces of equal magnitude and opposite direction on one another.</p>
+</section>
+<section id="inverse-square-behaviour-and-superposition" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="inverse-square-behaviour-and-superposition">Inverse-square behaviour and superposition</h3>
+<p>For fixed charges, <span class="math inline">\(F\propto1/r^2\)</span>. Doubling the separation reduces the force to one quarter.</p>
+<p>With more than two charges, calculate the force due to each source separately and add the forces as vectors. Resolve components when the forces are not collinear; do not simply add their magnitudes.</p>
+</section>
+</section>
+<section id="electric-field-of-a-point-charge" class="level2">
+<h2 class="anchored" data-anchor-id="electric-field-of-a-point-charge">18.4 Electric field of a point charge</h2>
+<section id="radial-electric-field" class="level3 formula-panel">
+<h3 class="anchored" data-anchor-id="radial-electric-field">Radial electric field</h3>
+<p>The electric field due to point charge <span class="math inline">\(Q\)</span> at distance <span class="math inline">\(r\)</span> in free space is</p>
+<p><span class="math display">\[\vec E=\frac{Q}{4\pi\varepsilon_0r^2}\hat r.\]</span></p>
+<p>Its magnitude is</p>
+<p><span class="math display">\[E=\frac{|Q|}{4\pi\varepsilon_0r^2}.\]</span></p>
+<p>For <span class="math inline">\(Q&gt;0\)</span>, the field points radially outwards; for <span class="math inline">\(Q&lt;0\)</span>, it points radially inwards. Because <span class="math inline">\(E\propto1/r^2\)</span>, doubling <span class="math inline">\(r\)</span> reduces <span class="math inline">\(E\)</span> to one quarter.</p>
+</section>
+<section id="superposition-of-electric-fields" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="superposition-of-electric-fields">Superposition of electric fields</h3>
+<p>Electric fields add as vectors:</p>
+<p><span class="math display">\[\vec E_{\mathrm{resultant}}=\sum_i\vec E_i.\]</span></p>
+<p>At a point between like charges, the individual fields oppose each other. Between unlike charges, they point in the same direction. A zero-field point depends on both charge magnitudes and geometry and need not lie halfway between the charges.</p>
+</section>
+</section>
+<section id="electric-potential" class="level2">
+<h2 class="anchored" data-anchor-id="electric-potential">18.5 Electric potential</h2>
+<section id="definition-and-sign" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="definition-and-sign">Definition and sign</h3>
+<p>Electric potential at a point is the work done per unit positive charge in bringing a small test charge from infinity to that point:</p>
+<p><span class="math display">\[V=\frac{W}{q}.\]</span></p>
+<p>Potential is a scalar measured in volts, where <span class="math inline">\(1\ \mathrm{V}=1\ \mathrm{J\ C^{-1}}\)</span>. Taking <span class="math inline">\(V=0\)</span> at infinity, potential is positive near an isolated positive charge and negative near an isolated negative charge.</p>
+<p>Because potential is scalar, contributions from several charges are added algebraically, including their signs.</p>
+</section>
+<section id="potential-due-to-point-charges" class="level3 formula-panel">
+<h3 class="anchored" data-anchor-id="potential-due-to-point-charges">Potential due to point charges</h3>
+<p>For a point charge <span class="math inline">\(Q\)</span>,</p>
+<p><span class="math display">\[V=\frac{Q}{4\pi\varepsilon_0r}.\]</span></p>
+<p>For several point charges,</p>
+<p><span class="math display">\[V=\sum_i\frac{Q_i}{4\pi\varepsilon_0r_i}.\]</span></p>
+<p>Potential varies as <span class="math inline">\(1/r\)</span>, whereas field strength varies as <span class="math inline">\(1/r^2\)</span>. Outside a charged spherical conductor, use the same expression with <span class="math inline">\(r\)</span> measured from the centre. Inside the conductor, potential is constant and equal to the surface potential.</p>
+</section>
+<section id="potential-gradient" class="level3 formula-panel">
+<h3 class="anchored" data-anchor-id="potential-gradient">Potential gradient</h3>
+<p>Electric field strength is the negative potential gradient:</p>
+<p><span class="math display">\[E=-\frac{dV}{dr}\]</span></p>
+<p>along a chosen direction. For a uniform field this becomes</p>
+<p><span class="math display">\[E=-\frac{\Delta V}{\Delta d}.\]</span></p>
+<p>Potential decreases in the direction of the electric field. On a <span class="math inline">\(V\)</span>-<span class="math inline">\(r\)</span> graph, the magnitude of the gradient at a point gives the field strength there.</p>
+</section>
+<section id="equipotential-surfaces" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="equipotential-surfaces">Equipotential surfaces</h3>
+<p>An equipotential surface joins points of equal potential. Moving a charge along an equipotential requires no work because <span class="math inline">\(\Delta V=0\)</span>.</p>
+<p>Equipotentials are always perpendicular to electric field lines. They are equally spaced in a uniform field and form concentric spherical surfaces around an isolated point charge.</p>
+</section>
+<section id="electric-potential-energy" class="level3 formula-panel">
+<h3 class="anchored" data-anchor-id="electric-potential-energy">Electric potential energy</h3>
+<p>The potential energy of charge <span class="math inline">\(q\)</span> at potential <span class="math inline">\(V\)</span> is</p>
+<p><span class="math display">\[E_{\mathrm{p}}=qV.\]</span></p>
+<p>For two point charges,</p>
+<p><span class="math display">\[E_{\mathrm{p}}=\frac{Qq}{4\pi\varepsilon_0r}.\]</span></p>
+<p>The sign matters. Like charges have positive potential energy; unlike charges have negative potential energy when zero is taken at infinity.</p>
+<p>For a movement from <span class="math inline">\(r_1\)</span> to <span class="math inline">\(r_2\)</span>,</p>
+<p><span class="math display">\[\Delta E_{\mathrm{p}}=\frac{Qq}{4\pi\varepsilon_0}\left(\frac{1}{r_2}-\frac{1}{r_1}\right)=q\Delta V.\]</span></p>
+</section>
+</section>
+<section id="structured-questions" class="level2">
+<h2 class="anchored" data-anchor-id="structured-questions">Structured Questions</h2>
+<section id="electric-fields---medium" class="level3">
+<h3 class="anchored" data-anchor-id="electric-fields---medium">18.1 Electric Fields - Medium</h3>
+</section>
+<section id="example-1-coulombs-law-18.1-sq-medium-q1" class="level3 question-card">
+<h3 class="anchored" data-anchor-id="example-1-coulombs-law-18.1-sq-medium-q1">Example 1 · Coulomb’s law · 18.1 SQ Medium Q1</h3>
+<p>State Coulomb’s law. <code>[2 marks]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<ul>
+<li>The electrostatic force between two point charges <code>[1]</code></li>
+<li>is proportional to the product of the charges and inversely proportional to the square of their separation. <code>[1]</code></li>
+</ul>
+<p>Equivalently,</p>
+<span class="math display">\[F=\frac{|Q_1Q_2|}{4\pi\varepsilon_0r^2}.\]</span>
+</details>
+</section>
+<section id="example-2-forces-between-point-charges-18.1-sq-medium-q2" class="level3 question-card">
+<h3 class="anchored" data-anchor-id="example-2-forces-between-point-charges-18.1-sq-medium-q2">Example 2 · Forces between point charges · 18.1 SQ Medium Q2</h3>
+<p><strong>(a)</strong> State what is represented by an electric field line. <code>[2 marks]</code></p>
+<p><strong>(b)</strong> Two point charges A and B are placed <span class="math inline">\(0.014\ \mathrm{mm}\)</span> apart as shown in Fig. 1.1.</p>
+<p><img src="../assets/questions/electric-fields/opposite-point-charges.webp" class="question-figure img-fluid" alt="Positive charge A and negative charge B separated by 0.014 mm"></p>
+<p>The charge of A is <span class="math inline">\(+3.1\ \mathrm{nC}\)</span> and the charge of B is <span class="math inline">\(-6.2\ \mathrm{nC}\)</span>. The charges have the following radii:</p>
+<p><span class="math display">\[r_A=3.2\ \mathrm{pm}\]</span></p>
+<p><span class="math display">\[r_B=4.1\ \mathrm{pm}\]</span></p>
+<p>Determine the magnitude of the force between the two charges. <code>[3 marks]</code></p>
+<p><strong>(c)</strong> The magnitude of the electric forces between the charges is very high.</p>
+<p>State and explain why this is the case. <code>[2 marks]</code></p>
+<p><strong>(d)</strong></p>
+<p><strong>(i)</strong> Draw arrows on Fig. 1.1 to show the direction of the electrostatic force coming from charges A and B. <code>[2]</code></p>
+<p><strong>(ii)</strong> Particle B is replaced by particle C. Particle C has a charge of <span class="math inline">\(+6.2\ \mathrm{nC}\)</span>.</p>
+<p>Describe how the electrostatic force between charges A and C will be different to that between A and B. <code>[2]</code></p>
+<p><strong>(iii)</strong> A positron is placed at point Y, equidistant from both A and B, as shown in Fig. 1.2.</p>
+<p><img src="../assets/questions/electric-fields/positron-between-charges.webp" class="question-figure img-fluid" alt="Positron at Y equidistant from positive A and negative B"></p>
+<p>On Fig. 1.2 draw an arrow representing the direction of the resultant force acting on the positron. <code>[1]</code></p>
+<p><code>[5 marks]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<p><strong>(a)</strong></p>
+<ul>
+<li>The line represents the direction of the electric force <code>[1]</code></li>
+<li>acting on a positive charge. <code>[1]</code></li>
+</ul>
+<p><strong>(b)</strong></p>
+<ul>
+<li><p>The centre-to-centre separation is</p>
+<p><span class="math display">\[r=r_A+r_B+R=(3.2\times10^{-12})+(4.1\times10^{-12})+(0.014\times10^{-3})\approx1.4\times10^{-5}\ \mathrm{m}.\]</span> <code>[1]</code></p></li>
+<li><p>Apply Coulomb’s law using charge magnitudes:</p>
+<p><span class="math display">\[F=(8.99\times10^9)\frac{(3.1\times10^{-9})(6.2\times10^{-9})}{(1.4\times10^{-5})^2}.\]</span> <code>[1]</code></p></li>
+<li><p><span class="math inline">\(F=881.6\ \mathrm{N}\approx880\ \mathrm{N}\)</span> to two significant figures. <code>[1]</code></p></li>
+</ul>
+<p><strong>(c)</strong></p>
+<ul>
+<li>The charges are very close together, so <span class="math inline">\(r\)</span> is very small. <code>[1]</code></li>
+<li>Electrostatic force follows an inverse-square law, <span class="math inline">\(F\propto1/r^2\)</span>. <code>[1]</code></li>
+</ul>
+<p><strong>(d)</strong></p>
+<ul>
+<li><strong>(i)</strong> Draw two equal-length arrows along AB, both labelled <span class="math inline">\(F\)</span> or force. <code>[1]</code></li>
+<li>The arrows point towards each other because the opposite charges attract. <code>[1]</code></li>
+<li><strong>(ii)</strong> A and C are both positive, so the force is repulsive. <code>[1]</code></li>
+<li>The forces are directed away from the other particle rather than towards it. <code>[1]</code></li>
+<li><strong>(iii)</strong> Draw the resultant-force arrow diagonally upwards and to the right of Y, towards the side of B. <code>[1]</code></li>
+</ul>
+</details>
+</section>
+<section id="example-3-parallel-plates-and-electron-deflection-18.1-sq-medium-q3" class="level3 question-card">
+<h3 class="anchored" data-anchor-id="example-3-parallel-plates-and-electron-deflection-18.1-sq-medium-q3">Example 3 · Parallel plates and electron deflection · 18.1 SQ Medium Q3</h3>
+<p><strong>(a)</strong> State what is indicated by the direction of the electric field line. <code>[2 marks]</code></p>
+<p><strong>(b)</strong> Fig. 1.1 shows a pair of parallel metal plates with a potential difference (p.d.) of <span class="math inline">\(3500\ \mathrm{V}\)</span> between them.</p>
+<p><img src="../assets/questions/electric-fields/parallel-plates-field-lines.webp" class="question-figure img-fluid" alt="Parallel plates at 0 V and +3500 V with a labelled separation of 5.4 cm"></p>
+<p>The plates are separated by a distance of <span class="math inline">\(4.6\ \mathrm{cm}\)</span>. The plates are in a vacuum.</p>
+<p>On Fig. 1.1, draw five lines to represent the electric field in the region between the plates. <code>[3 marks]</code></p>
+<p><strong>(c)</strong> Calculate the strength of the electric field between the plates. <code>[2 marks]</code></p>
+<p><strong>(d)</strong> A moving electron eneters the region between the plates from the left, as shown in Fig. 1.2.</p>
+<p><img src="../assets/questions/electric-fields/electron-between-parallel-plates.webp" class="question-figure img-fluid" alt="Electron entering vertically between plates at 0 V and +3500 V"></p>
+<p>The electron is deflected by the electric field.</p>
+<p>On Fig. 1.2, draw a line to show the path of the electron as it moves through and out of the region of the electric field. <code>[2 marks]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<p><strong>(a)</strong></p>
+<ul>
+<li>The direction of a field line indicates the direction of the electrostatic force <code>[1]</code></li>
+<li>on a positive charge. <code>[1]</code></li>
+</ul>
+<p><strong>(b)</strong></p>
+<ul>
+<li>Draw one straight line perpendicular to both plates, starting on one plate and finishing on the other. <code>[1]</code></li>
+<li>Draw five parallel, uniformly spaced straight lines. <code>[1]</code></li>
+<li>Add arrows from the <span class="math inline">\(+3500\ \mathrm{V}\)</span> plate towards the <span class="math inline">\(0\ \mathrm{V}\)</span> plate. <code>[1]</code></li>
+</ul>
+<p><strong>(c)</strong> Following the supplied PDF answer:</p>
+<ul>
+<li>Use <span class="math inline">\(E=\Delta V/\Delta d\)</span>. <code>[1]</code></li>
+<li><span class="math inline">\(E=3500/0.054=6.48\times10^4\ \mathrm{N\ C^{-1}}\approx6.5\times10^4\ \mathrm{N\ C^{-1}}\)</span>. <code>[1]</code></li>
+</ul>
+<blockquote class="blockquote">
+<p><strong>Source-consistency warning:</strong> the original sentence states a separation of <span class="math inline">\(4.6\ \mathrm{cm}\)</span>, but Fig. 1.1 shows <span class="math inline">\(5.4\ \mathrm{cm}\)</span> and the supplied answer uses <span class="math inline">\(5.4\ \mathrm{cm}\)</span>. The result above reproduces the PDF answer. Using the sentence value would give <span class="math inline">\(7.6\times10^4\ \mathrm{N\ C^{-1}}\)</span>.</p>
+</blockquote>
+<p><strong>(d)</strong></p>
+<ul>
+<li>The electron path is straight before entering the field, curves smoothly while between the plates, and is straight again after leaving the field. <code>[1]</code></li>
+<li>The curve deflects towards the positive plate on the right; the outgoing straight path is tangent to the curve at the exit. <code>[1]</code></li>
+</ul>
+</details>
+</section>
+<section id="electric-potential---medium" class="level3">
+<h3 class="anchored" data-anchor-id="electric-potential---medium">18.2 Electric Potential - Medium</h3>
+</section>
+<section id="example-4-electric-field-and-potential-gradient-between-spheres-18.2-sq-medium-q1" class="level3 question-card">
+<h3 class="anchored" data-anchor-id="example-4-electric-field-and-potential-gradient-between-spheres-18.2-sq-medium-q1">Example 4 · Electric field and potential gradient between spheres · 18.2 SQ Medium Q1</h3>
+<p><strong>(a)</strong> Two charged metal spheres A and B are situated in a vacuum, as illustrated in Fig. 4.1.</p>
+<p><img src="../assets/questions/electric-fields/two-spheres-and-point-p.webp" class="question-figure img-fluid" alt="Point P between two charged metal spheres separated by 6.0 cm"></p>
+<p>The shortest distance between the surfaces of the spheres is <span class="math inline">\(6.0\ \mathrm{cm}\)</span>.</p>
+<p>A movable point P lies along the line joining the centres of the two spheres, a distance <span class="math inline">\(x\)</span> from the surface of sphere A.</p>
+<p>The variation with distance <span class="math inline">\(x\)</span> of the electric field <span class="math inline">\(E\)</span> at point P is shown in Fig. 4.2.</p>
+<p><img src="../assets/questions/electric-fields/electric-field-between-spheres.webp" class="question-figure img-fluid" alt="Electric field against distance between charged spheres A and B"></p>
+<p><strong>(i)</strong> Use Fig. 4.2 to explain whether the two spheres have charges of the same, or opposite, sign. <code>[2]</code></p>
+<p><strong>(ii)</strong> A proton is at point P where <span class="math inline">\(x=5.0\ \mathrm{cm}\)</span>.</p>
+<p>Use data from Fig. 4.2 to determine the magnitude of the acceleration of the proton. <code>[3]</code></p>
+<p><code>[5 marks]</code></p>
+<p><strong>(b)</strong> The electric potential gradient is related to the electric field.</p>
+<p>Use data from Fig. 4.2 to state the value of <span class="math inline">\(x\)</span> at which the magnitude of the electric potential gradient is maximum. Give a reason for the value you have chosen. <code>[2 marks]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<p><strong>(a)</strong></p>
+<ul>
+<li><strong>(i)</strong> The field close to A is positive while the field close to B is negative, so the fields are in opposite directions. Alternatively, there is a point between the spheres where the resultant field is zero. <code>[1]</code></li>
+<li>The spheres therefore have charges of the same sign. <code>[1]</code></li>
+<li><strong>(ii)</strong> At <span class="math inline">\(x=5.0\ \mathrm{cm}\)</span>, Fig. 4.2 gives <span class="math inline">\(E=-3.0\times10^3\ \mathrm{V\ m^{-1}}\)</span>, so <span class="math inline">\(|E|=3.0\times10^3\ \mathrm{V\ m^{-1}}\)</span>. <code>[1]</code></li>
+<li>Combining <span class="math inline">\(F=Eq\)</span> and <span class="math inline">\(F=ma\)</span> gives <span class="math inline">\(a=Eq/m\)</span>. <code>[1]</code></li>
+<li><span class="math inline">\(a=(3.0\times10^3)(1.60\times10^{-19})/(1.67\times10^{-27})=2.9\times10^{11}\ \mathrm{m\ s^{-2}}\)</span>. <code>[1]</code></li>
+</ul>
+<p><strong>(b)</strong></p>
+<ul>
+<li>The magnitude of electric field strength is equal to the magnitude of the potential gradient. <code>[1]</code></li>
+<li>The greatest magnitude of <span class="math inline">\(E\)</span> on Fig. 4.2 occurs at <span class="math inline">\(x=6.0\ \mathrm{cm}\)</span>, so the magnitude of the potential gradient is maximum there. <code>[1]</code></li>
+</ul>
+</details>
+</section>
+<section id="example-5-charged-sphere-and-electric-potential-energy-18.2-sq-medium-q2" class="level3 question-card">
+<h3 class="anchored" data-anchor-id="example-5-charged-sphere-and-electric-potential-energy-18.2-sq-medium-q2">Example 5 · Charged sphere and electric potential energy · 18.2 SQ Medium Q2</h3>
+<p><strong>(a)</strong> Define electric potential at a point. <code>[2 marks]</code></p>
+<p><strong>(b)</strong> An isolated conducting sphere is charged. Fig. 1.1 shows the variation of the potential <span class="math inline">\(V\)</span> due to the sphere with displacement <span class="math inline">\(r\)</span> from its centre.</p>
+<p><img src="../assets/questions/electric-fields/sphere-potential-distance.webp" class="question-figure img-fluid" alt="Electric potential against displacement from the centre of a negatively charged sphere"></p>
+<p>Use Fig. 1.1 to determine:</p>
+<p><strong>(i)</strong> the radius of the sphere; <code>[1]</code></p>
+<p><strong>(ii)</strong> the charge on the sphere. <code>[2]</code></p>
+<p><code>[3 marks]</code></p>
+<p><strong>(c)</strong> Two spheres are identical to the sphere in <strong>(b)</strong> with the same charge.</p>
+<p>The spheres are held in a vacuum so that their centres are separated by a distance of <span class="math inline">\(0.52\ \mathrm{m}\)</span>.</p>
+<p>Assume that the charge on each sphere is a point charge at the centre of the sphere.</p>
+<p>Calculate the electric potential energy <span class="math inline">\(E_{\mathrm{P}}\)</span> of the two spheres. <code>[2 marks]</code></p>
+<p><strong>(d)</strong> The two spheres are now released simultaneously so that they are free to move.</p>
+<p>Describe and explain the subsequent motion of the spheres. <code>[3 marks]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<p><strong>(a)</strong></p>
+<ul>
+<li>Electric potential is the work done per unit charge <code>[1]</code></li>
+<li>in moving a positive charge from infinity to the point. <code>[1]</code></li>
+</ul>
+<p><strong>(b)</strong></p>
+<ul>
+<li><strong>(i)</strong> The flat-potential region extends from <span class="math inline">\(r=-0.12\ \mathrm{m}\)</span> to <span class="math inline">\(r=+0.12\ \mathrm{m}\)</span>, so the radius is <span class="math inline">\(0.12\ \mathrm{m}\)</span>. <code>[1]</code></li>
+<li><strong>(ii)</strong> The surface potential is approximately <span class="math inline">\(-1700\ \mathrm{V}\)</span>. Using <span class="math inline">\(V=kQ/r\)</span>, <code>[1]</code></li>
+<li><span class="math inline">\(Q=Vr/k=(-1700)(0.12)/(8.99\times10^9)=-2.27\times10^{-8}\ \mathrm{C}\)</span>. <code>[1]</code></li>
+</ul>
+<p><strong>(c)</strong></p>
+<ul>
+<li><span class="math inline">\(E_{\mathrm{P}}=kQ^2/r=(8.99\times10^9)(-2.27\times10^{-8})^2/0.52\)</span>. <code>[1]</code></li>
+<li><span class="math inline">\(E_{\mathrm{P}}=8.9\times10^{-6}\ \mathrm{J}\)</span>. <code>[1]</code></li>
+</ul>
+<p><strong>(d)</strong> Any three:</p>
+<ul>
+<li>The spheres have charges of the same sign, so the force is repulsive and they move apart. <code>[1]</code></li>
+<li>The force acts in the direction of motion, so their speeds increase. <code>[1]</code></li>
+<li>Electric potential energy is converted into kinetic energy. <code>[1]</code></li>
+<li>As separation increases, the force and acceleration decrease. <code>[1]</code></li>
+<li>Momentum remains zero overall; since the spheres have equal mass, their velocities are equal in magnitude and opposite in direction. <code>[1]</code></li>
+</ul>
+</details>
+</section>
+<section id="example-6-potential-due-to-two-point-charges-18.2-sq-medium-q3" class="level3 question-card">
+<h3 class="anchored" data-anchor-id="example-6-potential-due-to-two-point-charges-18.2-sq-medium-q3">Example 6 · Potential due to two point charges · 18.2 SQ Medium Q3</h3>
+<p><strong>(a)</strong> Two charges are separated by a distance of <span class="math inline">\(23\ \mathrm{cm}\)</span>, as shown in Fig. 1.1.</p>
+<p><img src="../assets/questions/electric-fields/opposite-charges-potential-axis.webp" class="question-figure img-fluid" alt="Negative and positive point charges separated vertically by 23 cm, with point X 40 cm to the right"></p>
+<p>Calculate the distance, in mm, from the <span class="math inline">\(-22.1\ \mathrm{\mu C}\)</span> to the point between the two charges, where the resultant electric potential is zero. <code>[3 marks]</code></p>
+<p><strong>(b)</strong> Fig. 1.2 shows the axis of an electric potential against distance graph from the <span class="math inline">\(-22.1\ \mathrm{\mu C}\)</span> charge to the <span class="math inline">\(+5.4\ \mathrm{\mu C}\)</span> charge.</p>
+<p><img src="../assets/questions/electric-fields/blank-potential-distance-graph.webp" class="question-figure img-fluid" alt="Blank electric-potential axis from zero to 230 mm"></p>
+<p>Draw the graph on Fig. 1.2 and label any relevant points. <code>[4 marks]</code></p>
+<p><strong>(c)</strong> Point X lies <span class="math inline">\(40\ \mathrm{cm}\)</span> to the right of the <span class="math inline">\(-22.1\ \mathrm{\mu C}\)</span> charge, as shown in Fig. 1.3.</p>
+<p><img src="../assets/questions/electric-fields/opposite-charges-potential-axis.webp" class="question-figure img-fluid" alt="Point X and two point charges used to calculate electric potential"></p>
+<p>Calculate the electric potential at point X due to the <span class="math inline">\(+5.4\ \mathrm{\mu C}\)</span>. <code>[3 marks]</code></p>
+<p><strong>(d)</strong> Calculate the total electric potential at point X. <code>[3 marks]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<p><strong>(a)</strong></p>
+<ul>
+<li><p>Let <span class="math inline">\(x\)</span> be the distance from the <span class="math inline">\(-22.1\ \mathrm{\mu C}\)</span> charge. Since potential is scalar,</p>
+<p><span class="math display">\[k\frac{-22.1\times10^{-6}}{x}+k\frac{5.4\times10^{-6}}{0.23-x}=0.\]</span> <code>[1]</code></p></li>
+<li><p>Rearranging gives <span class="math inline">\((-22.1\times10^{-6})(0.23-x)=(-5.4\times10^{-6})x\)</span>. <code>[1]</code></p></li>
+<li><p><span class="math inline">\(x=0.184\ \mathrm{m}=184\ \mathrm{mm}\)</span>. <code>[1]</code></p></li>
+</ul>
+<p><strong>(b)</strong></p>
+<ul>
+<li>Draw negative potential for <span class="math inline">\(0&lt;x&lt;184\ \mathrm{mm}\)</span>. <code>[1]</code></li>
+<li>Draw positive potential for <span class="math inline">\(184&lt;x&lt;230\ \mathrm{mm}\)</span>. <code>[1]</code></li>
+<li>Show vertical asymptotes at <span class="math inline">\(x=0\)</span> and <span class="math inline">\(x=230\ \mathrm{mm}\)</span>. <code>[1]</code></li>
+<li>Label the zero-potential crossing at <span class="math inline">\(x=184\ \mathrm{mm}\)</span>. <code>[1]</code></li>
+</ul>
+<p><strong>(c)</strong></p>
+<ul>
+<li><p>The distance from the <span class="math inline">\(+5.4\ \mathrm{\mu C}\)</span> charge to X is</p>
+<p><span class="math display">\[r=\sqrt{0.40^2+0.23^2}=0.46\ \mathrm{m}.\]</span> <code>[1]</code></p></li>
+<li><p><span class="math inline">\(V=kQ/r=(8.99\times10^9)(5.4\times10^{-6})/0.46\)</span>. <code>[1]</code></p></li>
+<li><p><span class="math inline">\(V=1.06\times10^5\ \mathrm{J\ C^{-1}}\)</span>. <code>[1]</code></p></li>
+</ul>
+<p><strong>(d)</strong></p>
+<ul>
+<li><p>Potential at X due to the negative charge is</p>
+<p><span class="math display">\[V_1=(8.99\times10^9)\frac{-22.1\times10^{-6}}{0.40}=-4.97\times10^5\ \mathrm{J\ C^{-1}}.\]</span> <code>[1]</code></p></li>
+<li><p>Add the potentials algebraically: <span class="math inline">\(V_{\mathrm{total}}=V_1+V_2\)</span>. <code>[1]</code></p></li>
+<li><p><span class="math inline">\(V_{\mathrm{total}}=-4.97\times10^5+1.06\times10^5=-3.91\times10^5\ \mathrm{J\ C^{-1}}\)</span>. <code>[1]</code></p></li>
+</ul>
+</details>
+</section>
+</section>
+<section id="chapter-self-check" class="level2">
+<h2 class="anchored" data-anchor-id="chapter-self-check">Chapter self-check</h2>
+<ul>
+<li>Can you distinguish field direction from the force direction on a negative charge?</li>
+<li>Can you draw radial and uniform field-line patterns with arrows?</li>
+<li>Can you choose correctly between <span class="math inline">\(E=\Delta V/\Delta d\)</span> and the point-charge equation?</li>
+<li>Do you measure point-charge separation from centre to centre?</li>
+<li>Can you add electric forces and fields as vectors but potentials as scalars?</li>
+<li>Can you distinguish the <span class="math inline">\(1/r^2\)</span> variation of field from the <span class="math inline">\(1/r\)</span> variation of potential?</li>
+<li>Can you use <span class="math inline">\(E=-dV/dr\)</span> and explain the minus sign?</li>
+<li>Can you retain the signs of charges in potential and potential-energy calculations?</li>
+</ul>
+<section id="original-topic-pdfs" class="level3">
+<h3 class="anchored" data-anchor-id="original-topic-pdfs">Original topic PDFs</h3>
+<ul>
+<li><a href="../resources/original-papers/electric-fields/18.1 Electric Fields - Medium.pdf.pdf">18.1 Electric Fields - Medium</a></li>
+<li><a href="../resources/original-papers/electric-fields/18.2 Electric Potential - Medium.pdf.pdf">18.2 Electric Potential - Medium</a></li>
+</ul>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll(".done-toggle input").forEach((input) => {
+    const key = `cie-physics-${input.dataset.progress}`;
+    input.checked = localStorage.getItem(key) === "true";
+    input.closest(".question-card")?.classList.toggle("is-complete", input.checked);
+    input.addEventListener("change", () => {
+      localStorage.setItem(key, input.checked);
+      input.closest(".question-card")?.classList.toggle("is-complete", input.checked);
+    });
+  });
+
+  document.querySelectorAll(".mc-question").forEach((card) => {
+    const answer = card.dataset.answer;
+    const feedback = card.querySelector(".mc-feedback");
+    const check = card.querySelector(".check-answer");
+    let selected = localStorage.getItem(`cie-physics-${card.id}-choice`) || "";
+
+    const showSelection = () => {
+      card.querySelectorAll(".mc-choice").forEach((choice) => {
+        choice.classList.toggle("is-selected", choice.dataset.choice === selected);
+      });
+    };
+    showSelection();
+
+    card.querySelectorAll(".mc-choice").forEach((choice) => {
+      choice.addEventListener("click", () => {
+        selected = choice.dataset.choice;
+        localStorage.setItem(`cie-physics-${card.id}-choice`, selected);
+        feedback.textContent = "";
+        feedback.className = "mc-feedback";
+        showSelection();
+      });
+    });
+
+    check?.addEventListener("click", () => {
+      if (!selected) {
+        feedback.textContent = "Select an answer first.";
+        feedback.className = "mc-feedback is-pending";
+        return;
+      }
+      const correct = selected === answer;
+      feedback.textContent = correct ? "Correct." : `Not quite. The correct answer is ${answer}.`;
+      feedback.className = `mc-feedback ${correct ? "is-correct" : "is-incorrect"}`;
+    });
+  });
+});
+</script>
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "已复制");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "已复制");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../a-level/17-oscillations.html" class="pagination-link" aria-label="17 Oscillations">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">17 Oscillations</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../a-level/19-capacitance.html" class="pagination-link" aria-label="19 Capacitance">
+        <span class="nav-page-text">19 Capacitance</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>

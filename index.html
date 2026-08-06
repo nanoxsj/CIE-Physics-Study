@@ -73,6 +73,35 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -146,6 +175,101 @@ ul.task-list li input[type="checkbox"] {
 </li>
       </ul>
   </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">A Level</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="展开或折叠此栏">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./a-level/12-motion-in-a-circle.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">12 Motion in a circle</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./a-level/13-gravitational-fields.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">13 Gravitational fields</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./a-level/14-temperature.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">14 Temperature</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./a-level/15-ideal-gases.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">15 Ideal gases</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./a-level/16-thermodynamics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">16 Thermodynamics</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./a-level/17-oscillations.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">17 Oscillations</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./a-level/18-electric-fields.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">18 Electric fields</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./a-level/19-capacitance.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">19 Capacitance</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./a-level/20-magnetic-fields.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">20 Magnetic fields</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./a-level/21-alternating-currents.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">21 Alternating currents</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./a-level/22-quantum-physics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">22 Quantum physics</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./a-level/23-nuclear-physics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">23 Nuclear physics</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./a-level/24-medical-physics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">24 Medical physics</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./a-level/25-astronomy-and-cosmology.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">25 Astronomy and cosmology</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
     </ul>
     </div>
 </nav>
@@ -161,6 +285,20 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#physical-quantities-and-units" id="toc-physical-quantities-and-units" class="nav-link" data-scroll-target="#physical-quantities-and-units">1 Physical quantities and units</a></li>
   <li><a href="#dynamics" id="toc-dynamics" class="nav-link" data-scroll-target="#dynamics">3 Dynamics</a></li>
   <li><a href="#kinematics" id="toc-kinematics" class="nav-link" data-scroll-target="#kinematics">2 Kinematics</a></li>
+  <li><a href="#motion-in-a-circle" id="toc-motion-in-a-circle" class="nav-link" data-scroll-target="#motion-in-a-circle">12 Motion in a circle</a></li>
+  <li><a href="#gravitational-fields" id="toc-gravitational-fields" class="nav-link" data-scroll-target="#gravitational-fields">13 Gravitational fields</a></li>
+  <li><a href="#temperature" id="toc-temperature" class="nav-link" data-scroll-target="#temperature">14 Temperature</a></li>
+  <li><a href="#ideal-gases" id="toc-ideal-gases" class="nav-link" data-scroll-target="#ideal-gases">15 Ideal gases</a></li>
+  <li><a href="#thermodynamics" id="toc-thermodynamics" class="nav-link" data-scroll-target="#thermodynamics">16 Thermodynamics</a></li>
+  <li><a href="#oscillations" id="toc-oscillations" class="nav-link" data-scroll-target="#oscillations">17 Oscillations</a></li>
+  <li><a href="#electric-fields" id="toc-electric-fields" class="nav-link" data-scroll-target="#electric-fields">18 Electric fields</a></li>
+  <li><a href="#capacitance" id="toc-capacitance" class="nav-link" data-scroll-target="#capacitance">19 Capacitance</a></li>
+  <li><a href="#magnetic-fields" id="toc-magnetic-fields" class="nav-link" data-scroll-target="#magnetic-fields">20 Magnetic fields</a></li>
+  <li><a href="#alternating-currents" id="toc-alternating-currents" class="nav-link" data-scroll-target="#alternating-currents">21 Alternating currents</a></li>
+  <li><a href="#quantum-physics" id="toc-quantum-physics" class="nav-link" data-scroll-target="#quantum-physics">22 Quantum physics</a></li>
+  <li><a href="#nuclear-physics" id="toc-nuclear-physics" class="nav-link" data-scroll-target="#nuclear-physics">23 Nuclear physics</a></li>
+  <li><a href="#medical-physics" id="toc-medical-physics" class="nav-link" data-scroll-target="#medical-physics">24 Medical physics</a></li>
+  <li><a href="#astronomy-and-cosmology" id="toc-astronomy-and-cosmology" class="nav-link" data-scroll-target="#astronomy-and-cosmology">25 Astronomy and cosmology</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -211,6 +349,106 @@ ul.task-list li input[type="checkbox"] {
 <ul>
 <li>2.1 Equations of Motion：位移、速度与加速度；运动图像；SUVAT；自由落体与抛体运动</li>
 <li>同一章节页面内的 Multiple Choice 与 Structured Questions；原始专题 PDF 可直接打开</li>
+</ul>
+</section>
+<section id="motion-in-a-circle" class="level3 topic-card">
+<h3 class="anchored" data-anchor-id="motion-in-a-circle"><a href="./a-level/12-motion-in-a-circle.html">12 Motion in a circle</a></h3>
+<ul>
+<li>12.1 Kinematics of uniform circular motion: radians, angular speed, period, frequency and <span class="math inline">\(v=r\omega\)</span></li>
+<li>12.2 Centripetal acceleration: inward acceleration, centripetal force and circular-motion applications</li>
+<li>8 complete Structured Questions with independently extracted diagrams and PDF-based mark schemes</li>
+</ul>
+</section>
+<section id="gravitational-fields" class="level3 topic-card">
+<h3 class="anchored" data-anchor-id="gravitational-fields"><a href="./a-level/13-gravitational-fields.html">13 Gravitational fields</a></h3>
+<ul>
+<li>13.1–13.4: gravitational fields, Newtonian gravitation, point-mass fields and gravitational potential</li>
+<li>Circular and geostationary orbits, potential-energy changes and orbital-energy calculations</li>
+<li>15 complete Structured Questions, 9 independently extracted diagrams and point-by-point PDF-based answers</li>
+</ul>
+</section>
+<section id="temperature" class="level3 topic-card">
+<h3 class="anchored" data-anchor-id="temperature"><a href="./a-level/14-temperature.html">14 Temperature</a></h3>
+<ul>
+<li>14.1-14.3: thermal equilibrium, thermometric properties, thermodynamic temperature, specific heat capacity and latent heat</li>
+<li>12 selected Structured Questions with independently extracted diagrams and point-by-point PDF-based answers</li>
+</ul>
+</section>
+<section id="ideal-gases" class="level3 topic-card">
+<h3 class="anchored" data-anchor-id="ideal-gases"><a href="./a-level/15-ideal-gases.html">15 Ideal gases</a></h3>
+<ul>
+<li>15.1-15.3: the mole, ideal-gas equations, kinetic-theory assumptions, molecular pressure, r.m.s. speed and translational kinetic energy</li>
+<li>12 selected Structured Questions with independently extracted diagrams and point-by-point PDF-based answers</li>
+</ul>
+</section>
+<section id="thermodynamics" class="level3 topic-card">
+<h3 class="anchored" data-anchor-id="thermodynamics"><a href="./a-level/16-thermodynamics.html">16 Thermodynamics</a></h3>
+<ul>
+<li>16.1-16.2: internal energy, molecular kinetic and potential energies, constant-pressure work and the first law</li>
+<li>All 5 available Structured Questions with independently extracted diagrams and point-by-point PDF-based answers</li>
+</ul>
+</section>
+<section id="oscillations" class="level3 topic-card">
+<h3 class="anchored" data-anchor-id="oscillations"><a href="./a-level/17-oscillations.html">17 Oscillations</a></h3>
+<ul>
+<li>17.1-17.3: simple harmonic motion, SHM energy, damping, forced oscillations and resonance</li>
+<li>All 8 available Structured Questions, 12 independently extracted figures and point-by-point PDF-based answers</li>
+</ul>
+</section>
+<section id="electric-fields" class="level3 topic-card">
+<h3 class="anchored" data-anchor-id="electric-fields"><a href="./a-level/18-electric-fields.html">18 Electric fields</a></h3>
+<ul>
+<li>18.1-18.5: field lines, uniform fields, Coulomb’s law, point-charge fields, electric potential and potential energy</li>
+<li>All 6 available Structured Questions, 9 independently extracted figures and point-by-point PDF-based answers</li>
+</ul>
+</section>
+<section id="capacitance" class="level3 topic-card">
+<h3 class="anchored" data-anchor-id="capacitance"><a href="./a-level/19-capacitance.html">19 Capacitance</a></h3>
+<ul>
+<li>19.1-19.3: capacitance, capacitor combinations, stored energy, time constant and exponential discharge</li>
+<li>All 6 available Structured Questions, 13 independently extracted figures and point-by-point PDF-based answers</li>
+</ul>
+</section>
+<section id="magnetic-fields" class="level3 topic-card">
+<h3 class="anchored" data-anchor-id="magnetic-fields"><a href="./a-level/20-magnetic-fields.html">20 Magnetic fields</a></h3>
+<ul>
+<li>20.1-20.5: magnetic fields and forces, Hall effect, fields due to currents, flux and electromagnetic induction</li>
+<li>All 12 available Structured Questions, 21 independently extracted figures and point-by-point PDF-based answers</li>
+</ul>
+</section>
+<section id="alternating-currents" class="level3 topic-card">
+<h3 class="anchored" data-anchor-id="alternating-currents"><a href="./a-level/21-alternating-currents.html">21 Alternating currents</a></h3>
+<ul>
+<li>21.1-21.2: sinusoidal supplies, r.m.s. values, power, rectification and smoothing</li>
+<li>All 6 available Structured Questions, 14 independently extracted figures and point-by-point PDF-based answers</li>
+</ul>
+</section>
+<section id="quantum-physics" class="level3 topic-card">
+<h3 class="anchored" data-anchor-id="quantum-physics"><a href="./a-level/22-quantum-physics.html">22 Quantum physics</a></h3>
+<ul>
+<li>22.1-22.4: photons, the photoelectric effect, wave-particle duality, atomic energy levels and line spectra</li>
+<li>All 9 available Structured Questions, 10 independently extracted figures and point-by-point PDF-based answers</li>
+</ul>
+</section>
+<section id="nuclear-physics" class="level3 topic-card">
+<h3 class="anchored" data-anchor-id="nuclear-physics"><a href="./a-level/23-nuclear-physics.html">23 Nuclear physics</a></h3>
+<ul>
+<li>23.1-23.2: mass defect, binding energy, fission, fusion and radioactive decay</li>
+<li>All 12 available Structured Questions, 12 independently extracted figures and point-by-point PDF-based answers</li>
+</ul>
+</section>
+<section id="medical-physics" class="level3 topic-card">
+<h3 class="anchored" data-anchor-id="medical-physics"><a href="./a-level/24-medical-physics.html">24 Medical physics</a></h3>
+<ul>
+<li>24.1-24.3: ultrasound transducers and imaging, X-ray production and CT, and PET scanning</li>
+<li>8 selected Structured Questions, 10 independently extracted figures and point-by-point PDF-based answers</li>
+</ul>
+</section>
+<section id="astronomy-and-cosmology" class="level3 topic-card">
+<h3 class="anchored" data-anchor-id="astronomy-and-cosmology"><a href="./a-level/25-astronomy-and-cosmology.html">25 Astronomy and cosmology</a></h3>
+<ul>
+<li>25.1-25.3: standard candles, stellar radii, redshift, Hubble’s law and the Big Bang theory</li>
+<li>8 selected Structured Questions, 5 independently extracted figures and point-by-point PDF-based answers</li>
 </ul>
 </section>
 <p>后续 AS 与 A2 章节将沿用相同结构制作。</p>

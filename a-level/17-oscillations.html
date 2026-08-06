@@ -1,0 +1,1464 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-Hans" xml:lang="zh-Hans"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.38">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>17 Oscillations – CIE Physics 9702</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../a-level/18-electric-fields.html" rel="next">
+<link href="../a-level/16-thermodynamics.html" rel="prev">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-a2a938b4dd5711f7a799c87bd16ba44c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "没有结果",
+    "search-matching-documents-text": "匹配的文档",
+    "search-copy-link-title": "复制搜索链接",
+    "search-hide-matches-text": "隐藏其它匹配结果",
+    "search-more-match-text": "更多匹配结果",
+    "search-more-matches-text": "更多匹配结果",
+    "search-clear-button-title": "清除",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "取消",
+    "search-submit-button-title": "提交",
+    "search-label": "搜索"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../styles.css">
+</head>
+
+<body class="nav-sidebar docked quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="展开或折叠侧边栏导航" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../a-level/12-motion-in-a-circle.html">A Level</a></li><li class="breadcrumb-item"><a href="../a-level/17-oscillations.html">17 Oscillations</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="展开或折叠侧边栏导航" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="搜索" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">CIE Physics 9702</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="搜索"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">学习首页</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">AS Level</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="展开或折叠此栏">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../as-level/01-physical-quantities-and-units.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">1 Physical quantities and units</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../as-level/02-kinematics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2 Kinematics</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../as-level/03-dynamics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">3 Dynamics</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">A Level</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="展开或折叠此栏">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/12-motion-in-a-circle.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">12 Motion in a circle</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/13-gravitational-fields.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">13 Gravitational fields</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/14-temperature.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">14 Temperature</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/15-ideal-gases.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">15 Ideal gases</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/16-thermodynamics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">16 Thermodynamics</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/17-oscillations.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">17 Oscillations</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/18-electric-fields.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">18 Electric fields</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/19-capacitance.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">19 Capacitance</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/20-magnetic-fields.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">20 Magnetic fields</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/21-alternating-currents.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">21 Alternating currents</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/22-quantum-physics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">22 Quantum physics</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/23-nuclear-physics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">23 Nuclear physics</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/24-medical-physics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">24 Medical physics</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/25-astronomy-and-cosmology.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">25 Astronomy and cosmology</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">该页面内容</h2>
+   
+  <ul>
+  <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link active" data-scroll-target="#learning-objectives">Learning objectives</a></li>
+  <li><a href="#simple-harmonic-motion" id="toc-simple-harmonic-motion" class="nav-link" data-scroll-target="#simple-harmonic-motion">17.1 Simple harmonic motion</a>
+  <ul class="collapse">
+  <li><a href="#describing-an-oscillation" id="toc-describing-an-oscillation" class="nav-link" data-scroll-target="#describing-an-oscillation">Describing an oscillation</a></li>
+  <li><a href="#phase-and-phase-difference" id="toc-phase-and-phase-difference" class="nav-link" data-scroll-target="#phase-and-phase-difference">Phase and phase difference</a></li>
+  <li><a href="#defining-condition-for-shm" id="toc-defining-condition-for-shm" class="nav-link" data-scroll-target="#defining-condition-for-shm">Defining condition for SHM</a></li>
+  <li><a href="#displacement-as-a-function-of-time" id="toc-displacement-as-a-function-of-time" class="nav-link" data-scroll-target="#displacement-as-a-function-of-time">Displacement as a function of time</a></li>
+  <li><a href="#velocity-and-speed" id="toc-velocity-and-speed" class="nav-link" data-scroll-target="#velocity-and-speed">Velocity and speed</a></li>
+  <li><a href="#reading-shm-graphs" id="toc-reading-shm-graphs" class="nav-link" data-scroll-target="#reading-shm-graphs">Reading SHM graphs</a></li>
+  </ul></li>
+  <li><a href="#energy-in-simple-harmonic-motion" id="toc-energy-in-simple-harmonic-motion" class="nav-link" data-scroll-target="#energy-in-simple-harmonic-motion">17.2 Energy in simple harmonic motion</a>
+  <ul class="collapse">
+  <li><a href="#energy-interchange" id="toc-energy-interchange" class="nav-link" data-scroll-target="#energy-interchange">Energy interchange</a></li>
+  <li><a href="#total-potential-and-kinetic-energy" id="toc-total-potential-and-kinetic-energy" class="nav-link" data-scroll-target="#total-potential-and-kinetic-energy">Total, potential and kinetic energy</a></li>
+  </ul></li>
+  <li><a href="#damping-forced-oscillations-and-resonance" id="toc-damping-forced-oscillations-and-resonance" class="nav-link" data-scroll-target="#damping-forced-oscillations-and-resonance">17.3 Damping, forced oscillations and resonance</a>
+  <ul class="collapse">
+  <li><a href="#damping" id="toc-damping" class="nav-link" data-scroll-target="#damping">Damping</a></li>
+  <li><a href="#three-damping-regimes" id="toc-three-damping-regimes" class="nav-link" data-scroll-target="#three-damping-regimes">Three damping regimes</a></li>
+  <li><a href="#forced-oscillations" id="toc-forced-oscillations" class="nav-link" data-scroll-target="#forced-oscillations">Forced oscillations</a></li>
+  <li><a href="#resonance" id="toc-resonance" class="nav-link" data-scroll-target="#resonance">Resonance</a></li>
+  </ul></li>
+  <li><a href="#structured-questions" id="toc-structured-questions" class="nav-link" data-scroll-target="#structured-questions">Structured Questions</a>
+  <ul class="collapse">
+  <li><a href="#simple-harmonic-motion---easy" id="toc-simple-harmonic-motion---easy" class="nav-link" data-scroll-target="#simple-harmonic-motion---easy">17.1 Simple Harmonic Motion - Easy</a></li>
+  <li><a href="#example-1-definitions-and-the-oscillating-pendulum-17.1-sq-easy-q1" id="toc-example-1-definitions-and-the-oscillating-pendulum-17.1-sq-easy-q1" class="nav-link" data-scroll-target="#example-1-definitions-and-the-oscillating-pendulum-17.1-sq-easy-q1">Example 1 · Definitions and the oscillating pendulum · 17.1 SQ Easy Q1</a></li>
+  <li><a href="#example-2-equations-and-graphs-of-shm-17.1-sq-easy-q2" id="toc-example-2-equations-and-graphs-of-shm-17.1-sq-easy-q2" class="nav-link" data-scroll-target="#example-2-equations-and-graphs-of-shm-17.1-sq-easy-q2">Example 2 · Equations and graphs of SHM · 17.1 SQ Easy Q2</a></li>
+  <li><a href="#example-3-shm-graph-relationships-and-energy-17.1-sq-easy-q3" id="toc-example-3-shm-graph-relationships-and-energy-17.1-sq-easy-q3" class="nav-link" data-scroll-target="#example-3-shm-graph-relationships-and-energy-17.1-sq-easy-q3">Example 3 · SHM graph relationships and energy · 17.1 SQ Easy Q3</a></li>
+  <li><a href="#simple-harmonic-motion---medium" id="toc-simple-harmonic-motion---medium" class="nav-link" data-scroll-target="#simple-harmonic-motion---medium">17.1 Simple Harmonic Motion - Medium</a></li>
+  <li><a href="#example-4-pendulum-acceleration-displacement-graph-17.1-sq-medium-q1" id="toc-example-4-pendulum-acceleration-displacement-graph-17.1-sq-medium-q1" class="nav-link" data-scroll-target="#example-4-pendulum-acceleration-displacement-graph-17.1-sq-medium-q1">Example 4 · Pendulum acceleration-displacement graph · 17.1 SQ Medium Q1</a></li>
+  <li><a href="#example-5-spring-oscillator-velocity-displacement-graph-17.1-sq-medium-q2" id="toc-example-5-spring-oscillator-velocity-displacement-graph-17.1-sq-medium-q2" class="nav-link" data-scroll-target="#example-5-spring-oscillator-velocity-displacement-graph-17.1-sq-medium-q2">Example 5 · Spring oscillator velocity-displacement graph · 17.1 SQ Medium Q2</a></li>
+  <li><a href="#damped-oscillations---medium" id="toc-damped-oscillations---medium" class="nav-link" data-scroll-target="#damped-oscillations---medium">17.2 Damped Oscillations - Medium</a></li>
+  <li><a href="#example-6-electromagnetic-damping-of-a-spring-magnet-system-17.2-sq-medium-q1" id="toc-example-6-electromagnetic-damping-of-a-spring-magnet-system-17.2-sq-medium-q1" class="nav-link" data-scroll-target="#example-6-electromagnetic-damping-of-a-spring-magnet-system-17.2-sq-medium-q1">Example 6 · Electromagnetic damping of a spring-magnet system · 17.2 SQ Medium Q1</a></li>
+  <li><a href="#example-7-coupled-pendulums-resonance-and-phase-difference-17.2-sq-medium-q2" id="toc-example-7-coupled-pendulums-resonance-and-phase-difference-17.2-sq-medium-q2" class="nav-link" data-scroll-target="#example-7-coupled-pendulums-resonance-and-phase-difference-17.2-sq-medium-q2">Example 7 · Coupled pendulums, resonance and phase difference · 17.2 SQ Medium Q2</a></li>
+  <li><a href="#example-8-forced-frequency-natural-frequency-and-resonance-17.2-sq-medium-q3" id="toc-example-8-forced-frequency-natural-frequency-and-resonance-17.2-sq-medium-q3" class="nav-link" data-scroll-target="#example-8-forced-frequency-natural-frequency-and-resonance-17.2-sq-medium-q3">Example 8 · Forced frequency, natural frequency and resonance · 17.2 SQ Medium Q3</a></li>
+  </ul></li>
+  <li><a href="#chapter-self-check" id="toc-chapter-self-check" class="nav-link" data-scroll-target="#chapter-self-check">Chapter self-check</a>
+  <ul class="collapse">
+  <li><a href="#original-topic-pdfs" id="toc-original-topic-pdfs" class="nav-link" data-scroll-target="#original-topic-pdfs">Original topic PDFs</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../a-level/12-motion-in-a-circle.html">A Level</a></li><li class="breadcrumb-item"><a href="../a-level/17-oscillations.html">17 Oscillations</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">17 Oscillations</h1>
+<p class="subtitle lead">Simple harmonic motion, energy, damping, forced oscillations and resonance</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="learning-objectives" class="level2">
+<h2 class="anchored" data-anchor-id="learning-objectives">Learning objectives</h2>
+<p>By the end of this chapter, you should be able to:</p>
+<ul>
+<li>define displacement, amplitude, period, frequency, angular frequency and phase difference;</li>
+<li>use <span class="math inline">\(T=1/f=2\pi/\omega\)</span>;</li>
+<li>recognise simple harmonic motion from the direction and magnitude of acceleration;</li>
+<li>use the equations for displacement, velocity and acceleration in SHM;</li>
+<li>interpret displacement-time, velocity-time and acceleration-time graphs;</li>
+<li>describe the interchange of kinetic and potential energy during SHM;</li>
+<li>use <span class="math inline">\(E=\tfrac12m\omega^2x_0^2\)</span>;</li>
+<li>explain damping and distinguish light, critical and heavy damping;</li>
+<li>explain forced oscillations and resonance in terms of driving and natural frequency.</li>
+</ul>
+</section>
+<section id="simple-harmonic-motion" class="level2">
+<h2 class="anchored" data-anchor-id="simple-harmonic-motion">17.1 Simple harmonic motion</h2>
+<section id="describing-an-oscillation" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="describing-an-oscillation">Describing an oscillation</h3>
+<p>An oscillation is a repetitive variation with time of the displacement of an object about an equilibrium position. At the equilibrium position, the resultant force on the object is zero.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Quantity</th>
+<th>Meaning</th>
+<th>Unit</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>displacement, <span class="math inline">\(x\)</span></td>
+<td>directed distance from the equilibrium position</td>
+<td>m</td>
+</tr>
+<tr class="even">
+<td>amplitude, <span class="math inline">\(x_0\)</span></td>
+<td>maximum magnitude of displacement</td>
+<td>m</td>
+</tr>
+<tr class="odd">
+<td>period, <span class="math inline">\(T\)</span></td>
+<td>time for one complete oscillation</td>
+<td>s</td>
+</tr>
+<tr class="even">
+<td>frequency, <span class="math inline">\(f\)</span></td>
+<td>number of complete oscillations per unit time</td>
+<td>Hz</td>
+</tr>
+<tr class="odd">
+<td>angular frequency, <span class="math inline">\(\omega\)</span></td>
+<td>rate of change of phase angle</td>
+<td>rad s<span class="math inline">\(^{-1}\)</span></td>
+</tr>
+</tbody>
+</table>
+<p>The period, frequency and angular frequency are related by</p>
+<p><span class="math display">\[T=\frac{1}{f}=\frac{2\pi}{\omega}, \qquad \omega=2\pi f.\]</span></p>
+</section>
+<section id="phase-and-phase-difference" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="phase-and-phase-difference">Phase and phase difference</h3>
+<p>One complete oscillation corresponds to a phase change of <span class="math inline">\(2\pi\)</span> rad or <span class="math inline">\(360^\circ\)</span>. Phase difference describes how far one oscillation leads or lags another oscillation of the same frequency.</p>
+<p>If corresponding points are separated by a time interval <span class="math inline">\(\Delta t\)</span>,</p>
+<p><span class="math display">\[\phi=2\pi\frac{\Delta t}{T}=2\pi f\Delta t.\]</span></p>
+<p>Oscillations with coincident maxima and minima are in phase. A maximum of one aligned with a minimum of the other gives antiphase: <span class="math inline">\(\phi=\pi\)</span> rad.</p>
+</section>
+<section id="defining-condition-for-shm" class="level3 formula-panel">
+<h3 class="anchored" data-anchor-id="defining-condition-for-shm">Defining condition for SHM</h3>
+<p>Simple harmonic motion occurs when acceleration is directly proportional to displacement from equilibrium and acts in the opposite direction:</p>
+<p><span class="math display">\[a=-\omega^2x.\]</span></p>
+<p>The minus sign is essential: acceleration and the restoring force always point towards equilibrium. A graph of <span class="math inline">\(a\)</span> against <span class="math inline">\(x\)</span> is therefore a straight line through the origin with gradient</p>
+<p><span class="math display">\[\frac{a}{x}=-\omega^2.\]</span></p>
+<p>The magnitude of acceleration is zero at equilibrium and greatest at the two extreme positions.</p>
+</section>
+<section id="displacement-as-a-function-of-time" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="displacement-as-a-function-of-time">Displacement as a function of time</h3>
+<p>For an oscillator that passes through equilibrium at <span class="math inline">\(t=0\)</span> and initially moves in the positive direction,</p>
+<p><span class="math display">\[x=x_0\sin(\omega t).\]</span></p>
+<p>For an oscillator that starts at positive maximum displacement,</p>
+<p><span class="math display">\[x=x_0\cos(\omega t).\]</span></p>
+<p>More generally, an initial phase may be included: <span class="math inline">\(x=x_0\sin(\omega t+\phi_0)\)</span>. Always identify the starting position and initial direction before choosing a sine or cosine form.</p>
+</section>
+<section id="velocity-and-speed" class="level3 formula-panel">
+<h3 class="anchored" data-anchor-id="velocity-and-speed">Velocity and speed</h3>
+<p>For <span class="math inline">\(x=x_0\sin(\omega t)\)</span>,</p>
+<p><span class="math display">\[v=v_0\cos(\omega t), \qquad v_0=\omega x_0.\]</span></p>
+<p>Eliminating time gives</p>
+<p><span class="math display">\[v=\pm\omega\sqrt{x_0^2-x^2}.\]</span></p>
+<p>The sign gives the direction of motion. The speed is greatest at equilibrium, where <span class="math inline">\(|v|=\omega x_0\)</span>, and zero at <span class="math inline">\(x=\pm x_0\)</span>.</p>
+</section>
+<section id="reading-shm-graphs" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="reading-shm-graphs">Reading SHM graphs</h3>
+<ul>
+<li>Displacement, velocity and acceleration all have the same period in undamped SHM.</li>
+<li>Velocity leads displacement by <span class="math inline">\(\pi/2\)</span> rad for the sine-form displacement above.</li>
+<li>Acceleration is in antiphase with displacement because <span class="math inline">\(a=-\omega^2x\)</span>.</li>
+<li>The gradient of an <span class="math inline">\(x\)</span>-<span class="math inline">\(t\)</span> graph gives velocity.</li>
+<li>The gradient of a <span class="math inline">\(v\)</span>-<span class="math inline">\(t\)</span> graph gives acceleration.</li>
+<li>At maximum displacement, <span class="math inline">\(v=0\)</span> and <span class="math inline">\(|a|\)</span> is maximum.</li>
+<li>At equilibrium, <span class="math inline">\(x=0\)</span> and <span class="math inline">\(a=0\)</span>, while <span class="math inline">\(|v|\)</span> is maximum.</li>
+</ul>
+<p>The starting point of a graph is not fixed: it depends on the phase at <span class="math inline">\(t=0\)</span>.</p>
+</section>
+</section>
+<section id="energy-in-simple-harmonic-motion" class="level2">
+<h2 class="anchored" data-anchor-id="energy-in-simple-harmonic-motion">17.2 Energy in simple harmonic motion</h2>
+<section id="energy-interchange" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="energy-interchange">Energy interchange</h3>
+<p>In an undamped oscillator, energy continually changes between kinetic energy and potential energy while total mechanical energy remains constant.</p>
+<ul>
+<li>At <span class="math inline">\(x=0\)</span>: speed and kinetic energy are maximum; potential energy is minimum.</li>
+<li>At <span class="math inline">\(x=\pm x_0\)</span>: speed and kinetic energy are zero; potential energy is maximum.</li>
+<li>Between these positions: one form increases while the other decreases.</li>
+</ul>
+<p>For a spring oscillator, the potential energy measured from equilibrium is proportional to <span class="math inline">\(x^2\)</span>. Kinetic and potential energy are never negative and each completes two cycles during one displacement cycle.</p>
+</section>
+<section id="total-potential-and-kinetic-energy" class="level3 formula-panel">
+<h3 class="anchored" data-anchor-id="total-potential-and-kinetic-energy">Total, potential and kinetic energy</h3>
+<p>The constant total energy of an undamped simple harmonic oscillator is</p>
+<p><span class="math display">\[E=\frac12m\omega^2x_0^2.\]</span></p>
+<p>At displacement <span class="math inline">\(x\)</span>,</p>
+<p><span class="math display">\[E_{\mathrm{p}}=\frac12m\omega^2x^2,\]</span></p>
+<p><span class="math display">\[E_{\mathrm{k}}=E-E_{\mathrm{p}}=\frac12m\omega^2(x_0^2-x^2).\]</span></p>
+<p>These equations are consistent with <span class="math inline">\(E_{\mathrm{k}}=\tfrac12mv^2\)</span> and <span class="math inline">\(v^2=\omega^2(x_0^2-x^2)\)</span>.</p>
+</section>
+</section>
+<section id="damping-forced-oscillations-and-resonance" class="level2">
+<h2 class="anchored" data-anchor-id="damping-forced-oscillations-and-resonance">17.3 Damping, forced oscillations and resonance</h2>
+<section id="damping" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="damping">Damping</h3>
+<p>Damping is the reduction in the energy and amplitude of oscillations due to resistive forces. A resistive force opposes velocity and transfers mechanical energy from the oscillator to the surroundings. Do not confuse it with the restoring force, which points towards equilibrium and produces the oscillation.</p>
+<p>For light damping, amplitude decreases approximately exponentially while the system continues to oscillate. The period is often treated as approximately constant in syllabus problems.</p>
+</section>
+<section id="three-damping-regimes" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="three-damping-regimes">Three damping regimes</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Regime</th>
+<th>Motion after displacement</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>light damping</td>
+<td>oscillates about equilibrium with gradually decreasing amplitude</td>
+</tr>
+<tr class="even">
+<td>critical damping</td>
+<td>returns to equilibrium in the shortest possible time without oscillating</td>
+</tr>
+<tr class="odd">
+<td>heavy damping</td>
+<td>returns to equilibrium without oscillating, but more slowly than critical damping</td>
+</tr>
+</tbody>
+</table>
+<p>Critical damping is useful when a system must settle quickly, such as a vehicle suspension or measuring instrument. Heavy damping avoids overshoot but gives a slower response.</p>
+</section>
+<section id="forced-oscillations" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="forced-oscillations">Forced oscillations</h3>
+<p>A free oscillator vibrates at its <strong>natural frequency</strong>. When an external periodic force acts, the system undergoes forced oscillations at the <strong>driving frequency</strong> of that force.</p>
+<p>The driver transfers energy to the oscillator. The steady amplitude depends on the driving frequency and on damping: greater damping generally lowers and broadens the resonance peak.</p>
+</section>
+<section id="resonance" class="level3 formula-panel">
+<h3 class="anchored" data-anchor-id="resonance">Resonance</h3>
+<p>Resonance occurs when the driving frequency equals the natural frequency of the oscillator. Energy transfer from the driver is then most effective and the steady oscillation amplitude is maximum.</p>
+<p>Useful resonance includes acoustic instruments and piezoelectric ultrasound transducers. Unwanted resonance can produce large structural vibrations; its effects may be reduced by increasing damping, changing the natural frequency or adding structural reinforcement.</p>
+</section>
+</section>
+<section id="structured-questions" class="level2">
+<h2 class="anchored" data-anchor-id="structured-questions">Structured Questions</h2>
+<section id="simple-harmonic-motion---easy" class="level3">
+<h3 class="anchored" data-anchor-id="simple-harmonic-motion---easy">17.1 Simple Harmonic Motion - Easy</h3>
+</section>
+<section id="example-1-definitions-and-the-oscillating-pendulum-17.1-sq-easy-q1" class="level3 question-card">
+<h3 class="anchored" data-anchor-id="example-1-definitions-and-the-oscillating-pendulum-17.1-sq-easy-q1">Example 1 · Definitions and the oscillating pendulum · 17.1 SQ Easy Q1</h3>
+<p><strong>(a)</strong> Define an oscillation. <code>[2 marks]</code></p>
+<p><strong>(b)</strong> Identify the correct definition by drawing lines between the properties of oscillations and their definition. <code>[5 marks]</code></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Properties of oscillations</th>
+<th>Definition of properties</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Displacement</td>
+<td>The rate of change of angular displacement with respect to time</td>
+</tr>
+<tr class="even">
+<td>Amplitude</td>
+<td>The distance of an oscillator from its equilibrium position</td>
+</tr>
+<tr class="odd">
+<td>Angular frequency</td>
+<td>The time taken for one complete oscillation</td>
+</tr>
+<tr class="even">
+<td>Frequency</td>
+<td>The maximum displacement of an oscillator from its equilibrium position</td>
+</tr>
+<tr class="odd">
+<td>Time period</td>
+<td>The number of oscillations per unit time</td>
+</tr>
+</tbody>
+</table>
+<p><strong>(c)</strong> Define simple harmonic oscillation. <code>[3 marks]</code></p>
+<p><strong>(d)</strong> Use the words in the box below to correctly label the diagram of an oscillating pendulum in Fig. 1.1. <code>[4 marks]</code></p>
+<p><code>displacement of mass</code> · <code>mass</code> · <code>acceleration</code> · <code>restoring force</code> · <code>equilibrium position</code></p>
+<p><img src="../assets/questions/oscillations/easy-pendulum-labels.webp" class="question-figure img-fluid" alt="Unlabelled pendulum showing displacement, acceleration and restoring force"></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<p><strong>(a)</strong></p>
+<ul>
+<li>Repeated back-and-forth movements <code>[1]</code></li>
+<li>on either side of an equilibrium position. <code>[1]</code></li>
+</ul>
+<p><strong>(b)</strong></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Property</th>
+<th>Correct definition</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Displacement</td>
+<td>The distance of an oscillator from its equilibrium position</td>
+</tr>
+<tr class="even">
+<td>Amplitude</td>
+<td>The maximum displacement of an oscillator from its equilibrium position</td>
+</tr>
+<tr class="odd">
+<td>Angular frequency</td>
+<td>The rate of change of angular displacement with respect to time</td>
+</tr>
+<tr class="even">
+<td>Frequency</td>
+<td>The number of oscillations per unit time</td>
+</tr>
+<tr class="odd">
+<td>Time period</td>
+<td>The time taken for one complete oscillation</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>One mark for each correct match. <code>[5]</code></li>
+</ul>
+<p><strong>(c)</strong></p>
+<ul>
+<li>A type of oscillation in which the acceleration of a body <code>[1]</code></li>
+<li>is proportional to its displacement <code>[1]</code></li>
+<li>but acts in the opposite direction. <code>[1]</code></li>
+</ul>
+<p><strong>(d)</strong></p>
+<ul>
+<li><strong>Equilibrium position:</strong> the central vertical dashed line.</li>
+<li><strong>Mass:</strong> the pendulum bob.</li>
+<li><strong>Restoring force:</strong> the arrow labelled <span class="math inline">\(F\)</span> directed towards equilibrium.</li>
+<li><strong>Acceleration:</strong> the arrow labelled <span class="math inline">\(a\)</span> directed towards equilibrium.</li>
+<li><strong>Displacement of mass:</strong> the horizontal distance labelled <span class="math inline">\(x\)</span> from equilibrium to the bob. <code>[4 marks in the supplied PDF]</code></li>
+</ul>
+</details>
+</section>
+<section id="example-2-equations-and-graphs-of-shm-17.1-sq-easy-q2" class="level3 question-card">
+<h3 class="anchored" data-anchor-id="example-2-equations-and-graphs-of-shm-17.1-sq-easy-q2">Example 2 · Equations and graphs of SHM · 17.1 SQ Easy Q2</h3>
+<p><strong>(a)</strong> Identify by drawing a circle around the equation that defines simple harmonic motion and its two solutions. <code>[3 marks]</code></p>
+<table class="caption-top table">
+<tbody>
+<tr class="odd">
+<td style="text-align: right;"><span class="math inline">\(v=f\lambda\)</span></td>
+<td style="text-align: right;"><span class="math inline">\(\omega=\dfrac{2\pi}{T}\)</span></td>
+<td style="text-align: right;"><span class="math inline">\(x=x_0\sin(\omega t)\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;"><span class="math inline">\(x=x_0\cos(\omega t)\)</span></td>
+<td style="text-align: right;"><span class="math inline">\(a=-\omega^2x\)</span></td>
+<td style="text-align: right;"><span class="math inline">\(f=\dfrac{1}{T}\)</span></td>
+</tr>
+</tbody>
+</table>
+<p><strong>(b)</strong> The graph in Fig. 1.1 shows that the acceleration of an object is directly proportional to the negative displacement.</p>
+<p><img src="../assets/questions/oscillations/easy-acceleration-displacement.webp" class="question-figure img-fluid" alt="Straight-line graph with negative gradient and unlabelled axes"></p>
+<p>Label the two axes of the graph on Fig. 1.1. <code>[2 marks]</code></p>
+<p><strong>(c)</strong> The graphs in Fig. 1.3 show an oscillator starting at the equilibrium position and an oscillator starting at the maximum displacement.</p>
+<p><img src="../assets/questions/oscillations/easy-starting-position-graphs.webp" class="question-figure img-fluid" alt="Two displacement-time graphs with blank spaces for starting-position labels"></p>
+<p>Identify by writing next to the graphs on Fig. 1.3 the correct name of the starting position of the oscillator. <code>[2 marks]</code></p>
+<p><strong>(d)</strong> The equation below defines how the speed of an oscillator changes with the displacement of the oscillator.</p>
+<p><span class="math display">\[v=\pm\omega\sqrt{x_0^2-x^2}\]</span></p>
+<p>Identify the variables in the equation by stating the variable and the quantity it represents in the space below. <code>[4 marks]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<p><strong>(a)</strong> Circle:</p>
+<ul>
+<li><span class="math inline">\(a=-\omega^2x\)</span> — the defining equation. <code>[1]</code></li>
+<li><span class="math inline">\(x=x_0\sin(\omega t)\)</span>. <code>[1]</code></li>
+<li><span class="math inline">\(x=x_0\cos(\omega t)\)</span>. <code>[1]</code></li>
+</ul>
+<p><strong>(b)</strong></p>
+<ul>
+<li>Horizontal axis: displacement. <code>[1]</code></li>
+<li>Vertical axis: acceleration. <code>[1]</code></li>
+</ul>
+<p><strong>(c)</strong></p>
+<ul>
+<li>Top graph: starting at the equilibrium position. <code>[1]</code></li>
+<li>Bottom graph: starting at the maximum displacement. <code>[1]</code></li>
+</ul>
+<p><strong>(d)</strong></p>
+<ul>
+<li><span class="math inline">\(v\)</span>: speed of the oscillator. <code>[1]</code></li>
+<li><span class="math inline">\(\omega\)</span>: angular frequency of oscillation. <code>[1]</code></li>
+<li><span class="math inline">\(x_0\)</span>: amplitude of oscillation. <code>[1]</code></li>
+<li><span class="math inline">\(x\)</span>: displacement of the oscillator. <code>[1]</code></li>
+</ul>
+</details>
+</section>
+<section id="example-3-shm-graph-relationships-and-energy-17.1-sq-easy-q3" class="level3 question-card">
+<h3 class="anchored" data-anchor-id="example-3-shm-graph-relationships-and-energy-17.1-sq-easy-q3">Example 3 · SHM graph relationships and energy · 17.1 SQ Easy Q3</h3>
+<p><strong>(a)</strong> Complete the gaps, using the words from the box, in the sentences that describe the relationship between the simple harmonic motion graphs. <code>[5 marks]</code></p>
+<p><code>cosine</code> · <code>sine</code> · <code>identical</code> · <code>motion</code> · <code>displacement</code> · <span class="math inline">\(45^\circ\)</span> · <span class="math inline">\(90^\circ\)</span> · <code>velocity</code></p>
+<p>The displacement-time graph is a curve identical to a __________ graph when the oscillator starts from its equilibrium position.</p>
+<p>Velocity is the rate of change of __________.</p>
+<p>The velocity-time graph is __________ out of phase with the displacement-time graph.</p>
+<p>Acceleration is the rate of change of __________.</p>
+<p>The acceleration-time graph is __________ to the displacement graph except reflected on the <span class="math inline">\(x\)</span>-axis.</p>
+<p><strong>(b)</strong> State the equation for the total energy of a simple harmonic system. <code>[1 mark]</code></p>
+<p><strong>(c)</strong> Fig. 1.1 shows the graph of potential, kinetic and total energy of a simple harmonic system for half a period of simple harmonic oscillation.</p>
+<p><img src="../assets/questions/oscillations/easy-energy-displacement.webp" class="question-figure img-fluid" alt="Unmatched labels beside total, potential and kinetic energy curves against displacement"></p>
+<p>Match the labels to the correct place on the graph by drawing a line between them. <code>[5 marks]</code></p>
+<p><strong>(d)</strong> Identify, by placing a tick (<span class="math inline">\(\checkmark\)</span>) next to, the correct statements about the key features of the displacement-time graph. <code>[2 marks]</code></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 37%">
+<col style="width: 62%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Possible statements about the displacement-time graphs</th>
+<th style="text-align: center;">Tick if correct</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>The amplitude of oscillations <span class="math inline">\(x_0\)</span> can be found from the maximum value of <span class="math inline">\(x\)</span>.</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="even">
+<td>If the oscillations start at the positive or negative amplitude, the displacement will be at its minimum.</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="odd">
+<td>The time period of oscillations <span class="math inline">\(T\)</span> can be found from reading the time taken for one full cycle.</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="even">
+<td>The graph always starts at 0.</td>
+<td style="text-align: center;"></td>
+</tr>
+</tbody>
+</table>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<p><strong>(a)</strong></p>
+<ul>
+<li>sine <code>[1]</code></li>
+<li>displacement <code>[1]</code></li>
+<li><span class="math inline">\(90^\circ\)</span> <code>[1]</code></li>
+<li>velocity <code>[1]</code></li>
+<li>identical <code>[1]</code></li>
+</ul>
+<p><strong>(b)</strong></p>
+<ul>
+<li><span class="math inline">\(E=\dfrac12m\omega^2x_0^2\)</span>. <code>[1]</code></li>
+</ul>
+<p><strong>(c)</strong></p>
+<ul>
+<li>Total energy: the horizontal line. <code>[1]</code></li>
+<li>Potential energy: the U-shaped curve. <code>[1]</code></li>
+<li>Kinetic energy: the inverted U-shaped curve. <code>[1]</code></li>
+<li>Equilibrium: <span class="math inline">\(x=0\)</span>. <code>[1]</code></li>
+<li>Amplitude: <span class="math inline">\(x=x_0\)</span> or <span class="math inline">\(x=-x_0\)</span>. <code>[1]</code></li>
+</ul>
+<p><strong>(d)</strong> Tick:</p>
+<ul>
+<li>The amplitude of oscillations <span class="math inline">\(x_0\)</span> can be found from the maximum value of <span class="math inline">\(x\)</span>. <code>[1]</code></li>
+<li>The time period <span class="math inline">\(T\)</span> can be found from the time taken for one full cycle. <code>[1]</code></li>
+</ul>
+The other statements are false: an oscillator starting at an amplitude has maximum displacement, and a displacement-time graph does not have to start at zero.
+</details>
+</section>
+<section id="simple-harmonic-motion---medium" class="level3">
+<h3 class="anchored" data-anchor-id="simple-harmonic-motion---medium">17.1 Simple Harmonic Motion - Medium</h3>
+</section>
+<section id="example-4-pendulum-acceleration-displacement-graph-17.1-sq-medium-q1" class="level3 question-card">
+<h3 class="anchored" data-anchor-id="example-4-pendulum-acceleration-displacement-graph-17.1-sq-medium-q1">Example 4 · Pendulum acceleration-displacement graph · 17.1 SQ Medium Q1</h3>
+<p>A pendulum consists of a bob (small plastic sphere) attached to the end of a piece of wire. The other end of the wire is attached to a fixed point. The bob oscillates with small oscillations about its equilibrium position, as shown in Fig. 1.1.</p>
+<p><img src="../assets/questions/oscillations/pendulum-arrangement.webp" class="question-figure img-fluid" alt="Pendulum of length L oscillating about its equilibrium position"></p>
+<p>The length <span class="math inline">\(L\)</span> of the pendulum, measured from the fixed point to the centre of the bob, is <span class="math inline">\(1.56\ \mathrm{m}\)</span>.</p>
+<p>The acceleration <span class="math inline">\(a\)</span> of the bob varies with its displacement <span class="math inline">\(x\)</span> from the equilibrium position as shown in Fig. 1.2.</p>
+<p><img src="../assets/questions/oscillations/pendulum-acceleration-displacement.webp" class="question-figure img-fluid" alt="Acceleration-displacement graph for the pendulum"></p>
+<p><strong>(a)</strong> State how Fig. 1.2 shows that the motion of the pendulum is simple harmonic. <code>[2 marks]</code></p>
+<p><strong>(b)</strong> Use Fig. 1.2 from <strong>(a)</strong> to calculate the angular frequency <span class="math inline">\(\omega\)</span> of the oscillations. <code>[2 marks]</code></p>
+<p><strong>(c)</strong> The angular frequency <span class="math inline">\(\omega\)</span> is related to the length <span class="math inline">\(L\)</span> of the pendulum by</p>
+<p><span class="math display">\[\omega=\sqrt{\frac{k}{L}}\]</span></p>
+<p>where <span class="math inline">\(k\)</span> is a constant.</p>
+<p>Use your answer from <strong>(b)</strong> to determine <span class="math inline">\(k\)</span>. Give a unit for your answer. <code>[2 marks]</code></p>
+<p><strong>(d)</strong> Whilst the pendulum is oscillating, the length of the string is decreased in such a way that the total energy of the oscillations remains constant.</p>
+<p>Suggest and explain the qualitative effect of this change on the amplitude of the oscillations. <code>[2 marks]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<p><strong>(a)</strong></p>
+<ul>
+<li>The graph is a straight line through the origin, so <span class="math inline">\(a\)</span> is proportional to <span class="math inline">\(x\)</span>. <code>[1]</code></li>
+<li>Its gradient is negative, so acceleration acts in the opposite direction to displacement. <code>[1]</code></li>
+</ul>
+<p><strong>(b)</strong></p>
+<ul>
+<li>Using <span class="math inline">\((0,0)\)</span> and <span class="math inline">\((0.025,-0.20)\)</span>, the gradient is <span class="math inline">\(-0.20/0.025=-8.0\ \mathrm{s^{-2}}\)</span>. Since gradient <span class="math inline">\(=-\omega^2\)</span>, <code>[1]</code></li>
+<li><span class="math inline">\(\omega=\sqrt{8.0}=2.83\ \mathrm{rad\ s^{-1}}\)</span>. <code>[1]</code></li>
+</ul>
+<p><strong>(c)</strong></p>
+<ul>
+<li><span class="math inline">\(k=\omega^2L\)</span>. <code>[1]</code></li>
+<li><span class="math inline">\(k=(2.83)^2(1.56)=12.5\ \mathrm{m\ s^{-2}}\)</span>. <code>[1]</code></li>
+</ul>
+<p><strong>(d)</strong></p>
+<ul>
+<li>Decreasing <span class="math inline">\(L\)</span> causes <span class="math inline">\(\omega\)</span> to increase. <code>[1]</code></li>
+<li>Since <span class="math inline">\(E=\tfrac12m\omega^2x_0^2\)</span> remains constant, the amplitude <span class="math inline">\(x_0\)</span> decreases. <code>[1]</code></li>
+</ul>
+</details>
+</section>
+<section id="example-5-spring-oscillator-velocity-displacement-graph-17.1-sq-medium-q2" class="level3 question-card">
+<h3 class="anchored" data-anchor-id="example-5-spring-oscillator-velocity-displacement-graph-17.1-sq-medium-q2">Example 5 · Spring oscillator velocity-displacement graph · 17.1 SQ Medium Q2</h3>
+<p><strong>(a)</strong> An object is suspended from a spring that is attached to a fixed point as shown in Fig. 1.1.</p>
+<p><img src="../assets/questions/oscillations/spring-oscillator.webp" class="question-figure img-fluid" alt="Object suspended from a spring and oscillating vertically"></p>
+<p>The object oscillates vertically with simple harmonic motion about its equilibrium position.</p>
+<p>State the defining equation for simple harmonic motion. Identify the meaning of each of the symbols used to represent physical quantities. <code>[2 marks]</code></p>
+<p><strong>(b)</strong> The variation with displacement <span class="math inline">\(x\)</span> from the equilibrium position of the velocity <span class="math inline">\(v\)</span> of the object is shown in Fig. 1.2.</p>
+<p><img src="../assets/questions/oscillations/spring-velocity-displacement.webp" class="question-figure img-fluid" alt="Elliptical velocity-displacement graph for a spring oscillator"></p>
+<p>Use Fig. 1.2 to:</p>
+<p><strong>(i)</strong> determine the amplitude <span class="math inline">\(x_0\)</span> of the oscillations; <code>[1]</code></p>
+<p><strong>(ii)</strong> determine the angular frequency <span class="math inline">\(\omega\)</span> of the oscillations. <code>[2]</code></p>
+<p><code>[3 marks]</code></p>
+<p><strong>(c)</strong> The oscillations of the object are now heavily damped.</p>
+<p><strong>(i)</strong> State what is meant by damping. <code>[2]</code></p>
+<p><strong>(ii)</strong> Assume that the damping does not change the angular frequency of the oscillations.</p>
+<p>On Fig. 1.2, sketch the variation with <span class="math inline">\(x\)</span> of <span class="math inline">\(v\)</span> when the amplitude of the oscillations is <span class="math inline">\(0.03\ \mathrm{m}\)</span>. <code>[2]</code></p>
+<p><code>[4 marks]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<p><strong>(a)</strong></p>
+<ul>
+<li><span class="math inline">\(a=-\omega^2x\)</span> is the defining equation. <code>[1]</code></li>
+<li><span class="math inline">\(a\)</span> is acceleration, <span class="math inline">\(x\)</span> is displacement from equilibrium and <span class="math inline">\(\omega\)</span> is angular frequency. <code>[1]</code></li>
+</ul>
+<p><strong>(b)</strong></p>
+<ul>
+<li><strong>(i)</strong> <span class="math inline">\(x_0=0.08\ \mathrm{m}\)</span>. <code>[1]</code></li>
+<li><strong>(ii)</strong> The supplied PDF answer selects <span class="math inline">\((x,v)=(0.08,0)\)</span> and <span class="math inline">\((0,0.40)\)</span> and states <span class="math inline">\(\omega=2.24\ \mathrm{rad\ s^{-1}}\)</span>. <code>[2]</code></li>
+</ul>
+<blockquote class="blockquote">
+<p><strong>Source-consistency warning:</strong> using the syllabus equation <span class="math inline">\(v=\omega\sqrt{x_0^2-x^2}\)</span> at <span class="math inline">\(x=0\)</span> gives <span class="math inline">\(\omega=v_{\max}/x_0=0.40/0.08=5.0\ \mathrm{rad\ s^{-1}}\)</span>. The value <span class="math inline">\(2.24\ \mathrm{rad\ s^{-1}}\)</span> printed in the supplied answer is not consistent with the graph or equation.</p>
+</blockquote>
+<p><strong>(c)</strong></p>
+<ul>
+<li><strong>(i)</strong> Damping is the loss of total energy of a system <code>[1]</code> due to resistive forces. <code>[1]</code></li>
+<li><strong>(ii)</strong> Following the supplied answer, calculate <span class="math inline">\(v_{\max}=\omega x_0=2.24(0.03)=0.0672\ \mathrm{m\ s^{-1}}\)</span>.</li>
+<li>Draw an open loop starting at either <span class="math inline">\(x=+0.03\ \mathrm{m}\)</span> or <span class="math inline">\(x=-0.03\ \mathrm{m}\)</span> and passing through the corresponding maximum speed. <code>[1]</code></li>
+<li>For heavy damping, the object does not reach the same displacement on the other side; the path returns towards rest at equilibrium with a smaller speed. <code>[1]</code></li>
+</ul>
+</details>
+</section>
+<section id="damped-oscillations---medium" class="level3">
+<h3 class="anchored" data-anchor-id="damped-oscillations---medium">17.2 Damped Oscillations - Medium</h3>
+</section>
+<section id="example-6-electromagnetic-damping-of-a-spring-magnet-system-17.2-sq-medium-q1" class="level3 question-card">
+<h3 class="anchored" data-anchor-id="example-6-electromagnetic-damping-of-a-spring-magnet-system-17.2-sq-medium-q1">Example 6 · Electromagnetic damping of a spring-magnet system · 17.2 SQ Medium Q1</h3>
+<p>A bar magnet of mass <span class="math inline">\(250\ \mathrm{g}\)</span> is suspended from the free end of a spring, as illustrated in Fig. 3.1.</p>
+<p><img src="../assets/questions/oscillations/magnet-coil-arrangement.webp" class="question-figure img-fluid" alt="Magnet suspended from a spring with one pole inside a coil circuit"></p>
+<p>The magnet hangs so that one pole is near the centre of a coil of wire. The coil is connected in series with a resistor and a switch. The switch is open.</p>
+<p>The magnet is displaced vertically and then allowed to oscillate.</p>
+<p>At time <span class="math inline">\(t=0\)</span>, the magnet is oscillating freely. At time <span class="math inline">\(t=6.0\ \mathrm{s}\)</span>, the switch in the circuit is closed.</p>
+<p>The variation with time <span class="math inline">\(t\)</span> of the vertical displacement <span class="math inline">\(y\)</span> of the magnet is shown in Fig. 3.2.</p>
+<p><img src="../assets/questions/oscillations/damped-magnet-displacement.webp" class="question-figure img-fluid" alt="Displacement-time graph of the magnet before and after the switch is closed"></p>
+<p><strong>(a)</strong> For the oscillating magnet, use data from Fig. 3.2 to determine, to two significant figures:</p>
+<p><strong>(i)</strong> the frequency <span class="math inline">\(f\)</span>; <code>[2]</code></p>
+<p><strong>(ii)</strong> the energy of the oscillations during the time interval <span class="math inline">\(t=0\)</span> to <span class="math inline">\(t=6.0\ \mathrm{s}\)</span>. <code>[3]</code></p>
+<p><code>[5 marks]</code></p>
+<p><strong>(b)</strong> When the switch is closed, the oscillations are damped.</p>
+<p>Explain, with reference to Fig. 3.2, whether this damping is light, critical or heavy. <code>[1 mark]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<p><strong>(a)</strong></p>
+<ul>
+<li><strong>(i)</strong> From the graph, <span class="math inline">\(T=2.4\ \mathrm{s}\)</span>. <code>[1]</code></li>
+<li><span class="math inline">\(f=1/T=1/2.4=0.42\ \mathrm{Hz}\)</span>. <code>[1]</code></li>
+<li><strong>(ii)</strong> Before <span class="math inline">\(6.0\ \mathrm{s}\)</span>, <span class="math inline">\(y_0=1.5\ \mathrm{cm}=1.5\times10^{-2}\ \mathrm{m}\)</span>.</li>
+<li>Use <span class="math inline">\(E=\tfrac12m(2\pi f)^2y_0^2\)</span>. <code>[1]</code></li>
+<li><span class="math inline">\(E=\tfrac12(250\times10^{-3})(2\pi\times0.42)^2(1.5\times10^{-2})^2\)</span>. <code>[1]</code></li>
+<li><span class="math inline">\(E=1.96\times10^{-4}\ \mathrm{J}=2.0\times10^{-4}\ \mathrm{J}\)</span> to two significant figures. <code>[1]</code></li>
+</ul>
+<p><strong>(b)</strong></p>
+<ul>
+<li>The damping is light because the magnet continues to oscillate while its amplitude gradually decreases. <code>[1]</code></li>
+</ul>
+</details>
+</section>
+<section id="example-7-coupled-pendulums-resonance-and-phase-difference-17.2-sq-medium-q2" class="level3 question-card">
+<h3 class="anchored" data-anchor-id="example-7-coupled-pendulums-resonance-and-phase-difference-17.2-sq-medium-q2">Example 7 · Coupled pendulums, resonance and phase difference · 17.2 SQ Medium Q2</h3>
+<p><strong>(a)</strong> Fig. 1.1 shows a light pendulum and a heavy pendulum, both suspended from the same piece of copper wire. This copper wire is secured at each end to fixed points.</p>
+<p><img src="../assets/questions/oscillations/coupled-pendulums.webp" class="question-figure img-fluid" alt="Light and heavy pendulums suspended from the same copper wire"></p>
+<p>Both pendulums have the same natural frequency.</p>
+<p>The heavy pendulum is set to oscillate perpendicular to the plane of the diagram. As it oscillates, it causes the light pendulum to oscillate.</p>
+<p>State what is meant by resonance. <code>[2 marks]</code></p>
+<p><strong>(b)</strong> Fig. 1.2 shows the variation with time <span class="math inline">\(t\)</span> of the displacements of the two pendulums for three oscillations.</p>
+<p><img src="../assets/questions/oscillations/coupled-pendulum-displacements.webp" class="question-figure img-fluid" alt="Unscaled displacement-time curves for the light and heavy pendulums"></p>
+<p>The variation with <span class="math inline">\(t\)</span> of the displacement <span class="math inline">\(x\)</span> of the light pendulum is given by</p>
+<p><span class="math display">\[x=0.5\sin(2.5\pi t)\]</span></p>
+<p>where <span class="math inline">\(x\)</span> is in metres and <span class="math inline">\(t\)</span> is in seconds.</p>
+<p>Calculate the frequency, <span class="math inline">\(f\)</span> of the oscillations. <code>[3 marks]</code></p>
+<p><strong>(c)</strong> On Fig. 1.2, label both axes with the correct scales. Use the space below for any additional working that you need. <code>[2 marks]</code></p>
+<p><strong>(d)</strong></p>
+<p><strong>(i)</strong> Define phase difference, <span class="math inline">\(\Phi\)</span>. <code>[1]</code></p>
+<p><strong>(ii)</strong> Determine the magnitude of the phase difference <span class="math inline">\(\Phi\)</span> between the oscillations of the light and heavy pendulums. Give a unit with your answer. <code>[2]</code></p>
+<p><code>[3 marks]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<p><strong>(a)</strong></p>
+<ul>
+<li>Resonance is oscillation of an object at maximum amplitude <code>[1]</code></li>
+<li>when the driving frequency equals the natural frequency of the object. <code>[1]</code></li>
+</ul>
+<p><strong>(b)</strong></p>
+<ul>
+<li>Comparing with <span class="math inline">\(x=A\sin(\omega t)\)</span> gives <span class="math inline">\(\omega=2.5\pi\ \mathrm{rad\ s^{-1}}\)</span>. <code>[1]</code></li>
+<li><span class="math inline">\(T=2\pi/\omega=2\pi/(2.5\pi)=0.80\ \mathrm{s}\)</span>. <code>[1]</code></li>
+<li><span class="math inline">\(f=1/T=1.25\ \mathrm{Hz}\)</span>. <code>[1]</code></li>
+</ul>
+<p><strong>(c)</strong></p>
+<ul>
+<li>Displacement scale: <span class="math inline">\(0.5\)</span>, <span class="math inline">\(1.0\)</span>, <span class="math inline">\(1.5\)</span>, <span class="math inline">\(2.0\ \mathrm{m}\)</span>. <code>[1]</code></li>
+<li>Time scale: <span class="math inline">\(0.4\)</span>, <span class="math inline">\(0.8\)</span>, <span class="math inline">\(1.2\)</span>, <span class="math inline">\(1.6\)</span>, <span class="math inline">\(2.0\)</span>, <span class="math inline">\(2.4\ \mathrm{s}\)</span>. <code>[1]</code></li>
+</ul>
+<p><strong>(d)</strong></p>
+<ul>
+<li><strong>(i)</strong> Phase difference describes how far one oscillation is in front of or behind another. <code>[1]</code></li>
+<li><strong>(ii)</strong> <span class="math inline">\(T=0.80\ \mathrm{s}\)</span> and the graph gives <span class="math inline">\(\Delta t=0.20\ \mathrm{s}\)</span>.</li>
+<li><span class="math inline">\(\Phi=2\pi\Delta t/T=2\pi(0.20)/0.80=\pi/2=1.57\ \mathrm{rad}\)</span>. <code>[2]</code></li>
+</ul>
+</details>
+</section>
+<section id="example-8-forced-frequency-natural-frequency-and-resonance-17.2-sq-medium-q3" class="level3 question-card">
+<h3 class="anchored" data-anchor-id="example-8-forced-frequency-natural-frequency-and-resonance-17.2-sq-medium-q3">Example 8 · Forced frequency, natural frequency and resonance · 17.2 SQ Medium Q3</h3>
+<p><strong>(a)</strong> For an oscillating body, state what is meant by:</p>
+<p><strong>(i)</strong> forced frequency; <code>[1]</code></p>
+<p><strong>(ii)</strong> natural frequency of vibration; <code>[1]</code></p>
+<p><strong>(iii)</strong> resonance. <code>[2]</code></p>
+<p><code>[4 marks]</code></p>
+<p><strong>(b)</strong> State and explain one situation where resonance is useful. <code>[2 marks]</code></p>
+<p><strong>(c)</strong> In some situations, resonance should be avoided.</p>
+<p>State one such situation and suggest how the effects of resonance are reduced. <code>[2 marks]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<p><strong>(a)</strong></p>
+<ul>
+<li><strong>(i)</strong> Forced frequency is the frequency at which an object is made to vibrate or oscillate. <code>[1]</code></li>
+<li><strong>(ii)</strong> Natural frequency is the frequency at which an object vibrates when free to do so. <code>[1]</code></li>
+<li><strong>(iii)</strong> Resonance is maximum-amplitude vibration <code>[1]</code> when the forced frequency equals the natural frequency. <code>[1]</code></li>
+</ul>
+<p><strong>(b)</strong> One answer given in the supplied PDF is:</p>
+<ul>
+<li>A piezoelectric crystal is made to vibrate at resonance. <code>[1]</code></li>
+<li>This maximises the amplitude of the ultrasound waves produced. <code>[1]</code></li>
+</ul>
+<p>Other valid examples require both the vibrating system and an explanation of why resonance is useful.</p>
+<p><strong>(c)</strong> One answer given in the supplied PDF is:</p>
+<ul>
+<li>Metal panels in a building may vibrate at resonance. <code>[1]</code></li>
+<li>Strengthening struts can be placed across the panel to reduce the vibrations. <code>[1]</code></li>
+</ul>
+</details>
+</section>
+</section>
+<section id="chapter-self-check" class="level2">
+<h2 class="anchored" data-anchor-id="chapter-self-check">Chapter self-check</h2>
+<ul>
+<li>Can you distinguish displacement, amplitude, period, frequency and phase difference?</li>
+<li>Can you use the gradient of an <span class="math inline">\(a\)</span>-<span class="math inline">\(x\)</span> graph to determine <span class="math inline">\(\omega\)</span>?</li>
+<li>Can you select the correct sine or cosine equation from the initial conditions?</li>
+<li>Can you identify where speed, acceleration, kinetic energy and potential energy are greatest?</li>
+<li>Can you distinguish resistive force from restoring force?</li>
+<li>Can you sketch light, critical and heavy damping correctly?</li>
+<li>Can you explain resonance as efficient energy transfer at equal driving and natural frequencies?</li>
+</ul>
+<section id="original-topic-pdfs" class="level3">
+<h3 class="anchored" data-anchor-id="original-topic-pdfs">Original topic PDFs</h3>
+<ul>
+<li><a href="../resources/original-papers/oscillations/17.1 Simple Harmonic Motion - Easy.pdf.pdf">17.1 Simple Harmonic Motion - Easy</a></li>
+<li><a href="../resources/original-papers/oscillations/17.1 Simple Harmonic Motion - Medium.pdf.pdf">17.1 Simple Harmonic Motion - Medium</a></li>
+<li><a href="../resources/original-papers/oscillations/17.2 Damped Oscillations - Medium.pdf.pdf">17.2 Damped Oscillations - Medium</a></li>
+</ul>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll(".done-toggle input").forEach((input) => {
+    const key = `cie-physics-${input.dataset.progress}`;
+    input.checked = localStorage.getItem(key) === "true";
+    input.closest(".question-card")?.classList.toggle("is-complete", input.checked);
+    input.addEventListener("change", () => {
+      localStorage.setItem(key, input.checked);
+      input.closest(".question-card")?.classList.toggle("is-complete", input.checked);
+    });
+  });
+
+  document.querySelectorAll(".mc-question").forEach((card) => {
+    const answer = card.dataset.answer;
+    const feedback = card.querySelector(".mc-feedback");
+    const check = card.querySelector(".check-answer");
+    let selected = localStorage.getItem(`cie-physics-${card.id}-choice`) || "";
+
+    const showSelection = () => {
+      card.querySelectorAll(".mc-choice").forEach((choice) => {
+        choice.classList.toggle("is-selected", choice.dataset.choice === selected);
+      });
+    };
+    showSelection();
+
+    card.querySelectorAll(".mc-choice").forEach((choice) => {
+      choice.addEventListener("click", () => {
+        selected = choice.dataset.choice;
+        localStorage.setItem(`cie-physics-${card.id}-choice`, selected);
+        feedback.textContent = "";
+        feedback.className = "mc-feedback";
+        showSelection();
+      });
+    });
+
+    check?.addEventListener("click", () => {
+      if (!selected) {
+        feedback.textContent = "Select an answer first.";
+        feedback.className = "mc-feedback is-pending";
+        return;
+      }
+      const correct = selected === answer;
+      feedback.textContent = correct ? "Correct." : `Not quite. The correct answer is ${answer}.`;
+      feedback.className = `mc-feedback ${correct ? "is-correct" : "is-incorrect"}`;
+    });
+  });
+});
+</script>
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "已复制");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "已复制");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../a-level/16-thermodynamics.html" class="pagination-link" aria-label="16 Thermodynamics">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">16 Thermodynamics</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../a-level/18-electric-fields.html" class="pagination-link" aria-label="18 Electric fields">
+        <span class="nav-page-text">18 Electric fields</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>

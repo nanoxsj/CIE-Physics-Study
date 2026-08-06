@@ -1,0 +1,1479 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-Hans" xml:lang="zh-Hans"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.38">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>23 Nuclear physics – CIE Physics 9702</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../a-level/24-medical-physics.html" rel="next">
+<link href="../a-level/22-quantum-physics.html" rel="prev">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-a2a938b4dd5711f7a799c87bd16ba44c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "没有结果",
+    "search-matching-documents-text": "匹配的文档",
+    "search-copy-link-title": "复制搜索链接",
+    "search-hide-matches-text": "隐藏其它匹配结果",
+    "search-more-match-text": "更多匹配结果",
+    "search-more-matches-text": "更多匹配结果",
+    "search-clear-button-title": "清除",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "取消",
+    "search-submit-button-title": "提交",
+    "search-label": "搜索"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../styles.css">
+</head>
+
+<body class="nav-sidebar docked quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="展开或折叠侧边栏导航" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../a-level/12-motion-in-a-circle.html">A Level</a></li><li class="breadcrumb-item"><a href="../a-level/23-nuclear-physics.html">23 Nuclear physics</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="展开或折叠侧边栏导航" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="搜索" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">CIE Physics 9702</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="搜索"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">学习首页</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">AS Level</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="展开或折叠此栏">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../as-level/01-physical-quantities-and-units.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">1 Physical quantities and units</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../as-level/02-kinematics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2 Kinematics</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../as-level/03-dynamics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">3 Dynamics</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">A Level</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="展开或折叠此栏">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/12-motion-in-a-circle.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">12 Motion in a circle</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/13-gravitational-fields.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">13 Gravitational fields</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/14-temperature.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">14 Temperature</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/15-ideal-gases.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">15 Ideal gases</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/16-thermodynamics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">16 Thermodynamics</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/17-oscillations.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">17 Oscillations</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/18-electric-fields.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">18 Electric fields</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/19-capacitance.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">19 Capacitance</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/20-magnetic-fields.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">20 Magnetic fields</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/21-alternating-currents.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">21 Alternating currents</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/22-quantum-physics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">22 Quantum physics</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/23-nuclear-physics.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">23 Nuclear physics</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/24-medical-physics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">24 Medical physics</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/25-astronomy-and-cosmology.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">25 Astronomy and cosmology</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">该页面内容</h2>
+   
+  <ul>
+  <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link active" data-scroll-target="#learning-objectives">Learning objectives</a></li>
+  <li><a href="#mass-defect-and-nuclear-binding-energy" id="toc-mass-defect-and-nuclear-binding-energy" class="nav-link" data-scroll-target="#mass-defect-and-nuclear-binding-energy">23.1 Mass defect and nuclear binding energy</a>
+  <ul class="collapse">
+  <li><a href="#atomic-mass-unit-and-nuclear-notation" id="toc-atomic-mass-unit-and-nuclear-notation" class="nav-link" data-scroll-target="#atomic-mass-unit-and-nuclear-notation">Atomic mass unit and nuclear notation</a></li>
+  <li><a href="#mass-energy-equivalence" id="toc-mass-energy-equivalence" class="nav-link" data-scroll-target="#mass-energy-equivalence">Mass-energy equivalence</a></li>
+  <li><a href="#mass-defect-and-binding-energy" id="toc-mass-defect-and-binding-energy" class="nav-link" data-scroll-target="#mass-defect-and-binding-energy">Mass defect and binding energy</a></li>
+  <li><a href="#binding-energy-per-nucleon" id="toc-binding-energy-per-nucleon" class="nav-link" data-scroll-target="#binding-energy-per-nucleon">Binding energy per nucleon</a></li>
+  <li><a href="#nuclear-forces-and-stability" id="toc-nuclear-forces-and-stability" class="nav-link" data-scroll-target="#nuclear-forces-and-stability">Nuclear forces and stability</a></li>
+  <li><a href="#fission-and-fusion" id="toc-fission-and-fusion" class="nav-link" data-scroll-target="#fission-and-fusion">Fission and fusion</a></li>
+  </ul></li>
+  <li><a href="#radioactive-decay" id="toc-radioactive-decay" class="nav-link" data-scroll-target="#radioactive-decay">23.2 Radioactive decay</a>
+  <ul class="collapse">
+  <li><a href="#spontaneous-and-random-decay" id="toc-spontaneous-and-random-decay" class="nav-link" data-scroll-target="#spontaneous-and-random-decay">Spontaneous and random decay</a></li>
+  <li><a href="#nuclear-changes-in-common-decays" id="toc-nuclear-changes-in-common-decays" class="nav-link" data-scroll-target="#nuclear-changes-in-common-decays">Nuclear changes in common decays</a></li>
+  <li><a href="#activity-and-decay-constant" id="toc-activity-and-decay-constant" class="nav-link" data-scroll-target="#activity-and-decay-constant">Activity and decay constant</a></li>
+  <li><a href="#half-life" id="toc-half-life" class="nav-link" data-scroll-target="#half-life">Half-life</a></li>
+  <li><a href="#exponential-decay" id="toc-exponential-decay" class="nav-link" data-scroll-target="#exponential-decay">Exponential decay</a></li>
+  <li><a href="#experimental-measurements" id="toc-experimental-measurements" class="nav-link" data-scroll-target="#experimental-measurements">Experimental measurements</a></li>
+  </ul></li>
+  <li><a href="#structured-questions" id="toc-structured-questions" class="nav-link" data-scroll-target="#structured-questions">Structured Questions</a>
+  <ul class="collapse">
+  <li><a href="#mass-defect-and-nuclear-binding-energy---easy" id="toc-mass-defect-and-nuclear-binding-energy---easy" class="nav-link" data-scroll-target="#mass-defect-and-nuclear-binding-energy---easy">23.1 Mass Defect and Nuclear Binding Energy - Easy</a></li>
+  <li><a href="#example-1-atomic-mass-unit-and-mass-energy-equivalence-23.1-sq-easy-q1" id="toc-example-1-atomic-mass-unit-and-mass-energy-equivalence-23.1-sq-easy-q1" class="nav-link" data-scroll-target="#example-1-atomic-mass-unit-and-mass-energy-equivalence-23.1-sq-easy-q1">Example 1 · Atomic mass unit and mass-energy equivalence · 23.1 SQ Easy Q1</a></li>
+  <li><a href="#example-2-oxygen-16-mass-defect-and-binding-energy-23.1-sq-easy-q2" id="toc-example-2-oxygen-16-mass-defect-and-binding-energy-23.1-sq-easy-q2" class="nav-link" data-scroll-target="#example-2-oxygen-16-mass-defect-and-binding-energy-23.1-sq-easy-q2">Example 2 · Oxygen-16 mass defect and binding energy · 23.1 SQ Easy Q2</a></li>
+  <li><a href="#example-3-binding-energy-curve-fusion-and-fission-23.1-sq-easy-q3" id="toc-example-3-binding-energy-curve-fusion-and-fission-23.1-sq-easy-q3" class="nav-link" data-scroll-target="#example-3-binding-energy-curve-fusion-and-fission-23.1-sq-easy-q3">Example 3 · Binding-energy curve, fusion and fission · 23.1 SQ Easy Q3</a></li>
+  <li><a href="#mass-defect-and-nuclear-binding-energy---medium" id="toc-mass-defect-and-nuclear-binding-energy---medium" class="nav-link" data-scroll-target="#mass-defect-and-nuclear-binding-energy---medium">23.1 Mass Defect and Nuclear Binding Energy - Medium</a></li>
+  <li><a href="#example-4-reactor-reaction-and-lanthanum-binding-energy-23.1-sq-medium-q1" id="toc-example-4-reactor-reaction-and-lanthanum-binding-energy-23.1-sq-medium-q1" class="nav-link" data-scroll-target="#example-4-reactor-reaction-and-lanthanum-binding-energy-23.1-sq-medium-q1">Example 4 · Reactor reaction and lanthanum binding energy · 23.1 SQ Medium Q1</a></li>
+  <li><a href="#example-5-energy-release-in-fission-and-fusion-23.1-sq-medium-q2" id="toc-example-5-energy-release-in-fission-and-fusion-23.1-sq-medium-q2" class="nav-link" data-scroll-target="#example-5-energy-release-in-fission-and-fusion-23.1-sq-medium-q2">Example 5 · Energy release in fission and fusion · 23.1 SQ Medium Q2</a></li>
+  <li><a href="#example-6-deuterium-fusion-and-nuclear-stability-23.1-sq-medium-q3" id="toc-example-6-deuterium-fusion-and-nuclear-stability-23.1-sq-medium-q3" class="nav-link" data-scroll-target="#example-6-deuterium-fusion-and-nuclear-stability-23.1-sq-medium-q3">Example 6 · Deuterium fusion and nuclear stability · 23.1 SQ Medium Q3</a></li>
+  <li><a href="#radioactive-decay---easy" id="toc-radioactive-decay---easy" class="nav-link" data-scroll-target="#radioactive-decay---easy">23.2 Radioactive Decay - Easy</a></li>
+  <li><a href="#example-7-spontaneous-and-random-decay-isotopes-and-decay-equations-23.2-sq-easy-q1" id="toc-example-7-spontaneous-and-random-decay-isotopes-and-decay-equations-23.2-sq-easy-q1" class="nav-link" data-scroll-target="#example-7-spontaneous-and-random-decay-isotopes-and-decay-equations-23.2-sq-easy-q1">Example 7 · Spontaneous and random decay, isotopes and decay equations · 23.2 SQ Easy Q1</a></li>
+  <li><a href="#example-8-planning-a-technetium-half-life-investigation-23.2-sq-easy-q2" id="toc-example-8-planning-a-technetium-half-life-investigation-23.2-sq-easy-q2" class="nav-link" data-scroll-target="#example-8-planning-a-technetium-half-life-investigation-23.2-sq-easy-q2">Example 8 · Planning a technetium half-life investigation · 23.2 SQ Easy Q2</a></li>
+  <li><a href="#example-9-a-polonium-decay-chain-and-initial-activity-23.2-sq-easy-q3" id="toc-example-9-a-polonium-decay-chain-and-initial-activity-23.2-sq-easy-q3" class="nav-link" data-scroll-target="#example-9-a-polonium-decay-chain-and-initial-activity-23.2-sq-easy-q3">Example 9 · A polonium decay chain and initial activity · 23.2 SQ Easy Q3</a></li>
+  <li><a href="#radioactive-decay---medium" id="toc-radioactive-decay---medium" class="nav-link" data-scroll-target="#radioactive-decay---medium">23.2 Radioactive Decay - Medium</a></li>
+  <li><a href="#example-10-technetium-decay-activity-and-released-energy-23.2-sq-medium-q1" id="toc-example-10-technetium-decay-activity-and-released-energy-23.2-sq-medium-q1" class="nav-link" data-scroll-target="#example-10-technetium-decay-activity-and-released-energy-23.2-sq-medium-q1">Example 10 · Technetium decay, activity and released energy · 23.2 SQ Medium Q1</a></li>
+  <li><a href="#example-11-radium-contamination-and-exponential-activity-23.2-sq-medium-q2" id="toc-example-11-radium-contamination-and-exponential-activity-23.2-sq-medium-q2" class="nav-link" data-scroll-target="#example-11-radium-contamination-and-exponential-activity-23.2-sq-medium-q2">Example 11 · Radium contamination and exponential activity · 23.2 SQ Medium Q2</a></li>
+  <li><a href="#example-12-decay-graphs-and-the-remaining-fraction-23.2-sq-medium-q3" id="toc-example-12-decay-graphs-and-the-remaining-fraction-23.2-sq-medium-q3" class="nav-link" data-scroll-target="#example-12-decay-graphs-and-the-remaining-fraction-23.2-sq-medium-q3">Example 12 · Decay graphs and the remaining fraction · 23.2 SQ Medium Q3</a></li>
+  </ul></li>
+  <li><a href="#chapter-checklist" id="toc-chapter-checklist" class="nav-link" data-scroll-target="#chapter-checklist">Chapter checklist</a>
+  <ul class="collapse">
+  <li><a href="#original-question-pdfs" id="toc-original-question-pdfs" class="nav-link" data-scroll-target="#original-question-pdfs">Original question PDFs</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../a-level/12-motion-in-a-circle.html">A Level</a></li><li class="breadcrumb-item"><a href="../a-level/23-nuclear-physics.html">23 Nuclear physics</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">23 Nuclear physics</h1>
+<p class="subtitle lead">Mass defect, binding energy, nuclear reactions and radioactive decay</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="learning-objectives" class="level2">
+<h2 class="anchored" data-anchor-id="learning-objectives">Learning objectives</h2>
+<p>By the end of this chapter, you should be able to:</p>
+<ul>
+<li>use mass-energy equivalence <span class="math inline">\(E=mc^2\)</span>;</li>
+<li>write and balance nuclear equations;</li>
+<li>define and calculate mass defect and nuclear binding energy;</li>
+<li>interpret the binding-energy-per-nucleon curve;</li>
+<li>explain energy release in fission and fusion;</li>
+<li>describe radioactive decay as spontaneous and random;</li>
+<li>define activity, decay constant and half-life;</li>
+<li>use <span class="math inline">\(A=\lambda N\)</span>, <span class="math inline">\(\lambda=0.693/t_{1/2}\)</span> and exponential decay equations;</li>
+<li>interpret and sketch activity, count-rate and undecayed-nuclei graphs.</li>
+</ul>
+</section>
+<section id="mass-defect-and-nuclear-binding-energy" class="level2">
+<h2 class="anchored" data-anchor-id="mass-defect-and-nuclear-binding-energy">23.1 Mass defect and nuclear binding energy</h2>
+<section id="atomic-mass-unit-and-nuclear-notation" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="atomic-mass-unit-and-nuclear-notation">Atomic mass unit and nuclear notation</h3>
+<p>The unified atomic mass unit is defined as one twelfth of the mass of a neutral carbon-12 atom:</p>
+<p><span class="math display">\[1\ \mathrm{u}=1.66\times10^{-27}\ \mathrm{kg}.\]</span></p>
+<p>A nuclide is written <span class="math inline">\({}^{A}_{Z}X\)</span>, where <span class="math inline">\(Z\)</span> is proton number and <span class="math inline">\(A\)</span> is nucleon number. The neutron number is <span class="math inline">\(N=A-Z\)</span>. In every nuclear equation, total nucleon number and total charge must be conserved.</p>
+</section>
+<section id="mass-energy-equivalence" class="level3 formula-panel">
+<h3 class="anchored" data-anchor-id="mass-energy-equivalence">Mass-energy equivalence</h3>
+<p>Mass and energy are equivalent:</p>
+<p><span class="math display">\[\Delta E=\Delta mc^2.\]</span></p>
+<p>The useful conversion is</p>
+<p><span class="math display">\[1\ \mathrm{u}\,c^2\approx934\ \mathrm{MeV}.\]</span></p>
+<p>Use SI units for a result in joules. When the mass change is in u, multiplying by approximately <span class="math inline">\(934\ \mathrm{MeV/u}\)</span> gives the energy directly in MeV.</p>
+</section>
+<section id="mass-defect-and-binding-energy" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="mass-defect-and-binding-energy">Mass defect and binding energy</h3>
+<p>The <strong>mass defect</strong> is the difference between the total mass of the separate nucleons and the actual mass of the bound nucleus:</p>
+<p><span class="math display">\[\Delta m=Zm_p+Nm_n-m_{\text{nucleus}}.\]</span></p>
+<p>The <strong>binding energy</strong> is the minimum energy required to separate a nucleus completely into its nucleons at infinity. It is also the energy released when the separated nucleons form the nucleus:</p>
+<p><span class="math display">\[E_b=\Delta mc^2.\]</span></p>
+<p>The bound nucleus has less mass than its separated nucleons because energy has been released during its formation.</p>
+</section>
+<section id="binding-energy-per-nucleon" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="binding-energy-per-nucleon">Binding energy per nucleon</h3>
+<p>Binding energy per nucleon is</p>
+<p><span class="math display">\[\frac{E_b}{A}.\]</span></p>
+<p>It measures average nuclear stability: a larger value means more energy is required, on average, to remove a nucleon. The curve rises steeply for light nuclei, reaches a maximum near iron-56, and then decreases gradually for heavy nuclei.</p>
+<p>Hydrogen-1 has zero binding energy because its nucleus contains only one proton and no nucleons need to be separated from one another.</p>
+</section>
+<section id="nuclear-forces-and-stability" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="nuclear-forces-and-stability">Nuclear forces and stability</h3>
+<p>The strong nuclear force is attractive, short-ranged and acts between neighbouring nucleons. Electrostatic repulsion acts between every pair of protons and is long-ranged.</p>
+<p>In small nuclei, adding nucleons creates many additional strong-force interactions, so binding energy per nucleon rises rapidly. In very large nuclei, proton-proton repulsion becomes increasingly important, so binding energy per nucleon falls slowly.</p>
+</section>
+<section id="fission-and-fusion" class="level3 formula-panel">
+<h3 class="anchored" data-anchor-id="fission-and-fusion">Fission and fusion</h3>
+<ul>
+<li><strong>Fusion:</strong> two light nuclei combine to form a heavier nucleus.</li>
+<li><strong>Fission:</strong> one heavy nucleus divides into two or more lighter nuclei, usually with neutrons released.</li>
+</ul>
+<p>Energy is released when the products have a greater total binding energy, or a greater binding energy per nucleon, than the reactants. Their total rest mass is therefore smaller:</p>
+<p><span class="math display">\[E_{\text{released}}=(m_{\text{reactants}}-m_{\text{products}})c^2.\]</span></p>
+<p>Fusion generally releases more energy per unit mass because the binding-energy curve is much steeper on the low-<span class="math inline">\(A\)</span> side than on the high-<span class="math inline">\(A\)</span> side.</p>
+</section>
+</section>
+<section id="radioactive-decay" class="level2">
+<h2 class="anchored" data-anchor-id="radioactive-decay">23.2 Radioactive decay</h2>
+<section id="spontaneous-and-random-decay" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="spontaneous-and-random-decay">Spontaneous and random decay</h3>
+<p>Radioactive decay is the spontaneous emission of ionising radiation from an unstable nucleus.</p>
+<ul>
+<li><strong>Spontaneous:</strong> decay is unaffected by external conditions such as temperature, pressure or chemical state.</li>
+<li><strong>Random:</strong> the decay time of an individual nucleus cannot be predicted; each nucleus has a constant probability of decay per unit time.</li>
+</ul>
+<p>Fluctuations in measured count rate provide evidence of randomness. A large sample nevertheless follows a predictable exponential trend.</p>
+</section>
+<section id="nuclear-changes-in-common-decays" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="nuclear-changes-in-common-decays">Nuclear changes in common decays</h3>
+<ul>
+<li>Alpha decay: <span class="math inline">\(A\)</span> decreases by 4 and <span class="math inline">\(Z\)</span> decreases by 2.</li>
+<li>Beta-minus decay: a neutron changes to a proton, so <span class="math inline">\(A\)</span> is unchanged and <span class="math inline">\(Z\)</span> increases by 1.</li>
+<li>Beta-plus decay: a proton changes to a neutron, so <span class="math inline">\(A\)</span> is unchanged and <span class="math inline">\(Z\)</span> decreases by 1.</li>
+<li>Gamma emission: neither <span class="math inline">\(A\)</span> nor <span class="math inline">\(Z\)</span> changes; the nucleus loses energy.</li>
+</ul>
+<p>Conserve nucleon number and charge when completing every decay equation.</p>
+</section>
+<section id="activity-and-decay-constant" class="level3 formula-panel">
+<h3 class="anchored" data-anchor-id="activity-and-decay-constant">Activity and decay constant</h3>
+<p>Activity is the rate at which nuclei decay:</p>
+<p><span class="math display">\[A=-\frac{dN}{dt}=\lambda N,\]</span></p>
+<p>where <span class="math inline">\(A\)</span> is measured in becquerels, <span class="math inline">\(1\ \mathrm{Bq}=1\ \mathrm{s^{-1}}\)</span>, and <span class="math inline">\(\lambda\)</span> is the decay constant. The decay constant is the probability per unit time that an individual nucleus decays; its unit is <span class="math inline">\(\mathrm{s^{-1}}\)</span> when time is in seconds.</p>
+</section>
+<section id="half-life" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="half-life">Half-life</h3>
+<p>The half-life <span class="math inline">\(t_{1/2}\)</span> is the time for the number of undecayed nuclei, activity or corrected count rate to fall to half its current value:</p>
+<p><span class="math display">\[\lambda=\frac{\ln2}{t_{1/2}}=\frac{0.693}{t_{1/2}}.\]</span></p>
+<p>After <span class="math inline">\(n\)</span> half-lives, the remaining fraction is <span class="math inline">\((1/2)^n\)</span>.</p>
+</section>
+<section id="exponential-decay" class="level3 formula-panel">
+<h3 class="anchored" data-anchor-id="exponential-decay">Exponential decay</h3>
+<p>The number of undecayed nuclei is</p>
+<p><span class="math display">\[N=N_0e^{-\lambda t}.\]</span></p>
+<p>Because <span class="math inline">\(A=\lambda N\)</span>, activity and corrected count rate follow the same form:</p>
+<p><span class="math display">\[A=A_0e^{-\lambda t}, \qquad C=C_0e^{-\lambda t}.\]</span></p>
+<p>A graph of <span class="math inline">\(A\)</span> against <span class="math inline">\(N\)</span> is a straight line through the origin with gradient <span class="math inline">\(\lambda\)</span>. A graph of <span class="math inline">\(N\)</span> against time has gradient <span class="math inline">\(dN/dt=-A\)</span>.</p>
+</section>
+<section id="experimental-measurements" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="experimental-measurements">Experimental measurements</h3>
+<p>Keep source-detector distance, source geometry and counting interval constant. Measure background count rate separately and subtract it from measured count rate. Long counting intervals or repeated readings reduce percentage uncertainty caused by random fluctuations. Use tongs, shielding and the shortest practical handling time to reduce exposure.</p>
+</section>
+</section>
+<section id="structured-questions" class="level2">
+<h2 class="anchored" data-anchor-id="structured-questions">Structured Questions</h2>
+<section id="mass-defect-and-nuclear-binding-energy---easy" class="level3">
+<h3 class="anchored" data-anchor-id="mass-defect-and-nuclear-binding-energy---easy">23.1 Mass Defect and Nuclear Binding Energy - Easy</h3>
+</section>
+<section id="example-1-atomic-mass-unit-and-mass-energy-equivalence-23.1-sq-easy-q1" class="level3 question-card">
+<h3 class="anchored" data-anchor-id="example-1-atomic-mass-unit-and-mass-energy-equivalence-23.1-sq-easy-q1">Example 1 · Atomic mass unit and mass-energy equivalence · 23.1 SQ Easy Q1</h3>
+<p><strong>(a)</strong> Define atomic mass unit. <code>[2 marks]</code></p>
+<p><strong>(b)</strong> The unified atomic mass unit u is roughly equal to <span class="math inline">\(1.66\times10^{-27}\ \mathrm{kg}\)</span>, which is the mass of one nucleon.</p>
+<p>Calculate the mass, in kg, of a nucleus of uranium-238. Give your answer to 3 significant figures. <code>[3 marks]</code></p>
+<p><strong>(c)</strong> Einstein’s Theory of Relativity showed that mass could be converted into energy, and energy into mass. This is summarised by the following equation</p>
+<p><span class="math display">\[\Delta E=\Delta mc^2\]</span></p>
+<p>Define the terms in the equation and give the units:</p>
+<p><strong>(i)</strong> <span class="math inline">\(E\)</span> <code>[1]</code></p>
+<p><strong>(ii)</strong> <span class="math inline">\(m\)</span> <code>[1]</code></p>
+<p><strong>(iii)</strong> <span class="math inline">\(c\)</span> <code>[1]</code></p>
+<p><code>[3 marks]</code></p>
+<p><strong>(d)</strong> Calculate the energy released, in J, if all of the mass in the nucleus of uranium-238 were converted into energy. <code>[2 marks]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<ul>
+<li><strong>(a)</strong> One atomic mass unit is one twelfth of the mass <code>[1]</code> of a neutral carbon-12 atom. <code>[1]</code></li>
+<li><strong>(b)</strong> <span class="math inline">\(m=238u=238(1.661\times10^{-27})=3.95318\times10^{-25}\ \mathrm{kg}\)</span> <code>[2]</code>, so <span class="math inline">\(m=3.95\times10^{-25}\ \mathrm{kg}\)</span> to 3 s.f. <code>[1]</code></li>
+<li><strong>(c)(i)</strong> <span class="math inline">\(\Delta E\)</span> is the energy change, measured in joules. <code>[1]</code></li>
+<li><strong>(c)(ii)</strong> <span class="math inline">\(\Delta m\)</span> is the mass change, measured in kilograms. <code>[1]</code></li>
+<li><strong>(c)(iii)</strong> <span class="math inline">\(c\)</span> is the speed of light, measured in <span class="math inline">\(\mathrm{m\,s^{-1}}\)</span>. <code>[1]</code></li>
+<li><strong>(d)</strong> <span class="math inline">\(E=mc^2=(3.95\times10^{-25})(3.00\times10^8)^2=3.56\times10^{-8}\ \mathrm{J}\)</span>. <code>[2]</code></li>
+</ul>
+</details>
+</section>
+<section id="example-2-oxygen-16-mass-defect-and-binding-energy-23.1-sq-easy-q2" class="level3 question-card">
+<h3 class="anchored" data-anchor-id="example-2-oxygen-16-mass-defect-and-binding-energy-23.1-sq-easy-q2">Example 2 · Oxygen-16 mass defect and binding energy · 23.1 SQ Easy Q2</h3>
+<p><strong>(a)</strong> State the meaning of the terms:</p>
+<p><strong>(i)</strong> binding energy; <code>[1]</code></p>
+<p><strong>(ii)</strong> mass defect. <code>[1]</code></p>
+<p><code>[2 marks]</code></p>
+<p><strong>(b)</strong> The nuclear rest mass <span class="math inline">\(m_{\text{total}}\)</span> of oxygen-16 <span class="math inline">\(({}^{16}_{8}\mathrm{O})\)</span> is <span class="math inline">\(15.994914\ \mathrm{u}\)</span>.</p>
+<p>The following equation describes the relationship between mass defect <span class="math inline">\(\Delta m\)</span> and the mass of the constituents of a nucleus:</p>
+<p><span class="math display">\[\Delta m=Zm_p+Nm_n-m_{\text{total}}\]</span></p>
+<p><strong>(i)</strong> State the meaning of the terms <span class="math inline">\(Zm_p\)</span> and <span class="math inline">\(Nm_n\)</span>. <code>[2]</code></p>
+<p><strong>(ii)</strong> Calculate the mass defect of oxygen-16.</p>
+<p><span class="math display">\[m_p=1.007276\ \mathrm{u}, \qquad m_n=1.008665\ \mathrm{u}\]</span></p>
+<p><code>[3]</code></p>
+<p><code>[5 marks]</code></p>
+<p><strong>(c)</strong> Use the mass defect from <strong>(b)</strong> to show that the total binding energy of a nucleus of oxygen-16 is about <span class="math inline">\(2\times10^{-11}\ \mathrm{J}\)</span>. <code>[3 marks]</code></p>
+<p><strong>(d)</strong> Determine the binding energy per nucleon, in MeV, of oxygen-16. <code>[4 marks]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<ul>
+<li><strong>(a)(i)</strong> Binding energy is the energy required to separate all nucleons of a nucleus, or the energy released when the nucleus forms. <code>[1]</code></li>
+<li><strong>(a)(ii)</strong> Mass defect is the difference between the mass of a nucleus and the sum of the masses of its separate nucleons. <code>[1]</code></li>
+<li><strong>(b)(i)</strong> <span class="math inline">\(Zm_p\)</span> is the total rest mass of the <span class="math inline">\(Z\)</span> protons <code>[1]</code>; <span class="math inline">\(Nm_n\)</span> is the total rest mass of the <span class="math inline">\(N\)</span> neutrons. <code>[1]</code></li>
+<li><strong>(b)(ii)</strong> Oxygen-16 has 8 protons and 8 neutrons. <code>[1]</code> <span class="math inline">\(\Delta m=8(1.007276)+8(1.008665)-15.994914\)</span> <code>[1]</code> <span class="math inline">\(=0.132614\ \mathrm{u}\)</span>. <code>[1]</code></li>
+<li><strong>(c)</strong> <span class="math inline">\(\Delta m=0.132614(1.66\times10^{-27})\ \mathrm{kg}\)</span>. <code>[1]</code> <span class="math inline">\(E_b=\Delta mc^2\)</span> <code>[1]</code> <span class="math inline">\(=1.981\times10^{-11}\ \mathrm{J}\)</span>, approximately <span class="math inline">\(2\times10^{-11}\ \mathrm{J}\)</span>. <code>[1]</code></li>
+<li><strong>(d)</strong> Energy per nucleon <span class="math inline">\(=(1.981\times10^{-11})/16=1.238\times10^{-12}\ \mathrm{J}\)</span>. <code>[2]</code> Dividing by <span class="math inline">\(1.60\times10^{-13}\ \mathrm{J\,MeV^{-1}}\)</span> gives <span class="math inline">\(7.74\ \mathrm{MeV}\)</span>. <code>[2]</code></li>
+</ul>
+</details>
+</section>
+<section id="example-3-binding-energy-curve-fusion-and-fission-23.1-sq-easy-q3" class="level3 question-card">
+<h3 class="anchored" data-anchor-id="example-3-binding-energy-curve-fusion-and-fission-23.1-sq-easy-q3">Example 3 · Binding-energy curve, fusion and fission · 23.1 SQ Easy Q3</h3>
+<p><strong>(a)</strong> Fig. 1.1 shows the binding energy per nucleon for a number of nuclei.</p>
+<p><img src="../assets/questions/nuclear-physics/binding-energy-regions-graph.webp" class="question-figure img-fluid" alt="Binding energy per nucleon curve with spaces for fusion and fission labels"></p>
+<p>On Fig. 1.1, mark:</p>
+<ul>
+<li>the region in which fusion occurs;</li>
+<li>the region in which fission occurs;</li>
+<li>an X to show the location of iron-56 <span class="math inline">\(({}^{56}_{26}\mathrm{Fe})\)</span>.</li>
+</ul>
+<p><code>[3 marks]</code></p>
+<p><strong>(b)</strong> In terms of the forces acting within the nucleus, explain why:</p>
+<p><strong>(i)</strong> fusion occurs for nuclides with low nucleon numbers; <code>[2]</code></p>
+<p><strong>(ii)</strong> fission occurs for nuclides with high nucleon numbers. <code>[2]</code></p>
+<p><code>[4 marks]</code></p>
+<p><strong>(c)</strong> In both fission and fusion, there is a mass defect between the original nuclei and the daughter nuclei.</p>
+<p>Complete the sentences by circling the correct word.</p>
+<p>In fusion, the mass of the nucleus that is created is slightly <strong>more / less</strong> than the total mass of the original nuclei and the daughter nucleus is <strong>more / less</strong> stable.</p>
+<p>In fission, an unstable nucleus is converted into more stable nuclei with a <strong>larger / smaller</strong> total mass. In both cases, this difference in mass, the mass defect, is equal to the binding energy that is released.</p>
+<p><strong>Fission / Fusion</strong> releases much more energy per kg than <strong>fission / fusion</strong>. The greater the increase in binding energy, the <strong>more / less</strong> energy is released. <code>[4 marks]</code></p>
+<p><strong>(d)</strong> The graph in Fig. 1.2 shows the binding energy per nucleon in MeV plotted against nucleon number, <span class="math inline">\(A\)</span>.</p>
+<p><img src="../assets/questions/nuclear-physics/binding-energy-reading-graph.webp" class="question-figure img-fluid" alt="Binding energy per nucleon against nucleon number"></p>
+<p>Use Fig. 1.2 to find the binding energy of the following nuclei:</p>
+<p><strong>(i)</strong> platinum-190; <code>[1]</code></p>
+<p><strong>(ii)</strong> silicon-28; <code>[1]</code></p>
+<p><strong>(iii)</strong> tellurium-120. <code>[1]</code></p>
+<p><code>[3 marks]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<ul>
+<li><strong>(a)</strong> Label fusion on the low-<span class="math inline">\(A\)</span> left side <code>[1]</code>, fission on the high-<span class="math inline">\(A\)</span> right side <code>[1]</code>, and iron-56 at the maximum of the curve. <code>[1]</code></li>
+<li><strong>(b)(i)</strong> In light nuclei the attractive strong nuclear force between neighbouring nucleons dominates <code>[1]</code> over proton-proton electrostatic repulsion. <code>[1]</code></li>
+<li><strong>(b)(ii)</strong> In heavy nuclei electrostatic repulsion between the many protons becomes dominant <code>[1]</code> and tends to break the nucleus apart. <code>[1]</code></li>
+<li><strong>(c)</strong> Fusion product: <strong>less</strong> mass and <strong>more</strong> stable. <code>[1]</code> Fission products: <strong>smaller</strong> total mass. <code>[1]</code> <strong>Fusion</strong> releases more energy per kg than <strong>fission</strong>. <code>[1]</code> A greater binding-energy increase releases <strong>more</strong> energy. <code>[1]</code></li>
+<li><strong>(d)(i)</strong> Platinum-190: approximately <span class="math inline">\(8.0\ \mathrm{MeV}\)</span> per nucleon. <code>[1]</code></li>
+<li><strong>(d)(ii)</strong> Silicon-28: approximately <span class="math inline">\(8.0\ \mathrm{MeV}\)</span> per nucleon. <code>[1]</code></li>
+<li><strong>(d)(iii)</strong> Tellurium-120: approximately <span class="math inline">\(8.5\ \mathrm{MeV}\)</span> per nucleon. <code>[1]</code></li>
+</ul>
+</details>
+</section>
+<section id="mass-defect-and-nuclear-binding-energy---medium" class="level3">
+<h3 class="anchored" data-anchor-id="mass-defect-and-nuclear-binding-energy---medium">23.1 Mass Defect and Nuclear Binding Energy - Medium</h3>
+</section>
+<section id="example-4-reactor-reaction-and-lanthanum-binding-energy-23.1-sq-medium-q1" class="level3 question-card">
+<h3 class="anchored" data-anchor-id="example-4-reactor-reaction-and-lanthanum-binding-energy-23.1-sq-medium-q1">Example 4 · Reactor reaction and lanthanum binding energy · 23.1 SQ Medium Q1</h3>
+<p><strong>(a)</strong> Data for a nucleus and some particles are given in Table 9.1.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>nucleus or particle</th>
+<th style="text-align: right;">mass / u</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\({}^{139}_{57}\mathrm{La}\)</span></td>
+<td style="text-align: right;">138.955</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\({}^{1}_{0}\mathrm{n}\)</span></td>
+<td style="text-align: right;">1.00863</td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\({}^{1}_{1}\mathrm{p}\)</span></td>
+<td style="text-align: right;">1.00728</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\({}^{0}_{-1}\mathrm{e}\)</span></td>
+<td style="text-align: right;"><span class="math inline">\(5.49\times10^{-4}\)</span></td>
+</tr>
+</tbody>
+</table>
+<p>One nuclear reaction that can take place in a nuclear reactor may be represented, in part, by the equation shown below.</p>
+<p>Complete the equation.</p>
+<p><span class="math display">\[ {}^{235}_{92}\mathrm{U}+{}^{1}_{0}\mathrm{n}
+\rightarrow{}^{95}_{42}\mathrm{Mo}+{}^{139}_{57}\mathrm{La}
++2{}^{1}_{0}\mathrm{n}+\ ................................+\text{energy} \]</span></p>
+<p><code>[1 mark]</code></p>
+<p><strong>(b)(i)</strong> Show that the energy equivalent to <span class="math inline">\(1.00\ \mathrm{u}\)</span> is <span class="math inline">\(934\ \mathrm{MeV}\)</span>. <code>[3]</code></p>
+<p><strong>(ii)</strong> Calculate the binding energy per nucleon, in MeV, of lanthanum-139 <span class="math inline">\(({}^{139}_{57}\mathrm{La})\)</span>. <code>[3]</code></p>
+<p><code>[6 marks]</code></p>
+<p><strong>(c)</strong> State and explain whether the binding energy per nucleon of uranium-235 <span class="math inline">\(({}^{235}_{92}\mathrm{U})\)</span> is greater than, equal to or less than the binding energy per nucleon of lanthanum-139 <span class="math inline">\(({}^{139}_{57}\mathrm{La})\)</span>. <code>[2 marks]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<ul>
+<li><strong>(a)</strong> Balancing nucleon number gives zero total missing nucleon number, while balancing charge gives <span class="math inline">\(-7\)</span>. The missing term is <span class="math inline">\(7{}^{0}_{-1}\mathrm{e}\)</span>. <code>[1]</code></li>
+<li><strong>(b)(i)</strong> <span class="math inline">\(E=mc^2=(1.66\times10^{-27})(3.00\times10^8)^2=1.494\times10^{-10}\ \mathrm{J}\)</span>. <code>[2]</code> Dividing by <span class="math inline">\(1.60\times10^{-13}\ \mathrm{J\,MeV^{-1}}\)</span> gives <span class="math inline">\(934\ \mathrm{MeV}\)</span>. <code>[1]</code></li>
+<li><strong>(b)(ii)</strong> Lanthanum-139 has 57 protons and 82 neutrons. <span class="math inline">\(\Delta m=82(1.00863)+57(1.00728)-138.955=1.16762\ \mathrm{u}\)</span>. <code>[1]</code> Total binding energy <span class="math inline">\(=1.16762(934)=1090\ \mathrm{MeV}\)</span>. <code>[1]</code> Per nucleon: <span class="math inline">\(1090/139=7.84\ \mathrm{MeV}\)</span>. <code>[1]</code></li>
+<li><strong>(c)</strong> Uranium-235 has a lower binding energy per nucleon <code>[1]</code>; it lies farther to the right of the binding-energy curve where the value decreases for larger nucleon number. <code>[1]</code></li>
+</ul>
+</details>
+</section>
+<section id="example-5-energy-release-in-fission-and-fusion-23.1-sq-medium-q2" class="level3 question-card">
+<h3 class="anchored" data-anchor-id="example-5-energy-release-in-fission-and-fusion-23.1-sq-medium-q2">Example 5 · Energy release in fission and fusion · 23.1 SQ Medium Q2</h3>
+<p><strong>(a)(i)</strong> State what is meant by nuclear fission. <code>[1]</code></p>
+<p><strong>(ii)</strong> On Fig. 1.1 below, sketch a line to show the variation with nucleon number <span class="math inline">\(A\)</span> of the binding energy per nucleon <span class="math inline">\(E\)</span> of a nucleus. <code>[2]</code></p>
+<p><img src="../assets/questions/nuclear-physics/blank-binding-energy-curve.webp" class="question-figure img-fluid" alt="Blank axes for binding energy per nucleon against nucleon number"></p>
+<p><strong>(iii)</strong> Explain, with reference to Fig. 1.1, why nuclear fission reactions result in the release of energy. <code>[2]</code></p>
+<p><code>[5 marks]</code></p>
+<p><strong>(b)</strong> A nuclear fission reaction occurs that has the following equation:</p>
+<p><span class="math display">\[ {}^{1}_{0}\mathrm{n}+{}^{235}_{92}\mathrm{U}
+\rightarrow{}^{90}_{38}\mathrm{Sr}+{}^{143}_{54}\mathrm{Xe}+x{}^{1}_{0}\mathrm{n} \]</span></p>
+<p><strong>(i)</strong> Determine, for this nuclear reaction, the value of <span class="math inline">\(x\)</span>. <code>[1]</code></p>
+<p><strong>(ii)</strong> Data for the binding energy per nucleon of some nuclei are given in Table 1.2.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>nucleus</th>
+<th style="text-align: right;">binding energy per nucleon / MeV</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\({}^{235}_{92}\mathrm{U}\)</span></td>
+<td style="text-align: right;">7.59</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\({}^{90}_{38}\mathrm{Sr}\)</span></td>
+<td style="text-align: right;">8.70</td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\({}^{143}_{54}\mathrm{Xe}\)</span></td>
+<td style="text-align: right;">8.20</td>
+</tr>
+</tbody>
+</table>
+<p>Use the data to calculate the energy, in MeV, released in this reaction. <code>[2]</code></p>
+<p><code>[3 marks]</code></p>
+<p><strong>(c)</strong> Under the right conditions, a hydrogen-2 <span class="math inline">\({}^{2}_{1}\mathrm{H}\)</span> nucleus can fuse with a hydrogen-1 <span class="math inline">\({}^{1}_{1}\mathrm{H}\)</span> nucleus to make a helium-3 <span class="math inline">\({}^{3}_{2}\mathrm{He}\)</span> nucleus. The values of binding energy per nucleon for these nuclei are shown in Table 1.3.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>nucleus</th>
+<th style="text-align: right;">binding energy per nucleon / MeV</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\({}^{2}_{1}\mathrm{H}\)</span></td>
+<td style="text-align: right;">0.864</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\({}^{3}_{2}\mathrm{He}\)</span></td>
+<td style="text-align: right;">2.235</td>
+</tr>
+</tbody>
+</table>
+<p><strong>(i)</strong> Write down the nuclear equation for this reaction. <code>[1]</code></p>
+<p><strong>(ii)</strong> Explain why the binding energy per nucleon of hydrogen-1 is zero. <code>[1]</code></p>
+<p><strong>(iii)</strong> Using the data in Table 1.3, calculate the energy released in this reaction. <code>[2]</code></p>
+<p><code>[4 marks]</code></p>
+<p><strong>(d)</strong> When two hydrogen-2 nuclei fuse into a helium-4 nucleus, <span class="math inline">\(3.6\times10^{-12}\ \mathrm{J}\)</span> of energy is released. This reaction is shown below.</p>
+<p><span class="math display">\[ {}^{2}_{1}\mathrm{H}+{}^{2}_{1}\mathrm{H}\rightarrow{}^{4}_{2}\mathrm{He} \]</span></p>
+<p>Show that the fusion of 1 kg of two hydrogen-2 nuclei releases about 8 times more energy per kg than the fission of 1 kg of uranium-235.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>nucleus</th>
+<th style="text-align: right;">mass / u</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\({}^{2}_{1}\mathrm{H}\)</span></td>
+<td style="text-align: right;">2.013553</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\({}^{235}_{92}\mathrm{U}\)</span></td>
+<td style="text-align: right;">235.0439</td>
+</tr>
+</tbody>
+</table>
+<p><code>[4 marks]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<ul>
+<li><strong>(a)(i)</strong> Nuclear fission is the division of one large nucleus into smaller nuclei. <code>[1]</code></li>
+<li><strong>(a)(ii)</strong> Draw a curve starting near the origin, rising steeply to one maximum left of centre, then falling gradually to <span class="math inline">\(A=250\)</span>. <code>[2]</code></li>
+<li><strong>(a)(iii)</strong> Heavy fission reactants are on the right of the curve and have lower binding energy per nucleon than the products <code>[1]</code>; the increase in total binding energy is released. <code>[1]</code></li>
+<li><strong>(b)(i)</strong> <span class="math inline">\(1+235=90+143+x\)</span>, so <span class="math inline">\(x=3\)</span>. <code>[1]</code></li>
+<li><strong>(b)(ii)</strong> <span class="math inline">\(E=[90(8.70)+143(8.20)]-235(7.59)\)</span> <code>[1]</code> <span class="math inline">\(=172\ \mathrm{MeV}\)</span>. <code>[1]</code></li>
+<li><strong>(c)(i)</strong> <span class="math inline">\({}^{2}_{1}\mathrm{H}+{}^{1}_{1}\mathrm{H}\rightarrow{}^{3}_{2}\mathrm{He}\)</span>. <code>[1]</code></li>
+<li><strong>(c)(ii)</strong> Hydrogen-1 contains only one proton, so there are no nucleons bound to one another. <code>[1]</code></li>
+<li><strong>(c)(iii)</strong> <span class="math inline">\(E=3(2.235)-2(0.864)=5.0\ \mathrm{MeV}\)</span>. <code>[2]</code></li>
+<li><strong>(d)</strong> Fusion reactions per kg: <span class="math inline">\(1/[2(2.013553)(1.66\times10^{-27})]=1.496\times10^{26}\)</span>, giving <span class="math inline">\(5.39\times10^{14}\ \mathrm{J\,kg^{-1}}\)</span>. <code>[2]</code> Fissions per kg: <span class="math inline">\(1/[235.0439(1.66\times10^{-27})]=2.562\times10^{24}\)</span>; using <span class="math inline">\(172\ \mathrm{MeV}\)</span> gives <span class="math inline">\(7.05\times10^{13}\ \mathrm{J\,kg^{-1}}\)</span>. <code>[1]</code> Ratio <span class="math inline">\(=7.65\approx8\)</span>. <code>[1]</code></li>
+</ul>
+</details>
+</section>
+<section id="example-6-deuterium-fusion-and-nuclear-stability-23.1-sq-medium-q3" class="level3 question-card">
+<h3 class="anchored" data-anchor-id="example-6-deuterium-fusion-and-nuclear-stability-23.1-sq-medium-q3">Example 6 · Deuterium fusion and nuclear stability · 23.1 SQ Medium Q3</h3>
+<p><strong>(a)</strong> Define the terms:</p>
+<p><strong>(i)</strong> mass defect; <code>[1]</code></p>
+<p><strong>(ii)</strong> binding energy of a nucleus. <code>[2]</code></p>
+<p><code>[3 marks]</code></p>
+<p><strong>(b)</strong> If deuterium <span class="math inline">\(({}^{2}_{1}\mathrm{H})\)</span> nuclei undergo fusion, a possible reaction is</p>
+<p><span class="math display">\[ {}^{2}_{1}\mathrm{H}+{}^{2}_{1}\mathrm{H}\rightarrow{}^{3}_{1}\mathrm{H}+{}^{1}_{1}\mathrm{H} \]</span></p>
+<p>The masses of the nuclei involved in the reaction are given in Table 1.1.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>nucleus</th>
+<th style="text-align: right;">mass / u</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\({}^{1}_{1}\mathrm{H}\)</span></td>
+<td style="text-align: right;">1.0078</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\({}^{2}_{1}\mathrm{H}\)</span></td>
+<td style="text-align: right;">2.0135</td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\({}^{3}_{1}\mathrm{H}\)</span></td>
+<td style="text-align: right;">3.0160</td>
+</tr>
+</tbody>
+</table>
+<p><strong>(i)</strong> Explain what is meant by nuclear fusion. <code>[1]</code></p>
+<p><strong>(ii)</strong> Determine the energy released, in J, when <span class="math inline">\(3.00\ \mathrm{mol}\)</span> of deuterium undergoes this fusion reaction. <code>[5]</code></p>
+<p><code>[6 marks]</code></p>
+<p><strong>(c)</strong> Fig. 1.2 shows the variation of nucleon number with the binding energy per nucleon of a nucleus.</p>
+<p><img src="../assets/questions/nuclear-physics/labelled-binding-energy-curve.webp" class="question-figure img-fluid" alt="Binding energy per nucleon curve with selected nuclides labelled"></p>
+<p>With reference to Fig. 1.2, state and explain:</p>
+<p><strong>(i)</strong> which of the elements shown is the most stable; <code>[2]</code></p>
+<p><strong>(ii)</strong> how the graph can be used to predict whether a nucleus will undergo fusion or fission. <code>[2]</code></p>
+<p><code>[4 marks]</code></p>
+<p><strong>(d)</strong> Fission and fusion reactions release different amounts of energy.</p>
+<p>Explain why the energy released per nucleon from fusion is greater than that from fission. State the feature of the graph in Fig. 1.2 that shows this. <code>[3 marks]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<ul>
+<li><strong>(a)(i)</strong> Mass defect is the difference between the mass of a nucleus and the sum of the masses of its completely separated nucleons. <code>[1]</code></li>
+<li><strong>(a)(ii)</strong> Binding energy is the minimum energy required to separate all nucleons <code>[1]</code> to infinity, or the energy released when they form the nucleus from infinity. <code>[1]</code></li>
+<li><strong>(b)(i)</strong> Fusion is the combination of two nuclei to form one nucleus. <code>[1]</code></li>
+<li><strong>(b)(ii)</strong> <span class="math inline">\(\Delta m=2(2.0135)-(3.0160+1.0078)=0.0032\ \mathrm{u}\)</span>. <code>[1]</code> One reaction releases <span class="math inline">\(\Delta mc^2=0.0032(1.66\times10^{-27})(3.00\times10^8)^2=4.78\times10^{-13}\ \mathrm{J}\)</span>. <code>[2]</code> Three moles of deuterium produce <span class="math inline">\(1.50\ \mathrm{mol}\)</span> of reactions. <code>[1]</code> Total energy <span class="math inline">\(=1.50(6.02\times10^{23})(4.78\times10^{-13})=4.32\times10^{11}\ \mathrm{J}\)</span>. <code>[1]</code></li>
+<li><strong>(c)(i)</strong> Iron-56 is most stable <code>[1]</code> because it has the greatest binding energy per nucleon. <code>[1]</code></li>
+<li><strong>(c)(ii)</strong> Nuclei below the iron peak tend to undergo fusion; nuclei above the peak tend to undergo fission. <code>[2]</code></li>
+<li><strong>(d)</strong> Energy is released when products have greater binding energy per nucleon. <code>[1]</code> The increase is greater for fusion than fission <code>[1]</code>, shown by the much steeper curve at small <span class="math inline">\(A\)</span> than at large <span class="math inline">\(A\)</span>. <code>[1]</code></li>
+</ul>
+</details>
+</section>
+<section id="radioactive-decay---easy" class="level3">
+<h3 class="anchored" data-anchor-id="radioactive-decay---easy">23.2 Radioactive Decay - Easy</h3>
+</section>
+<section id="example-7-spontaneous-and-random-decay-isotopes-and-decay-equations-23.2-sq-easy-q1" class="level3 question-card">
+<h3 class="anchored" data-anchor-id="example-7-spontaneous-and-random-decay-isotopes-and-decay-equations-23.2-sq-easy-q1">Example 7 · Spontaneous and random decay, isotopes and decay equations · 23.2 SQ Easy Q1</h3>
+<p><strong>(a)</strong> Radioactive decay is often described as a spontaneous and random process.</p>
+<p>State what is meant by:</p>
+<p><strong>(i)</strong> radioactive decay; <code>[2]</code></p>
+<p><strong>(ii)</strong> a spontaneous process; <code>[2]</code></p>
+<p><strong>(iii)</strong> a random process. <code>[2]</code></p>
+<p><code>[6 marks]</code></p>
+<p><strong>(b)</strong> The graph in Fig. 1.1 shows the count rate of a radioactive substance measured by a Geiger-Müller tube.</p>
+<p><img src="../assets/questions/nuclear-physics/random-count-rate-graph.webp" class="question-figure img-fluid" alt="Fluctuating radioactive count rate decreasing with time"></p>
+<p>State the feature of Fig. 1.1 which provides evidence for:</p>
+<p><strong>(i)</strong> the random nature of radioactive decay; <code>[1]</code></p>
+<p><strong>(ii)</strong> the spontaneous nature of radioactive decay. <code>[1]</code></p>
+<p><code>[2 marks]</code></p>
+<p><strong>(c)</strong> The element neptunium has at least 24 isotopes. One of the isotopes is neptunium-231 <span class="math inline">\(({}^{231}_{93}\mathrm{Np})\)</span>, which has a half-life of 49 minutes.</p>
+<p><strong>(i)</strong> State what is meant by isotopes and circle the possible isotopes of neptunium:</p>
+<p><span class="math display">\[ {}^{239}_{93}\mathrm{Np}\quad {}^{231}_{94}\mathrm{Np}\quad
+{}^{219}_{93}\mathrm{Np}\quad {}^{231}_{90}\mathrm{Np}\quad {}^{244}_{93}\mathrm{Np} \]</span></p>
+<p><code>[3]</code></p>
+<p><strong>(ii)</strong> Define half-life and circle the correct expression for calculating the probability per second of decay of a nucleus of neptunium-231:</p>
+<p><span class="math display">\[\frac{49}{0.693}\qquad\frac{0.693}{49}\qquad
+\frac{0.693}{49\times60}\qquad\frac{49\times60}{0.693}\]</span></p>
+<p><code>[3]</code></p>
+<p><code>[6 marks]</code></p>
+<p><strong>(d)</strong> Fig. 1.2 shows a diagram in which nucleon number <span class="math inline">\(A\)</span> is plotted against proton number <span class="math inline">\(Z\)</span>.</p>
+<p>The diagram shows the position of three isotopes of neptunium and their respective decay products.</p>
+<p><img src="../assets/questions/nuclear-physics/neptunium-decay-chart.webp" class="question-figure img-fluid" alt="Nucleon number against proton number chart for three neptunium decays"></p>
+<p>Use Fig. 1.2 to complete the following nuclear decay equations:</p>
+<p><span class="math display">\[\mathrm{Np}\rightarrow\mathrm{Pu}+\ ................................\]</span></p>
+<p><span class="math display">\[\mathrm{Np}\rightarrow\mathrm{U}+\ ................................\]</span></p>
+<p><span class="math display">\[\mathrm{Np}\rightarrow\mathrm{Pa}+\ ................................\]</span></p>
+<p><code>[3 marks]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<ul>
+<li><strong>(a)(i)</strong> Radioactive decay is emission of ionising radiation <code>[1]</code> from an unstable nucleus. <code>[1]</code></li>
+<li><strong>(a)(ii)</strong> Spontaneous decay is unaffected by environmental changes <code>[1]</code> such as temperature, pressure or chemical conditions. <code>[1]</code></li>
+<li><strong>(a)(iii)</strong> Each nucleus has a constant probability of decay per unit time <code>[1]</code>, but the particular nucleus and time of decay cannot be predicted. <code>[1]</code></li>
+<li><strong>(b)(i)</strong> The count-rate curve fluctuates and is not smooth. <code>[1]</code></li>
+<li><strong>(b)(ii)</strong> The exact time of an individual decay cannot be predicted, or each nucleus has constant decay probability in a given time. <code>[1]</code></li>
+<li><strong>(c)(i)</strong> Isotopes have the same proton number but different neutron numbers. <code>[2]</code> Circle <span class="math inline">\({}^{239}_{93}\mathrm{Np}\)</span>, <span class="math inline">\({}^{219}_{93}\mathrm{Np}\)</span> and <span class="math inline">\({}^{244}_{93}\mathrm{Np}\)</span>. <code>[1]</code></li>
+<li><strong>(c)(ii)</strong> Half-life is the time for activity or number of undecayed nuclei to fall to half its value. <code>[2]</code> Circle <span class="math inline">\(0.693/(49\times60)\)</span>. <code>[1]</code></li>
+<li><strong>(d)</strong> <span class="math inline">\({}^{240}_{93}\mathrm{Np}\rightarrow{}^{240}_{94}\mathrm{Pu}+{}^{0}_{-1}\beta+\bar\nu\)</span>. <code>[1]</code> <span class="math inline">\({}^{231}_{93}\mathrm{Np}\rightarrow{}^{231}_{92}\mathrm{U}+{}^{0}_{+1}\beta+\nu\)</span>. <code>[1]</code> <span class="math inline">\({}^{226}_{93}\mathrm{Np}\rightarrow{}^{222}_{91}\mathrm{Pa}+{}^{4}_{2}\alpha\)</span>. <code>[1]</code></li>
+</ul>
+</details>
+</section>
+<section id="example-8-planning-a-technetium-half-life-investigation-23.2-sq-easy-q2" class="level3 question-card">
+<h3 class="anchored" data-anchor-id="example-8-planning-a-technetium-half-life-investigation-23.2-sq-easy-q2">Example 8 · Planning a technetium half-life investigation · 23.2 SQ Easy Q2</h3>
+<p><strong>(a)</strong> Define half-life. <code>[2 marks]</code></p>
+<p><strong>(b)</strong> A student investigates the half-life of technetium with time. This list shows the variables in the experiment:</p>
+<p>time; size of sample; distance from the detector to the sample; same material for the sample; activity of the sample.</p>
+<p>Using variables from the list, state:</p>
+<p><strong>(i)</strong> the independent variable; <code>[1]</code></p>
+<p><strong>(ii)</strong> the dependent variable; <code>[1]</code></p>
+<p><strong>(iii)</strong> the control variables for the experiment. <code>[3]</code></p>
+<p><code>[5 marks]</code></p>
+<p><strong>(c)</strong> The experiment uses a variety of apparatus.</p>
+<p>Draw lines on Table 1.1 below to match the apparatus with its correct use.</p>
+<p><img src="../assets/questions/nuclear-physics/apparatus-purpose-table.webp" class="question-figure img-fluid" alt="Matching table for radioactive-source apparatus and purpose"></p>
+<p><code>[4 marks]</code></p>
+<p><strong>(d)</strong> Fig. 1.1 shows the graph that the student obtains from their results.</p>
+<p><img src="../assets/questions/nuclear-physics/technetium-activity-time-graph.webp" class="question-figure img-fluid" alt="Technetium activity against time in hours"></p>
+<p>Using Fig. 1.1, determine the half-life of the sample. <code>[3 marks]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<ul>
+<li><strong>(a)</strong> Half-life is the time taken for activity or number of undecayed nuclei <code>[1]</code> to decrease to half its value. <code>[1]</code></li>
+<li><strong>(b)(i)</strong> Time. <code>[1]</code></li>
+<li><strong>(b)(ii)</strong> Activity of the sample. <code>[1]</code></li>
+<li><strong>(b)(iii)</strong> Keep sample size, source-detector distance and sample material constant. <code>[3]</code></li>
+<li><strong>(c)</strong> Long tongs - handle the source at a distance. <code>[1]</code> Geiger-Müller tube - detect count rate. <code>[1]</code> Secure lead-lined holder - keep the source in place and reduce exposure. <code>[1]</code> Stopwatch - measure the same time interval for each reading. <code>[1]</code></li>
+<li><strong>(d)</strong> Initial activity is <span class="math inline">\(16\times10^4\ \mathrm{Bq}\)</span>. <code>[1]</code> Half is <span class="math inline">\(8\times10^4\ \mathrm{Bq}\)</span>. <code>[1]</code> The graph reaches this value at approximately <span class="math inline">\(6\ \mathrm{h}\)</span>, so <span class="math inline">\(t_{1/2}=6\ \mathrm{h}\)</span>. <code>[1]</code></li>
+</ul>
+</details>
+</section>
+<section id="example-9-a-polonium-decay-chain-and-initial-activity-23.2-sq-easy-q3" class="level3 question-card">
+<h3 class="anchored" data-anchor-id="example-9-a-polonium-decay-chain-and-initial-activity-23.2-sq-easy-q3">Example 9 · A polonium decay chain and initial activity · 23.2 SQ Easy Q3</h3>
+<p><strong>(a)</strong> An isotope of polonium-213 <span class="math inline">\(({}^{213}_{84}\mathrm{Po})\)</span> first decays into an isotope of lead-209 <span class="math inline">\(({}^{209}_{82}\mathrm{Pb})\)</span> and then decays into the stable isotope of bismuth (Bi).</p>
+<p>Fig. 1.1 shows two arrows on a neutron number <span class="math inline">\(N\)</span> against proton number <span class="math inline">\(Z\)</span> chart to illustrate these two decays.</p>
+<p><img src="../assets/questions/nuclear-physics/polonium-lead-decay-chart.webp" class="question-figure img-fluid" alt="Neutron number against proton number chart for polonium and lead decays"></p>
+<p>Use Fig. 1.1 to complete the nuclear decay equations for:</p>
+<p><strong>(i)</strong> the polonium isotope; <code>[1]</code></p>
+<p><strong>(ii)</strong> the lead isotope. <code>[2]</code></p>
+<p><code>[3 marks]</code></p>
+<p><strong>(b)</strong> A pure sample of polonium-213 is produced in a research laboratory.</p>
+<p>The half-life of <span class="math inline">\({}^{213}\mathrm{Po}\)</span> is very small compared with the half-life of <span class="math inline">\({}^{209}\mathrm{Pb}\)</span>. After a very short time, the ionising radiation detected from the sample is mainly from the beta-minus decay of the lead-209 nuclei.</p>
+<p>The half-life of <span class="math inline">\({}^{209}\mathrm{Pb}\)</span> is <span class="math inline">\(3.3\ \mathrm{hours}\)</span>.</p>
+<p><strong>(i)</strong> State what is meant by the decay constant of a radioactive isotope. <code>[2]</code></p>
+<p><strong>(ii)</strong> Calculate the decay constant, in <span class="math inline">\(\mathrm{s^{-1}}\)</span>, of lead-209. <code>[3]</code></p>
+<p><code>[5 marks]</code></p>
+<p><strong>(c)</strong> The activity of the sample of <span class="math inline">\({}^{209}\mathrm{Pb}\)</span> after <span class="math inline">\(7.0\ \mathrm{hours}\)</span> is <span class="math inline">\(12\ \mathrm{kBq}\)</span>.</p>
+<p>Calculate the initial activity of the sample of polonium-213. <code>[2 marks]</code></p>
+<p><strong>(d)(i)</strong> State the relation between the activity <span class="math inline">\(A\)</span> of a sample of a radioactive isotope containing <span class="math inline">\(N\)</span> atoms and the decay constant <span class="math inline">\(\lambda\)</span> of the isotope. <code>[1]</code></p>
+<p><strong>(ii)</strong> Determine the number of lead-209 nuclei in the sample initially. <code>[2]</code></p>
+<p><code>[3 marks]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<ul>
+<li><strong>(a)(i)</strong> <span class="math inline">\({}^{213}_{84}\mathrm{Po}\rightarrow{}^{209}_{82}\mathrm{Pb}+{}^{4}_{2}\alpha\)</span>. <code>[1]</code></li>
+<li><strong>(a)(ii)</strong> <span class="math inline">\({}^{209}_{82}\mathrm{Pb}\rightarrow{}^{209}_{83}\mathrm{Bi}+{}^{0}_{-1}\mathrm{e}+{}^{0}_{0}\bar\nu\)</span>. <code>[2]</code></li>
+<li><strong>(b)(i)</strong> The decay constant is the probability that a nucleus decays <code>[1]</code> per unit time. <code>[1]</code></li>
+<li><strong>(b)(ii)</strong> <span class="math inline">\(t_{1/2}=3.3(3600)=11880\ \mathrm{s}\)</span>. <code>[1]</code> <span class="math inline">\(\lambda=0.693/t_{1/2}\)</span> <code>[1]</code> <span class="math inline">\(=5.83\times10^{-5}\ \mathrm{s^{-1}}\)</span>. <code>[1]</code></li>
+<li><strong>(c)</strong> <span class="math inline">\(A=A_0e^{-\lambda t}\)</span>, so <span class="math inline">\(A_0=12\times10^3/e^{-(5.83\times10^{-5})(25200)}=5.21\times10^4\ \mathrm{Bq}\)</span>. <code>[2]</code></li>
+<li><strong>(d)(i)</strong> <span class="math inline">\(A=\lambda N\)</span>. <code>[1]</code></li>
+<li><strong>(d)(ii)</strong> <span class="math inline">\(N_0=A_0/\lambda=(5.21\times10^4)/(5.83\times10^{-5})=8.94\times10^8\)</span>, or <span class="math inline">\(8.9\times10^8\)</span> nuclei. <code>[2]</code></li>
+</ul>
+</details>
+</section>
+<section id="radioactive-decay---medium" class="level3">
+<h3 class="anchored" data-anchor-id="radioactive-decay---medium">23.2 Radioactive Decay - Medium</h3>
+</section>
+<section id="example-10-technetium-decay-activity-and-released-energy-23.2-sq-medium-q1" class="level3 question-card">
+<h3 class="anchored" data-anchor-id="example-10-technetium-decay-activity-and-released-energy-23.2-sq-medium-q1">Example 10 · Technetium decay, activity and released energy · 23.2 SQ Medium Q1</h3>
+<p><strong>(a)</strong> A student sets up a radioactive source and a Geiger counter to investigate how the count rate of the source varies with time.</p>
+<p>State and explain how the student could demonstrate:</p>
+<p><strong>(i)</strong> the spontaneous nature of radioactive decay; <code>[2]</code></p>
+<p><strong>(ii)</strong> the random nature of radioactive decay. <code>[2]</code></p>
+<p><code>[4 marks]</code></p>
+<p><strong>(b)</strong> Technetium-101 <span class="math inline">\(({}^{101}_{43}\mathrm{Tc})\)</span> decays by beta-minus emission to form a stable isotope of ruthenium (Ru).</p>
+<p>Complete the equation for this decay. <code>[2 marks]</code></p>
+<p><strong>(c)</strong> The variation with time <span class="math inline">\(t\)</span> of the number <span class="math inline">\(N\)</span> of technetium-101 nuclei in a sample of radioactive material is shown in Fig. 1.1.</p>
+<p><img src="../assets/questions/nuclear-physics/technetium-nuclei-time-graph.webp" class="question-figure img-fluid" alt="Number of technetium-101 nuclei against time"></p>
+<p><strong>(i)</strong> Use Fig. 1.1 to determine the activity, in Bq, of the sample of technetium-101 at time <span class="math inline">\(t=14.0\ \mathrm{minutes}\)</span>. <code>[4]</code></p>
+<p><strong>(ii)</strong> Use your answer in <strong>(c)(i)</strong> to calculate the decay constant <span class="math inline">\(\lambda\)</span> of technetium-101. <code>[2]</code></p>
+<p><strong>(iii)</strong> On Fig. 1.1, sketch a line to show the variation with <span class="math inline">\(t\)</span> of the number of ruthenium nuclei in the sample. <code>[2]</code></p>
+<p><code>[8 marks]</code></p>
+<p><strong>(d)</strong> Each decay releases a beta particle with energy <span class="math inline">\(487\ \mathrm{keV}\)</span>.</p>
+<p><strong>(i)</strong> Calculate, in J, the total amount of energy given to beta particles that are emitted between time <span class="math inline">\(t=10\ \mathrm{min}\)</span> and time <span class="math inline">\(t=30\ \mathrm{min}\)</span>. <code>[3]</code></p>
+<p><strong>(ii)</strong> Suggest why the total amount of energy released by the decay process between time <span class="math inline">\(t=10\ \mathrm{min}\)</span> and time <span class="math inline">\(t=30\ \mathrm{min}\)</span> is actually greater than your answer in <strong>(d)(i)</strong>. <code>[1]</code></p>
+<p><code>[4 marks]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<ul>
+<li><strong>(a)(i)</strong> Repeat the experiment under different environmental conditions <code>[1]</code> and show that activity is unchanged. <code>[1]</code></li>
+<li><strong>(a)(ii)</strong> Plot count rate against time <code>[1]</code> and show that the readings fluctuate rather than forming a perfectly smooth curve. <code>[1]</code></li>
+<li><strong>(b)</strong> <span class="math inline">\({}^{101}_{43}\mathrm{Tc}\rightarrow{}^{101}_{44}\mathrm{Ru}+{}^{0}_{-1}\beta\)</span>. <code>[2]</code></li>
+<li><strong>(c)(i)</strong> At 14 min, <span class="math inline">\(N=4.4\times10^7\)</span> and this time is one half-life. <code>[2]</code> <span class="math inline">\(A=\lambda N=N\ln2/t_{1/2}=(4.4\times10^7)(\ln2)/(14\times60)=3.6\times10^4\ \mathrm{Bq}\)</span>. <code>[2]</code></li>
+<li><strong>(c)(ii)</strong> <span class="math inline">\(\lambda=A/N=(3.6\times10^4)/(4.4\times10^7)=8.2\times10^{-4}\ \mathrm{s^{-1}}\)</span>. <code>[2]</code></li>
+<li><strong>(c)(iii)</strong> Draw a rising curve of decreasing gradient from <span class="math inline">\((0,0)\)</span>, passing approximately through <span class="math inline">\((14,4.4\times10^7)\)</span> and <span class="math inline">\((28,6.6\times10^7)\)</span>. <code>[2]</code></li>
+<li><strong>(d)(i)</strong> From the graph, <span class="math inline">\(N_{10}=5.4\times10^7\)</span> and <span class="math inline">\(N_{30}=2.0\times10^7\)</span>, so <span class="math inline">\(3.4\times10^7\)</span> beta particles are emitted. <code>[1]</code> Total energy <span class="math inline">\(=(487\times10^3)(1.60\times10^{-19})(3.4\times10^7)\)</span> <code>[1]</code> <span class="math inline">\(=2.6\times10^{-6}\ \mathrm{J}\)</span>. <code>[1]</code></li>
+<li><strong>(d)(ii)</strong> Energy is also carried as kinetic energy of the daughter nuclei or by gamma photons. <code>[1]</code></li>
+</ul>
+</details>
+</section>
+<section id="example-11-radium-contamination-and-exponential-activity-23.2-sq-medium-q2" class="level3 question-card">
+<h3 class="anchored" data-anchor-id="example-11-radium-contamination-and-exponential-activity-23.2-sq-medium-q2">Example 11 · Radium contamination and exponential activity · 23.2 SQ Medium Q2</h3>
+<p><strong>(a)</strong> A source of water is found to be contaminated with the radioactive isotope radium-228 <span class="math inline">\(({}^{228}_{88}\mathrm{Ra})\)</span>.</p>
+<p>This isotope of radium has a half-life of <span class="math inline">\(5.75\ \mathrm{years}\)</span>.</p>
+<p>Explain the meaning of half-life in this context. <code>[2 marks]</code></p>
+<p><strong>(b)</strong> Calculate the decay constant, in <span class="math inline">\(\mathrm{s^{-1}}\)</span>, of radium-228. <code>[2 marks]</code></p>
+<p><strong>(c)</strong> A sample is taken of the contaminated water. The activity of radium-228 in a sample of <span class="math inline">\(1.0\ \mathrm{kg}\)</span> of water is found to be <span class="math inline">\(20\ \mathrm{mBq}\)</span>.</p>
+<p>The mass of water in <span class="math inline">\(1.0\ \mathrm{mol}\)</span> is <span class="math inline">\(18\ \mathrm{g}\)</span>.</p>
+<p>Calculate:</p>
+<p><strong>(i)</strong> the number of radium-228 atoms in <span class="math inline">\(1.0\ \mathrm{kg}\)</span> of the contaminated water; <code>[2]</code></p>
+<p><strong>(ii)</strong> the ratio</p>
+<p><span class="math display">\[\frac{\text{number of molecules of water in 1.0 kg of water}}
+{\text{number of }{}^{228}\mathrm{Ra}\text{ atoms in 1.0 kg of water}}.\]</span></p>
+<p><code>[2]</code></p>
+<p><code>[4 marks]</code></p>
+<p><strong>(d)</strong> The maximum safe limit for the activity of radium-228 in water has been set as <span class="math inline">\(18.5\ \mathrm{mBq\,kg^{-1}}\)</span>.</p>
+<p>Calculate the time, in days, for the activity of the contaminated water to be reduced to the safe limit. <code>[3 marks]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<ul>
+<li><strong>(a)</strong> In 5.75 years, the number of radium-228 nuclei or their activity <code>[1]</code> falls to half its current value. <code>[1]</code></li>
+<li><strong>(b)</strong> <span class="math inline">\(t_{1/2}=5.75(365)(24)(3600)=1.81\times10^8\ \mathrm{s}\)</span>. <code>[1]</code> <span class="math inline">\(\lambda=0.693/t_{1/2}=3.83\times10^{-9}\ \mathrm{s^{-1}}\)</span>. <code>[1]</code></li>
+<li><strong>(c)(i)</strong> <span class="math inline">\(N=A/\lambda=0.020/(3.83\times10^{-9})=5.22\times10^6\)</span> atoms. <code>[2]</code></li>
+<li><strong>(c)(ii)</strong> Water molecules <span class="math inline">\(=(1.0/0.018)(6.02\times10^{23})=3.34\times10^{25}\)</span>. <code>[1]</code> Ratio <span class="math inline">\(=(3.34\times10^{25})/(5.22\times10^6)=6.4\times10^{18}\)</span>. <code>[1]</code></li>
+<li><strong>(d)</strong> <span class="math inline">\(18.5=20e^{-\lambda t}\)</span>. <code>[1]</code> <span class="math inline">\(t=-\ln(18.5/20)/(3.83\times10^{-9})=2.04\times10^7\ \mathrm{s}\)</span>. <code>[1]</code> This is <span class="math inline">\(236\ \mathrm{days}\)</span>. <code>[1]</code></li>
+</ul>
+</details>
+</section>
+<section id="example-12-decay-graphs-and-the-remaining-fraction-23.2-sq-medium-q3" class="level3 question-card">
+<h3 class="anchored" data-anchor-id="example-12-decay-graphs-and-the-remaining-fraction-23.2-sq-medium-q3">Example 12 · Decay graphs and the remaining fraction · 23.2 SQ Medium Q3</h3>
+<p><strong>(a)</strong> State what is meant by radioactive decay. <code>[2 marks]</code></p>
+<p><strong>(b)</strong> A radioactive sample consists of an isotope with a half-life <span class="math inline">\(T\)</span> that decays to form a stable product. Only the isotope and the stable product are present in the sample.</p>
+<p>At time <span class="math inline">\(t=0\)</span>, the sample has an activity of <span class="math inline">\(A_0\)</span> and contains <span class="math inline">\(N_0\)</span> nuclei of the isotope.</p>
+<p><strong>(i)</strong> On Fig. 1.1, sketch the variation with <span class="math inline">\(t\)</span> of the number <span class="math inline">\(N\)</span> of nuclei of the isotope present in the sample from time <span class="math inline">\(t=0\)</span> to time <span class="math inline">\(t=3T\)</span>. <code>[3]</code></p>
+<p><img src="../assets/questions/nuclear-physics/blank-decay-nuclei-time-graph.webp" class="question-figure img-fluid" alt="Blank graph of undecayed nuclei against time in half-lives"></p>
+<p><strong>(ii)</strong> State the name of the quantity represented by the gradient of the graph in Fig. 1.1. <code>[1]</code></p>
+<p><code>[4 marks]</code></p>
+<p><strong>(c)(i)</strong> On Fig. 1.2, sketch the variation with <span class="math inline">\(N\)</span> of the activity <span class="math inline">\(A\)</span> of the sample for values of <span class="math inline">\(N\)</span> between <span class="math inline">\(N=0\)</span> and <span class="math inline">\(N=N_0\)</span>. <code>[2]</code></p>
+<p><img src="../assets/questions/nuclear-physics/blank-activity-nuclei-graph.webp" class="question-figure img-fluid" alt="Blank graph of activity against number of undecayed nuclei"></p>
+<p><strong>(ii)</strong> State the name of the quantity represented by the gradient in Fig. 1.2. <code>[1]</code></p>
+<p><code>[3 marks]</code></p>
+<p><strong>(d)</strong> Calculate the fraction of undecayed nuclei <span class="math inline">\(N\)</span> remaining relative to <span class="math inline">\(N_0\)</span> at time <span class="math inline">\(t=1.25T\)</span>. <code>[2 marks]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<ul>
+<li><strong>(a)</strong> Radioactive decay is the spontaneous emission of ionising radiation <code>[1]</code> from an unstable nucleus. <code>[1]</code></li>
+<li><strong>(b)(i)</strong> Draw an exponential curve from <span class="math inline">\((0,N_0)\)</span> with decreasing negative gradient. <code>[1]</code> It passes through <span class="math inline">\((T,0.50N_0)\)</span> <code>[1]</code>, <span class="math inline">\((2T,0.25N_0)\)</span> and <span class="math inline">\((3T,0.125N_0)\)</span>. <code>[1]</code></li>
+<li><strong>(b)(ii)</strong> The magnitude of the gradient represents activity; mathematically <span class="math inline">\(dN/dt=-A\)</span>. <code>[1]</code></li>
+<li><strong>(c)(i)</strong> Draw a straight line through the origin <code>[1]</code> and <span class="math inline">\((N_0,A_0)\)</span>. <code>[1]</code></li>
+<li><strong>(c)(ii)</strong> The gradient is the decay constant <span class="math inline">\(\lambda\)</span>. <code>[1]</code></li>
+<li><strong>(d)</strong> <span class="math inline">\(N/N_0=e^{-\lambda t}=e^{-(\ln2/T)(1.25T)}\)</span> <code>[1]</code> <span class="math inline">\(=2^{-1.25}=0.42\)</span>. <code>[1]</code></li>
+</ul>
+</details>
+</section>
+</section>
+<section id="chapter-checklist" class="level2">
+<h2 class="anchored" data-anchor-id="chapter-checklist">Chapter checklist</h2>
+<ul class="task-list">
+<li><label><input type="checkbox">I can balance nucleon number and charge in nuclear equations.</label></li>
+<li><label><input type="checkbox">I can calculate mass defect and binding energy in J or MeV.</label></li>
+<li><label><input type="checkbox">I can explain the shape of the binding-energy-per-nucleon curve.</label></li>
+<li><label><input type="checkbox">I can compare energy release from fission and fusion.</label></li>
+<li><label><input type="checkbox">I can explain spontaneous and random decay.</label></li>
+<li><label><input type="checkbox">I can calculate activity, decay constant and half-life.</label></li>
+<li><label><input type="checkbox">I can apply exponential decay to <span class="math inline">\(N\)</span>, <span class="math inline">\(A\)</span> and count rate.</label></li>
+<li><label><input type="checkbox">I can interpret gradients and half-life points on decay graphs.</label></li>
+</ul>
+<section id="original-question-pdfs" class="level3">
+<h3 class="anchored" data-anchor-id="original-question-pdfs">Original question PDFs</h3>
+<ul>
+<li><a href="../resources/original-papers/nuclear-physics/23.1-mass-defect-binding-energy-easy.pdf">23.1 Mass Defect and Nuclear Binding Energy - Easy</a></li>
+<li><a href="../resources/original-papers/nuclear-physics/23.1-mass-defect-binding-energy-medium.pdf">23.1 Mass Defect and Nuclear Binding Energy - Medium</a></li>
+<li><a href="../resources/original-papers/nuclear-physics/23.2-radioactive-decay-easy.pdf">23.2 Radioactive Decay - Easy</a></li>
+<li><a href="../resources/original-papers/nuclear-physics/23.2-radioactive-decay-medium.pdf">23.2 Radioactive Decay - Medium</a></li>
+</ul>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll(".done-toggle input").forEach((input) => {
+    const key = `cie-physics-${input.dataset.progress}`;
+    input.checked = localStorage.getItem(key) === "true";
+    input.closest(".question-card")?.classList.toggle("is-complete", input.checked);
+    input.addEventListener("change", () => {
+      localStorage.setItem(key, input.checked);
+      input.closest(".question-card")?.classList.toggle("is-complete", input.checked);
+    });
+  });
+
+  document.querySelectorAll(".mc-question").forEach((card) => {
+    const answer = card.dataset.answer;
+    const feedback = card.querySelector(".mc-feedback");
+    const check = card.querySelector(".check-answer");
+    let selected = localStorage.getItem(`cie-physics-${card.id}-choice`) || "";
+
+    const showSelection = () => {
+      card.querySelectorAll(".mc-choice").forEach((choice) => {
+        choice.classList.toggle("is-selected", choice.dataset.choice === selected);
+      });
+    };
+    showSelection();
+
+    card.querySelectorAll(".mc-choice").forEach((choice) => {
+      choice.addEventListener("click", () => {
+        selected = choice.dataset.choice;
+        localStorage.setItem(`cie-physics-${card.id}-choice`, selected);
+        feedback.textContent = "";
+        feedback.className = "mc-feedback";
+        showSelection();
+      });
+    });
+
+    check?.addEventListener("click", () => {
+      if (!selected) {
+        feedback.textContent = "Select an answer first.";
+        feedback.className = "mc-feedback is-pending";
+        return;
+      }
+      const correct = selected === answer;
+      feedback.textContent = correct ? "Correct." : `Not quite. The correct answer is ${answer}.`;
+      feedback.className = `mc-feedback ${correct ? "is-correct" : "is-incorrect"}`;
+    });
+  });
+});
+</script>
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "已复制");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "已复制");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../a-level/22-quantum-physics.html" class="pagination-link" aria-label="22 Quantum physics">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">22 Quantum physics</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../a-level/24-medical-physics.html" class="pagination-link" aria-label="24 Medical physics">
+        <span class="nav-page-text">24 Medical physics</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>

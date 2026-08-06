@@ -1,0 +1,1257 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-Hans" xml:lang="zh-Hans"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.38">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>12 Motion in a circle – CIE Physics 9702</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../a-level/13-gravitational-fields.html" rel="next">
+<link href="../as-level/03-dynamics.html" rel="prev">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-a2a938b4dd5711f7a799c87bd16ba44c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "没有结果",
+    "search-matching-documents-text": "匹配的文档",
+    "search-copy-link-title": "复制搜索链接",
+    "search-hide-matches-text": "隐藏其它匹配结果",
+    "search-more-match-text": "更多匹配结果",
+    "search-more-matches-text": "更多匹配结果",
+    "search-clear-button-title": "清除",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "取消",
+    "search-submit-button-title": "提交",
+    "search-label": "搜索"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../styles.css">
+</head>
+
+<body class="nav-sidebar docked quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="展开或折叠侧边栏导航" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../a-level/12-motion-in-a-circle.html">A Level</a></li><li class="breadcrumb-item"><a href="../a-level/12-motion-in-a-circle.html">12 Motion in a circle</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="展开或折叠侧边栏导航" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="搜索" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">CIE Physics 9702</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="搜索"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">学习首页</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">AS Level</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="展开或折叠此栏">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../as-level/01-physical-quantities-and-units.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">1 Physical quantities and units</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../as-level/02-kinematics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2 Kinematics</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../as-level/03-dynamics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">3 Dynamics</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">A Level</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="展开或折叠此栏">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/12-motion-in-a-circle.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">12 Motion in a circle</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/13-gravitational-fields.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">13 Gravitational fields</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/14-temperature.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">14 Temperature</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/15-ideal-gases.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">15 Ideal gases</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/16-thermodynamics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">16 Thermodynamics</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/17-oscillations.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">17 Oscillations</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/18-electric-fields.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">18 Electric fields</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/19-capacitance.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">19 Capacitance</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/20-magnetic-fields.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">20 Magnetic fields</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/21-alternating-currents.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">21 Alternating currents</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/22-quantum-physics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">22 Quantum physics</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/23-nuclear-physics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">23 Nuclear physics</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/24-medical-physics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">24 Medical physics</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/25-astronomy-and-cosmology.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">25 Astronomy and cosmology</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">该页面内容</h2>
+   
+  <ul>
+  <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link active" data-scroll-target="#learning-objectives">Learning objectives</a></li>
+  <li><a href="#kinematics-of-uniform-circular-motion" id="toc-kinematics-of-uniform-circular-motion" class="nav-link" data-scroll-target="#kinematics-of-uniform-circular-motion">12.1 Kinematics of uniform circular motion</a>
+  <ul class="collapse">
+  <li><a href="#angular-displacement-and-the-radian" id="toc-angular-displacement-and-the-radian" class="nav-link" data-scroll-target="#angular-displacement-and-the-radian">Angular displacement and the radian</a></li>
+  <li><a href="#angular-speed-period-and-frequency" id="toc-angular-speed-period-and-frequency" class="nav-link" data-scroll-target="#angular-speed-period-and-frequency">Angular speed, period and frequency</a></li>
+  <li><a href="#linear-speed-and-angular-speed" id="toc-linear-speed-and-angular-speed" class="nav-link" data-scroll-target="#linear-speed-and-angular-speed">Linear speed and angular speed</a></li>
+  </ul></li>
+  <li><a href="#centripetal-acceleration" id="toc-centripetal-acceleration" class="nav-link" data-scroll-target="#centripetal-acceleration">12.2 Centripetal acceleration</a>
+  <ul class="collapse">
+  <li><a href="#why-circular-motion-is-accelerated-motion" id="toc-why-circular-motion-is-accelerated-motion" class="nav-link" data-scroll-target="#why-circular-motion-is-accelerated-motion">Why circular motion is accelerated motion</a></li>
+  <li><a href="#centripetal-force" id="toc-centripetal-force" class="nav-link" data-scroll-target="#centripetal-force">Centripetal force</a></li>
+  <li><a href="#reliable-calculation-routine" id="toc-reliable-calculation-routine" class="nav-link" data-scroll-target="#reliable-calculation-routine">Reliable calculation routine</a></li>
+  </ul></li>
+  <li><a href="#structured-questions" id="toc-structured-questions" class="nav-link" data-scroll-target="#structured-questions">Structured Questions</a>
+  <ul class="collapse">
+  <li><a href="#kinematics-of-uniform-circular-motion---medium" id="toc-kinematics-of-uniform-circular-motion---medium" class="nav-link" data-scroll-target="#kinematics-of-uniform-circular-motion---medium">12.1 Kinematics of Uniform Circular Motion - Medium</a></li>
+  <li><a href="#example-1-angular-displacement-and-frequency-12.1-sq-medium-q1" id="toc-example-1-angular-displacement-and-frequency-12.1-sq-medium-q1" class="nav-link" data-scroll-target="#example-1-angular-displacement-and-frequency-12.1-sq-medium-q1">Example 1 · Angular displacement and frequency · 12.1 SQ Medium Q1</a></li>
+  <li><a href="#example-2-angular-and-linear-velocity-in-orbits-12.1-sq-medium-q2" id="toc-example-2-angular-and-linear-velocity-in-orbits-12.1-sq-medium-q2" class="nav-link" data-scroll-target="#example-2-angular-and-linear-velocity-in-orbits-12.1-sq-medium-q2">Example 2 · Angular and linear velocity in orbits · 12.1 SQ Medium Q2</a></li>
+  <li><a href="#example-3-children-rotating-with-a-rope-12.1-sq-medium-q3" id="toc-example-3-children-rotating-with-a-rope-12.1-sq-medium-q3" class="nav-link" data-scroll-target="#example-3-children-rotating-with-a-rope-12.1-sq-medium-q3">Example 3 · Children rotating with a rope · 12.1 SQ Medium Q3</a></li>
+  <li><a href="#centripetal-acceleration---easy" id="toc-centripetal-acceleration---easy" class="nav-link" data-scroll-target="#centripetal-acceleration---easy">12.2 Centripetal Acceleration - Easy</a></li>
+  <li><a href="#example-4-centripetal-acceleration-and-a-geostationary-satellite-12.2-sq-easy-q1" id="toc-example-4-centripetal-acceleration-and-a-geostationary-satellite-12.2-sq-easy-q1" class="nav-link" data-scroll-target="#example-4-centripetal-acceleration-and-a-geostationary-satellite-12.2-sq-easy-q1">Example 4 · Centripetal acceleration and a geostationary satellite · 12.2 SQ Easy Q1</a></li>
+  <li><a href="#example-5-identifying-centripetal-forces-12.2-sq-easy-q2" id="toc-example-5-identifying-centripetal-forces-12.2-sq-easy-q2" class="nav-link" data-scroll-target="#example-5-identifying-centripetal-forces-12.2-sq-easy-q2">Example 5 · Identifying centripetal forces · 12.2 SQ Easy Q2</a></li>
+  <li><a href="#example-6-jupiters-moons-12.2-sq-easy-q3" id="toc-example-6-jupiters-moons-12.2-sq-easy-q3" class="nav-link" data-scroll-target="#example-6-jupiters-moons-12.2-sq-easy-q3">Example 6 · Jupiter’s moons · 12.2 SQ Easy Q3</a></li>
+  <li><a href="#centripetal-acceleration---medium" id="toc-centripetal-acceleration---medium" class="nav-link" data-scroll-target="#centripetal-acceleration---medium">12.2 Centripetal Acceleration - Medium</a></li>
+  <li><a href="#example-7-runners-on-a-circular-track-12.2-sq-medium-q1" id="toc-example-7-runners-on-a-circular-track-12.2-sq-medium-q1" class="nav-link" data-scroll-target="#example-7-runners-on-a-circular-track-12.2-sq-medium-q1">Example 7 · Runners on a circular track · 12.2 SQ Medium Q1</a></li>
+  <li><a href="#example-8-skateboarder-in-a-bowl-shaped-ramp-12.2-sq-medium-q2" id="toc-example-8-skateboarder-in-a-bowl-shaped-ramp-12.2-sq-medium-q2" class="nav-link" data-scroll-target="#example-8-skateboarder-in-a-bowl-shaped-ramp-12.2-sq-medium-q2">Example 8 · Skateboarder in a bowl-shaped ramp · 12.2 SQ Medium Q2</a></li>
+  </ul></li>
+  <li><a href="#chapter-self-check" id="toc-chapter-self-check" class="nav-link" data-scroll-target="#chapter-self-check">Chapter self-check</a>
+  <ul class="collapse">
+  <li><a href="#original-topic-pdfs" id="toc-original-topic-pdfs" class="nav-link" data-scroll-target="#original-topic-pdfs">Original topic PDFs</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../a-level/12-motion-in-a-circle.html">A Level</a></li><li class="breadcrumb-item"><a href="../a-level/12-motion-in-a-circle.html">12 Motion in a circle</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">12 Motion in a circle</h1>
+<p class="subtitle lead">Angular motion, centripetal acceleration and centripetal force</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="learning-objectives" class="level2">
+<h2 class="anchored" data-anchor-id="learning-objectives">Learning objectives</h2>
+<p>By the end of this chapter, you should be able to:</p>
+<ul>
+<li>define the radian and express angular displacement in radians;</li>
+<li>understand and use angular speed;</li>
+<li>recall and use <span class="math inline">\(\omega=2\pi/T\)</span> and <span class="math inline">\(v=r\omega\)</span>;</li>
+<li>explain why a constant-magnitude force perpendicular to the motion produces centripetal acceleration;</li>
+<li>explain why centripetal acceleration produces circular motion at constant angular speed;</li>
+<li>recall and use <span class="math inline">\(a=r\omega^2\)</span> and <span class="math inline">\(a=v^2/r\)</span>;</li>
+<li>recall and use <span class="math inline">\(F=mr\omega^2\)</span> and <span class="math inline">\(F=mv^2/r\)</span>.</li>
+</ul>
+</section>
+<section id="kinematics-of-uniform-circular-motion" class="level2">
+<h2 class="anchored" data-anchor-id="kinematics-of-uniform-circular-motion">12.1 Kinematics of uniform circular motion</h2>
+<section id="angular-displacement-and-the-radian" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="angular-displacement-and-the-radian">Angular displacement and the radian</h3>
+<p>For an arc of length <span class="math inline">\(s\)</span> on a circle of radius <span class="math inline">\(r\)</span>, the angular displacement in radians is</p>
+<p><span class="math display">\[\theta=\frac{s}{r}.\]</span></p>
+<p>One radian is the angle subtended at the centre of a circle by an arc whose length is equal to the radius. Since the circumference is <span class="math inline">\(2\pi r\)</span>, one complete revolution is</p>
+<p><span class="math display">\[\theta=\frac{2\pi r}{r}=2\pi\ \mathrm{rad}=360^\circ.\]</span></p>
+<p>Therefore,</p>
+<p><span class="math display">\[\theta(\mathrm{rad})=\theta(^\circ)\frac{\pi}{180},
+\qquad
+\theta(^\circ)=\theta(\mathrm{rad})\frac{180}{\pi}.\]</span></p>
+<p>Radians are dimensionless, but writing <code>rad</code> is useful because it identifies an angular quantity. Circular-motion equations such as <span class="math inline">\(s=r\theta\)</span> require <span class="math inline">\(\theta\)</span> in radians.</p>
+</section>
+<section id="angular-speed-period-and-frequency" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="angular-speed-period-and-frequency">Angular speed, period and frequency</h3>
+<p>Angular speed is the rate of change of angular displacement:</p>
+<p><span class="math display">\[\omega=\frac{\Delta\theta}{\Delta t}.\]</span></p>
+<p>For uniform circular motion, the angular speed is constant. During one period <span class="math inline">\(T\)</span>, the radius turns through <span class="math inline">\(2\pi\)</span> radians, so</p>
+<p><span class="math display">\[\omega=\frac{2\pi}{T}=2\pi f,\]</span></p>
+<p>where <span class="math inline">\(f=1/T\)</span> is the frequency. The SI unit of angular speed is <span class="math inline">\(\mathrm{rad\,s^{-1}}\)</span>.</p>
+<p>Every point on a rigid rotating object has the same angular speed, but points farther from the axis have a greater linear speed.</p>
+</section>
+<section id="linear-speed-and-angular-speed" class="level3 formula-panel">
+<h3 class="anchored" data-anchor-id="linear-speed-and-angular-speed">Linear speed and angular speed</h3>
+<p>Starting from <span class="math inline">\(s=r\theta\)</span> and dividing by time gives</p>
+<p><span class="math display">\[v=r\omega.\]</span></p>
+<p>The instantaneous linear velocity is tangent to the circular path. Its magnitude can remain constant while its direction changes continuously. If the inward force is removed, the object initially moves along this tangent rather than radially outwards.</p>
+<p>Useful equivalent forms are</p>
+<p><span class="math display">\[v=\frac{2\pi r}{T}=2\pi rf.\]</span></p>
+</section>
+</section>
+<section id="centripetal-acceleration" class="level2">
+<h2 class="anchored" data-anchor-id="centripetal-acceleration">12.2 Centripetal acceleration</h2>
+<section id="why-circular-motion-is-accelerated-motion" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="why-circular-motion-is-accelerated-motion">Why circular motion is accelerated motion</h3>
+<p>Acceleration is the rate of change of velocity. In uniform circular motion, speed is constant but velocity is not, because the velocity direction changes continuously.</p>
+<p>The acceleration:</p>
+<ul>
+<li>is directed towards the centre of the circle;</li>
+<li>is perpendicular to the instantaneous velocity;</li>
+<li>changes the direction of velocity without changing its magnitude.</li>
+</ul>
+<p>Its magnitude is</p>
+<p><span class="math display">\[a=\frac{v^2}{r}=r\omega^2=v\omega.\]</span></p>
+<p>For fixed <span class="math inline">\(r\)</span>, doubling <span class="math inline">\(v\)</span> makes <span class="math inline">\(a\)</span> four times larger. For fixed <span class="math inline">\(\omega\)</span>, doubling <span class="math inline">\(r\)</span> doubles <span class="math inline">\(a\)</span>. Always decide which quantity is being held constant before comparing two motions.</p>
+</section>
+<section id="centripetal-force" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="centripetal-force">Centripetal force</h3>
+<p>The centripetal force is the resultant inward force required for circular motion:</p>
+<p><span class="math display">\[F=ma=\frac{mv^2}{r}=mr\omega^2.\]</span></p>
+<p>It is not an additional type of force. It is supplied by one force or by the inward resultant of several forces. Examples include:</p>
+<ul>
+<li>gravitational force for a moon or satellite;</li>
+<li>tension for an object moving in a circle on a string;</li>
+<li>friction for a car turning on a level road;</li>
+<li>a component of the normal contact force for a banked track or bowl.</li>
+</ul>
+<p>In a force diagram, draw the real forces first. Resolve them, then identify their resultant towards the centre as the centripetal force.</p>
+</section>
+<section id="reliable-calculation-routine" class="level3 formula-panel">
+<h3 class="anchored" data-anchor-id="reliable-calculation-routine">Reliable calculation routine</h3>
+<ol type="1">
+<li>Identify the centre of the circular path and the radius measured from that centre.</li>
+<li>Convert all quantities to SI units. Period must be in seconds for <span class="math inline">\(\omega\)</span> in <span class="math inline">\(\mathrm{rad\,s^{-1}}\)</span>.</li>
+<li>Choose the form containing the known quantities: <span class="math inline">\(v=r\omega\)</span>, <span class="math inline">\(a=v^2/r\)</span>, <span class="math inline">\(a=r\omega^2\)</span>, <span class="math inline">\(F=mv^2/r\)</span>, or <span class="math inline">\(F=mr\omega^2\)</span>.</li>
+<li>For orbital altitude, distinguish altitude above the surface from orbital radius measured from the planet’s centre.</li>
+<li>Check direction as well as magnitude: velocity is tangential; acceleration and resultant force are radial and inward.</li>
+</ol>
+</section>
+</section>
+<section id="structured-questions" class="level2">
+<h2 class="anchored" data-anchor-id="structured-questions">Structured Questions</h2>
+<section id="kinematics-of-uniform-circular-motion---medium" class="level3">
+<h3 class="anchored" data-anchor-id="kinematics-of-uniform-circular-motion---medium">12.1 Kinematics of Uniform Circular Motion - Medium</h3>
+</section>
+<section id="example-1-angular-displacement-and-frequency-12.1-sq-medium-q1" class="level3 question-card">
+<h3 class="anchored" data-anchor-id="example-1-angular-displacement-and-frequency-12.1-sq-medium-q1">Example 1 · Angular displacement and frequency · 12.1 SQ Medium Q1</h3>
+<p><strong>(a)</strong> Explain why one complete revolution is equivalent to an angular displacement of <span class="math inline">\(2\pi\ \mathrm{rad}\)</span>. <code>[1 mark]</code></p>
+<p><strong>(b)</strong> A particle following a circular path is observed to have an angular displacement of <span class="math inline">\(0.22\ \mathrm{rad}\)</span>. Express this angle in degrees (<span class="math inline">\(^\circ\)</span>). Show your working and give your answer to an appropriate number of significant figures. <code>[1 mark]</code></p>
+<p><strong>(c)</strong> Calculate the percentage error that is made when the angle <span class="math inline">\(0.22\ \mathrm{rad}\)</span>, as measured in degrees (<span class="math inline">\(\theta^\circ\)</span>), is assumed to be equal to <span class="math inline">\(\tan(\theta^\circ)\)</span> to four significant figures. Give your final answer to two significant figures. <code>[2 marks]</code></p>
+<p><strong>(d)</strong> The particle travels the angle in part <strong>(b)</strong> in <span class="math inline">\(60\ \mathrm{ms}\)</span>. Calculate the frequency of the particle. <code>[3 marks]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<p><strong>(a)</strong></p>
+<ul>
+<li>For one revolution, <span class="math inline">\(s=2\pi r\)</span> and <span class="math inline">\(\theta=s/r\)</span>, so <span class="math inline">\(\theta=2\pi\ \mathrm{rad}\)</span>. <code>[1]</code></li>
+</ul>
+<p><strong>(b)</strong></p>
+<ul>
+<li><span class="math inline">\(\theta=0.22\times180/\pi=12.605^\circ\approx13^\circ\)</span> to two significant figures. <code>[1]</code></li>
+</ul>
+<p><strong>(c)</strong></p>
+<ul>
+<li><span class="math inline">\(\tan(12.605^\circ)=0.2236\)</span>. <code>[1]</code></li>
+<li>Percentage error <span class="math inline">\(=(0.2236-0.2200)/0.2200\times100=1.6\%\)</span>. <code>[1]</code></li>
+</ul>
+<p><strong>(d)</strong></p>
+<ul>
+<li>Convert <span class="math inline">\(60\ \mathrm{ms}=60\times10^{-3}\ \mathrm{s}\)</span> and calculate <span class="math inline">\(\omega=\Delta\theta/\Delta t=0.22/(60\times10^{-3})=3.667\ \mathrm{rad\,s^{-1}}\)</span>. <code>[2]</code></li>
+<li><span class="math inline">\(f=\omega/(2\pi)=0.58\ \mathrm{Hz}\)</span>. <code>[1]</code></li>
+</ul>
+</details>
+</section>
+<section id="example-2-angular-and-linear-velocity-in-orbits-12.1-sq-medium-q2" class="level3 question-card">
+<h3 class="anchored" data-anchor-id="example-2-angular-and-linear-velocity-in-orbits-12.1-sq-medium-q2">Example 2 · Angular and linear velocity in orbits · 12.1 SQ Medium Q2</h3>
+<p><strong>(a)</strong> State the difference between angular velocity and linear velocity. <code>[2 marks]</code></p>
+<p><strong>(b)</strong> A moon is in a circular orbit of radius <span class="math inline">\(r\)</span> about a planet. The angular speed of the moon in its orbit is <span class="math inline">\(\omega\)</span>. The planet and its moon may be considered to be point masses that are isolated in space.</p>
+<p><span class="math inline">\(r\)</span> and <span class="math inline">\(\omega\)</span> are related by the expression</p>
+<p><span class="math display">\[r^3\omega^2=\text{constant}.\]</span></p>
+<p>Io and Europa are moons that are in circular orbits around the planet Jupiter. Data for Io and Europa are shown in Fig. 1.1.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 27%">
+<col style="width: 36%">
+<col style="width: 36%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>moon</th>
+<th style="text-align: right;">radius of orbit / km</th>
+<th style="text-align: right;">period of rotation around Jupiter / hours</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Io</td>
+<td style="text-align: right;"><span class="math inline">\(422\,000\)</span></td>
+<td style="text-align: right;"><span class="math inline">\(42.5\)</span></td>
+</tr>
+<tr class="even">
+<td>Europa</td>
+<td style="text-align: right;"><span class="math inline">\(670\,900\)</span></td>
+<td style="text-align: right;"></td>
+</tr>
+</tbody>
+</table>
+<p>Use the data from Fig. 1.1 to determine the angular speed of Europa in its orbit around Jupiter. <code>[3 marks]</code></p>
+<p><strong>(c)</strong> Calculate the time period of Europa.</p>
+<p><span class="math display">\[T=\underline{\hspace{3cm}}\ \text{years}\]</span></p>
+<p><code>[2 marks]</code></p>
+<p><strong>(d)</strong> Determine the radius of the orbit of a moon that had double the linear speed of Io but a third of its time period. <code>[2 marks]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<p><strong>(a)</strong></p>
+<ul>
+<li>Angular velocity is the rate of change of angular displacement swept out by a radius. <code>[1]</code></li>
+<li>Linear velocity is the rate of change of linear displacement; for circular motion it is tangential to the path. <code>[1]</code></li>
+</ul>
+<p><strong>(b)</strong></p>
+<ul>
+<li><span class="math inline">\(\omega_{\mathrm{Io}}=2\pi/(42.5\times3600)=4.1\times10^{-5}\ \mathrm{rad\,s^{-1}}\)</span>. <code>[1]</code></li>
+<li>Use <span class="math inline">\(r_{\mathrm{Io}}^3\omega_{\mathrm{Io}}^2=r_{\mathrm{Europa}}^3\omega_{\mathrm{Europa}}^2\)</span>. <code>[1]</code></li>
+<li><span class="math inline">\(\omega_{\mathrm{Europa}}\approx2.0\times10^{-5}\ \mathrm{rad\,s^{-1}}\)</span>. <code>[1]</code></li>
+</ul>
+<p><strong>(c)</strong></p>
+<ul>
+<li><span class="math inline">\(T=2\pi/\omega=2\pi/(2.0\times10^{-5})=3.14159\times10^5\ \mathrm{s}\)</span>. <code>[1]</code></li>
+<li><span class="math inline">\(T=(3.14159\times10^5)/(365\times24\times60\times60)=9.96\times10^{-3}\ \mathrm{years}\)</span>. <code>[1]</code></li>
+</ul>
+<p><strong>(d)</strong></p>
+<ul>
+<li>From <span class="math inline">\(v=2\pi r/T\)</span>, <span class="math inline">\(r=vT/(2\pi)\)</span>. Doubling <span class="math inline">\(v\)</span> and reducing <span class="math inline">\(T\)</span> to one third makes the new radius <span class="math inline">\(2/3\)</span> of Io’s radius. <code>[1]</code></li>
+<li><span class="math inline">\(r=(2/3)(422\,000)=2.8\times10^5\ \mathrm{km}\)</span>. <code>[1]</code></li>
+</ul>
+</details>
+</section>
+<section id="example-3-children-rotating-with-a-rope-12.1-sq-medium-q3" class="level3 question-card">
+<h3 class="anchored" data-anchor-id="example-3-children-rotating-with-a-rope-12.1-sq-medium-q3">Example 3 · Children rotating with a rope · 12.1 SQ Medium Q3</h3>
+<p>Two children A and B hold both sides of a rope <span class="math inline">\(70\ \mathrm{cm}\)</span> long. Child A swings child B in a circular path, as shown in Fig. 1.1.</p>
+<p><img src="../assets/questions/motion-in-a-circle/children-rotation.webp" class="question-figure img-fluid" alt="Children A and B rotating with a 70 cm rope"></p>
+<p><strong>(a)</strong> Child B travels a full rotation in <span class="math inline">\(1.5\ \mathrm{s}\)</span>. Calculate the time taken for child B to travel a distance of <span class="math inline">\(0.45\ \mathrm{m}\)</span>. <code>[3 marks]</code></p>
+<p><strong>(b)</strong> Show that the angular displacement <span class="math inline">\(\Delta\theta\)</span> in this time is <span class="math inline">\(37^\circ\)</span>. <code>[3 marks]</code></p>
+<p><strong>(c)</strong> Child A now swings child B round till they are making <span class="math inline">\(5\)</span> revolutions every <span class="math inline">\(2\)</span> seconds. Calculate the linear speed of child B. <code>[3 marks]</code></p>
+<p><strong>(d)</strong> As the children are spinning anti-clockwise, the rope suddenly snaps at the position of child A and B shown in Fig. 1.2.</p>
+<p><img src="../assets/questions/motion-in-a-circle/children-rope-snaps.webp" class="question-figure img-fluid" alt="Position of children A and B when the rope snaps"></p>
+<p>Draw the direction child B will continue to travel in the instance the rope is snapped. <code>[1 mark]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<p><strong>(a)</strong></p>
+<ul>
+<li><span class="math inline">\(\omega=2\pi/T=2\pi/1.5=4.189\ \mathrm{rad\,s^{-1}}\)</span>. <code>[1]</code></li>
+<li>Use <span class="math inline">\(\Delta s=r\omega\Delta t\)</span>, so <span class="math inline">\(\Delta t=0.45/(0.70\times4.189)\)</span>. <code>[1]</code></li>
+<li><span class="math inline">\(\Delta t=0.1545\ \mathrm{s}\approx0.15\ \mathrm{s}\)</span>. <code>[1]</code></li>
+</ul>
+<p><strong>(b)</strong></p>
+<ul>
+<li><span class="math inline">\(\Delta\theta=\omega\Delta t=4.189\times0.1545=0.647\ \mathrm{rad}\)</span>. <code>[2]</code></li>
+<li><span class="math inline">\(\Delta\theta=0.647\times180/\pi=37^\circ\)</span>. <code>[1]</code></li>
+</ul>
+<p><strong>(c)</strong></p>
+<ul>
+<li><span class="math inline">\(f=5/2=2.5\ \mathrm{Hz}\)</span>. <code>[1]</code></li>
+<li><span class="math inline">\(v=\omega r=(2\pi f)r=2\pi\times2.5\times0.70\)</span>. <code>[1]</code></li>
+<li><span class="math inline">\(v=11\ \mathrm{m\,s^{-1}}\)</span>. <code>[1]</code></li>
+</ul>
+<p><strong>(d)</strong></p>
+<ul>
+<li>Draw an arrow from B tangent to the circle and pointing in the anti-clockwise direction (upwards and to the right in Fig. 1.2). <code>[1]</code></li>
+</ul>
+</details>
+</section>
+<section id="centripetal-acceleration---easy" class="level3">
+<h3 class="anchored" data-anchor-id="centripetal-acceleration---easy">12.2 Centripetal Acceleration - Easy</h3>
+</section>
+<section id="example-4-centripetal-acceleration-and-a-geostationary-satellite-12.2-sq-easy-q1" class="level3 question-card">
+<h3 class="anchored" data-anchor-id="example-4-centripetal-acceleration-and-a-geostationary-satellite-12.2-sq-easy-q1">Example 4 · Centripetal acceleration and a geostationary satellite · 12.2 SQ Easy Q1</h3>
+<p><strong>(a)</strong> A centripetal force causes a centripetal acceleration. State two properties of the centripetal force that is required for this. <code>[2 marks]</code></p>
+<p><strong>(b)</strong></p>
+<p><strong>(i)</strong> State the equation for centripetal acceleration. <code>[1 mark]</code></p>
+<p><strong>(ii)</strong> State the definition and unit of each variable in part <strong>(i)</strong>. <code>[3 marks]</code></p>
+<p><strong>(c)</strong> Calculate the angular speed of a satellite in a geostationary orbit. <code>[3 marks]</code></p>
+<p><strong>(d)</strong> The satellite has an altitude of <span class="math inline">\(36\,000\ \mathrm{km}\)</span>. Calculate the centripetal acceleration of the satellite.</p>
+<p>Radius of Earth <span class="math inline">\(=6400\ \mathrm{km}\)</span>. <code>[3 marks]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<p><strong>(a)</strong></p>
+<ul>
+<li>The force has constant magnitude. <code>[1]</code></li>
+<li>It is perpendicular to the direction of motion, or directed towards the centre of the circle. <code>[1]</code></li>
+</ul>
+<p><strong>(b)</strong></p>
+<ul>
+<li><strong>(i)</strong> <span class="math inline">\(a=v^2/r\)</span> (the source also accepts <span class="math inline">\(a=r\omega^2\)</span>). <code>[1]</code></li>
+<li><strong>(ii)</strong> <span class="math inline">\(a\)</span> is centripetal acceleration in <span class="math inline">\(\mathrm{m\,s^{-2}}\)</span>; <span class="math inline">\(r\)</span> is the radius of the circular orbit in m; <span class="math inline">\(v\)</span> is the linear speed in <span class="math inline">\(\mathrm{m\,s^{-1}}\)</span>. <code>[3]</code></li>
+</ul>
+<p><strong>(c)</strong></p>
+<ul>
+<li>A geostationary satellite has <span class="math inline">\(T=24\ \mathrm{h}=86\,400\ \mathrm{s}\)</span>. <code>[1]</code></li>
+<li><span class="math inline">\(\omega=2\pi/T=2\pi/86\,400\)</span>. <code>[1]</code></li>
+<li><span class="math inline">\(\omega=7.3\times10^{-5}\ \mathrm{rad\,s^{-1}}\)</span>. <code>[1]</code></li>
+</ul>
+<p><strong>(d)</strong></p>
+<ul>
+<li>Orbital radius <span class="math inline">\(r=(6400+36\,000)\ \mathrm{km}=42.4\times10^6\ \mathrm{m}\)</span>. <code>[1]</code></li>
+<li><span class="math inline">\(a=r\omega^2=(42.4\times10^6)(7.272\times10^{-5})^2\)</span>. <code>[1]</code></li>
+<li><span class="math inline">\(a=0.22\ \mathrm{m\,s^{-2}}\)</span>. <code>[1]</code></li>
+</ul>
+</details>
+</section>
+<section id="example-5-identifying-centripetal-forces-12.2-sq-easy-q2" class="level3 question-card">
+<h3 class="anchored" data-anchor-id="example-5-identifying-centripetal-forces-12.2-sq-easy-q2">Example 5 · Identifying centripetal forces · 12.2 SQ Easy Q2</h3>
+<p><strong>(a)</strong> State what is meant by centripetal force. <code>[2 marks]</code></p>
+<p><strong>(b)</strong> State the centripetal force in each of the following situations:</p>
+<p><strong>(i)</strong> Venus orbiting the Sun; <code>[1 mark]</code></p>
+<p><strong>(ii)</strong> a car driving around a roundabout; <code>[1 mark]</code></p>
+<p><strong>(iii)</strong> rotating a ball tied to the end of a piece of string. <code>[1 mark]</code></p>
+<p><strong>(c)</strong> The Moon orbits the Earth in a circular path. Explain, with reference to Fig. 1.1, why the path of the Moon is circular.</p>
+<p><img src="../assets/questions/motion-in-a-circle/earth-field-lines.webp" class="question-figure img-fluid" alt="Gravitational field lines directed towards Earth"></p>
+<p><code>[2 marks]</code></p>
+<p><strong>(d)</strong> The centripetal force of the Moon is <span class="math inline">\(2.21\times10^{20}\ \mathrm{N}\)</span>. Calculate the distance of the Moon from the surface of the Earth.</p>
+<p>Mass of the Moon <span class="math inline">\(=7.35\times10^{22}\ \mathrm{kg}\)</span></p>
+<p>Radius of Earth <span class="math inline">\(=6.4\times10^6\ \mathrm{m}\)</span></p>
+<p>Linear speed of the Moon <span class="math inline">\(=1023\ \mathrm{m\,s^{-1}}\)</span> <code>[4 marks]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<p><strong>(a)</strong></p>
+<ul>
+<li>It is the resultant force required to keep a body moving in a circular path. <code>[1]</code></li>
+<li>It is directed towards the centre of the circle. <code>[1]</code></li>
+</ul>
+<p><strong>(b)</strong></p>
+<ul>
+<li><strong>(i)</strong> gravitational force; <code>[1]</code></li>
+<li><strong>(ii)</strong> frictional force; <code>[1]</code></li>
+<li><strong>(iii)</strong> tension in the string. <code>[1]</code></li>
+</ul>
+<p><strong>(c)</strong></p>
+<ul>
+<li>The field lines show that the gravitational force acts towards the centre of Earth, or the Moon’s velocity is perpendicular to the field lines. <code>[1]</code></li>
+<li>The force perpendicular to the velocity produces centripetal acceleration and hence a circular path. <code>[1]</code></li>
+</ul>
+<p><strong>(d)</strong></p>
+<ul>
+<li><span class="math inline">\(F=mv^2/r\)</span>, so <span class="math inline">\(r=mv^2/F\)</span>. <code>[1]</code></li>
+<li><span class="math inline">\(r=(7.35\times10^{22})(1023)^2/(2.21\times10^{20})\)</span>. <code>[1]</code></li>
+<li><span class="math inline">\(r=3.4815\times10^8\ \mathrm{m}\)</span>. <code>[1]</code></li>
+<li>Distance from the surface <span class="math inline">\(h=r-R=3.4815\times10^8-6.4\times10^6=3.42\times10^8\ \mathrm{m}\)</span>. <code>[1]</code></li>
+</ul>
+<div class="small-note">
+<p>Arithmetic correction: the source model-answer line prints <span class="math inline">\(3.42\times10^6\ \mathrm{m}\)</span>, but its preceding values give <span class="math inline">\(3.42\times10^8\ \mathrm{m}\)</span>.</p>
+</div>
+</details>
+</section>
+<section id="example-6-jupiters-moons-12.2-sq-easy-q3" class="level3 question-card">
+<h3 class="anchored" data-anchor-id="example-6-jupiters-moons-12.2-sq-easy-q3">Example 6 · Jupiter’s moons · 12.2 SQ Easy Q3</h3>
+<p>Two of Jupiter’s moons, Ganymede and Callisto, orbit around Jupiter in a circular path as shown in Fig. 1.1. Fig. 1.1 shows the North pole of Jupiter, where both moons orbit counter-clockwise.</p>
+<p><img src="../assets/questions/motion-in-a-circle/jupiter-moons.webp" class="question-figure img-fluid" alt="Circular orbits of Ganymede and Europa around Jupiter"></p>
+<div class="small-note">
+<p>Source note: the original wording names Callisto, while the original figure labels the inner moon Europa.</p>
+</div>
+<p><strong>(a)</strong> Identify, by drawing arrows, the following:</p>
+<p><strong>(i)</strong> the centripetal force on each moon. Label this <span class="math inline">\(F\)</span>; <code>[2 marks]</code></p>
+<p><strong>(ii)</strong> the linear velocity of each moon. Label this <span class="math inline">\(v\)</span>. <code>[2 marks]</code></p>
+<p><strong>(b)</strong> Both of Jupiter’s moons travel at a speed of roughly <span class="math inline">\(10\,000\ \mathrm{m\,s^{-1}}\)</span>. State which moon will have a longer time period. Explain your answer. <code>[3 marks]</code></p>
+<p><strong>(c)</strong> The centripetal acceleration of Ganymede is <span class="math inline">\(0.11\ \mathrm{m\,s^{-2}}\)</span>. The mass of Ganymede is <span class="math inline">\(1.48\times10^{23}\ \mathrm{kg}\)</span>. Determine the centripetal force on Ganymede. <code>[2 marks]</code></p>
+<p><strong>(d)</strong> Explain how the centripetal force of an object with the same mass and orbit as Ganymede would compare if it travelled with twice the angular speed. <code>[1 mark]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<p><strong>(a)</strong></p>
+<ul>
+<li><strong>(i)</strong> Draw an arrow from the centre of each moon towards the centre of Jupiter and label it <span class="math inline">\(F\)</span>. <code>[2]</code></li>
+<li><strong>(ii)</strong> Draw an arrow from each moon perpendicular to <span class="math inline">\(F\)</span>, tangent to the orbit and pointing counter-clockwise; label it <span class="math inline">\(v\)</span>. <code>[2]</code></li>
+</ul>
+<p><strong>(b)</strong></p>
+<ul>
+<li>Ganymede has the longer time period. <code>[1]</code></li>
+<li>From <span class="math inline">\(v=2\pi r/T\)</span>, for the same <span class="math inline">\(v\)</span>, <span class="math inline">\(T\)</span> is directly proportional to <span class="math inline">\(r\)</span>. <code>[1]</code></li>
+<li>Ganymede has the larger orbital radius, so it has the longer period. <code>[1]</code></li>
+</ul>
+<p><strong>(c)</strong></p>
+<ul>
+<li><span class="math inline">\(F=ma=(1.48\times10^{23})(0.11)\)</span>. <code>[1]</code></li>
+<li><span class="math inline">\(F=1.6\times10^{22}\ \mathrm{N}\)</span>. <code>[1]</code></li>
+</ul>
+<p><strong>(d)</strong></p>
+<ul>
+<li><span class="math inline">\(F=mr\omega^2\)</span>, so doubling <span class="math inline">\(\omega\)</span> makes the force four times greater. <code>[1]</code></li>
+</ul>
+</details>
+</section>
+<section id="centripetal-acceleration---medium" class="level3">
+<h3 class="anchored" data-anchor-id="centripetal-acceleration---medium">12.2 Centripetal Acceleration - Medium</h3>
+</section>
+<section id="example-7-runners-on-a-circular-track-12.2-sq-medium-q1" class="level3 question-card">
+<h3 class="anchored" data-anchor-id="example-7-runners-on-a-circular-track-12.2-sq-medium-q1">Example 7 · Runners on a circular track · 12.2 SQ Medium Q1</h3>
+<p>Two runners are running around a circular track. One runner follows path X and the other follows path Y, as shown in Fig. 1.1.</p>
+<p><img src="../assets/questions/motion-in-a-circle/circular-track.webp" class="question-figure img-fluid" alt="Circular running track with paths X and Y"></p>
+<p>The radius of path X is <span class="math inline">\(36.50\ \mathrm{m}\)</span>. Path Y is parallel to, and <span class="math inline">\(1.2\ \mathrm{m}\)</span> outside, path X. Both runners have mass <span class="math inline">\(75\ \mathrm{kg}\)</span>. The maximum lateral (sideways) friction force <span class="math inline">\(F\)</span> that the runners can experience without sliding is <span class="math inline">\(57\ \mathrm{mN}\)</span>.</p>
+<p><strong>(a)</strong> Show that the maximum speed at which the runner on path Y can move is <span class="math inline">\(0.17\ \mathrm{m\,s^{-1}}\)</span>. <code>[2 marks]</code></p>
+<p><strong>(b)</strong> Compare the centripetal acceleration and maximum speed of the runner on path X compared to path Y. <code>[2 marks]</code></p>
+<p><strong>(c)</strong> Calculate the time taken for the runner in path X to complete 1 lap.</p>
+<p><span class="math display">\[T=\underline{\hspace{3cm}}\ \text{minutes}\]</span></p>
+<p><code>[2 marks]</code></p>
+<p><strong>(d)</strong> The runner on path Y has an ankle injury that has come back with a vengeance, so it takes them twice as long to complete 1 lap. Determine their new centripetal acceleration. <code>[3 marks]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<p><strong>(a)</strong></p>
+<ul>
+<li><span class="math inline">\(r_Y=36.50+1.2=37.7\ \mathrm{m}\)</span> and <span class="math inline">\(v=\sqrt{Fr/m}\)</span>. <code>[1]</code></li>
+<li><span class="math inline">\(v=\sqrt{(57\times10^{-3})(37.7)/75}=0.169\ \mathrm{m\,s^{-1}}\approx0.17\ \mathrm{m\,s^{-1}}\)</span>. <code>[1]</code></li>
+</ul>
+<p><strong>(b)</strong></p>
+<ul>
+<li>Both runners have the same maximum centripetal acceleration because <span class="math inline">\(a=F/m\)</span> and <span class="math inline">\(F\)</span> and <span class="math inline">\(m\)</span> are the same. <code>[1]</code></li>
+<li>The runner on path X has the smaller maximum speed because <span class="math inline">\(v=\sqrt{Fr/m}\)</span> and <span class="math inline">\(r_X&lt;r_Y\)</span>. <code>[1]</code></li>
+</ul>
+<p><strong>(c)</strong></p>
+<ul>
+<li><span class="math inline">\(F=m\omega^2r=m(2\pi/T)^2r\)</span>, so <span class="math inline">\(T=\sqrt{4\pi^2mr/F}\)</span>. Substitution gives <span class="math inline">\(T=1376.95\ \mathrm{s}\)</span>. <code>[1]</code></li>
+<li><span class="math inline">\(T=1376.95/60=22.95\ \mathrm{min}\approx23\ \mathrm{min}\)</span>. <code>[1]</code></li>
+</ul>
+<p><strong>(d)</strong></p>
+<ul>
+<li>Previous acceleration <span class="math inline">\(a_p=F/m=(57\times10^{-3})/75=7.6\times10^{-4}\ \mathrm{m\,s^{-2}}\)</span>. <code>[1]</code></li>
+<li>Since <span class="math inline">\(a=4\pi^2r/T^2\)</span>, doubling <span class="math inline">\(T\)</span> reduces <span class="math inline">\(a\)</span> by a factor of four. <code>[1]</code></li>
+<li>New <span class="math inline">\(a=(7.6\times10^{-4})/4=1.9\times10^{-4}\ \mathrm{m\,s^{-2}}\)</span>. <code>[1]</code></li>
+</ul>
+</details>
+</section>
+<section id="example-8-skateboarder-in-a-bowl-shaped-ramp-12.2-sq-medium-q2" class="level3 question-card">
+<h3 class="anchored" data-anchor-id="example-8-skateboarder-in-a-bowl-shaped-ramp-12.2-sq-medium-q2">Example 8 · Skateboarder in a bowl-shaped ramp · 12.2 SQ Medium Q2</h3>
+<p>A bowl-shaped skating ramp can be modelled as a hollow sphere. A skateboarder with a horizontal speed follows a circular path inside the bowl of radius <span class="math inline">\(2.3\ \mathrm{m}\)</span>, as shown in Fig. 1.1.</p>
+<p><img src="../assets/questions/motion-in-a-circle/skating-bowl.webp" class="question-figure img-fluid" alt="Skateboarder following a circular path inside a bowl-shaped ramp"></p>
+<p>The forces acting on the skateboarder are their weight <span class="math inline">\(W\)</span> and the normal reaction force <span class="math inline">\(R\)</span> of the ramp on the skateboarder. <span class="math inline">\(R\)</span> is at an angle <span class="math inline">\(\theta\)</span> to the horizontal.</p>
+<p><strong>(a)</strong> Sketch <span class="math inline">\(W\)</span>, <span class="math inline">\(R\)</span> and <span class="math inline">\(\theta\)</span> on Fig. 1.2.</p>
+<p><img src="../assets/questions/motion-in-a-circle/skateboarder-side-view.webp" class="question-figure img-fluid" alt="Side view of skateboarder on the bowl-shaped ramp"></p>
+<p><code>[3 marks]</code></p>
+<p><strong>(b)</strong> Determine an equation for <span class="math inline">\(W\)</span> in terms of <span class="math inline">\(\theta\)</span> and the resultant force <span class="math inline">\(F\)</span> on the skateboarder. <code>[3 marks]</code></p>
+<p><strong>(c)</strong> Explain why force <span class="math inline">\(F\)</span> is significant to the motion of the skateboarder. <code>[2 marks]</code></p>
+<p><strong>(d)</strong> For the radius of the ramp in Fig. 1.1, the skateboarder travels at a speed of <span class="math inline">\(6.0\ \mathrm{m\,s^{-1}}\)</span>. Show that the angle <span class="math inline">\(\theta\)</span> is <span class="math inline">\(32^\circ\)</span>. <code>[3 marks]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<p><strong>(a)</strong></p>
+<ul>
+<li>Draw <span class="math inline">\(R\)</span> from the point of contact, normal to the ramp. <code>[1]</code></li>
+<li>Draw <span class="math inline">\(W\)</span> vertically downwards from the skateboarder’s centre of mass. <code>[1]</code></li>
+<li>Label <span class="math inline">\(\theta\)</span> between <span class="math inline">\(R\)</span> and a horizontal line. <code>[1]</code></li>
+</ul>
+<p><strong>(b)</strong></p>
+<ul>
+<li>Resolve <span class="math inline">\(R\)</span>: <span class="math inline">\(F=R\cos\theta\)</span>. <code>[1]</code></li>
+<li>Vertical equilibrium gives <span class="math inline">\(W=R\sin\theta\)</span>. <code>[1]</code></li>
+<li>Hence <span class="math inline">\(W/F=\tan\theta\)</span> and <span class="math inline">\(W=F\tan\theta\)</span>. <code>[1]</code></li>
+</ul>
+<p><strong>(c)</strong></p>
+<ul>
+<li><span class="math inline">\(F\)</span> provides the centripetal force. <code>[1]</code></li>
+<li>It keeps the skateboarder moving in a circle. <code>[1]</code></li>
+</ul>
+<p><strong>(d)</strong></p>
+<ul>
+<li>Use <span class="math inline">\(W=F\tan\theta\)</span>, with <span class="math inline">\(W=mg\)</span> and <span class="math inline">\(F=mv^2/r\)</span>, giving <span class="math inline">\(\tan\theta=rg/v^2\)</span>. <code>[1]</code></li>
+<li><span class="math inline">\(\theta=\tan^{-1}[(2.3\times9.81)/(6.0)^2]\)</span>. <code>[1]</code></li>
+<li><span class="math inline">\(\theta=32^\circ\)</span>. <code>[1]</code></li>
+</ul>
+</details>
+</section>
+</section>
+<section id="chapter-self-check" class="level2">
+<h2 class="anchored" data-anchor-id="chapter-self-check">Chapter self-check</h2>
+<ul>
+<li>Can you explain geometrically why one revolution is <span class="math inline">\(2\pi\)</span> radians?</li>
+<li>Can you convert between <span class="math inline">\(T\)</span>, <span class="math inline">\(f\)</span>, <span class="math inline">\(\omega\)</span> and <span class="math inline">\(v\)</span> without mixing units?</li>
+<li>Can you explain why constant speed in a circle still involves acceleration?</li>
+<li>Can you identify which real force or force component supplies the centripetal force?</li>
+<li>Can you distinguish orbital radius from altitude above a surface?</li>
+</ul>
+<section id="original-topic-pdfs" class="level3">
+<h3 class="anchored" data-anchor-id="original-topic-pdfs">Original topic PDFs</h3>
+<ul>
+<li><a href="../resources/original-papers/motion-in-a-circle/12.1 Kinematics of Uniform Circular Motion - Medium.pdf.pdf">12.1 Kinematics of Uniform Circular Motion - Medium</a></li>
+<li><a href="../resources/original-papers/motion-in-a-circle/12.2 Centripetal Acceleration - Easy.pdf.pdf">12.2 Centripetal Acceleration - Easy</a></li>
+<li><a href="../resources/original-papers/motion-in-a-circle/12.2 Centripetal Acceleration - Medium.pdf.pdf">12.2 Centripetal Acceleration - Medium</a></li>
+</ul>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll(".done-toggle input").forEach((input) => {
+    const key = `cie-physics-${input.dataset.progress}`;
+    input.checked = localStorage.getItem(key) === "true";
+    input.closest(".question-card")?.classList.toggle("is-complete", input.checked);
+    input.addEventListener("change", () => {
+      localStorage.setItem(key, input.checked);
+      input.closest(".question-card")?.classList.toggle("is-complete", input.checked);
+    });
+  });
+
+  document.querySelectorAll(".mc-question").forEach((card) => {
+    const answer = card.dataset.answer;
+    const feedback = card.querySelector(".mc-feedback");
+    const check = card.querySelector(".check-answer");
+    let selected = localStorage.getItem(`cie-physics-${card.id}-choice`) || "";
+
+    const showSelection = () => {
+      card.querySelectorAll(".mc-choice").forEach((choice) => {
+        choice.classList.toggle("is-selected", choice.dataset.choice === selected);
+      });
+    };
+    showSelection();
+
+    card.querySelectorAll(".mc-choice").forEach((choice) => {
+      choice.addEventListener("click", () => {
+        selected = choice.dataset.choice;
+        localStorage.setItem(`cie-physics-${card.id}-choice`, selected);
+        feedback.textContent = "";
+        feedback.className = "mc-feedback";
+        showSelection();
+      });
+    });
+
+    check?.addEventListener("click", () => {
+      if (!selected) {
+        feedback.textContent = "Select an answer first.";
+        feedback.className = "mc-feedback is-pending";
+        return;
+      }
+      const correct = selected === answer;
+      feedback.textContent = correct ? "Correct." : `Not quite. The correct answer is ${answer}.`;
+      feedback.className = `mc-feedback ${correct ? "is-correct" : "is-incorrect"}`;
+    });
+  });
+});
+</script>
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "已复制");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "已复制");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../as-level/03-dynamics.html" class="pagination-link" aria-label="3 Dynamics">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">3 Dynamics</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../a-level/13-gravitational-fields.html" class="pagination-link" aria-label="13 Gravitational fields">
+        <span class="nav-page-text">13 Gravitational fields</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>

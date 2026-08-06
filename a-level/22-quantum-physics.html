@@ -1,0 +1,1230 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-Hans" xml:lang="zh-Hans"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.38">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>22 Quantum physics – CIE Physics 9702</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../a-level/23-nuclear-physics.html" rel="next">
+<link href="../a-level/21-alternating-currents.html" rel="prev">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-a2a938b4dd5711f7a799c87bd16ba44c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "没有结果",
+    "search-matching-documents-text": "匹配的文档",
+    "search-copy-link-title": "复制搜索链接",
+    "search-hide-matches-text": "隐藏其它匹配结果",
+    "search-more-match-text": "更多匹配结果",
+    "search-more-matches-text": "更多匹配结果",
+    "search-clear-button-title": "清除",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "取消",
+    "search-submit-button-title": "提交",
+    "search-label": "搜索"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../styles.css">
+</head>
+
+<body class="nav-sidebar docked quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="展开或折叠侧边栏导航" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../a-level/12-motion-in-a-circle.html">A Level</a></li><li class="breadcrumb-item"><a href="../a-level/22-quantum-physics.html">22 Quantum physics</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="展开或折叠侧边栏导航" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="搜索" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">CIE Physics 9702</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="搜索"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">学习首页</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">AS Level</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="展开或折叠此栏">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../as-level/01-physical-quantities-and-units.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">1 Physical quantities and units</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../as-level/02-kinematics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2 Kinematics</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../as-level/03-dynamics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">3 Dynamics</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">A Level</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="展开或折叠此栏">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/12-motion-in-a-circle.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">12 Motion in a circle</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/13-gravitational-fields.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">13 Gravitational fields</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/14-temperature.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">14 Temperature</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/15-ideal-gases.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">15 Ideal gases</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/16-thermodynamics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">16 Thermodynamics</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/17-oscillations.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">17 Oscillations</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/18-electric-fields.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">18 Electric fields</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/19-capacitance.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">19 Capacitance</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/20-magnetic-fields.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">20 Magnetic fields</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/21-alternating-currents.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">21 Alternating currents</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/22-quantum-physics.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">22 Quantum physics</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/23-nuclear-physics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">23 Nuclear physics</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/24-medical-physics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">24 Medical physics</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/25-astronomy-and-cosmology.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">25 Astronomy and cosmology</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">该页面内容</h2>
+   
+  <ul>
+  <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link active" data-scroll-target="#learning-objectives">Learning objectives</a></li>
+  <li><a href="#energy-and-momentum-of-a-photon" id="toc-energy-and-momentum-of-a-photon" class="nav-link" data-scroll-target="#energy-and-momentum-of-a-photon">22.1 Energy and momentum of a photon</a>
+  <ul class="collapse">
+  <li><a href="#photons-and-quantised-energy" id="toc-photons-and-quantised-energy" class="nav-link" data-scroll-target="#photons-and-quantised-energy">Photons and quantised energy</a></li>
+  <li><a href="#photon-rate-and-intensity" id="toc-photon-rate-and-intensity" class="nav-link" data-scroll-target="#photon-rate-and-intensity">Photon rate and intensity</a></li>
+  <li><a href="#the-electronvolt" id="toc-the-electronvolt" class="nav-link" data-scroll-target="#the-electronvolt">The electronvolt</a></li>
+  <li><a href="#photon-momentum" id="toc-photon-momentum" class="nav-link" data-scroll-target="#photon-momentum">Photon momentum</a></li>
+  </ul></li>
+  <li><a href="#photoelectric-effect" id="toc-photoelectric-effect" class="nav-link" data-scroll-target="#photoelectric-effect">22.2 Photoelectric effect</a>
+  <ul class="collapse">
+  <li><a href="#photoelectric-emission" id="toc-photoelectric-emission" class="nav-link" data-scroll-target="#photoelectric-emission">Photoelectric emission</a></li>
+  <li><a href="#einsteins-photoelectric-equation" id="toc-einsteins-photoelectric-equation" class="nav-link" data-scroll-target="#einsteins-photoelectric-equation">Einstein’s photoelectric equation</a></li>
+  <li><a href="#threshold-frequency-and-wavelength" id="toc-threshold-frequency-and-wavelength" class="nav-link" data-scroll-target="#threshold-frequency-and-wavelength">Threshold frequency and wavelength</a></li>
+  <li><a href="#evidence-against-a-classical-wave-explanation" id="toc-evidence-against-a-classical-wave-explanation" class="nav-link" data-scroll-target="#evidence-against-a-classical-wave-explanation">Evidence against a classical wave explanation</a></li>
+  <li><a href="#photoelectric-graphs" id="toc-photoelectric-graphs" class="nav-link" data-scroll-target="#photoelectric-graphs">Photoelectric graphs</a></li>
+  </ul></li>
+  <li><a href="#wave-particle-duality" id="toc-wave-particle-duality" class="nav-link" data-scroll-target="#wave-particle-duality">22.3 Wave-particle duality</a>
+  <ul class="collapse">
+  <li><a href="#two-complementary-models" id="toc-two-complementary-models" class="nav-link" data-scroll-target="#two-complementary-models">Two complementary models</a></li>
+  <li><a href="#de-broglie-wavelength" id="toc-de-broglie-wavelength" class="nav-link" data-scroll-target="#de-broglie-wavelength">de Broglie wavelength</a></li>
+  <li><a href="#electron-diffraction" id="toc-electron-diffraction" class="nav-link" data-scroll-target="#electron-diffraction">Electron diffraction</a></li>
+  </ul></li>
+  <li><a href="#energy-levels-in-atoms-and-line-spectra" id="toc-energy-levels-in-atoms-and-line-spectra" class="nav-link" data-scroll-target="#energy-levels-in-atoms-and-line-spectra">22.4 Energy levels in atoms and line spectra</a>
+  <ul class="collapse">
+  <li><a href="#discrete-energy-levels" id="toc-discrete-energy-levels" class="nav-link" data-scroll-target="#discrete-energy-levels">Discrete energy levels</a></li>
+  <li><a href="#photon-emission-and-absorption" id="toc-photon-emission-and-absorption" class="nav-link" data-scroll-target="#photon-emission-and-absorption">Photon emission and absorption</a></li>
+  <li><a href="#line-spectra" id="toc-line-spectra" class="nav-link" data-scroll-target="#line-spectra">Line spectra</a></li>
+  </ul></li>
+  <li><a href="#structured-questions" id="toc-structured-questions" class="nav-link" data-scroll-target="#structured-questions">Structured Questions</a>
+  <ul class="collapse">
+  <li><a href="#the-photoelectric-effect-medium" id="toc-the-photoelectric-effect-medium" class="nav-link" data-scroll-target="#the-photoelectric-effect-medium">22.1 The Photoelectric Effect — Medium</a></li>
+  <li><a href="#example-1-photoelectric-evidence-and-a-reciprocal-wavelength-graph-22.1-sq-medium-q1" id="toc-example-1-photoelectric-evidence-and-a-reciprocal-wavelength-graph-22.1-sq-medium-q1" class="nav-link" data-scroll-target="#example-1-photoelectric-evidence-and-a-reciprocal-wavelength-graph-22.1-sq-medium-q1">Example 1 · Photoelectric evidence and a reciprocal-wavelength graph · 22.1 SQ Medium Q1</a></li>
+  <li><a href="#example-2-photon-definition-and-maximum-energy-graph-22.1-sq-medium-q2" id="toc-example-2-photon-definition-and-maximum-energy-graph-22.1-sq-medium-q2" class="nav-link" data-scroll-target="#example-2-photon-definition-and-maximum-energy-graph-22.1-sq-medium-q2">Example 2 · Photon definition and maximum-energy graph · 22.1 SQ Medium Q2</a></li>
+  <li><a href="#example-3-work-function-photon-rate-and-changing-frequency-22.1-sq-medium-q3" id="toc-example-3-work-function-photon-rate-and-changing-frequency-22.1-sq-medium-q3" class="nav-link" data-scroll-target="#example-3-work-function-photon-rate-and-changing-frequency-22.1-sq-medium-q3">Example 3 · Work function, photon rate and changing frequency · 22.1 SQ Medium Q3</a></li>
+  <li><a href="#wave-particle-duality-medium" id="toc-wave-particle-duality-medium" class="nav-link" data-scroll-target="#wave-particle-duality-medium">22.2 Wave-Particle Duality — Medium</a></li>
+  <li><a href="#example-4-electron-diffraction-and-accelerating-potential-difference-22.2-sq-medium-q1" id="toc-example-4-electron-diffraction-and-accelerating-potential-difference-22.2-sq-medium-q1" class="nav-link" data-scroll-target="#example-4-electron-diffraction-and-accelerating-potential-difference-22.2-sq-medium-q1">Example 4 · Electron diffraction and accelerating potential difference · 22.2 SQ Medium Q1</a></li>
+  <li><a href="#example-5-evidence-for-duality-and-an-alpha-particle-wavelength-22.2-sq-medium-q2" id="toc-example-5-evidence-for-duality-and-an-alpha-particle-wavelength-22.2-sq-medium-q2" class="nav-link" data-scroll-target="#example-5-evidence-for-duality-and-an-alpha-particle-wavelength-22.2-sq-medium-q2">Example 5 · Evidence for duality and an alpha-particle wavelength · 22.2 SQ Medium Q2</a></li>
+  <li><a href="#example-6-photon-scattering-from-an-electron-22.2-sq-medium-q3" id="toc-example-6-photon-scattering-from-an-electron-22.2-sq-medium-q3" class="nav-link" data-scroll-target="#example-6-photon-scattering-from-an-electron-22.2-sq-medium-q3">Example 6 · Photon scattering from an electron · 22.2 SQ Medium Q3</a></li>
+  <li><a href="#quantisation-of-energy-medium" id="toc-quantisation-of-energy-medium" class="nav-link" data-scroll-target="#quantisation-of-energy-medium">22.3 Quantisation of Energy — Medium</a></li>
+  <li><a href="#example-7-hydrogen-transitions-and-emitted-wavelengths-22.3-sq-medium-q1" id="toc-example-7-hydrogen-transitions-and-emitted-wavelengths-22.3-sq-medium-q1" class="nav-link" data-scroll-target="#example-7-hydrogen-transitions-and-emitted-wavelengths-22.3-sq-medium-q1">Example 7 · Hydrogen transitions and emitted wavelengths · 22.3 SQ Medium Q1</a></li>
+  <li><a href="#example-8-energy-level-transitions-spectral-regions-and-ionisation-22.3-sq-medium-q2" id="toc-example-8-energy-level-transitions-spectral-regions-and-ionisation-22.3-sq-medium-q2" class="nav-link" data-scroll-target="#example-8-energy-level-transitions-spectral-regions-and-ionisation-22.3-sq-medium-q2">Example 8 · Energy-level transitions, spectral regions and ionisation · 22.3 SQ Medium Q2</a></li>
+  <li><a href="#example-9-three-level-wavelength-relation-and-an-emission-spectrum-22.3-sq-medium-q3" id="toc-example-9-three-level-wavelength-relation-and-an-emission-spectrum-22.3-sq-medium-q3" class="nav-link" data-scroll-target="#example-9-three-level-wavelength-relation-and-an-emission-spectrum-22.3-sq-medium-q3">Example 9 · Three-level wavelength relation and an emission spectrum · 22.3 SQ Medium Q3</a></li>
+  </ul></li>
+  <li><a href="#chapter-checklist" id="toc-chapter-checklist" class="nav-link" data-scroll-target="#chapter-checklist">Chapter checklist</a>
+  <ul class="collapse">
+  <li><a href="#original-question-pdfs" id="toc-original-question-pdfs" class="nav-link" data-scroll-target="#original-question-pdfs">Original question PDFs</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../a-level/12-motion-in-a-circle.html">A Level</a></li><li class="breadcrumb-item"><a href="../a-level/22-quantum-physics.html">22 Quantum physics</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">22 Quantum physics</h1>
+<p class="subtitle lead">Photons, the photoelectric effect, wave-particle duality and atomic energy levels</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="learning-objectives" class="level2">
+<h2 class="anchored" data-anchor-id="learning-objectives">Learning objectives</h2>
+<p>By the end of this chapter, you should be able to:</p>
+<ul>
+<li>explain the particulate nature of electromagnetic radiation;</li>
+<li>use <span class="math inline">\(E=hf\)</span>, <span class="math inline">\(E=hc/\lambda\)</span> and <span class="math inline">\(p=E/c\)</span> for photons;</li>
+<li>convert between joules and electronvolts;</li>
+<li>explain photoelectric emission using photons and work function energy;</li>
+<li>use the photoelectric equation and interpret maximum-energy graphs;</li>
+<li>explain how frequency and intensity affect photoelectric emission;</li>
+<li>describe electron diffraction as evidence for matter waves;</li>
+<li>use the de Broglie relation <span class="math inline">\(\lambda=h/p\)</span>;</li>
+<li>interpret atomic energy-level diagrams and line spectra;</li>
+<li>use <span class="math inline">\(hf=E_1-E_2\)</span> for transitions between discrete levels.</li>
+</ul>
+</section>
+<section id="energy-and-momentum-of-a-photon" class="level2">
+<h2 class="anchored" data-anchor-id="energy-and-momentum-of-a-photon">22.1 Energy and momentum of a photon</h2>
+<section id="photons-and-quantised-energy" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="photons-and-quantised-energy">Photons and quantised energy</h3>
+<p>Electromagnetic radiation transfers energy in discrete packets called <strong>photons</strong>. A photon is one quantum of electromagnetic energy. Its energy depends only on frequency:</p>
+<p><span class="math display">\[E=hf,\]</span></p>
+<p>where <span class="math inline">\(h=6.63\times10^{-34}\ \mathrm{J\,s}\)</span>. Since <span class="math inline">\(c=f\lambda\)</span>,</p>
+<p><span class="math display">\[E=\frac{hc}{\lambda}.\]</span></p>
+<p>Higher-frequency, shorter-wavelength radiation therefore consists of more energetic photons. Intensity does not change the energy of each photon when the frequency is fixed; it changes the number of photons arriving per unit area per unit time.</p>
+</section>
+<section id="photon-rate-and-intensity" class="level3 formula-panel">
+<h3 class="anchored" data-anchor-id="photon-rate-and-intensity">Photon rate and intensity</h3>
+<p>If radiation of power <span class="math inline">\(P\)</span> is monochromatic, the number of photons emitted or incident per unit time is</p>
+<p><span class="math display">\[\frac{N}{t}=\frac{P}{hf}=\frac{P\lambda}{hc}.\]</span></p>
+<p>For a beam spread uniformly over area <span class="math inline">\(A\)</span>, intensity is <span class="math inline">\(I=P/A\)</span>. At fixed frequency, doubling intensity doubles the photon arrival rate.</p>
+</section>
+<section id="the-electronvolt" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="the-electronvolt">The electronvolt</h3>
+<p>One electronvolt is the energy transferred when a charge equal to the elementary charge moves through a potential difference of one volt:</p>
+<p><span class="math display">\[1\ \mathrm{eV}=1.60\times10^{-19}\ \mathrm{J}.\]</span></p>
+<p>To convert eV to J, multiply by <span class="math inline">\(1.60\times10^{-19}\)</span>. To convert J to eV, divide by this value. Energy-level data are often given in eV, but <span class="math inline">\(E=hf\)</span> requires consistent SI units unless all quantities are converted carefully.</p>
+</section>
+<section id="photon-momentum" class="level3 formula-panel">
+<h3 class="anchored" data-anchor-id="photon-momentum">Photon momentum</h3>
+<p>A photon has zero rest mass but carries momentum:</p>
+<p><span class="math display">\[p=\frac{E}{c}=\frac{hf}{c}=\frac{h}{\lambda}.\]</span></p>
+<p>Absorption or reflection changes momentum and can produce radiation pressure. Momentum is a vector, so scattering problems require conservation in perpendicular directions, not just comparison of magnitudes.</p>
+</section>
+</section>
+<section id="photoelectric-effect" class="level2">
+<h2 class="anchored" data-anchor-id="photoelectric-effect">22.2 Photoelectric effect</h2>
+<section id="photoelectric-emission" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="photoelectric-emission">Photoelectric emission</h3>
+<p>Photoelectric emission is the release of electrons from a metal surface when electromagnetic radiation of sufficiently high frequency is incident on it. Each surface electron absorbs one photon in a one-to-one interaction.</p>
+<p>The <strong>work function energy</strong> <span class="math inline">\(\Phi\)</span> is the minimum energy required to remove an electron from the surface with zero kinetic energy. Different metals have different work functions.</p>
+</section>
+<section id="einsteins-photoelectric-equation" class="level3 formula-panel">
+<h3 class="anchored" data-anchor-id="einsteins-photoelectric-equation">Einstein’s photoelectric equation</h3>
+<p>Energy conservation for the most energetic emitted electron gives</p>
+<p><span class="math display">\[hf=\Phi+E_{k\max}
+=\Phi+\frac12m_ev_{\max}^2.\]</span></p>
+<p>Some electrons have less kinetic energy because they lose energy before leaving the metal. No electron can have kinetic energy greater than <span class="math inline">\(E_{k\max}\)</span>.</p>
+</section>
+<section id="threshold-frequency-and-wavelength" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="threshold-frequency-and-wavelength">Threshold frequency and wavelength</h3>
+<p>At the threshold frequency <span class="math inline">\(f_0\)</span>, the emitted electron has zero maximum kinetic energy:</p>
+<p><span class="math display">\[\Phi=hf_0=\frac{hc}{\lambda_0},\]</span></p>
+<p>where <span class="math inline">\(\lambda_0\)</span> is the threshold wavelength. Emission occurs for <span class="math inline">\(f\ge f_0\)</span>, equivalently <span class="math inline">\(\lambda\le\lambda_0\)</span>.</p>
+<p>Below threshold frequency, increasing intensity cannot cause emission because no individual photon has enough energy.</p>
+</section>
+<section id="evidence-against-a-classical-wave-explanation" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="evidence-against-a-classical-wave-explanation">Evidence against a classical wave explanation</h3>
+<p>The photon model explains observations that a simple wave-energy model cannot:</p>
+<ul>
+<li>emission is effectively instantaneous when <span class="math inline">\(f\ge f_0\)</span>;</li>
+<li>there is no emission below <span class="math inline">\(f_0\)</span>, regardless of intensity;</li>
+<li><span class="math inline">\(E_{k\max}\)</span> depends on frequency, not intensity;</li>
+<li>at fixed frequency above threshold, photoelectric current increases with intensity because more photons arrive each second.</li>
+</ul>
+</section>
+<section id="photoelectric-graphs" class="level3 formula-panel">
+<h3 class="anchored" data-anchor-id="photoelectric-graphs">Photoelectric graphs</h3>
+<p>From</p>
+<p><span class="math display">\[E_{k\max}=hf-\Phi,\]</span></p>
+<p>a graph of <span class="math inline">\(E_{k\max}\)</span> against <span class="math inline">\(f\)</span> is a straight line with gradient <span class="math inline">\(h\)</span>, vertical intercept <span class="math inline">\(-\Phi\)</span> and horizontal intercept <span class="math inline">\(f_0\)</span>.</p>
+<p>Using <span class="math inline">\(f=c/\lambda\)</span>,</p>
+<p><span class="math display">\[E_{k\max}=hc\left(\frac1\lambda-\frac1{\lambda_0}\right).\]</span></p>
+<p>A graph of <span class="math inline">\(E_{k\max}\)</span> against <span class="math inline">\(1/\lambda\)</span> has gradient <span class="math inline">\(hc\)</span> and horizontal intercept <span class="math inline">\(1/\lambda_0\)</span>. Changing the metal changes <span class="math inline">\(\Phi\)</span> and the intercept, but not the gradient.</p>
+</section>
+</section>
+<section id="wave-particle-duality" class="level2">
+<h2 class="anchored" data-anchor-id="wave-particle-duality">22.3 Wave-particle duality</h2>
+<section id="two-complementary-models" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="two-complementary-models">Two complementary models</h3>
+<p>The photoelectric effect demonstrates the particulate nature of electromagnetic radiation. Interference and diffraction demonstrate its wave nature. Matter also shows dual behaviour: particles have localised impacts and momentum, but moving particles can diffract and interfere.</p>
+</section>
+<section id="de-broglie-wavelength" class="level3 formula-panel">
+<h3 class="anchored" data-anchor-id="de-broglie-wavelength">de Broglie wavelength</h3>
+<p>The wavelength associated with a moving particle is</p>
+<p><span class="math display">\[\lambda=\frac{h}{p}.\]</span></p>
+<p>For a non-relativistic particle, <span class="math inline">\(p=mv\)</span>, so</p>
+<p><span class="math display">\[\lambda=\frac{h}{mv}.\]</span></p>
+<p>Using <span class="math inline">\(E_k=p^2/(2m)\)</span> gives</p>
+<p><span class="math display">\[\lambda=\frac{h}{\sqrt{2mE_k}}.\]</span></p>
+<p>Increasing momentum or accelerating potential difference decreases wavelength. As <span class="math inline">\(v\to0\)</span>, the non-relativistic expression predicts <span class="math inline">\(\lambda\to\infty\)</span>.</p>
+</section>
+<section id="electron-diffraction" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="electron-diffraction">Electron diffraction</h3>
+<p>Electrons accelerated through a potential difference produce diffraction rings after passing through a thin crystalline target. The regular atomic planes act like a diffraction grating because their spacing is comparable to the electron de Broglie wavelength.</p>
+<p>The diffraction pattern is evidence that electrons have wave properties. A lower accelerating p.d. gives lower momentum, a longer wavelength and wider diffraction-ring spacing.</p>
+</section>
+</section>
+<section id="energy-levels-in-atoms-and-line-spectra" class="level2">
+<h2 class="anchored" data-anchor-id="energy-levels-in-atoms-and-line-spectra">22.4 Energy levels in atoms and line spectra</h2>
+<section id="discrete-energy-levels" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="discrete-energy-levels">Discrete energy levels</h3>
+<p>Electrons in isolated atoms can occupy only certain discrete energy levels. The lowest is the <strong>ground state</strong>; higher allowed levels are <strong>excited states</strong>. The ionisation level is conventionally assigned zero energy, so bound-state energies are negative.</p>
+<p>An electron cannot remain between permitted levels. Excitation requires exactly the energy difference between two levels when a photon is absorbed.</p>
+</section>
+<section id="photon-emission-and-absorption" class="level3 formula-panel">
+<h3 class="anchored" data-anchor-id="photon-emission-and-absorption">Photon emission and absorption</h3>
+<p>For a transition between levels <span class="math inline">\(E_1\)</span> and <span class="math inline">\(E_2\)</span>,</p>
+<p><span class="math display">\[\Delta E=|E_1-E_2|=hf=\frac{hc}{\lambda}.\]</span></p>
+<ul>
+<li>Downward transition: a photon is emitted.</li>
+<li>Upward transition: a photon of exactly the required energy is absorbed.</li>
+<li>Photon energy greater than the ionisation energy: the electron is freed and the excess becomes kinetic energy.</li>
+</ul>
+</section>
+<section id="line-spectra" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="line-spectra">Line spectra</h3>
+<p>Each allowed energy difference produces one discrete photon frequency and wavelength. A hot, low-pressure gas produces bright <strong>emission lines</strong> when excited electrons fall to lower levels. A continuous spectrum passing through a cooler gas produces dark <strong>absorption lines</strong> when photons matching upward transitions are removed.</p>
+<p>Because each element has a unique set of energy levels, its line spectrum acts as a fingerprint. The largest energy gap produces the highest frequency and shortest wavelength.</p>
+</section>
+</section>
+<section id="structured-questions" class="level2">
+<h2 class="anchored" data-anchor-id="structured-questions">Structured Questions</h2>
+<section id="the-photoelectric-effect-medium" class="level3">
+<h3 class="anchored" data-anchor-id="the-photoelectric-effect-medium">22.1 The Photoelectric Effect — Medium</h3>
+</section>
+<section id="example-1-photoelectric-evidence-and-a-reciprocal-wavelength-graph-22.1-sq-medium-q1" class="level3 question-card">
+<h3 class="anchored" data-anchor-id="example-1-photoelectric-evidence-and-a-reciprocal-wavelength-graph-22.1-sq-medium-q1">Example 1 · Photoelectric evidence and a reciprocal-wavelength graph · 22.1 SQ Medium Q1</h3>
+<p><strong>(a)</strong> Describe two phenomena associated with the photoelectric effect that cannot be explained using a wave theory of light. <code>[2 marks]</code></p>
+<p><strong>(b)</strong> The maximum energy <span class="math inline">\(E_{\max}\)</span> of electrons emitted from a metal surface when illuminated by light of wavelength <span class="math inline">\(\lambda\)</span> is given by the expression</p>
+<p><span class="math display">\[E_{\max}=hc\left(\frac{1}{\lambda}-\frac{1}{\lambda_0}\right)\]</span></p>
+<p>where <span class="math inline">\(h\)</span> is the Planck constant and <span class="math inline">\(c\)</span> is the speed of light.</p>
+<p><strong>(i)</strong> Identify the symbol <span class="math inline">\(\lambda_0\)</span>. <code>[1]</code></p>
+<p><strong>(ii)</strong> The variation with <span class="math inline">\(1/\lambda\)</span> of <span class="math inline">\(E_{\max}\)</span> for the metal surface is shown in Fig. 8.1.</p>
+<p><img src="../assets/questions/quantum-physics/photoelectric-reciprocal-wavelength-graph.webp" class="question-figure img-fluid" alt="Maximum photoelectron energy against reciprocal wavelength"></p>
+<p>Use Fig. 8.1 to determine the magnitude of <span class="math inline">\(\lambda_0\)</span>. <code>[1]</code></p>
+<p><strong>(iii)</strong> Use the gradient of Fig. 8.1 to determine a value for the Planck constant <span class="math inline">\(h\)</span>. Show your working. <code>[3]</code></p>
+<p><code>[5 marks]</code></p>
+<p><strong>(c)</strong> The metal surface in <strong>(b)</strong> becomes oxidised.</p>
+<p>Photoelectric emission is still observed but the work function energy is increased.</p>
+<p>On Fig. 8.1, draw a line to show the variation with <span class="math inline">\(1/\lambda\)</span> of <span class="math inline">\(E_{\max}\)</span> for the oxidised surface. <code>[2 marks]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<ul>
+<li><strong>(a)</strong> Any two: no emission below the threshold frequency; maximum electron energy depends on incident frequency; maximum electron energy does not depend on intensity; emission is instantaneous. <code>[2]</code></li>
+<li><strong>(b)(i)</strong> <span class="math inline">\(\lambda_0\)</span> is the threshold wavelength, the maximum incident wavelength that causes photoelectric emission. <code>[1]</code></li>
+<li><strong>(b)(ii)</strong> Extrapolation gives <span class="math inline">\(1/\lambda_0\approx2.2\times10^6\ \mathrm{m^{-1}}\)</span>, so <span class="math inline">\(\lambda_0\approx4.5\times10^{-7}\ \mathrm{m}\)</span>. <code>[1]</code></li>
+<li><strong>(b)(iii)</strong> Gradient <span class="math inline">\(=hc\)</span>. Using <span class="math inline">\((3.7\times10^6,3.0\times10^{-19})\)</span> and <span class="math inline">\((2.7\times10^6,1.0\times10^{-19})\)</span> gives a gradient of <span class="math inline">\(2.0\times10^{-25}\ \mathrm{J\,m}\)</span>. <code>[2]</code> Hence <span class="math inline">\(h=(2.0\times10^{-25})/(3.00\times10^8)=6.7\times10^{-34}\ \mathrm{J\,s}\)</span>. <code>[1]</code></li>
+<li><strong>(c)</strong> Draw a straight line with the same positive gradient <code>[1]</code>, but with its extrapolated <span class="math inline">\(1/\lambda\)</span> intercept greater than <span class="math inline">\(2.2\times10^6\ \mathrm{m^{-1}}\)</span>. <code>[1]</code></li>
+</ul>
+</details>
+</section>
+<section id="example-2-photon-definition-and-maximum-energy-graph-22.1-sq-medium-q2" class="level3 question-card">
+<h3 class="anchored" data-anchor-id="example-2-photon-definition-and-maximum-energy-graph-22.1-sq-medium-q2">Example 2 · Photon definition and maximum-energy graph · 22.1 SQ Medium Q2</h3>
+<p><strong>(a)</strong> State what is meant by a photon. <code>[2 marks]</code></p>
+<p><strong>(b)</strong> Electromagnetic radiation of a varying frequency <span class="math inline">\(f\)</span> and constant intensity <span class="math inline">\(I\)</span> is used to illuminate a metal surface. At certain frequencies, electrons are emitted from the surface of the metal.</p>
+<p><strong>(i)</strong> State the name of this phenomenon. <code>[1]</code></p>
+<p><strong>(ii)</strong> The variation with <span class="math inline">\(f\)</span> of the maximum kinetic energy <span class="math inline">\(E_{\mathrm{MAX}}\)</span> of the emitted electrons is shown in Fig. 1.1.</p>
+<p><img src="../assets/questions/quantum-physics/photoelectric-energy-frequency-graph.webp" class="question-figure img-fluid" alt="Maximum photoelectron kinetic energy against frequency"></p>
+<p>Describe four conclusions that can be drawn from the graph in Fig. 1.1. The conclusions may be qualitative or quantitative. <code>[4]</code></p>
+<p><code>[5 marks]</code></p>
+<p><strong>(c)</strong> The experiment in <strong>(b)</strong> is carried out twice more. Each time one change is made to the method used.</p>
+<p>State, and explain, how the graph obtained would compare with Fig. 1.1 when:</p>
+<p><strong>(i)</strong> the same metal is used, but with electromagnetic radiation of intensity <span class="math inline">\(\frac12I\)</span>; <code>[2]</code></p>
+<p><strong>(ii)</strong> a different metal is used, but the intensity <span class="math inline">\(I\)</span> of the radiation is the same. <code>[2]</code></p>
+<p><code>[4 marks]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<ul>
+<li><strong>(a)</strong> A photon is a quantum or packet of energy <code>[1]</code> of electromagnetic radiation. <code>[1]</code></li>
+<li><strong>(b)(i)</strong> The photoelectric effect. <code>[1]</code></li>
+<li><strong>(b)(ii)</strong> The threshold frequency is approximately <span class="math inline">\(1.6\times10^{14}\ \mathrm{Hz}\)</span>. <code>[1]</code> The gradient is Planck’s constant, approximately <span class="math inline">\(6.7\times10^{-34}\ \mathrm{J\,s}\)</span>. <code>[1]</code> The work function is approximately <span class="math inline">\(1.06\times10^{-19}\ \mathrm{J}\)</span>. <code>[1]</code> <span class="math inline">\(E_{\mathrm{MAX}}\)</span> increases linearly with frequency. <code>[1]</code></li>
+<li><strong>(c)(i)</strong> The line is unchanged <code>[1]</code> because halving intensity changes photon rate, not the energy <span class="math inline">\(hf\)</span> of each photon or the maximum electron kinetic energy. <code>[1]</code></li>
+<li><strong>(c)(ii)</strong> The line has the same gradient but a different frequency-axis intercept <code>[1]</code> because a different metal has a different work function and threshold frequency. <code>[1]</code></li>
+</ul>
+</details>
+</section>
+<section id="example-3-work-function-photon-rate-and-changing-frequency-22.1-sq-medium-q3" class="level3 question-card">
+<h3 class="anchored" data-anchor-id="example-3-work-function-photon-rate-and-changing-frequency-22.1-sq-medium-q3">Example 3 · Work function, photon rate and changing frequency · 22.1 SQ Medium Q3</h3>
+<p><strong>(a)</strong> State what is meant by the work function energy of a metal. <code>[2 marks]</code></p>
+<p><strong>(b)</strong> Ultraviolet radiation of frequency <span class="math inline">\(8.5\times10^{14}\ \mathrm{Hz}\)</span> is incident, in a vacuum, on a metal surface. The power of the radiation incident on the surface is <span class="math inline">\(9.45\ \mathrm{mW}\)</span>. Photoelectrons are emitted with a maximum kinetic energy of <span class="math inline">\(2.1\times10^{-19}\ \mathrm{J}\)</span>.</p>
+<p>Determine the number of photons incident on the surface per unit time.</p>
+<p><span class="math display">\[\text{number per unit time}=\ ........................................\ \mathrm{s^{-1}}\]</span></p>
+<p><code>[2 marks]</code></p>
+<p><strong>(c)</strong> Calculate the work function energy <span class="math inline">\(\Phi\)</span> of the metal.</p>
+<p><span class="math display">\[\Phi=\ ........................................\ \mathrm{J}\]</span></p>
+<p><code>[2 marks]</code></p>
+<p><strong>(d)</strong> The frequency of the radiation incident on the surface in <strong>(b)</strong> is decreased while the power remains constant.</p>
+<p>State and explain the effect of this change on:</p>
+<p><strong>(i)</strong> the maximum kinetic energy of the photoelectron; <code>[2]</code></p>
+<p><strong>(ii)</strong> the rate of emission of the photoelectron. <code>[1]</code></p>
+<p><code>[3 marks]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<ul>
+<li><strong>(a)</strong> The work function is the minimum photon energy required to remove an electron <code>[1]</code> from the metal surface with zero kinetic energy. <code>[1]</code></li>
+<li><strong>(b)</strong> One photon has energy <span class="math inline">\(hf=(6.63\times10^{-34})(8.5\times10^{14})=5.64\times10^{-19}\ \mathrm{J}\)</span>. <code>[1]</code> Photon rate <span class="math inline">\(=P/(hf)=(9.45\times10^{-3})/(5.64\times10^{-19})=1.68\times10^{16}\ \mathrm{s^{-1}}\)</span>. <code>[1]</code></li>
+<li><strong>(c)</strong> <span class="math inline">\(hf=\Phi+E_{k\max}\)</span>, so <span class="math inline">\(\Phi=5.64\times10^{-19}-2.1\times10^{-19}=3.54\times10^{-19}\ \mathrm{J}\)</span>. <code>[2]</code></li>
+<li><strong>(d)(i)</strong> Photon energy decreases for the same work function <code>[1]</code>, so maximum photoelectron kinetic energy decreases. <code>[1]</code></li>
+<li><strong>(d)(ii)</strong> At constant power, lower energy per photon means more photons per unit time, so the emission rate increases, provided the frequency remains above threshold. <code>[1]</code></li>
+</ul>
+</details>
+</section>
+<section id="wave-particle-duality-medium" class="level3">
+<h3 class="anchored" data-anchor-id="wave-particle-duality-medium">22.2 Wave-Particle Duality — Medium</h3>
+</section>
+<section id="example-4-electron-diffraction-and-accelerating-potential-difference-22.2-sq-medium-q1" class="level3 question-card">
+<h3 class="anchored" data-anchor-id="example-4-electron-diffraction-and-accelerating-potential-difference-22.2-sq-medium-q1">Example 4 · Electron diffraction and accelerating potential difference · 22.2 SQ Medium Q1</h3>
+<p><strong>(a)</strong> State the formula for the de Broglie wavelength <span class="math inline">\(\lambda\)</span> of a moving particle.</p>
+<p>State the meaning of any other symbol used. <code>[2 marks]</code></p>
+<p><strong>(b)</strong> Electrons accelerate through a potential difference, pass through a thin crystal and are then incident on a fluorescent screen.</p>
+<p>The pattern in Fig. 1.1 is observed on the fluorescent screen.</p>
+<p><img src="../assets/questions/quantum-physics/electron-diffraction-pattern-one.webp" class="question-figure img-fluid" alt="Concentric electron diffraction rings on a fluorescent screen"></p>
+<p><strong>(i)</strong> State the name of the phenomenon shown by the electrons at the crystal. <code>[1]</code></p>
+<p><strong>(ii)</strong> State what this phenomenon shows about the nature of electrons. <code>[1]</code></p>
+<p><strong>(iii)</strong> Suggest why the thin crystal causes the phenomenon in <strong>(b)(i)</strong>. <code>[1]</code></p>
+<p><code>[3 marks]</code></p>
+<p><strong>(c)</strong> The potential difference used to accelerate the electron is changed.</p>
+<p>The new pattern observed on the screen is shown in Fig. 1.2.</p>
+<p><img src="../assets/questions/quantum-physics/electron-diffraction-pattern-two.webp" class="question-figure img-fluid" alt="Electron diffraction rings with greater spacing"></p>
+<p>State and explain the change that has been made to the potential difference to create the pattern shown in Fig. 1.2. <code>[2 marks]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<ul>
+<li><strong>(a)</strong> <span class="math inline">\(\lambda=h/p\)</span> <code>[1]</code>, where <span class="math inline">\(h\)</span> is the Planck constant and <span class="math inline">\(p\)</span> is particle momentum. <code>[1]</code> Equivalently, <span class="math inline">\(\lambda=h/(mv)\)</span> with <span class="math inline">\(m\)</span> as mass and <span class="math inline">\(v\)</span> as velocity.</li>
+<li><strong>(b)(i)</strong> Electron diffraction. <code>[1]</code></li>
+<li><strong>(b)(ii)</strong> Moving electrons have wave properties. <code>[1]</code></li>
+<li><strong>(b)(iii)</strong> The spacing between atoms or atomic planes is comparable with the electron wavelength. <code>[1]</code></li>
+<li><strong>(c)</strong> The accelerating p.d. is decreased. <code>[1]</code> The electrons have lower momentum and therefore a longer de Broglie wavelength, producing greater diffraction-ring spacing. <code>[1]</code></li>
+</ul>
+</details>
+</section>
+<section id="example-5-evidence-for-duality-and-an-alpha-particle-wavelength-22.2-sq-medium-q2" class="level3 question-card">
+<h3 class="anchored" data-anchor-id="example-5-evidence-for-duality-and-an-alpha-particle-wavelength-22.2-sq-medium-q2">Example 5 · Evidence for duality and an alpha-particle wavelength · 22.2 SQ Medium Q2</h3>
+<p><strong>(a)</strong> State one piece of experimental evidence for:</p>
+<p><strong>(i)</strong> the wave nature of matter; <code>[1]</code></p>
+<p><strong>(ii)</strong> the particulate nature of electromagnetic radiation. <code>[1]</code></p>
+<p><code>[2 marks]</code></p>
+<p><strong>(b)</strong> Calculate the de Broglie wavelength <span class="math inline">\(\lambda\)</span> of an alpha-particle moving at a speed of <span class="math inline">\(5.9\times10^7\ \mathrm{m\,s^{-1}}\)</span>.</p>
+<p><span class="math display">\[\lambda=\ ........................................\ \mathrm{m}\]</span></p>
+<p><code>[3 marks]</code></p>
+<p><strong>(c)</strong> The speed <span class="math inline">\(v\)</span> of the alpha-particles in <strong>(b)(i)</strong> is gradually reduced to zero.</p>
+<p>On Fig. 1.1, sketch the variation with <span class="math inline">\(v\)</span> of <span class="math inline">\(\lambda\)</span>.</p>
+<p><img src="../assets/questions/quantum-physics/de-broglie-blank-graph.webp" class="question-figure img-fluid" alt="Blank graph of de Broglie wavelength against alpha-particle speed"></p>
+<p><code>[2 marks]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<ul>
+<li><strong>(a)(i)</strong> Electron diffraction. <code>[1]</code></li>
+<li><strong>(a)(ii)</strong> The photoelectric effect. <code>[1]</code></li>
+<li><strong>(b)</strong> <span class="math inline">\(m_\alpha=4u=4(1.66\times10^{-27})=6.64\times10^{-27}\ \mathrm{kg}\)</span>. Momentum <span class="math inline">\(p=mv=(6.64\times10^{-27})(5.9\times10^7)=3.92\times10^{-19}\ \mathrm{N\,s}\)</span>. <code>[1]</code> Use <span class="math inline">\(\lambda=h/p\)</span>. <code>[1]</code> Hence <span class="math inline">\(\lambda=(6.63\times10^{-34})/(3.92\times10^{-19})=1.69\times10^{-15}\ \mathrm{m}\)</span>. <code>[1]</code></li>
+<li><strong>(c)</strong> Draw a decreasing reciprocal curve with negative gradient throughout. <code>[1]</code> It does not touch either axis: <span class="math inline">\(\lambda\)</span> remains positive at <span class="math inline">\(5.9\times10^7\ \mathrm{m\,s^{-1}}\)</span> and tends to infinity as <span class="math inline">\(v\to0\)</span>. <code>[1]</code></li>
+</ul>
+</details>
+</section>
+<section id="example-6-photon-scattering-from-an-electron-22.2-sq-medium-q3" class="level3 question-card">
+<h3 class="anchored" data-anchor-id="example-6-photon-scattering-from-an-electron-22.2-sq-medium-q3">Example 6 · Photon scattering from an electron · 22.2 SQ Medium Q3</h3>
+<p><strong>(a)</strong> Explain what is meant by the de Broglie wavelength. <code>[1 mark]</code></p>
+<p><strong>(b)</strong> A gamma-ray photon of energy <span class="math inline">\(2.6\times10^{-18}\ \mathrm{J}\)</span> is incident on an isolated stationary electron, as illustrated in Fig. 1.1.</p>
+<p><img src="../assets/questions/quantum-physics/photon-electron-scattering.webp" class="question-figure img-fluid" alt="Gamma-ray photon scattering from a stationary electron"></p>
+<p>The photon is deflected elastically by the electron through angle <span class="math inline">\(\theta\)</span>. The deflected photon has a wavelength of <span class="math inline">\(590\ \mathrm{nm}\)</span>.</p>
+<p><strong>(i)</strong> On Fig. 1.1, draw an arrow to indicate a possible initial direction of motion of the electron after the photon has been deflected. <code>[1]</code></p>
+<p><strong>(ii)</strong> Calculate the energy of the deflected photon.</p>
+<p><span class="math display">\[\text{photon energy}=\ ........................................\ \mathrm{J}\]</span></p>
+<p><code>[2]</code></p>
+<p><code>[3 marks]</code></p>
+<p><strong>(c)</strong> Calculate the speed of the electron after the photon has been deflected.</p>
+<p><span class="math display">\[\text{speed}=\ ........................................\ \mathrm{m\,s^{-1}}\]</span></p>
+<p><code>[3 marks]</code></p>
+<p><strong>(d)</strong> Explain why the magnitude of the final momentum of the electron is not equal to the change in magnitude of the momentum of the photon. <code>[2 marks]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<ul>
+<li><strong>(a)</strong> The de Broglie wavelength is the wavelength associated with a moving particle. <code>[1]</code></li>
+<li><strong>(b)(i)</strong> Draw the electron arrow below the original horizontal photon direction and pointing to the right, so its vertical momentum balances that of the deflected photon. <code>[1]</code></li>
+<li><strong>(b)(ii)</strong> <span class="math inline">\(E=hc/\lambda=(6.63\times10^{-34})(3.00\times10^8)/(590\times10^{-9})=3.37\times10^{-19}\ \mathrm{J}\)</span>. <code>[2]</code></li>
+<li><strong>(c)</strong> Energy transferred to the electron is <span class="math inline">\(2.6\times10^{-18}-3.37\times10^{-19}=2.26\times10^{-18}\ \mathrm{J}\)</span>. <code>[1]</code> Using <span class="math inline">\(E_k=\frac12m_ev^2\)</span> <code>[1]</code> gives <span class="math inline">\(v=\sqrt{2E_k/m_e}=2.23\times10^6\ \mathrm{m\,s^{-1}}\)</span>. <code>[1]</code></li>
+<li><strong>(d)</strong> Momentum is a vector quantity <code>[1]</code>, so conservation must be applied to horizontal and vertical components; changes in direction mean that magnitudes alone cannot be subtracted. <code>[1]</code></li>
+</ul>
+</details>
+</section>
+<section id="quantisation-of-energy-medium" class="level3">
+<h3 class="anchored" data-anchor-id="quantisation-of-energy-medium">22.3 Quantisation of Energy — Medium</h3>
+</section>
+<section id="example-7-hydrogen-transitions-and-emitted-wavelengths-22.3-sq-medium-q1" class="level3 question-card">
+<h3 class="anchored" data-anchor-id="example-7-hydrogen-transitions-and-emitted-wavelengths-22.3-sq-medium-q1">Example 7 · Hydrogen transitions and emitted wavelengths · 22.3 SQ Medium Q1</h3>
+<p><strong>(a)</strong> The energy levels of a hydrogen atom are shown in Fig. 1.1.</p>
+<p><img src="../assets/questions/quantum-physics/hydrogen-energy-levels.webp" class="question-figure img-fluid" alt="Hydrogen atom energy levels from ground state to ionisation"></p>
+<p>Calculate the wavelength of radiation emitted when an electron falls from level <span class="math inline">\(n=4\)</span> to the ground state in the hydrogen atom. <code>[4 marks]</code></p>
+<p><strong>(b)</strong> When an electron of energy <span class="math inline">\(1.84\times10^{-17}\ \mathrm{J}\)</span> collides with a hydrogen atom, photons of six different energies are emitted.</p>
+<p>Sketch arrows on Fig. 1.1 to show the transitions responsible for these photons. <code>[3 marks]</code></p>
+<p><strong>(c)</strong> Calculate the wavelength of the photon with the smallest energy. Give your answer to an appropriate number of significant figures. <code>[3 marks]</code></p>
+<p><strong>(d)</strong> One way to excite a hydrogen atom is by the absorption of a photon.</p>
+<p>Explain why, for a particular transition, the photon must have an exact amount of energy. <code>[2 marks]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<ul>
+<li><strong>(a)</strong> <span class="math inline">\(\Delta E=(-7.65)-(-122.4)=114.75\ \mathrm{eV}=1.84\times10^{-17}\ \mathrm{J}\)</span>. <code>[1]</code> <span class="math inline">\(f=\Delta E/h=2.78\times10^{16}\ \mathrm{Hz}\)</span>. <code>[1]</code> Use <span class="math inline">\(c=f\lambda\)</span>. <code>[1]</code> Hence <span class="math inline">\(\lambda=3.00\times10^8/(2.78\times10^{16})=1.08\times10^{-8}\ \mathrm{m}\)</span>. <code>[1]</code></li>
+<li><strong>(b)</strong> Draw all six downward transitions among levels 1 to 4: <span class="math inline">\(4\to3\)</span>, <span class="math inline">\(4\to2\)</span>, <span class="math inline">\(4\to1\)</span> <code>[1]</code>; <span class="math inline">\(3\to2\)</span>, <span class="math inline">\(3\to1\)</span> <code>[1]</code>; and <span class="math inline">\(2\to1\)</span>. <code>[1]</code></li>
+<li><strong>(c)</strong> The smallest gap is <span class="math inline">\(4\to3\)</span>: <span class="math inline">\(\Delta E=(-7.65)-(-13.6)=5.95\ \mathrm{eV}=9.53\times10^{-19}\ \mathrm{J}\)</span>. <code>[1]</code> Use <span class="math inline">\(\lambda=hc/\Delta E\)</span>. <code>[1]</code> <span class="math inline">\(\lambda=2.09\times10^{-7}\ \mathrm{m}\)</span> to 3 s.f. <code>[1]</code></li>
+<li><strong>(d)</strong> Energy levels are discrete and excitation requires an exact energy difference. <code>[1]</code> A photon is absorbed in a one-to-one interaction, so all its energy must equal that level difference. <code>[1]</code></li>
+</ul>
+</details>
+</section>
+<section id="example-8-energy-level-transitions-spectral-regions-and-ionisation-22.3-sq-medium-q2" class="level3 question-card">
+<h3 class="anchored" data-anchor-id="example-8-energy-level-transitions-spectral-regions-and-ionisation-22.3-sq-medium-q2">Example 8 · Energy-level transitions, spectral regions and ionisation · 22.3 SQ Medium Q2</h3>
+<p><strong>(a)</strong> The lowest energy levels of a hydrogen atom are represented in Fig. 1.1.</p>
+<p><img src="../assets/questions/quantum-physics/hydrogen-lowest-energy-levels.webp" class="question-figure img-fluid" alt="Five lowest hydrogen energy levels in joules"></p>
+<p>Identify the transition that produces a photon with frequency of <span class="math inline">\(3.3\times10^{16}\ \mathrm{Hz}\)</span>. <code>[2 marks]</code></p>
+<p><strong>(b)</strong> An excited hydrogen atom can emit photons of certain discrete frequencies in various regions of the electromagnetic spectrum. Three possible transitions are shown in Fig. 1.2.</p>
+<p><img src="../assets/questions/quantum-physics/hydrogen-transition-regions.webp" class="question-figure img-fluid" alt="Hydrogen energy-level transitions x, y and z"></p>
+<p>Identify the transitions in Fig. 1.2 which produce a photon in the following regions of the electromagnetic spectrum:</p>
+<p><strong>(i)</strong> Ultraviolet <code>[1]</code></p>
+<p><strong>(ii)</strong> Visible <code>[1]</code></p>
+<p><strong>(iii)</strong> Infrared <code>[1]</code></p>
+<p><code>[3 marks]</code></p>
+<p><strong>(c)</strong> Explain why the emitted photons in part <strong>(b)</strong> have certain discrete frequencies. <code>[3 marks]</code></p>
+<p><strong>(d)</strong> An electron in the hydrogen atom is ionised by a photon of light with frequency <span class="math inline">\(5.2\times10^{16}\ \mathrm{Hz}\)</span>.</p>
+<p>Calculate the kinetic energy of the ionised electron.</p>
+<p><span class="math display">\[\text{kinetic energy}=\ ........................................\ \mathrm{J}\]</span></p>
+<p><code>[3 marks]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<ul>
+<li><strong>(a)</strong> Photon energy <span class="math inline">\(hf=(6.63\times10^{-34})(3.3\times10^{16})=2.19\times10^{-17}\ \mathrm{J}\)</span>. <code>[1]</code> This equals <span class="math inline">\((-0.98-(-3.17))\times10^{-17}\ \mathrm{J}\)</span>, so the transition is <span class="math inline">\(n=2\to n=1\)</span>. <code>[1]</code></li>
+<li><strong>(b)(i)</strong> Ultraviolet: transition z. <code>[1]</code></li>
+<li><strong>(b)(ii)</strong> Visible: transition y. <code>[1]</code></li>
+<li><strong>(b)(iii)</strong> Infrared: transition x. <code>[1]</code></li>
+<li><strong>(c)</strong> An electron moves from one fixed energy level to a lower fixed level. <code>[1]</code> The photon therefore receives a discrete energy equal to the level difference. <code>[1]</code> Since <span class="math inline">\(\Delta E=hf\)</span>, discrete energies produce discrete frequencies. <code>[1]</code></li>
+<li><strong>(d)</strong> Ionisation energy from the ground state is <span class="math inline">\(3.17\times10^{-17}\ \mathrm{J}\)</span>. <code>[1]</code> Photon energy is <span class="math inline">\(hf=(6.63\times10^{-34})(5.2\times10^{16})=3.44\times10^{-17}\ \mathrm{J}\)</span>. <code>[1]</code> Hence <span class="math inline">\(E_k=3.44\times10^{-17}-3.17\times10^{-17}=2.7\times10^{-18}\ \mathrm{J}\)</span>. <code>[1]</code></li>
+</ul>
+</details>
+</section>
+<section id="example-9-three-level-wavelength-relation-and-an-emission-spectrum-22.3-sq-medium-q3" class="level3 question-card">
+<h3 class="anchored" data-anchor-id="example-9-three-level-wavelength-relation-and-an-emission-spectrum-22.3-sq-medium-q3">Example 9 · Three-level wavelength relation and an emission spectrum · 22.3 SQ Medium Q3</h3>
+<p><strong>(a)</strong> Transitions between three energy levels in a particular atom give rise to three spectral lines.</p>
+<p>In decreasing magnitudes, these are related to the wavelengths, <span class="math inline">\(\lambda_1\)</span>, <span class="math inline">\(\lambda_2\)</span>, and <span class="math inline">\(\lambda_3\)</span>.</p>
+<p>Use a diagram to show that the equation that relates <span class="math inline">\(\lambda_1\)</span>, <span class="math inline">\(\lambda_2\)</span>, and <span class="math inline">\(\lambda_3\)</span> is:</p>
+<p><span class="math display">\[\frac{1}{\lambda_1}=\frac{1}{\lambda_2}+\frac{1}{\lambda_3}\]</span></p>
+<p><code>[5 marks]</code></p>
+<p><strong>(b)</strong> An atom has a ground state energy of <span class="math inline">\(-8.80\ \mathrm{eV}\)</span>. The complete line emission spectra for this atom is shown in Fig. 1.1.</p>
+<p><img src="../assets/questions/quantum-physics/atomic-emission-spectrum.webp" class="question-figure img-fluid" alt="Atomic emission lines at 267, 325 and 1500 nanometres"></p>
+<p>Sketch a diagram of the possible energy levels for the atomic line spectra shown in Fig. 1.1. Label each energy level with the value of its energy. <code>[6 marks]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<ul>
+<li><strong>(a)</strong> Draw three energy levels with the upper gap smaller than the total lower-to-upper gap. <code>[1]</code> Show the three possible downward transitions and label the largest-energy transition <span class="math inline">\(\lambda_1\)</span>, with the other two <span class="math inline">\(\lambda_2\)</span> and <span class="math inline">\(\lambda_3\)</span>. <code>[2]</code> Energy conservation gives <span class="math inline">\(E_1=E_2+E_3\)</span>. <code>[1]</code> Substituting <span class="math inline">\(E=hc/\lambda\)</span> and cancelling <span class="math inline">\(hc\)</span> gives <span class="math inline">\(1/\lambda_1=1/\lambda_2+1/\lambda_3\)</span>. <code>[1]</code></li>
+<li><strong>(b)</strong> For <span class="math inline">\(1500\ \mathrm{nm}\)</span>, <span class="math inline">\(E=hc/\lambda=1.33\times10^{-19}\ \mathrm{J}=0.83\ \mathrm{eV}\)</span>. <code>[1]</code> Hence the first excited level is <span class="math inline">\(-8.80+0.83=-7.97\ \mathrm{eV}\)</span>. <code>[1]</code></li>
+<li>For <span class="math inline">\(325\ \mathrm{nm}\)</span>, the transition energy is <span class="math inline">\(3.83\ \mathrm{eV}\)</span>. <code>[1]</code> Hence the next level is <span class="math inline">\(-7.97+3.83=-4.14\ \mathrm{eV}\)</span>. <code>[1]</code></li>
+<li>For <span class="math inline">\(267\ \mathrm{nm}\)</span>, the transition energy is <span class="math inline">\(4.66\ \mathrm{eV}\)</span>, consistent with <span class="math inline">\(-8.80+4.66=-4.14\ \mathrm{eV}\)</span>. <code>[1]</code></li>
+<li>Draw and label three horizontal levels at <span class="math inline">\(-8.80\ \mathrm{eV}\)</span>, <span class="math inline">\(-7.97\ \mathrm{eV}\)</span> and <span class="math inline">\(-4.14\ \mathrm{eV}\)</span>, with the three corresponding transitions. <code>[1]</code></li>
+</ul>
+</details>
+</section>
+</section>
+<section id="chapter-checklist" class="level2">
+<h2 class="anchored" data-anchor-id="chapter-checklist">Chapter checklist</h2>
+<ul class="task-list">
+<li><label><input type="checkbox">I can calculate photon energy, momentum and photon arrival rate.</label></li>
+<li><label><input type="checkbox">I can convert accurately between eV and J.</label></li>
+<li><label><input type="checkbox">I can use and explain the photoelectric equation.</label></li>
+<li><label><input type="checkbox">I can interpret <span class="math inline">\(E_{k\max}\)</span> graphs and distinguish frequency from intensity effects.</label></li>
+<li><label><input type="checkbox">I can calculate and interpret de Broglie wavelength.</label></li>
+<li><label><input type="checkbox">I can use energy-level diagrams to identify transitions and spectral lines.</label></li>
+<li><label><input type="checkbox">I can distinguish excitation, emission, absorption and ionisation.</label></li>
+</ul>
+<section id="original-question-pdfs" class="level3">
+<h3 class="anchored" data-anchor-id="original-question-pdfs">Original question PDFs</h3>
+<ul>
+<li><a href="../resources/original-papers/quantum-physics/22.1-photoelectric-effect-medium.pdf">22.1 The Photoelectric Effect — Medium</a></li>
+<li><a href="../resources/original-papers/quantum-physics/22.2-wave-particle-duality-medium.pdf">22.2 Wave-Particle Duality — Medium</a></li>
+<li><a href="../resources/original-papers/quantum-physics/22.3-quantisation-of-energy-medium.pdf">22.3 Quantisation of Energy — Medium</a></li>
+</ul>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll(".done-toggle input").forEach((input) => {
+    const key = `cie-physics-${input.dataset.progress}`;
+    input.checked = localStorage.getItem(key) === "true";
+    input.closest(".question-card")?.classList.toggle("is-complete", input.checked);
+    input.addEventListener("change", () => {
+      localStorage.setItem(key, input.checked);
+      input.closest(".question-card")?.classList.toggle("is-complete", input.checked);
+    });
+  });
+
+  document.querySelectorAll(".mc-question").forEach((card) => {
+    const answer = card.dataset.answer;
+    const feedback = card.querySelector(".mc-feedback");
+    const check = card.querySelector(".check-answer");
+    let selected = localStorage.getItem(`cie-physics-${card.id}-choice`) || "";
+
+    const showSelection = () => {
+      card.querySelectorAll(".mc-choice").forEach((choice) => {
+        choice.classList.toggle("is-selected", choice.dataset.choice === selected);
+      });
+    };
+    showSelection();
+
+    card.querySelectorAll(".mc-choice").forEach((choice) => {
+      choice.addEventListener("click", () => {
+        selected = choice.dataset.choice;
+        localStorage.setItem(`cie-physics-${card.id}-choice`, selected);
+        feedback.textContent = "";
+        feedback.className = "mc-feedback";
+        showSelection();
+      });
+    });
+
+    check?.addEventListener("click", () => {
+      if (!selected) {
+        feedback.textContent = "Select an answer first.";
+        feedback.className = "mc-feedback is-pending";
+        return;
+      }
+      const correct = selected === answer;
+      feedback.textContent = correct ? "Correct." : `Not quite. The correct answer is ${answer}.`;
+      feedback.className = `mc-feedback ${correct ? "is-correct" : "is-incorrect"}`;
+    });
+  });
+});
+</script>
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "已复制");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "已复制");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../a-level/21-alternating-currents.html" class="pagination-link" aria-label="21 Alternating currents">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">21 Alternating currents</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../a-level/23-nuclear-physics.html" class="pagination-link" aria-label="23 Nuclear physics">
+        <span class="nav-page-text">23 Nuclear physics</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>

@@ -1,0 +1,1371 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-Hans" xml:lang="zh-Hans"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.38">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>24 Medical physics – CIE Physics 9702</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../a-level/25-astronomy-and-cosmology.html" rel="next">
+<link href="../a-level/23-nuclear-physics.html" rel="prev">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-a2a938b4dd5711f7a799c87bd16ba44c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "没有结果",
+    "search-matching-documents-text": "匹配的文档",
+    "search-copy-link-title": "复制搜索链接",
+    "search-hide-matches-text": "隐藏其它匹配结果",
+    "search-more-match-text": "更多匹配结果",
+    "search-more-matches-text": "更多匹配结果",
+    "search-clear-button-title": "清除",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "取消",
+    "search-submit-button-title": "提交",
+    "search-label": "搜索"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../styles.css">
+</head>
+
+<body class="nav-sidebar docked quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="展开或折叠侧边栏导航" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../a-level/12-motion-in-a-circle.html">A Level</a></li><li class="breadcrumb-item"><a href="../a-level/24-medical-physics.html">24 Medical physics</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="展开或折叠侧边栏导航" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="搜索" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">CIE Physics 9702</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="搜索"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">学习首页</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">AS Level</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="展开或折叠此栏">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../as-level/01-physical-quantities-and-units.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">1 Physical quantities and units</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../as-level/02-kinematics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2 Kinematics</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../as-level/03-dynamics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">3 Dynamics</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">A Level</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="展开或折叠此栏">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/12-motion-in-a-circle.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">12 Motion in a circle</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/13-gravitational-fields.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">13 Gravitational fields</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/14-temperature.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">14 Temperature</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/15-ideal-gases.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">15 Ideal gases</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/16-thermodynamics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">16 Thermodynamics</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/17-oscillations.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">17 Oscillations</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/18-electric-fields.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">18 Electric fields</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/19-capacitance.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">19 Capacitance</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/20-magnetic-fields.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">20 Magnetic fields</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/21-alternating-currents.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">21 Alternating currents</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/22-quantum-physics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">22 Quantum physics</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/23-nuclear-physics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">23 Nuclear physics</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/24-medical-physics.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">24 Medical physics</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/25-astronomy-and-cosmology.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">25 Astronomy and cosmology</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">该页面内容</h2>
+   
+  <ul>
+  <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link active" data-scroll-target="#learning-objectives">Learning objectives</a></li>
+  <li><a href="#production-and-use-of-ultrasound" id="toc-production-and-use-of-ultrasound" class="nav-link" data-scroll-target="#production-and-use-of-ultrasound">24.1 Production and use of ultrasound</a>
+  <ul class="collapse">
+  <li><a href="#piezoelectric-transducers" id="toc-piezoelectric-transducers" class="nav-link" data-scroll-target="#piezoelectric-transducers">Piezoelectric transducers</a></li>
+  <li><a href="#short-pulses-and-pulse-echo-imaging" id="toc-short-pulses-and-pulse-echo-imaging" class="nav-link" data-scroll-target="#short-pulses-and-pulse-echo-imaging">Short pulses and pulse-echo imaging</a></li>
+  <li><a href="#specific-acoustic-impedance" id="toc-specific-acoustic-impedance" class="nav-link" data-scroll-target="#specific-acoustic-impedance">Specific acoustic impedance</a></li>
+  <li><a href="#ultrasound-attenuation" id="toc-ultrasound-attenuation" class="nav-link" data-scroll-target="#ultrasound-attenuation">Ultrasound attenuation</a></li>
+  </ul></li>
+  <li><a href="#production-and-use-of-x-rays" id="toc-production-and-use-of-x-rays" class="nav-link" data-scroll-target="#production-and-use-of-x-rays">24.2 Production and use of X-rays</a>
+  <ul class="collapse">
+  <li><a href="#x-ray-tube" id="toc-x-ray-tube" class="nav-link" data-scroll-target="#x-ray-tube">X-ray tube</a></li>
+  <li><a href="#x-ray-attenuation-and-contrast" id="toc-x-ray-attenuation-and-contrast" class="nav-link" data-scroll-target="#x-ray-attenuation-and-contrast">X-ray attenuation and contrast</a></li>
+  <li><a href="#x-ray-imaging-and-ct" id="toc-x-ray-imaging-and-ct" class="nav-link" data-scroll-target="#x-ray-imaging-and-ct">X-ray imaging and CT</a></li>
+  </ul></li>
+  <li><a href="#pet-scanning" id="toc-pet-scanning" class="nav-link" data-scroll-target="#pet-scanning">24.3 PET scanning</a>
+  <ul class="collapse">
+  <li><a href="#tracers-and-positron-emission" id="toc-tracers-and-positron-emission" class="nav-link" data-scroll-target="#tracers-and-positron-emission">Tracers and positron emission</a></li>
+  <li><a href="#electron-positron-annihilation" id="toc-electron-positron-annihilation" class="nav-link" data-scroll-target="#electron-positron-annihilation">Electron-positron annihilation</a></li>
+  <li><a href="#coincidence-detection-and-image-formation" id="toc-coincidence-detection-and-image-formation" class="nav-link" data-scroll-target="#coincidence-detection-and-image-formation">Coincidence detection and image formation</a></li>
+  </ul></li>
+  <li><a href="#selected-structured-questions" id="toc-selected-structured-questions" class="nav-link" data-scroll-target="#selected-structured-questions">Selected Structured Questions</a>
+  <ul class="collapse">
+  <li><a href="#selected-examination-questions" id="toc-selected-examination-questions" class="nav-link" data-scroll-target="#selected-examination-questions">Selected examination questions</a></li>
+  <li><a href="#example-1-acoustic-impedance-reflection-and-matching-24.1-sq-easy-q1" id="toc-example-1-acoustic-impedance-reflection-and-matching-24.1-sq-easy-q1" class="nav-link" data-scroll-target="#example-1-acoustic-impedance-reflection-and-matching-24.1-sq-easy-q1">Example 1 · Acoustic impedance, reflection and matching · 24.1 SQ Easy Q1</a></li>
+  <li><a href="#example-2-particle-properties-and-annihilation-photons-24.2-sq-easy-q3" id="toc-example-2-particle-properties-and-annihilation-photons-24.2-sq-easy-q3" class="nav-link" data-scroll-target="#example-2-particle-properties-and-annihilation-photons-24.2-sq-easy-q3">Example 2 · Particle properties and annihilation photons · 24.2 SQ Easy Q3</a></li>
+  <li><a href="#example-3-principles-of-pet-and-particle-annihilation-24.2-sq-medium-q3" id="toc-example-3-principles-of-pet-and-particle-annihilation-24.2-sq-medium-q3" class="nav-link" data-scroll-target="#example-3-principles-of-pet-and-particle-annihilation-24.2-sq-medium-q3">Example 3 · Principles of PET and particle annihilation · 24.2 SQ Medium Q3</a></li>
+  <li><a href="#example-4-fluorine-18-activity-tracer-mass-and-pet-ct-24.2-sq-hard-q2" id="toc-example-4-fluorine-18-activity-tracer-mass-and-pet-ct-24.2-sq-hard-q2" class="nav-link" data-scroll-target="#example-4-fluorine-18-activity-tracer-mass-and-pet-ct-24.2-sq-hard-q2">Example 4 · Fluorine-18 activity, tracer mass and PET-CT · 24.2 SQ Hard Q2</a></li>
+  <li><a href="#example-5-x-ray-tube-photon-energy-and-image-contrast-24.1-sq-easy-q3" id="toc-example-5-x-ray-tube-photon-energy-and-image-contrast-24.1-sq-easy-q3" class="nav-link" data-scroll-target="#example-5-x-ray-tube-photon-energy-and-image-contrast-24.1-sq-easy-q3">Example 5 · X-ray tube, photon energy and image contrast · 24.1 SQ Easy Q3</a></li>
+  <li><a href="#example-6-ultrasound-transducer-coupling-and-x-ray-attenuation-24.1-sq-medium-q3" id="toc-example-6-ultrasound-transducer-coupling-and-x-ray-attenuation-24.1-sq-medium-q3" class="nav-link" data-scroll-target="#example-6-ultrasound-transducer-coupling-and-x-ray-attenuation-24.1-sq-medium-q3">Example 6 · Ultrasound transducer, coupling and X-ray attenuation · 24.1 SQ Medium Q3</a></li>
+  <li><a href="#example-7-pzt-crystal-and-ultrasound-scanning-of-an-eye-24.1-sq-hard-q1" id="toc-example-7-pzt-crystal-and-ultrasound-scanning-of-an-eye-24.1-sq-hard-q1" class="nav-link" data-scroll-target="#example-7-pzt-crystal-and-ultrasound-scanning-of-an-eye-24.1-sq-hard-q1">Example 7 · PZT crystal and ultrasound scanning of an eye · 24.1 SQ Hard Q1</a></li>
+  <li><a href="#example-8-x-ray-energy-contrast-media-and-beam-filtering-24.1-sq-hard-q2" id="toc-example-8-x-ray-energy-contrast-media-and-beam-filtering-24.1-sq-hard-q2" class="nav-link" data-scroll-target="#example-8-x-ray-energy-contrast-media-and-beam-filtering-24.1-sq-hard-q2">Example 8 · X-ray energy, contrast media and beam filtering · 24.1 SQ Hard Q2</a></li>
+  </ul></li>
+  <li><a href="#chapter-checklist" id="toc-chapter-checklist" class="nav-link" data-scroll-target="#chapter-checklist">Chapter checklist</a>
+  <ul class="collapse">
+  <li><a href="#original-question-pdfs" id="toc-original-question-pdfs" class="nav-link" data-scroll-target="#original-question-pdfs">Original question PDFs</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../a-level/12-motion-in-a-circle.html">A Level</a></li><li class="breadcrumb-item"><a href="../a-level/24-medical-physics.html">24 Medical physics</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">24 Medical physics</h1>
+<p class="subtitle lead">Ultrasound, X-ray imaging, CT and positron emission tomography</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="learning-objectives" class="level2">
+<h2 class="anchored" data-anchor-id="learning-objectives">Learning objectives</h2>
+<p>By the end of this chapter, you should be able to:</p>
+<ul>
+<li>explain how a piezoelectric transducer generates and detects ultrasound;</li>
+<li>use pulse-echo timing to locate internal boundaries;</li>
+<li>calculate specific acoustic impedance and intensity reflection;</li>
+<li>use exponential attenuation for ultrasound and X-rays;</li>
+<li>explain X-ray production and calculate minimum wavelength;</li>
+<li>explain contrast and the construction of CT images;</li>
+<li>describe positron-emitting tracers and electron-positron annihilation;</li>
+<li>calculate annihilation-photon energy and momentum;</li>
+<li>explain how coincidence detection produces a PET image.</li>
+</ul>
+</section>
+<section id="production-and-use-of-ultrasound" class="level2">
+<h2 class="anchored" data-anchor-id="production-and-use-of-ultrasound">24.1 Production and use of ultrasound</h2>
+<section id="piezoelectric-transducers" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="piezoelectric-transducers">Piezoelectric transducers</h3>
+<p>A piezoelectric crystal changes shape when a potential difference is applied across it. An alternating p.d. makes the crystal expand and contract, producing mechanical vibrations. Maximum energy transfer occurs when the applied frequency equals the crystal’s natural frequency, so resonance occurs.</p>
+<p>The effect is reversible: an incoming ultrasound pulse deforms the crystal and generates an alternating e.m.f. The same probe can therefore act as transmitter and receiver.</p>
+</section>
+<section id="short-pulses-and-pulse-echo-imaging" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="short-pulses-and-pulse-echo-imaging">Short pulses and pulse-echo imaging</h3>
+<p>The alternating p.d. is applied in short bursts. Backing material damps the crystal quickly so that transmission stops before reflected pulses return. This prevents overlap between transmitted and received signals.</p>
+<p>At a tissue boundary, part of the pulse is reflected. The round-trip time delay gives boundary depth:</p>
+<p><span class="math display">\[d=\frac{ct}{2}.\]</span></p>
+<p>Reflection strength gives information about the change in tissue type. An A-scan displays echo amplitude against time; a B-scan combines many scan lines to form a two-dimensional image.</p>
+</section>
+<section id="specific-acoustic-impedance" class="level3 formula-panel">
+<h3 class="anchored" data-anchor-id="specific-acoustic-impedance">Specific acoustic impedance</h3>
+<p>Specific acoustic impedance is</p>
+<p><span class="math display">\[Z=\rho c,\]</span></p>
+<p>where <span class="math inline">\(\rho\)</span> is density and <span class="math inline">\(c\)</span> is ultrasound speed in the medium. Its unit is <span class="math inline">\(\mathrm{kg\,m^{-2}\,s^{-1}}\)</span>.</p>
+<p>For normal incidence at a boundary,</p>
+<p><span class="math display">\[\frac{I_R}{I_0}=\left(\frac{Z_1-Z_2}{Z_1+Z_2}\right)^2.\]</span></p>
+<p>Similar impedances give little reflection and high transmission; very different impedances give strong reflection. Coupling gel removes the air gap and matches skin impedance more closely.</p>
+</section>
+<section id="ultrasound-attenuation" class="level3 formula-panel">
+<h3 class="anchored" data-anchor-id="ultrasound-attenuation">Ultrasound attenuation</h3>
+<p>Absorption and scattering reduce ultrasound intensity with depth:</p>
+<p><span class="math display">\[I=I_0e^{-\mu x},\]</span></p>
+<p>where <span class="math inline">\(\mu\)</span> is the linear attenuation coefficient. Greater frequency generally improves resolution but increases attenuation, so imaging frequency is chosen as a compromise between detail and penetration.</p>
+</section>
+</section>
+<section id="production-and-use-of-x-rays" class="level2">
+<h2 class="anchored" data-anchor-id="production-and-use-of-x-rays">24.2 Production and use of X-rays</h2>
+<section id="x-ray-tube" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="x-ray-tube">X-ray tube</h3>
+<p>A low-voltage supply heats the cathode filament and releases electrons by thermionic emission. A large accelerating p.d. drives the electrons through an evacuated tube towards a metal anode target. Their rapid deceleration produces X-rays; most input energy becomes heat.</p>
+<p>The maximum photon energy is</p>
+<p><span class="math display">\[E_{\max}=eV,\]</span></p>
+<p>so the minimum wavelength is</p>
+<p><span class="math display">\[\lambda_{\min}=\frac{hc}{eV}.\]</span></p>
+</section>
+<section id="x-ray-attenuation-and-contrast" class="level3 formula-panel">
+<h3 class="anchored" data-anchor-id="x-ray-attenuation-and-contrast">X-ray attenuation and contrast</h3>
+<p>X-ray intensity after thickness <span class="math inline">\(x\)</span> is</p>
+<p><span class="math display">\[I=I_0e^{-\mu x}.\]</span></p>
+<p>The linear attenuation coefficient <span class="math inline">\(\mu\)</span> depends on material and photon energy. Contrast is the difference in image blackening or detected intensity between neighbouring regions. Bone attenuates X-rays more strongly than soft tissue, producing strong contrast; contrast media use high-<span class="math inline">\(Z\)</span> elements to make selected structures more absorbing.</p>
+<p>Low-energy X-rays are filtered out because they are absorbed by the patient without contributing usefully to the detected image.</p>
+</section>
+<section id="x-ray-imaging-and-ct" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="x-ray-imaging-and-ct">X-ray imaging and CT</h3>
+<p>A conventional X-ray is a two-dimensional projection in which structures overlap. CT obtains many X-ray projections of one slice at different angles; a computer reconstructs a cross-sectional image. Repeating this for adjacent slices and combining them produces a three-dimensional image.</p>
+<p>CT gives detailed localisation and avoids superposition, but normally gives a greater ionising-radiation dose than one radiograph.</p>
+</section>
+</section>
+<section id="pet-scanning" class="level2">
+<h2 class="anchored" data-anchor-id="pet-scanning">24.3 PET scanning</h2>
+<section id="tracers-and-positron-emission" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="tracers-and-positron-emission">Tracers and positron emission</h3>
+<p>A tracer contains radioactive nuclei and is introduced into the body in a biologically useful molecule. Tissue absorbs the tracer, so its distribution indicates metabolic or functional activity. PET requires a beta-plus emitter. A useful tracer has a half-life long enough for preparation and scanning but short enough to limit dose.</p>
+</section>
+<section id="electron-positron-annihilation" class="level3 formula-panel">
+<h3 class="anchored" data-anchor-id="electron-positron-annihilation">Electron-positron annihilation</h3>
+<p>A positron soon encounters an electron. If their kinetic energy is negligible, their combined rest energy is</p>
+<p><span class="math display">\[E=2m_ec^2.\]</span></p>
+<p>Mass-energy and momentum must both be conserved. Two equal gamma photons are produced in opposite directions, each with</p>
+<p><span class="math display">\[E_\gamma=m_ec^2\approx511\ \mathrm{keV},\]</span></p>
+<p>and momentum <span class="math inline">\(p=E_\gamma/c\)</span>.</p>
+</section>
+<section id="coincidence-detection-and-image-formation" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="coincidence-detection-and-image-formation">Coincidence detection and image formation</h3>
+<p>A ring of gamma detectors surrounds the patient. Two detectors triggered almost simultaneously define a line along which an annihilation occurred. Their arrival-time difference refines the location along that line. A computer combines many events to reconstruct tracer concentration and hence metabolic activity in three dimensions.</p>
+<p>PET gives functional information, while CT gives detailed anatomical structure. PET-CT combines both but increases radiation exposure.</p>
+</section>
+</section>
+<section id="selected-structured-questions" class="level2">
+<h2 class="anchored" data-anchor-id="selected-structured-questions">Selected Structured Questions</h2>
+<section id="selected-examination-questions" class="level3">
+<h3 class="anchored" data-anchor-id="selected-examination-questions">Selected examination questions</h3>
+</section>
+<section id="example-1-acoustic-impedance-reflection-and-matching-24.1-sq-easy-q1" class="level3 question-card">
+<h3 class="anchored" data-anchor-id="example-1-acoustic-impedance-reflection-and-matching-24.1-sq-easy-q1">Example 1 · Acoustic impedance, reflection and matching · 24.1 SQ Easy Q1</h3>
+<p><strong>(a)</strong> State what is meant by the specific acoustic impedance of a medium. <code>[2 marks]</code></p>
+<p><strong>(b)</strong> Table 1.1 shows the density and speed of ultrasound in soft tissue and in air.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 27%">
+<col style="width: 36%">
+<col style="width: 36%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>medium</th>
+<th style="text-align: right;">density / <span class="math inline">\(\mathrm{kg\,m^{-3}}\)</span></th>
+<th style="text-align: right;">speed of ultrasound / <span class="math inline">\(\mathrm{m\,s^{-1}}\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>air</td>
+<td style="text-align: right;">1.29</td>
+<td style="text-align: right;">330</td>
+</tr>
+<tr class="even">
+<td>soft tissue</td>
+<td style="text-align: right;">1060</td>
+<td style="text-align: right;">1540</td>
+</tr>
+<tr class="odd">
+<td>bone</td>
+<td style="text-align: right;">1600</td>
+<td style="text-align: right;">4000</td>
+</tr>
+</tbody>
+</table>
+<p>Using the data in Table 1.1, calculate:</p>
+<p><strong>(i)</strong> the acoustic impedance of air; <code>[1]</code></p>
+<p><strong>(ii)</strong> the acoustic impedance of soft tissue; <code>[1]</code></p>
+<p><strong>(iii)</strong> the acoustic impedance of bone. <code>[1]</code></p>
+<p><code>[3 marks]</code></p>
+<p><strong>(c)</strong> The intensity reflection coefficient <span class="math inline">\(\alpha\)</span> for two media is given by</p>
+<p><span class="math display">\[\alpha=\frac{(Z_1-Z_2)^2}{(Z_1+Z_2)^2}\]</span></p>
+<p>where <span class="math inline">\(Z_1\)</span> and <span class="math inline">\(Z_2\)</span> are the specific acoustic impedances of the two media.</p>
+<p>Explain how this equation can be used to predict if ultrasound will be reflected or transmitted at the boundary between two materials. <code>[3 marks]</code></p>
+<p><strong>(d)</strong> State what is meant by impedance matching and explain how it may be achieved. <code>[2 marks]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<ul>
+<li><strong>(a)</strong> Specific acoustic impedance is <span class="math inline">\(Z=\rho c\)</span> <code>[1]</code>, where <span class="math inline">\(\rho\)</span> is medium density and <span class="math inline">\(c\)</span> is ultrasound speed in that medium. <code>[1]</code></li>
+<li><strong>(b)(i)</strong> <span class="math inline">\(Z_{\text{air}}=(1.29)(330)=426\ \mathrm{kg\,m^{-2}\,s^{-1}}\)</span>. <code>[1]</code></li>
+<li><strong>(b)(ii)</strong> <span class="math inline">\(Z_{\text{tissue}}=(1060)(1540)=1.63\times10^6\ \mathrm{kg\,m^{-2}\,s^{-1}}\)</span>. <code>[1]</code></li>
+<li><strong>(b)(iii)</strong> <span class="math inline">\(Z_{\text{bone}}=(1600)(4000)=6.4\times10^6\ \mathrm{kg\,m^{-2}\,s^{-1}}\)</span>. <code>[1]</code></li>
+<li><strong>(c)</strong> Compare <span class="math inline">\(Z_1\)</span> and <span class="math inline">\(Z_2\)</span>. <code>[1]</code> If they are similar, <span class="math inline">\(\alpha\)</span> is close to zero, so there is little reflection and high transmission. <code>[1]</code> If they are very different, <span class="math inline">\(\alpha\)</span> is large, so reflection is strong and transmission is small. <code>[1]</code></li>
+<li><strong>(d)</strong> Impedance matching reduces the impedance change at a boundary <code>[1]</code>; a coupling gel with impedance similar to skin removes the air gap and reduces reflection. <code>[1]</code></li>
+</ul>
+</details>
+</section>
+<section id="example-2-particle-properties-and-annihilation-photons-24.2-sq-easy-q3" class="level3 question-card">
+<h3 class="anchored" data-anchor-id="example-2-particle-properties-and-annihilation-photons-24.2-sq-easy-q3">Example 2 · Particle properties and annihilation photons · 24.2 SQ Easy Q3</h3>
+<p><strong>(a)</strong> Fill in the missing information in Table 1.1 about the properties of the particles involved in PET scanning. <code>[3 marks]</code></p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>particle</th>
+<th style="text-align: right;">mass / kg</th>
+<th style="text-align: right;">charge / C</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>electron</td>
+<td style="text-align: right;"><span class="math inline">\(9.11\times10^{-31}\)</span></td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="even">
+<td>positron</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"><span class="math inline">\(1.60\times10^{-19}\)</span></td>
+</tr>
+<tr class="odd">
+<td>gamma photon</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>(b)</strong> When fluorine-18 decays, it emits a positron which only travels a very short distance before interacting with an electron, resulting in annihilation. As a result, gamma photons are produced.</p>
+<p>Show that each gamma photon produced has an energy of <span class="math inline">\(512\ \mathrm{keV}\)</span>. <code>[4 marks]</code></p>
+<p><strong>(c)</strong> Calculate the momentum, in <span class="math inline">\(\mathrm{N\,s}\)</span>, of one of the gamma photons produced in this annihilation. <code>[2 marks]</code></p>
+<p><strong>(d)</strong> Fig. 1.1 shows a cross-sectional view of a patient’s head inside a ring of gamma detectors during a PET scan.</p>
+<p><img src="../assets/questions/medical-physics/pet-detector-ring-head.webp" class="question-figure img-fluid" alt="Cross-sectional view of a patient's head inside a gamma-detector ring"></p>
+<p>A positron and an electron meet and annihilate at position X. Assume they have negligible kinetic energy when they meet.</p>
+<p>Gamma photons are produced in this annihilation and are detected. The arrival of one gamma photon at detector P triggers a signal.</p>
+<p><strong>(i)</strong> On Fig. 1.1, identify the other point on the detector that will be triggered by this annihilation. <code>[1]</code></p>
+<p><strong>(ii)</strong> State and explain the conservation law which explains why P and the point you identified in <strong>(d)(i)</strong> will be triggered. <code>[2]</code></p>
+<p><code>[3 marks]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<ul>
+<li><strong>(a)</strong> Electron: mass <span class="math inline">\(9.11\times10^{-31}\ \mathrm{kg}\)</span>, charge <span class="math inline">\(-1.60\times10^{-19}\ \mathrm{C}\)</span>. <code>[1]</code> Positron: mass <span class="math inline">\(9.11\times10^{-31}\ \mathrm{kg}\)</span>, charge <span class="math inline">\(+1.60\times10^{-19}\ \mathrm{C}\)</span>. <code>[1]</code> Gamma photon: zero rest mass and zero charge. <code>[1]</code></li>
+<li><strong>(b)</strong> Use mass-energy equivalence, <span class="math inline">\(E=mc^2\)</span>. <code>[1]</code> <span class="math inline">\(E=(9.11\times10^{-31})(3.00\times10^8)^2=8.20\times10^{-14}\ \mathrm{J}\)</span>. <code>[1]</code> Convert to electronvolts: <span class="math inline">\(E=(8.20\times10^{-14})/(1.60\times10^{-19})=5.12\times10^5\ \mathrm{eV}\)</span>. <code>[1]</code> Hence each photon has energy <span class="math inline">\(512\ \mathrm{keV}\)</span>. <code>[1]</code></li>
+<li><strong>(c)</strong> <span class="math inline">\(p=E/c\)</span> <code>[1]</code>, so <span class="math inline">\(p=(8.20\times10^{-14})/(3.00\times10^8)=2.7\times10^{-22}\ \mathrm{N\,s}\)</span>. <code>[1]</code></li>
+<li><strong>(d)(i)</strong> Mark the point on the detector ring diametrically opposite P along the straight line through X. <code>[1]</code></li>
+<li><strong>(d)(ii)</strong> Momentum is conserved. <code>[1]</code> Since the electron-positron pair has negligible initial momentum, the two photons must have equal and opposite momenta. <code>[1]</code></li>
+</ul>
+</details>
+</section>
+<section id="example-3-principles-of-pet-and-particle-annihilation-24.2-sq-medium-q3" class="level3 question-card">
+<h3 class="anchored" data-anchor-id="example-3-principles-of-pet-and-particle-annihilation-24.2-sq-medium-q3">Example 3 · Principles of PET and particle annihilation · 24.2 SQ Medium Q3</h3>
+<p><strong>(a)</strong> Positron emission tomography (PET) is useful in medical diagnosis. PET can be used to locate tumours or areas of increased activity within the brain.</p>
+<p><strong>(i)</strong> Describe the principles of PET. <code>[4]</code></p>
+<p><strong>(ii)</strong> Explain how PET scans are able to locate tumours or areas of increased activity within the brain. <code>[2]</code></p>
+<p><code>[6 marks]</code></p>
+<p><strong>(b)</strong> The decay of the nuclei in the tracer material results in the emission of a positron. Two of the detectors, directly opposite to each other, are triggered as they each receive a gamma photon from the annihilation of the positron.</p>
+<p>Suggest why the annihilation:</p>
+<p><strong>(i)</strong> occurs close to the point where the positron is emitted; <code>[2]</code></p>
+<p><strong>(ii)</strong> results in two gamma-ray photons of equal energy moving in opposite directions. <code>[2]</code></p>
+<p><code>[4 marks]</code></p>
+<p><strong>(c)</strong> Three tracer isotopes, rubidium-82, fluorine-18 and iodine-131, are being considered for use in a PET scanner. The incomplete nuclear decay equations are shown below.</p>
+<p><span class="math display">\[^{82}_{37}\mathrm{Rb}\rightarrow{}^{82}_{36}\mathrm{Kr}+\ldots\]</span></p>
+<p><span class="math display">\[^{131}_{53}\mathrm{I}\rightarrow{}^{131}_{54}\mathrm{Xe}+\ldots\]</span></p>
+<p><span class="math display">\[^{18}_{9}\mathrm{F}\rightarrow{}^{18}_{8}\mathrm{O}+\ldots\]</span></p>
+<p><strong>(i)</strong> Complete the nuclear decay equations for rubidium-82, iodine-131 and fluorine-18. <code>[3]</code></p>
+<p><strong>(ii)</strong> State and explain which tracer would not be suitable for use in a PET scanner. <code>[2]</code></p>
+<p><code>[5 marks]</code></p>
+<p><strong>(d)</strong> It is suggested that a scanner could be designed to detect photons produced from the annihilation of a proton and an antiproton.</p>
+<p>Calculate:</p>
+<p><strong>(i)</strong> the energy released in the proton-antiproton annihilation; <code>[2]</code></p>
+<p><strong>(ii)</strong> the wavelength of the <span class="math inline">\(\gamma\)</span>-ray photons produced in the annihilation. <code>[2]</code></p>
+<p><code>[4 marks]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<ul>
+<li><strong>(a)(i)</strong> Use a positron-emitting radioactive tracer. <code>[1]</code> Positrons annihilate with electrons in the patient and produce two gamma photons. <code>[1]</code> The photons travel in opposite directions and are detected by a ring of detectors. <code>[1]</code> A computer uses coincident detections to build a three-dimensional image. <code>[1]</code></li>
+<li><strong>(a)(ii)</strong> The two photons are produced simultaneously and reach diametrically opposite detectors. <code>[1]</code> Their line of response and arrival-time difference locate the annihilation; a high tracer concentration identifies a tumour or increased metabolic activity. <code>[1]</code></li>
+<li><strong>(b)(i)</strong> Electrons occur in all atoms in the patient’s tissue <code>[1]</code>, so the positron encounters an electron and annihilates after travelling only a short distance. <code>[1]</code></li>
+<li><strong>(b)(ii)</strong> The initial total momentum is approximately zero, so total momentum must remain zero. <code>[1]</code> The photons therefore have equal and opposite momenta; since <span class="math inline">\(p=E/c\)</span>, they have equal energies. <code>[1]</code></li>
+<li><strong>(c)(i)</strong> <span class="math inline">\(^{82}_{37}\mathrm{Rb}\rightarrow{}^{82}_{36}\mathrm{Kr}+{}^{0}_{+1}\mathrm{e}+\nu_e\)</span>. <code>[1]</code> <span class="math inline">\(^{131}_{53}\mathrm{I}\rightarrow{}^{131}_{54}\mathrm{Xe}+{}^{0}_{-1}\mathrm{e}+\bar{\nu}_e\)</span>. <code>[1]</code> <span class="math inline">\(^{18}_{9}\mathrm{F}\rightarrow{}^{18}_{8}\mathrm{O}+{}^{0}_{+1}\mathrm{e}+\nu_e\)</span>. <code>[1]</code></li>
+<li><strong>(c)(ii)</strong> Iodine-131 is unsuitable <code>[1]</code> because it is a beta-minus emitter and does not provide positrons to annihilate with electrons. <code>[1]</code></li>
+<li><strong>(d)(i)</strong> <span class="math inline">\(E=2m_pc^2=2(1.67\times10^{-27})(3.00\times10^8)^2=3.0\times10^{-10}\ \mathrm{J}\)</span>. <code>[2]</code></li>
+<li><strong>(d)(ii)</strong> Each photon receives half the total energy, so <span class="math inline">\(\lambda=hc/(E/2)=2hc/E\)</span> <code>[1]</code> <span class="math inline">\(=1.32\times10^{-15}\ \mathrm{m}\)</span>. <code>[1]</code></li>
+</ul>
+</details>
+</section>
+<section id="example-4-fluorine-18-activity-tracer-mass-and-pet-ct-24.2-sq-hard-q2" class="level3 question-card">
+<h3 class="anchored" data-anchor-id="example-4-fluorine-18-activity-tracer-mass-and-pet-ct-24.2-sq-hard-q2">Example 4 · Fluorine-18 activity, tracer mass and PET-CT · 24.2 SQ Hard Q2</h3>
+<p><strong>(a)</strong> Fluorodeoxyglucose (FDG) is a radiopharmaceutical used for PET scans. It contains radioactive fluorine-18 (F-18), which decays by positron emission with a half-life of 110 minutes.</p>
+<p>In preparation for a scan scheduled for 12:00 p.m., a radiologist prepares a sample of F-18 FDG at 5 a.m. earlier in the day. For this scan, the radiologist determines the optimum activity of fluorine-18 would be <span class="math inline">\(10\ \mathrm{mCi}\)</span> when the scan starts at 12:00 p.m.</p>
+<p>Determine the activity, in GBq, of the dose of fluorine-18 that the radiologist should prepare at 5 a.m.</p>
+<p><span class="math inline">\(1\ \mathrm{mCi}=3.7\times10^7\ \mathrm{Bq}\)</span> <code>[3 marks]</code></p>
+<p><strong>(b)</strong> The patient is scheduled to come in an hour earlier, at 11:00 a.m. to receive their injection of F-18 FDG. At this facility, the maximum activity limit of F-18 FDG that can be injected into patients is set at <span class="math inline">\(14\ \mathrm{mCi}\)</span>.</p>
+<p>The radiologist forgets to factor this into their calculations when preparing the dose of F-18 FDG and discovers that it has an activity of <span class="math inline">\(15.3\ \mathrm{mCi}\)</span> at 11:00 a.m. when the patient arrives.</p>
+<p>Determine the earliest time, to the nearest minute, at which the sample of F-18 FDG may be injected into the patient. <code>[2 marks]</code></p>
+<p><strong>(c)</strong> About 9.9% of the mass of F-18 FDG is fluorine-18. The molar mass of fluorine-18 is <span class="math inline">\(0.018\ \mathrm{kg\,mol^{-1}}\)</span>.</p>
+<p><strong>(i)</strong> Calculate the initial mass, in kg, of F-18 FDG given to the patient at the time of injection. <code>[3]</code></p>
+<p><strong>(ii)</strong> Determine the fraction of F-18 FDG remaining in the patient’s body 6 hours after the initial injection. <code>[2]</code></p>
+<p><strong>(iii)</strong> Suggest why the actual fraction would likely be lower than the value you calculated in <strong>(c)(ii)</strong>. <code>[1]</code></p>
+<p><code>[6 marks]</code></p>
+<p><strong>(d)</strong> Both computed tomography (CT) scans and positron emission tomography (PET) scans can produce detailed pictures of the organs and tissues inside the body. Both techniques share many similarities and differences.</p>
+<p>In recent years, it has become much more common for doctors to use a PET-CT scan which is a machine able to perform both scans simultaneously. This way, doctors can combine the images from both scans to create an enhanced picture of the tissue or organ being studied.</p>
+<p><strong>(i)</strong> Describe the major differences between a CT scan and a PET scan. <code>[4]</code></p>
+<p><strong>(ii)</strong> Discuss the benefits and risks of using a PET-CT scanner instead of using either scan separately in medical diagnosis. <code>[2]</code></p>
+<p><code>[6 marks]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<ul>
+<li><strong>(a)</strong> The elapsed time is <span class="math inline">\(420\ \mathrm{min}\)</span> and <span class="math inline">\(\lambda=\ln2/110\ \mathrm{min^{-1}}\)</span>. <code>[1]</code> <span class="math inline">\(A_0=10e^{\lambda(420)}=141\ \mathrm{mCi}\)</span>. <code>[1]</code> Therefore <span class="math inline">\(A_0=(141)(3.7\times10^7)=5.2\times10^9\ \mathrm{Bq}=5.2\ \mathrm{GBq}\)</span>. <code>[1]</code></li>
+<li><strong>(b)</strong> Solve <span class="math inline">\(14=15.3e^{-\lambda t}\)</span> to obtain <span class="math inline">\(t=14.1\ \mathrm{min}\)</span>. <code>[1]</code> The earliest time to the nearest practical minute is 11:15 a.m. <code>[1]</code></li>
+<li><strong>(c)(i)</strong> At injection, <span class="math inline">\(A=14\ \mathrm{mCi}=5.18\times10^8\ \mathrm{Bq}\)</span> and <span class="math inline">\(\lambda=1.05\times10^{-4}\ \mathrm{s^{-1}}\)</span>, so <span class="math inline">\(N=A/\lambda=4.93\times10^{12}\)</span>. <code>[1]</code> The F-18 mass is <span class="math inline">\(m=(N/N_A)M=1.47\times10^{-13}\ \mathrm{kg}\)</span>. <code>[1]</code> Hence the FDG mass is <span class="math inline">\((1.47\times10^{-13})/0.099=1.5\times10^{-12}\ \mathrm{kg}\)</span>. <code>[1]</code></li>
+<li><strong>(c)(ii)</strong> <span class="math inline">\(N/N_0=2^{-360/110}=0.103\)</span>, so the radioactive F-18 FDG fraction remaining is approximately <span class="math inline">\(0.10\)</span> (or <span class="math inline">\(0.11\)</span> using the rounded decay constant). <code>[2]</code></li>
+<li><strong>Source check for (c)(ii):</strong> the PDF solution correctly obtains <span class="math inline">\(0.11\)</span> from exponential decay but then subtracts it from 1 and labels <span class="math inline">\(0.89\)</span> as the fraction remaining. That final subtraction gives the fraction that has decayed, not the radioactive fraction remaining; the answer above corrects this inconsistency.</li>
+<li><strong>(c)(iii)</strong> Biological elimination, such as excretion, removes FDG from the body in addition to radioactive decay. <code>[1]</code></li>
+<li><strong>(d)(i)</strong> CT sends external X-rays through the body and maps attenuation to show anatomical structure; PET injects a positron-emitting tracer and detects coincident annihilation gamma photons to show tracer concentration and metabolic activity. <code>[4]</code></li>
+<li><strong>(d)(ii)</strong> Combining the anatomical and functional information can improve diagnosis or collect both scans at the same time. <code>[1]</code> The patient receives more ionising-radiation exposure and may face adverse effects from injected substances. <code>[1]</code></li>
+</ul>
+</details>
+</section>
+<section id="example-5-x-ray-tube-photon-energy-and-image-contrast-24.1-sq-easy-q3" class="level3 question-card">
+<h3 class="anchored" data-anchor-id="example-5-x-ray-tube-photon-energy-and-image-contrast-24.1-sq-easy-q3">Example 5 · X-ray tube, photon energy and image contrast · 24.1 SQ Easy Q3</h3>
+<p><strong>(a)</strong> Fig. 1.1 shows a simplified diagram of an X-ray tube.</p>
+<p><img src="../assets/questions/medical-physics/xray-tube-diagram.webp" class="question-figure img-fluid" alt="Simplified X-ray tube with components A to E"></p>
+<p>State the name and purpose of:</p>
+<p><strong>(i)</strong> component A; <code>[2]</code></p>
+<p><strong>(ii)</strong> component B; <code>[2]</code></p>
+<p><strong>(iii)</strong> component C; <code>[2]</code></p>
+<p><strong>(iv)</strong> component D; <code>[2]</code></p>
+<p><strong>(v)</strong> component E. <code>[2]</code></p>
+<p><code>[10 marks]</code></p>
+<p><strong>(b)</strong> The accelerating potential difference between the cathode and the anode of an X-ray tube is <span class="math inline">\(75\ \mathrm{kV}\)</span>.</p>
+<p><strong>(i)</strong> State the maximum energy, in eV, of the photons produced in the X-ray tube. <code>[1]</code></p>
+<p><strong>(ii)</strong> Calculate the minimum wavelength of photons in the X-ray beam. <code>[3]</code></p>
+<p><code>[4 marks]</code></p>
+<p><strong>(c)</strong> A parallel beam of X-rays is incident on a medium with a linear absorption coefficient <span class="math inline">\(\mu\)</span>.</p>
+<p>State what is meant by the linear absorption coefficient. <code>[2 marks]</code></p>
+<p><strong>(d)</strong> Table 1.1 shows the linear absorption coefficient for an X-ray beam in blood and in muscle.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>medium</th>
+<th style="text-align: right;"><span class="math inline">\(\mu/\mathrm{cm^{-1}}\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>blood</td>
+<td style="text-align: right;">0.23</td>
+</tr>
+<tr class="even">
+<td>muscle</td>
+<td style="text-align: right;">0.22</td>
+</tr>
+</tbody>
+</table>
+<p><strong>(i)</strong> State what is meant by the contrast of an X-ray. <code>[1]</code></p>
+<p><strong>(ii)</strong> Using the data in Table 1.1, explain why an X-ray image of blood vessels in muscle would have poor contrast. <code>[2]</code></p>
+<p><code>[3 marks]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<ul>
+<li><strong>(a)(i)</strong> A: evacuated glass tube <code>[1]</code>, preventing electron collisions with gas particles. <code>[1]</code></li>
+<li><strong>(a)(ii)</strong> B: anode/metal target <code>[1]</code>, producing X-rays when accelerated electrons strike it. <code>[1]</code></li>
+<li><strong>(a)(iii)</strong> C: cathode/heated filament <code>[1]</code>, releasing electrons by thermionic emission. <code>[1]</code></li>
+<li><strong>(a)(iv)</strong> D: low-voltage supply <code>[1]</code>, heating the filament. <code>[1]</code></li>
+<li><strong>(a)(v)</strong> E: high-voltage supply <code>[1]</code>, creating the large accelerating p.d. between cathode and anode. <code>[1]</code></li>
+<li><strong>(b)(i)</strong> <span class="math inline">\(75\ \mathrm{keV}\)</span>, or <span class="math inline">\(7.5\times10^4\ \mathrm{eV}\)</span>. <code>[1]</code></li>
+<li><strong>(b)(ii)</strong> <span class="math inline">\(eV=hc/\lambda_{\min}\)</span> <code>[1]</code>, so <span class="math inline">\(\lambda_{\min}=(6.63\times10^{-34})(3.00\times10^8)/[(1.60\times10^{-19})(75\times10^3)]\)</span> <code>[1]</code> <span class="math inline">\(=1.66\times10^{-11}\ \mathrm{m}\)</span>. <code>[1]</code></li>
+<li><strong>(c)</strong> In <span class="math inline">\(I=I_0e^{-\mu x}\)</span>, <span class="math inline">\(\mu\)</span> is the constant describing fractional intensity reduction per unit thickness; <span class="math inline">\(I_0\)</span> is incident intensity, <span class="math inline">\(I\)</span> transmitted intensity and <span class="math inline">\(x\)</span> distance through the material. <code>[2]</code></li>
+<li><strong>(d)(i)</strong> Contrast is the difference in blackening or detected intensity between regions of the image. <code>[1]</code></li>
+<li><strong>(d)(ii)</strong> Blood and muscle have very similar <span class="math inline">\(\mu\)</span> values <code>[1]</code>, so they attenuate similar fractions of the beam and produce little intensity difference. <code>[1]</code></li>
+</ul>
+</details>
+</section>
+<section id="example-6-ultrasound-transducer-coupling-and-x-ray-attenuation-24.1-sq-medium-q3" class="level3 question-card">
+<h3 class="anchored" data-anchor-id="example-6-ultrasound-transducer-coupling-and-x-ray-attenuation-24.1-sq-medium-q3">Example 6 · Ultrasound transducer, coupling and X-ray attenuation · 24.1 SQ Medium Q3</h3>
+<p><strong>(a)</strong> Fig. 1.1 shows a diagram of a piezoelectric transducer.</p>
+<p><img src="../assets/questions/medical-physics/piezoelectric-transducer.webp" class="question-figure img-fluid" alt="Labelled piezoelectric ultrasound transducer"></p>
+<p>With reference to Fig. 1.1:</p>
+<p><strong>(i)</strong> Describe the process by which the transducer produces a pulse of ultrasound. <code>[4]</code></p>
+<p><strong>(ii)</strong> Explain how short pulses of ultrasound are produced and state why they are essential. <code>[2]</code></p>
+<p><strong>(iii)</strong> Explain how the received signals are detected. <code>[2]</code></p>
+<p><code>[8 marks]</code></p>
+<p><strong>(b)</strong> Two patients arrive at a hospital. One patient is a child with a broken arm, the other is a pregnant woman coming in for a check-up for her unborn foetus.</p>
+<p>Over the course of the diagnosis and treatment of the child’s broken arm, several images of the arm are required. Similarly, to check the progress of a woman’s pregnancy, several images of the foetus are required.</p>
+<p>For each scenario, suggest the most appropriate imaging technique to use and give two reasons for the choice. <code>[4 marks]</code></p>
+<p><strong>(c)</strong> Ultrasound is incident on a boundary between two materials. Some of the ultrasound is reflected at the boundary and the rest is transmitted across the boundary.</p>
+<p>The acoustic impedance of air is <span class="math inline">\(4.29\times10^2\ \mathrm{kg\,m^{-2}\,s^{-1}}\)</span>.</p>
+<p>The acoustic impedance of coupling gel is <span class="math inline">\(1.48\times10^6\ \mathrm{kg\,m^{-2}\,s^{-1}}\)</span>.</p>
+<p>The acoustic impedance of skin is <span class="math inline">\(1.65\times10^6\ \mathrm{kg\,m^{-2}\,s^{-1}}\)</span>.</p>
+<p>Calculate the percentage of the ultrasound which would be transmitted into the skin when incident on:</p>
+<p><strong>(i)</strong> an air-skin boundary; <code>[2]</code></p>
+<p><strong>(ii)</strong> a gel-skin boundary. <code>[2]</code></p>
+<p><code>[4 marks]</code></p>
+<p><strong>(d)</strong> An X-ray image showing the cross-section of the bone and muscle is shown in Fig. 1.1.</p>
+<p><img src="../assets/questions/medical-physics/bone-muscle-xray-path.webp" class="question-figure img-fluid" alt="Parallel X-ray paths through muscle and through bone plus muscle"></p>
+<p>Parallel X-ray beams of intensity <span class="math inline">\(I_0\)</span> are incident on the muscle and bone as shown. The emergent beam after passing through muscle alone has an intensity of <span class="math inline">\(I_m\)</span> and an intensity of <span class="math inline">\(I_{bm}\)</span> after passing through the bone and the muscle.</p>
+<p><strong>(i)</strong> Determine, in terms of <span class="math inline">\(I_0\)</span>, the intensities <span class="math inline">\(I_m\)</span> and <span class="math inline">\(I_{bm}\)</span> of the emergent X-rays.</p>
+<p>The linear attenuation coefficient of bone is <span class="math inline">\(2.90\ \mathrm{cm^{-1}}\)</span>. The linear attenuation coefficient of muscle is <span class="math inline">\(0.95\ \mathrm{cm^{-1}}\)</span>. <code>[4]</code></p>
+<p><strong>(ii)</strong> Suggest why, on an X-ray plate, the contrast between bone and muscle is much greater than the contrast between fat and muscle.</p>
+<p>The linear attenuation coefficient of fat is <span class="math inline">\(0.90\ \mathrm{cm^{-1}}\)</span>. <code>[2]</code></p>
+<p><code>[6 marks]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<ul>
+<li><strong>(a)(i)</strong> Apply a high-frequency alternating p.d. to the electrodes; at resonance the crystal expands and contracts at the applied frequency; its vibration produces pressure waves through the membrane; the backing material damps the crystal. <code>[4]</code></li>
+<li><strong>(a)(ii)</strong> Apply the alternating p.d. only briefly. <code>[1]</code> Transmission must stop before echoes return, preventing overlap/interference. <code>[1]</code></li>
+<li><strong>(a)(iii)</strong> Returning ultrasound deforms the crystal <code>[1]</code>, inducing an alternating p.d. that is detected. <code>[1]</code></li>
+<li><strong>(b)</strong> Broken arm: X-ray imaging, because bone-soft-tissue contrast and spatial resolution are high. <code>[2]</code> Foetus: ultrasound, because it is non-ionising and provides real-time soft-tissue imaging. <code>[2]</code></li>
+<li><strong>(c)(i)</strong> Reflected fraction <span class="math inline">\(=[(1.65\times10^6-4.29\times10^2)/(1.65\times10^6+4.29\times10^2)]^2=0.99896\)</span>. <code>[1]</code> Transmission is approximately <span class="math inline">\(0.10\%\)</span>. <code>[1]</code></li>
+<li><strong>(c)(ii)</strong> Reflected fraction <span class="math inline">\(=[(1.65-1.48)/(1.65+1.48)]^2=2.95\times10^{-3}\)</span>. <code>[1]</code> Transmission is approximately <span class="math inline">\(99.7\%\)</span>. <code>[1]</code></li>
+<li><strong>(d)(i)</strong> Muscle only: <span class="math inline">\(I_m=I_0e^{-(0.95)(5.0)}=8.7\times10^{-3}I_0\)</span>. <code>[2]</code> Bone path: <span class="math inline">\(I_{bm}=I_0e^{-(2.90)(2.0)}e^{-(0.95)(3.0)}=1.8\times10^{-4}I_0\)</span>. <code>[2]</code></li>
+<li><strong>(d)(ii)</strong> Contrast depends on the difference in attenuation. Bone and muscle have very different <span class="math inline">\(\mu\)</span> values, while fat and muscle have similar values. <code>[2]</code></li>
+</ul>
+</details>
+</section>
+<section id="example-7-pzt-crystal-and-ultrasound-scanning-of-an-eye-24.1-sq-hard-q1" class="level3 question-card">
+<h3 class="anchored" data-anchor-id="example-7-pzt-crystal-and-ultrasound-scanning-of-an-eye-24.1-sq-hard-q1">Example 7 · PZT crystal and ultrasound scanning of an eye · 24.1 SQ Hard Q1</h3>
+<p><strong>(a)</strong> Most modern ultrasound transducers are made from the piezoelectric material lead zirconate titanate (PZT).</p>
+<p>Fig. 1.1 shows the effect on the structure of a crystal of PZT when an alternating potential difference is applied across it.</p>
+<p><img src="../assets/questions/medical-physics/pzt-molecular-structure.webp" class="question-figure img-fluid" alt="PZT crystal structures under zero and reversed electric fields"></p>
+<p><strong>(i)</strong> Describe what happens at a molecular level when an alternating potential difference is applied across a PZT transducer to generate ultrasound. You may draw on Fig. 1.1 to help with your answer. <code>[4]</code></p>
+<p><strong>(ii)</strong> Describe the conditions that will enable maximum energy conversion into ultrasound to occur. <code>[2]</code></p>
+<p><code>[6 marks]</code></p>
+<p><strong>(b)</strong> An eye can be imaged using either an A-scan or a B-scan ultrasound. Fig. 1.2 shows the position of a piezoelectric transducer being used during an A-scan of an eye.</p>
+<p><img src="../assets/questions/medical-physics/eye-a-scan-position.webp" class="question-figure img-fluid" alt="Ultrasound A-scan path through an eye and lens"></p>
+<p><strong>(i)</strong> Explain how an A-scan could be used to measure the thickness of a patient’s eye lens. <code>[3]</code></p>
+<p><strong>(ii)</strong> Explain why a B-scan would be better than an A-scan for imaging damaged tissue that surrounds the eye. <code>[2]</code></p>
+<p><code>[5 marks]</code></p>
+<p><strong>(c)</strong> Fig. 1.3 shows an ultrasound A-scan trace from the scan of an eye.</p>
+<p><img src="../assets/questions/medical-physics/eye-a-scan-trace.webp" class="question-figure img-fluid" alt="Ultrasound A-scan signal strength against time"></p>
+<p>The speed of ultrasound in the eye is <span class="math inline">\(1520\ \mathrm{m\,s^{-1}}\)</span> and the speed of ultrasound in the lens is <span class="math inline">\(1670\ \mathrm{m\,s^{-1}}\)</span>.</p>
+<p>Use Fig. 1.3 to calculate the thickness of:</p>
+<p><strong>(i)</strong> the lens, in mm; <code>[2]</code></p>
+<p><strong>(ii)</strong> the eye, in cm. <code>[3]</code></p>
+<p><code>[5 marks]</code></p>
+<p><strong>(d)</strong> The graph in Fig. 1.4 shows the attenuation of the intensity of ultrasound at a frequency of <span class="math inline">\(3\ \mathrm{MHz}\)</span> with depth.</p>
+<p><img src="../assets/questions/medical-physics/eye-ultrasound-attenuation.webp" class="question-figure img-fluid" alt="Ultrasound intensity attenuation with depth"></p>
+<p>When carrying out the scan, a gel is applied between the transducer and eye to enable 100% transmission of the ultrasound into the eye.</p>
+<p>Use the information in Table 1.1 and the graph in Fig. 1.4 to calculate the ratio of the intensity of the reflections from A and B, by the time the pulses come back to the receiver.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>medium</th>
+<th style="text-align: right;">acoustic impedance / <span class="math inline">\(\mathrm{kg\,m^{-2}\,s^{-1}}\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>eye</td>
+<td style="text-align: right;"><span class="math inline">\(1.52\times10^6\)</span></td>
+</tr>
+<tr class="even">
+<td>eye lens</td>
+<td style="text-align: right;"><span class="math inline">\(1.84\times10^6\)</span></td>
+</tr>
+<tr class="odd">
+<td>surrounding tissue</td>
+<td style="text-align: right;"><span class="math inline">\(1.69\times10^6\)</span></td>
+</tr>
+</tbody>
+</table>
+<p><code>[4 marks]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<ul>
+<li><strong>(a)(i)</strong> The field attracts positive and negative lattice charges in opposite directions; the central positive ion moves and deforms the crystal; reversing the p.d. reverses deformation; repeated reversal makes the crystal oscillate at the applied frequency and transfer vibrations to the surrounding medium. <code>[4]</code></li>
+<li><strong>(a)(ii)</strong> Set the applied alternating frequency equal to the natural frequency of the PZT crystal <code>[1]</code>, producing resonance and maximum energy transfer. <code>[1]</code></li>
+<li><strong>(b)(i)</strong> Send ultrasound pulses into the eye; the front and back lens surfaces produce echoes; use their time separation with the speed in the lens and divide the round-trip distance by two. <code>[3]</code></li>
+<li><strong>(b)(ii)</strong> An A-scan is one-dimensional and mainly measures distances; a B-scan combines lines to form a two- or three-dimensional view of surrounding structures. <code>[2]</code></li>
+<li><strong>(c)(i)</strong> Lens echoes occur at <span class="math inline">\(8.5\)</span> and <span class="math inline">\(14.0\ \mathrm{\mu s}\)</span>. Thus <span class="math inline">\(d=\frac12(1670)(5.5\times10^{-6})=4.6\ \mathrm{mm}\)</span>. <code>[2]</code></li>
+<li><strong>(c)(ii)</strong> Before lens: <span class="math inline">\(\frac12(1520)(3.0\times10^{-6})=2.28\ \mathrm{mm}\)</span>. <code>[1]</code> After lens: <span class="math inline">\(\frac12(1520)(17.5\times10^{-6})=13.3\ \mathrm{mm}\)</span>. <code>[1]</code> Total <span class="math inline">\(=2.28+4.59+13.3=20.2\ \mathrm{mm}=2.02\ \mathrm{cm}\)</span>. <code>[1]</code></li>
+<li><strong>(d)</strong> The reflection coefficients at the relevant boundaries are both small and of similar order, so the difference is approximated as negligible after transmissions. <code>[2]</code> The B echo travels about <span class="math inline">\(4\ \mathrm{cm}\)</span> farther in its round trip; the graph shows intensity falling from 8 to 2 over this depth, a factor of 4. Hence <span class="math inline">\(I_A/I_B\approx4\)</span>. <code>[2]</code></li>
+</ul>
+</details>
+</section>
+<section id="example-8-x-ray-energy-contrast-media-and-beam-filtering-24.1-sq-hard-q2" class="level3 question-card">
+<h3 class="anchored" data-anchor-id="example-8-x-ray-energy-contrast-media-and-beam-filtering-24.1-sq-hard-q2">Example 8 · X-ray energy, contrast media and beam filtering · 24.1 SQ Hard Q2</h3>
+<p><strong>(a)</strong> The data in Table 1.1 shows how the attenuation coefficient <span class="math inline">\(\mu\)</span> depends on the energy of the X-rays in bone and muscle.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: right;">maximum X-ray energy / keV</th>
+<th style="text-align: right;"><span class="math inline">\(\mu_{\text{bone}}/\mathrm{cm^{-1}}\)</span></th>
+<th style="text-align: right;"><span class="math inline">\(\mu_{\text{muscle}}/\mathrm{cm^{-1}}\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">3.32</td>
+<td style="text-align: right;">0.54</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">100</td>
+<td style="text-align: right;">0.60</td>
+<td style="text-align: right;">0.21</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">250</td>
+<td style="text-align: right;">0.32</td>
+<td style="text-align: right;">0.16</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">4000</td>
+<td style="text-align: right;">0.087</td>
+<td style="text-align: right;">0.049</td>
+</tr>
+</tbody>
+</table>
+<p>Using the data in Table 1.1, state and explain which X-ray energy would produce an image of a bone next to a muscle with the best contrast. <code>[3 marks]</code></p>
+<p><strong>(b)</strong> For X-ray energies around <span class="math inline">\(30\ \mathrm{keV}\)</span> and below, the attenuation coefficient <span class="math inline">\(\mu\)</span> is approximately proportional to the cube of the proton number <span class="math inline">\(Z\)</span> of the absorbing material.</p>
+<p>The proton numbers of muscle, bone and some contrast media are shown in Table 1.2.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>substance</th>
+<th>main elements</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>muscle</td>
+<td><span class="math inline">\({}_{1}\mathrm{H},{}_{6}\mathrm{C},{}_{8}\mathrm{O}\)</span></td>
+</tr>
+<tr class="even">
+<td>bone</td>
+<td><span class="math inline">\({}_{1}\mathrm{H},{}_{6}\mathrm{C},{}_{8}\mathrm{O},{}_{15}\mathrm{P},{}_{20}\mathrm{Ca}\)</span></td>
+</tr>
+<tr class="odd">
+<td>contrast media</td>
+<td><span class="math inline">\({}_{53}\mathrm{I},{}_{56}\mathrm{Ba}\)</span></td>
+</tr>
+</tbody>
+</table>
+<p>Using the information in Table 1.2:</p>
+<p><strong>(i)</strong> show that bone absorbs X-rays about eight times more strongly than muscle; <code>[3]</code></p>
+<p><strong>(ii)</strong> explain why contrast media are made from elements with high values of atomic number <span class="math inline">\(Z\)</span>. <code>[3]</code></p>
+<p><code>[6 marks]</code></p>
+<p><strong>(c)</strong> The graph in Fig. 1.1 shows how the attenuation coefficient <span class="math inline">\(\mu\)</span> of muscle varies with photon energy <span class="math inline">\(E\)</span>.</p>
+<p><img src="../assets/questions/medical-physics/muscle-attenuation-energy-graph.webp" class="question-figure img-fluid" alt="Muscle X-ray attenuation coefficient against photon energy"></p>
+<p>Using Fig. 1.1, explain why X-rays with energies less than <span class="math inline">\(20\ \mathrm{keV}\)</span> are usually filtered out of the beam. <code>[4 marks]</code></p>
+<p><strong>(d)</strong> An X-ray beam of energy <span class="math inline">\(20\ \mathrm{keV}\)</span> and intensity <span class="math inline">\(I_0\)</span> is incident on a sample of muscle and bone as shown in Fig. 1.2. The emergent beam intensities from the muscle and bone are <span class="math inline">\(I_m\)</span> and <span class="math inline">\(I_b\)</span>, respectively.</p>
+<p><img src="../assets/questions/medical-physics/bone-muscle-sample.webp" class="question-figure img-fluid" alt="X-ray beams passing through one centimetre of muscle and bone"></p>
+<p>Using the graph in Fig. 1.1, calculate the ratio of intensities to compare the attenuation produced by <span class="math inline">\(1\ \mathrm{cm}\)</span> of bone and <span class="math inline">\(1\ \mathrm{cm}\)</span> of muscle. <code>[3 marks]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<ul>
+<li><strong>(a)</strong> <span class="math inline">\(50\ \mathrm{keV}\)</span> gives best contrast <code>[1]</code> because contrast depends on attenuation difference <code>[1]</code>, and <span class="math inline">\(3.32-0.54\)</span> is the largest difference in the table. <code>[1]</code></li>
+<li><strong>(b)(i)</strong> Representative average <span class="math inline">\(Z\)</span> values are about 5 for muscle and 10 for bone. <code>[1]</code> Their ratio is 2. <code>[1]</code> Since <span class="math inline">\(\mu\propto Z^3\)</span>, the absorption ratio is <span class="math inline">\(2^3=8\)</span>. <code>[1]</code></li>
+<li><strong>(b)(ii)</strong> Contrast media must absorb X-rays strongly. <code>[1]</code> X-rays interact with electrons and nuclei <code>[1]</code>, so high-<span class="math inline">\(Z\)</span> atoms interact more strongly and increase contrast. <code>[1]</code></li>
+<li><strong>(c)</strong> Below <span class="math inline">\(20\ \mathrm{keV}\)</span>, attenuation is very large <code>[1]</code>; these photons are mostly absorbed by tissue <code>[1]</code>, do not reach the detector or improve the image <code>[1]</code>, and only increase patient dose. <code>[1]</code></li>
+<li><strong>(d)</strong> At <span class="math inline">\(20\ \mathrm{keV}\)</span>, <span class="math inline">\(\mu_{\text{muscle}}\approx1.0\ \mathrm{cm^{-1}}\)</span>. <code>[1]</code> From <strong>(b)</strong>, <span class="math inline">\(\mu_{\text{bone}}\approx8.0\ \mathrm{cm^{-1}}\)</span>. <code>[1]</code> Thus <span class="math inline">\(I_b/I_m=e^{-8}/e^{-1}=e^{-7}=9.1\times10^{-4}\)</span>. <code>[1]</code></li>
+</ul>
+</details>
+</section>
+</section>
+<section id="chapter-checklist" class="level2">
+<h2 class="anchored" data-anchor-id="chapter-checklist">Chapter checklist</h2>
+<ul class="task-list">
+<li><label><input type="checkbox">I can describe ultrasound generation and reception.</label></li>
+<li><label><input type="checkbox">I can use echo timing, acoustic impedance and attenuation equations.</label></li>
+<li><label><input type="checkbox">I can explain X-ray production and calculate <span class="math inline">\(\lambda_{\min}\)</span>.</label></li>
+<li><label><input type="checkbox">I can compare X-ray, CT and ultrasound imaging.</label></li>
+<li><label><input type="checkbox">I can explain PET tracer uptake, annihilation and coincidence detection.</label></li>
+<li><label><input type="checkbox">I can calculate annihilation energy, photon momentum and tracer activity.</label></li>
+</ul>
+<section id="original-question-pdfs" class="level3">
+<h3 class="anchored" data-anchor-id="original-question-pdfs">Original question PDFs</h3>
+<ul>
+<li><a href="../resources/original-papers/medical-physics/24.1-ultrasound-xrays-easy.pdf">24.1 Ultrasound and X-rays - Easy</a></li>
+<li><a href="../resources/original-papers/medical-physics/24.1-ultrasound-xrays-medium.pdf">24.1 Ultrasound and X-rays - Medium</a></li>
+<li><a href="../resources/original-papers/medical-physics/24.1-ultrasound-xrays-hard.pdf">24.1 Ultrasound and X-rays - Hard</a></li>
+<li><a href="../resources/original-papers/medical-physics/24.2-pet-scanning-easy.pdf">24.2 PET Scanning - Easy</a></li>
+<li><a href="../resources/original-papers/medical-physics/24.2-pet-scanning-medium.pdf">24.2 PET Scanning - Medium</a></li>
+<li><a href="../resources/original-papers/medical-physics/24.2-pet-scanning-hard.pdf">24.2 PET Scanning - Hard</a></li>
+</ul>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll(".done-toggle input").forEach((input) => {
+    const key = `cie-physics-${input.dataset.progress}`;
+    input.checked = localStorage.getItem(key) === "true";
+    input.closest(".question-card")?.classList.toggle("is-complete", input.checked);
+    input.addEventListener("change", () => {
+      localStorage.setItem(key, input.checked);
+      input.closest(".question-card")?.classList.toggle("is-complete", input.checked);
+    });
+  });
+
+  document.querySelectorAll(".mc-question").forEach((card) => {
+    const answer = card.dataset.answer;
+    const feedback = card.querySelector(".mc-feedback");
+    const check = card.querySelector(".check-answer");
+    let selected = localStorage.getItem(`cie-physics-${card.id}-choice`) || "";
+
+    const showSelection = () => {
+      card.querySelectorAll(".mc-choice").forEach((choice) => {
+        choice.classList.toggle("is-selected", choice.dataset.choice === selected);
+      });
+    };
+    showSelection();
+
+    card.querySelectorAll(".mc-choice").forEach((choice) => {
+      choice.addEventListener("click", () => {
+        selected = choice.dataset.choice;
+        localStorage.setItem(`cie-physics-${card.id}-choice`, selected);
+        feedback.textContent = "";
+        feedback.className = "mc-feedback";
+        showSelection();
+      });
+    });
+
+    check?.addEventListener("click", () => {
+      if (!selected) {
+        feedback.textContent = "Select an answer first.";
+        feedback.className = "mc-feedback is-pending";
+        return;
+      }
+      const correct = selected === answer;
+      feedback.textContent = correct ? "Correct." : `Not quite. The correct answer is ${answer}.`;
+      feedback.className = `mc-feedback ${correct ? "is-correct" : "is-incorrect"}`;
+    });
+  });
+});
+</script>
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "已复制");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "已复制");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../a-level/23-nuclear-physics.html" class="pagination-link" aria-label="23 Nuclear physics">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">23 Nuclear physics</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../a-level/25-astronomy-and-cosmology.html" class="pagination-link" aria-label="25 Astronomy and cosmology">
+        <span class="nav-page-text">25 Astronomy and cosmology</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>

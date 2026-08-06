@@ -1,0 +1,1568 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-Hans" xml:lang="zh-Hans"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.38">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>15 Ideal gases – CIE Physics 9702</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../a-level/16-thermodynamics.html" rel="next">
+<link href="../a-level/14-temperature.html" rel="prev">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-a2a938b4dd5711f7a799c87bd16ba44c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "没有结果",
+    "search-matching-documents-text": "匹配的文档",
+    "search-copy-link-title": "复制搜索链接",
+    "search-hide-matches-text": "隐藏其它匹配结果",
+    "search-more-match-text": "更多匹配结果",
+    "search-more-matches-text": "更多匹配结果",
+    "search-clear-button-title": "清除",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "取消",
+    "search-submit-button-title": "提交",
+    "search-label": "搜索"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../styles.css">
+</head>
+
+<body class="nav-sidebar docked quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="展开或折叠侧边栏导航" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../a-level/12-motion-in-a-circle.html">A Level</a></li><li class="breadcrumb-item"><a href="../a-level/15-ideal-gases.html">15 Ideal gases</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="展开或折叠侧边栏导航" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="搜索" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">CIE Physics 9702</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="搜索"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">学习首页</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">AS Level</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="展开或折叠此栏">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../as-level/01-physical-quantities-and-units.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">1 Physical quantities and units</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../as-level/02-kinematics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2 Kinematics</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../as-level/03-dynamics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">3 Dynamics</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">A Level</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="展开或折叠此栏">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/12-motion-in-a-circle.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">12 Motion in a circle</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/13-gravitational-fields.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">13 Gravitational fields</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/14-temperature.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">14 Temperature</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/15-ideal-gases.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">15 Ideal gases</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/16-thermodynamics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">16 Thermodynamics</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/17-oscillations.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">17 Oscillations</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/18-electric-fields.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">18 Electric fields</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/19-capacitance.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">19 Capacitance</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/20-magnetic-fields.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">20 Magnetic fields</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/21-alternating-currents.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">21 Alternating currents</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/22-quantum-physics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">22 Quantum physics</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/23-nuclear-physics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">23 Nuclear physics</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/24-medical-physics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">24 Medical physics</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/25-astronomy-and-cosmology.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">25 Astronomy and cosmology</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">该页面内容</h2>
+   
+  <ul>
+  <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link active" data-scroll-target="#learning-objectives">Learning objectives</a></li>
+  <li><a href="#the-mole" id="toc-the-mole" class="nav-link" data-scroll-target="#the-mole">15.1 The mole</a>
+  <ul class="collapse">
+  <li><a href="#amount-of-substance" id="toc-amount-of-substance" class="nav-link" data-scroll-target="#amount-of-substance">Amount of substance</a></li>
+  <li><a href="#moles-particles-and-molar-mass" id="toc-moles-particles-and-molar-mass" class="nav-link" data-scroll-target="#moles-particles-and-molar-mass">Moles, particles and molar mass</a></li>
+  </ul></li>
+  <li><a href="#equation-of-state" id="toc-equation-of-state" class="nav-link" data-scroll-target="#equation-of-state">15.2 Equation of state</a>
+  <ul class="collapse">
+  <li><a href="#ideal-gas-behaviour" id="toc-ideal-gas-behaviour" class="nav-link" data-scroll-target="#ideal-gas-behaviour">Ideal-gas behaviour</a></li>
+  <li><a href="#ideal-gas-equations" id="toc-ideal-gas-equations" class="nav-link" data-scroll-target="#ideal-gas-equations">Ideal-gas equations</a></li>
+  <li><a href="#interpreting-gas-law-graphs" id="toc-interpreting-gas-law-graphs" class="nav-link" data-scroll-target="#interpreting-gas-law-graphs">Interpreting gas-law graphs</a></li>
+  </ul></li>
+  <li><a href="#kinetic-theory-of-gases" id="toc-kinetic-theory-of-gases" class="nav-link" data-scroll-target="#kinetic-theory-of-gases">15.3 Kinetic theory of gases</a>
+  <ul class="collapse">
+  <li><a href="#assumptions-of-the-model" id="toc-assumptions-of-the-model" class="nav-link" data-scroll-target="#assumptions-of-the-model">Assumptions of the model</a></li>
+  <li><a href="#molecular-origin-of-pressure" id="toc-molecular-origin-of-pressure" class="nav-link" data-scroll-target="#molecular-origin-of-pressure">Molecular origin of pressure</a></li>
+  <li><a href="#kinetic-theory-equation" id="toc-kinetic-theory-equation" class="nav-link" data-scroll-target="#kinetic-theory-equation">Kinetic-theory equation</a></li>
+  <li><a href="#root-mean-square-speed" id="toc-root-mean-square-speed" class="nav-link" data-scroll-target="#root-mean-square-speed">Root-mean-square speed</a></li>
+  <li><a href="#average-translational-kinetic-energy" id="toc-average-translational-kinetic-energy" class="nav-link" data-scroll-target="#average-translational-kinetic-energy">Average translational kinetic energy</a></li>
+  </ul></li>
+  <li><a href="#structured-questions" id="toc-structured-questions" class="nav-link" data-scroll-target="#structured-questions">Structured Questions</a>
+  <ul class="collapse">
+  <li><a href="#ideal-gas-law---easy" id="toc-ideal-gas-law---easy" class="nav-link" data-scroll-target="#ideal-gas-law---easy">15.1 Ideal Gas Law - Easy</a></li>
+  <li><a href="#example-1-the-mole-and-avogadro-constant-15.1-sq-easy-q1" id="toc-example-1-the-mole-and-avogadro-constant-15.1-sq-easy-q1" class="nav-link" data-scroll-target="#example-1-the-mole-and-avogadro-constant-15.1-sq-easy-q1">Example 1 · The mole and Avogadro constant · 15.1 SQ Easy Q1</a></li>
+  <li><a href="#ideal-gas-law---medium" id="toc-ideal-gas-law---medium" class="nav-link" data-scroll-target="#ideal-gas-law---medium">15.1 Ideal Gas Law - Medium</a></li>
+  <li><a href="#example-2-molecular-form-of-the-gas-equation-and-gas-leakage-15.1-sq-medium-q1" id="toc-example-2-molecular-form-of-the-gas-equation-and-gas-leakage-15.1-sq-medium-q1" class="nav-link" data-scroll-target="#example-2-molecular-form-of-the-gas-equation-and-gas-leakage-15.1-sq-medium-q1">Example 2 · Molecular form of the gas equation and gas leakage · 15.1 SQ Medium Q1</a></li>
+  <li><a href="#example-3-pressure-law-absolute-zero-and-a-release-valve-15.1-sq-medium-q4" id="toc-example-3-pressure-law-absolute-zero-and-a-release-valve-15.1-sq-medium-q4" class="nav-link" data-scroll-target="#example-3-pressure-law-absolute-zero-and-a-release-valve-15.1-sq-medium-q4">Example 3 · Pressure law, absolute zero and a release valve · 15.1 SQ Medium Q4</a></li>
+  <li><a href="#example-4-moles-mass-density-and-tyre-pressure-15.1-sq-medium-q5" id="toc-example-4-moles-mass-density-and-tyre-pressure-15.1-sq-medium-q5" class="nav-link" data-scroll-target="#example-4-moles-mass-density-and-tyre-pressure-15.1-sq-medium-q5">Example 4 · Moles, mass, density and tyre pressure · 15.1 SQ Medium Q5</a></li>
+  <li><a href="#kinetic-theory---easy" id="toc-kinetic-theory---easy" class="nav-link" data-scroll-target="#kinetic-theory---easy">15.2 Kinetic Theory - Easy</a></li>
+  <li><a href="#example-5-assumptions-and-r.m.s.-speed-15.2-sq-easy-q1" id="toc-example-5-assumptions-and-r.m.s.-speed-15.2-sq-easy-q1" class="nav-link" data-scroll-target="#example-5-assumptions-and-r.m.s.-speed-15.2-sq-easy-q1">Example 5 · Assumptions and r.m.s. speed · 15.2 SQ Easy Q1</a></li>
+  <li><a href="#example-6-kinetic-energy-and-gas-pressure-15.2-sq-easy-q2" id="toc-example-6-kinetic-energy-and-gas-pressure-15.2-sq-easy-q2" class="nav-link" data-scroll-target="#example-6-kinetic-energy-and-gas-pressure-15.2-sq-easy-q2">Example 6 · Kinetic energy and gas pressure · 15.2 SQ Easy Q2</a></li>
+  <li><a href="#example-7-building-the-kinetic-theory-derivation-15.2-sq-easy-q3" id="toc-example-7-building-the-kinetic-theory-derivation-15.2-sq-easy-q3" class="nav-link" data-scroll-target="#example-7-building-the-kinetic-theory-derivation-15.2-sq-easy-q3">Example 7 · Building the kinetic-theory derivation · 15.2 SQ Easy Q3</a></li>
+  <li><a href="#kinetic-theory---medium" id="toc-kinetic-theory---medium" class="nav-link" data-scroll-target="#kinetic-theory---medium">15.2 Kinetic Theory - Medium</a></li>
+  <li><a href="#example-8-molecular-kinetic-energy-and-nitrogen-r.m.s.-speed-15.2-sq-medium-q2" id="toc-example-8-molecular-kinetic-energy-and-nitrogen-r.m.s.-speed-15.2-sq-medium-q2" class="nav-link" data-scroll-target="#example-8-molecular-kinetic-energy-and-nitrogen-r.m.s.-speed-15.2-sq-medium-q2">Example 8 · Molecular kinetic energy and nitrogen r.m.s. speed · 15.2 SQ Medium Q2</a></li>
+  <li><a href="#example-9-moles-and-r.m.s.-speed-after-heating-15.2-sq-medium-q3" id="toc-example-9-moles-and-r.m.s.-speed-after-heating-15.2-sq-medium-q3" class="nav-link" data-scroll-target="#example-9-moles-and-r.m.s.-speed-after-heating-15.2-sq-medium-q3">Example 9 · Moles and r.m.s. speed after heating · 15.2 SQ Medium Q3</a></li>
+  <li><a href="#example-10-assumptions-pressure-and-an-r.m.s.-calculation-15.2-sq-medium-q4" id="toc-example-10-assumptions-pressure-and-an-r.m.s.-calculation-15.2-sq-medium-q4" class="nav-link" data-scroll-target="#example-10-assumptions-pressure-and-an-r.m.s.-calculation-15.2-sq-medium-q4">Example 10 · Assumptions, pressure and an r.m.s. calculation · 15.2 SQ Medium Q4</a></li>
+  <li><a href="#example-11-full-derivation-of-the-kinetic-theory-equation-15.2-sq-medium-q5" id="toc-example-11-full-derivation-of-the-kinetic-theory-equation-15.2-sq-medium-q5" class="nav-link" data-scroll-target="#example-11-full-derivation-of-the-kinetic-theory-equation-15.2-sq-medium-q5">Example 11 · Full derivation of the kinetic-theory equation · 15.2 SQ Medium Q5</a></li>
+  <li><a href="#kinetic-theory---hard" id="toc-kinetic-theory---hard" class="nav-link" data-scroll-target="#kinetic-theory---hard">15.2 Kinetic Theory - Hard</a></li>
+  <li><a href="#example-12-collisions-a-gas-collimator-and-propane-15.2-sq-hard-q2" id="toc-example-12-collisions-a-gas-collimator-and-propane-15.2-sq-hard-q2" class="nav-link" data-scroll-target="#example-12-collisions-a-gas-collimator-and-propane-15.2-sq-hard-q2">Example 12 · Collisions, a gas collimator and propane · 15.2 SQ Hard Q2</a></li>
+  </ul></li>
+  <li><a href="#chapter-self-check" id="toc-chapter-self-check" class="nav-link" data-scroll-target="#chapter-self-check">Chapter self-check</a>
+  <ul class="collapse">
+  <li><a href="#original-topic-pdfs" id="toc-original-topic-pdfs" class="nav-link" data-scroll-target="#original-topic-pdfs">Original topic PDFs</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../a-level/12-motion-in-a-circle.html">A Level</a></li><li class="breadcrumb-item"><a href="../a-level/15-ideal-gases.html">15 Ideal gases</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">15 Ideal gases</h1>
+<p class="subtitle lead">The mole, equations of state and the kinetic theory of gases</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="learning-objectives" class="level2">
+<h2 class="anchored" data-anchor-id="learning-objectives">Learning objectives</h2>
+<p>By the end of this chapter, you should be able to:</p>
+<ul>
+<li>use the mole as the SI unit of amount of substance;</li>
+<li>relate moles, particles, mass and molar mass using the Avogadro constant;</li>
+<li>describe an ideal gas using <span class="math inline">\(pV\propto T\)</span>;</li>
+<li>use <span class="math inline">\(pV=nRT\)</span> and <span class="math inline">\(pV=NkT\)</span> with temperatures in kelvin;</li>
+<li>use <span class="math inline">\(k=R/N_A\)</span>;</li>
+<li>state the basic assumptions of the kinetic theory of gases;</li>
+<li>explain gas pressure in terms of molecular collisions;</li>
+<li>derive and use <span class="math inline">\(pV=\tfrac13Nm\langle c^2\rangle\)</span>;</li>
+<li>understand and calculate root-mean-square speed;</li>
+<li>derive and use <span class="math inline">\(\langle E_k\rangle=\tfrac32kT\)</span>.</li>
+</ul>
+</section>
+<section id="the-mole" class="level2">
+<h2 class="anchored" data-anchor-id="the-mole">15.1 The mole</h2>
+<section id="amount-of-substance" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="amount-of-substance">Amount of substance</h3>
+<p>Amount of substance is an SI base quantity with the unit mole, symbol mol. One mole contains a number of specified particles equal to the Avogadro constant:</p>
+<p><span class="math display">\[N_A=6.02\times10^{23}\ \mathrm{mol^{-1}}.\]</span></p>
+<p>The particles may be atoms, molecules, ions or other specified entities. The mole measures amount of substance, not mass.</p>
+</section>
+<section id="moles-particles-and-molar-mass" class="level3 formula-panel">
+<h3 class="anchored" data-anchor-id="moles-particles-and-molar-mass">Moles, particles and molar mass</h3>
+<p>If a sample contains <span class="math inline">\(N\)</span> particles,</p>
+<p><span class="math display">\[n=\frac{N}{N_A},\qquad N=nN_A.\]</span></p>
+<p>If its mass is <span class="math inline">\(m\)</span> and its molar mass is <span class="math inline">\(M\)</span>, use</p>
+<p><span class="math display">\[n=\frac{m}{M}.\]</span></p>
+<p>The units of <span class="math inline">\(m\)</span> and <span class="math inline">\(M\)</span> must be consistent. For example, use grams with <span class="math inline">\(\mathrm{g\,mol^{-1}}\)</span> or kilograms with <span class="math inline">\(\mathrm{kg\,mol^{-1}}\)</span>.</p>
+<p>The mass of one molecule is</p>
+<p><span class="math display">\[m_0=\frac{M}{N_A},\]</span></p>
+<p>where <span class="math inline">\(M\)</span> is expressed in <span class="math inline">\(\mathrm{kg\,mol^{-1}}\)</span>.</p>
+</section>
+</section>
+<section id="equation-of-state" class="level2">
+<h2 class="anchored" data-anchor-id="equation-of-state">15.2 Equation of state</h2>
+<section id="ideal-gas-behaviour" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="ideal-gas-behaviour">Ideal-gas behaviour</h3>
+<p>An ideal gas is a model gas that obeys</p>
+<p><span class="math display">\[pV\propto T\]</span></p>
+<p>for a fixed amount of gas, where <span class="math inline">\(T\)</span> is thermodynamic temperature in kelvin. Equivalently, it obeys the ideal-gas equation at all pressures, volumes and temperatures.</p>
+<p>Useful special cases for a fixed mass of gas are:</p>
+<p><span class="math display">\[pV=\text{constant}\quad(T\text{ constant}),\]</span></p>
+<p><span class="math display">\[\frac{V}{T}=\text{constant}\quad(p\text{ constant}),\]</span></p>
+<p><span class="math display">\[\frac{p}{T}=\text{constant}\quad(V\text{ constant}).\]</span></p>
+<p>Always convert Celsius temperature to kelvin before using a gas-law ratio.</p>
+</section>
+<section id="ideal-gas-equations" class="level3 formula-panel">
+<h3 class="anchored" data-anchor-id="ideal-gas-equations">Ideal-gas equations</h3>
+<p>In terms of amount of substance,</p>
+<p><span class="math display">\[pV=nRT,\]</span></p>
+<p>where <span class="math inline">\(R=8.31\ \mathrm{J\,mol^{-1}\,K^{-1}}\)</span>.</p>
+<p>In terms of the number of molecules,</p>
+<p><span class="math display">\[pV=NkT,\]</span></p>
+<p>where <span class="math inline">\(k=1.38\times10^{-23}\ \mathrm{J\,K^{-1}}\)</span>.</p>
+<p>Because <span class="math inline">\(N=nN_A\)</span>,</p>
+<p><span class="math display">\[k=\frac{R}{N_A}.\]</span></p>
+<p>Use SI units: <span class="math inline">\(p\)</span> in Pa, <span class="math inline">\(V\)</span> in <span class="math inline">\(\mathrm{m^3}\)</span> and <span class="math inline">\(T\)</span> in K. Convert <span class="math inline">\(\mathrm{cm^3}\)</span> to <span class="math inline">\(\mathrm{m^3}\)</span> using <span class="math inline">\(1\ \mathrm{cm^3}=10^{-6}\ \mathrm{m^3}\)</span>.</p>
+</section>
+<section id="interpreting-gas-law-graphs" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="interpreting-gas-law-graphs">Interpreting gas-law graphs</h3>
+<p>At constant volume, <span class="math inline">\(p\propto T\)</span>, so a graph of pressure against kelvin temperature is a straight line through the origin. If the horizontal axis is Celsius temperature, extrapolation reaches zero pressure at approximately <span class="math inline">\(-273.15\ ^\circ\mathrm{C}\)</span>.</p>
+<p>At constant temperature, a graph of <span class="math inline">\(p\)</span> against <span class="math inline">\(V\)</span> is an inverse curve, while a graph of <span class="math inline">\(p\)</span> against <span class="math inline">\(1/V\)</span> is linear.</p>
+</section>
+</section>
+<section id="kinetic-theory-of-gases" class="level2">
+<h2 class="anchored" data-anchor-id="kinetic-theory-of-gases">15.3 Kinetic theory of gases</h2>
+<section id="assumptions-of-the-model" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="assumptions-of-the-model">Assumptions of the model</h3>
+<p>The simple kinetic theory assumes that:</p>
+<ul>
+<li>a gas contains a very large number of identical molecules;</li>
+<li>the molecules are hard, perfectly elastic particles;</li>
+<li>their own volume is negligible compared with the container volume;</li>
+<li>the collision time is negligible compared with the time between collisions;</li>
+<li>there are no intermolecular forces except during collisions;</li>
+<li>the molecules move continuously and randomly.</li>
+</ul>
+<p>These assumptions explain why real gases most closely approach ideal behaviour at low pressure and high temperature.</p>
+</section>
+<section id="molecular-origin-of-pressure" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="molecular-origin-of-pressure">Molecular origin of pressure</h3>
+<p>A molecule changes momentum when it rebounds elastically from a container wall. The wall exerts a force on the molecule, and the molecule exerts an equal and opposite force on the wall. The combined forces from many collisions produce pressure:</p>
+<p><span class="math display">\[p=\frac{F}{A}.\]</span></p>
+<p>Increasing temperature increases molecular speeds, collision frequency and momentum transfer. At fixed volume this increases pressure. Decreasing volume at fixed temperature also increases the collision rate per unit area.</p>
+</section>
+<section id="kinetic-theory-equation" class="level3 formula-panel">
+<h3 class="anchored" data-anchor-id="kinetic-theory-equation">Kinetic-theory equation</h3>
+<p>For <span class="math inline">\(N\)</span> molecules, each of mass <span class="math inline">\(m\)</span>, in volume <span class="math inline">\(V\)</span>,</p>
+<p><span class="math display">\[pV=\frac13Nm\langle c^2\rangle.\]</span></p>
+<p>The factor <span class="math inline">\(1/3\)</span> appears because random motion is distributed equally among three dimensions:</p>
+<p><span class="math display">\[\langle c_x^2\rangle=\langle c_y^2\rangle=\langle c_z^2\rangle=\frac13\langle c^2\rangle.\]</span></p>
+<p>Since the gas density is <span class="math inline">\(\rho=Nm/V\)</span>, the equation may also be written</p>
+<p><span class="math display">\[p=\frac13\rho\langle c^2\rangle.\]</span></p>
+</section>
+<section id="root-mean-square-speed" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="root-mean-square-speed">Root-mean-square speed</h3>
+<p>Molecular velocities have positive and negative components, so their vector average may be zero. Squaring before averaging prevents cancellation. The root-mean-square speed is</p>
+<p><span class="math display">\[c_{\mathrm{rms}}=\sqrt{\langle c^2\rangle}.\]</span></p>
+<p>For one type of molecule,</p>
+<p><span class="math display">\[c_{\mathrm{rms}}=\sqrt{\frac{3kT}{m}}=\sqrt{\frac{3RT}{M}}.\]</span></p>
+<p>Therefore <span class="math inline">\(c_{\mathrm{rms}}\propto\sqrt{T}\)</span> and lighter molecules have greater r.m.s. speeds at the same temperature.</p>
+</section>
+<section id="average-translational-kinetic-energy" class="level3 formula-panel">
+<h3 class="anchored" data-anchor-id="average-translational-kinetic-energy">Average translational kinetic energy</h3>
+<p>Compare</p>
+<p><span class="math display">\[pV=NkT\]</span></p>
+<p>with</p>
+<p><span class="math display">\[pV=\frac13Nm\langle c^2\rangle.\]</span></p>
+<p>After cancelling <span class="math inline">\(N\)</span>,</p>
+<p><span class="math display">\[\frac12m\langle c^2\rangle=\frac32kT.\]</span></p>
+<p>Hence the average translational kinetic energy of one ideal-gas molecule is</p>
+<p><span class="math display">\[\langle E_k\rangle=\frac32kT.\]</span></p>
+<p>It depends only on thermodynamic temperature, not on molecular mass. For <span class="math inline">\(N\)</span> monatomic molecules, the total translational internal energy is <span class="math inline">\(U=\tfrac32NkT=\tfrac32nRT\)</span>.</p>
+</section>
+</section>
+<section id="structured-questions" class="level2">
+<h2 class="anchored" data-anchor-id="structured-questions">Structured Questions</h2>
+<section id="ideal-gas-law---easy" class="level3">
+<h3 class="anchored" data-anchor-id="ideal-gas-law---easy">15.1 Ideal Gas Law - Easy</h3>
+</section>
+<section id="example-1-the-mole-and-avogadro-constant-15.1-sq-easy-q1" class="level3 question-card">
+<h3 class="anchored" data-anchor-id="example-1-the-mole-and-avogadro-constant-15.1-sq-easy-q1">Example 1 · The mole and Avogadro constant · 15.1 SQ Easy Q1</h3>
+<p><strong>(a)</strong> Define the mole. <code>[2 marks]</code></p>
+<p><strong>(b)</strong> It is possible to calculate the number of moles, <span class="math inline">\(n\)</span>, using the number of molecules and Avogadro’s constant.</p>
+<p>Identify by placing a tick (<span class="math inline">\(\checkmark\)</span>) in the box next to the correct arrangement of this equation. <code>[1 mark]</code></p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Possible equation</th>
+<th style="text-align: center;">Tick</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\(n=N_A/N\)</span></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(n=N/N_A\)</span></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(nN=N_A\)</span></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(n=NN_A\)</span></td>
+<td style="text-align: center;"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>(c)</strong> Define the Avogadro constant. <code>[2 marks]</code></p>
+<p><strong>(d)</strong> The molar mass equation is shown below:</p>
+<p><span class="math display">\[n=\frac{m}{M_r}.\]</span></p>
+<p>State the meaning of the quantities <span class="math inline">\(m\)</span> and <span class="math inline">\(M_r\)</span>. <code>[2 marks]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<p><strong>(a)</strong></p>
+<ul>
+<li>The mole is the SI base unit of amount of substance. <code>[1]</code></li>
+<li>One mole contains as many particles as there are atoms in <span class="math inline">\(12\ \mathrm{g}\)</span> of carbon-12. <code>[1]</code></li>
+</ul>
+<p><strong>(b)</strong></p>
+<ul>
+<li>Tick <span class="math inline">\(n=N/N_A\)</span>. <code>[1]</code></li>
+</ul>
+<p><strong>(c)</strong></p>
+<ul>
+<li>The number of atoms in <span class="math inline">\(12\ \mathrm{g}\)</span> of carbon-12. <code>[1]</code></li>
+<li><span class="math inline">\(N_A=6.02\times10^{23}\ \mathrm{mol^{-1}}\)</span>. <code>[1]</code></li>
+</ul>
+<p><strong>(d)</strong></p>
+<ul>
+<li><span class="math inline">\(m\)</span> is the mass of the substance. <code>[1]</code></li>
+<li><span class="math inline">\(M_r\)</span> is the molar mass of the substance. <code>[1]</code></li>
+</ul>
+</details>
+</section>
+<section id="ideal-gas-law---medium" class="level3">
+<h3 class="anchored" data-anchor-id="ideal-gas-law---medium">15.1 Ideal Gas Law - Medium</h3>
+</section>
+<section id="example-2-molecular-form-of-the-gas-equation-and-gas-leakage-15.1-sq-medium-q1" class="level3 question-card">
+<h3 class="anchored" data-anchor-id="example-2-molecular-form-of-the-gas-equation-and-gas-leakage-15.1-sq-medium-q1">Example 2 · Molecular form of the gas equation and gas leakage · 15.1 SQ Medium Q1</h3>
+<p><strong>(a)</strong> The ideal gas equation is written as</p>
+<p><span class="math display">\[pV=nRT,\]</span></p>
+<p>where <span class="math inline">\(k\)</span> is the Boltzmann constant.</p>
+<p>Show that the ideal gas equation can also be written as</p>
+<p><span class="math display">\[pV=NkT.\]</span> <code>[2 marks]</code></p>
+<p><strong>(b)</strong> A cylinder for an ideal gas has a radius of <span class="math inline">\(120\ \mathrm{mm}\)</span> and a height of <span class="math inline">\(1350\ \mathrm{mm}\)</span>. The gas is at a temperature of <span class="math inline">\(14\ ^\circ\mathrm{C}\)</span> and a pressure of <span class="math inline">\(1.7\times10^7\ \mathrm{Pa}\)</span>.</p>
+<p><img src="../assets/questions/ideal-gases/gas-cylinder-dimensions.webp" class="question-figure img-fluid" alt="Gas cylinder with radius 120 mm and height 1350 mm"></p>
+<p>Show that the amount of gas in the cylinder is <span class="math inline">\(430\ \mathrm{mol}\)</span>. <code>[3 marks]</code></p>
+<p><strong>(c)</strong> The gas leaks slowly from the cylinder at an average rate of <span class="math inline">\(8.3\times10^{15}\)</span> atoms <span class="math inline">\(\mathrm{s^{-1}}\)</span> so that, after a time of 51 days, the pressure reduces. The temperature remains constant.</p>
+<p>Calculate the percentage of the number of moles lost from the cylinder. <code>[3 marks]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<p><strong>(a)</strong></p>
+<ul>
+<li>Use <span class="math inline">\(n=N/N_A\)</span> and <span class="math inline">\(k=R/N_A\)</span>. <code>[1]</code></li>
+<li><span class="math inline">\(pV=(N/N_A)RT=NkT\)</span>. <code>[1]</code></li>
+</ul>
+<p><strong>(b)</strong></p>
+<ul>
+<li><span class="math inline">\(V=\pi r^2h=\pi(0.120)^2(1.350)=0.061\ \mathrm{m^3}\)</span>. <code>[1]</code></li>
+<li><span class="math inline">\(n=pV/(RT)=(1.7\times10^7)(0.061)/[8.31(287)]\)</span>. <code>[1]</code></li>
+<li><span class="math inline">\(n=4.35\times10^2\ \mathrm{mol}\approx430\ \mathrm{mol}\)</span>. <code>[1]</code></li>
+</ul>
+<p><strong>(c)</strong></p>
+<ul>
+<li>Number lost <span class="math inline">\(=(8.3\times10^{15})(51\times24\times3600)=3.66\times10^{22}\)</span>. <code>[1]</code></li>
+<li>Moles lost <span class="math inline">\(=3.66\times10^{22}/(6.02\times10^{23})\approx0.060\ \mathrm{mol}\)</span>. <code>[1]</code></li>
+<li>Percentage lost <span class="math inline">\(=(0.060/434.8)\times100\approx0.014\%\)</span>. <code>[1]</code></li>
+</ul>
+</details>
+</section>
+<section id="example-3-pressure-law-absolute-zero-and-a-release-valve-15.1-sq-medium-q4" class="level3 question-card">
+<h3 class="anchored" data-anchor-id="example-3-pressure-law-absolute-zero-and-a-release-valve-15.1-sq-medium-q4">Example 3 · Pressure law, absolute zero and a release valve · 15.1 SQ Medium Q4</h3>
+<p><strong>(a)</strong> State the pressure law of ideal gases. <code>[2 marks]</code></p>
+<p><strong>(b)</strong> The pressure exerted by an ideal gas of <span class="math inline">\(8.4\times10^{20}\)</span> molecules in a container of volume <span class="math inline">\(1.6\times10^{-5}\ \mathrm{m^3}\)</span> is <span class="math inline">\(3.2\times10^5\ \mathrm{Pa}\)</span>.</p>
+<p>Calculate the temperature of the gas in the container in <span class="math inline">\(^\circ\mathrm{C}\)</span>. <code>[3 marks]</code></p>
+<p><strong>(c)</strong> The pressure of the gas is measured at different temperatures whilst the volume of the container and the mass of the gas remain constant.</p>
+<p><img src="../assets/questions/ideal-gases/pressure-temperature-axes.webp" class="question-figure img-fluid" alt="Blank axes of gas pressure against Celsius temperature"></p>
+<p>Draw a graph on the grid in Fig. 1.1 to show how the pressure varies with the temperature. <code>[3 marks]</code></p>
+<p><strong>(d)</strong> The container described in part <strong>(b)</strong> has a release valve that allows gas to escape when the pressure exceeds <span class="math inline">\(4.0\times10^5\ \mathrm{Pa}\)</span>.</p>
+<p>Calculate the number of gas molecules that escape when the temperature of the gas is raised to <span class="math inline">\(520\ ^\circ\mathrm{C}\)</span>. <code>[3 marks]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<p><strong>(a)</strong></p>
+<ul>
+<li>For a fixed mass of gas at constant volume, pressure is directly proportional to thermodynamic temperature. <code>[1]</code></li>
+<li><span class="math inline">\(p/T=\text{constant}\)</span>. <code>[1]</code></li>
+</ul>
+<p><strong>(b)</strong></p>
+<ul>
+<li>Use <span class="math inline">\(pV=NkT\)</span>, so <span class="math inline">\(T=pV/(Nk)\)</span>. <code>[1]</code></li>
+<li><span class="math inline">\(T=(3.2\times10^5)(1.6\times10^{-5})/[(8.4\times10^{20})(1.38\times10^{-23})]\approx442\ \mathrm{K}\)</span>. <code>[1]</code></li>
+<li><span class="math inline">\(\theta=442-273.15\approx167\ ^\circ\mathrm{C}\)</span>. <code>[1]</code></li>
+</ul>
+<p><strong>(c)</strong></p>
+<ul>
+<li>Draw a straight line with positive gradient. <code>[1]</code></li>
+<li>Make it pass through approximately <span class="math inline">\((167\ ^\circ\mathrm{C},3.2\times10^5\ \mathrm{Pa})\)</span>. <code>[1]</code></li>
+<li>Extrapolate it to zero pressure at about <span class="math inline">\(-273\ ^\circ\mathrm{C}\)</span>. <code>[1]</code></li>
+</ul>
+<p><strong>(d)</strong></p>
+<ul>
+<li>At the valve pressure, <span class="math inline">\(N=pV/(kT)=(4.0\times10^5)(1.6\times10^{-5})/[1.38\times10^{-23}(793.15)]\)</span>. <code>[1]</code></li>
+<li><span class="math inline">\(N=5.85\times10^{20}\)</span> molecules remain. <code>[1]</code></li>
+<li>Number escaping <span class="math inline">\(=8.4\times10^{20}-5.85\times10^{20}=2.55\times10^{20}\)</span>. <code>[1]</code></li>
+</ul>
+</details>
+</section>
+<section id="example-4-moles-mass-density-and-tyre-pressure-15.1-sq-medium-q5" class="level3 question-card">
+<h3 class="anchored" data-anchor-id="example-4-moles-mass-density-and-tyre-pressure-15.1-sq-medium-q5">Example 4 · Moles, mass, density and tyre pressure · 15.1 SQ Medium Q5</h3>
+<p><strong>(a)</strong> State two equations or laws which ideal gases obey. <code>[2 marks]</code></p>
+<p><strong>(b)</strong> A car tyre of volume <span class="math inline">\(4.2\times10^{-2}\ \mathrm{m^3}\)</span> contains air at a pressure of <span class="math inline">\(300\ \mathrm{kPa}\)</span> and a temperature of <span class="math inline">\(290\ \mathrm{K}\)</span>. The mass of one mole of air is <span class="math inline">\(3.1\times10^{-2}\ \mathrm{kg}\)</span>.</p>
+<p>Assuming that the air behaves as an ideal gas, calculate:</p>
+<p><strong>(i)</strong> the amount of moles of air; <code>[3 marks]</code></p>
+<p><strong>(ii)</strong> the mass of the air; <code>[1 mark]</code></p>
+<p><strong>(iii)</strong> the density of the air. <code>[1 mark]</code></p>
+<p><strong>(c)</strong> A bicycle tyre with <span class="math inline">\(0.47\)</span> moles of air has a volume of <span class="math inline">\(1.90\times10^{-3}\ \mathrm{m^3}\)</span> when the temperature is <span class="math inline">\(252\ \mathrm{K}\)</span>.</p>
+<p>Calculate the pressure inside the bicycle tyre. <code>[2 marks]</code></p>
+<p><strong>(d)</strong> After the bicycle has been ridden, the temperature of the air in the tyre is <span class="math inline">\(301\ \mathrm{K}\)</span>.</p>
+<p>Calculate the new pressure in the tyre assuming the volume is unchanged.</p>
+<p>Give your answer to an appropriate number of significant figures. <code>[3 marks]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<p><strong>(a)</strong> Any two:</p>
+<ul>
+<li><span class="math inline">\(pV=nRT\)</span>; <code>[1]</code></li>
+<li><span class="math inline">\(pV=NkT\)</span>; <code>[1]</code></li>
+<li>Boyle’s law, Charles’s law or the pressure law stated with the correct fixed condition. <code>[1]</code></li>
+</ul>
+<p><strong>(b)</strong></p>
+<ul>
+<li><strong>(i)</strong> <span class="math inline">\(n=pV/(RT)=(300\times10^3)(4.2\times10^{-2})/[8.31(290)]=5.23\ \mathrm{mol}\)</span>. <code>[3]</code></li>
+<li><strong>(ii)</strong> <span class="math inline">\(m=nM=(5.23)(3.1\times10^{-2})=0.162\ \mathrm{kg}\)</span>. <code>[1]</code></li>
+<li><strong>(iii)</strong> <span class="math inline">\(\rho=m/V=0.162/(4.2\times10^{-2})=3.86\ \mathrm{kg\,m^{-3}}\)</span>. <code>[1]</code></li>
+</ul>
+<p><strong>(c)</strong></p>
+<ul>
+<li><span class="math inline">\(p=nRT/V\)</span>. <code>[1]</code></li>
+<li><span class="math inline">\(p=(0.47)(8.31)(252)/(1.90\times10^{-3})=5.18\times10^5\ \mathrm{Pa}\)</span>. <code>[1]</code></li>
+</ul>
+<p><strong>(d)</strong></p>
+<ul>
+<li>At constant volume, <span class="math inline">\(p_1/T_1=p_2/T_2\)</span>. <code>[1]</code></li>
+<li><span class="math inline">\(p_2=(5.18\times10^5)(301/252)\)</span>. <code>[1]</code></li>
+<li><span class="math inline">\(p_2=6.2\times10^5\ \mathrm{Pa}\)</span> to two significant figures. <code>[1]</code></li>
+</ul>
+</details>
+</section>
+<section id="kinetic-theory---easy" class="level3">
+<h3 class="anchored" data-anchor-id="kinetic-theory---easy">15.2 Kinetic Theory - Easy</h3>
+</section>
+<section id="example-5-assumptions-and-r.m.s.-speed-15.2-sq-easy-q1" class="level3 question-card">
+<h3 class="anchored" data-anchor-id="example-5-assumptions-and-r.m.s.-speed-15.2-sq-easy-q1">Example 5 · Assumptions and r.m.s. speed · 15.2 SQ Easy Q1</h3>
+<p><strong>(a)</strong> The kinetic theory of gases is based upon a number of assumptions.</p>
+<p>Place ticks (<span class="math inline">\(\checkmark\)</span>) next to the correct assumptions in Table 1.1. <code>[5 marks]</code></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 37%">
+<col style="width: 62%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Possible statement</th>
+<th style="text-align: center;">Tick</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>The time of a collision is equal to the time between collisions.</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="even">
+<td>The molecules are mostly stationary but move upon collision with another molecule.</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="odd">
+<td>Molecules of gas behave as identical, hard, perfectly elastic spheres.</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="even">
+<td>The volume of molecules is significant compared to the volume of the container.</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="odd">
+<td>The time of a collision is negligible compared to the time between collisions.</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="even">
+<td>There are no forces of attraction or repulsion between the molecules.</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="odd">
+<td>The molecules are in continuous random motion.</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="even">
+<td>The molecules all have mass, so are attracted towards each other.</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="odd">
+<td>The volume of the molecules is negligible compared to the volume of the container.</td>
+<td style="text-align: center;"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>(b)</strong> Draw a circle around the correct symbol for the mean square speed of molecules in an ideal gas. <code>[1 mark]</code></p>
+<p><strong>(c)</strong> State the units for the mean square speed of the molecules in an ideal gas. <code>[1 mark]</code></p>
+<p><strong>(d)</strong> Calculate the average root mean square speed of the particles travelling at the following velocities:</p>
+<p><span class="math display">\[350,\ -356,\ 346,\ -351,\ 339\ \mathrm{m\,s^{-1}}.\]</span> <code>[3 marks]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<p><strong>(a)</strong> Tick:</p>
+<ul>
+<li>identical, hard, perfectly elastic spheres; <code>[1]</code></li>
+<li>collision time negligible compared with time between collisions; <code>[1]</code></li>
+<li>no forces of attraction or repulsion; <code>[1]</code></li>
+<li>continuous random motion; <code>[1]</code></li>
+<li>molecular volume negligible compared with container volume. <code>[1]</code></li>
+</ul>
+<p><strong>(b)</strong></p>
+<ul>
+<li><span class="math inline">\(\langle c^2\rangle\)</span>. <code>[1]</code></li>
+</ul>
+<p><strong>(c)</strong></p>
+<ul>
+<li><span class="math inline">\(\mathrm{m^2\,s^{-2}}\)</span>. <code>[1]</code></li>
+</ul>
+<p><strong>(d)</strong></p>
+<ul>
+<li>Sum of squares <span class="math inline">\(=350^2+(-356)^2+346^2+(-351)^2+339^2=607\,074\)</span>. <code>[1]</code></li>
+<li>Mean square speed <span class="math inline">\(=607\,074/5=121\,415\ \mathrm{m^2\,s^{-2}}\)</span>. <code>[1]</code></li>
+<li><span class="math inline">\(c_{\mathrm{rms}}=\sqrt{121\,415}=348\ \mathrm{m\,s^{-1}}\)</span>. <code>[1]</code></li>
+</ul>
+</details>
+</section>
+<section id="example-6-kinetic-energy-and-gas-pressure-15.2-sq-easy-q2" class="level3 question-card">
+<h3 class="anchored" data-anchor-id="example-6-kinetic-energy-and-gas-pressure-15.2-sq-easy-q2">Example 6 · Kinetic energy and gas pressure · 15.2 SQ Easy Q2</h3>
+<p><strong>(a)</strong> State the kinetic theory of gases equation. <code>[2 marks]</code></p>
+<p><strong>(b)</strong> A tank of volume <span class="math inline">\(20\ \mathrm{m^3}\)</span> contains <span class="math inline">\(6.0\)</span> moles of an ideal monatomic gas. The temperature of the gas is <span class="math inline">\(38\ ^\circ\mathrm{C}\)</span>.</p>
+<p>Calculate the average kinetic energy of the particles in the gas. <code>[4 marks]</code></p>
+<p><strong>(c)</strong> The following paragraph is an explanation of the relationship between the temperature of a gas and its pressure in terms of the kinetic model of an ideal gas.</p>
+<p>Use the words in the box below to complete the sentences in the paragraph. They can be used once, more than once or not at all.</p>
+<p><code>higher</code> &nbsp; <code>lower</code> &nbsp; <code>more</code> &nbsp; <code>kinetic energy</code> &nbsp; <code>force</code> &nbsp; <code>momentum</code> &nbsp; <code>pressure</code> &nbsp; <code>less</code></p>
+<ol type="1">
+<li>A __________ temperature implies __________ average speed and therefore higher __________.</li>
+<li>This causes an increase in the __________ transferred to the walls from __________ frequent collisions.</li>
+<li>This increased __________ per collision leads to an increased __________. <code>[3 marks]</code></li>
+</ol>
+<p><strong>(d)</strong> State the type of collision assumed between the molecules and the walls of the container in the kinetic theory of gases. <code>[1 mark]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<p><strong>(a)</strong></p>
+<ul>
+<li><span class="math inline">\(pV=\tfrac13Nm\langle c^2\rangle\)</span>. <code>[2]</code></li>
+</ul>
+<p><strong>(b)</strong></p>
+<ul>
+<li>Convert <span class="math inline">\(T=38+273.15=311.15\ \mathrm{K}\)</span>. <code>[1]</code></li>
+<li>Use <span class="math inline">\(\langle E_k\rangle=\tfrac32kT\)</span>. <code>[1]</code></li>
+<li><span class="math inline">\(\langle E_k\rangle=\tfrac32(1.38\times10^{-23})(311.15)\)</span>. <code>[1]</code></li>
+<li><span class="math inline">\(\langle E_k\rangle=6.44\times10^{-21}\ \mathrm{J}\)</span> per molecule. <code>[1]</code></li>
+</ul>
+<p><strong>(c)</strong></p>
+<ul>
+<li>A <strong>higher</strong> temperature implies <strong>higher</strong> average speed and therefore higher <strong>kinetic energy</strong>. <code>[1]</code></li>
+<li>This causes an increase in <strong>momentum</strong> transferred to the walls from <strong>more</strong> frequent collisions. <code>[1]</code></li>
+<li>This increased <strong>force</strong> per collision leads to increased <strong>pressure</strong>. <code>[1]</code></li>
+</ul>
+<p><strong>(d)</strong></p>
+<ul>
+<li>Perfectly elastic. <code>[1]</code></li>
+</ul>
+</details>
+</section>
+<section id="example-7-building-the-kinetic-theory-derivation-15.2-sq-easy-q3" class="level3 question-card">
+<h3 class="anchored" data-anchor-id="example-7-building-the-kinetic-theory-derivation-15.2-sq-easy-q3">Example 7 · Building the kinetic-theory derivation · 15.2 SQ Easy Q3</h3>
+<p>This question is about the derivation of the kinetic theory of gases equation.</p>
+<p>The derivation is based on a particle inside a cube, as shown in Fig. 1.1.</p>
+<p><img src="../assets/questions/ideal-gases/particle-in-cube-labels.webp" class="question-figure img-fluid" alt="Particle moving inside an unlabelled cube"></p>
+<p><strong>(a)</strong> Identify the following by adding the indicated letter to the correct arrow on the diagram:</p>
+<p><strong>(i)</strong> the length <span class="math inline">\(l\)</span> of the side of the cube; <code>[1 mark]</code></p>
+<p><strong>(ii)</strong> the speed <span class="math inline">\(c\)</span> of the molecule. <code>[1 mark]</code></p>
+<p><strong>(b)</strong> Step two of the derivation of the kinetic theory of gases is explained by the statements in Table 1.1.</p>
+<p>Place ticks (<span class="math inline">\(\checkmark\)</span>) next to the phrases that correctly explain step two. <code>[3 marks]</code></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 37%">
+<col style="width: 62%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Phrase</th>
+<th style="text-align: center;">Tick</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\(c\)</span> is the specific heat capacity of the particles of the gas.</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(c\)</span> is not the speed of light.</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="odd">
+<td>Time between particle collisions with the container walls <span class="math inline">\(=2\times\text{length of cube}/\text{speed of molecule}\)</span>.</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="even">
+<td>Time between particle collisions <span class="math inline">\(=\text{distance}/\text{speed}\)</span>.</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="odd">
+<td>Time to travel length of cube <span class="math inline">\(=\text{length of cube}\times\text{speed of molecule}\)</span>.</td>
+<td style="text-align: center;"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>(c)</strong> Step four of the derivation of the kinetic theory of gases equation is explained in the sentences below.</p>
+<p>Identify the correct words from the box to complete the sentences. You can use each word once, more than once or not at all.</p>
+<p><code>velocity</code> &nbsp; <code>mean</code> &nbsp; <code>speed</code> &nbsp; <code>number</code> &nbsp; <code>amount</code> &nbsp; <code>area</code> &nbsp; <code>force</code> &nbsp; <code>exerted</code> &nbsp; <code>molecule</code></p>
+<ol type="1">
+<li>Pressure is defined as the force per unit __________. This is the pressure exerted by one __________. The __________ of one wall is <span class="math inline">\(l^2\)</span>.</li>
+<li>The gas contains a large __________ of molecules. Each molecule has a different __________ and they all contribute to the pressure.</li>
+<li>The __________ squared speed of <span class="math inline">\(c^2\)</span> is written with left and right-angled brackets <span class="math inline">\(\langle c^2\rangle\)</span>. <code>[3 marks]</code></li>
+</ol>
+<p><strong>(d)</strong> For the final step of the derivation of the kinetic theory of gases equation, state:</p>
+<p><strong>(i)</strong> the number of dimensions the molecules are moving in; <code>[1 mark]</code></p>
+<p><strong>(ii)</strong> the volume of the cube in terms of its side length; <code>[1 mark]</code></p>
+<p><strong>(iii)</strong> the equation for the density of the cube. <code>[1 mark]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<p><strong>(a)</strong></p>
+<ul>
+<li>Put <span class="math inline">\(l\)</span> on the horizontal double-headed arrow below the cube. <code>[1]</code></li>
+<li>Put <span class="math inline">\(c\)</span> on the arrow showing the molecule’s motion. <code>[1]</code></li>
+</ul>
+<p><strong>(b)</strong> Tick:</p>
+<ul>
+<li><span class="math inline">\(c\)</span> is not the speed of light; <code>[1]</code></li>
+<li>time between wall collisions <span class="math inline">\(=2l/c\)</span>; <code>[1]</code></li>
+<li>time <span class="math inline">\(=\text{distance}/\text{speed}\)</span>. <code>[1]</code></li>
+</ul>
+<p><strong>(c)</strong></p>
+<ul>
+<li><code>area</code>, <code>molecule</code>, <code>area</code>; <code>[1]</code></li>
+<li><code>number</code>, <code>velocity</code>; <code>[1]</code></li>
+<li><code>mean</code>. <code>[1]</code></li>
+</ul>
+<p><strong>(d)</strong></p>
+<ul>
+<li><strong>(i)</strong> three dimensions; <code>[1]</code></li>
+<li><strong>(ii)</strong> <span class="math inline">\(V=l^3\)</span>; <code>[1]</code></li>
+<li><strong>(iii)</strong> <span class="math inline">\(\rho=\text{mass}/\text{volume}=Nm/V\)</span>. <code>[1]</code></li>
+</ul>
+</details>
+</section>
+<section id="kinetic-theory---medium" class="level3">
+<h3 class="anchored" data-anchor-id="kinetic-theory---medium">15.2 Kinetic Theory - Medium</h3>
+</section>
+<section id="example-8-molecular-kinetic-energy-and-nitrogen-r.m.s.-speed-15.2-sq-medium-q2" class="level3 question-card">
+<h3 class="anchored" data-anchor-id="example-8-molecular-kinetic-energy-and-nitrogen-r.m.s.-speed-15.2-sq-medium-q2">Example 8 · Molecular kinetic energy and nitrogen r.m.s. speed · 15.2 SQ Medium Q2</h3>
+<p><strong>(a)</strong> The kinetic theory of gases equation can be written as</p>
+<p><span class="math display">\[pV=\frac13Nm\langle c^2\rangle.\]</span></p>
+<p>State the meaning of each of the symbols in this equation. <code>[3 marks]</code></p>
+<p><strong>(b)</strong> Use the equation in <strong>(a)</strong> to show that the average translational kinetic energy <span class="math inline">\(E_k\)</span> of a molecule of an ideal gas is given by</p>
+<p><span class="math display">\[E_k=\frac32kT.\]</span> <code>[2 marks]</code></p>
+<p><strong>(c)</strong> The mass of a nitrogen molecule is <span class="math inline">\(4.65\times10^{-26}\ \mathrm{kg}\)</span>.</p>
+<p>Use the equation in <strong>(b)</strong> to determine the root-mean-square (r.m.s.) speed <span class="math inline">\(u\)</span> of a nitrogen molecule at <span class="math inline">\(20\ ^\circ\mathrm{C}\)</span>.</p>
+<p>Assume that nitrogen behaves as an ideal gas. <code>[3 marks]</code></p>
+<p><strong>(d)</strong> A fixed mass of nitrogen gas at initial pressure <span class="math inline">\(P\)</span> is sealed in a cylindrical container by a moveable piston at one end, as shown in Fig. 1.1.</p>
+<p><img src="../assets/questions/ideal-gases/nitrogen-piston.webp" class="question-figure img-fluid" alt="Nitrogen sealed in a cylinder by a movable piston"></p>
+<p>The temperature of the gas is <span class="math inline">\(20\ ^\circ\mathrm{C}\)</span>.</p>
+<p>At all times, the gas and the container remain in thermal equilibrium with the surroundings. The piston is slowly moved out of the cylinder so that the nitrogen gas is decompressed.</p>
+<p>On Fig. 1.2, sketch the variation of pressure with the r.m.s. speed of the nitrogen molecules as the pressure decreases.</p>
+<p><img src="../assets/questions/ideal-gases/pressure-rms-speed-axes.webp" class="question-figure img-fluid" alt="Blank graph of pressure against r.m.s. speed with initial point P and u"></p>
+<p><code>[2 marks]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<p><strong>(a)</strong></p>
+<ul>
+<li><span class="math inline">\(p\)</span> is gas pressure and <span class="math inline">\(V\)</span> is gas volume. <code>[1]</code></li>
+<li><span class="math inline">\(N\)</span> is the number of molecules and <span class="math inline">\(m\)</span> is the mass of one molecule. <code>[1]</code></li>
+<li><span class="math inline">\(\langle c^2\rangle\)</span> is the mean-square speed of the molecules. <code>[1]</code></li>
+</ul>
+<p><strong>(b)</strong></p>
+<ul>
+<li>Equate <span class="math inline">\(pV=NkT\)</span> and <span class="math inline">\(pV=\tfrac13Nm\langle c^2\rangle\)</span>. <code>[1]</code></li>
+<li>Cancelling <span class="math inline">\(N\)</span> and dividing by two gives <span class="math inline">\(\tfrac12m\langle c^2\rangle=\tfrac32kT\)</span>. <code>[1]</code></li>
+</ul>
+<p><strong>(c)</strong></p>
+<ul>
+<li>Convert <span class="math inline">\(T=20+273=293\ \mathrm{K}\)</span>. <code>[1]</code></li>
+<li><span class="math inline">\(u=\sqrt{3kT/m}=\sqrt{3(1.38\times10^{-23})(293)/(4.65\times10^{-26})}\)</span>. <code>[1]</code></li>
+<li><span class="math inline">\(u=511\ \mathrm{m\,s^{-1}}\)</span>. <code>[1]</code></li>
+</ul>
+<p><strong>(d)</strong></p>
+<ul>
+<li>Draw a vertical line through <span class="math inline">\(u\)</span>. <code>[1]</code></li>
+<li>Start at <span class="math inline">\((u,P)\)</span> and extend downwards as pressure decreases, because constant temperature means constant r.m.s. speed. <code>[1]</code></li>
+</ul>
+</details>
+</section>
+<section id="example-9-moles-and-r.m.s.-speed-after-heating-15.2-sq-medium-q3" class="level3 question-card">
+<h3 class="anchored" data-anchor-id="example-9-moles-and-r.m.s.-speed-after-heating-15.2-sq-medium-q3">Example 9 · Moles and r.m.s. speed after heating · 15.2 SQ Medium Q3</h3>
+<p><strong>(a)</strong> A fixed mass of an ideal gas is at a temperature of <span class="math inline">\(24\ ^\circ\mathrm{C}\)</span>. The volume of the gas is <span class="math inline">\(3.3\times10^{-3}\ \mathrm{m^3}\)</span> and the pressure is <span class="math inline">\(2.1\times10^5\ \mathrm{Pa}\)</span>.</p>
+<p>Calculate the number <span class="math inline">\(n\)</span> of moles in the gas. <code>[2 marks]</code></p>
+<p><strong>(b)</strong> The mass of one molecule of the gas is <span class="math inline">\(30\ \mathrm{u}\)</span>.</p>
+<p>Determine the r.m.s. speed of the gas molecules. <code>[3 marks]</code></p>
+<p><strong>(c)</strong> The temperature of the gas is increased by <span class="math inline">\(72\ ^\circ\mathrm{C}\)</span>.</p>
+<p>Calculate the value of the ratio</p>
+<p><span class="math display">\[\frac{\text{original r.m.s. speed of molecules}}{\text{new r.m.s. speed of molecules}}.\]</span> <code>[2 marks]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<p><strong>(a)</strong></p>
+<ul>
+<li><span class="math inline">\(T=24+273=297\ \mathrm{K}\)</span> and <span class="math inline">\(n=pV/(RT)\)</span>. <code>[1]</code></li>
+<li><span class="math inline">\(n=(2.1\times10^5)(3.3\times10^{-3})/[8.31(297)]=0.28\ \mathrm{mol}\)</span>. <code>[1]</code></li>
+</ul>
+<p><strong>(b)</strong></p>
+<ul>
+<li>Molecular mass <span class="math inline">\(m=30(1.66\times10^{-27})=4.98\times10^{-26}\ \mathrm{kg}\)</span>. <code>[1]</code></li>
+<li><span class="math inline">\(c_{\mathrm{rms}}=\sqrt{3kT/m}\)</span>. <code>[1]</code></li>
+<li><span class="math inline">\(c_{\mathrm{rms}}=497\ \mathrm{m\,s^{-1}}\)</span>. <code>[1]</code></li>
+</ul>
+<p><strong>(c)</strong></p>
+<ul>
+<li>New temperature <span class="math inline">\(T_2=297+72=369\ \mathrm{K}\)</span> and <span class="math inline">\(c_{\mathrm{rms}}\propto\sqrt{T}\)</span>. <code>[1]</code></li>
+<li><span class="math inline">\(c_1/c_2=\sqrt{297/369}=0.897\)</span>. <code>[1]</code></li>
+</ul>
+</details>
+</section>
+<section id="example-10-assumptions-pressure-and-an-r.m.s.-calculation-15.2-sq-medium-q4" class="level3 question-card">
+<h3 class="anchored" data-anchor-id="example-10-assumptions-pressure-and-an-r.m.s.-calculation-15.2-sq-medium-q4">Example 10 · Assumptions, pressure and an r.m.s. calculation · 15.2 SQ Medium Q4</h3>
+<p><strong>(a)</strong> State two assumptions of the simple kinetic model of a gas. <code>[2 marks]</code></p>
+<p><strong>(b)</strong> Use the kinetic model of gases and Newton’s laws of motion to explain how a gas exerts a pressure on the sides of its container. <code>[3 marks]</code></p>
+<p><strong>(c)</strong> In a sample of gas at room temperature, four of the atoms have the following speeds:</p>
+<p><span class="math display">\[1.42\times10^3,\quad1.51\times10^3,\quad1.56\times10^3,\quad1.54\times10^3\ \mathrm{m\,s^{-1}}.\]</span></p>
+<p>For these four atoms, calculate the r.m.s. speed to three significant figures. <code>[4 marks]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<p><strong>(a)</strong> Any two:</p>
+<ul>
+<li>molecules move randomly; <code>[1]</code></li>
+<li>collisions are elastic; <code>[1]</code></li>
+<li>there are no intermolecular forces; <code>[1]</code></li>
+<li>collision time is negligible; <code>[1]</code></li>
+<li>molecular volume is negligible compared with container volume; <code>[1]</code></li>
+<li>the gas contains a very large number of molecules. <code>[1]</code></li>
+</ul>
+<p><strong>(b)</strong> Any three:</p>
+<ul>
+<li>Molecules collide with the walls. <code>[1]</code></li>
+<li>Their momentum changes, so the walls exert forces on them. <code>[1]</code></li>
+<li>By Newton’s third law, molecules exert equal and opposite forces on the walls. <code>[1]</code></li>
+<li>The average force per unit wall area is the gas pressure. <code>[1]</code></li>
+</ul>
+<p><strong>(c)</strong></p>
+<ul>
+<li><span class="math inline">\(\langle c^2\rangle=[1420^2+1510^2+1560^2+1540^2]/4\)</span>. <code>[1]</code></li>
+<li><span class="math inline">\(\langle c^2\rangle=2.275\times10^6\ \mathrm{m^2\,s^{-2}}\)</span>. <code>[1]</code></li>
+<li>Take the square root. <code>[1]</code></li>
+<li><span class="math inline">\(c_{\mathrm{rms}}=1.51\times10^3\ \mathrm{m\,s^{-1}}\)</span>. <code>[1]</code></li>
+</ul>
+</details>
+</section>
+<section id="example-11-full-derivation-of-the-kinetic-theory-equation-15.2-sq-medium-q5" class="level3 question-card">
+<h3 class="anchored" data-anchor-id="example-11-full-derivation-of-the-kinetic-theory-equation-15.2-sq-medium-q5">Example 11 · Full derivation of the kinetic-theory equation · 15.2 SQ Medium Q5</h3>
+<p>A single molecule is in a cube-shaped box with sides of equal length <span class="math inline">\(l\)</span>, as shown in Fig. 1.1.</p>
+<p><img src="../assets/questions/ideal-gases/molecule-in-cube.webp" class="question-figure img-fluid" alt="Molecule moving at speed c in a cube of side l"></p>
+<p>The molecule has a mass <span class="math inline">\(m\)</span> and moves with a speed <span class="math inline">\(c\)</span> parallel to one side of the box. It collides at regular intervals with the ends of the box, exerting a force and contributing to the pressure of the gas.</p>
+<p>The collisions the particle has with the container walls are elastic.</p>
+<p><strong>(a)</strong> Determine an expression for the change in momentum of the molecule as it hits a wall perpendicularly. <code>[1 mark]</code></p>
+<p><strong>(b)</strong></p>
+<p><strong>(i)</strong> Show that the time between collisions of the molecule on the container wall is given by</p>
+<p><span class="math display">\[\text{time between collisions}=\frac{2l}{c}.\]</span> <code>[2 marks]</code></p>
+<p><strong>(ii)</strong> Determine an expression for the change in momentum per second. <code>[2 marks]</code></p>
+<p><strong>(c)</strong> Consider <span class="math inline">\(N\)</span> molecules identical to the single molecule in parts <strong>(a)</strong> and <strong>(b)</strong> in the same cube-shaped box.</p>
+<p>Each molecule has a different velocity that contributes to the pressure.</p>
+<p>Calculate the total pressure from the <span class="math inline">\(N\)</span> particles in the box. <code>[4 marks]</code></p>
+<p><strong>(d)</strong> Hence, show that the kinetic theory of gases equation is</p>
+<p><span class="math display">\[pV=\frac13Nm\langle c^2\rangle.\]</span> <code>[3 marks]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<p><strong>(a)</strong></p>
+<ul>
+<li><span class="math inline">\(\Delta p=-mc-(+mc)=-2mc\)</span>; magnitude <span class="math inline">\(2mc\)</span>. <code>[1]</code></li>
+</ul>
+<p><strong>(b)</strong></p>
+<ul>
+<li><strong>(i)</strong> The molecule travels from one wall to the opposite wall and back, a distance <span class="math inline">\(2l\)</span>. <code>[1]</code></li>
+<li>Therefore <span class="math inline">\(\Delta t=2l/c\)</span>. <code>[1]</code></li>
+<li><strong>(ii)</strong> <span class="math inline">\(\Delta p/\Delta t=(2mc)/(2l/c)=mc^2/l\)</span>. <code>[2]</code></li>
+</ul>
+<p><strong>(c)</strong></p>
+<ul>
+<li>The area of one wall is <span class="math inline">\(l^2\)</span>. <code>[1]</code></li>
+<li>For one molecule, <span class="math inline">\(p=F/A=(mc^2/l)/l^2=mc^2/l^3\)</span>. <code>[1]</code></li>
+<li>For <span class="math inline">\(N\)</span> molecules, sum their contributions. <code>[1]</code></li>
+<li><span class="math inline">\(p=Nm\langle c_x^2\rangle/l^3\)</span>. <code>[1]</code></li>
+</ul>
+<p><strong>(d)</strong></p>
+<ul>
+<li>In random three-dimensional motion, <span class="math inline">\(\langle c_x^2\rangle=\tfrac13\langle c^2\rangle\)</span>. <code>[1]</code></li>
+<li>The cube volume is <span class="math inline">\(V=l^3\)</span>. <code>[1]</code></li>
+<li>Hence <span class="math inline">\(p=(1/3)Nm\langle c^2\rangle/V\)</span>, so <span class="math inline">\(pV=\tfrac13Nm\langle c^2\rangle\)</span>. <code>[1]</code></li>
+</ul>
+</details>
+</section>
+<section id="kinetic-theory---hard" class="level3">
+<h3 class="anchored" data-anchor-id="kinetic-theory---hard">15.2 Kinetic Theory - Hard</h3>
+</section>
+<section id="example-12-collisions-a-gas-collimator-and-propane-15.2-sq-hard-q2" class="level3 question-card">
+<h3 class="anchored" data-anchor-id="example-12-collisions-a-gas-collimator-and-propane-15.2-sq-hard-q2">Example 12 · Collisions, a gas collimator and propane · 15.2 SQ Hard Q2</h3>
+<p><strong>(a)</strong> The kinetic theory of gases assumes that collisions between particles and between particles and the walls of their container are perfectly elastic.</p>
+<p><strong>(i)</strong> Describe what is meant by a perfectly elastic collision. <code>[1 mark]</code></p>
+<p><strong>(ii)</strong> Describe the nature of the forces between the molecules. <code>[1 mark]</code></p>
+<p><strong>(iii)</strong> Describe, with a reason, the type of speed of the molecules considered in the kinetic theory. <code>[2 marks]</code></p>
+<p><strong>(b)</strong> A gas collimator is used to measure the average velocity of particles in a gas.</p>
+<p>The collimator in Fig. 1.1 controls the pressure and the volume and it maintains a gas at a constant temperature.</p>
+<p><img src="../assets/questions/ideal-gases/gas-collimator.webp" class="question-figure img-fluid" alt="Gas collimator with two narrow apertures producing a particle beam"></p>
+<p>Explain why two narrow apertures are required in the collimator to measure the velocity of the particles inside. <code>[3 marks]</code></p>
+<p><strong>(c)</strong> A paint manufacturer is measuring the average velocity of a sample of propane particles used to make spray paint. At a temperature of <span class="math inline">\(9\ ^\circ\mathrm{C}\)</span> the propane molecules have a velocity of <span class="math inline">\(399.00\ \mathrm{m\,s^{-1}}\)</span> with an uncertainty of <span class="math inline">\(0.5\%\)</span>.</p>
+<p>Propane has a molecular mass of <span class="math inline">\(44.097\ \mathrm{g\,mol^{-1}}\)</span>.</p>
+<p>Determine whether the propane sample behaves as an ideal gas. <code>[6 marks]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<p><strong>(a)</strong></p>
+<ul>
+<li><strong>(i)</strong> Kinetic energy is conserved in a perfectly elastic collision. <code>[1]</code></li>
+<li><strong>(ii)</strong> There are no forces of attraction or repulsion between molecules except during collision. <code>[1]</code></li>
+<li><strong>(iii)</strong> The average or r.m.s. speed is considered because the sample contains a very large number of molecules moving randomly. <code>[2]</code></li>
+</ul>
+<p><strong>(b)</strong></p>
+<ul>
+<li>Gas particles move continuously in random directions. <code>[1]</code></li>
+<li>Two apertures select particles travelling along the direction of the beam. <code>[1]</code></li>
+<li>This prevents transverse motion from introducing an error into the measured velocity. <code>[1]</code></li>
+</ul>
+<p><strong>(c)</strong></p>
+<ul>
+<li>Convert molar mass: <span class="math inline">\(M=44.097\times10^{-3}\ \mathrm{kg\,mol^{-1}}\)</span>. <code>[1]</code></li>
+<li>Mass of one molecule <span class="math inline">\(m=M/N_A=7.33\times10^{-26}\ \mathrm{kg}\)</span>. <code>[1]</code></li>
+<li>Convert temperature: <span class="math inline">\(T=9+273.15=282.15\ \mathrm{K}\)</span>. <code>[1]</code></li>
+<li>For an ideal gas, <span class="math inline">\(c_{\mathrm{rms}}=\sqrt{3kT/m}\)</span>. <code>[1]</code></li>
+<li><span class="math inline">\(c_{\mathrm{rms}}=399.20\ \mathrm{m\,s^{-1}}\)</span>, differing from the measured value by about <span class="math inline">\(0.05\%\)</span>. <code>[1]</code></li>
+<li>This is within the stated <span class="math inline">\(0.5\%\)</span> uncertainty, so the sample is consistent with ideal-gas behaviour. <code>[1]</code></li>
+</ul>
+</details>
+</section>
+</section>
+<section id="chapter-self-check" class="level2">
+<h2 class="anchored" data-anchor-id="chapter-self-check">Chapter self-check</h2>
+<ul>
+<li>Can you move between mass, moles and number of particles without mixing units?</li>
+<li>Do you always convert absolute temperature to kelvin before using a gas equation?</li>
+<li>Can you choose between <span class="math inline">\(pV=nRT\)</span> and <span class="math inline">\(pV=NkT\)</span> from the given data?</li>
+<li>Can you state all kinetic-theory assumptions precisely?</li>
+<li>Can you explain pressure using momentum change and Newton’s laws?</li>
+<li>Can you distinguish mean speed, mean-square speed and r.m.s. speed?</li>
+<li>Can you reproduce the main steps leading to <span class="math inline">\(pV=\tfrac13Nm\langle c^2\rangle\)</span> and <span class="math inline">\(\langle E_k\rangle=\tfrac32kT\)</span>?</li>
+</ul>
+<section id="original-topic-pdfs" class="level3">
+<h3 class="anchored" data-anchor-id="original-topic-pdfs">Original topic PDFs</h3>
+<ul>
+<li><a href="../resources/original-papers/ideal-gases/15.1 Ideal Gas Law - Easy.pdf.pdf">15.1 Ideal Gas Law - Easy</a></li>
+<li><a href="../resources/original-papers/ideal-gases/15.1 Ideal Gas Law - Medium.pdf.pdf">15.1 Ideal Gas Law - Medium</a></li>
+<li><a href="../resources/original-papers/ideal-gases/15.1 Ideal Gas Law - Hard.pdf.pdf">15.1 Ideal Gas Law - Hard</a></li>
+<li><a href="../resources/original-papers/ideal-gases/15.2 Kinetic Theory - Easy.pdf.pdf">15.2 Kinetic Theory - Easy</a></li>
+<li><a href="../resources/original-papers/ideal-gases/15.2 Kinetic Theory - Medium.pdf.pdf">15.2 Kinetic Theory - Medium</a></li>
+<li><a href="../resources/original-papers/ideal-gases/15.2 Kinetic Theory - Hard.pdf.pdf">15.2 Kinetic Theory - Hard</a></li>
+</ul>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll(".done-toggle input").forEach((input) => {
+    const key = `cie-physics-${input.dataset.progress}`;
+    input.checked = localStorage.getItem(key) === "true";
+    input.closest(".question-card")?.classList.toggle("is-complete", input.checked);
+    input.addEventListener("change", () => {
+      localStorage.setItem(key, input.checked);
+      input.closest(".question-card")?.classList.toggle("is-complete", input.checked);
+    });
+  });
+
+  document.querySelectorAll(".mc-question").forEach((card) => {
+    const answer = card.dataset.answer;
+    const feedback = card.querySelector(".mc-feedback");
+    const check = card.querySelector(".check-answer");
+    let selected = localStorage.getItem(`cie-physics-${card.id}-choice`) || "";
+
+    const showSelection = () => {
+      card.querySelectorAll(".mc-choice").forEach((choice) => {
+        choice.classList.toggle("is-selected", choice.dataset.choice === selected);
+      });
+    };
+    showSelection();
+
+    card.querySelectorAll(".mc-choice").forEach((choice) => {
+      choice.addEventListener("click", () => {
+        selected = choice.dataset.choice;
+        localStorage.setItem(`cie-physics-${card.id}-choice`, selected);
+        feedback.textContent = "";
+        feedback.className = "mc-feedback";
+        showSelection();
+      });
+    });
+
+    check?.addEventListener("click", () => {
+      if (!selected) {
+        feedback.textContent = "Select an answer first.";
+        feedback.className = "mc-feedback is-pending";
+        return;
+      }
+      const correct = selected === answer;
+      feedback.textContent = correct ? "Correct." : `Not quite. The correct answer is ${answer}.`;
+      feedback.className = `mc-feedback ${correct ? "is-correct" : "is-incorrect"}`;
+    });
+  });
+});
+</script>
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "已复制");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "已复制");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../a-level/14-temperature.html" class="pagination-link" aria-label="14 Temperature">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">14 Temperature</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../a-level/16-thermodynamics.html" class="pagination-link" aria-label="16 Thermodynamics">
+        <span class="nav-page-text">16 Thermodynamics</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>

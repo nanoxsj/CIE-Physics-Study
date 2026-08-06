@@ -1,0 +1,1617 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-Hans" xml:lang="zh-Hans"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.38">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>13 Gravitational fields – CIE Physics 9702</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../a-level/14-temperature.html" rel="next">
+<link href="../a-level/12-motion-in-a-circle.html" rel="prev">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-a2a938b4dd5711f7a799c87bd16ba44c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "没有结果",
+    "search-matching-documents-text": "匹配的文档",
+    "search-copy-link-title": "复制搜索链接",
+    "search-hide-matches-text": "隐藏其它匹配结果",
+    "search-more-match-text": "更多匹配结果",
+    "search-more-matches-text": "更多匹配结果",
+    "search-clear-button-title": "清除",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "取消",
+    "search-submit-button-title": "提交",
+    "search-label": "搜索"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../styles.css">
+</head>
+
+<body class="nav-sidebar docked quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="展开或折叠侧边栏导航" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../a-level/12-motion-in-a-circle.html">A Level</a></li><li class="breadcrumb-item"><a href="../a-level/13-gravitational-fields.html">13 Gravitational fields</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="展开或折叠侧边栏导航" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="搜索" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">CIE Physics 9702</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="搜索"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">学习首页</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">AS Level</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="展开或折叠此栏">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../as-level/01-physical-quantities-and-units.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">1 Physical quantities and units</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../as-level/02-kinematics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2 Kinematics</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../as-level/03-dynamics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">3 Dynamics</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">A Level</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="展开或折叠此栏">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/12-motion-in-a-circle.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">12 Motion in a circle</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/13-gravitational-fields.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">13 Gravitational fields</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/14-temperature.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">14 Temperature</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/15-ideal-gases.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">15 Ideal gases</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/16-thermodynamics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">16 Thermodynamics</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/17-oscillations.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">17 Oscillations</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/18-electric-fields.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">18 Electric fields</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/19-capacitance.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">19 Capacitance</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/20-magnetic-fields.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">20 Magnetic fields</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/21-alternating-currents.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">21 Alternating currents</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/22-quantum-physics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">22 Quantum physics</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/23-nuclear-physics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">23 Nuclear physics</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/24-medical-physics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">24 Medical physics</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/25-astronomy-and-cosmology.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">25 Astronomy and cosmology</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">该页面内容</h2>
+   
+  <ul>
+  <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link active" data-scroll-target="#learning-objectives">Learning objectives</a></li>
+  <li><a href="#gravitational-fields-and-field-strength" id="toc-gravitational-fields-and-field-strength" class="nav-link" data-scroll-target="#gravitational-fields-and-field-strength">13.1 Gravitational fields and field strength</a>
+  <ul class="collapse">
+  <li><a href="#gravitational-field" id="toc-gravitational-field" class="nav-link" data-scroll-target="#gravitational-field">Gravitational field</a></li>
+  <li><a href="#gravitational-field-lines" id="toc-gravitational-field-lines" class="nav-link" data-scroll-target="#gravitational-field-lines">Gravitational field lines</a></li>
+  </ul></li>
+  <li><a href="#gravitational-force-between-point-masses" id="toc-gravitational-force-between-point-masses" class="nav-link" data-scroll-target="#gravitational-force-between-point-masses">13.2 Gravitational force between point masses</a>
+  <ul class="collapse">
+  <li><a href="#newtons-law-of-gravitation" id="toc-newtons-law-of-gravitation" class="nav-link" data-scroll-target="#newtons-law-of-gravitation">Newton’s law of gravitation</a></li>
+  <li><a href="#circular-orbits" id="toc-circular-orbits" class="nav-link" data-scroll-target="#circular-orbits">Circular orbits</a></li>
+  <li><a href="#geostationary-orbit" id="toc-geostationary-orbit" class="nav-link" data-scroll-target="#geostationary-orbit">Geostationary orbit</a></li>
+  </ul></li>
+  <li><a href="#gravitational-field-of-a-point-mass" id="toc-gravitational-field-of-a-point-mass" class="nav-link" data-scroll-target="#gravitational-field-of-a-point-mass">13.3 Gravitational field of a point mass</a>
+  <ul class="collapse">
+  <li><a href="#derivation-of-ggmr2" id="toc-derivation-of-ggmr2" class="nav-link" data-scroll-target="#derivation-of-ggmr2">Derivation of <span class="math inline">\(g=GM/r^2\)</span></a></li>
+  <li><a href="#comparing-field-strengths" id="toc-comparing-field-strengths" class="nav-link" data-scroll-target="#comparing-field-strengths">Comparing field strengths</a></li>
+  </ul></li>
+  <li><a href="#gravitational-potential" id="toc-gravitational-potential" class="nav-link" data-scroll-target="#gravitational-potential">13.4 Gravitational potential</a>
+  <ul class="collapse">
+  <li><a href="#potential-and-potential-energy" id="toc-potential-and-potential-energy" class="nav-link" data-scroll-target="#potential-and-potential-energy">Potential and potential energy</a></li>
+  <li><a href="#changes-in-potential-and-energy" id="toc-changes-in-potential-and-energy" class="nav-link" data-scroll-target="#changes-in-potential-and-energy">Changes in potential and energy</a></li>
+  <li><a href="#potential-graphs-and-energy-in-orbit" id="toc-potential-graphs-and-energy-in-orbit" class="nav-link" data-scroll-target="#potential-graphs-and-energy-in-orbit">Potential graphs and energy in orbit</a></li>
+  </ul></li>
+  <li><a href="#structured-questions" id="toc-structured-questions" class="nav-link" data-scroll-target="#structured-questions">Structured Questions</a>
+  <ul class="collapse">
+  <li><a href="#universal-gravitation---easy" id="toc-universal-gravitation---easy" class="nav-link" data-scroll-target="#universal-gravitation---easy">13.1 Universal Gravitation - Easy</a></li>
+  <li><a href="#example-1-gravitational-field-and-saturn-13.1-sq-easy-q1" id="toc-example-1-gravitational-field-and-saturn-13.1-sq-easy-q1" class="nav-link" data-scroll-target="#example-1-gravitational-field-and-saturn-13.1-sq-easy-q1">Example 1 · Gravitational field and Saturn · 13.1 SQ Easy Q1</a></li>
+  <li><a href="#example-2-newtons-law-and-the-earthsun-system-13.1-sq-easy-q2" id="toc-example-2-newtons-law-and-the-earthsun-system-13.1-sq-easy-q2" class="nav-link" data-scroll-target="#example-2-newtons-law-and-the-earthsun-system-13.1-sq-easy-q2">Example 2 · Newton’s law and the Earth–Sun system · 13.1 SQ Easy Q2</a></li>
+  <li><a href="#example-3-geostationary-orbit-and-planetary-mass-13.1-sq-easy-q3" id="toc-example-3-geostationary-orbit-and-planetary-mass-13.1-sq-easy-q3" class="nav-link" data-scroll-target="#example-3-geostationary-orbit-and-planetary-mass-13.1-sq-easy-q3">Example 3 · Geostationary orbit and planetary mass · 13.1 SQ Easy Q3</a></li>
+  <li><a href="#universal-gravitation---medium" id="toc-universal-gravitation---medium" class="nav-link" data-scroll-target="#universal-gravitation---medium">13.1 Universal Gravitation - Medium</a></li>
+  <li><a href="#example-4-earth-density-from-the-moons-orbit-13.1-sq-medium-q1" id="toc-example-4-earth-density-from-the-moons-orbit-13.1-sq-medium-q1" class="nav-link" data-scroll-target="#example-4-earth-density-from-the-moons-orbit-13.1-sq-medium-q1">Example 4 · Earth density from the Moon’s orbit · 13.1 SQ Medium Q1</a></li>
+  <li><a href="#example-5-gravity-and-rotation-on-olympus-mons-13.1-sq-medium-q2" id="toc-example-5-gravity-and-rotation-on-olympus-mons-13.1-sq-medium-q2" class="nav-link" data-scroll-target="#example-5-gravity-and-rotation-on-olympus-mons-13.1-sq-medium-q2">Example 5 · Gravity and rotation on Olympus Mons · 13.1 SQ Medium Q2</a></li>
+  <li><a href="#example-6-geostationary-orbit-derivation-13.1-sq-medium-q3" id="toc-example-6-geostationary-orbit-derivation-13.1-sq-medium-q3" class="nav-link" data-scroll-target="#example-6-geostationary-orbit-derivation-13.1-sq-medium-q3">Example 6 · Geostationary orbit derivation · 13.1 SQ Medium Q3</a></li>
+  <li><a href="#gravitational-potential---easy" id="toc-gravitational-potential---easy" class="nav-link" data-scroll-target="#gravitational-potential---easy">13.2 Gravitational Potential - Easy</a></li>
+  <li><a href="#example-7-potential-energy-and-objects-near-earth-13.2-sq-easy-q1" id="toc-example-7-potential-energy-and-objects-near-earth-13.2-sq-easy-q1" class="nav-link" data-scroll-target="#example-7-potential-energy-and-objects-near-earth-13.2-sq-easy-q1">Example 7 · Potential, energy and objects near Earth · 13.2 SQ Easy Q1</a></li>
+  <li><a href="#example-8-satellite-potential-energy-around-the-moon-13.2-sq-easy-q2" id="toc-example-8-satellite-potential-energy-around-the-moon-13.2-sq-easy-q2" class="nav-link" data-scroll-target="#example-8-satellite-potential-energy-around-the-moon-13.2-sq-easy-q2">Example 8 · Satellite potential energy around the Moon · 13.2 SQ Easy Q2</a></li>
+  <li><a href="#example-9-potential-difference-and-orbital-radius-13.2-sq-easy-q3" id="toc-example-9-potential-difference-and-orbital-radius-13.2-sq-easy-q3" class="nav-link" data-scroll-target="#example-9-potential-difference-and-orbital-radius-13.2-sq-easy-q3">Example 9 · Potential difference and orbital radius · 13.2 SQ Easy Q3</a></li>
+  <li><a href="#gravitational-potential---medium" id="toc-gravitational-potential---medium" class="nav-link" data-scroll-target="#gravitational-potential---medium">13.2 Gravitational Potential - Medium</a></li>
+  <li><a href="#example-10-potential-graph-and-the-moons-of-mars-13.2-sq-medium-q1" id="toc-example-10-potential-graph-and-the-moons-of-mars-13.2-sq-medium-q1" class="nav-link" data-scroll-target="#example-10-potential-graph-and-the-moons-of-mars-13.2-sq-medium-q1">Example 10 · Potential graph and the moons of Mars · 13.2 SQ Medium Q1</a></li>
+  <li><a href="#example-11-potential-at-two-points-and-a-mercury-rocket-13.2-sq-medium-q2" id="toc-example-11-potential-at-two-points-and-a-mercury-rocket-13.2-sq-medium-q2" class="nav-link" data-scroll-target="#example-11-potential-at-two-points-and-a-mercury-rocket-13.2-sq-medium-q2">Example 11 · Potential at two points and a Mercury rocket · 13.2 SQ Medium Q2</a></li>
+  <li><a href="#example-12-projection-from-the-surface-of-venus-13.2-sq-medium-q3" id="toc-example-12-projection-from-the-surface-of-venus-13.2-sq-medium-q3" class="nav-link" data-scroll-target="#example-12-projection-from-the-surface-of-venus-13.2-sq-medium-q3">Example 12 · Projection from the surface of Venus · 13.2 SQ Medium Q3</a></li>
+  <li><a href="#gravitational-potential---hard" id="toc-gravitational-potential---hard" class="nav-link" data-scroll-target="#gravitational-potential---hard">13.2 Gravitational Potential - Hard</a></li>
+  <li><a href="#example-13-rocket-travelling-from-a-planet-towards-its-moon-13.2-sq-hard-q1" id="toc-example-13-rocket-travelling-from-a-planet-towards-its-moon-13.2-sq-hard-q1" class="nav-link" data-scroll-target="#example-13-rocket-travelling-from-a-planet-towards-its-moon-13.2-sq-hard-q1">Example 13 · Rocket travelling from a planet towards its moon · 13.2 SQ Hard Q1</a></li>
+  <li><a href="#example-14-energy-of-an-earth-satellite-13.2-sq-hard-q2" id="toc-example-14-energy-of-an-earth-satellite-13.2-sq-hard-q2" class="nav-link" data-scroll-target="#example-14-energy-of-an-earth-satellite-13.2-sq-hard-q2">Example 14 · Energy of an Earth satellite · 13.2 SQ Hard Q2</a></li>
+  <li><a href="#example-15-work-done-leaving-the-moon-and-comparing-potentials-13.2-sq-hard-q3" id="toc-example-15-work-done-leaving-the-moon-and-comparing-potentials-13.2-sq-hard-q3" class="nav-link" data-scroll-target="#example-15-work-done-leaving-the-moon-and-comparing-potentials-13.2-sq-hard-q3">Example 15 · Work done leaving the Moon and comparing potentials · 13.2 SQ Hard Q3</a></li>
+  </ul></li>
+  <li><a href="#chapter-self-check" id="toc-chapter-self-check" class="nav-link" data-scroll-target="#chapter-self-check">Chapter self-check</a>
+  <ul class="collapse">
+  <li><a href="#original-topic-pdfs" id="toc-original-topic-pdfs" class="nav-link" data-scroll-target="#original-topic-pdfs">Original topic PDFs</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../a-level/12-motion-in-a-circle.html">A Level</a></li><li class="breadcrumb-item"><a href="../a-level/13-gravitational-fields.html">13 Gravitational fields</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">13 Gravitational fields</h1>
+<p class="subtitle lead">Field strength, Newtonian gravitation, circular orbits and gravitational potential</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="learning-objectives" class="level2">
+<h2 class="anchored" data-anchor-id="learning-objectives">Learning objectives</h2>
+<p>By the end of this chapter, you should be able to:</p>
+<ul>
+<li>understand a gravitational field as a region in which a mass experiences a force;</li>
+<li>define gravitational field strength as force per unit mass and represent fields using field lines;</li>
+<li>use Newton’s law of gravitation for point masses and spherically symmetric bodies;</li>
+<li>analyse circular orbits by equating gravitational force to centripetal force;</li>
+<li>state the defining properties of a geostationary orbit;</li>
+<li>derive and use <span class="math inline">\(g=GM/r^2\)</span>;</li>
+<li>define gravitational potential and use <span class="math inline">\(\phi=-GM/r\)</span>;</li>
+<li>calculate gravitational potential energy using <span class="math inline">\(E_p=m\phi=-GMm/r\)</span>.</li>
+</ul>
+</section>
+<section id="gravitational-fields-and-field-strength" class="level2">
+<h2 class="anchored" data-anchor-id="gravitational-fields-and-field-strength">13.1 Gravitational fields and field strength</h2>
+<section id="gravitational-field" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="gravitational-field">Gravitational field</h3>
+<p>A gravitational field is a region of space in which a mass experiences a gravitational force. Every mass produces a field, and another mass placed in that field experiences an attractive force.</p>
+<p>Gravitational field strength at a point is the gravitational force per unit mass on a small test mass placed at that point:</p>
+<p><span class="math display">\[g=\frac{F}{m}.\]</span></p>
+<p>Its unit is <span class="math inline">\(\mathrm{N\,kg^{-1}}\)</span>. Since <span class="math inline">\(F=ma\)</span>, gravitational field strength is numerically equal to the acceleration of free fall, so <span class="math inline">\(\mathrm{N\,kg^{-1}}\)</span> is equivalent to <span class="math inline">\(\mathrm{m\,s^{-2}}\)</span>.</p>
+</section>
+<section id="gravitational-field-lines" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="gravitational-field-lines">Gravitational field lines</h3>
+<p>Field lines show the direction of the force on a small positive test mass:</p>
+<ul>
+<li>arrows point towards the mass because gravity is attractive;</li>
+<li>around an isolated spherical mass, the lines are radial;</li>
+<li>closer line spacing represents greater field strength;</li>
+<li>field lines never cross, because the field has only one direction at any point.</li>
+</ul>
+<p>Far from a spherical body, the field becomes weaker because the same influence is spread over a larger spherical area.</p>
+</section>
+</section>
+<section id="gravitational-force-between-point-masses" class="level2">
+<h2 class="anchored" data-anchor-id="gravitational-force-between-point-masses">13.2 Gravitational force between point masses</h2>
+<section id="newtons-law-of-gravitation" class="level3 formula-panel">
+<h3 class="anchored" data-anchor-id="newtons-law-of-gravitation">Newton’s law of gravitation</h3>
+<p>Two point masses <span class="math inline">\(m_1\)</span> and <span class="math inline">\(m_2\)</span>, separated by a centre-to-centre distance <span class="math inline">\(r\)</span>, attract each other with force</p>
+<p><span class="math display">\[F=\frac{Gm_1m_2}{r^2},\]</span></p>
+<p>where <span class="math inline">\(G=6.67\times10^{-11}\ \mathrm{N\,m^2\,kg^{-2}}\)</span>.</p>
+<p>The force is proportional to the product of the masses and inversely proportional to the square of their separation. The two bodies exert equal and opposite forces on each other.</p>
+<p>Outside a uniform spherical mass, its gravitational effect is the same as if all its mass were concentrated at its centre. Therefore, <span class="math inline">\(r\)</span> must be measured from centre to centre, not between surfaces.</p>
+</section>
+<section id="circular-orbits" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="circular-orbits">Circular orbits</h3>
+<p>For a mass <span class="math inline">\(m\)</span> in a circular orbit of radius <span class="math inline">\(r\)</span> around a much larger mass <span class="math inline">\(M\)</span>, gravitational attraction provides the centripetal force:</p>
+<p><span class="math display">\[\frac{GMm}{r^2}=\frac{mv^2}{r}=mr\omega^2.\]</span></p>
+<p>This gives</p>
+<p><span class="math display">\[v=\sqrt{\frac{GM}{r}},\qquad \omega=\sqrt{\frac{GM}{r^3}},\]</span></p>
+<p>and, using <span class="math inline">\(\omega=2\pi/T\)</span>,</p>
+<p><span class="math display">\[T^2=\frac{4\pi^2r^3}{GM}.\]</span></p>
+<p>The orbiting mass cancels: at a given orbital radius, the speed and period do not depend on the satellite’s mass.</p>
+</section>
+<section id="geostationary-orbit" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="geostationary-orbit">Geostationary orbit</h3>
+<p>A geostationary satellite remains above the same point on Earth’s surface. Its orbit must:</p>
+<ul>
+<li>lie in the equatorial plane;</li>
+<li>be circular;</li>
+<li>travel from west to east, in the same direction as Earth’s rotation;</li>
+<li>have a period of approximately 24 hours.</li>
+</ul>
+<p>These conditions fix one orbital radius. A geostationary satellite is useful for communications because a ground antenna can remain pointed in one direction.</p>
+</section>
+</section>
+<section id="gravitational-field-of-a-point-mass" class="level2">
+<h2 class="anchored" data-anchor-id="gravitational-field-of-a-point-mass">13.3 Gravitational field of a point mass</h2>
+<section id="derivation-of-ggmr2" class="level3 formula-panel">
+<h3 class="anchored" data-anchor-id="derivation-of-ggmr2">Derivation of <span class="math inline">\(g=GM/r^2\)</span></h3>
+<p>Place a small test mass <span class="math inline">\(m\)</span> at distance <span class="math inline">\(r\)</span> from a point mass <span class="math inline">\(M\)</span>. Newton’s law gives</p>
+<p><span class="math display">\[F=\frac{GMm}{r^2}.\]</span></p>
+<p>Using <span class="math inline">\(g=F/m\)</span>:</p>
+<p><span class="math display">\[g=\frac{GM}{r^2}.\]</span></p>
+<p>The equation also applies outside a uniform sphere. It shows that <span class="math inline">\(g\propto1/r^2\)</span>. Near Earth’s surface, a small change in height is tiny compared with Earth’s radius, so <span class="math inline">\(r\)</span> changes by only a very small fraction and <span class="math inline">\(g\)</span> is approximately constant.</p>
+</section>
+<section id="comparing-field-strengths" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="comparing-field-strengths">Comparing field strengths</h3>
+<p>At altitude <span class="math inline">\(h\)</span> above a spherical body of radius <span class="math inline">\(R\)</span>, the distance from its centre is <span class="math inline">\(r=R+h\)</span>, so</p>
+<p><span class="math display">\[g_h=\frac{GM}{(R+h)^2}.\]</span></p>
+<p>Comparing this with the surface value <span class="math inline">\(g_0=GM/R^2\)</span> gives</p>
+<p><span class="math display">\[\frac{g_h}{g_0}=\left(\frac{R}{R+h}\right)^2.\]</span></p>
+<p>This ratio method often avoids calculating <span class="math inline">\(G\)</span> or <span class="math inline">\(M\)</span>. Always distinguish altitude <span class="math inline">\(h\)</span> from radial distance <span class="math inline">\(r\)</span>.</p>
+</section>
+</section>
+<section id="gravitational-potential" class="level2">
+<h2 class="anchored" data-anchor-id="gravitational-potential">13.4 Gravitational potential</h2>
+<section id="potential-and-potential-energy" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="potential-and-potential-energy">Potential and potential energy</h3>
+<p>Gravitational potential <span class="math inline">\(\phi\)</span> at a point is the work done per unit mass in bringing a small test mass from infinity to that point. Its unit is <span class="math inline">\(\mathrm{J\,kg^{-1}}\)</span>.</p>
+<p>For an isolated point mass or a uniform sphere,</p>
+<p><span class="math display">\[\phi=-\frac{GM}{r}.\]</span></p>
+<p>The potential is defined as zero at infinity. It is negative at every finite distance because gravity is attractive: energy must be supplied to move a mass from the field to infinity.</p>
+<p>The gravitational potential energy of a mass <span class="math inline">\(m\)</span> is</p>
+<p><span class="math display">\[E_p=m\phi=-\frac{GMm}{r}.\]</span></p>
+<p>Potential is a property of the field and does not depend on the test mass; potential energy does depend on it.</p>
+</section>
+<section id="changes-in-potential-and-energy" class="level3 formula-panel">
+<h3 class="anchored" data-anchor-id="changes-in-potential-and-energy">Changes in potential and energy</h3>
+<p>Moving from <span class="math inline">\(r_1\)</span> to <span class="math inline">\(r_2\)</span> gives</p>
+<p><span class="math display">\[\Delta\phi=\phi_2-\phi_1=GM\left(\frac{1}{r_1}-\frac{1}{r_2}\right),\]</span></p>
+<p><span class="math display">\[\Delta E_p=m\Delta\phi=GMm\left(\frac{1}{r_1}-\frac{1}{r_2}\right).\]</span></p>
+<p>Moving away from a mass makes <span class="math inline">\(\phi\)</span> and <span class="math inline">\(E_p\)</span> less negative, so both increase. Moving inward makes them more negative, so the field does positive work.</p>
+<p>The approximation <span class="math inline">\(\Delta E_p=mg\Delta h\)</span> is valid only when <span class="math inline">\(g\)</span> is approximately constant. For large changes in height, use the inverse-distance expression.</p>
+</section>
+<section id="potential-graphs-and-energy-in-orbit" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="potential-graphs-and-energy-in-orbit">Potential graphs and energy in orbit</h3>
+<p>For one point mass, the <span class="math inline">\(\phi\)</span>–<span class="math inline">\(r\)</span> graph is a negative curve approaching zero asymptotically as <span class="math inline">\(r\to\infty\)</span>. Its gradient is the gravitational field strength with sign convention included:</p>
+<p><span class="math display">\[g=-\frac{d\phi}{dr}.\]</span></p>
+<p>For several masses, potentials add algebraically because potential is a scalar.</p>
+<p>For a circular orbit,</p>
+<p><span class="math display">\[E_k=\frac{GMm}{2r},\qquad E_p=-\frac{GMm}{r},\]</span></p>
+<p>so the total energy is</p>
+<p><span class="math display">\[E=E_k+E_p=-\frac{GMm}{2r}.\]</span></p>
+<p>A bound orbit has negative total energy. Supplying energy moves a satellite to a larger orbit, where its total energy is less negative even though its orbital speed is lower.</p>
+</section>
+</section>
+<section id="structured-questions" class="level2">
+<h2 class="anchored" data-anchor-id="structured-questions">Structured Questions</h2>
+<section id="universal-gravitation---easy" class="level3">
+<h3 class="anchored" data-anchor-id="universal-gravitation---easy">13.1 Universal Gravitation - Easy</h3>
+</section>
+<section id="example-1-gravitational-field-and-saturn-13.1-sq-easy-q1" class="level3 question-card">
+<h3 class="anchored" data-anchor-id="example-1-gravitational-field-and-saturn-13.1-sq-easy-q1">Example 1 · Gravitational field and Saturn · 13.1 SQ Easy Q1</h3>
+<p><strong>(a)</strong> Planets create large gravitational fields.</p>
+<p>State what is meant by a gravitational field. <code>[2 marks]</code></p>
+<p><strong>(b)</strong> The Earth has a larger gravitational field strength than the moon.</p>
+<p>State what is meant by gravitational field strength. <code>[1 mark]</code></p>
+<p><strong>(c)</strong> Saturn has a gravitational field strength of <span class="math inline">\(10.5\ \mathrm{N\,kg^{-1}}\)</span> on its surface and a radius of <span class="math inline">\(58\,000\ \mathrm{km}\)</span>.</p>
+<p><strong>(i)</strong> State the acceleration due to gravity of an object on Saturn. <code>[1 mark]</code></p>
+<p><strong>(ii)</strong> Calculate the mass of Saturn. <code>[3 marks]</code></p>
+<p><strong>(d)</strong> Fig. 1.1 represents Saturn as an isolated uniform sphere.</p>
+<p><img src="../assets/questions/gravitational-fields/saturn-field-blank.webp" class="question-figure img-fluid" alt="Blank circular outline representing Saturn"></p>
+<p>Sketch the lines to represent the gravitational field outside the sphere. <code>[2 marks]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<p><strong>(a)</strong></p>
+<ul>
+<li>A region, area or volume of space <code>[1]</code></li>
+<li>in which a mass experiences a force. <code>[1]</code></li>
+</ul>
+<p><strong>(b)</strong></p>
+<ul>
+<li>The force per unit mass on an object. <code>[1]</code></li>
+</ul>
+<p><strong>(c)</strong></p>
+<ul>
+<li><strong>(i)</strong> <span class="math inline">\(10.5\ \mathrm{m\,s^{-2}}\)</span>. <code>[1]</code></li>
+<li><strong>(ii)</strong> Use <span class="math inline">\(g=GM/r^2\)</span>, so <span class="math inline">\(M=gr^2/G\)</span>. <code>[1]</code></li>
+<li><span class="math inline">\(M=10.5(58\,000\times10^3)^2/(6.67\times10^{-11})\)</span>. <code>[1]</code></li>
+<li><span class="math inline">\(M=5.3\times10^{26}\ \mathrm{kg}\)</span>. <code>[1]</code></li>
+</ul>
+<p><strong>(d)</strong></p>
+<ul>
+<li>Draw radial lines around the sphere. <code>[1]</code></li>
+<li>Put arrows on the lines pointing towards the centre. <code>[1]</code></li>
+</ul>
+</details>
+</section>
+<section id="example-2-newtons-law-and-the-earthsun-system-13.1-sq-easy-q2" class="level3 question-card">
+<h3 class="anchored" data-anchor-id="example-2-newtons-law-and-the-earthsun-system-13.1-sq-easy-q2">Example 2 · Newton’s law and the Earth–Sun system · 13.1 SQ Easy Q2</h3>
+<p><strong>(a)</strong> State Newton’s law of gravitation. <code>[2 marks]</code></p>
+<p><strong>(b)</strong> Newton’s law of gravitation assumes the masses are point masses.</p>
+<p>The planets in our Solar System and the Sun are not point masses.</p>
+<p>Explain why the law still applies to the planets in our Solar System. <code>[2 marks]</code></p>
+<p><strong>(c)</strong> Explain why <span class="math inline">\(g\)</span> is approximately constant for small changes in height near the Earth’s surface. <code>[1 mark]</code></p>
+<p><strong>(d)</strong> The gravitational force between the Earth and the Sun is <span class="math inline">\(3.52\times10^{22}\ \mathrm{N}\)</span>.</p>
+<p>Calculate the radius of the Earth’s orbit around the Sun.</p>
+<p>Mass of Earth <span class="math inline">\(=6.0\times10^{24}\ \mathrm{kg}\)</span></p>
+<p>Mass of Sun <span class="math inline">\(=2.0\times10^{30}\ \mathrm{kg}\)</span> <code>[3 marks]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<p><strong>(a)</strong></p>
+<ul>
+<li>The gravitational force is proportional to the product of the two masses. <code>[1]</code></li>
+<li>It is inversely proportional to the square of their separation. <code>[1]</code></li>
+</ul>
+<p><strong>(b)</strong></p>
+<ul>
+<li>The planets orbit the Sun and may be treated as spherically symmetric bodies. <code>[1]</code></li>
+<li>Their separations are much greater than the radii of the Sun and planets, so each body’s mass may be treated as concentrated at its centre. <code>[1]</code></li>
+</ul>
+<p><strong>(c)</strong></p>
+<ul>
+<li>A small change in height is much smaller than Earth’s radius, so the centre-to-centre distance changes negligibly. <code>[1]</code></li>
+</ul>
+<p><strong>(d)</strong></p>
+<ul>
+<li>From <span class="math inline">\(F=Gm_1m_2/r^2\)</span>, <span class="math inline">\(r=\sqrt{Gm_1m_2/F}\)</span>. <code>[1]</code></li>
+<li><span class="math inline">\(r=\sqrt{(6.67\times10^{-11})(6.0\times10^{24})(2.0\times10^{30})/(3.52\times10^{22})}\)</span>. <code>[1]</code></li>
+<li><span class="math inline">\(r=1.5\times10^{11}\ \mathrm{m}\)</span>. <code>[1]</code></li>
+</ul>
+</details>
+</section>
+<section id="example-3-geostationary-orbit-and-planetary-mass-13.1-sq-easy-q3" class="level3 question-card">
+<h3 class="anchored" data-anchor-id="example-3-geostationary-orbit-and-planetary-mass-13.1-sq-easy-q3">Example 3 · Geostationary orbit and planetary mass · 13.1 SQ Easy Q3</h3>
+<p><strong>(a)</strong> Explain what is meant by a geostationary orbit. <code>[3 marks]</code></p>
+<p><strong>(b)</strong> A satellite of mass <span class="math inline">\(m\)</span> is in a circular orbit around a planet of mass <span class="math inline">\(M\)</span> with linear speed <span class="math inline">\(v\)</span>.</p>
+<p>Show that <span class="math inline">\(M\)</span> is given by the expression</p>
+<p><span class="math display">\[M=\frac{v^2r}{G}.\]</span> <code>[2 marks]</code></p>
+<p><strong>(c)</strong> Show that the mass <span class="math inline">\(M\)</span> can also be written in terms of the time period of the satellite <span class="math inline">\(T\)</span> as</p>
+<p><span class="math display">\[M=\frac{4\pi^2r^3}{T^2G}.\]</span> <code>[2 marks]</code></p>
+<p><strong>(d)</strong> Calculate the radius of a geostationary orbit around Earth.</p>
+<p>Mass of Earth <span class="math inline">\(=6.0\times10^{24}\ \mathrm{kg}\)</span> <code>[4 marks]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<p><strong>(a)</strong></p>
+<ul>
+<li>The orbit is in the equatorial plane. <code>[1]</code></li>
+<li>The satellite travels west to east, in the same direction as Earth’s rotation. <code>[1]</code></li>
+<li>Its period is 24 hours, so it remains above the same point on Earth. <code>[1]</code></li>
+</ul>
+<p><strong>(b)</strong></p>
+<ul>
+<li>Equate gravitational and centripetal forces: <span class="math inline">\(GMm/r^2=mv^2/r\)</span>. <code>[1]</code></li>
+<li>Cancel <span class="math inline">\(m\)</span> and rearrange to obtain <span class="math inline">\(M=v^2r/G\)</span>. <code>[1]</code></li>
+</ul>
+<p><strong>(c)</strong></p>
+<ul>
+<li>Use <span class="math inline">\(v=2\pi r/T\)</span>. <code>[1]</code></li>
+<li>Substitution into <span class="math inline">\(M=v^2r/G\)</span> gives <span class="math inline">\(M=4\pi^2r^3/(T^2G)\)</span>. <code>[1]</code></li>
+</ul>
+<p><strong>(d)</strong></p>
+<ul>
+<li><span class="math inline">\(T=24\times60\times60=86\,400\ \mathrm{s}\)</span>. <code>[1]</code></li>
+<li>Rearrange: <span class="math inline">\(r^3=GMT^2/(4\pi^2)\)</span>. <code>[1]</code></li>
+<li>Substitute <span class="math inline">\(G=6.67\times10^{-11}\ \mathrm{N\,m^2\,kg^{-2}}\)</span> and <span class="math inline">\(M=6.0\times10^{24}\ \mathrm{kg}\)</span>. <code>[1]</code></li>
+<li><span class="math inline">\(r=4.2\times10^7\ \mathrm{m}\)</span>. <code>[1]</code></li>
+</ul>
+</details>
+</section>
+<section id="universal-gravitation---medium" class="level3">
+<h3 class="anchored" data-anchor-id="universal-gravitation---medium">13.1 Universal Gravitation - Medium</h3>
+</section>
+<section id="example-4-earth-density-from-the-moons-orbit-13.1-sq-medium-q1" class="level3 question-card">
+<h3 class="anchored" data-anchor-id="example-4-earth-density-from-the-moons-orbit-13.1-sq-medium-q1">Example 4 · Earth density from the Moon’s orbit · 13.1 SQ Medium Q1</h3>
+<p><strong>(a)</strong> Explain how the force(s) on a satellite can result in the satellite being in a circular orbit around a planet. <code>[2 marks]</code></p>
+<p><strong>(b)</strong> The Earth and the Moon may be considered to be uniform spheres that are isolated in space. The Earth has mass <span class="math inline">\(M\)</span>, radius <span class="math inline">\(R\)</span> and mean density <span class="math inline">\(\rho\)</span>.</p>
+<p>The Moon, mass <span class="math inline">\(m\)</span>, is in a circular orbit about the Earth with radius <span class="math inline">\(nR\)</span>, as illustrated in Fig. 1.1.</p>
+<p><img src="../assets/questions/gravitational-fields/earth-moon-orbit.webp" class="question-figure img-fluid" alt="Moon of mass m orbiting Earth at radius nR"></p>
+<p>The Moon makes one complete orbit of the Earth in time <span class="math inline">\(T\)</span>.</p>
+<p>Show that the mean density <span class="math inline">\(\rho\)</span> of the Earth is given by the expression</p>
+<p><span class="math display">\[\rho=\frac{3\pi n^3}{GT^2},\]</span></p>
+<p>where <span class="math inline">\(G\)</span> is the gravitational constant. <code>[4 marks]</code></p>
+<p><strong>(c)</strong> The radius <span class="math inline">\(R\)</span> of the Earth is <span class="math inline">\(6.38\times10^6\ \mathrm{m}\)</span> and the distance between the centre of the Earth and the centre of the Moon is <span class="math inline">\(3.84\times10^8\ \mathrm{m}\)</span>.</p>
+<p>The period <span class="math inline">\(T\)</span> of the orbit of the Moon about the Earth is 27.3 days.</p>
+<p>Use the expression in <strong>(b)</strong> to calculate <span class="math inline">\(\rho\)</span>. <code>[3 marks]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<p><strong>(a)</strong></p>
+<ul>
+<li>The gravitational attraction between the satellite and planet acts towards the planet. <code>[1]</code></li>
+<li>This force produces the centripetal acceleration required for a circular orbit. <code>[1]</code></li>
+</ul>
+<p><strong>(b)</strong></p>
+<ul>
+<li>Equate forces: <span class="math inline">\(GMm/(nR)^2=m(2\pi/T)^2(nR)\)</span>. <code>[1]</code></li>
+<li>Rearranging gives <span class="math inline">\(M=4\pi^2n^3R^3/(GT^2)\)</span>. <code>[1]</code></li>
+<li>For Earth, <span class="math inline">\(M=\rho(4\pi R^3/3)\)</span>. <code>[1]</code></li>
+<li>Equating the expressions for <span class="math inline">\(M\)</span> and cancelling gives <span class="math inline">\(\rho=3\pi n^3/(GT^2)\)</span>. <code>[1]</code></li>
+</ul>
+<p><strong>(c)</strong></p>
+<ul>
+<li><span class="math inline">\(n=(3.84\times10^8)/(6.38\times10^6)=60.2\)</span>. <code>[1]</code></li>
+<li><span class="math inline">\(T=27.3\times24\times3600=2.36\times10^6\ \mathrm{s}\)</span>. <code>[1]</code></li>
+<li><span class="math inline">\(\rho=3\pi(60.2)^3/[6.67\times10^{-11}(2.36\times10^6)^2]=5.5\times10^3\ \mathrm{kg\,m^{-3}}\)</span>. <code>[1]</code></li>
+</ul>
+</details>
+</section>
+<section id="example-5-gravity-and-rotation-on-olympus-mons-13.1-sq-medium-q2" class="level3 question-card">
+<h3 class="anchored" data-anchor-id="example-5-gravity-and-rotation-on-olympus-mons-13.1-sq-medium-q2">Example 5 · Gravity and rotation on Olympus Mons · 13.1 SQ Medium Q2</h3>
+<p>Mars may be considered to be a uniform sphere of radius <span class="math inline">\(3400\ \mathrm{km}\)</span> with its mass <span class="math inline">\(M\)</span> concentrated at its centre. A stone of mass <span class="math inline">\(3.67\ \mathrm{kg}\)</span> rests on top of Olympus Mons, the largest volcano on Mars, which is <span class="math inline">\(25\ \mathrm{km}\)</span> high.</p>
+<p>The gravitational force on the stone is <span class="math inline">\(13.3\ \mathrm{N}\)</span>.</p>
+<p>Mars spins on its axis with a period of 1 day and 37 mins.</p>
+<p><strong>(a)</strong> Calculate <span class="math inline">\(M\)</span>. <code>[2 marks]</code></p>
+<p><strong>(b)</strong> Determine the force required to maintain the stone in its circular path. <code>[3 marks]</code></p>
+<p><strong>(c)</strong> Derive the equation</p>
+<p><span class="math display">\[g=\frac{GM}{r^2},\]</span></p>
+<p>where <span class="math inline">\(G\)</span> is Newton’s gravitational constant, <span class="math inline">\(M\)</span> is the mass and <span class="math inline">\(r\)</span> is the distance from the mass for the gravitational field strength due to a point mass. <code>[2 marks]</code></p>
+<p><strong>(d)</strong> Olympus Mons is an active volcano.</p>
+<p>Calculate the acceleration due to gravity of the stone if it was thrown upwards to twice the height of Olympus Mons. <code>[2 marks]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<p><strong>(a)</strong></p>
+<ul>
+<li>With <span class="math inline">\(r=(3400+25)\times10^3\ \mathrm{m}\)</span>, use <span class="math inline">\(F=GMm/r^2\)</span>, so <span class="math inline">\(M=Fr^2/(Gm)\)</span>. <code>[1]</code></li>
+<li><span class="math inline">\(M=6.37\times10^{23}\ \mathrm{kg}\)</span>. <code>[1]</code></li>
+</ul>
+<p><strong>(b)</strong></p>
+<ul>
+<li><span class="math inline">\(T=(24\times60\times60)+(37\times60)=88\,620\ \mathrm{s}\)</span>. <code>[1]</code></li>
+<li><span class="math inline">\(F=mr\omega^2=mr(2\pi/T)^2\)</span>. <code>[1]</code></li>
+<li><span class="math inline">\(F=6.3\times10^{-2}\ \mathrm{N}\)</span>. <code>[1]</code></li>
+</ul>
+<p><strong>(c)</strong></p>
+<ul>
+<li>Use <span class="math inline">\(F=GMm/r^2\)</span> and <span class="math inline">\(g=F/m\)</span>. <code>[1]</code></li>
+<li>Therefore <span class="math inline">\(g=GM/r^2\)</span>. <code>[1]</code></li>
+</ul>
+<p><strong>(d)</strong></p>
+<ul>
+<li>At the stated position, use <span class="math inline">\(r=(3400+25+50)\times10^3\ \mathrm{m}\)</span> in <span class="math inline">\(g=GM/r^2\)</span>. <code>[1]</code></li>
+<li><span class="math inline">\(g\approx3.5\ \mathrm{m\,s^{-2}}\)</span>. <code>[1]</code></li>
+</ul>
+</details>
+</section>
+<section id="example-6-geostationary-orbit-derivation-13.1-sq-medium-q3" class="level3 question-card">
+<h3 class="anchored" data-anchor-id="example-6-geostationary-orbit-derivation-13.1-sq-medium-q3">Example 6 · Geostationary orbit derivation · 13.1 SQ Medium Q3</h3>
+<p><strong>(a)</strong> Explain:</p>
+<p><strong>(i)</strong> what is meant by a geostationary orbit; <code>[3 marks]</code></p>
+<p><strong>(ii)</strong> why it is preferable to have a satellite in this orbit for TV and telephone signals. <code>[2 marks]</code></p>
+<p><strong>(b)</strong> A satellite of mass <span class="math inline">\(m\)</span> is in orbit around a planet.</p>
+<p>The mass <span class="math inline">\(M\)</span> of the planet may be considered to be concentrated at its centre.</p>
+<p>Show that the time period <span class="math inline">\(T\)</span> of the orbit of the satellite is given by the expression</p>
+<p><span class="math display">\[T^2=\frac{4\pi^2R^3}{GM},\]</span></p>
+<p>where <span class="math inline">\(R\)</span> is the radius of the orbit of the satellite and <span class="math inline">\(G\)</span> is the gravitational constant.</p>
+<p>Explain your working. <code>[4 marks]</code></p>
+<p><strong>(c)</strong> The radius of a geostationary orbit around Earth is <span class="math inline">\(4.2\times10^7\ \mathrm{m}\)</span>.</p>
+<p>Calculate the mass of the Earth. <code>[2 marks]</code></p>
+<p><strong>(d)</strong> The radius of the Earth is <span class="math inline">\(6400\ \mathrm{km}\)</span>.</p>
+<p>Determine the ratio</p>
+<p><span class="math display">\[\frac{\text{gravitational field strength of satellite on the Earth's surface}}{\text{gravitational field strength of the satellite at the geostationary orbit}}.\]</span> <code>[3 marks]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<p><strong>(a)</strong></p>
+<ul>
+<li><strong>(i)</strong> It is a circular orbit above the equator; the satellite moves in the same direction as Earth’s rotation; and its period is 24 hours. <code>[3]</code></li>
+<li><strong>(ii)</strong> The satellite remains at a fixed position above Earth’s surface, so the receiving antenna does not need to be moved. <code>[2]</code></li>
+</ul>
+<p><strong>(b)</strong></p>
+<ul>
+<li>Gravitational force provides centripetal force. <code>[1]</code></li>
+<li><span class="math inline">\(GMm/R^2=mR\omega^2\)</span>. <code>[1]</code></li>
+<li>Substitute <span class="math inline">\(\omega=2\pi/T\)</span>. <code>[1]</code></li>
+<li>Rearrangement gives <span class="math inline">\(T^2=4\pi^2R^3/(GM)\)</span>. <code>[1]</code></li>
+</ul>
+<p><strong>(c)</strong></p>
+<ul>
+<li><span class="math inline">\(M=4\pi^2R^3/(GT^2)\)</span> with <span class="math inline">\(T=86\,400\ \mathrm{s}\)</span>. <code>[1]</code></li>
+<li><span class="math inline">\(M=5.9\times10^{24}\ \mathrm{kg}\)</span>. <code>[1]</code></li>
+</ul>
+<p><strong>(d)</strong></p>
+<ul>
+<li>Since <span class="math inline">\(g=GM/r^2\)</span>, <span class="math inline">\(g_1/g_2=(r_2/r_1)^2\)</span>. <code>[1]</code></li>
+<li><span class="math inline">\(g_1/g_2=(4.2\times10^7/6.4\times10^6)^2\)</span>. <code>[1]</code></li>
+<li>Ratio <span class="math inline">\(=43\)</span>. <code>[1]</code></li>
+</ul>
+</details>
+</section>
+<section id="gravitational-potential---easy" class="level3">
+<h3 class="anchored" data-anchor-id="gravitational-potential---easy">13.2 Gravitational Potential - Easy</h3>
+</section>
+<section id="example-7-potential-energy-and-objects-near-earth-13.2-sq-easy-q1" class="level3 question-card">
+<h3 class="anchored" data-anchor-id="example-7-potential-energy-and-objects-near-earth-13.2-sq-easy-q1">Example 7 · Potential, energy and objects near Earth · 13.2 SQ Easy Q1</h3>
+<p><strong>(a)</strong> State the physical quantity defined as the energy possessed by an object due to its position in a gravitational field. <code>[1 mark]</code></p>
+<p><strong>(b)</strong> Define gravitational potential at a point. <code>[2 marks]</code></p>
+<p><strong>(c)</strong> Gravitational potential, <span class="math inline">\(\phi\)</span>, is also defined by the equation</p>
+<p><span class="math display">\[\phi=-\frac{GM}{r}.\]</span></p>
+<p><strong>(i)</strong> Identify each quantity in the equation. <code>[3 marks]</code></p>
+<p><strong>(ii)</strong> State the significance of the negative sign in the equation. <code>[2 marks]</code></p>
+<p><strong>(d)</strong> Fig. 1.1 shows a person on the surface of the Earth, a ball falling towards the centre of the Earth and a satellite in orbit around the Earth.</p>
+<p><img src="../assets/questions/gravitational-fields/earth-person-ball-satellite.webp" class="question-figure img-fluid" alt="Person and falling ball near Earth with a satellite in orbit"></p>
+<p>Identify the object which experiences the largest gravitational potential. <code>[1 mark]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<p><strong>(a)</strong></p>
+<ul>
+<li>Gravitational potential energy. <code>[1]</code></li>
+</ul>
+<p><strong>(b)</strong></p>
+<ul>
+<li>The work done per unit mass <code>[1]</code></li>
+<li>in bringing a test mass from infinity to the point. <code>[1]</code></li>
+</ul>
+<p><strong>(c)</strong></p>
+<ul>
+<li><strong>(i)</strong> <span class="math inline">\(G\)</span> is Newton’s gravitational constant; <span class="math inline">\(M\)</span> is the mass producing the field; <span class="math inline">\(r\)</span> is the distance from its centre of mass. <code>[3]</code></li>
+<li><strong>(ii)</strong> The gravitational force is attractive, and the field does work as masses move together, so the potential at a finite distance is below the zero value at infinity. <code>[2]</code></li>
+</ul>
+<p><strong>(d)</strong></p>
+<ul>
+<li>The satellite. <code>[1]</code></li>
+</ul>
+</details>
+</section>
+<section id="example-8-satellite-potential-energy-around-the-moon-13.2-sq-easy-q2" class="level3 question-card">
+<h3 class="anchored" data-anchor-id="example-8-satellite-potential-energy-around-the-moon-13.2-sq-easy-q2">Example 8 · Satellite potential energy around the Moon · 13.2 SQ Easy Q2</h3>
+<p><strong>(a)</strong> Place a tick (<span class="math inline">\(\checkmark\)</span>) next to the equation in Table 1.1 which represents the gravitational potential energy of two point masses <span class="math inline">\(m\)</span> and <span class="math inline">\(M\)</span> separated by a distance <span class="math inline">\(r\)</span>. <code>[1 mark]</code></p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Equation</th>
+<th style="text-align: center;">Tick</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\(\phi=-GM/r\)</span></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(E_p=-GMm/r\)</span></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(E_p=mgh\)</span></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(g=GM/r^2\)</span></td>
+<td style="text-align: center;"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>(b)</strong> The diagram in Fig. 1.2 shows two satellites <span class="math inline">\(m_1\)</span> and <span class="math inline">\(m_2\)</span> in orbit around the moon.</p>
+<p><img src="../assets/questions/gravitational-fields/moon-two-satellites.webp" class="question-figure img-fluid" alt="Two satellites m1 and m2 orbiting the Moon at radii r1 and r2"></p>
+<p>Satellite <span class="math inline">\(m_1\)</span> is in orbit at a distance of <span class="math inline">\(r_1\)</span> from the centre of the moon and satellite <span class="math inline">\(m_2\)</span> is in orbit at a distance of <span class="math inline">\(r_2\)</span> from the centre of the moon.</p>
+<p>State which of the satellites has the higher gravitational potential energy. <code>[1 mark]</code></p>
+<p><strong>(c)</strong> Satellite <span class="math inline">\(m_1\)</span> has a mass of <span class="math inline">\(300\ \mathrm{kg}\)</span> and orbits above the centre of the moon at a radius <span class="math inline">\(r_1\)</span> of <span class="math inline">\(500\ \mathrm{m}\)</span>.</p>
+<p>The mass of the moon is <span class="math inline">\(7\times10^{22}\ \mathrm{kg}\)</span>.</p>
+<p>Calculate the gravitational potential energy of the satellite in this position. Newton’s gravitational constant, <span class="math inline">\(G=6.67\times10^{-11}\ \mathrm{N\,m^2\,kg^{-2}}\)</span>. <code>[2 marks]</code></p>
+<p><strong>(d)</strong> State why the equation for gravitational potential energy in <strong>(a)</strong> has a negative sign and why your answer to <strong>(c)</strong> is negative. <code>[3 marks]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<p><strong>(a)</strong></p>
+<ul>
+<li>Tick <span class="math inline">\(E_p=-GMm/r\)</span>. <code>[1]</code></li>
+</ul>
+<p><strong>(b)</strong></p>
+<ul>
+<li>Satellite <span class="math inline">\(m_2\)</span>. <code>[1]</code></li>
+</ul>
+<p><strong>(c)</strong></p>
+<ul>
+<li><span class="math inline">\(E_p=-(6.67\times10^{-11})(7\times10^{22})(300)/500\)</span>. <code>[1]</code></li>
+<li><span class="math inline">\(E_p=-2.8\times10^{12}\ \mathrm{J}\)</span>. <code>[1]</code></li>
+</ul>
+<p><strong>(d)</strong></p>
+<ul>
+<li>Gravitational potential energy is defined as zero at infinity. <code>[1]</code></li>
+<li>Gravitational forces are attractive. <code>[1]</code></li>
+<li>Potential energy decreases and becomes negative as the masses are brought closer together. <code>[1]</code></li>
+</ul>
+</details>
+</section>
+<section id="example-9-potential-difference-and-orbital-radius-13.2-sq-easy-q3" class="level3 question-card">
+<h3 class="anchored" data-anchor-id="example-9-potential-difference-and-orbital-radius-13.2-sq-easy-q3">Example 9 · Potential difference and orbital radius · 13.2 SQ Easy Q3</h3>
+<p><strong>(a)</strong> Explain why gravitational potential is always negative. <code>[2 marks]</code></p>
+<p><strong>(b)</strong> Fig. 1.1 shows a satellite orbiting Mars, <span class="math inline">\(M\)</span>. The satellite moves from orbit X to orbit Y.</p>
+<p><img src="../assets/questions/gravitational-fields/mars-orbits-x-y.webp" class="question-figure img-fluid" alt="Two circular satellite orbits X and Y around Mars"></p>
+<p>The gravitational potential due to Mars in each of these orbits is:</p>
+<p>Orbit X: <span class="math inline">\(-3.56\ \mathrm{MJ\,kg^{-1}}\)</span></p>
+<p>Orbit Y: <span class="math inline">\(-1.23\ \mathrm{MJ\,kg^{-1}}\)</span></p>
+<p>Calculate the gravitational potential difference as the satellite moves from orbit X to orbit Y. <code>[3 marks]</code></p>
+<p><strong>(c)</strong> The gravitational potential energy at a particular point is given by the equation</p>
+<p><span class="math display">\[E_p=-\frac{GMm}{r}.\]</span></p>
+<p>Define each of the terms in the equation. <code>[4 marks]</code></p>
+<p><strong>(d)</strong> A satellite is in orbit at <span class="math inline">\(2\times10^6\ \mathrm{m}\)</span> above the surface of the Earth. The Earth has a radius of <span class="math inline">\(6.4\times10^6\ \mathrm{m}\)</span>.</p>
+<p>Calculate the orbital radius of the satellite. <code>[3 marks]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<p><strong>(a)</strong></p>
+<ul>
+<li>Gravitational potential is defined as zero at infinity. <code>[1]</code></li>
+<li>Because gravity is attractive, work must be done to move a mass from a finite point to infinity; hence its potential at the finite point is negative. <code>[1]</code></li>
+</ul>
+<p><strong>(b)</strong></p>
+<ul>
+<li><span class="math inline">\(\Delta\phi=\phi_Y-\phi_X\)</span>. <code>[1]</code></li>
+<li><span class="math inline">\(\Delta\phi=(-1.23)-(-3.56)\)</span>. <code>[1]</code></li>
+<li><span class="math inline">\(\Delta\phi=2.33\ \mathrm{MJ\,kg^{-1}}\)</span>. <code>[1]</code></li>
+</ul>
+<p><strong>(c)</strong></p>
+<ul>
+<li><span class="math inline">\(G\)</span> is the gravitational constant. <code>[1]</code></li>
+<li><span class="math inline">\(M\)</span> is the mass producing the gravitational field. <code>[1]</code></li>
+<li><span class="math inline">\(m\)</span> is the mass of the object in the field. <code>[1]</code></li>
+<li><span class="math inline">\(r\)</span> is the distance between the centres of mass. <code>[1]</code></li>
+</ul>
+<p><strong>(d)</strong></p>
+<ul>
+<li>Orbital radius is measured from Earth’s centre. <code>[1]</code></li>
+<li><span class="math inline">\(r=(6.4\times10^6)+(2.0\times10^6)\)</span>. <code>[1]</code></li>
+<li><span class="math inline">\(r=8.4\times10^6\ \mathrm{m}\)</span>. <code>[1]</code></li>
+</ul>
+</details>
+</section>
+<section id="gravitational-potential---medium" class="level3">
+<h3 class="anchored" data-anchor-id="gravitational-potential---medium">13.2 Gravitational Potential - Medium</h3>
+</section>
+<section id="example-10-potential-graph-and-the-moons-of-mars-13.2-sq-medium-q1" class="level3 question-card">
+<h3 class="anchored" data-anchor-id="example-10-potential-graph-and-the-moons-of-mars-13.2-sq-medium-q1">Example 10 · Potential graph and the moons of Mars · 13.2 SQ Medium Q1</h3>
+<p><strong>(a)</strong> Mars is considered to be an isolated sphere of radius <span class="math inline">\(R\)</span> with its mass concentrated at its centre.</p>
+<p>The variation of the gravitational potential <span class="math inline">\(\phi\)</span> with distance <span class="math inline">\(x\)</span> from the centre of Mars is shown in Fig. 1.1.</p>
+<p><img src="../assets/questions/gravitational-fields/mars-potential-graph.webp" class="question-figure img-fluid" alt="Gravitational potential against distance from the centre of Mars"></p>
+<p>Explain why the values for <span class="math inline">\(\phi\)</span> in Fig. 1.1 are negative. <code>[2 marks]</code></p>
+<p><strong>(b)</strong> The radius <span class="math inline">\(R\)</span> of Mars is <span class="math inline">\(3400\ \mathrm{km}\)</span>.</p>
+<p>By considering the gravitational potential at Mars’ surface, determine a value for its mass. <code>[3 marks]</code></p>
+<p><strong>(c)</strong> A meteorite is at rest at infinity. The meteorite travels from infinity towards Mars.</p>
+<p>Calculate the speed of the meteorite when it is at a distance of <span class="math inline">\(3R\)</span> above Mars’ surface. Explain your working. <code>[4 marks]</code></p>
+<p><strong>(d)</strong> Mars has two moons, Phobos and Deimos, as shown in Fig. 1.2.</p>
+<p><img src="../assets/questions/gravitational-fields/mars-moons.webp" class="question-figure img-fluid" alt="Phobos and Deimos in circular orbits around Mars"></p>
+<p>Calculate the work done to move a satellite of <span class="math inline">\(210\ \mathrm{kg}\)</span> from the orbit of Deimos to the orbit of Phobos.</p>
+<p>Orbital radius of Phobos <span class="math inline">\(=9400\ \mathrm{km}\)</span></p>
+<p>Orbital radius of Deimos <span class="math inline">\(=2.3\times10^4\ \mathrm{km}\)</span></p>
+<p>Give your answer in MJ. <code>[3 marks]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<p><strong>(a)</strong></p>
+<ul>
+<li>Gravitational potential is defined as zero at infinity. <code>[1]</code></li>
+<li>Gravity is attractive, so the field does work as a mass moves inwards; the potential at every finite distance is negative. <code>[1]</code></li>
+</ul>
+<p><strong>(b)</strong></p>
+<ul>
+<li>Read <span class="math inline">\(\phi\approx-12.5\ \mathrm{MJ\,kg^{-1}}\)</span> at <span class="math inline">\(x=R\)</span> from the graph. <code>[1]</code></li>
+<li>From <span class="math inline">\(\phi=-GM/R\)</span>, <span class="math inline">\(M=-\phi R/G\)</span>. <code>[1]</code></li>
+<li><span class="math inline">\(M\approx6.4\times10^{23}\ \mathrm{kg}\)</span>. <code>[1]</code></li>
+</ul>
+<p><strong>(c)</strong></p>
+<ul>
+<li>At <span class="math inline">\(3R\)</span> above the surface, the distance from the centre is <span class="math inline">\(4R\)</span>. <code>[1]</code></li>
+<li>From the graph, <span class="math inline">\(\phi(4R)\approx-3.1\ \mathrm{MJ\,kg^{-1}}\)</span>. <code>[1]</code></li>
+<li>Conservation of energy per unit mass gives <span class="math inline">\(\tfrac12v^2+\phi=0\)</span>. <code>[1]</code></li>
+<li><span class="math inline">\(v=\sqrt{-2\phi}\approx2.5\times10^3\ \mathrm{m\,s^{-1}}\)</span>. <code>[1]</code></li>
+</ul>
+<p><strong>(d)</strong></p>
+<ul>
+<li><span class="math inline">\(\Delta E_p=GMm(1/r_D-1/r_P)\)</span>. <code>[1]</code></li>
+<li>Substitute <span class="math inline">\(M=6.4\times10^{23}\ \mathrm{kg}\)</span>, <span class="math inline">\(r_D=2.3\times10^7\ \mathrm{m}\)</span> and <span class="math inline">\(r_P=9.4\times10^6\ \mathrm{m}\)</span>. <code>[1]</code></li>
+<li><span class="math inline">\(\Delta E_p=-5.6\times10^8\ \mathrm{J}=-560\ \mathrm{MJ}\)</span>. <code>[1]</code></li>
+</ul>
+</details>
+</section>
+<section id="example-11-potential-at-two-points-and-a-mercury-rocket-13.2-sq-medium-q2" class="level3 question-card">
+<h3 class="anchored" data-anchor-id="example-11-potential-at-two-points-and-a-mercury-rocket-13.2-sq-medium-q2">Example 11 · Potential at two points and a Mercury rocket · 13.2 SQ Medium Q2</h3>
+<p><strong>(a)</strong> The gravitational potential at a point A above the surface of a planet is <span class="math inline">\(-7.2\ \mathrm{MJ\,kg^{-1}}\)</span>.</p>
+<p>For a point B above the surface of the planet, the gravitational potential is <span class="math inline">\(-9.1\ \mathrm{MJ\,kg^{-1}}\)</span>.</p>
+<p>State, with a reason, whether point A or B is further away from the planet. <code>[2 marks]</code></p>
+<p><strong>(b)</strong> A rocket is landing onto the surface of Mercury.</p>
+<p>Table 1.1 gives data for the speed of the rocket at two heights above the surface of Mercury, after the rocket engine has been switched off.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: right;">height / km</th>
+<th style="text-align: right;">speed / <span class="math inline">\(\mathrm{m\,s^{-1}}\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;"><span class="math inline">\(h_1=15\times10^3\)</span></td>
+<td style="text-align: right;"><span class="math inline">\(v_1=7215\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;"><span class="math inline">\(h_2=3.7\times10^3\)</span></td>
+<td style="text-align: right;"><span class="math inline">\(v_2=7020\)</span></td>
+</tr>
+</tbody>
+</table>
+<p>Mercury may be assumed to be a uniform sphere of radius <span class="math inline">\(R\)</span>, with its mass <span class="math inline">\(M\)</span> concentrated at its centre. The rocket, after the engine has been switched off, has mass <span class="math inline">\(m\)</span>. The change in gravitational potential energy of the rocket between the two heights is <span class="math inline">\(\Delta E_p\)</span>.</p>
+<p>Show that the mass <span class="math inline">\(M\)</span> of Mercury is given by the expression</p>
+<p><span class="math display">\[M=\frac{\Delta E_p}{Gm\left(\dfrac{1}{R+h_1}-\dfrac{1}{R+h_2}\right)}.\]</span> <code>[3 marks]</code></p>
+<p><strong>(c)</strong> Write an expression for the change in kinetic energy of the rocket. <code>[1 mark]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<p><strong>(a)</strong></p>
+<ul>
+<li>Point A is further away. <code>[1]</code></li>
+<li>Potential approaches zero as distance increases, and <span class="math inline">\(-7.2\ \mathrm{MJ\,kg^{-1}}\)</span> is less negative than <span class="math inline">\(-9.1\ \mathrm{MJ\,kg^{-1}}\)</span>. <code>[1]</code></li>
+</ul>
+<p><strong>(b)</strong></p>
+<ul>
+<li>At height <span class="math inline">\(h\)</span>, <span class="math inline">\(E_p=-GMm/(R+h)\)</span>. <code>[1]</code></li>
+<li><span class="math inline">\(\Delta E_p=-GMm/(R+h_2)+GMm/(R+h_1)=GMm[1/(R+h_1)-1/(R+h_2)]\)</span>. <code>[1]</code></li>
+<li>Rearrangement gives the stated expression for <span class="math inline">\(M\)</span>. <code>[1]</code></li>
+</ul>
+<p><strong>(c)</strong></p>
+<ul>
+<li><span class="math inline">\(\Delta E_k=\tfrac12m(v_2^2-v_1^2)\)</span>. <code>[1]</code></li>
+</ul>
+</details>
+</section>
+<section id="example-12-projection-from-the-surface-of-venus-13.2-sq-medium-q3" class="level3 question-card">
+<h3 class="anchored" data-anchor-id="example-12-projection-from-the-surface-of-venus-13.2-sq-medium-q3">Example 12 · Projection from the surface of Venus · 13.2 SQ Medium Q3</h3>
+<p><strong>(a)</strong> Venus may be assumed to be an isolated sphere of radius <span class="math inline">\(6100\ \mathrm{km}\)</span> with its mass, <span class="math inline">\(M\)</span>, at <span class="math inline">\(4.9\times10^{24}\ \mathrm{kg}\)</span> concentrated at its centre.</p>
+<p>An object is projected vertically from the surface of Venus so that it reaches an altitude of <span class="math inline">\(7.2\times10^4\ \mathrm{km}\)</span>.</p>
+<p>Explain why the equation <span class="math inline">\(Mg\Delta h\)</span>, where <span class="math inline">\(g\)</span> is the gravitational field strength of Venus and <span class="math inline">\(\Delta h\)</span> is the height of the object, cannot be used to calculate the object’s gravitational potential energy. <code>[1 mark]</code></p>
+<p><strong>(b)</strong> The change in the gravitational potential of a different object is <span class="math inline">\(4.2\ \mathrm{MJ\,kg^{-1}}\)</span>. This object ends up in orbit around Venus.</p>
+<p>Calculate the radius of orbit of this object. <code>[3 marks]</code></p>
+<p><strong>(c)</strong> Calculate the change in work done per unit mass of the object projected vertically in part <strong>(a)</strong>. <code>[2 marks]</code></p>
+<p><strong>(d)</strong> Show that the initial speed of the object in <strong>(a)</strong> is <span class="math inline">\(1.1\ \mathrm{km\,s^{-1}}\)</span>, assuming air resistance is negligible. <code>[3 marks]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<p><strong>(a)</strong></p>
+<ul>
+<li>The gravitational field strength <span class="math inline">\(g\)</span> is not constant over this change in altitude. <code>[1]</code></li>
+</ul>
+<p><strong>(b)</strong></p>
+<ul>
+<li><span class="math inline">\(\Delta\phi=GM(1/R-1/r)\)</span>. <code>[1]</code></li>
+<li>Hence <span class="math inline">\(r=[1/R-\Delta\phi/(GM)]^{-1}\)</span>. <code>[1]</code></li>
+<li><span class="math inline">\(r=6.6\times10^6\ \mathrm{m}\)</span>. <code>[1]</code></li>
+</ul>
+<p><strong>(c)</strong></p>
+<ul>
+<li>The source answer substitutes the printed height as <span class="math inline">\(7.2\times10^4\ \mathrm{m}\)</span> in <span class="math inline">\(\Delta\phi=GM[1/R-1/(R+h)]\)</span>. <code>[1]</code></li>
+<li>This gives <span class="math inline">\(\Delta\phi=0.63\ \mathrm{MJ\,kg^{-1}}\)</span>. <code>[1]</code></li>
+</ul>
+<p><strong>(d)</strong></p>
+<ul>
+<li>With negligible air resistance, <span class="math inline">\(\tfrac12mv^2=m\Delta\phi\)</span>. <code>[1]</code></li>
+<li><span class="math inline">\(v=\sqrt{2\Delta\phi}\)</span>. <code>[1]</code></li>
+<li>Using the source value from <strong>(c)</strong> gives <span class="math inline">\(v=1.1\ \mathrm{km\,s^{-1}}\)</span>. <code>[1]</code></li>
+</ul>
+<blockquote class="blockquote">
+<p><strong>Source-unit note:</strong> the question prints <span class="math inline">\(7.2\times10^4\ \mathrm{km}\)</span>, but the supplied PDF answer treats the value as metres. The numerical results in <strong>(c)</strong> and <strong>(d)</strong> reproduce the supplied answer.</p>
+</blockquote>
+</details>
+</section>
+<section id="gravitational-potential---hard" class="level3">
+<h3 class="anchored" data-anchor-id="gravitational-potential---hard">13.2 Gravitational Potential - Hard</h3>
+</section>
+<section id="example-13-rocket-travelling-from-a-planet-towards-its-moon-13.2-sq-hard-q1" class="level3 question-card">
+<h3 class="anchored" data-anchor-id="example-13-rocket-travelling-from-a-planet-towards-its-moon-13.2-sq-hard-q1">Example 13 · Rocket travelling from a planet towards its moon · 13.2 SQ Hard Q1</h3>
+<p>A spherical planet has a mass <span class="math inline">\(M\)</span> and radius <span class="math inline">\(R\)</span>. The planet may be considered to have all its mass concentrated at its centre.</p>
+<p>A rocket, of mass <span class="math inline">\(m\)</span>, is launched from the surface of the planet.</p>
+<p>The rocket engines are stopped when the rocket is at a height <span class="math inline">\(R\)</span> above the surface of the planet, as shown in Fig. 1.1.</p>
+<p><img src="../assets/questions/gravitational-fields/rocket-planet-distances.webp" class="question-figure img-fluid" alt="Rocket moving from height R to height 4R above a spherical planet"></p>
+<p><strong>(a)</strong> The change in gravitational potential energy of the rocket as it travels from a height <span class="math inline">\(R\)</span> to a height <span class="math inline">\(4R\)</span> above the planet’s surface is equal to</p>
+<p><span class="math display">\[\Delta E_p=x\left(\frac{GMm}{R}\right).\]</span></p>
+<p>Determine the value of <span class="math inline">\(x\)</span>. <code>[3 marks]</code></p>
+<p><strong>(b)</strong> At a distance <span class="math inline">\(R\)</span> away from the surface of the planet the rocket has a velocity <span class="math inline">\(2v\)</span> and at a distance of <span class="math inline">\(4R\)</span> away from the planet a velocity <span class="math inline">\(v\)</span>.</p>
+<p>Show that the expression for the thermal energy lost <span class="math inline">\(\Delta Q\)</span> to the atmosphere of the planet as the rocket moves from <span class="math inline">\(R\)</span> to <span class="math inline">\(4R\)</span> is given by</p>
+<p><span class="math display">\[\Delta Q=\frac{3m}{2}\left(v^2-\frac{GM}{5R}\right).\]</span> <code>[4 marks]</code></p>
+<p><strong>(c)</strong> The rocket travels towards a moon orbiting the planet.</p>
+<p>The distance from the centre of the planet to the centre of the moon is <span class="math inline">\(200R\)</span>. The moon has a mass <span class="math inline">\(M/16\)</span>, where <span class="math inline">\(M\)</span> is the mass of the planet.</p>
+<p>Determine the distance, in terms of <span class="math inline">\(R\)</span>, from the centre of the planet at which</p>
+<p><span class="math display">\[\frac{\Delta E_p}{\Delta r}=0.\]</span></p>
+<p>Give your answer to the nearest whole number. <code>[4 marks]</code></p>
+<p><strong>(d)</strong> On the axes of Fig. 1.2, sketch a graph to show the variation of the gravitational potential with distance along a line between the surface of the planet and the surface of the moon.</p>
+<p><img src="../assets/questions/gravitational-fields/planet-moon-potential-axes.webp" class="question-figure img-fluid" alt="Blank axes for potential energy against distance from R to 200R"></p>
+<p><code>[3 marks]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<p><strong>(a)</strong></p>
+<ul>
+<li>Initial distance from the centre is <span class="math inline">\(2R\)</span> and final distance is <span class="math inline">\(5R\)</span>. <code>[1]</code></li>
+<li><span class="math inline">\(\Delta E_p=-GMm/(5R)-[-GMm/(2R)]=3GMm/(10R)\)</span>. <code>[1]</code></li>
+<li><span class="math inline">\(x=3/10\)</span>. <code>[1]</code></li>
+</ul>
+<p><strong>(b)</strong></p>
+<ul>
+<li><span class="math inline">\(\Delta E_k=\tfrac12mv^2-\tfrac12m(2v)^2=-\tfrac32mv^2\)</span>. <code>[1]</code></li>
+<li>Apply conservation of energy: <span class="math inline">\(\Delta E_p+\Delta E_k+\Delta Q=0\)</span>. <code>[1]</code></li>
+<li>Substitute <span class="math inline">\(\Delta E_p=3GMm/(10R)\)</span> and rearrange. <code>[1]</code></li>
+<li><span class="math inline">\(\Delta Q=(3m/2)[v^2-GM/(5R)]\)</span>. <code>[1]</code></li>
+</ul>
+<p><strong>(c)</strong></p>
+<ul>
+<li>Zero potential gradient corresponds to zero resultant field strength. <code>[1]</code></li>
+<li>At distance <span class="math inline">\(x\)</span> from the planet centre, equate <span class="math inline">\(GM/x^2=G(M/16)/(200R-x)^2\)</span>. <code>[2]</code></li>
+<li><span class="math inline">\(x=4(200R-x)\)</span>, hence <span class="math inline">\(x=160R\)</span>. <code>[1]</code></li>
+</ul>
+<p><strong>(d)</strong></p>
+<ul>
+<li>Draw a negative curve rising away from the planet’s surface. <code>[1]</code></li>
+<li>Give it a maximum below zero at about <span class="math inline">\(160R\)</span>. <code>[1]</code></li>
+<li>Draw it falling again towards the moon’s surface at <span class="math inline">\(200R\)</span>, with the endpoint only slightly below the maximum. <code>[1]</code></li>
+</ul>
+</details>
+</section>
+<section id="example-14-energy-of-an-earth-satellite-13.2-sq-hard-q2" class="level3 question-card">
+<h3 class="anchored" data-anchor-id="example-14-energy-of-an-earth-satellite-13.2-sq-hard-q2">Example 14 · Energy of an Earth satellite · 13.2 SQ Hard Q2</h3>
+<p>The Earth may be assumed to be a uniform sphere of radius <span class="math inline">\(R=6.38\times10^6\ \mathrm{m}\)</span>, with its mass <span class="math inline">\(M\)</span> concentrated at its centre.</p>
+<p>A satellite of mass <span class="math inline">\(m\)</span> orbits the Earth at a height <span class="math inline">\(h_1\)</span> above the Earth’s surface.</p>
+<p><strong>(a)</strong> Derive an expression for the total energy of the satellite in terms of <span class="math inline">\(G\)</span>, <span class="math inline">\(M\)</span>, <span class="math inline">\(m\)</span>, <span class="math inline">\(h_1\)</span> and <span class="math inline">\(R\)</span>. <code>[4 marks]</code></p>
+<p><strong>(b)</strong> The satellite moves to a distance <span class="math inline">\(h_2\)</span> away from the surface of the Earth.</p>
+<p>Derive an expression for the change in gravitational potential energy as the satellite moves from <span class="math inline">\(h_1\)</span> to <span class="math inline">\(h_2\)</span>. <code>[2 marks]</code></p>
+<p><strong>(c)</strong> When the satellite reaches a height <span class="math inline">\(h_2\)</span> above the surface of the Earth, it begins to drift out of its orbit.</p>
+<p>Determine the distance moved by the satellite once it has drifted to the point the gravitational potential energy has increased by 20% of its initial value at <span class="math inline">\(h_1\)</span>.</p>
+<p>Assume that the satellite moves along the same line connecting points <span class="math inline">\(h_1\)</span>, <span class="math inline">\(h_2\)</span> and the centre of the Earth.</p>
+<p>Mass of the Earth <span class="math inline">\(=5.97\times10^{24}\ \mathrm{kg}\)</span></p>
+<p>Mass of the satellite <span class="math inline">\(=1720\ \mathrm{kg}\)</span></p>
+<p>Height <span class="math inline">\(h_1=2.23\times10^6\ \mathrm{m}\)</span></p>
+<p>Height <span class="math inline">\(h_2=3.05\times10^6\ \mathrm{m}\)</span> <code>[4 marks]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<p><strong>(a)</strong></p>
+<ul>
+<li>For a circular orbit, <span class="math inline">\(GMm/r^2=mv^2/r\)</span>, so <span class="math inline">\(v^2=GM/r\)</span>. <code>[1]</code></li>
+<li><span class="math inline">\(E_k=\tfrac12mv^2=GMm/(2r)\)</span>. <code>[1]</code></li>
+<li><span class="math inline">\(E_p=-GMm/r\)</span>. <code>[1]</code></li>
+<li>With <span class="math inline">\(r=R+h_1\)</span>, <span class="math inline">\(E_{\text{total}}=-GMm/[2(R+h_1)]\)</span>. <code>[1]</code></li>
+</ul>
+<p><strong>(b)</strong></p>
+<ul>
+<li><span class="math inline">\(\Delta E_p=E_{p2}-E_{p1}=-GMm/(R+h_2)+GMm/(R+h_1)\)</span>. <code>[1]</code></li>
+<li><span class="math inline">\(\Delta E_p=GMm[1/(R+h_1)-1/(R+h_2)]\)</span>. <code>[1]</code></li>
+</ul>
+<p><strong>(c)</strong></p>
+<ul>
+<li>Initial radius <span class="math inline">\(r_i=R+h_1=8.61\times10^6\ \mathrm{m}\)</span>; the radius after drifting is <span class="math inline">\(r_f=R+h_2+x=9.43\times10^6+x\)</span>. <code>[1]</code></li>
+<li>Since <span class="math inline">\(|E_p|\propto1/r\)</span>, a 20% reduction in the magnitude of the initial potential energy gives <span class="math inline">\(r_f=r_i/0.8=1.25r_i\)</span>. <code>[1]</code></li>
+<li><span class="math inline">\(9.43\times10^6+x=1.25(8.61\times10^6)\)</span>. <code>[1]</code></li>
+<li><span class="math inline">\(x=1.33\times10^6\ \mathrm{m}\)</span>. <code>[1]</code></li>
+</ul>
+</details>
+</section>
+<section id="example-15-work-done-leaving-the-moon-and-comparing-potentials-13.2-sq-hard-q3" class="level3 question-card">
+<h3 class="anchored" data-anchor-id="example-15-work-done-leaving-the-moon-and-comparing-potentials-13.2-sq-hard-q3">Example 15 · Work done leaving the Moon and comparing potentials · 13.2 SQ Hard Q3</h3>
+<p><strong>(a)</strong> A space shuttle of mass <span class="math inline">\(3\times10^6\ \mathrm{kg}\)</span> is travelling from the moon back to Earth. It accelerates uniformly from launch at <span class="math inline">\(2.3\ \mathrm{m\,s^{-2}}\)</span>. It has enough propellant to provide thrust for the first 155 seconds.</p>
+<p>The mass of the moon is <span class="math inline">\(7.35\times10^{22}\ \mathrm{kg}\)</span> and the mean radius is <span class="math inline">\(1740\ \mathrm{km}\)</span>.</p>
+<p>Calculate the work done by the rocket during the first 155 seconds after launch. State any assumptions you have made. <code>[3 marks]</code></p>
+<p><strong>(b)</strong> The Moon has a radius of approximately 27% that of the Earth, and a mass of 1.2% that of the Earth.</p>
+<p>Show that the gravitational potential at the surface of the Earth is about 24 times greater than the gravitational potential at the surface of the moon. <code>[3 marks]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<p><strong>(a)</strong></p>
+<ul>
+<li>Assuming launch from rest and uniform radial acceleration, <span class="math inline">\(s=\tfrac12at^2=\tfrac12(2.3)(155)^2=2.76\times10^4\ \mathrm{m}\)</span>. <code>[1]</code></li>
+<li>The supplied PDF answer evaluates the potential change using <span class="math inline">\(\Delta\phi=GM_M[1/r_M-1/(r_M+s)]\)</span>. <code>[1]</code></li>
+<li>It reports the work as <span class="math inline">\(W=m\Delta\phi=5.25\times10^{14}\ \mathrm{J}\)</span>. <code>[1]</code></li>
+</ul>
+<p><strong>(b)</strong></p>
+<ul>
+<li><span class="math inline">\(|\phi|=GM/R\)</span>. <code>[1]</code></li>
+<li><span class="math inline">\(M_M=0.012M_E\)</span> and <span class="math inline">\(R_M=0.27R_E\)</span>. <code>[1]</code></li>
+<li><span class="math inline">\(|\phi_E|/|\phi_M|=(M_E/R_E)/(0.012M_E/0.27R_E)=0.27/0.012=22.5\approx24\)</span>. <code>[1]</code></li>
+</ul>
+<blockquote class="blockquote">
+<p><strong>Source-calculation note:</strong> the numerical work quoted for <strong>(a)</strong> is reproduced from the supplied PDF answer. Direct substitution of the printed data gives a different value, so this source item should be treated cautiously.</p>
+</blockquote>
+</details>
+</section>
+</section>
+<section id="chapter-self-check" class="level2">
+<h2 class="anchored" data-anchor-id="chapter-self-check">Chapter self-check</h2>
+<ul>
+<li>Can you distinguish gravitational force, field strength, potential and potential energy?</li>
+<li>Do you measure every orbital or field distance from the centre of the spherical mass?</li>
+<li>Can you derive <span class="math inline">\(g=GM/r^2\)</span> and <span class="math inline">\(T^2=4\pi^2r^3/(GM)\)</span> from definitions?</li>
+<li>Can you state all four conditions for a geostationary orbit?</li>
+<li>Can you explain why potential is negative and why it approaches zero at infinity?</li>
+<li>Can you decide when <span class="math inline">\(mg\Delta h\)</span> is valid and when <span class="math inline">\(-GMm/r\)</span> is required?</li>
+</ul>
+<section id="original-topic-pdfs" class="level3">
+<h3 class="anchored" data-anchor-id="original-topic-pdfs">Original topic PDFs</h3>
+<ul>
+<li><a href="../resources/original-papers/gravitational-fields/13.1 Universal Gravitation - Easy.pdf.pdf">13.1 Universal Gravitation - Easy</a></li>
+<li><a href="../resources/original-papers/gravitational-fields/13.1 Universal Gravitation - Medium.pdf.pdf">13.1 Universal Gravitation - Medium</a></li>
+<li><a href="../resources/original-papers/gravitational-fields/13.2 Gravitational Potential - Easy.pdf.pdf">13.2 Gravitational Potential - Easy</a></li>
+<li><a href="../resources/original-papers/gravitational-fields/13.2 Gravitational Potential - Medium.pdf.pdf">13.2 Gravitational Potential - Medium</a></li>
+<li><a href="../resources/original-papers/gravitational-fields/13.2 Gravitational Potential - Hard.pdf.pdf">13.2 Gravitational Potential - Hard</a></li>
+</ul>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll(".done-toggle input").forEach((input) => {
+    const key = `cie-physics-${input.dataset.progress}`;
+    input.checked = localStorage.getItem(key) === "true";
+    input.closest(".question-card")?.classList.toggle("is-complete", input.checked);
+    input.addEventListener("change", () => {
+      localStorage.setItem(key, input.checked);
+      input.closest(".question-card")?.classList.toggle("is-complete", input.checked);
+    });
+  });
+
+  document.querySelectorAll(".mc-question").forEach((card) => {
+    const answer = card.dataset.answer;
+    const feedback = card.querySelector(".mc-feedback");
+    const check = card.querySelector(".check-answer");
+    let selected = localStorage.getItem(`cie-physics-${card.id}-choice`) || "";
+
+    const showSelection = () => {
+      card.querySelectorAll(".mc-choice").forEach((choice) => {
+        choice.classList.toggle("is-selected", choice.dataset.choice === selected);
+      });
+    };
+    showSelection();
+
+    card.querySelectorAll(".mc-choice").forEach((choice) => {
+      choice.addEventListener("click", () => {
+        selected = choice.dataset.choice;
+        localStorage.setItem(`cie-physics-${card.id}-choice`, selected);
+        feedback.textContent = "";
+        feedback.className = "mc-feedback";
+        showSelection();
+      });
+    });
+
+    check?.addEventListener("click", () => {
+      if (!selected) {
+        feedback.textContent = "Select an answer first.";
+        feedback.className = "mc-feedback is-pending";
+        return;
+      }
+      const correct = selected === answer;
+      feedback.textContent = correct ? "Correct." : `Not quite. The correct answer is ${answer}.`;
+      feedback.className = `mc-feedback ${correct ? "is-correct" : "is-incorrect"}`;
+    });
+  });
+});
+</script>
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "已复制");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "已复制");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../a-level/12-motion-in-a-circle.html" class="pagination-link" aria-label="12 Motion in a circle">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">12 Motion in a circle</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../a-level/14-temperature.html" class="pagination-link" aria-label="14 Temperature">
+        <span class="nav-page-text">14 Temperature</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>
