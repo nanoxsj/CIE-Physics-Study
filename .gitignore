@@ -3,4 +3,5 @@
 .quarto/
 _site/
 tmp/
-
+/.quarto/
+**/*.quarto_ipynb

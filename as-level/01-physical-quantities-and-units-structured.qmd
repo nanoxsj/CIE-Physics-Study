@@ -329,7 +329,7 @@ where $T$ is the tension in the string, $l$ is its length and $m$ is its mass. A
 | $l$ | $126\ \mathrm{cm}$ | $\pm1\%$ |
 | $m$ | $5.1\ \mathrm{g}$ | $\pm2\%$ |
 
-**(a)** Use the data in Table 1.1 to calculate the speed $v$. `[2 marks]`  
+**(a)** Use the data in Table 1.1 to calculate the speed $v$. `[2 marks]`
 **(b)** Use your answer in (a) and the data in Table 1.1 to calculate the absolute uncertainty in the value of $v$. `[2 marks]`
 
 <details class="answer-panel"><summary>Show mark scheme / model answer</summary>
