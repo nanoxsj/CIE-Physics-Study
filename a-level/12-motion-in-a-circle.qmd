@@ -128,6 +128,6 @@ In a force diagram, draw the real forces first. Resolve them, then identify thei
 
 ### Original topic PDFs
 
-- [12.1 Kinematics of Uniform Circular Motion - Medium](../resources/original-papers/motion-in-a-circle/12.1%20Kinematics%20of%20Uniform%20Circular%20Motion%20-%20Medium.pdf.pdf)
-- [12.2 Centripetal Acceleration - Easy](../resources/original-papers/motion-in-a-circle/12.2%20Centripetal%20Acceleration%20-%20Easy.pdf.pdf)
-- [12.2 Centripetal Acceleration - Medium](../resources/original-papers/motion-in-a-circle/12.2%20Centripetal%20Acceleration%20-%20Medium.pdf.pdf)
+- [12.1 Kinematics of Uniform Circular Motion - Medium](https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/motion-in-a-circle/12.1%20Kinematics%20of%20Uniform%20Circular%20Motion%20-%20Medium.pdf.pdf)
+- [12.2 Centripetal Acceleration - Easy](https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/motion-in-a-circle/12.2%20Centripetal%20Acceleration%20-%20Easy.pdf.pdf)
+- [12.2 Centripetal Acceleration - Medium](https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/motion-in-a-circle/12.2%20Centripetal%20Acceleration%20-%20Medium.pdf.pdf)

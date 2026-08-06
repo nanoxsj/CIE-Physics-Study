@@ -175,9 +175,9 @@ Add the energy magnitudes for all stages. For a heater of constant power $P$, us
 
 ### Original topic PDFs
 
-- [14.1 Measuring Temperature - Easy](../resources/original-papers/temperature/14.1%20Measuring%20Temperature%20-%20Easy.pdf.pdf)
-- [14.1 Measuring Temperature - Medium](../resources/original-papers/temperature/14.1%20Measuring%20Temperature%20-%20Medium.pdf.pdf)
-- [14.1 Measuring Temperature - Hard](../resources/original-papers/temperature/14.1%20Measuring%20Temperature%20-%20Hard.pdf.pdf)
-- [14.2 Phase Changes - Easy](../resources/original-papers/temperature/14.2%20Phase%20Changes%20-%20Easy.pdf.pdf)
-- [14.2 Phase Changes - Medium](../resources/original-papers/temperature/14.2%20Phase%20Changes%20-%20Medium.pdf.pdf)
-- [14.2 Phase Changes - Hard](../resources/original-papers/temperature/14.2%20Phase%20Changes%20-%20Hard.pdf.pdf)
+- [14.1 Measuring Temperature - Easy](https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/temperature/14.1%20Measuring%20Temperature%20-%20Easy.pdf.pdf)
+- [14.1 Measuring Temperature - Medium](https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/temperature/14.1%20Measuring%20Temperature%20-%20Medium.pdf.pdf)
+- [14.1 Measuring Temperature - Hard](https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/temperature/14.1%20Measuring%20Temperature%20-%20Hard.pdf.pdf)
+- [14.2 Phase Changes - Easy](https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/temperature/14.2%20Phase%20Changes%20-%20Easy.pdf.pdf)
+- [14.2 Phase Changes - Medium](https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/temperature/14.2%20Phase%20Changes%20-%20Medium.pdf.pdf)
+- [14.2 Phase Changes - Hard](https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/temperature/14.2%20Phase%20Changes%20-%20Hard.pdf.pdf)

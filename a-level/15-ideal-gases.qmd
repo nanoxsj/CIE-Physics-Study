@@ -197,9 +197,9 @@ It depends only on thermodynamic temperature, not on molecular mass. For $N$ mon
 
 ### Original topic PDFs
 
-- [15.1 Ideal Gas Law - Easy](../resources/original-papers/ideal-gases/15.1%20Ideal%20Gas%20Law%20-%20Easy.pdf.pdf)
-- [15.1 Ideal Gas Law - Medium](../resources/original-papers/ideal-gases/15.1%20Ideal%20Gas%20Law%20-%20Medium.pdf.pdf)
-- [15.1 Ideal Gas Law - Hard](../resources/original-papers/ideal-gases/15.1%20Ideal%20Gas%20Law%20-%20Hard.pdf.pdf)
-- [15.2 Kinetic Theory - Easy](../resources/original-papers/ideal-gases/15.2%20Kinetic%20Theory%20-%20Easy.pdf.pdf)
-- [15.2 Kinetic Theory - Medium](../resources/original-papers/ideal-gases/15.2%20Kinetic%20Theory%20-%20Medium.pdf.pdf)
-- [15.2 Kinetic Theory - Hard](../resources/original-papers/ideal-gases/15.2%20Kinetic%20Theory%20-%20Hard.pdf.pdf)
+- [15.1 Ideal Gas Law - Easy](https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/ideal-gases/15.1%20Ideal%20Gas%20Law%20-%20Easy.pdf.pdf)
+- [15.1 Ideal Gas Law - Medium](https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/ideal-gases/15.1%20Ideal%20Gas%20Law%20-%20Medium.pdf.pdf)
+- [15.1 Ideal Gas Law - Hard](https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/ideal-gases/15.1%20Ideal%20Gas%20Law%20-%20Hard.pdf.pdf)
+- [15.2 Kinetic Theory - Easy](https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/ideal-gases/15.2%20Kinetic%20Theory%20-%20Easy.pdf.pdf)
+- [15.2 Kinetic Theory - Medium](https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/ideal-gases/15.2%20Kinetic%20Theory%20-%20Medium.pdf.pdf)
+- [15.2 Kinetic Theory - Hard](https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/ideal-gases/15.2%20Kinetic%20Theory%20-%20Hard.pdf.pdf)

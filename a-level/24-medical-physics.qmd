@@ -146,9 +146,9 @@ PET gives functional information, while CT gives detailed anatomical structure. 
 
 ### Original question PDFs
 
-- [24.1 Ultrasound and X-rays - Easy](../resources/original-papers/medical-physics/24.1-ultrasound-xrays-easy.pdf)
-- [24.1 Ultrasound and X-rays - Medium](../resources/original-papers/medical-physics/24.1-ultrasound-xrays-medium.pdf)
-- [24.1 Ultrasound and X-rays - Hard](../resources/original-papers/medical-physics/24.1-ultrasound-xrays-hard.pdf)
-- [24.2 PET Scanning - Easy](../resources/original-papers/medical-physics/24.2-pet-scanning-easy.pdf)
-- [24.2 PET Scanning - Medium](../resources/original-papers/medical-physics/24.2-pet-scanning-medium.pdf)
-- [24.2 PET Scanning - Hard](../resources/original-papers/medical-physics/24.2-pet-scanning-hard.pdf)
+- [24.1 Ultrasound and X-rays - Easy](https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/medical-physics/24.1-ultrasound-xrays-easy.pdf)
+- [24.1 Ultrasound and X-rays - Medium](https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/medical-physics/24.1-ultrasound-xrays-medium.pdf)
+- [24.1 Ultrasound and X-rays - Hard](https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/medical-physics/24.1-ultrasound-xrays-hard.pdf)
+- [24.2 PET Scanning - Easy](https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/medical-physics/24.2-pet-scanning-easy.pdf)
+- [24.2 PET Scanning - Medium](https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/medical-physics/24.2-pet-scanning-medium.pdf)
+- [24.2 PET Scanning - Hard](https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/medical-physics/24.2-pet-scanning-hard.pdf)

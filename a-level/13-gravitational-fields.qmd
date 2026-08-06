@@ -189,8 +189,8 @@ A bound orbit has negative total energy. Supplying energy moves a satellite to a
 
 ### Original topic PDFs
 
-- [13.1 Universal Gravitation - Easy](../resources/original-papers/gravitational-fields/13.1%20Universal%20Gravitation%20-%20Easy.pdf.pdf)
-- [13.1 Universal Gravitation - Medium](../resources/original-papers/gravitational-fields/13.1%20Universal%20Gravitation%20-%20Medium.pdf.pdf)
-- [13.2 Gravitational Potential - Easy](../resources/original-papers/gravitational-fields/13.2%20Gravitational%20Potential%20-%20Easy.pdf.pdf)
-- [13.2 Gravitational Potential - Medium](../resources/original-papers/gravitational-fields/13.2%20Gravitational%20Potential%20-%20Medium.pdf.pdf)
-- [13.2 Gravitational Potential - Hard](../resources/original-papers/gravitational-fields/13.2%20Gravitational%20Potential%20-%20Hard.pdf.pdf)
+- [13.1 Universal Gravitation - Easy](https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/gravitational-fields/13.1%20Universal%20Gravitation%20-%20Easy.pdf.pdf)
+- [13.1 Universal Gravitation - Medium](https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/gravitational-fields/13.1%20Universal%20Gravitation%20-%20Medium.pdf.pdf)
+- [13.2 Gravitational Potential - Easy](https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/gravitational-fields/13.2%20Gravitational%20Potential%20-%20Easy.pdf.pdf)
+- [13.2 Gravitational Potential - Medium](https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/gravitational-fields/13.2%20Gravitational%20Potential%20-%20Medium.pdf.pdf)
+- [13.2 Gravitational Potential - Hard](https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/gravitational-fields/13.2%20Gravitational%20Potential%20-%20Hard.pdf.pdf)

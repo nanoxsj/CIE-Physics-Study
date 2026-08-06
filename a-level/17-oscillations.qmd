@@ -189,6 +189,6 @@ Useful resonance includes acoustic instruments and piezoelectric ultrasound tran
 
 ### Original topic PDFs
 
-- [17.1 Simple Harmonic Motion - Easy](../resources/original-papers/oscillations/17.1%20Simple%20Harmonic%20Motion%20-%20Easy.pdf.pdf)
-- [17.1 Simple Harmonic Motion - Medium](../resources/original-papers/oscillations/17.1%20Simple%20Harmonic%20Motion%20-%20Medium.pdf.pdf)
-- [17.2 Damped Oscillations - Medium](../resources/original-papers/oscillations/17.2%20Damped%20Oscillations%20-%20Medium.pdf.pdf)
+- [17.1 Simple Harmonic Motion - Easy](https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/oscillations/17.1%20Simple%20Harmonic%20Motion%20-%20Easy.pdf.pdf)
+- [17.1 Simple Harmonic Motion - Medium](https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/oscillations/17.1%20Simple%20Harmonic%20Motion%20-%20Medium.pdf.pdf)
+- [17.2 Damped Oscillations - Medium](https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/oscillations/17.2%20Damped%20Oscillations%20-%20Medium.pdf.pdf)

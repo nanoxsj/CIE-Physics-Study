@@ -191,9 +191,9 @@ Using many distant objects reduces the relative effect of individual galaxies' l
 
 ### Original question PDFs
 
-- [25.1 Astronomy - Easy](../resources/original-papers/astronomy-cosmology/25.1-astronomy-easy.pdf)
-- [25.1 Astronomy - Medium](../resources/original-papers/astronomy-cosmology/25.1-astronomy-medium.pdf)
-- [25.1 Astronomy - Hard](../resources/original-papers/astronomy-cosmology/25.1-astronomy-hard.pdf)
-- [25.2 Cosmology - Easy](../resources/original-papers/astronomy-cosmology/25.2-cosmology-easy.pdf)
-- [25.2 Cosmology - Medium](../resources/original-papers/astronomy-cosmology/25.2-cosmology-medium.pdf)
-- [25.2 Cosmology - Hard](../resources/original-papers/astronomy-cosmology/25.2-cosmology-hard.pdf)
+- [25.1 Astronomy - Easy](https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/astronomy-cosmology/25.1-astronomy-easy.pdf)
+- [25.1 Astronomy - Medium](https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/astronomy-cosmology/25.1-astronomy-medium.pdf)
+- [25.1 Astronomy - Hard](https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/astronomy-cosmology/25.1-astronomy-hard.pdf)
+- [25.2 Cosmology - Easy](https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/astronomy-cosmology/25.2-cosmology-easy.pdf)
+- [25.2 Cosmology - Medium](https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/astronomy-cosmology/25.2-cosmology-medium.pdf)
+- [25.2 Cosmology - Hard](https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/astronomy-cosmology/25.2-cosmology-hard.pdf)

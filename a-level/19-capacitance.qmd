@@ -215,5 +215,5 @@ Smoothing circuits repeatedly charge a capacitor near peaks of a rectified input
 
 ### Original topic PDFs
 
-- [19.1 Capacitors - Medium](../resources/original-papers/capacitance/19.1%20Capacitors%20-%20Medium.pdf.pdf)
-- [19.2 Charging and Discharging - Medium](../resources/original-papers/capacitance/19.2%20Charging%20and%20Discharging%20-%20Medium.pdf.pdf)
+- [19.1 Capacitors - Medium](https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/capacitance/19.1%20Capacitors%20-%20Medium.pdf.pdf)
+- [19.2 Charging and Discharging - Medium](https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/capacitance/19.2%20Charging%20and%20Discharging%20-%20Medium.pdf.pdf)

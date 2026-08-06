@@ -171,7 +171,7 @@ Keep source-detector distance, source geometry and counting interval constant. M
 
 ### Original question PDFs
 
-- [23.1 Mass Defect and Nuclear Binding Energy - Easy](../resources/original-papers/nuclear-physics/23.1-mass-defect-binding-energy-easy.pdf)
-- [23.1 Mass Defect and Nuclear Binding Energy - Medium](../resources/original-papers/nuclear-physics/23.1-mass-defect-binding-energy-medium.pdf)
-- [23.2 Radioactive Decay - Easy](../resources/original-papers/nuclear-physics/23.2-radioactive-decay-easy.pdf)
-- [23.2 Radioactive Decay - Medium](../resources/original-papers/nuclear-physics/23.2-radioactive-decay-medium.pdf)
+- [23.1 Mass Defect and Nuclear Binding Energy - Easy](https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/nuclear-physics/23.1-mass-defect-binding-energy-easy.pdf)
+- [23.1 Mass Defect and Nuclear Binding Energy - Medium](https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/nuclear-physics/23.1-mass-defect-binding-energy-medium.pdf)
+- [23.2 Radioactive Decay - Easy](https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/nuclear-physics/23.2-radioactive-decay-easy.pdf)
+- [23.2 Radioactive Decay - Medium](https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/nuclear-physics/23.2-radioactive-decay-medium.pdf)

@@ -165,4 +165,4 @@ The latent heat supplied is therefore divided between increasing internal energy
 
 ### Original topic PDF
 
-- [16.1 The First Law of Thermodynamics - Medium](../resources/original-papers/thermodynamics/16.1%20The%20First%20Law%20of%20Thermodynamics%20-%20Medium.pdf.pdf)
+- [16.1 The First Law of Thermodynamics - Medium](https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/thermodynamics/16.1%20The%20First%20Law%20of%20Thermodynamics%20-%20Medium.pdf.pdf)

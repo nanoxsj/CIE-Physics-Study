@@ -242,5 +242,5 @@ $$\Delta E_{\mathrm{p}}=\frac{Qq}{4\pi\varepsilon_0}\left(\frac{1}{r_2}-\frac{1}
 
 ### Original topic PDFs
 
-- [18.1 Electric Fields - Medium](../resources/original-papers/electric-fields/18.1%20Electric%20Fields%20-%20Medium.pdf.pdf)
-- [18.2 Electric Potential - Medium](../resources/original-papers/electric-fields/18.2%20Electric%20Potential%20-%20Medium.pdf.pdf)
+- [18.1 Electric Fields - Medium](https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/electric-fields/18.1%20Electric%20Fields%20-%20Medium.pdf.pdf)
+- [18.2 Electric Potential - Medium](https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/electric-fields/18.2%20Electric%20Potential%20-%20Medium.pdf.pdf)

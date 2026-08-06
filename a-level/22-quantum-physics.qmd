@@ -204,6 +204,6 @@ Because each element has a unique set of energy levels, its line spectrum acts a
 
 ### Original question PDFs
 
-- [22.1 The Photoelectric Effect — Medium](../resources/original-papers/quantum-physics/22.1-photoelectric-effect-medium.pdf)
-- [22.2 Wave-Particle Duality — Medium](../resources/original-papers/quantum-physics/22.2-wave-particle-duality-medium.pdf)
-- [22.3 Quantisation of Energy — Medium](../resources/original-papers/quantum-physics/22.3-quantisation-of-energy-medium.pdf)
+- [22.1 The Photoelectric Effect — Medium](https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/quantum-physics/22.1-photoelectric-effect-medium.pdf)
+- [22.2 Wave-Particle Duality — Medium](https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/quantum-physics/22.2-wave-particle-duality-medium.pdf)
+- [22.3 Quantisation of Energy — Medium](https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/quantum-physics/22.3-quantisation-of-energy-medium.pdf)

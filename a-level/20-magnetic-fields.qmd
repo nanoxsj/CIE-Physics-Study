@@ -191,7 +191,7 @@ An e.m.f. can be induced by changing magnetic flux density, coil area, coil orie
 
 ### Original topic PDFs
 
-- [20.1 Magnetic Fields - Easy](../resources/original-papers/magnetic-fields/20.1%20Magnetic%20Fields%20-%20Easy.pdf.pdf)
-- [20.1 Magnetic Fields - Medium](../resources/original-papers/magnetic-fields/20.1%20Magnetic%20Fields%20-%20Medium.pdf.pdf)
-- [20.2 Electromagnetic Induction - Easy](../resources/original-papers/magnetic-fields/20.2%20Electromagnetic%20Induction%20-%20Easy.pdf.pdf)
-- [20.2 Electromagnetic Induction - Medium](../resources/original-papers/magnetic-fields/20.2%20Electromagnetic%20Induction%20-%20Medium.pdf.pdf)
+- [20.1 Magnetic Fields - Easy](https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/magnetic-fields/20.1%20Magnetic%20Fields%20-%20Easy.pdf.pdf)
+- [20.1 Magnetic Fields - Medium](https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/magnetic-fields/20.1%20Magnetic%20Fields%20-%20Medium.pdf.pdf)
+- [20.2 Electromagnetic Induction - Easy](https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/magnetic-fields/20.2%20Electromagnetic%20Induction%20-%20Easy.pdf.pdf)
+- [20.2 Electromagnetic Induction - Medium](https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/magnetic-fields/20.2%20Electromagnetic%20Induction%20-%20Medium.pdf.pdf)

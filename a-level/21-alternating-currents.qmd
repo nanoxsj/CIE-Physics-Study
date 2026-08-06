@@ -122,5 +122,5 @@ The relevant time constant is $RC$. Small ripple requires $RC$ to be large compa
 
 ### Original question PDFs
 
-- [21.1 Properties and Uses of Alternating Current — Easy](../resources/original-papers/alternating-currents/21.1-properties-and-uses-easy.pdf)
-- [21.1 Properties and Uses of Alternating Current — Medium](../resources/original-papers/alternating-currents/21.1-properties-and-uses-medium.pdf)
+- [21.1 Properties and Uses of Alternating Current — Easy](https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/alternating-currents/21.1-properties-and-uses-easy.pdf)
+- [21.1 Properties and Uses of Alternating Current — Medium](https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/alternating-currents/21.1-properties-and-uses-medium.pdf)
