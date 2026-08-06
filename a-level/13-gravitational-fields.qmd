@@ -1,0 +1,196 @@
+---
+title: "13 Gravitational fields"
+subtitle: "Field strength, Newtonian gravitation, circular orbits and gravitational potential"
+---
+
+## Learning objectives
+
+By the end of this chapter, you should be able to:
+
+- understand a gravitational field as a region in which a mass experiences a force;
+- define gravitational field strength as force per unit mass and represent fields using field lines;
+- use Newton's law of gravitation for point masses and spherically symmetric bodies;
+- analyse circular orbits by equating gravitational force to centripetal force;
+- state the defining properties of a geostationary orbit;
+- derive and use $g=GM/r^2$;
+- define gravitational potential and use $\phi=-GM/r$;
+- calculate gravitational potential energy using $E_p=m\phi=-GMm/r$.
+
+## 13.1 Gravitational fields and field strength
+
+::: {.study-card}
+### Gravitational field
+
+A gravitational field is a region of space in which a mass experiences a gravitational force. Every mass produces a field, and another mass placed in that field experiences an attractive force.
+
+Gravitational field strength at a point is the gravitational force per unit mass on a small test mass placed at that point:
+
+$$g=\frac{F}{m}.$$
+
+Its unit is $\mathrm{N\,kg^{-1}}$. Since $F=ma$, gravitational field strength is numerically equal to the acceleration of free fall, so $\mathrm{N\,kg^{-1}}$ is equivalent to $\mathrm{m\,s^{-2}}$.
+:::
+
+::: {.study-card}
+### Gravitational field lines
+
+Field lines show the direction of the force on a small positive test mass:
+
+- arrows point towards the mass because gravity is attractive;
+- around an isolated spherical mass, the lines are radial;
+- closer line spacing represents greater field strength;
+- field lines never cross, because the field has only one direction at any point.
+
+Far from a spherical body, the field becomes weaker because the same influence is spread over a larger spherical area.
+:::
+
+## 13.2 Gravitational force between point masses
+
+::: {.formula-panel}
+### Newton's law of gravitation
+
+Two point masses $m_1$ and $m_2$, separated by a centre-to-centre distance $r$, attract each other with force
+
+$$F=\frac{Gm_1m_2}{r^2},$$
+
+where $G=6.67\times10^{-11}\ \mathrm{N\,m^2\,kg^{-2}}$.
+
+The force is proportional to the product of the masses and inversely proportional to the square of their separation. The two bodies exert equal and opposite forces on each other.
+
+Outside a uniform spherical mass, its gravitational effect is the same as if all its mass were concentrated at its centre. Therefore, $r$ must be measured from centre to centre, not between surfaces.
+:::
+
+::: {.study-card}
+### Circular orbits
+
+For a mass $m$ in a circular orbit of radius $r$ around a much larger mass $M$, gravitational attraction provides the centripetal force:
+
+$$\frac{GMm}{r^2}=\frac{mv^2}{r}=mr\omega^2.$$
+
+This gives
+
+$$v=\sqrt{\frac{GM}{r}},\qquad \omega=\sqrt{\frac{GM}{r^3}},$$
+
+and, using $\omega=2\pi/T$,
+
+$$T^2=\frac{4\pi^2r^3}{GM}.$$
+
+The orbiting mass cancels: at a given orbital radius, the speed and period do not depend on the satellite's mass.
+:::
+
+::: {.study-card}
+### Geostationary orbit
+
+A geostationary satellite remains above the same point on Earth's surface. Its orbit must:
+
+- lie in the equatorial plane;
+- be circular;
+- travel from west to east, in the same direction as Earth's rotation;
+- have a period of approximately 24 hours.
+
+These conditions fix one orbital radius. A geostationary satellite is useful for communications because a ground antenna can remain pointed in one direction.
+:::
+
+## 13.3 Gravitational field of a point mass
+
+::: {.formula-panel}
+### Derivation of $g=GM/r^2$
+
+Place a small test mass $m$ at distance $r$ from a point mass $M$. Newton's law gives
+
+$$F=\frac{GMm}{r^2}.$$
+
+Using $g=F/m$:
+
+$$g=\frac{GM}{r^2}.$$
+
+The equation also applies outside a uniform sphere. It shows that $g\propto1/r^2$. Near Earth's surface, a small change in height is tiny compared with Earth's radius, so $r$ changes by only a very small fraction and $g$ is approximately constant.
+:::
+
+::: {.study-card}
+### Comparing field strengths
+
+At altitude $h$ above a spherical body of radius $R$, the distance from its centre is $r=R+h$, so
+
+$$g_h=\frac{GM}{(R+h)^2}.$$
+
+Comparing this with the surface value $g_0=GM/R^2$ gives
+
+$$\frac{g_h}{g_0}=\left(\frac{R}{R+h}\right)^2.$$
+
+This ratio method often avoids calculating $G$ or $M$. Always distinguish altitude $h$ from radial distance $r$.
+:::
+
+## 13.4 Gravitational potential
+
+::: {.study-card}
+### Potential and potential energy
+
+Gravitational potential $\phi$ at a point is the work done per unit mass in bringing a small test mass from infinity to that point. Its unit is $\mathrm{J\,kg^{-1}}$.
+
+For an isolated point mass or a uniform sphere,
+
+$$\phi=-\frac{GM}{r}.$$
+
+The potential is defined as zero at infinity. It is negative at every finite distance because gravity is attractive: energy must be supplied to move a mass from the field to infinity.
+
+The gravitational potential energy of a mass $m$ is
+
+$$E_p=m\phi=-\frac{GMm}{r}.$$
+
+Potential is a property of the field and does not depend on the test mass; potential energy does depend on it.
+:::
+
+::: {.formula-panel}
+### Changes in potential and energy
+
+Moving from $r_1$ to $r_2$ gives
+
+$$\Delta\phi=\phi_2-\phi_1=GM\left(\frac{1}{r_1}-\frac{1}{r_2}\right),$$
+
+$$\Delta E_p=m\Delta\phi=GMm\left(\frac{1}{r_1}-\frac{1}{r_2}\right).$$
+
+Moving away from a mass makes $\phi$ and $E_p$ less negative, so both increase. Moving inward makes them more negative, so the field does positive work.
+
+The approximation $\Delta E_p=mg\Delta h$ is valid only when $g$ is approximately constant. For large changes in height, use the inverse-distance expression.
+:::
+
+::: {.study-card}
+### Potential graphs and energy in orbit
+
+For one point mass, the $\phi$–$r$ graph is a negative curve approaching zero asymptotically as $r\to\infty$. Its gradient is the gravitational field strength with sign convention included:
+
+$$g=-\frac{d\phi}{dr}.$$
+
+For several masses, potentials add algebraically because potential is a scalar.
+
+For a circular orbit,
+
+$$E_k=\frac{GMm}{2r},\qquad E_p=-\frac{GMm}{r},$$
+
+so the total energy is
+
+$$E=E_k+E_p=-\frac{GMm}{2r}.$$
+
+A bound orbit has negative total energy. Supplying energy moves a satellite to a larger orbit, where its total energy is less negative even though its orbital speed is lower.
+:::
+
+## Structured Questions
+
+{{< include 13-gravitational-fields-structured.qmd >}}
+
+## Chapter self-check
+
+- Can you distinguish gravitational force, field strength, potential and potential energy?
+- Do you measure every orbital or field distance from the centre of the spherical mass?
+- Can you derive $g=GM/r^2$ and $T^2=4\pi^2r^3/(GM)$ from definitions?
+- Can you state all four conditions for a geostationary orbit?
+- Can you explain why potential is negative and why it approaches zero at infinity?
+- Can you decide when $mg\Delta h$ is valid and when $-GMm/r$ is required?
+
+### Original topic PDFs
+
+- [13.1 Universal Gravitation - Easy](../resources/original-papers/gravitational-fields/13.1%20Universal%20Gravitation%20-%20Easy.pdf.pdf)
+- [13.1 Universal Gravitation - Medium](../resources/original-papers/gravitational-fields/13.1%20Universal%20Gravitation%20-%20Medium.pdf.pdf)
+- [13.2 Gravitational Potential - Easy](../resources/original-papers/gravitational-fields/13.2%20Gravitational%20Potential%20-%20Easy.pdf.pdf)
+- [13.2 Gravitational Potential - Medium](../resources/original-papers/gravitational-fields/13.2%20Gravitational%20Potential%20-%20Medium.pdf.pdf)
+- [13.2 Gravitational Potential - Hard](../resources/original-papers/gravitational-fields/13.2%20Gravitational%20Potential%20-%20Hard.pdf.pdf)

@@ -1,0 +1,246 @@
+---
+title: "18 Electric fields"
+subtitle: "Field lines, uniform fields, point charges, electric potential and potential energy"
+---
+
+## Learning objectives
+
+By the end of this chapter, you should be able to:
+
+- define electric field strength as force per unit positive charge and use $F=qE$;
+- draw and interpret electric field lines;
+- use $E=\Delta V/\Delta d$ for a uniform field between parallel plates;
+- describe the motion of charged particles in a uniform electric field;
+- apply Coulomb's law to point charges and charged spheres;
+- calculate the electric field strength due to a point charge;
+- define and calculate electric potential;
+- connect electric field strength with potential gradient;
+- calculate the electric potential energy of two point charges.
+
+## 18.1 Electric fields and field lines
+
+::: {.study-card}
+### Electric field and electric field strength
+
+An electric field is a region of space in which an electric charge experiences an electrostatic force. Electric field strength at a point is the force per unit positive charge acting on a stationary test charge at that point:
+
+$$E=\frac{F}{q}.$$
+
+Electric field strength is a vector. Its SI unit is $\mathrm{N\ C^{-1}}$, which is equivalent to $\mathrm{V\ m^{-1}}$.
+
+The word **positive** in the definition fixes the field direction. A positive charge experiences a force in the field direction; a negative charge experiences a force in the opposite direction.
+:::
+
+::: {.formula-panel}
+### Force on a charge
+
+The force on charge $q$ in an electric field is
+
+$$\vec F=q\vec E.$$
+
+- For $q>0$, $\vec F$ is parallel to $\vec E$.
+- For $q<0$, $\vec F$ is antiparallel to $\vec E$.
+- The force magnitude is $|F|=|q|E$.
+
+In a uniform field the force is constant, so a particle of mass $m$ has constant acceleration
+
+$$\vec a=\frac{q\vec E}{m}.$$
+:::
+
+::: {.study-card}
+### Rules for electric field lines
+
+- Arrows show the direction of force on a positive test charge.
+- Lines leave positive charges and enter negative charges.
+- Field lines meet a conducting surface at right angles.
+- Lines never cross, because the field cannot have two directions at one point.
+- Closer line spacing represents a stronger field.
+- Equally spaced, parallel lines represent a uniform field.
+
+A positive point charge produces radial outward lines; a negative point charge produces radial inward lines. Between oppositely charged parallel plates, lines are straight, parallel and directed from the positive plate to the negative plate, except near the edges where fringing occurs.
+:::
+
+## 18.2 Uniform electric fields
+
+::: {.formula-panel}
+### Field between parallel plates
+
+For a uniform field between parallel plates,
+
+$$E=\frac{|\Delta V|}{\Delta d},$$
+
+where $\Delta V$ is the potential difference and $\Delta d$ is the perpendicular plate separation. Use metres for separation.
+
+Increasing the potential difference increases the field strength; increasing the separation reduces it. This equation applies to a uniform field, not directly to the radial field of a point charge.
+:::
+
+::: {.study-card}
+### Motion parallel to the field
+
+A charged particle released from rest in a uniform field undergoes constant acceleration. A positive particle accelerates towards lower potential, in the field direction. A negative particle accelerates towards higher potential, opposite to the field direction.
+
+If the particle moves through a potential difference, energy conservation may be written as
+
+$$\Delta E_{\mathrm{k}}=-\Delta E_{\mathrm{p}}=-q\Delta V.$$
+
+The signs should be interpreted carefully: the electric potential energy of a negative charge decreases when it moves to a higher electric potential.
+:::
+
+::: {.study-card}
+### Motion entering across the field
+
+When a particle enters a uniform field with velocity perpendicular to the field:
+
+- the velocity component perpendicular to the force remains constant;
+- the velocity component parallel to the force changes uniformly;
+- the path inside the field is parabolic;
+- after leaving the field, the particle travels in a straight line tangent to the path at the exit.
+
+Greater $|q|$ or $E$ gives more deflection. Greater mass or entry speed gives less deflection. An uncharged particle is not deflected.
+:::
+
+## 18.3 Electric force between point charges
+
+::: {.study-card}
+### Point-charge approximation
+
+For a point outside a uniformly charged spherical conductor, the sphere's charge may be treated as a point charge at its centre. Distances in Coulomb's law must therefore be measured between the centres of the charges or spheres.
+
+This approximation does not describe the field inside the conducting material. In electrostatic equilibrium, the electric field inside a conductor is zero and its potential is constant.
+:::
+
+::: {.formula-panel}
+### Coulomb's law
+
+The magnitude of the electrostatic force between two point charges in free space is
+
+$$F=\frac{|Q_1Q_2|}{4\pi\varepsilon_0r^2}=k\frac{|Q_1Q_2|}{r^2},$$
+
+where
+
+$$k=\frac{1}{4\pi\varepsilon_0}\approx8.99\times10^9\ \mathrm{N\ m^2\ C^{-2}}.$$
+
+The force acts along the line joining the charges. Like charges repel and unlike charges attract. The two charges exert forces of equal magnitude and opposite direction on one another.
+:::
+
+::: {.study-card}
+### Inverse-square behaviour and superposition
+
+For fixed charges, $F\propto1/r^2$. Doubling the separation reduces the force to one quarter.
+
+With more than two charges, calculate the force due to each source separately and add the forces as vectors. Resolve components when the forces are not collinear; do not simply add their magnitudes.
+:::
+
+## 18.4 Electric field of a point charge
+
+::: {.formula-panel}
+### Radial electric field
+
+The electric field due to point charge $Q$ at distance $r$ in free space is
+
+$$\vec E=\frac{Q}{4\pi\varepsilon_0r^2}\hat r.$$
+
+Its magnitude is
+
+$$E=\frac{|Q|}{4\pi\varepsilon_0r^2}.$$
+
+For $Q>0$, the field points radially outwards; for $Q<0$, it points radially inwards. Because $E\propto1/r^2$, doubling $r$ reduces $E$ to one quarter.
+:::
+
+::: {.study-card}
+### Superposition of electric fields
+
+Electric fields add as vectors:
+
+$$\vec E_{\mathrm{resultant}}=\sum_i\vec E_i.$$
+
+At a point between like charges, the individual fields oppose each other. Between unlike charges, they point in the same direction. A zero-field point depends on both charge magnitudes and geometry and need not lie halfway between the charges.
+:::
+
+## 18.5 Electric potential
+
+::: {.study-card}
+### Definition and sign
+
+Electric potential at a point is the work done per unit positive charge in bringing a small test charge from infinity to that point:
+
+$$V=\frac{W}{q}.$$
+
+Potential is a scalar measured in volts, where $1\ \mathrm{V}=1\ \mathrm{J\ C^{-1}}$. Taking $V=0$ at infinity, potential is positive near an isolated positive charge and negative near an isolated negative charge.
+
+Because potential is scalar, contributions from several charges are added algebraically, including their signs.
+:::
+
+::: {.formula-panel}
+### Potential due to point charges
+
+For a point charge $Q$,
+
+$$V=\frac{Q}{4\pi\varepsilon_0r}.$$
+
+For several point charges,
+
+$$V=\sum_i\frac{Q_i}{4\pi\varepsilon_0r_i}.$$
+
+Potential varies as $1/r$, whereas field strength varies as $1/r^2$. Outside a charged spherical conductor, use the same expression with $r$ measured from the centre. Inside the conductor, potential is constant and equal to the surface potential.
+:::
+
+::: {.formula-panel}
+### Potential gradient
+
+Electric field strength is the negative potential gradient:
+
+$$E=-\frac{dV}{dr}$$
+
+along a chosen direction. For a uniform field this becomes
+
+$$E=-\frac{\Delta V}{\Delta d}.$$
+
+Potential decreases in the direction of the electric field. On a $V$-$r$ graph, the magnitude of the gradient at a point gives the field strength there.
+:::
+
+::: {.study-card}
+### Equipotential surfaces
+
+An equipotential surface joins points of equal potential. Moving a charge along an equipotential requires no work because $\Delta V=0$.
+
+Equipotentials are always perpendicular to electric field lines. They are equally spaced in a uniform field and form concentric spherical surfaces around an isolated point charge.
+:::
+
+::: {.formula-panel}
+### Electric potential energy
+
+The potential energy of charge $q$ at potential $V$ is
+
+$$E_{\mathrm{p}}=qV.$$
+
+For two point charges,
+
+$$E_{\mathrm{p}}=\frac{Qq}{4\pi\varepsilon_0r}.$$
+
+The sign matters. Like charges have positive potential energy; unlike charges have negative potential energy when zero is taken at infinity.
+
+For a movement from $r_1$ to $r_2$,
+
+$$\Delta E_{\mathrm{p}}=\frac{Qq}{4\pi\varepsilon_0}\left(\frac{1}{r_2}-\frac{1}{r_1}\right)=q\Delta V.$$
+:::
+
+## Structured Questions
+
+{{< include 18-electric-fields-structured.qmd >}}
+
+## Chapter self-check
+
+- Can you distinguish field direction from the force direction on a negative charge?
+- Can you draw radial and uniform field-line patterns with arrows?
+- Can you choose correctly between $E=\Delta V/\Delta d$ and the point-charge equation?
+- Do you measure point-charge separation from centre to centre?
+- Can you add electric forces and fields as vectors but potentials as scalars?
+- Can you distinguish the $1/r^2$ variation of field from the $1/r$ variation of potential?
+- Can you use $E=-dV/dr$ and explain the minus sign?
+- Can you retain the signs of charges in potential and potential-energy calculations?
+
+### Original topic PDFs
+
+- [18.1 Electric Fields - Medium](../resources/original-papers/electric-fields/18.1%20Electric%20Fields%20-%20Medium.pdf.pdf)
+- [18.2 Electric Potential - Medium](../resources/original-papers/electric-fields/18.2%20Electric%20Potential%20-%20Medium.pdf.pdf)

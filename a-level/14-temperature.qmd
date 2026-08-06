@@ -1,0 +1,183 @@
+---
+title: "14 Temperature"
+subtitle: "Thermal equilibrium, temperature scales, specific heat capacity and latent heat"
+---
+
+## Learning objectives
+
+By the end of this chapter, you should be able to:
+
+- explain the direction of thermal-energy transfer and the meaning of thermal equilibrium;
+- identify physical properties that may be used to measure temperature;
+- explain why the thermodynamic temperature scale is independent of any particular substance;
+- convert between kelvin and degrees Celsius and define absolute zero;
+- define and use specific heat capacity;
+- define and use specific latent heat;
+- distinguish specific latent heat of fusion from specific latent heat of vaporisation;
+- apply energy conservation to heating, cooling and changes of state.
+
+## 14.1 Thermal equilibrium
+
+::: {.study-card}
+### Thermal-energy transfer
+
+Thermal energy is energy possessed by an object because of its temperature. When two regions at different temperatures are in thermal contact, energy is transferred from the region at higher temperature to the region at lower temperature.
+
+The transfer may occur by conduction, convection or radiation. Temperature determines the **direction** of energy transfer; it does not by itself measure the total thermal energy stored in an object.
+
+The hotter region loses energy and cools, while the cooler region gains energy and warms. Energy transfer continues until the two regions reach the same temperature.
+:::
+
+::: {.study-card}
+### Thermal equilibrium
+
+Two regions are in thermal equilibrium when they have equal temperature and there is no net transfer of thermal energy between them.
+
+Equal temperature does not mean equal internal energy. Two objects at the same temperature may have different masses, compositions and thermal capacities. During melting or boiling, energy may also be transferred while temperature remains constant.
+:::
+
+::: {.formula-panel}
+### Energy-conservation method
+
+For an isolated system,
+
+$$\text{energy lost by hotter bodies}=\text{energy gained by cooler bodies}.$$
+
+When several materials are involved, write a separate energy term for each material and for each stage. Keep the temperature-change signs consistent, or work with positive energy magnitudes on both sides of the equation.
+:::
+
+## 14.2 Temperature scales
+
+::: {.study-card}
+### Thermometric properties
+
+A thermometer uses a physical property that changes predictably with temperature. Examples required by the syllabus include:
+
+- the density of a liquid;
+- the volume of a gas at constant pressure;
+- the electrical resistance of a metal;
+- the e.m.f. of a thermocouple.
+
+A practical thermometer must be calibrated at known temperatures. If the thermometric property does not vary linearly with temperature, a calibration curve or reference table is needed.
+:::
+
+::: {.study-card}
+### Liquid, gas and resistance thermometers
+
+In a liquid-in-glass thermometer, the liquid expands as its temperature rises. The narrow capillary converts a small volume change into a measurable change in column length.
+
+For a fixed mass of gas at constant pressure, Charles's law gives
+
+$$V\propto T,$$
+
+where $T$ must be measured in kelvin.
+
+For a metal resistance thermometer, resistance generally increases with temperature. For a typical NTC thermistor, resistance decreases non-linearly as temperature increases. Thermistors are sensitive over a limited range and therefore require calibration.
+:::
+
+::: {.study-card}
+### Thermocouples
+
+A thermocouple consists of two dissimilar metal wires joined at a sensing junction. A temperature difference between the sensing junction and a reference junction produces an e.m.f.
+
+The measured e.m.f. is converted to temperature using a calibration curve or reference table. Thermocouples have a wide temperature range, small thermal capacity and fast response, but their output is relatively small and may be non-linear.
+:::
+
+::: {.formula-panel}
+### Celsius and kelvin scales
+
+The thermodynamic temperature scale does not depend on a property of any particular substance. Temperature in kelvin is related to Celsius temperature by
+
+$$\frac{T}{\mathrm{K}}=\frac{\theta}{^\circ\mathrm{C}}+273.15.$$
+
+Therefore,
+
+$$\frac{\theta}{^\circ\mathrm{C}}=\frac{T}{\mathrm{K}}-273.15.$$
+
+A temperature interval of $1\ \mathrm{K}$ is equal in size to an interval of $1\ ^\circ\mathrm{C}$. Do not add 273.15 when calculating a temperature difference.
+:::
+
+::: {.study-card}
+### Absolute zero
+
+Absolute zero is the lowest possible temperature on the thermodynamic scale:
+
+$$0\ \mathrm{K}=-273.15\ ^\circ\mathrm{C}.$$
+
+Kelvin temperatures cannot be negative. At school level, absolute zero is described as the limit at which no more thermal energy can be removed from a system.
+:::
+
+## 14.3 Specific heat capacity and specific latent heat
+
+::: {.formula-panel}
+### Specific heat capacity
+
+The specific heat capacity $c$ of a substance is the thermal energy required to raise the temperature of $1\ \mathrm{kg}$ of the substance by $1\ \mathrm{K}$:
+
+$$\Delta Q=mc\Delta T.$$
+
+The unit of $c$ is $\mathrm{J\,kg^{-1}\,K^{-1}}$. A high specific heat capacity means that a large energy transfer produces only a small temperature change; a low specific heat capacity means that the substance heats and cools more quickly.
+:::
+
+::: {.study-card}
+### Changes of state
+
+During a change of state, energy is transferred without a change in temperature. The energy changes the molecular arrangement and potential energy rather than increasing the average kinetic energy.
+
+Common changes are:
+
+- melting: solid to liquid;
+- freezing: liquid to solid;
+- vaporisation or boiling: liquid to gas;
+- condensation: gas to liquid;
+- sublimation: solid to gas.
+:::
+
+::: {.formula-panel}
+### Specific latent heat
+
+Specific latent heat $L$ is the thermal energy required to change the state of $1\ \mathrm{kg}$ of a substance without changing its temperature:
+
+$$Q=mL.$$
+
+Its unit is $\mathrm{J\,kg^{-1}}$.
+
+- Specific latent heat of fusion applies to solid-liquid changes.
+- Specific latent heat of vaporisation applies to liquid-gas changes.
+
+For water, the latent heat of vaporisation is much greater than the latent heat of fusion because molecules must be separated much farther and work is done against external pressure.
+:::
+
+::: {.study-card}
+### Multi-stage thermal calculations
+
+A complete heating or cooling process may include several stages. For example, turning water at $15\ ^\circ\mathrm{C}$ into ice at $-6\ ^\circ\mathrm{C}$ requires:
+
+1. cooling the water to $0\ ^\circ\mathrm{C}$ using $mc\Delta T$;
+2. freezing it at constant temperature using $mL_f$;
+3. cooling the ice below $0\ ^\circ\mathrm{C}$ using the specific heat capacity of ice.
+
+Add the energy magnitudes for all stages. For a heater of constant power $P$, use $E=Pt$ and account for any energy lost to the surroundings.
+:::
+
+## Structured Questions
+
+{{< include 14-temperature-structured.qmd >}}
+
+## Chapter self-check
+
+- Can you state the direction of energy transfer and the condition for thermal equilibrium?
+- Can you distinguish temperature from total thermal energy?
+- Can you explain how each syllabus thermometric property is used?
+- Can you convert absolute temperatures and temperature differences correctly?
+- Can you choose between $mc\Delta T$ and $mL$ for each stage of a process?
+- Can you set up an energy balance involving several materials or energy losses?
+
+### Original topic PDFs
+
+- [14.1 Measuring Temperature - Easy](../resources/original-papers/temperature/14.1%20Measuring%20Temperature%20-%20Easy.pdf.pdf)
+- [14.1 Measuring Temperature - Medium](../resources/original-papers/temperature/14.1%20Measuring%20Temperature%20-%20Medium.pdf.pdf)
+- [14.1 Measuring Temperature - Hard](../resources/original-papers/temperature/14.1%20Measuring%20Temperature%20-%20Hard.pdf.pdf)
+- [14.2 Phase Changes - Easy](../resources/original-papers/temperature/14.2%20Phase%20Changes%20-%20Easy.pdf.pdf)
+- [14.2 Phase Changes - Medium](../resources/original-papers/temperature/14.2%20Phase%20Changes%20-%20Medium.pdf.pdf)
+- [14.2 Phase Changes - Hard](../resources/original-papers/temperature/14.2%20Phase%20Changes%20-%20Hard.pdf.pdf)

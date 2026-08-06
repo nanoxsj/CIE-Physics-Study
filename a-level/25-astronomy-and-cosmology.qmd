@@ -1,0 +1,199 @@
+---
+title: "25 Astronomy and cosmology"
+subtitle: "Standard candles, stellar radii, redshift, Hubble's law and the Big Bang theory"
+---
+
+## Learning objectives
+
+By the end of this chapter, you should be able to:
+
+- define luminosity and distinguish it from radiant flux intensity;
+- apply the inverse-square law to radiation from a star;
+- explain how a standard candle is used to determine astronomical distance;
+- use Wien's displacement law to estimate stellar surface temperature;
+- use the Stefan-Boltzmann law to determine stellar luminosity or radius;
+- identify redshift from stellar emission or absorption spectra;
+- calculate recession speed from a small change in wavelength or frequency;
+- use Hubble's law in SI units and estimate the age of the Universe;
+- explain how redshift and Hubble's law support an expanding Universe and the Big Bang theory.
+
+## 25.1 Standard candles
+
+::: {.study-card}
+### Luminosity and radiant flux intensity
+
+The **luminosity** $L$ of a star is the total power of electromagnetic radiation emitted by the star in all directions. It is measured in watts. Luminosity is an intrinsic property of a star: it does not depend on the observer's distance from the star.
+
+The **radiant flux intensity** $F$ received by an observer is the power incident per unit area perpendicular to the radiation. Its unit is $\mathrm{W\,m^{-2}}$. It becomes smaller as the observer moves farther from the source.
+:::
+
+::: {.formula-panel}
+### Inverse-square law
+
+For an isotropic source, the emitted power is spread over a sphere of area $4\pi d^2$. Therefore,
+
+$$F=\frac{L}{4\pi d^2}.$$
+
+Useful rearrangements are
+
+$$L=4\pi d^2F$$
+
+and
+
+$$d=\sqrt{\frac{L}{4\pi F}}.$$
+
+The equation assumes that radiation spreads uniformly in all directions and that absorption between the star and observer is negligible.
+:::
+
+::: {.study-card}
+### Standard candles and astronomical distance
+
+A **standard candle** is an astronomical object whose luminosity is known. The observer measures its radiant flux intensity at Earth and uses the inverse-square law to calculate its distance.
+
+Type Ia supernovae are useful at large distances because their luminosities can be calibrated. Distances obtained from standard candles can then be combined with redshift or recession-speed measurements to investigate the expansion of the Universe.
+:::
+
+## 25.2 Stellar radii
+
+::: {.study-card}
+### Stellar spectra and surface temperature
+
+A star behaves approximately like a black-body radiator. A graph of emitted intensity against wavelength has a broad maximum. Hotter stars have a peak at a shorter wavelength and generally appear blue or blue-white; cooler stars peak at a longer wavelength and appear orange or red.
+
+The peak wavelength indicates **surface temperature**, not core temperature. The height of a plotted curve alone does not determine temperature unless the graph's scaling and emitting area are known.
+:::
+
+::: {.formula-panel}
+### Wien's displacement law
+
+Wien's displacement law is
+
+$$\lambda_{\max}T=b,$$
+
+where $b\approx2.90\times10^{-3}\ \mathrm{m\,K}$.
+
+Thus,
+
+$$T=\frac{b}{\lambda_{\max}}.$$
+
+For two stars,
+
+$$\frac{T_1}{T_2}=\frac{\lambda_{\max,2}}{\lambda_{\max,1}}.$$
+
+Always convert the wavelength to metres before substituting into the equation.
+:::
+
+::: {.formula-panel}
+### Stefan-Boltzmann law and stellar radius
+
+The luminosity of a spherical star is
+
+$$L=4\pi\sigma r^2T^4,$$
+
+where $r$ is the stellar radius and $\sigma=5.67\times10^{-8}\ \mathrm{W\,m^{-2}\,K^{-4}}$.
+
+Hence,
+
+$$r=\sqrt{\frac{L}{4\pi\sigma T^4}}.$$
+
+For comparison with the Sun,
+
+$$\frac{L}{L_\odot}=\left(\frac{r}{R_\odot}\right)^2\left(\frac{T}{T_\odot}\right)^4.$$
+
+Because luminosity depends on $T^4$, a modest temperature change can strongly affect luminosity. A cool star may nevertheless be very luminous if its radius is large.
+:::
+
+::: {.study-card}
+### A reliable calculation sequence
+
+When both spectral and brightness data are supplied:
+
+1. read $\lambda_{\max}$ and use Wien's law to find $T$;
+2. use a known distance and measured flux to find $L$, or use a given luminosity;
+3. substitute $L$ and $T$ into the Stefan-Boltzmann law to determine $r$;
+4. check that all quantities are in SI units and that radius has not been confused with diameter.
+:::
+
+## 25.3 Hubble's law and the Big Bang theory
+
+::: {.study-card}
+### Spectral lines and redshift
+
+Atoms produce characteristic emission and absorption lines. Astronomers compare the wavelengths of lines from a distant object with the known laboratory wavelengths of the same elements.
+
+If every line is shifted to a greater wavelength, the source is **redshifted** and is moving away from the observer. A shift to a shorter wavelength is a **blueshift** and indicates motion towards the observer.
+:::
+
+::: {.formula-panel}
+### Calculating a small redshift
+
+For speeds much smaller than the speed of light,
+
+$$\frac{\Delta\lambda}{\lambda}\approx-\frac{\Delta f}{f}\approx\frac{v}{c}.$$
+
+Here $\Delta\lambda=\lambda_{\text{observed}}-\lambda_{\text{laboratory}}$. A positive $\Delta\lambda$ gives a positive recession speed. The denominator should be the known laboratory wavelength.
+
+The dimensionless redshift is
+
+$$z=\frac{\Delta\lambda}{\lambda}\approx\frac{v}{c}.$$
+:::
+
+::: {.formula-panel}
+### Hubble's law
+
+Hubble's law states that the recession speed $v$ of a distant galaxy is proportional to its distance $d$:
+
+$$v\approx H_0d.$$
+
+On a graph of $v$ against $d$, the gradient is the Hubble constant $H_0$. When SI units are used, $H_0$ has unit $\mathrm{s^{-1}}$.
+
+A simple estimate for the age of the Universe is
+
+$$t_0\approx\frac{1}{H_0}.$$
+
+This estimate assumes that the expansion rate represented by $H_0$ has remained constant. Real measurements have uncertainty because galaxies can have local or peculiar velocities in addition to the general expansion.
+:::
+
+::: {.study-card}
+### Expansion and the Big Bang theory
+
+The widespread redshift of distant galaxies shows that most galaxies are receding. Hubble's law shows that more distant galaxies generally recede faster, so space on large scales is expanding.
+
+Running this expansion backwards implies that matter was closer together, denser and hotter in the past. Extrapolation leads to the Big Bang model: the Universe developed from an extremely hot, dense initial state and has expanded since then. The Big Bang was not an explosion from one location into pre-existing space; it describes the expansion of space throughout the Universe.
+:::
+
+::: {.study-card}
+### Determining the Hubble constant
+
+For a set of galaxies or Type Ia supernovae:
+
+1. determine distance independently, for example using a standard candle;
+2. measure spectral-line wavelengths and calculate redshift or recession speed;
+3. plot recession speed against distance;
+4. determine $H_0$ from the gradient of the best-fit line.
+
+Using many distant objects reduces the relative effect of individual galaxies' local motions.
+:::
+
+## Selected Structured Questions
+
+{{< include 25-astronomy-and-cosmology-structured.qmd >}}
+
+## Chapter checklist
+
+- [ ] I can distinguish luminosity from radiant flux intensity.
+- [ ] I can use a standard candle and the inverse-square law to determine distance.
+- [ ] I can use Wien's and Stefan-Boltzmann laws to determine temperature and radius.
+- [ ] I can identify and calculate redshift from spectral lines.
+- [ ] I can use Hubble's law and obtain $H_0$ from a graph.
+- [ ] I can explain the assumptions behind $t_0\approx1/H_0$.
+- [ ] I can link redshift and universal expansion to the Big Bang theory.
+
+### Original question PDFs
+
+- [25.1 Astronomy - Easy](../resources/original-papers/astronomy-cosmology/25.1-astronomy-easy.pdf)
+- [25.1 Astronomy - Medium](../resources/original-papers/astronomy-cosmology/25.1-astronomy-medium.pdf)
+- [25.1 Astronomy - Hard](../resources/original-papers/astronomy-cosmology/25.1-astronomy-hard.pdf)
+- [25.2 Cosmology - Easy](../resources/original-papers/astronomy-cosmology/25.2-cosmology-easy.pdf)
+- [25.2 Cosmology - Medium](../resources/original-papers/astronomy-cosmology/25.2-cosmology-medium.pdf)
+- [25.2 Cosmology - Hard](../resources/original-papers/astronomy-cosmology/25.2-cosmology-hard.pdf)

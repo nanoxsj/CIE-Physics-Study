@@ -6,6 +6,20 @@ project:
     - as-level/01-physical-quantities-and-units.qmd
     - as-level/02-kinematics.qmd
     - as-level/03-dynamics.qmd
+    - a-level/12-motion-in-a-circle.qmd
+    - a-level/13-gravitational-fields.qmd
+    - a-level/14-temperature.qmd
+    - a-level/15-ideal-gases.qmd
+    - a-level/16-thermodynamics.qmd
+    - a-level/17-oscillations.qmd
+    - a-level/18-electric-fields.qmd
+    - a-level/19-capacitance.qmd
+    - a-level/20-magnetic-fields.qmd
+    - a-level/21-alternating-currents.qmd
+    - a-level/22-quantum-physics.qmd
+    - a-level/23-nuclear-physics.qmd
+    - a-level/24-medical-physics.qmd
+    - a-level/25-astronomy-and-cosmology.qmd
 
 website:
   title: "CIE Physics 9702"
@@ -24,6 +38,36 @@ website:
             text: "2 Kinematics"
           - href: as-level/03-dynamics.qmd
             text: "3 Dynamics"
+      - section: "A Level"
+        contents:
+          - href: a-level/12-motion-in-a-circle.qmd
+            text: "12 Motion in a circle"
+          - href: a-level/13-gravitational-fields.qmd
+            text: "13 Gravitational fields"
+          - href: a-level/14-temperature.qmd
+            text: "14 Temperature"
+          - href: a-level/15-ideal-gases.qmd
+            text: "15 Ideal gases"
+          - href: a-level/16-thermodynamics.qmd
+            text: "16 Thermodynamics"
+          - href: a-level/17-oscillations.qmd
+            text: "17 Oscillations"
+          - href: a-level/18-electric-fields.qmd
+            text: "18 Electric fields"
+          - href: a-level/19-capacitance.qmd
+            text: "19 Capacitance"
+          - href: a-level/20-magnetic-fields.qmd
+            text: "20 Magnetic fields"
+          - href: a-level/21-alternating-currents.qmd
+            text: "21 Alternating currents"
+          - href: a-level/22-quantum-physics.qmd
+            text: "22 Quantum physics"
+          - href: a-level/23-nuclear-physics.qmd
+            text: "23 Nuclear physics"
+          - href: a-level/24-medical-physics.qmd
+            text: "24 Medical physics"
+          - href: a-level/25-astronomy-and-cosmology.qmd
+            text: "25 Astronomy and cosmology"
 
 format:
   html:

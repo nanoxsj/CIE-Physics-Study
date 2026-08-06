@@ -1,0 +1,209 @@
+---
+title: "22 Quantum physics"
+subtitle: "Photons, the photoelectric effect, wave-particle duality and atomic energy levels"
+---
+
+## Learning objectives
+
+By the end of this chapter, you should be able to:
+
+- explain the particulate nature of electromagnetic radiation;
+- use $E=hf$, $E=hc/\lambda$ and $p=E/c$ for photons;
+- convert between joules and electronvolts;
+- explain photoelectric emission using photons and work function energy;
+- use the photoelectric equation and interpret maximum-energy graphs;
+- explain how frequency and intensity affect photoelectric emission;
+- describe electron diffraction as evidence for matter waves;
+- use the de Broglie relation $\lambda=h/p$;
+- interpret atomic energy-level diagrams and line spectra;
+- use $hf=E_1-E_2$ for transitions between discrete levels.
+
+## 22.1 Energy and momentum of a photon
+
+::: {.study-card}
+### Photons and quantised energy
+
+Electromagnetic radiation transfers energy in discrete packets called **photons**. A photon is one quantum of electromagnetic energy. Its energy depends only on frequency:
+
+$$E=hf,$$
+
+where $h=6.63\times10^{-34}\ \mathrm{J\,s}$. Since $c=f\lambda$,
+
+$$E=\frac{hc}{\lambda}.$$
+
+Higher-frequency, shorter-wavelength radiation therefore consists of more energetic photons. Intensity does not change the energy of each photon when the frequency is fixed; it changes the number of photons arriving per unit area per unit time.
+:::
+
+::: {.formula-panel}
+### Photon rate and intensity
+
+If radiation of power $P$ is monochromatic, the number of photons emitted or incident per unit time is
+
+$$\frac{N}{t}=\frac{P}{hf}=\frac{P\lambda}{hc}.$$
+
+For a beam spread uniformly over area $A$, intensity is $I=P/A$. At fixed frequency, doubling intensity doubles the photon arrival rate.
+:::
+
+::: {.study-card}
+### The electronvolt
+
+One electronvolt is the energy transferred when a charge equal to the elementary charge moves through a potential difference of one volt:
+
+$$1\ \mathrm{eV}=1.60\times10^{-19}\ \mathrm{J}.$$
+
+To convert eV to J, multiply by $1.60\times10^{-19}$. To convert J to eV, divide by this value. Energy-level data are often given in eV, but $E=hf$ requires consistent SI units unless all quantities are converted carefully.
+:::
+
+::: {.formula-panel}
+### Photon momentum
+
+A photon has zero rest mass but carries momentum:
+
+$$p=\frac{E}{c}=\frac{hf}{c}=\frac{h}{\lambda}.$$
+
+Absorption or reflection changes momentum and can produce radiation pressure. Momentum is a vector, so scattering problems require conservation in perpendicular directions, not just comparison of magnitudes.
+:::
+
+## 22.2 Photoelectric effect
+
+::: {.study-card}
+### Photoelectric emission
+
+Photoelectric emission is the release of electrons from a metal surface when electromagnetic radiation of sufficiently high frequency is incident on it. Each surface electron absorbs one photon in a one-to-one interaction.
+
+The **work function energy** $\Phi$ is the minimum energy required to remove an electron from the surface with zero kinetic energy. Different metals have different work functions.
+:::
+
+::: {.formula-panel}
+### Einstein's photoelectric equation
+
+Energy conservation for the most energetic emitted electron gives
+
+$$hf=\Phi+E_{k\max}
+=\Phi+\frac12m_ev_{\max}^2.$$
+
+Some electrons have less kinetic energy because they lose energy before leaving the metal. No electron can have kinetic energy greater than $E_{k\max}$.
+:::
+
+::: {.study-card}
+### Threshold frequency and wavelength
+
+At the threshold frequency $f_0$, the emitted electron has zero maximum kinetic energy:
+
+$$\Phi=hf_0=\frac{hc}{\lambda_0},$$
+
+where $\lambda_0$ is the threshold wavelength. Emission occurs for $f\ge f_0$, equivalently $\lambda\le\lambda_0$.
+
+Below threshold frequency, increasing intensity cannot cause emission because no individual photon has enough energy.
+:::
+
+::: {.study-card}
+### Evidence against a classical wave explanation
+
+The photon model explains observations that a simple wave-energy model cannot:
+
+- emission is effectively instantaneous when $f\ge f_0$;
+- there is no emission below $f_0$, regardless of intensity;
+- $E_{k\max}$ depends on frequency, not intensity;
+- at fixed frequency above threshold, photoelectric current increases with intensity because more photons arrive each second.
+:::
+
+::: {.formula-panel}
+### Photoelectric graphs
+
+From
+
+$$E_{k\max}=hf-\Phi,$$
+
+a graph of $E_{k\max}$ against $f$ is a straight line with gradient $h$, vertical intercept $-\Phi$ and horizontal intercept $f_0$.
+
+Using $f=c/\lambda$,
+
+$$E_{k\max}=hc\left(\frac1\lambda-\frac1{\lambda_0}\right).$$
+
+A graph of $E_{k\max}$ against $1/\lambda$ has gradient $hc$ and horizontal intercept $1/\lambda_0$. Changing the metal changes $\Phi$ and the intercept, but not the gradient.
+:::
+
+## 22.3 Wave-particle duality
+
+::: {.study-card}
+### Two complementary models
+
+The photoelectric effect demonstrates the particulate nature of electromagnetic radiation. Interference and diffraction demonstrate its wave nature. Matter also shows dual behaviour: particles have localised impacts and momentum, but moving particles can diffract and interfere.
+:::
+
+::: {.formula-panel}
+### de Broglie wavelength
+
+The wavelength associated with a moving particle is
+
+$$\lambda=\frac{h}{p}.$$
+
+For a non-relativistic particle, $p=mv$, so
+
+$$\lambda=\frac{h}{mv}.$$
+
+Using $E_k=p^2/(2m)$ gives
+
+$$\lambda=\frac{h}{\sqrt{2mE_k}}.$$
+
+Increasing momentum or accelerating potential difference decreases wavelength. As $v\to0$, the non-relativistic expression predicts $\lambda\to\infty$.
+:::
+
+::: {.study-card}
+### Electron diffraction
+
+Electrons accelerated through a potential difference produce diffraction rings after passing through a thin crystalline target. The regular atomic planes act like a diffraction grating because their spacing is comparable to the electron de Broglie wavelength.
+
+The diffraction pattern is evidence that electrons have wave properties. A lower accelerating p.d. gives lower momentum, a longer wavelength and wider diffraction-ring spacing.
+:::
+
+## 22.4 Energy levels in atoms and line spectra
+
+::: {.study-card}
+### Discrete energy levels
+
+Electrons in isolated atoms can occupy only certain discrete energy levels. The lowest is the **ground state**; higher allowed levels are **excited states**. The ionisation level is conventionally assigned zero energy, so bound-state energies are negative.
+
+An electron cannot remain between permitted levels. Excitation requires exactly the energy difference between two levels when a photon is absorbed.
+:::
+
+::: {.formula-panel}
+### Photon emission and absorption
+
+For a transition between levels $E_1$ and $E_2$,
+
+$$\Delta E=|E_1-E_2|=hf=\frac{hc}{\lambda}.$$
+
+- Downward transition: a photon is emitted.
+- Upward transition: a photon of exactly the required energy is absorbed.
+- Photon energy greater than the ionisation energy: the electron is freed and the excess becomes kinetic energy.
+:::
+
+::: {.study-card}
+### Line spectra
+
+Each allowed energy difference produces one discrete photon frequency and wavelength. A hot, low-pressure gas produces bright **emission lines** when excited electrons fall to lower levels. A continuous spectrum passing through a cooler gas produces dark **absorption lines** when photons matching upward transitions are removed.
+
+Because each element has a unique set of energy levels, its line spectrum acts as a fingerprint. The largest energy gap produces the highest frequency and shortest wavelength.
+:::
+
+## Structured Questions
+
+{{< include 22-quantum-physics-structured.qmd >}}
+
+## Chapter checklist
+
+- [ ] I can calculate photon energy, momentum and photon arrival rate.
+- [ ] I can convert accurately between eV and J.
+- [ ] I can use and explain the photoelectric equation.
+- [ ] I can interpret $E_{k\max}$ graphs and distinguish frequency from intensity effects.
+- [ ] I can calculate and interpret de Broglie wavelength.
+- [ ] I can use energy-level diagrams to identify transitions and spectral lines.
+- [ ] I can distinguish excitation, emission, absorption and ionisation.
+
+### Original question PDFs
+
+- [22.1 The Photoelectric Effect — Medium](../resources/original-papers/quantum-physics/22.1-photoelectric-effect-medium.pdf)
+- [22.2 Wave-Particle Duality — Medium](../resources/original-papers/quantum-physics/22.2-wave-particle-duality-medium.pdf)
+- [22.3 Quantisation of Energy — Medium](../resources/original-papers/quantum-physics/22.3-quantisation-of-energy-medium.pdf)

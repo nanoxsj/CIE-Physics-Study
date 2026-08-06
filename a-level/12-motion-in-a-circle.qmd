@@ -1,0 +1,133 @@
+---
+title: "12 Motion in a circle"
+subtitle: "Angular motion, centripetal acceleration and centripetal force"
+---
+
+## Learning objectives
+
+By the end of this chapter, you should be able to:
+
+- define the radian and express angular displacement in radians;
+- understand and use angular speed;
+- recall and use $\omega=2\pi/T$ and $v=r\omega$;
+- explain why a constant-magnitude force perpendicular to the motion produces centripetal acceleration;
+- explain why centripetal acceleration produces circular motion at constant angular speed;
+- recall and use $a=r\omega^2$ and $a=v^2/r$;
+- recall and use $F=mr\omega^2$ and $F=mv^2/r$.
+
+## 12.1 Kinematics of uniform circular motion
+
+::: {.study-card}
+### Angular displacement and the radian
+
+For an arc of length $s$ on a circle of radius $r$, the angular displacement in radians is
+
+$$\theta=\frac{s}{r}.$$
+
+One radian is the angle subtended at the centre of a circle by an arc whose length is equal to the radius. Since the circumference is $2\pi r$, one complete revolution is
+
+$$\theta=\frac{2\pi r}{r}=2\pi\ \mathrm{rad}=360^\circ.$$
+
+Therefore,
+
+$$\theta(\mathrm{rad})=\theta(^\circ)\frac{\pi}{180},
+\qquad
+\theta(^\circ)=\theta(\mathrm{rad})\frac{180}{\pi}.$$
+
+Radians are dimensionless, but writing `rad` is useful because it identifies an angular quantity. Circular-motion equations such as $s=r\theta$ require $\theta$ in radians.
+:::
+
+::: {.study-card}
+### Angular speed, period and frequency
+
+Angular speed is the rate of change of angular displacement:
+
+$$\omega=\frac{\Delta\theta}{\Delta t}.$$
+
+For uniform circular motion, the angular speed is constant. During one period $T$, the radius turns through $2\pi$ radians, so
+
+$$\omega=\frac{2\pi}{T}=2\pi f,$$
+
+where $f=1/T$ is the frequency. The SI unit of angular speed is $\mathrm{rad\,s^{-1}}$.
+
+Every point on a rigid rotating object has the same angular speed, but points farther from the axis have a greater linear speed.
+:::
+
+::: {.formula-panel}
+### Linear speed and angular speed
+
+Starting from $s=r\theta$ and dividing by time gives
+
+$$v=r\omega.$$
+
+The instantaneous linear velocity is tangent to the circular path. Its magnitude can remain constant while its direction changes continuously. If the inward force is removed, the object initially moves along this tangent rather than radially outwards.
+
+Useful equivalent forms are
+
+$$v=\frac{2\pi r}{T}=2\pi rf.$$
+:::
+
+## 12.2 Centripetal acceleration
+
+::: {.study-card}
+### Why circular motion is accelerated motion
+
+Acceleration is the rate of change of velocity. In uniform circular motion, speed is constant but velocity is not, because the velocity direction changes continuously.
+
+The acceleration:
+
+- is directed towards the centre of the circle;
+- is perpendicular to the instantaneous velocity;
+- changes the direction of velocity without changing its magnitude.
+
+Its magnitude is
+
+$$a=\frac{v^2}{r}=r\omega^2=v\omega.$$
+
+For fixed $r$, doubling $v$ makes $a$ four times larger. For fixed $\omega$, doubling $r$ doubles $a$. Always decide which quantity is being held constant before comparing two motions.
+:::
+
+::: {.study-card}
+### Centripetal force
+
+The centripetal force is the resultant inward force required for circular motion:
+
+$$F=ma=\frac{mv^2}{r}=mr\omega^2.$$
+
+It is not an additional type of force. It is supplied by one force or by the inward resultant of several forces. Examples include:
+
+- gravitational force for a moon or satellite;
+- tension for an object moving in a circle on a string;
+- friction for a car turning on a level road;
+- a component of the normal contact force for a banked track or bowl.
+
+In a force diagram, draw the real forces first. Resolve them, then identify their resultant towards the centre as the centripetal force.
+:::
+
+::: {.formula-panel}
+### Reliable calculation routine
+
+1. Identify the centre of the circular path and the radius measured from that centre.
+2. Convert all quantities to SI units. Period must be in seconds for $\omega$ in $\mathrm{rad\,s^{-1}}$.
+3. Choose the form containing the known quantities: $v=r\omega$, $a=v^2/r$, $a=r\omega^2$, $F=mv^2/r$, or $F=mr\omega^2$.
+4. For orbital altitude, distinguish altitude above the surface from orbital radius measured from the planet's centre.
+5. Check direction as well as magnitude: velocity is tangential; acceleration and resultant force are radial and inward.
+:::
+
+## Structured Questions
+
+{{< include 12-motion-in-a-circle-structured.qmd >}}
+
+## Chapter self-check
+
+- Can you explain geometrically why one revolution is $2\pi$ radians?
+- Can you convert between $T$, $f$, $\omega$ and $v$ without mixing units?
+- Can you explain why constant speed in a circle still involves acceleration?
+- Can you identify which real force or force component supplies the centripetal force?
+- Can you distinguish orbital radius from altitude above a surface?
+
+### Original topic PDFs
+
+- [12.1 Kinematics of Uniform Circular Motion - Medium](../resources/original-papers/motion-in-a-circle/12.1%20Kinematics%20of%20Uniform%20Circular%20Motion%20-%20Medium.pdf.pdf)
+- [12.2 Centripetal Acceleration - Easy](../resources/original-papers/motion-in-a-circle/12.2%20Centripetal%20Acceleration%20-%20Easy.pdf.pdf)
+- [12.2 Centripetal Acceleration - Medium](../resources/original-papers/motion-in-a-circle/12.2%20Centripetal%20Acceleration%20-%20Medium.pdf.pdf)

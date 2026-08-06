@@ -1,0 +1,197 @@
+---
+title: "20 Magnetic fields"
+subtitle: "Magnetic forces, Hall effect, fields due to currents and electromagnetic induction"
+---
+
+## Learning objectives
+
+By the end of this chapter, you should be able to:
+
+- represent magnetic fields using directed field lines;
+- use $F=BIL\sin\theta$ and Fleming's left-hand rule;
+- use $F=BQv\sin\theta$ for moving charges;
+- explain circular motion of charges in uniform magnetic fields;
+- derive and use the Hall-voltage equation;
+- sketch fields due to straight wires, coils and solenoids;
+- explain forces between parallel current-carrying conductors;
+- define magnetic flux and flux linkage;
+- apply Faraday's and Lenz's laws.
+
+## 20.1 Concept of a magnetic field
+
+::: {.study-card}
+### Magnetic fields and field lines
+
+A magnetic field is a field of force produced by moving charge or a permanent magnet. Field lines show the direction in which a north magnetic pole would move. Outside a bar magnet they run from north to south; inside the magnet they return from south to north.
+
+The tangent to a field line gives the local field direction. Closer spacing represents greater magnetic flux density. Field lines never cross.
+:::
+
+::: {.study-card}
+### Common notation
+
+- $\odot$ represents a vector out of the page, like the tip of an arrow.
+- $\otimes$ represents a vector into the page, like the tail feathers of an arrow.
+
+Use the right-hand grip rule for a current: thumb in the direction of conventional current, curled fingers in the direction of the magnetic field.
+:::
+
+## 20.2 Force on a current-carrying conductor
+
+::: {.formula-panel}
+### Magnetic force on a wire
+
+For a straight conductor of active length $L$ carrying current $I$ in a uniform field of flux density $B$,
+
+$$F=BIL\sin\theta,$$
+
+where $\theta$ is the angle between the current and the magnetic field. Force is maximum at $90^\circ$ and zero when the wire is parallel to the field.
+:::
+
+::: {.study-card}
+### Direction and flux-density definition
+
+Fleming's left-hand rule gives mutually perpendicular directions:
+
+- first finger: magnetic **field**;
+- second finger: conventional **current**;
+- thumb: **force** or motion.
+
+Magnetic flux density is the force per unit current per unit length on a wire placed perpendicular to the field:
+
+$$B=\frac{F}{IL}.$$
+
+Thus $1\ \mathrm{T}=1\ \mathrm{N\ A^{-1}\ m^{-1}}$.
+:::
+
+## 20.3 Force on a moving charge
+
+::: {.formula-panel}
+### Magnetic force on a particle
+
+For charge $Q$ moving at speed $v$,
+
+$$F=BQv\sin\theta.$$
+
+The force direction for a positive charge follows the conventional-current direction in Fleming's rule; reverse it for a negative charge. Magnetic force is perpendicular to velocity, so it changes direction but does no work and does not change speed.
+:::
+
+::: {.study-card}
+### Circular motion
+
+When $\vec v\perp\vec B$, magnetic force supplies centripetal force:
+
+$$BQv=\frac{mv^2}{r}, \qquad r=\frac{mv}{|Q|B}.$$
+
+The angular speed and period are
+
+$$\omega=\frac{|Q|B}{m}, \qquad T=\frac{2\pi m}{|Q|B}.$$
+
+A velocity component parallel to the field is unchanged, producing a helical path.
+:::
+
+::: {.formula-panel}
+### Hall effect
+
+Charge carriers moving through a conductor in a perpendicular magnetic field are deflected, producing a transverse Hall voltage. At equilibrium, electric and magnetic forces balance.
+
+For carrier number density $n$, charge magnitude $q$, current $I$ and sample thickness $t$,
+
+$$V_H=\frac{BI}{ntq}.$$
+
+Hall polarity identifies the sign of charge carriers, while a calibrated Hall probe measures $B$.
+:::
+
+::: {.study-card}
+### Velocity selection
+
+In crossed electric and magnetic fields, forces can oppose:
+
+$$QE=BQv.$$
+
+Particles pass undeflected only when
+
+$$v=\frac{E}{B}.$$
+:::
+
+## 20.4 Magnetic fields due to currents
+
+::: {.study-card}
+### Field patterns
+
+- Long straight wire: concentric circular field lines.
+- Flat circular coil: a dipole-like pattern, strongest through the centre.
+- Long solenoid: strong, nearly uniform parallel field inside and weak return field outside.
+
+A ferrous core increases the field in a solenoid because it becomes magnetised and adds to the field produced by the current.
+:::
+
+::: {.study-card}
+### Parallel currents
+
+Each current-carrying wire lies in the magnetic field produced by the other. Currents in the same direction attract; currents in opposite directions repel. Newton's third law gives equal and opposite forces on the two wires.
+:::
+
+## 20.5 Electromagnetic induction
+
+::: {.formula-panel}
+### Magnetic flux and flux linkage
+
+Magnetic flux through area $A$ is
+
+$$\Phi=BA\cos\theta,$$
+
+where $\theta$ is the angle between $\vec B$ and the normal to the area. Its unit is the weber (Wb).
+
+For a coil of $N$ turns, magnetic flux linkage is
+
+$$N\Phi.$$
+:::
+
+::: {.formula-panel}
+### Faraday's law
+
+The magnitude of induced e.m.f. equals the rate of change of magnetic flux linkage:
+
+$$|\mathcal E|=\left|\frac{\Delta(N\Phi)}{\Delta t}\right|.$$
+
+A larger number of turns, stronger field, larger area or faster change produces a larger induced e.m.f.
+:::
+
+::: {.study-card}
+### Lenz's law
+
+The induced current is in a direction that opposes the change producing it. Including direction,
+
+$$\mathcal E=-\frac{d(N\Phi)}{dt}.$$
+
+The minus sign expresses energy conservation: an induced current cannot reinforce the change that created it without external work.
+:::
+
+::: {.study-card}
+### Ways to change flux linkage
+
+An e.m.f. can be induced by changing magnetic flux density, coil area, coil orientation, number of linked turns, or relative position of magnet and coil. A stationary magnet and stationary coil produce no e.m.f. even when the flux is large; the flux linkage must change.
+:::
+
+## Structured Questions
+
+{{< include 20-magnetic-fields-structured.qmd >}}
+
+## Chapter self-check
+
+- Can you use both hand rules without confusing conventional current and electron flow?
+- Can you identify when magnetic force is zero or maximum?
+- Can you derive the radius of a charged particle's circular path?
+- Can you explain Hall voltage from charge separation?
+- Can you sketch wire, coil and solenoid field patterns?
+- Can you distinguish magnetic flux from flux linkage?
+- Can you use the area and the correct angle in $\Phi=BA\cos\theta$?
+- Can you explain the minus sign in Faraday-Lenz law?
+
+### Original topic PDFs
+
+- [20.1 Magnetic Fields - Easy](../resources/original-papers/magnetic-fields/20.1%20Magnetic%20Fields%20-%20Easy.pdf.pdf)
+- [20.1 Magnetic Fields - Medium](../resources/original-papers/magnetic-fields/20.1%20Magnetic%20Fields%20-%20Medium.pdf.pdf)
+- [20.2 Electromagnetic Induction - Easy](../resources/original-papers/magnetic-fields/20.2%20Electromagnetic%20Induction%20-%20Easy.pdf.pdf)
+- [20.2 Electromagnetic Induction - Medium](../resources/original-papers/magnetic-fields/20.2%20Electromagnetic%20Induction%20-%20Medium.pdf.pdf)

@@ -1,0 +1,168 @@
+---
+title: "16 Thermodynamics"
+subtitle: "Internal energy, work done by gases and the first law of thermodynamics"
+---
+
+## Learning objectives
+
+By the end of this chapter, you should be able to:
+
+- define internal energy as the random distribution of molecular kinetic and potential energies;
+- explain how temperature and phase affect internal energy;
+- calculate work done during a constant-pressure volume change using $W=p\Delta V$;
+- distinguish work done by a gas from work done on a gas;
+- use the sign convention in $\Delta U=q+W$;
+- apply the first law of thermodynamics to heating, compression, expansion and changes of state;
+- interpret thermodynamic cycles and pressure-volume diagrams.
+
+## 16.1 Internal energy
+
+::: {.study-card}
+### Definition and state of a system
+
+Internal energy $U$ is the sum of the random distribution of kinetic and potential energies associated with the molecules of a system. It is measured in joules.
+
+Internal energy is a state function: its value is determined by the present state of the system, not by the path used to reach that state. Therefore, after a complete cycle that returns a system to its initial state,
+
+$$\Delta U_{\mathrm{cycle}}=0.$$
+:::
+
+::: {.study-card}
+### Molecular kinetic and potential energies
+
+Molecular kinetic energy includes random translational, rotational and vibrational motion. Raising temperature increases average molecular kinetic energy, so it generally increases internal energy.
+
+Molecular potential energy depends on intermolecular separation and forces. During melting or vaporisation, temperature may remain constant while molecular separation increases. Kinetic energy then remains approximately constant, but potential energy and internal energy increase.
+
+For a solid cooling without changing state, the arrangement and molecular potential energy are approximately unchanged, while vibrational kinetic energy decreases.
+:::
+
+::: {.formula-panel}
+### Internal energy of an ideal monatomic gas
+
+An ideal gas is modelled as having no intermolecular potential energy. Its internal energy is therefore the total random translational kinetic energy:
+
+$$U=\frac32NkT=\frac32nRT.$$
+
+For a fixed amount of ideal monatomic gas,
+
+$$\Delta U=\frac32Nk\Delta T=\frac32nR\Delta T.$$
+
+Thus internal energy depends only on thermodynamic temperature. A change in Celsius temperature has the same numerical size as the corresponding change in kelvin.
+:::
+
+## 16.2 Work done by and on a gas
+
+::: {.study-card}
+### Constant-pressure work
+
+When a gas expands against a constant external pressure $p$, it pushes a piston or the atmosphere through a distance. The magnitude of the work is
+
+$$W=p\Delta V.$$
+
+This follows from $W=Fs$, $p=F/A$ and $\Delta V=As$.
+
+The pressure in this equation is the external pressure opposed by the expanding gas. The equation in this form applies directly when pressure is constant.
+:::
+
+::: {.formula-panel}
+### Sign convention used in this chapter
+
+The syllabus writes the first law using $W$ as the **work done on the system**:
+
+- compression: work is done on the gas, so $W>0$;
+- expansion: work is done by the gas on the surroundings, so $W<0$;
+- no volume change: $W=0$.
+
+For a constant-pressure change,
+
+$$W_{\mathrm{on}}=-p(V_f-V_i).$$
+
+Therefore an expansion has negative $W_{\mathrm{on}}$, while compression has positive $W_{\mathrm{on}}$.
+:::
+
+::: {.study-card}
+### Pressure-volume diagrams
+
+On a graph of pressure $p$ against volume $V$, the magnitude of work done by a gas is the area under the process curve:
+
+$$W_{\mathrm{by}}=\int p\,dV.$$
+
+For a constant-pressure process, this is a rectangle of area $p\Delta V$. For a complete cycle, the enclosed area gives the net work done during the cycle. Internal energy still returns to its initial value because it depends only on state.
+:::
+
+## The first law of thermodynamics
+
+::: {.formula-panel}
+### Energy conservation
+
+The first law of thermodynamics is
+
+$$\Delta U=q+W,$$
+
+where:
+
+- $\Delta U$ is the increase in internal energy of the system;
+- $q$ is energy transferred to the system by heating;
+- $W$ is work done on the system.
+
+All three quantities are measured in joules.
+:::
+
+::: {.study-card}
+### Reading the signs
+
+Use the following signs consistently:
+
+| Process | Sign |
+|---|---:|
+| energy supplied to the system by heating | $q>0$ |
+| energy removed from the system by cooling | $q<0$ |
+| work done on the system by compression | $W>0$ |
+| work done by the system during expansion | $W<0$ |
+| internal energy increases | $\Delta U>0$ |
+| internal energy decreases | $\Delta U<0$ |
+
+Write the physical direction of each energy transfer before substituting numbers. This prevents most sign errors.
+:::
+
+::: {.study-card}
+### Common processes
+
+- Constant volume: $W=0$, so $\Delta U=q$.
+- Adiabatic compression: $q=0$ and $W>0$, so internal energy and temperature increase.
+- Adiabatic expansion: $q=0$ and $W<0$, so internal energy and temperature decrease.
+- Isothermal change of an ideal gas: $\Delta U=0$, so $q=-W$.
+- Complete cycle: $\Delta U=0$, so net heating equals the negative of net work done on the system.
+:::
+
+::: {.study-card}
+### Vaporisation against external pressure
+
+During vaporisation, heating increases molecular potential energy and the substance expands against the surroundings. With negligible initial liquid volume,
+
+$$|W_{\mathrm{by}}|=pV_{\mathrm{vapour}},$$
+
+and, using the chapter sign convention,
+
+$$\Delta U=q-|W_{\mathrm{by}}|.$$
+
+The latent heat supplied is therefore divided between increasing internal energy and doing work on the surroundings.
+:::
+
+## Structured Questions
+
+{{< include 16-thermodynamics-structured.qmd >}}
+
+## Chapter self-check
+
+- Can you separate molecular kinetic energy from molecular potential energy?
+- Can you explain why internal energy returns to its original value after a cycle?
+- Do you know whether the question defines $W$ as work done on or by the gas?
+- Can you assign the signs of $q$, $W$ and $\Delta U$ before calculating?
+- Can you use $W=p\Delta V$ only when the pressure is constant?
+- Can you apply the first law to a change of state as well as to a gas process?
+
+### Original topic PDF
+
+- [16.1 The First Law of Thermodynamics - Medium](../resources/original-papers/thermodynamics/16.1%20The%20First%20Law%20of%20Thermodynamics%20-%20Medium.pdf.pdf)

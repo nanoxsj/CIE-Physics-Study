@@ -1,0 +1,154 @@
+---
+title: "24 Medical physics"
+subtitle: "Ultrasound, X-ray imaging, CT and positron emission tomography"
+---
+
+## Learning objectives
+
+By the end of this chapter, you should be able to:
+
+- explain how a piezoelectric transducer generates and detects ultrasound;
+- use pulse-echo timing to locate internal boundaries;
+- calculate specific acoustic impedance and intensity reflection;
+- use exponential attenuation for ultrasound and X-rays;
+- explain X-ray production and calculate minimum wavelength;
+- explain contrast and the construction of CT images;
+- describe positron-emitting tracers and electron-positron annihilation;
+- calculate annihilation-photon energy and momentum;
+- explain how coincidence detection produces a PET image.
+
+## 24.1 Production and use of ultrasound
+
+::: {.study-card}
+### Piezoelectric transducers
+
+A piezoelectric crystal changes shape when a potential difference is applied across it. An alternating p.d. makes the crystal expand and contract, producing mechanical vibrations. Maximum energy transfer occurs when the applied frequency equals the crystal's natural frequency, so resonance occurs.
+
+The effect is reversible: an incoming ultrasound pulse deforms the crystal and generates an alternating e.m.f. The same probe can therefore act as transmitter and receiver.
+:::
+
+::: {.study-card}
+### Short pulses and pulse-echo imaging
+
+The alternating p.d. is applied in short bursts. Backing material damps the crystal quickly so that transmission stops before reflected pulses return. This prevents overlap between transmitted and received signals.
+
+At a tissue boundary, part of the pulse is reflected. The round-trip time delay gives boundary depth:
+
+$$d=\frac{ct}{2}.$$
+
+Reflection strength gives information about the change in tissue type. An A-scan displays echo amplitude against time; a B-scan combines many scan lines to form a two-dimensional image.
+:::
+
+::: {.formula-panel}
+### Specific acoustic impedance
+
+Specific acoustic impedance is
+
+$$Z=\rho c,$$
+
+where $\rho$ is density and $c$ is ultrasound speed in the medium. Its unit is $\mathrm{kg\,m^{-2}\,s^{-1}}$.
+
+For normal incidence at a boundary,
+
+$$\frac{I_R}{I_0}=\left(\frac{Z_1-Z_2}{Z_1+Z_2}\right)^2.$$
+
+Similar impedances give little reflection and high transmission; very different impedances give strong reflection. Coupling gel removes the air gap and matches skin impedance more closely.
+:::
+
+::: {.formula-panel}
+### Ultrasound attenuation
+
+Absorption and scattering reduce ultrasound intensity with depth:
+
+$$I=I_0e^{-\mu x},$$
+
+where $\mu$ is the linear attenuation coefficient. Greater frequency generally improves resolution but increases attenuation, so imaging frequency is chosen as a compromise between detail and penetration.
+:::
+
+## 24.2 Production and use of X-rays
+
+::: {.study-card}
+### X-ray tube
+
+A low-voltage supply heats the cathode filament and releases electrons by thermionic emission. A large accelerating p.d. drives the electrons through an evacuated tube towards a metal anode target. Their rapid deceleration produces X-rays; most input energy becomes heat.
+
+The maximum photon energy is
+
+$$E_{\max}=eV,$$
+
+so the minimum wavelength is
+
+$$\lambda_{\min}=\frac{hc}{eV}.$$
+:::
+
+::: {.formula-panel}
+### X-ray attenuation and contrast
+
+X-ray intensity after thickness $x$ is
+
+$$I=I_0e^{-\mu x}.$$
+
+The linear attenuation coefficient $\mu$ depends on material and photon energy. Contrast is the difference in image blackening or detected intensity between neighbouring regions. Bone attenuates X-rays more strongly than soft tissue, producing strong contrast; contrast media use high-$Z$ elements to make selected structures more absorbing.
+
+Low-energy X-rays are filtered out because they are absorbed by the patient without contributing usefully to the detected image.
+:::
+
+::: {.study-card}
+### X-ray imaging and CT
+
+A conventional X-ray is a two-dimensional projection in which structures overlap. CT obtains many X-ray projections of one slice at different angles; a computer reconstructs a cross-sectional image. Repeating this for adjacent slices and combining them produces a three-dimensional image.
+
+CT gives detailed localisation and avoids superposition, but normally gives a greater ionising-radiation dose than one radiograph.
+:::
+
+## 24.3 PET scanning
+
+::: {.study-card}
+### Tracers and positron emission
+
+A tracer contains radioactive nuclei and is introduced into the body in a biologically useful molecule. Tissue absorbs the tracer, so its distribution indicates metabolic or functional activity. PET requires a beta-plus emitter. A useful tracer has a half-life long enough for preparation and scanning but short enough to limit dose.
+:::
+
+::: {.formula-panel}
+### Electron-positron annihilation
+
+A positron soon encounters an electron. If their kinetic energy is negligible, their combined rest energy is
+
+$$E=2m_ec^2.$$
+
+Mass-energy and momentum must both be conserved. Two equal gamma photons are produced in opposite directions, each with
+
+$$E_\gamma=m_ec^2\approx511\ \mathrm{keV},$$
+
+and momentum $p=E_\gamma/c$.
+:::
+
+::: {.study-card}
+### Coincidence detection and image formation
+
+A ring of gamma detectors surrounds the patient. Two detectors triggered almost simultaneously define a line along which an annihilation occurred. Their arrival-time difference refines the location along that line. A computer combines many events to reconstruct tracer concentration and hence metabolic activity in three dimensions.
+
+PET gives functional information, while CT gives detailed anatomical structure. PET-CT combines both but increases radiation exposure.
+:::
+
+## Selected Structured Questions
+
+{{< include 24-medical-physics-structured.qmd >}}
+
+## Chapter checklist
+
+- [ ] I can describe ultrasound generation and reception.
+- [ ] I can use echo timing, acoustic impedance and attenuation equations.
+- [ ] I can explain X-ray production and calculate $\lambda_{\min}$.
+- [ ] I can compare X-ray, CT and ultrasound imaging.
+- [ ] I can explain PET tracer uptake, annihilation and coincidence detection.
+- [ ] I can calculate annihilation energy, photon momentum and tracer activity.
+
+### Original question PDFs
+
+- [24.1 Ultrasound and X-rays - Easy](../resources/original-papers/medical-physics/24.1-ultrasound-xrays-easy.pdf)
+- [24.1 Ultrasound and X-rays - Medium](../resources/original-papers/medical-physics/24.1-ultrasound-xrays-medium.pdf)
+- [24.1 Ultrasound and X-rays - Hard](../resources/original-papers/medical-physics/24.1-ultrasound-xrays-hard.pdf)
+- [24.2 PET Scanning - Easy](../resources/original-papers/medical-physics/24.2-pet-scanning-easy.pdf)
+- [24.2 PET Scanning - Medium](../resources/original-papers/medical-physics/24.2-pet-scanning-medium.pdf)
+- [24.2 PET Scanning - Hard](../resources/original-papers/medical-physics/24.2-pet-scanning-hard.pdf)

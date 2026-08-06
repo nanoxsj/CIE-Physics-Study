@@ -1,0 +1,177 @@
+---
+title: "23 Nuclear physics"
+subtitle: "Mass defect, binding energy, nuclear reactions and radioactive decay"
+---
+
+## Learning objectives
+
+By the end of this chapter, you should be able to:
+
+- use mass-energy equivalence $E=mc^2$;
+- write and balance nuclear equations;
+- define and calculate mass defect and nuclear binding energy;
+- interpret the binding-energy-per-nucleon curve;
+- explain energy release in fission and fusion;
+- describe radioactive decay as spontaneous and random;
+- define activity, decay constant and half-life;
+- use $A=\lambda N$, $\lambda=0.693/t_{1/2}$ and exponential decay equations;
+- interpret and sketch activity, count-rate and undecayed-nuclei graphs.
+
+## 23.1 Mass defect and nuclear binding energy
+
+::: {.study-card}
+### Atomic mass unit and nuclear notation
+
+The unified atomic mass unit is defined as one twelfth of the mass of a neutral carbon-12 atom:
+
+$$1\ \mathrm{u}=1.66\times10^{-27}\ \mathrm{kg}.$$
+
+A nuclide is written ${}^{A}_{Z}X$, where $Z$ is proton number and $A$ is nucleon number. The neutron number is $N=A-Z$. In every nuclear equation, total nucleon number and total charge must be conserved.
+:::
+
+::: {.formula-panel}
+### Mass-energy equivalence
+
+Mass and energy are equivalent:
+
+$$\Delta E=\Delta mc^2.$$
+
+The useful conversion is
+
+$$1\ \mathrm{u}\,c^2\approx934\ \mathrm{MeV}.$$
+
+Use SI units for a result in joules. When the mass change is in u, multiplying by approximately $934\ \mathrm{MeV/u}$ gives the energy directly in MeV.
+:::
+
+::: {.study-card}
+### Mass defect and binding energy
+
+The **mass defect** is the difference between the total mass of the separate nucleons and the actual mass of the bound nucleus:
+
+$$\Delta m=Zm_p+Nm_n-m_{\text{nucleus}}.$$
+
+The **binding energy** is the minimum energy required to separate a nucleus completely into its nucleons at infinity. It is also the energy released when the separated nucleons form the nucleus:
+
+$$E_b=\Delta mc^2.$$
+
+The bound nucleus has less mass than its separated nucleons because energy has been released during its formation.
+:::
+
+::: {.study-card}
+### Binding energy per nucleon
+
+Binding energy per nucleon is
+
+$$\frac{E_b}{A}.$$
+
+It measures average nuclear stability: a larger value means more energy is required, on average, to remove a nucleon. The curve rises steeply for light nuclei, reaches a maximum near iron-56, and then decreases gradually for heavy nuclei.
+
+Hydrogen-1 has zero binding energy because its nucleus contains only one proton and no nucleons need to be separated from one another.
+:::
+
+::: {.study-card}
+### Nuclear forces and stability
+
+The strong nuclear force is attractive, short-ranged and acts between neighbouring nucleons. Electrostatic repulsion acts between every pair of protons and is long-ranged.
+
+In small nuclei, adding nucleons creates many additional strong-force interactions, so binding energy per nucleon rises rapidly. In very large nuclei, proton-proton repulsion becomes increasingly important, so binding energy per nucleon falls slowly.
+:::
+
+::: {.formula-panel}
+### Fission and fusion
+
+- **Fusion:** two light nuclei combine to form a heavier nucleus.
+- **Fission:** one heavy nucleus divides into two or more lighter nuclei, usually with neutrons released.
+
+Energy is released when the products have a greater total binding energy, or a greater binding energy per nucleon, than the reactants. Their total rest mass is therefore smaller:
+
+$$E_{\text{released}}=(m_{\text{reactants}}-m_{\text{products}})c^2.$$
+
+Fusion generally releases more energy per unit mass because the binding-energy curve is much steeper on the low-$A$ side than on the high-$A$ side.
+:::
+
+## 23.2 Radioactive decay
+
+::: {.study-card}
+### Spontaneous and random decay
+
+Radioactive decay is the spontaneous emission of ionising radiation from an unstable nucleus.
+
+- **Spontaneous:** decay is unaffected by external conditions such as temperature, pressure or chemical state.
+- **Random:** the decay time of an individual nucleus cannot be predicted; each nucleus has a constant probability of decay per unit time.
+
+Fluctuations in measured count rate provide evidence of randomness. A large sample nevertheless follows a predictable exponential trend.
+:::
+
+::: {.study-card}
+### Nuclear changes in common decays
+
+- Alpha decay: $A$ decreases by 4 and $Z$ decreases by 2.
+- Beta-minus decay: a neutron changes to a proton, so $A$ is unchanged and $Z$ increases by 1.
+- Beta-plus decay: a proton changes to a neutron, so $A$ is unchanged and $Z$ decreases by 1.
+- Gamma emission: neither $A$ nor $Z$ changes; the nucleus loses energy.
+
+Conserve nucleon number and charge when completing every decay equation.
+:::
+
+::: {.formula-panel}
+### Activity and decay constant
+
+Activity is the rate at which nuclei decay:
+
+$$A=-\frac{dN}{dt}=\lambda N,$$
+
+where $A$ is measured in becquerels, $1\ \mathrm{Bq}=1\ \mathrm{s^{-1}}$, and $\lambda$ is the decay constant. The decay constant is the probability per unit time that an individual nucleus decays; its unit is $\mathrm{s^{-1}}$ when time is in seconds.
+:::
+
+::: {.study-card}
+### Half-life
+
+The half-life $t_{1/2}$ is the time for the number of undecayed nuclei, activity or corrected count rate to fall to half its current value:
+
+$$\lambda=\frac{\ln2}{t_{1/2}}=\frac{0.693}{t_{1/2}}.$$
+
+After $n$ half-lives, the remaining fraction is $(1/2)^n$.
+:::
+
+::: {.formula-panel}
+### Exponential decay
+
+The number of undecayed nuclei is
+
+$$N=N_0e^{-\lambda t}.$$
+
+Because $A=\lambda N$, activity and corrected count rate follow the same form:
+
+$$A=A_0e^{-\lambda t}, \qquad C=C_0e^{-\lambda t}.$$
+
+A graph of $A$ against $N$ is a straight line through the origin with gradient $\lambda$. A graph of $N$ against time has gradient $dN/dt=-A$.
+:::
+
+::: {.study-card}
+### Experimental measurements
+
+Keep source-detector distance, source geometry and counting interval constant. Measure background count rate separately and subtract it from measured count rate. Long counting intervals or repeated readings reduce percentage uncertainty caused by random fluctuations. Use tongs, shielding and the shortest practical handling time to reduce exposure.
+:::
+
+## Structured Questions
+
+{{< include 23-nuclear-physics-structured.qmd >}}
+
+## Chapter checklist
+
+- [ ] I can balance nucleon number and charge in nuclear equations.
+- [ ] I can calculate mass defect and binding energy in J or MeV.
+- [ ] I can explain the shape of the binding-energy-per-nucleon curve.
+- [ ] I can compare energy release from fission and fusion.
+- [ ] I can explain spontaneous and random decay.
+- [ ] I can calculate activity, decay constant and half-life.
+- [ ] I can apply exponential decay to $N$, $A$ and count rate.
+- [ ] I can interpret gradients and half-life points on decay graphs.
+
+### Original question PDFs
+
+- [23.1 Mass Defect and Nuclear Binding Energy - Easy](../resources/original-papers/nuclear-physics/23.1-mass-defect-binding-energy-easy.pdf)
+- [23.1 Mass Defect and Nuclear Binding Energy - Medium](../resources/original-papers/nuclear-physics/23.1-mass-defect-binding-energy-medium.pdf)
+- [23.2 Radioactive Decay - Easy](../resources/original-papers/nuclear-physics/23.2-radioactive-decay-easy.pdf)
+- [23.2 Radioactive Decay - Medium](../resources/original-papers/nuclear-physics/23.2-radioactive-decay-medium.pdf)

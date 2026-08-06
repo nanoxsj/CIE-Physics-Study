@@ -1,0 +1,205 @@
+---
+title: "15 Ideal gases"
+subtitle: "The mole, equations of state and the kinetic theory of gases"
+---
+
+## Learning objectives
+
+By the end of this chapter, you should be able to:
+
+- use the mole as the SI unit of amount of substance;
+- relate moles, particles, mass and molar mass using the Avogadro constant;
+- describe an ideal gas using $pV\propto T$;
+- use $pV=nRT$ and $pV=NkT$ with temperatures in kelvin;
+- use $k=R/N_A$;
+- state the basic assumptions of the kinetic theory of gases;
+- explain gas pressure in terms of molecular collisions;
+- derive and use $pV=\tfrac13Nm\langle c^2\rangle$;
+- understand and calculate root-mean-square speed;
+- derive and use $\langle E_k\rangle=\tfrac32kT$.
+
+## 15.1 The mole
+
+::: {.study-card}
+### Amount of substance
+
+Amount of substance is an SI base quantity with the unit mole, symbol mol. One mole contains a number of specified particles equal to the Avogadro constant:
+
+$$N_A=6.02\times10^{23}\ \mathrm{mol^{-1}}.$$
+
+The particles may be atoms, molecules, ions or other specified entities. The mole measures amount of substance, not mass.
+:::
+
+::: {.formula-panel}
+### Moles, particles and molar mass
+
+If a sample contains $N$ particles,
+
+$$n=\frac{N}{N_A},\qquad N=nN_A.$$
+
+If its mass is $m$ and its molar mass is $M$, use
+
+$$n=\frac{m}{M}.$$
+
+The units of $m$ and $M$ must be consistent. For example, use grams with $\mathrm{g\,mol^{-1}}$ or kilograms with $\mathrm{kg\,mol^{-1}}$.
+
+The mass of one molecule is
+
+$$m_0=\frac{M}{N_A},$$
+
+where $M$ is expressed in $\mathrm{kg\,mol^{-1}}$.
+:::
+
+## 15.2 Equation of state
+
+::: {.study-card}
+### Ideal-gas behaviour
+
+An ideal gas is a model gas that obeys
+
+$$pV\propto T$$
+
+for a fixed amount of gas, where $T$ is thermodynamic temperature in kelvin. Equivalently, it obeys the ideal-gas equation at all pressures, volumes and temperatures.
+
+Useful special cases for a fixed mass of gas are:
+
+$$pV=\text{constant}\quad(T\text{ constant}),$$
+
+$$\frac{V}{T}=\text{constant}\quad(p\text{ constant}),$$
+
+$$\frac{p}{T}=\text{constant}\quad(V\text{ constant}).$$
+
+Always convert Celsius temperature to kelvin before using a gas-law ratio.
+:::
+
+::: {.formula-panel}
+### Ideal-gas equations
+
+In terms of amount of substance,
+
+$$pV=nRT,$$
+
+where $R=8.31\ \mathrm{J\,mol^{-1}\,K^{-1}}$.
+
+In terms of the number of molecules,
+
+$$pV=NkT,$$
+
+where $k=1.38\times10^{-23}\ \mathrm{J\,K^{-1}}$.
+
+Because $N=nN_A$,
+
+$$k=\frac{R}{N_A}.$$
+
+Use SI units: $p$ in Pa, $V$ in $\mathrm{m^3}$ and $T$ in K. Convert $\mathrm{cm^3}$ to $\mathrm{m^3}$ using $1\ \mathrm{cm^3}=10^{-6}\ \mathrm{m^3}$.
+:::
+
+::: {.study-card}
+### Interpreting gas-law graphs
+
+At constant volume, $p\propto T$, so a graph of pressure against kelvin temperature is a straight line through the origin. If the horizontal axis is Celsius temperature, extrapolation reaches zero pressure at approximately $-273.15\ ^\circ\mathrm{C}$.
+
+At constant temperature, a graph of $p$ against $V$ is an inverse curve, while a graph of $p$ against $1/V$ is linear.
+:::
+
+## 15.3 Kinetic theory of gases
+
+::: {.study-card}
+### Assumptions of the model
+
+The simple kinetic theory assumes that:
+
+- a gas contains a very large number of identical molecules;
+- the molecules are hard, perfectly elastic particles;
+- their own volume is negligible compared with the container volume;
+- the collision time is negligible compared with the time between collisions;
+- there are no intermolecular forces except during collisions;
+- the molecules move continuously and randomly.
+
+These assumptions explain why real gases most closely approach ideal behaviour at low pressure and high temperature.
+:::
+
+::: {.study-card}
+### Molecular origin of pressure
+
+A molecule changes momentum when it rebounds elastically from a container wall. The wall exerts a force on the molecule, and the molecule exerts an equal and opposite force on the wall. The combined forces from many collisions produce pressure:
+
+$$p=\frac{F}{A}.$$
+
+Increasing temperature increases molecular speeds, collision frequency and momentum transfer. At fixed volume this increases pressure. Decreasing volume at fixed temperature also increases the collision rate per unit area.
+:::
+
+::: {.formula-panel}
+### Kinetic-theory equation
+
+For $N$ molecules, each of mass $m$, in volume $V$,
+
+$$pV=\frac13Nm\langle c^2\rangle.$$
+
+The factor $1/3$ appears because random motion is distributed equally among three dimensions:
+
+$$\langle c_x^2\rangle=\langle c_y^2\rangle=\langle c_z^2\rangle=\frac13\langle c^2\rangle.$$
+
+Since the gas density is $\rho=Nm/V$, the equation may also be written
+
+$$p=\frac13\rho\langle c^2\rangle.$$
+:::
+
+::: {.study-card}
+### Root-mean-square speed
+
+Molecular velocities have positive and negative components, so their vector average may be zero. Squaring before averaging prevents cancellation. The root-mean-square speed is
+
+$$c_{\mathrm{rms}}=\sqrt{\langle c^2\rangle}.$$
+
+For one type of molecule,
+
+$$c_{\mathrm{rms}}=\sqrt{\frac{3kT}{m}}=\sqrt{\frac{3RT}{M}}.$$
+
+Therefore $c_{\mathrm{rms}}\propto\sqrt{T}$ and lighter molecules have greater r.m.s. speeds at the same temperature.
+:::
+
+::: {.formula-panel}
+### Average translational kinetic energy
+
+Compare
+
+$$pV=NkT$$
+
+with
+
+$$pV=\frac13Nm\langle c^2\rangle.$$
+
+After cancelling $N$,
+
+$$\frac12m\langle c^2\rangle=\frac32kT.$$
+
+Hence the average translational kinetic energy of one ideal-gas molecule is
+
+$$\langle E_k\rangle=\frac32kT.$$
+
+It depends only on thermodynamic temperature, not on molecular mass. For $N$ monatomic molecules, the total translational internal energy is $U=\tfrac32NkT=\tfrac32nRT$.
+:::
+
+## Structured Questions
+
+{{< include 15-ideal-gases-structured.qmd >}}
+
+## Chapter self-check
+
+- Can you move between mass, moles and number of particles without mixing units?
+- Do you always convert absolute temperature to kelvin before using a gas equation?
+- Can you choose between $pV=nRT$ and $pV=NkT$ from the given data?
+- Can you state all kinetic-theory assumptions precisely?
+- Can you explain pressure using momentum change and Newton's laws?
+- Can you distinguish mean speed, mean-square speed and r.m.s. speed?
+- Can you reproduce the main steps leading to $pV=\tfrac13Nm\langle c^2\rangle$ and $\langle E_k\rangle=\tfrac32kT$?
+
+### Original topic PDFs
+
+- [15.1 Ideal Gas Law - Easy](../resources/original-papers/ideal-gases/15.1%20Ideal%20Gas%20Law%20-%20Easy.pdf.pdf)
+- [15.1 Ideal Gas Law - Medium](../resources/original-papers/ideal-gases/15.1%20Ideal%20Gas%20Law%20-%20Medium.pdf.pdf)
+- [15.1 Ideal Gas Law - Hard](../resources/original-papers/ideal-gases/15.1%20Ideal%20Gas%20Law%20-%20Hard.pdf.pdf)
+- [15.2 Kinetic Theory - Easy](../resources/original-papers/ideal-gases/15.2%20Kinetic%20Theory%20-%20Easy.pdf.pdf)
+- [15.2 Kinetic Theory - Medium](../resources/original-papers/ideal-gases/15.2%20Kinetic%20Theory%20-%20Medium.pdf.pdf)
+- [15.2 Kinetic Theory - Hard](../resources/original-papers/ideal-gases/15.2%20Kinetic%20Theory%20-%20Hard.pdf.pdf)

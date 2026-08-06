@@ -1,0 +1,194 @@
+---
+title: "17 Oscillations"
+subtitle: "Simple harmonic motion, energy, damping, forced oscillations and resonance"
+---
+
+## Learning objectives
+
+By the end of this chapter, you should be able to:
+
+- define displacement, amplitude, period, frequency, angular frequency and phase difference;
+- use $T=1/f=2\pi/\omega$;
+- recognise simple harmonic motion from the direction and magnitude of acceleration;
+- use the equations for displacement, velocity and acceleration in SHM;
+- interpret displacement-time, velocity-time and acceleration-time graphs;
+- describe the interchange of kinetic and potential energy during SHM;
+- use $E=\tfrac12m\omega^2x_0^2$;
+- explain damping and distinguish light, critical and heavy damping;
+- explain forced oscillations and resonance in terms of driving and natural frequency.
+
+## 17.1 Simple harmonic motion
+
+::: {.study-card}
+### Describing an oscillation
+
+An oscillation is a repetitive variation with time of the displacement of an object about an equilibrium position. At the equilibrium position, the resultant force on the object is zero.
+
+| Quantity | Meaning | Unit |
+|---|---|---|
+| displacement, $x$ | directed distance from the equilibrium position | m |
+| amplitude, $x_0$ | maximum magnitude of displacement | m |
+| period, $T$ | time for one complete oscillation | s |
+| frequency, $f$ | number of complete oscillations per unit time | Hz |
+| angular frequency, $\omega$ | rate of change of phase angle | rad s$^{-1}$ |
+
+The period, frequency and angular frequency are related by
+
+$$T=\frac{1}{f}=\frac{2\pi}{\omega}, \qquad \omega=2\pi f.$$
+:::
+
+::: {.study-card}
+### Phase and phase difference
+
+One complete oscillation corresponds to a phase change of $2\pi$ rad or $360^\circ$. Phase difference describes how far one oscillation leads or lags another oscillation of the same frequency.
+
+If corresponding points are separated by a time interval $\Delta t$,
+
+$$\phi=2\pi\frac{\Delta t}{T}=2\pi f\Delta t.$$
+
+Oscillations with coincident maxima and minima are in phase. A maximum of one aligned with a minimum of the other gives antiphase: $\phi=\pi$ rad.
+:::
+
+::: {.formula-panel}
+### Defining condition for SHM
+
+Simple harmonic motion occurs when acceleration is directly proportional to displacement from equilibrium and acts in the opposite direction:
+
+$$a=-\omega^2x.$$
+
+The minus sign is essential: acceleration and the restoring force always point towards equilibrium. A graph of $a$ against $x$ is therefore a straight line through the origin with gradient
+
+$$\frac{a}{x}=-\omega^2.$$
+
+The magnitude of acceleration is zero at equilibrium and greatest at the two extreme positions.
+:::
+
+::: {.study-card}
+### Displacement as a function of time
+
+For an oscillator that passes through equilibrium at $t=0$ and initially moves in the positive direction,
+
+$$x=x_0\sin(\omega t).$$
+
+For an oscillator that starts at positive maximum displacement,
+
+$$x=x_0\cos(\omega t).$$
+
+More generally, an initial phase may be included: $x=x_0\sin(\omega t+\phi_0)$. Always identify the starting position and initial direction before choosing a sine or cosine form.
+:::
+
+::: {.formula-panel}
+### Velocity and speed
+
+For $x=x_0\sin(\omega t)$,
+
+$$v=v_0\cos(\omega t), \qquad v_0=\omega x_0.$$
+
+Eliminating time gives
+
+$$v=\pm\omega\sqrt{x_0^2-x^2}.$$
+
+The sign gives the direction of motion. The speed is greatest at equilibrium, where $|v|=\omega x_0$, and zero at $x=\pm x_0$.
+:::
+
+::: {.study-card}
+### Reading SHM graphs
+
+- Displacement, velocity and acceleration all have the same period in undamped SHM.
+- Velocity leads displacement by $\pi/2$ rad for the sine-form displacement above.
+- Acceleration is in antiphase with displacement because $a=-\omega^2x$.
+- The gradient of an $x$-$t$ graph gives velocity.
+- The gradient of a $v$-$t$ graph gives acceleration.
+- At maximum displacement, $v=0$ and $|a|$ is maximum.
+- At equilibrium, $x=0$ and $a=0$, while $|v|$ is maximum.
+
+The starting point of a graph is not fixed: it depends on the phase at $t=0$.
+:::
+
+## 17.2 Energy in simple harmonic motion
+
+::: {.study-card}
+### Energy interchange
+
+In an undamped oscillator, energy continually changes between kinetic energy and potential energy while total mechanical energy remains constant.
+
+- At $x=0$: speed and kinetic energy are maximum; potential energy is minimum.
+- At $x=\pm x_0$: speed and kinetic energy are zero; potential energy is maximum.
+- Between these positions: one form increases while the other decreases.
+
+For a spring oscillator, the potential energy measured from equilibrium is proportional to $x^2$. Kinetic and potential energy are never negative and each completes two cycles during one displacement cycle.
+:::
+
+::: {.formula-panel}
+### Total, potential and kinetic energy
+
+The constant total energy of an undamped simple harmonic oscillator is
+
+$$E=\frac12m\omega^2x_0^2.$$
+
+At displacement $x$,
+
+$$E_{\mathrm{p}}=\frac12m\omega^2x^2,$$
+
+$$E_{\mathrm{k}}=E-E_{\mathrm{p}}=\frac12m\omega^2(x_0^2-x^2).$$
+
+These equations are consistent with $E_{\mathrm{k}}=\tfrac12mv^2$ and $v^2=\omega^2(x_0^2-x^2)$.
+:::
+
+## 17.3 Damping, forced oscillations and resonance
+
+::: {.study-card}
+### Damping
+
+Damping is the reduction in the energy and amplitude of oscillations due to resistive forces. A resistive force opposes velocity and transfers mechanical energy from the oscillator to the surroundings. Do not confuse it with the restoring force, which points towards equilibrium and produces the oscillation.
+
+For light damping, amplitude decreases approximately exponentially while the system continues to oscillate. The period is often treated as approximately constant in syllabus problems.
+:::
+
+::: {.study-card}
+### Three damping regimes
+
+| Regime | Motion after displacement |
+|---|---|
+| light damping | oscillates about equilibrium with gradually decreasing amplitude |
+| critical damping | returns to equilibrium in the shortest possible time without oscillating |
+| heavy damping | returns to equilibrium without oscillating, but more slowly than critical damping |
+
+Critical damping is useful when a system must settle quickly, such as a vehicle suspension or measuring instrument. Heavy damping avoids overshoot but gives a slower response.
+:::
+
+::: {.study-card}
+### Forced oscillations
+
+A free oscillator vibrates at its **natural frequency**. When an external periodic force acts, the system undergoes forced oscillations at the **driving frequency** of that force.
+
+The driver transfers energy to the oscillator. The steady amplitude depends on the driving frequency and on damping: greater damping generally lowers and broadens the resonance peak.
+:::
+
+::: {.formula-panel}
+### Resonance
+
+Resonance occurs when the driving frequency equals the natural frequency of the oscillator. Energy transfer from the driver is then most effective and the steady oscillation amplitude is maximum.
+
+Useful resonance includes acoustic instruments and piezoelectric ultrasound transducers. Unwanted resonance can produce large structural vibrations; its effects may be reduced by increasing damping, changing the natural frequency or adding structural reinforcement.
+:::
+
+## Structured Questions
+
+{{< include 17-oscillations-structured.qmd >}}
+
+## Chapter self-check
+
+- Can you distinguish displacement, amplitude, period, frequency and phase difference?
+- Can you use the gradient of an $a$-$x$ graph to determine $\omega$?
+- Can you select the correct sine or cosine equation from the initial conditions?
+- Can you identify where speed, acceleration, kinetic energy and potential energy are greatest?
+- Can you distinguish resistive force from restoring force?
+- Can you sketch light, critical and heavy damping correctly?
+- Can you explain resonance as efficient energy transfer at equal driving and natural frequencies?
+
+### Original topic PDFs
+
+- [17.1 Simple Harmonic Motion - Easy](../resources/original-papers/oscillations/17.1%20Simple%20Harmonic%20Motion%20-%20Easy.pdf.pdf)
+- [17.1 Simple Harmonic Motion - Medium](../resources/original-papers/oscillations/17.1%20Simple%20Harmonic%20Motion%20-%20Medium.pdf.pdf)
+- [17.2 Damped Oscillations - Medium](../resources/original-papers/oscillations/17.2%20Damped%20Oscillations%20-%20Medium.pdf.pdf)

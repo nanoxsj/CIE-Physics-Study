@@ -1,0 +1,126 @@
+---
+title: "21 Alternating currents"
+subtitle: "Sinusoidal supplies, r.m.s. values, rectification and smoothing"
+---
+
+## Learning objectives
+
+By the end of this chapter, you should be able to:
+
+- identify the period, frequency and peak value of an alternating current or voltage;
+- use $x=x_0\sin\omega t$ and $\omega=2\pi f$;
+- distinguish peak and root-mean-square values;
+- calculate mean and peak power in a resistive load;
+- recognise and sketch half-wave and full-wave rectified outputs;
+- explain the operation of a single-diode rectifier and a bridge rectifier;
+- explain capacitor smoothing and the effects of capacitance and load resistance.
+
+## 21.1 Characteristics of alternating currents
+
+::: {.study-card}
+### Alternating current and voltage
+
+An alternating current (a.c.) changes continuously in magnitude and reverses direction every half-cycle. An alternating voltage reverses polarity in the same way. A sinusoidal supply is represented by a sine curve centred on zero.
+
+The **peak value** $I_0$ or $V_0$ is the maximum magnitude. The **period** $T$ is the time for one complete cycle, and the **frequency** $f$ is the number of cycles per second:
+
+$$f=\frac{1}{T}.$$
+
+Always convert graph time units to seconds before calculating frequency.
+:::
+
+::: {.formula-panel}
+### Sinusoidal representation
+
+For a sinusoidal current or voltage,
+
+$$I=I_0\sin(\omega t), \qquad V=V_0\sin(\omega t),$$
+
+where $\omega$ is angular frequency in $\mathrm{rad\ s^{-1}}$:
+
+$$\omega=2\pi f=\frac{2\pi}{T}.$$
+
+The sign gives the instantaneous direction or polarity. Use radians when evaluating the sine function.
+:::
+
+::: {.study-card}
+### Root-mean-square values
+
+The r.m.s. value of an alternating current is the value of a steady direct current that produces the same mean power in a resistor. The corresponding definition applies to voltage.
+
+For a sinusoidal waveform,
+
+$$I_{\mathrm{rms}}=\frac{I_0}{\sqrt2}, \qquad V_{\mathrm{rms}}=\frac{V_0}{\sqrt2}.$$
+
+Thus an r.m.s. value is approximately $0.707$ of its peak value. It is not the simple arithmetic mean of the positive and negative values, which would be zero over a complete cycle.
+:::
+
+::: {.formula-panel}
+### Power in a resistive load
+
+The instantaneous power is always non-negative because $P=I^2R=V^2/R$. For a sinusoidal supply,
+
+$$P_{\mathrm{mean}}=I_{\mathrm{rms}}^2R
+=V_{\mathrm{rms}}I_{\mathrm{rms}}
+=\frac{V_{\mathrm{rms}}^2}{R}.$$
+
+Since $I_{\mathrm{rms}}=I_0/\sqrt2$ and $V_{\mathrm{rms}}=V_0/\sqrt2$,
+
+$$P_{\mathrm{mean}}=\frac12P_0.$$
+
+The power waveform has twice the frequency of the current or voltage waveform: it reaches zero twice in each electrical cycle.
+:::
+
+## 21.2 Rectification and smoothing
+
+::: {.study-card}
+### Rectification
+
+Rectification is the conversion of alternating current or voltage into direct current or voltage.
+
+- **Half-wave rectification:** one diode conducts during one half-cycle and blocks the other. The load receives separated pulses at the input frequency.
+- **Full-wave rectification:** both half-cycles produce current through the load in the same direction. The output pulse frequency is twice the input frequency, so more mean power is available.
+
+A rectified output is unidirectional but is not yet a steady d.c. supply.
+:::
+
+::: {.study-card}
+### Bridge rectifier
+
+A bridge rectifier uses four diodes. During each half-cycle, one diagonally opposite pair is forward biased while the other pair is reverse biased. On the next half-cycle the conducting pair changes, but current through the load remains in the same direction.
+
+To analyse a bridge, mark the instantaneous positive input terminal, follow conventional current only through forward-biased diodes, and verify that it crosses the load in the required direction.
+:::
+
+::: {.study-card}
+### Capacitor smoothing
+
+A smoothing capacitor is connected in parallel with the load. It charges when the rectified input rises towards a peak and discharges through the load while the input falls. The output therefore stays positive but contains a ripple.
+
+Smoothing improves when the discharge is slower:
+
+- increase capacitance $C$;
+- increase load resistance $R$;
+- use full-wave rather than half-wave rectification, reducing the time between peaks.
+
+The relevant time constant is $RC$. Small ripple requires $RC$ to be large compared with the interval between adjacent rectified peaks. Greater smoothing reduces ripple but does not make the output perfectly constant.
+:::
+
+## Structured Questions
+
+{{< include 21-alternating-currents-structured.qmd >}}
+
+## Chapter checklist
+
+- [ ] I can read $V_0$, $T$ and $f$ from a graph.
+- [ ] I can obtain amplitude and angular frequency from a sinusoidal equation.
+- [ ] I can convert between peak and r.m.s. values.
+- [ ] I can calculate mean and peak power in a resistor.
+- [ ] I can sketch half-wave, full-wave and smoothed outputs.
+- [ ] I can trace both conducting paths through a bridge rectifier.
+- [ ] I can explain how $C$ and load $R$ affect ripple.
+
+### Original question PDFs
+
+- [21.1 Properties and Uses of Alternating Current — Easy](../resources/original-papers/alternating-currents/21.1-properties-and-uses-easy.pdf)
+- [21.1 Properties and Uses of Alternating Current — Medium](../resources/original-papers/alternating-currents/21.1-properties-and-uses-medium.pdf)

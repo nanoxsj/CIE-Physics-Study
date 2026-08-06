@@ -1,0 +1,219 @@
+---
+title: "19 Capacitance"
+subtitle: "Capacitors, stored energy and exponential discharge"
+---
+
+## Learning objectives
+
+By the end of this chapter, you should be able to:
+
+- define capacitance for an isolated spherical conductor and a parallel-plate capacitor;
+- use $C=Q/V$ and interpret a charge-potential difference graph;
+- derive and use the rules for capacitors in series and parallel;
+- determine stored energy from the area under a potential-charge graph;
+- use $W=\tfrac12QV=\tfrac12CV^2=Q^2/(2C)$;
+- interpret current-time, charge-time and potential difference-time discharge graphs;
+- use the time constant $\tau=RC$;
+- use exponential discharge equations for $I$, $Q$ and $V$.
+
+## 19.1 Capacitors and capacitance
+
+::: {.study-card}
+### What a capacitor does
+
+A capacitor consists of two conductors separated by an insulator or dielectric. Connecting it to a source transfers electrons from one conductor to the other, producing charges $+Q$ and $-Q$ and a potential difference $V$.
+
+The capacitor as a whole has zero net charge because its plates carry equal and opposite charges. The phrase **charge stored** means the magnitude $Q$ on either plate. Energy is stored in the electric field between the conductors.
+:::
+
+::: {.formula-panel}
+### Definition of capacitance
+
+Capacitance is the charge stored per unit potential difference:
+
+$$C=\frac{Q}{V}, \qquad Q=CV.$$
+
+The farad is defined by
+
+$$1\ \mathrm{F}=1\ \mathrm{C\ V^{-1}}.$$
+
+Common submultiples are $\mathrm{\mu F}$, $\mathrm{nF}$ and $\mathrm{pF}$. For a linear capacitor, $Q\propto V$ and the gradient of a graph of $Q$ against $V$ is $C$.
+:::
+
+::: {.study-card}
+### Isolated spherical conductor and parallel plates
+
+For an isolated spherical conductor, $Q$ is the charge on the conductor and $V$ is its potential relative to infinity. For a parallel-plate capacitor, $Q$ is the magnitude of charge on either plate and $V$ is the potential difference between the plates.
+
+Capacitance depends on geometry and the dielectric. For parallel plates, greater plate area and a higher-permittivity dielectric increase capacitance, while greater plate separation decreases it.
+:::
+
+::: {.formula-panel}
+### Capacitors in parallel
+
+Capacitors connected in parallel have the same potential difference:
+
+$$V_1=V_2=\cdots=V.$$
+
+The total charge supplied is
+
+$$Q=Q_1+Q_2+\cdots.$$
+
+Using $Q=CV$ gives
+
+$$C_{\mathrm{total}}=C_1+C_2+\cdots.$$
+
+Parallel connection increases the effective conducting area, so combined capacitance is greater than any individual capacitance.
+:::
+
+::: {.formula-panel}
+### Capacitors in series
+
+Capacitors in series acquire equal charge magnitudes:
+
+$$Q_1=Q_2=\cdots=Q.$$
+
+Potential differences add:
+
+$$V=V_1+V_2+\cdots.$$
+
+Using $V=Q/C$ gives
+
+$$\frac{1}{C_{\mathrm{total}}}=\frac{1}{C_1}+\frac{1}{C_2}+\cdots.$$
+
+The combined capacitance is smaller than the smallest individual capacitance. In series, voltage divides inversely with capacitance: the smaller capacitor has the larger potential difference.
+:::
+
+::: {.study-card}
+### Network strategy and voltage ratings
+
+Reduce a mixed network one stage at a time. Mark groups that are definitely in parallel or series before calculating.
+
+For capacitors in series, the same $Q$ appears on every capacitor and $V_i=Q/C_i$. To check a maximum safe supply voltage, calculate the voltage across each capacitor rather than assuming equal voltage unless the series capacitances are equal.
+:::
+
+## 19.2 Energy stored in a capacitor
+
+::: {.study-card}
+### Work done during charging
+
+As charge accumulates, the potential difference increases. Moving additional charge onto a plate therefore requires progressively more work. The small work done to transfer charge $dQ$ at potential difference $V$ is
+
+$$dW=V\,dQ.$$
+
+Total stored energy is the area under a graph of $V$ against $Q$:
+
+$$W=\int_0^Q V\,dQ.$$
+
+For a linear capacitor, $V=Q/C$ and this area is a triangle.
+:::
+
+::: {.formula-panel}
+### Energy equations
+
+The energy stored in a capacitor is
+
+$$W=\frac12QV.$$
+
+Using $Q=CV$ gives two equivalent forms:
+
+$$W=\frac12CV^2=\frac{Q^2}{2C}.$$
+
+Choose the form that matches the known quantities. Energy is measured in joules.
+:::
+
+::: {.study-card}
+### Changes in stored energy
+
+For a fixed capacitor, $W\propto V^2$ and $W\propto Q^2$. Halving $V$ or $Q$ reduces stored energy to one quarter.
+
+The energy lost when potential changes from $V_1$ to $V_2$ is
+
+$$\Delta W=\frac12C(V_1^2-V_2^2).$$
+
+On a $Q$-$V$ graph, the corresponding energy change is the area under the line between the two voltage values.
+:::
+
+## 19.3 Discharging a capacitor
+
+::: {.study-card}
+### Exponential discharge
+
+When a charged capacitor discharges through a resistor, charge flows from one plate to the other. As $Q$ decreases, the capacitor voltage $V=Q/C$ decreases, so the current $I=V/R$ also decreases.
+
+Therefore $Q$, $V$ and the magnitude of $I$ all decay exponentially. Their graphs start at an initial value, have a steep negative gradient at first and approach zero asymptotically.
+:::
+
+::: {.formula-panel}
+### Time constant
+
+The time constant of an RC discharge circuit is
+
+$$\tau=RC.$$
+
+After one time constant,
+
+$$\frac{x}{x_0}=e^{-1}\approx0.37,$$
+
+where $x$ may be charge, potential difference or current magnitude. A larger resistance or capacitance produces a slower discharge.
+:::
+
+::: {.formula-panel}
+### Discharge equations
+
+For a capacitor discharging through a resistor,
+
+$$Q=Q_0e^{-t/(RC)},$$
+
+$$V=V_0e^{-t/(RC)},$$
+
+$$I=I_0e^{-t/(RC)}$$
+
+for current magnitude. If current direction is defined relative to the charging direction, a minus sign may be required.
+
+To solve for time,
+
+$$t=-RC\ln\left(\frac{x}{x_0}\right).$$
+:::
+
+::: {.study-card}
+### Graph checks
+
+- At $t=0$, $Q=Q_0$, $V=V_0$ and $|I|=I_0=V_0/R$.
+- At $t=RC$, each quantity is about $0.37$ of its initial value.
+- The tangent at $t=0$ meets the time axis at approximately $t=RC$.
+- The initial gradients are steepest; the curves never cross the time axis in the ideal model.
+- Since $W=\tfrac12CV^2$, stored energy decays as $W=W_0e^{-2t/(RC)}$.
+:::
+
+::: {.study-card}
+### Charging compared with discharging
+
+During charging from a constant supply $V_0$,
+
+$$V_C=V_0\left(1-e^{-t/(RC)}\right),$$
+
+while current decreases from $V_0/R$ to zero. During discharge, both capacitor voltage and current magnitude decrease from their initial values to zero.
+
+Smoothing circuits repeatedly charge a capacitor near peaks of a rectified input and discharge it through the load between peaks, reducing output ripple.
+:::
+
+## Structured Questions
+
+{{< include 19-capacitance-structured.qmd >}}
+
+## Chapter self-check
+
+- Can you explain why a capacitor stores energy but has zero net charge?
+- Can you derive both capacitor combination rules from $C=Q/V$?
+- Can you identify equal charge in series and equal voltage in parallel?
+- Can you find capacitance and energy from a $Q$-$V$ graph?
+- Can you distinguish the discharge of $V$ from the faster decay of stored energy?
+- Can you identify one time constant from a graph or calculate it using $RC$?
+- Can you rearrange an exponential equation using natural logarithms?
+- Can you sketch discharge curves with correct initial values and asymptotes?
+
+### Original topic PDFs
+
+- [19.1 Capacitors - Medium](../resources/original-papers/capacitance/19.1%20Capacitors%20-%20Medium.pdf.pdf)
+- [19.2 Charging and Discharging - Medium](../resources/original-papers/capacitance/19.2%20Charging%20and%20Discharging%20-%20Medium.pdf.pdf)
