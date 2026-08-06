@@ -1,0 +1,2616 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-Hans" xml:lang="zh-Hans"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.38">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>1 Physical quantities and units – CIE Physics 9702</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../as-level/02-kinematics.html" rel="next">
+<link href="../index.html" rel="prev">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-a2a938b4dd5711f7a799c87bd16ba44c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "没有结果",
+    "search-matching-documents-text": "匹配的文档",
+    "search-copy-link-title": "复制搜索链接",
+    "search-hide-matches-text": "隐藏其它匹配结果",
+    "search-more-match-text": "更多匹配结果",
+    "search-more-matches-text": "更多匹配结果",
+    "search-clear-button-title": "清除",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "取消",
+    "search-submit-button-title": "提交",
+    "search-label": "搜索"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../styles.css">
+</head>
+
+<body class="nav-sidebar docked quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="展开或折叠侧边栏导航" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../as-level/01-physical-quantities-and-units.html">AS Level</a></li><li class="breadcrumb-item"><a href="../as-level/01-physical-quantities-and-units.html">1 Physical quantities and units</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="展开或折叠侧边栏导航" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="搜索" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">CIE Physics 9702</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="搜索"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">学习首页</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">AS Level</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="展开或折叠此栏">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../as-level/01-physical-quantities-and-units.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">1 Physical quantities and units</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../as-level/02-kinematics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2 Kinematics</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../as-level/03-dynamics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">3 Dynamics</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">该页面内容</h2>
+   
+  <ul>
+  <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link active" data-scroll-target="#learning-objectives">Learning objectives</a>
+  <ul class="collapse">
+  <li><a href="#chapter-map" id="toc-chapter-map" class="nav-link" data-scroll-target="#chapter-map">Chapter map</a></li>
+  <li><a href="#reporting-a-physical-measurement" id="toc-reporting-a-physical-measurement" class="nav-link" data-scroll-target="#reporting-a-physical-measurement">Reporting a physical measurement</a></li>
+  <li><a href="#measurement-strategy" id="toc-measurement-strategy" class="nav-link" data-scroll-target="#measurement-strategy">Measurement strategy</a></li>
+  </ul></li>
+  <li><a href="#physical-quantities" id="toc-physical-quantities" class="nav-link" data-scroll-target="#physical-quantities">1.1 Physical quantities</a>
+  <ul class="collapse">
+  <li><a href="#数值和单位缺一不可" id="toc-数值和单位缺一不可" class="nav-link" data-scroll-target="#数值和单位缺一不可">数值和单位缺一不可</a></li>
+  <li><a href="#合理估算先判断数量级" id="toc-合理估算先判断数量级" class="nav-link" data-scroll-target="#合理估算先判断数量级">合理估算：先判断数量级</a></li>
+  <li><a href="#worked-example-walking-upstairs" id="toc-worked-example-walking-upstairs" class="nav-link" data-scroll-target="#worked-example-walking-upstairs">Worked example: walking upstairs</a></li>
+  </ul></li>
+  <li><a href="#si-units" id="toc-si-units" class="nav-link" data-scroll-target="#si-units">1.2 SI units</a>
+  <ul class="collapse">
+  <li><a href="#考纲要求的五个-si-基本量" id="toc-考纲要求的五个-si-基本量" class="nav-link" data-scroll-target="#考纲要求的五个-si-基本量">考纲要求的五个 SI 基本量</a></li>
+  <li><a href="#从定义式推出导出单位" id="toc-从定义式推出导出单位" class="nav-link" data-scroll-target="#从定义式推出导出单位">从定义式推出导出单位</a></li>
+  <li><a href="#homogeneity-of-physical-equations" id="toc-homogeneity-of-physical-equations" class="nav-link" data-scroll-target="#homogeneity-of-physical-equations">Homogeneity of physical equations</a></li>
+  <li><a href="#example-check-prho-gh" id="toc-example-check-prho-gh" class="nav-link" data-scroll-target="#example-check-prho-gh">Example: check <span class="math inline">\(p=\rho gh\)</span></a></li>
+  <li><a href="#si-prefixes" id="toc-si-prefixes" class="nav-link" data-scroll-target="#si-prefixes">SI prefixes</a></li>
+  </ul></li>
+  <li><a href="#errors-and-uncertainties" id="toc-errors-and-uncertainties" class="nav-link" data-scroll-target="#errors-and-uncertainties">1.3 Errors and uncertainties</a>
+  <ul class="collapse">
+  <li><a href="#error-types-accuracy-and-precision" id="toc-error-types-accuracy-and-precision" class="nav-link" data-scroll-target="#error-types-accuracy-and-precision">Error types, accuracy and precision</a></li>
+  <li><a href="#expressing-uncertainty" id="toc-expressing-uncertainty" class="nav-link" data-scroll-target="#expressing-uncertainty">Expressing uncertainty</a></li>
+  <li><a href="#finding-an-absolute-uncertainty" id="toc-finding-an-absolute-uncertainty" class="nav-link" data-scroll-target="#finding-an-absolute-uncertainty">Finding an absolute uncertainty</a></li>
+  <li><a href="#combining-uncertainties" id="toc-combining-uncertainties" class="nav-link" data-scroll-target="#combining-uncertainties">Combining uncertainties</a></li>
+  <li><a href="#worked-examples" id="toc-worked-examples" class="nav-link" data-scroll-target="#worked-examples">Worked examples</a></li>
+  </ul></li>
+  <li><a href="#scalars-and-vectors" id="toc-scalars-and-vectors" class="nav-link" data-scroll-target="#scalars-and-vectors">1.4 Scalars and vectors</a>
+  <ul class="collapse">
+  <li><a href="#scalar-or-vector" id="toc-scalar-or-vector" class="nav-link" data-scroll-target="#scalar-or-vector">Scalar or vector?</a></li>
+  <li><a href="#adding-and-subtracting-coplanar-vectors" id="toc-adding-and-subtracting-coplanar-vectors" class="nav-link" data-scroll-target="#adding-and-subtracting-coplanar-vectors">Adding and subtracting coplanar vectors</a></li>
+  <li><a href="#triangle-method" id="toc-triangle-method" class="nav-link" data-scroll-target="#triangle-method">Triangle method</a></li>
+  <li><a href="#components-of-a-vector" id="toc-components-of-a-vector" class="nav-link" data-scroll-target="#components-of-a-vector">Components of a vector</a></li>
+  </ul></li>
+  <li><a href="#专题真题" id="toc-专题真题" class="nav-link" data-scroll-target="#专题真题">专题真题</a>
+  <ul class="collapse">
+  <li><a href="#multiple-choice" id="toc-multiple-choice" class="nav-link" data-scroll-target="#multiple-choice">Multiple Choice</a></li>
+  <li><a href="#example-1-1.1-mc-easy-q1" id="toc-example-1-1.1-mc-easy-q1" class="nav-link" data-scroll-target="#example-1-1.1-mc-easy-q1">Example 1 · 1.1 MC Easy Q1</a></li>
+  <li><a href="#example-2-1.1-mc-easy-q3" id="toc-example-2-1.1-mc-easy-q3" class="nav-link" data-scroll-target="#example-2-1.1-mc-easy-q3">Example 2 · 1.1 MC Easy Q3</a></li>
+  <li><a href="#example-3-1.1-mc-easy-q4" id="toc-example-3-1.1-mc-easy-q4" class="nav-link" data-scroll-target="#example-3-1.1-mc-easy-q4">Example 3 · 1.1 MC Easy Q4</a></li>
+  <li><a href="#example-4-1.1-mc-easy-q6" id="toc-example-4-1.1-mc-easy-q6" class="nav-link" data-scroll-target="#example-4-1.1-mc-easy-q6">Example 4 · 1.1 MC Easy Q6</a></li>
+  <li><a href="#example-5-1.2-mc-easy-q1" id="toc-example-5-1.2-mc-easy-q1" class="nav-link" data-scroll-target="#example-5-1.2-mc-easy-q1">Example 5 · 1.2 MC Easy Q1</a></li>
+  <li><a href="#example-6-1.2-mc-easy-q7" id="toc-example-6-1.2-mc-easy-q7" class="nav-link" data-scroll-target="#example-6-1.2-mc-easy-q7">Example 6 · 1.2 MC Easy Q7</a></li>
+  <li><a href="#example-7-1.2-mc-easy-q8" id="toc-example-7-1.2-mc-easy-q8" class="nav-link" data-scroll-target="#example-7-1.2-mc-easy-q8">Example 7 · 1.2 MC Easy Q8</a></li>
+  <li><a href="#example-8-1.1-mc-medium-q1" id="toc-example-8-1.1-mc-medium-q1" class="nav-link" data-scroll-target="#example-8-1.1-mc-medium-q1">Example 8 · 1.1 MC Medium Q1</a></li>
+  <li><a href="#example-9-1.1-mc-medium-q2" id="toc-example-9-1.1-mc-medium-q2" class="nav-link" data-scroll-target="#example-9-1.1-mc-medium-q2">Example 9 · 1.1 MC Medium Q2</a></li>
+  <li><a href="#example-10-1.1-mc-medium-q3" id="toc-example-10-1.1-mc-medium-q3" class="nav-link" data-scroll-target="#example-10-1.1-mc-medium-q3">Example 10 · 1.1 MC Medium Q3</a></li>
+  <li><a href="#example-11-1.1-mc-medium-q6" id="toc-example-11-1.1-mc-medium-q6" class="nav-link" data-scroll-target="#example-11-1.1-mc-medium-q6">Example 11 · 1.1 MC Medium Q6</a></li>
+  <li><a href="#example-12-1.1-mc-medium-q7" id="toc-example-12-1.1-mc-medium-q7" class="nav-link" data-scroll-target="#example-12-1.1-mc-medium-q7">Example 12 · 1.1 MC Medium Q7</a></li>
+  <li><a href="#example-13-1.1-mc-medium-q9" id="toc-example-13-1.1-mc-medium-q9" class="nav-link" data-scroll-target="#example-13-1.1-mc-medium-q9">Example 13 · 1.1 MC Medium Q9</a></li>
+  <li><a href="#example-14-1.1-mc-medium-q10" id="toc-example-14-1.1-mc-medium-q10" class="nav-link" data-scroll-target="#example-14-1.1-mc-medium-q10">Example 14 · 1.1 MC Medium Q10</a></li>
+  <li><a href="#example-15-1.1-mc-hard-q2" id="toc-example-15-1.1-mc-hard-q2" class="nav-link" data-scroll-target="#example-15-1.1-mc-hard-q2">Example 15 · 1.1 MC Hard Q2</a></li>
+  <li><a href="#example-16-1.1-mc-hard-q3" id="toc-example-16-1.1-mc-hard-q3" class="nav-link" data-scroll-target="#example-16-1.1-mc-hard-q3">Example 16 · 1.1 MC Hard Q3</a></li>
+  <li><a href="#example-17-1.1-mc-hard-q4" id="toc-example-17-1.1-mc-hard-q4" class="nav-link" data-scroll-target="#example-17-1.1-mc-hard-q4">Example 17 · 1.1 MC Hard Q4</a></li>
+  <li><a href="#example-18-1.1-mc-hard-q5" id="toc-example-18-1.1-mc-hard-q5" class="nav-link" data-scroll-target="#example-18-1.1-mc-hard-q5">Example 18 · 1.1 MC Hard Q5</a></li>
+  <li><a href="#example-19-1.1-mc-hard-q7" id="toc-example-19-1.1-mc-hard-q7" class="nav-link" data-scroll-target="#example-19-1.1-mc-hard-q7">Example 19 · 1.1 MC Hard Q7</a></li>
+  <li><a href="#example-20-1.2-mc-hard-q2" id="toc-example-20-1.2-mc-hard-q2" class="nav-link" data-scroll-target="#example-20-1.2-mc-hard-q2">Example 20 · 1.2 MC Hard Q2</a></li>
+  <li><a href="#structured-questions" id="toc-structured-questions" class="nav-link" data-scroll-target="#structured-questions">Structured Questions</a></li>
+  <li><a href="#example-1-si-base-and-derived-units-1.1-sq-easy-q2" id="toc-example-1-si-base-and-derived-units-1.1-sq-easy-q2" class="nav-link" data-scroll-target="#example-1-si-base-and-derived-units-1.1-sq-easy-q2">Example 1 · SI base and derived units · 1.1 SQ Easy Q2</a></li>
+  <li><a href="#example-2-units-prefixes-and-estimates-1.1-sq-easy-q3" id="toc-example-2-units-prefixes-and-estimates-1.1-sq-easy-q3" class="nav-link" data-scroll-target="#example-2-units-prefixes-and-estimates-1.1-sq-easy-q3">Example 2 · Units, prefixes and estimates · 1.1 SQ Easy Q3</a></li>
+  <li><a href="#example-3-random-and-systematic-errors-1.2-sq-easy-q2" id="toc-example-3-random-and-systematic-errors-1.2-sq-easy-q2" class="nav-link" data-scroll-target="#example-3-random-and-systematic-errors-1.2-sq-easy-q2">Example 3 · Random and systematic errors · 1.2 SQ Easy Q2</a></li>
+  <li><a href="#example-4-pendulum-uncertainty-1.2-sq-easy-q3" id="toc-example-4-pendulum-uncertainty-1.2-sq-easy-q3" class="nav-link" data-scroll-target="#example-4-pendulum-uncertainty-1.2-sq-easy-q3">Example 4 · Pendulum uncertainty · 1.2 SQ Easy Q3</a></li>
+  <li><a href="#example-5-definitions-and-dimensional-analysis-1.1-sq-medium-q1" id="toc-example-5-definitions-and-dimensional-analysis-1.1-sq-medium-q1" class="nav-link" data-scroll-target="#example-5-definitions-and-dimensional-analysis-1.1-sq-medium-q1">Example 5 · Definitions and dimensional analysis · 1.1 SQ Medium Q1</a></li>
+  <li><a href="#example-6-estimation-1.1-sq-medium-q2" id="toc-example-6-estimation-1.1-sq-medium-q2" class="nav-link" data-scroll-target="#example-6-estimation-1.1-sq-medium-q2">Example 6 · Estimation · 1.1 SQ Medium Q2</a></li>
+  <li><a href="#example-7-transverse-wave-measurement-1.2-sq-medium-q1" id="toc-example-7-transverse-wave-measurement-1.2-sq-medium-q1" class="nav-link" data-scroll-target="#example-7-transverse-wave-measurement-1.2-sq-medium-q1">Example 7 · Transverse wave measurement · 1.2 SQ Medium Q1</a></li>
+  <li><a href="#example-8-conversions-homogeneity-and-orders-of-magnitude-1.1-sq-hard-q1" id="toc-example-8-conversions-homogeneity-and-orders-of-magnitude-1.1-sq-hard-q1" class="nav-link" data-scroll-target="#example-8-conversions-homogeneity-and-orders-of-magnitude-1.1-sq-hard-q1">Example 8 · Conversions, homogeneity and orders of magnitude · 1.1 SQ Hard Q1</a></li>
+  <li><a href="#example-9-nuclear-scale-estimates-1.1-sq-hard-q2" id="toc-example-9-nuclear-scale-estimates-1.1-sq-hard-q2" class="nav-link" data-scroll-target="#example-9-nuclear-scale-estimates-1.1-sq-hard-q2">Example 9 · Nuclear-scale estimates · 1.1 SQ Hard Q2</a></li>
+  <li><a href="#example-10-scale-diagrams-and-vector-resultants-1.1-sq-hard-q3" id="toc-example-10-scale-diagrams-and-vector-resultants-1.1-sq-hard-q3" class="nav-link" data-scroll-target="#example-10-scale-diagrams-and-vector-resultants-1.1-sq-hard-q3">Example 10 · Scale diagrams and vector resultants · 1.1 SQ Hard Q3</a></li>
+  </ul></li>
+  <li><a href="#章末自检" id="toc-章末自检" class="nav-link" data-scroll-target="#章末自检">章末自检</a>
+  <ul class="collapse">
+  <li><a href="#原始专题-pdf" id="toc-原始专题-pdf" class="nav-link" data-scroll-target="#原始专题-pdf">原始专题 PDF</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../as-level/01-physical-quantities-and-units.html">AS Level</a></li><li class="breadcrumb-item"><a href="../as-level/01-physical-quantities-and-units.html">1 Physical quantities and units</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">1 Physical quantities and units</h1>
+<p class="subtitle lead">1.1–1.4 · Quantities, units, uncertainties, scalars and vectors</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="learning-objectives" class="level2">
+<h2 class="anchored" data-anchor-id="learning-objectives">Learning objectives</h2>
+<p>By the end of this chapter, you should be able to:</p>
+<ul>
+<li>state that every physical quantity consists of a numerical value and a unit;</li>
+<li>make sensible order-of-magnitude estimates for familiar physical quantities;</li>
+<li>recall the required SI base quantities and base units;</li>
+<li>derive the base units of force, energy, power, pressure, density and potential difference;</li>
+<li>use dimensional homogeneity to test whether an equation could be correct;</li>
+<li>convert accurately between SI prefixes, including squared and cubed units;</li>
+<li>distinguish random error, systematic error, accuracy, precision and resolution;</li>
+<li>express absolute, fractional and percentage uncertainties;</li>
+<li>combine uncertainties in sums, differences, products, quotients and powers;</li>
+<li>distinguish scalar and vector quantities and resolve coplanar vectors into components.</li>
+</ul>
+<section id="chapter-map" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="chapter-map">Chapter map</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Section</th>
+<th>Main ideas</th>
+<th>Typical examination task</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1.1 Physical quantities</td>
+<td>values, units and estimates</td>
+<td>choose a realistic order of magnitude</td>
+</tr>
+<tr class="even">
+<td>1.2 SI units</td>
+<td>base units, derived units and prefixes</td>
+<td>reduce an unfamiliar unit to SI base units</td>
+</tr>
+<tr class="odd">
+<td>1.3 Errors and uncertainties</td>
+<td>measurement quality and uncertainty propagation</td>
+<td>quote a result with a justified uncertainty</td>
+</tr>
+<tr class="even">
+<td>1.4 Scalars and vectors</td>
+<td>direction, components and resultants</td>
+<td>construct or calculate a vector resultant</td>
+</tr>
+</tbody>
+</table>
+<p>These ideas are used throughout the whole Physics course. Unit checks, sign conventions and uncertainty rules should become part of every calculation rather than being treated as isolated topics.</p>
+</section>
+<section id="reporting-a-physical-measurement" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="reporting-a-physical-measurement">Reporting a physical measurement</h3>
+<p>A complete measured result should contain:</p>
+<ol type="1">
+<li>a numerical value;</li>
+<li>an appropriate SI unit;</li>
+<li>a sensible number of significant figures;</li>
+<li>an uncertainty when the experiment or question requires one.</li>
+</ol>
+<p>For example,</p>
+<p><span class="math display">\[L=(12.6\pm0.1)\ \mathrm{cm}\]</span></p>
+<p>states both the best estimate and the absolute uncertainty. The uncertainty is normally written to one significant figure, or two when its first digit is 1 or 2. The measured value is rounded to the same decimal place as the uncertainty.</p>
+<p>Do not confuse decimal places with significant figures: <span class="math inline">\(0.00450\)</span> has three significant figures but five decimal places.</p>
+</section>
+<section id="measurement-strategy" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="measurement-strategy">Measurement strategy</h3>
+<p>Before collecting or processing data:</p>
+<ul>
+<li>choose an instrument whose range and resolution suit the quantity;</li>
+<li>check for zero error and calibration;</li>
+<li>avoid parallax by viewing a scale normally;</li>
+<li>repeat readings when random variation is expected;</li>
+<li>measure a large number of small repeated objects, then divide, when one object is too small to measure accurately;</li>
+<li>record raw readings before averaging so that spread and anomalous values remain visible.</li>
+</ul>
+<p>An improved instrument can reduce uncertainty from limited resolution, but it cannot automatically remove poor technique, uncontrolled variables or systematic bias.</p>
+</section>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">提示</span>A reliable calculation routine
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ol type="1">
+<li>Write the defining equation. 2. Convert every value to compatible units. 3. Substitute without premature rounding. 4. Check dimensions. 5. Round the final value appropriately. 6. Add the unit and uncertainty.</li>
+</ol>
+</div>
+</div>
+</section>
+<section id="physical-quantities" class="level2">
+<h2 class="anchored" data-anchor-id="physical-quantities">1.1 Physical quantities</h2>
+<section id="数值和单位缺一不可" class="level3">
+<h3 class="anchored" data-anchor-id="数值和单位缺一不可">数值和单位缺一不可</h3>
+<div class="study-card">
+<p>一个<strong>物理量</strong>必须同时说明数值大小和单位。例如：</p>
+<ul>
+<li><span class="math inline">\(v = 3.0\ \mathrm{m\,s^{-1}}\)</span> 表示速度；</li>
+<li><span class="math inline">\(V = 3.0\ \mathrm{m^3}\)</span> 表示体积；</li>
+<li><span class="math inline">\(V = 3.0\ \mathrm{V}\)</span> 表示电势差。</li>
+</ul>
+<p>同一个字母可以代表不同物理量；<strong>单位给出物理意义的语境</strong>。因此答案中不能只写“3.0”，也不能把单位混入定义中的物理量名称。</p>
+</div>
+</section>
+<section id="合理估算先判断数量级" class="level3">
+<h3 class="anchored" data-anchor-id="合理估算先判断数量级">合理估算：先判断数量级</h3>
+<p>估算题通常考查你是否能选对合适的数量级和单位，而不是精确常数。先把情境换成熟悉的参照物，再做一位有效数字的计算。</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Quantity</th>
+<th style="text-align: right;">Useful estimate</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>成人质量</td>
+<td style="text-align: right;"><span class="math inline">\(7\times10^1\ \mathrm{kg}\)</span></td>
+</tr>
+<tr class="even">
+<td>汽车质量</td>
+<td style="text-align: right;"><span class="math inline">\(1\times10^3\ \mathrm{kg}\)</span></td>
+</tr>
+<tr class="odd">
+<td>一天的时间</td>
+<td style="text-align: right;"><span class="math inline">\(9\times10^4\ \mathrm{s}\)</span></td>
+</tr>
+<tr class="even">
+<td>空气中的声速</td>
+<td style="text-align: right;"><span class="math inline">\(3\times10^2\ \mathrm{m\,s^{-1}}\)</span></td>
+</tr>
+<tr class="odd">
+<td>普通灯泡功率</td>
+<td style="text-align: right;"><span class="math inline">\(6\times10^1\ \mathrm{W}\)</span></td>
+</tr>
+<tr class="even">
+<td>大气压</td>
+<td style="text-align: right;"><span class="math inline">\(1\times10^5\ \mathrm{Pa}\)</span></td>
+</tr>
+<tr class="odd">
+<td>绿光波长</td>
+<td style="text-align: right;"><span class="math inline">\(5\times10^{-7}\ \mathrm{m}\)</span></td>
+</tr>
+<tr class="even">
+<td>原子直径</td>
+<td style="text-align: right;"><span class="math inline">\(1\times10^{-10}\ \mathrm{m}\)</span></td>
+</tr>
+</tbody>
+</table>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">提示</span>Estimate workflow
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ol type="1">
+<li>写出适用的关系式。2. 估算每一个量（带单位）。3. 用 SI 单位代入。4. 报告合理数量级，避免虚假的高精度。</li>
+</ol>
+</div>
+</div>
+</section>
+<section id="worked-example-walking-upstairs" class="level3 formula-panel">
+<h3 class="anchored" data-anchor-id="worked-example-walking-upstairs">Worked example: walking upstairs</h3>
+<p>估算质量为 <span class="math inline">\(70\ \mathrm{kg}\)</span> 的人上升 <span class="math inline">\(3\ \mathrm{m}\)</span> 所需的能量。取 <span class="math inline">\(g\approx10\ \mathrm{N\,kg^{-1}}\)</span>：</p>
+<p><span class="math display">\[
+\Delta E_\mathrm{p}=mgh\approx 70\times10\times3
+=2.1\times10^3\ \mathrm{J}.
+\]</span></p>
+<p>这个答案写成 <span class="math inline">\(2\times10^3\ \mathrm{J}\)</span> 同样合理；估算的重点是数量级。</p>
+</section>
+</section>
+<section id="si-units" class="level2">
+<h2 class="anchored" data-anchor-id="si-units">1.2 SI units</h2>
+<section id="考纲要求的五个-si-基本量" class="level3">
+<h3 class="anchored" data-anchor-id="考纲要求的五个-si-基本量">考纲要求的五个 SI 基本量</h3>
+<div class="study-card">
+<p>Cambridge 9702 在本课程中要求熟练使用以下五个基本量。SI 系统完整地还有两个基本量，但本课程的指定列表就是下表五项。</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>SI base quantity</th>
+<th>SI base unit</th>
+<th>Symbol</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>mass</td>
+<td>kilogram</td>
+<td>kg</td>
+</tr>
+<tr class="even">
+<td>length</td>
+<td>metre</td>
+<td>m</td>
+</tr>
+<tr class="odd">
+<td>time</td>
+<td>second</td>
+<td>s</td>
+</tr>
+<tr class="even">
+<td>electric current</td>
+<td>ampere</td>
+<td>A</td>
+</tr>
+<tr class="odd">
+<td>temperature</td>
+<td>kelvin</td>
+<td>K</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="从定义式推出导出单位" class="level3">
+<h3 class="anchored" data-anchor-id="从定义式推出导出单位">从定义式推出导出单位</h3>
+<p>不要死记所有单位。写出定义方程，再逐项换成基本单位即可。</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Quantity</th>
+<th>Definition</th>
+<th>SI base units</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>force, <span class="math inline">\(F\)</span></td>
+<td><span class="math inline">\(F=ma\)</span></td>
+<td><span class="math inline">\(\mathrm{kg\,m\,s^{-2}}\)</span></td>
+</tr>
+<tr class="even">
+<td>energy, <span class="math inline">\(E\)</span></td>
+<td><span class="math inline">\(E=\tfrac12mv^2\)</span></td>
+<td><span class="math inline">\(\mathrm{kg\,m^2\,s^{-2}}\)</span></td>
+</tr>
+<tr class="odd">
+<td>power, <span class="math inline">\(P\)</span></td>
+<td><span class="math inline">\(P=E/t\)</span></td>
+<td><span class="math inline">\(\mathrm{kg\,m^2\,s^{-3}}\)</span></td>
+</tr>
+<tr class="even">
+<td>pressure, <span class="math inline">\(p\)</span></td>
+<td><span class="math inline">\(p=F/A\)</span></td>
+<td><span class="math inline">\(\mathrm{kg\,m^{-1}\,s^{-2}}\)</span></td>
+</tr>
+<tr class="odd">
+<td>density, <span class="math inline">\(\rho\)</span></td>
+<td><span class="math inline">\(\rho=m/V\)</span></td>
+<td><span class="math inline">\(\mathrm{kg\,m^{-3}}\)</span></td>
+</tr>
+<tr class="even">
+<td>potential difference, <span class="math inline">\(V\)</span></td>
+<td><span class="math inline">\(V=E/Q\)</span> and <span class="math inline">\(Q=It\)</span></td>
+<td><span class="math inline">\(\mathrm{kg\,m^2\,s^{-3}\,A^{-1}}\)</span></td>
+</tr>
+</tbody>
+</table>
+<div class="unit-chain">
+<p>For example: <span class="math inline">\(\mathrm{Pa=N\,m^{-2}=(kg\,m\,s^{-2})m^{-2}=kg\,m^{-1}\,s^{-2}}\)</span>.</p>
+</div>
+</section>
+<section id="homogeneity-of-physical-equations" class="level3">
+<h3 class="anchored" data-anchor-id="homogeneity-of-physical-equations">Homogeneity of physical equations</h3>
+<p>一个正确的物理方程在等号两侧必须有相同的基本单位；这叫<strong>量纲齐次</strong>（homogeneous）。数值常数（如 <span class="math inline">\(\tfrac12\)</span>）没有单位。</p>
+</section>
+<section id="example-check-prho-gh" class="level3 formula-panel">
+<h3 class="anchored" data-anchor-id="example-check-prho-gh">Example: check <span class="math inline">\(p=\rho gh\)</span></h3>
+<p>左侧压强：</p>
+<p><span class="math display">\[[p]=\mathrm{Pa}=\mathrm{kg\,m^{-1}\,s^{-2}}.\]</span></p>
+<p>右侧：</p>
+<p><span class="math display">\[[\rho gh]=(\mathrm{kg\,m^{-3}})(\mathrm{m\,s^{-2}})(\mathrm{m})
+=\mathrm{kg\,m^{-1}\,s^{-2}}.\]</span></p>
+<p>两边相同，所以该方程的单位齐次。注意：齐次是方程成立的<strong>必要条件</strong>，但不证明方程一定正确。</p>
+</section>
+<section id="si-prefixes" class="level3">
+<h3 class="anchored" data-anchor-id="si-prefixes">SI prefixes</h3>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Prefix</th>
+<th style="text-align: center;">Symbol</th>
+<th style="text-align: right;">Factor</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>tera</td>
+<td style="text-align: center;">T</td>
+<td style="text-align: right;"><span class="math inline">\(10^{12}\)</span></td>
+</tr>
+<tr class="even">
+<td>giga</td>
+<td style="text-align: center;">G</td>
+<td style="text-align: right;"><span class="math inline">\(10^9\)</span></td>
+</tr>
+<tr class="odd">
+<td>mega</td>
+<td style="text-align: center;">M</td>
+<td style="text-align: right;"><span class="math inline">\(10^6\)</span></td>
+</tr>
+<tr class="even">
+<td>kilo</td>
+<td style="text-align: center;">k</td>
+<td style="text-align: right;"><span class="math inline">\(10^3\)</span></td>
+</tr>
+<tr class="odd">
+<td>deci</td>
+<td style="text-align: center;">d</td>
+<td style="text-align: right;"><span class="math inline">\(10^{-1}\)</span></td>
+</tr>
+<tr class="even">
+<td>centi</td>
+<td style="text-align: center;">c</td>
+<td style="text-align: right;"><span class="math inline">\(10^{-2}\)</span></td>
+</tr>
+<tr class="odd">
+<td>milli</td>
+<td style="text-align: center;">m</td>
+<td style="text-align: right;"><span class="math inline">\(10^{-3}\)</span></td>
+</tr>
+<tr class="even">
+<td>micro</td>
+<td style="text-align: center;"><span class="math inline">\(\mu\)</span></td>
+<td style="text-align: right;"><span class="math inline">\(10^{-6}\)</span></td>
+</tr>
+<tr class="odd">
+<td>nano</td>
+<td style="text-align: center;">n</td>
+<td style="text-align: right;"><span class="math inline">\(10^{-9}\)</span></td>
+</tr>
+<tr class="even">
+<td>pico</td>
+<td style="text-align: center;">p</td>
+<td style="text-align: right;"><span class="math inline">\(10^{-12}\)</span></td>
+</tr>
+</tbody>
+</table>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">警告</span>Common traps
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>前缀大小写有意义：<span class="math inline">\(\,\mathrm{m}\)</span> 是 milli，<span class="math inline">\(\,\mathrm{M}\)</span> 是 mega；<span class="math inline">\(\,\mathrm{p}\)</span> 是 pico。</li>
+<li>平方和立方单位要对换算因子同样乘方：<span class="math inline">\(1\ \mathrm{cm^3}=10^{-6}\ \mathrm{m^3}\)</span>，不是 <span class="math inline">\(10^{-2}\ \mathrm{m^3}\)</span>。</li>
+<li>先转换前缀，再按题目要求处理标准形式和有效数字。</li>
+</ul>
+</div>
+</div>
+</section>
+</section>
+<section id="errors-and-uncertainties" class="level2">
+<h2 class="anchored" data-anchor-id="errors-and-uncertainties">1.3 Errors and uncertainties</h2>
+<section id="error-types-accuracy-and-precision" class="level3">
+<h3 class="anchored" data-anchor-id="error-types-accuracy-and-precision">Error types, accuracy and precision</h3>
+<div class="study-card">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Term</th>
+<th>Meaning</th>
+<th>Main effect</th>
+<th>How to reduce it</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>random error</td>
+<td>Unpredictable variation between readings, for example due to judgement or changing conditions</td>
+<td>Reduces <strong>precision</strong>; readings have a larger spread</td>
+<td>Repeat readings and calculate a mean</td>
+</tr>
+<tr class="even">
+<td>systematic error</td>
+<td>A consistent bias from a faulty instrument or method</td>
+<td>Reduces <strong>accuracy</strong>; all readings are shifted in the same direction</td>
+<td>Recalibrate, correct a zero error, or improve the method</td>
+</tr>
+<tr class="odd">
+<td>zero error</td>
+<td>An instrument reads non-zero when the true value is zero</td>
+<td>A type of systematic error</td>
+<td>Check before use and apply a correction</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>Accuracy</strong>: how close a measurement is to the true value.</li>
+<li><strong>Precision</strong>: how close repeated readings are to one another. A single measurement cannot be described as precise.</li>
+<li><strong>Resolution</strong> is the smallest change an instrument can show. High resolution does not by itself guarantee accuracy.</li>
+</ul>
+</div>
+</section>
+<section id="expressing-uncertainty" class="level3">
+<h3 class="anchored" data-anchor-id="expressing-uncertainty">Expressing uncertainty</h3>
+<p>For a measurement written as <span class="math inline">\(x\pm\Delta x\)</span>:</p>
+<p><span class="math display">\[
+\text{fractional uncertainty}=\frac{\Delta x}{x},\qquad
+\text{percentage uncertainty}=\frac{\Delta x}{x}\times100\%.
+\]</span></p>
+</section>
+<section id="finding-an-absolute-uncertainty" class="level3 formula-panel">
+<h3 class="anchored" data-anchor-id="finding-an-absolute-uncertainty">Finding an absolute uncertainty</h3>
+<ul>
+<li>Analogue scale reading: usually <span class="math inline">\(\pm\)</span> half the smallest division.</li>
+<li>A measurement requiring two scale readings (for example a length from a ruler): at least <span class="math inline">\(\pm\)</span> one smallest division in total.</li>
+<li>Digital display: usually <span class="math inline">\(\pm\)</span> one in the last displayed digit, unless stated otherwise.</li>
+<li>Repeated readings: where appropriate, uncertainty <span class="math inline">\(=\)</span> half the range.</li>
+</ul>
+<p>Example: readings <span class="math inline">\(12.55\)</span>, <span class="math inline">\(12.45\)</span> and <span class="math inline">\(12.51\ \mathrm{cm}\)</span> give a mean of about <span class="math inline">\(12.50\ \mathrm{cm}\)</span> and half-range uncertainty of <span class="math inline">\(\pm0.05\ \mathrm{cm}\)</span>.</p>
+</section>
+<section id="combining-uncertainties" class="level3">
+<h3 class="anchored" data-anchor-id="combining-uncertainties">Combining uncertainties</h3>
+<div class="study-card">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Calculation</th>
+<th>Rule</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\(z=x+y\)</span> or <span class="math inline">\(z=x-y\)</span></td>
+<td>Add <strong>absolute</strong> uncertainties: <span class="math inline">\(\Delta z=\Delta x+\Delta y\)</span></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(z=xy\)</span> or <span class="math inline">\(z=x/y\)</span></td>
+<td>Add <strong>percentage</strong> (or fractional) uncertainties</td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(z=x^n\)</span></td>
+<td>Multiply the percentage (or fractional) uncertainty in <span class="math inline">\(x\)</span> by <span class="math inline">\(n\)</span></td>
+</tr>
+</tbody>
+</table>
+<p>For multiplication/division, calculate the resulting percentage uncertainty first; convert it to an absolute uncertainty only if the final answer needs to be written as <span class="math inline">\(z\pm\Delta z\)</span>.</p>
+</div>
+</section>
+<section id="worked-examples" class="level3 formula-panel">
+<h3 class="anchored" data-anchor-id="worked-examples">Worked examples</h3>
+<ol type="1">
+<li><span class="math inline">\(d_1=55.0\pm0.5\ \mathrm{cm}\)</span> and <span class="math inline">\(d_2=21.0\pm0.7\ \mathrm{cm}\)</span>:</li>
+</ol>
+<p><span class="math display">\[d_1-d_2=34.0\pm(0.5+0.7)=34.0\pm1.2\ \mathrm{cm}.\]</span></p>
+<ol start="2" type="1">
+<li><span class="math inline">\(s=50.0\pm0.4\ \mathrm{m}\)</span>, <span class="math inline">\(t=5.00\pm0.05\ \mathrm{s}\)</span> and <span class="math inline">\(v=s/t\)</span>:</li>
+</ol>
+<p><span class="math display">\[\frac{\Delta v}{v}=\frac{0.4}{50.0}+\frac{0.05}{5.00}=0.018=1.8\%.\]</span></p>
+<p>Since <span class="math inline">\(v=10.0\ \mathrm{m\,s^{-1}}\)</span>, <span class="math inline">\(\Delta v=0.018\times10.0=0.18\ \mathrm{m\,s^{-1}}\)</span>.</p>
+</section>
+</section>
+<section id="scalars-and-vectors" class="level2">
+<h2 class="anchored" data-anchor-id="scalars-and-vectors">1.4 Scalars and vectors</h2>
+<section id="scalar-or-vector" class="level3">
+<h3 class="anchored" data-anchor-id="scalar-or-vector">Scalar or vector?</h3>
+<div class="study-card">
+<p>A <strong>scalar</strong> has magnitude only. A <strong>vector</strong> has magnitude and direction.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Scalars</th>
+<th>Vectors</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>distance, speed, mass, time, energy, power, volume, density, pressure, charge, temperature</td>
+<td>displacement, velocity, acceleration, force, momentum</td>
+</tr>
+</tbody>
+</table>
+<p>The reliable test is not whether a quantity may be written with a plus or minus sign; vectors must obey vector addition and can be resolved into components. For example, electric current is treated as a scalar quantity in this course.</p>
+</div>
+</section>
+<section id="adding-and-subtracting-coplanar-vectors" class="level3">
+<h3 class="anchored" data-anchor-id="adding-and-subtracting-coplanar-vectors">Adding and subtracting coplanar vectors</h3>
+</section>
+<section id="triangle-method" class="level3 formula-panel">
+<h3 class="anchored" data-anchor-id="triangle-method">Triangle method</h3>
+<p>To add <span class="math inline">\(\mathbf{a}+\mathbf{b}\)</span>, draw <span class="math inline">\(\mathbf{b}\)</span> from the head of <span class="math inline">\(\mathbf{a}\)</span>. The resultant goes from the tail of <span class="math inline">\(\mathbf{a}\)</span> to the head of <span class="math inline">\(\mathbf{b}\)</span>.</p>
+<p>To subtract, rewrite <span class="math inline">\(\mathbf{a}-\mathbf{b}\)</span> as <span class="math inline">\(\mathbf{a}+(-\mathbf{b})\)</span>: reverse the direction of <span class="math inline">\(\mathbf{b}\)</span> first, then add head-to-tail.</p>
+<p>The parallelogram method gives the same resultant: draw both vectors tail-to-tail and use the diagonal from the common tail.</p>
+</section>
+<section id="components-of-a-vector" class="level3">
+<h3 class="anchored" data-anchor-id="components-of-a-vector">Components of a vector</h3>
+<p>For a vector <span class="math inline">\(F\)</span> at an angle <span class="math inline">\(\theta\)</span> above the positive horizontal:</p>
+<p><span class="math display">\[F_x=F\cos\theta,\qquad F_y=F\sin\theta.\]</span></p>
+<p>Choose signs from the direction. A component towards the left or downward is negative if right/up are defined as positive. If the angle is measured from the vertical, identify opposite and adjacent sides first rather than memorising a different rule.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">提示</span>Equilibrium check
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>For coplanar forces in equilibrium, the resultant force is zero. Draw the vectors head-to-tail: they form a <strong>closed vector triangle</strong> (or closed polygon for more forces).</p>
+</div>
+</div>
+</section>
+</section>
+<section id="专题真题" class="level2">
+<h2 class="anchored" data-anchor-id="专题真题">专题真题</h2>
+<section id="multiple-choice" class="level3">
+<h3 class="anchored" data-anchor-id="multiple-choice">Multiple Choice</h3>
+<p>题干和选项保留英文原文。共 20 题：Easy 7、Medium 7、Hard 6。图像依赖而未能可靠独立提取的题目不列入本页。</p>
+<section id="easy-7-questions" class="level4">
+<h4 class="anchored" data-anchor-id="easy-7-questions">Easy · 7 questions</h4>
+</section>
+</section>
+<div id="mc-easy-q1" class="question-card mc-question" data-answer="C">
+<section id="example-1-1.1-mc-easy-q1" class="level3">
+<h3 class="anchored" data-anchor-id="example-1-1.1-mc-easy-q1">Example 1 · 1.1 MC Easy Q1</h3>
+Which of the following is an SI base unit?
+<div class="mc-options">
+<button class="mc-choice" data-choice="A">
+<strong>A</strong> Current
+</button>
+<button class="mc-choice" data-choice="B">
+<strong>B</strong> Gram
+</button>
+<button class="mc-choice" data-choice="C">
+<strong>C</strong> Kelvin
+</button>
+<button class="mc-choice" data-choice="D">
+<strong>D</strong> Volt
+</button>
+</div>
+<button class="check-answer">
+Check answer
+</button>
+<p class="mc-feedback" aria-live="polite">
+</p>
+<details class="answer-panel">
+<summary>
+Show explanation
+</summary>
+Kelvin is an SI base unit.
+</details>
+</section>
+</div>
+<div id="mc-easy-q2" class="question-card mc-question" data-answer="C">
+<section id="example-2-1.1-mc-easy-q3" class="level3">
+<h3 class="anchored" data-anchor-id="example-2-1.1-mc-easy-q3">Example 2 · 1.1 MC Easy Q3</h3>
+Five energies are listed below: <span class="math inline">\(5\ \mathrm{kJ}\)</span>, <span class="math inline">\(5\ \mathrm{mJ}\)</span>, <span class="math inline">\(5\ \mathrm{MJ}\)</span> and <span class="math inline">\(5\ \mathrm{nJ}\)</span>. Starting with the smallest first, what is the order of increasing magnitude of these energies?
+<div class="mc-options">
+<button class="mc-choice" data-choice="A">
+<strong>A</strong> <span class="math inline">\(5\ \mathrm{kJ}\rightarrow5\ \mathrm{mJ}\rightarrow5\ \mathrm{MJ}\rightarrow5\ \mathrm{nJ}\)</span>
+</button>
+<button class="mc-choice" data-choice="B">
+<strong>B</strong> <span class="math inline">\(5\ \mathrm{nJ}\rightarrow5\ \mathrm{kJ}\rightarrow5\ \mathrm{MJ}\rightarrow5\ \mathrm{mJ}\)</span>
+</button>
+<button class="mc-choice" data-choice="C">
+<strong>C</strong> <span class="math inline">\(5\ \mathrm{nJ}\rightarrow5\ \mathrm{mJ}\rightarrow5\ \mathrm{kJ}\rightarrow5\ \mathrm{MJ}\)</span>
+</button>
+<button class="mc-choice" data-choice="D">
+<strong>D</strong> <span class="math inline">\(5\ \mathrm{mJ}\rightarrow5\ \mathrm{nJ}\rightarrow5\ \mathrm{kJ}\rightarrow5\ \mathrm{MJ}\)</span>
+</button>
+</div>
+<button class="check-answer">
+Check answer
+</button>
+<p class="mc-feedback" aria-live="polite">
+</p>
+<details class="answer-panel">
+<summary>
+Show explanation
+</summary>
+Use <span class="math inline">\(\mathrm{n}=10^{-9}\)</span>, <span class="math inline">\(\mathrm{m}=10^{-3}\)</span>, <span class="math inline">\(\mathrm{k}=10^3\)</span> and <span class="math inline">\(\mathrm{M}=10^6\)</span>.
+</details>
+</section>
+</div>
+<div id="mc-easy-q3" class="question-card mc-question" data-answer="D">
+<section id="example-3-1.1-mc-easy-q4" class="level3">
+<h3 class="anchored" data-anchor-id="example-3-1.1-mc-easy-q4">Example 3 · 1.1 MC Easy Q4</h3>
+What is a reasonable estimate of the average gravitational force acting on a fully grown woman standing on the Earth?
+<div class="mc-options">
+<button class="mc-choice" data-choice="A">
+<strong>A</strong> <span class="math inline">\(60\ \mathrm{N}\)</span>
+</button>
+<button class="mc-choice" data-choice="B">
+<strong>B</strong> <span class="math inline">\(250\ \mathrm{N}\)</span>
+</button>
+<button class="mc-choice" data-choice="C">
+<strong>C</strong> <span class="math inline">\(350\ \mathrm{N}\)</span>
+</button>
+<button class="mc-choice" data-choice="D">
+<strong>D</strong> <span class="math inline">\(650\ \mathrm{N}\)</span>
+</button>
+</div>
+<button class="check-answer">
+Check answer
+</button>
+<p class="mc-feedback" aria-live="polite">
+</p>
+<details class="answer-panel">
+<summary>
+Show explanation
+</summary>
+<span class="math inline">\(W=mg\approx65\times10=650\ \mathrm{N}\)</span>.
+</details>
+</section>
+</div>
+<div id="mc-easy-q4" class="question-card mc-question" data-answer="B">
+<section id="example-4-1.1-mc-easy-q6" class="level3">
+<h3 class="anchored" data-anchor-id="example-4-1.1-mc-easy-q6">Example 4 · 1.1 MC Easy Q6</h3>
+Which pair contains one vector and one scalar quantity?
+<div class="mc-options">
+<button class="mc-choice" data-choice="A">
+<strong>A</strong> Displacement; acceleration
+</button>
+<button class="mc-choice" data-choice="B">
+<strong>B</strong> Force; kinetic energy
+</button>
+<button class="mc-choice" data-choice="C">
+<strong>C</strong> Momentum; velocity
+</button>
+<button class="mc-choice" data-choice="D">
+<strong>D</strong> Power; speed
+</button>
+</div>
+<button class="check-answer">
+Check answer
+</button>
+<p class="mc-feedback" aria-live="polite">
+</p>
+<details class="answer-panel">
+<summary>
+Show explanation
+</summary>
+Force is a vector and kinetic energy is a scalar.
+</details>
+</section>
+</div>
+<div id="mc-easy-q5" class="question-card mc-question" data-answer="B">
+<section id="example-5-1.2-mc-easy-q1" class="level3">
+<h3 class="anchored" data-anchor-id="example-5-1.2-mc-easy-q1">Example 5 · 1.2 MC Easy Q1</h3>
+The density of the material of a coil of thin wire is to be found. Which set of instruments could be used to do this most accurately?
+<div class="mc-options">
+<button class="mc-choice" data-choice="A">
+<strong>A</strong> Metre rule, protractor, spring balance
+</button>
+<button class="mc-choice" data-choice="B">
+<strong>B</strong> Micrometer, metre rule, top-pan balance
+</button>
+<button class="mc-choice" data-choice="C">
+<strong>C</strong> Stopwatch, newton-meter, vernier calipers
+</button>
+<button class="mc-choice" data-choice="D">
+<strong>D</strong> Tape measure, vernier calipers, lever balance
+</button>
+</div>
+<button class="check-answer">
+Check answer
+</button>
+<p class="mc-feedback" aria-live="polite">
+</p>
+<details class="answer-panel">
+<summary>
+Show explanation
+</summary>
+Measure mass, wire diameter and wire length with the most suitable instruments.
+</details>
+</section>
+</div>
+<div id="mc-easy-q6" class="question-card mc-question" data-answer="A">
+<section id="example-6-1.2-mc-easy-q7" class="level3">
+<h3 class="anchored" data-anchor-id="example-6-1.2-mc-easy-q7">Example 6 · 1.2 MC Easy Q7</h3>
+An experiment is done to measure the acceleration of free fall of a body from rest. Which measurements are needed?
+<div class="mc-options">
+<button class="mc-choice" data-choice="A">
+<strong>A</strong> The height of fall and the time of fall
+</button>
+<button class="mc-choice" data-choice="B">
+<strong>B</strong> The height of fall and the weight of the body
+</button>
+<button class="mc-choice" data-choice="C">
+<strong>C</strong> The mass of the body and the height of fall
+</button>
+<button class="mc-choice" data-choice="D">
+<strong>D</strong> The mass of the body and the time of fall
+</button>
+</div>
+<button class="check-answer">
+Check answer
+</button>
+<p class="mc-feedback" aria-live="polite">
+</p>
+<details class="answer-panel">
+<summary>
+Show explanation
+</summary>
+For a body released from rest, <span class="math inline">\(h=\tfrac12gt^2\)</span>.
+</details>
+</section>
+</div>
+<div id="mc-easy-q7" class="question-card mc-question" data-answer="D">
+<section id="example-7-1.2-mc-easy-q8" class="level3">
+<h3 class="anchored" data-anchor-id="example-7-1.2-mc-easy-q8">Example 7 · 1.2 MC Easy Q8</h3>
+A micrometer is used to measure the diameters of two cylinders: <span class="math inline">\(12.78\pm0.02\ \mathrm{mm}\)</span> and <span class="math inline">\(16.24\pm0.03\ \mathrm{mm}\)</span>. The difference in the diameters is calculated. What is the uncertainty in this difference?
+<div class="mc-options">
+<button class="mc-choice" data-choice="A">
+<strong>A</strong> <span class="math inline">\(\pm0.01\ \mathrm{mm}\)</span>
+</button>
+<button class="mc-choice" data-choice="B">
+<strong>B</strong> <span class="math inline">\(\pm0.02\ \mathrm{mm}\)</span>
+</button>
+<button class="mc-choice" data-choice="C">
+<strong>C</strong> <span class="math inline">\(\pm0.03\ \mathrm{mm}\)</span>
+</button>
+<button class="mc-choice" data-choice="D">
+<strong>D</strong> <span class="math inline">\(\pm0.05\ \mathrm{mm}\)</span>
+</button>
+</div>
+<button class="check-answer">
+Check answer
+</button>
+<p class="mc-feedback" aria-live="polite">
+</p>
+<details class="answer-panel">
+<summary>
+Show explanation
+</summary>
+Add absolute uncertainties when subtracting values.
+</details>
+</section>
+</div>
+<section id="medium-7-questions" class="level4">
+<h4 class="anchored" data-anchor-id="medium-7-questions">Medium · 7 questions</h4>
+</section>
+<div id="mc-medium-q1" class="question-card mc-question" data-answer="D">
+<section id="example-8-1.1-mc-medium-q1" class="level3">
+<h3 class="anchored" data-anchor-id="example-8-1.1-mc-medium-q1">Example 8 · 1.1 MC Medium Q1</h3>
+The average kinetic energy <span class="math inline">\(E\)</span> of a gas molecule is given by <span class="math inline">\(E=\frac32kT\)</span>, where <span class="math inline">\(T\)</span> is the absolute temperature. What are the SI base units of <span class="math inline">\(k\)</span>?
+<div class="mc-options">
+<button class="mc-choice" data-choice="A">
+<strong>A</strong> <span class="math inline">\(\mathrm{kg^{-1}\,m^{-1}\,s^{2}\,K}\)</span>
+</button>
+<button class="mc-choice" data-choice="B">
+<strong>B</strong> <span class="math inline">\(\mathrm{kg^{-1}\,m^{-2}\,s^{2}\,K}\)</span>
+</button>
+<button class="mc-choice" data-choice="C">
+<strong>C</strong> <span class="math inline">\(\mathrm{kg\,m\,s^{-2}\,K^{-1}}\)</span>
+</button>
+<button class="mc-choice" data-choice="D">
+<strong>D</strong> <span class="math inline">\(\mathrm{kg\,m^{2}\,s^{-2}\,K^{-1}}\)</span>
+</button>
+</div>
+<button class="check-answer">
+Check answer
+</button>
+<p class="mc-feedback" aria-live="polite">
+</p>
+<details class="answer-panel">
+<summary>
+Show explanation
+</summary>
+<span class="math inline">\(k=E/T\)</span>.
+</details>
+</section>
+</div>
+<div id="mc-medium-q2" class="question-card mc-question" data-answer="D">
+<section id="example-9-1.1-mc-medium-q2" class="level3">
+<h3 class="anchored" data-anchor-id="example-9-1.1-mc-medium-q2">Example 9 · 1.1 MC Medium Q2</h3>
+The speed of an aeroplane in still air is <span class="math inline">\(200\ \mathrm{km\,h^{-1}}\)</span>. The wind blows from the west at <span class="math inline">\(85.0\ \mathrm{km\,h^{-1}}\)</span>. In which direction must the pilot steer the aeroplane in order to fly due north?
+<div class="mc-options">
+<button class="mc-choice" data-choice="A">
+<strong>A</strong> <span class="math inline">\(23.0^\circ\)</span> east of north
+</button>
+<button class="mc-choice" data-choice="B">
+<strong>B</strong> <span class="math inline">\(23.0^\circ\)</span> west of north
+</button>
+<button class="mc-choice" data-choice="C">
+<strong>C</strong> <span class="math inline">\(25.2^\circ\)</span> east of north
+</button>
+<button class="mc-choice" data-choice="D">
+<strong>D</strong> <span class="math inline">\(25.2^\circ\)</span> west of north
+</button>
+</div>
+<button class="check-answer">
+Check answer
+</button>
+<p class="mc-feedback" aria-live="polite">
+</p>
+<details class="answer-panel">
+<summary>
+Show explanation
+</summary>
+The plane must have a westward component equal to the eastward wind component.
+</details>
+</section>
+</div>
+<div id="mc-medium-q3" class="question-card mc-question" data-answer="B">
+<section id="example-10-1.1-mc-medium-q3" class="level3">
+<h3 class="anchored" data-anchor-id="example-10-1.1-mc-medium-q3">Example 10 · 1.1 MC Medium Q3</h3>
+The units of all physical quantities can be expressed in terms of SI base units. Which pair contains quantities with the same base units?
+<div class="mc-options">
+<button class="mc-choice" data-choice="A">
+<strong>A</strong> Force and momentum
+</button>
+<button class="mc-choice" data-choice="B">
+<strong>B</strong> Pressure and Young modulus
+</button>
+<button class="mc-choice" data-choice="C">
+<strong>C</strong> Power and kinetic energy
+</button>
+<button class="mc-choice" data-choice="D">
+<strong>D</strong> Mass and weight
+</button>
+</div>
+<button class="check-answer">
+Check answer
+</button>
+<p class="mc-feedback" aria-live="polite">
+</p>
+<details class="answer-panel">
+<summary>
+Show explanation
+</summary>
+Both pressure and Young modulus have unit <span class="math inline">\(\mathrm{Pa}\)</span>.
+</details>
+</section>
+</div>
+<div id="mc-medium-q4" class="question-card mc-question" data-answer="D">
+<section id="example-11-1.1-mc-medium-q6" class="level3">
+<h3 class="anchored" data-anchor-id="example-11-1.1-mc-medium-q6">Example 11 · 1.1 MC Medium Q6</h3>
+What is the ratio <span class="math inline">\(\dfrac{10^{-3}\ \mathrm{THz}}{10^{3}\ \mathrm{kHz}}\)</span>?
+<div class="mc-options">
+<button class="mc-choice" data-choice="A">
+<strong>A</strong> <span class="math inline">\(10^{-9}\)</span>
+</button>
+<button class="mc-choice" data-choice="B">
+<strong>B</strong> <span class="math inline">\(10^{-6}\)</span>
+</button>
+<button class="mc-choice" data-choice="C">
+<strong>C</strong> <span class="math inline">\(10^{0}\)</span>
+</button>
+<button class="mc-choice" data-choice="D">
+<strong>D</strong> <span class="math inline">\(10^{3}\)</span>
+</button>
+</div>
+<button class="check-answer">
+Check answer
+</button>
+<p class="mc-feedback" aria-live="polite">
+</p>
+<details class="answer-panel">
+<summary>
+Show explanation
+</summary>
+Convert both frequencies to hertz.
+</details>
+</section>
+</div>
+<div id="mc-medium-q5" class="question-card mc-question" data-answer="D">
+<section id="example-12-1.1-mc-medium-q7" class="level3">
+<h3 class="anchored" data-anchor-id="example-12-1.1-mc-medium-q7">Example 12 · 1.1 MC Medium Q7</h3>
+Which of the following correctly expresses the volt in terms of SI base units?
+<div class="mc-options">
+<button class="mc-choice" data-choice="A">
+<strong>A</strong> <span class="math inline">\(\mathrm{A\,\Omega}\)</span>
+</button>
+<button class="mc-choice" data-choice="B">
+<strong>B</strong> <span class="math inline">\(\mathrm{W\,A^{-1}}\)</span>
+</button>
+<button class="mc-choice" data-choice="C">
+<strong>C</strong> <span class="math inline">\(\mathrm{kg\,m^{2}\,s^{-1}\,A^{-1}}\)</span>
+</button>
+<button class="mc-choice" data-choice="D">
+<strong>D</strong> <span class="math inline">\(\mathrm{kg\,m^{2}\,s^{-3}\,A^{-1}}\)</span>
+</button>
+</div>
+<button class="check-answer">
+Check answer
+</button>
+<p class="mc-feedback" aria-live="polite">
+</p>
+<details class="answer-panel">
+<summary>
+Show explanation
+</summary>
+<span class="math inline">\(V=E/Q\)</span> and <span class="math inline">\(Q=It\)</span>.
+</details>
+</section>
+</div>
+<div id="mc-medium-q6" class="question-card mc-question" data-answer="D">
+<section id="example-13-1.1-mc-medium-q9" class="level3">
+<h3 class="anchored" data-anchor-id="example-13-1.1-mc-medium-q9">Example 13 · 1.1 MC Medium Q9</h3>
+For which quantity is the magnitude a reasonable estimate?
+<div class="mc-options">
+<button class="mc-choice" data-choice="A">
+<strong>A</strong> Frequency of a radio wave <span class="math inline">\(500\ \mathrm{pHz}\)</span>
+</button>
+<button class="mc-choice" data-choice="B">
+<strong>B</strong> Mass of an atom <span class="math inline">\(500\ \mathrm{\mu g}\)</span>
+</button>
+<button class="mc-choice" data-choice="C">
+<strong>C</strong> The Young modulus of a metal <span class="math inline">\(500\ \mathrm{kPa}\)</span>
+</button>
+<button class="mc-choice" data-choice="D">
+<strong>D</strong> Wavelength of green light <span class="math inline">\(500\ \mathrm{nm}\)</span>
+</button>
+</div>
+<button class="check-answer">
+Check answer
+</button>
+<p class="mc-feedback" aria-live="polite">
+</p>
+<details class="answer-panel">
+<summary>
+Show explanation
+</summary>
+Visible green light has wavelength of order <span class="math inline">\(10^{-7}\ \mathrm{m}\)</span>.
+</details>
+</section>
+</div>
+<div id="mc-medium-q7" class="question-card mc-question" data-answer="C">
+<section id="example-14-1.1-mc-medium-q10" class="level3">
+<h3 class="anchored" data-anchor-id="example-14-1.1-mc-medium-q10">Example 14 · 1.1 MC Medium Q10</h3>
+The equation relating pressure and density is <span class="math inline">\(P=\rho gh\)</span>. How can both sides of this equation be written in terms of base units?
+<div class="mc-options">
+<button class="mc-choice" data-choice="A">
+<strong>A</strong> <span class="math inline">\(\mathrm{N\,m^{-1}=kg\,m^{-3}\times m\,s^{-1}\times m}\)</span>
+</button>
+<button class="mc-choice" data-choice="B">
+<strong>B</strong> <span class="math inline">\(\mathrm{N\,m^{-2}=kg\,m^{-2}\times m\,s^{-2}\times m}\)</span>
+</button>
+<button class="mc-choice" data-choice="C">
+<strong>C</strong> <span class="math inline">\(\mathrm{kg\,m^{-1}\,s^{-2}=kg\,m^{-3}\times m\,s^{-2}\times m}\)</span>
+</button>
+<button class="mc-choice" data-choice="D">
+<strong>D</strong> <span class="math inline">\(\mathrm{kg\,m^{-1}\,s^{-1}=kg\,m^{-1}\times m\,s^{-2}\times m}\)</span>
+</button>
+</div>
+<button class="check-answer">
+Check answer
+</button>
+<p class="mc-feedback" aria-live="polite">
+</p>
+<details class="answer-panel">
+<summary>
+Show explanation
+</summary>
+Pressure is <span class="math inline">\(\mathrm{kg\,m^{-1}\,s^{-2}}\)</span>.
+</details>
+</section>
+</div>
+<section id="hard-6-questions" class="level4">
+<h4 class="anchored" data-anchor-id="hard-6-questions">Hard · 6 questions</h4>
+</section>
+<div id="mc-hard-q1" class="question-card mc-question" data-answer="D">
+<section id="example-15-1.1-mc-hard-q2" class="level3">
+<h3 class="anchored" data-anchor-id="example-15-1.1-mc-hard-q2">Example 15 · 1.1 MC Hard Q2</h3>
+Which estimate is realistic?
+<div class="mc-options">
+<button class="mc-choice" data-choice="A">
+<strong>A</strong> The kinetic energy of a bus travelling on an expressway is <span class="math inline">\(30\,000\ \mathrm{J}\)</span>
+</button>
+<button class="mc-choice" data-choice="B">
+<strong>B</strong> The power of a domestic light is <span class="math inline">\(300\ \mathrm{W}\)</span>
+</button>
+<button class="mc-choice" data-choice="C">
+<strong>C</strong> The temperature of a hot oven is <span class="math inline">\(300\ \mathrm{K}\)</span>
+</button>
+<button class="mc-choice" data-choice="D">
+<strong>D</strong> The volume of air in a car tyre is <span class="math inline">\(0.03\ \mathrm{m^3}\)</span>
+</button>
+</div>
+<button class="check-answer">
+Check answer
+</button>
+<p class="mc-feedback" aria-live="polite">
+</p>
+<details class="answer-panel">
+<summary>
+Show explanation
+</summary>
+A car tyre contains a few tens of litres of air.
+</details>
+</section>
+</div>
+<div id="mc-hard-q2" class="question-card mc-question" data-answer="B">
+<section id="example-16-1.1-mc-hard-q3" class="level3">
+<h3 class="anchored" data-anchor-id="example-16-1.1-mc-hard-q3">Example 16 · 1.1 MC Hard Q3</h3>
+The frictional force <span class="math inline">\(F\)</span> on a sphere falling through a fluid is given by <span class="math inline">\(F=6\pi a\eta v\)</span>, where <span class="math inline">\(a\)</span> is the radius of the sphere, <span class="math inline">\(\eta\)</span> is a constant relating to the fluid and <span class="math inline">\(v\)</span> is the velocity of the sphere. What are the units of <span class="math inline">\(\eta\)</span>?
+<div class="mc-options">
+<button class="mc-choice" data-choice="A">
+<strong>A</strong> <span class="math inline">\(\mathrm{kg\,m\,s^{-1}}\)</span>
+</button>
+<button class="mc-choice" data-choice="B">
+<strong>B</strong> <span class="math inline">\(\mathrm{kg\,m^{-1}\,s^{-1}}\)</span>
+</button>
+<button class="mc-choice" data-choice="C">
+<strong>C</strong> <span class="math inline">\(\mathrm{kg\,m\,s^{-3}}\)</span>
+</button>
+<button class="mc-choice" data-choice="D">
+<strong>D</strong> <span class="math inline">\(\mathrm{kg\,m^{3}\,s^{-3}}\)</span>
+</button>
+</div>
+<button class="check-answer">
+Check answer
+</button>
+<p class="mc-feedback" aria-live="polite">
+</p>
+<details class="answer-panel">
+<summary>
+Show explanation
+</summary>
+<span class="math inline">\(\eta=F/(av)\)</span>.
+</details>
+</section>
+</div>
+<div id="mc-hard-q3" class="question-card mc-question" data-answer="A">
+<section id="example-17-1.1-mc-hard-q4" class="level3">
+<h3 class="anchored" data-anchor-id="example-17-1.1-mc-hard-q4">Example 17 · 1.1 MC Hard Q4</h3>
+When a constant braking force is applied to a vehicle moving at speed <span class="math inline">\(v\)</span>, the distance <span class="math inline">\(d\)</span> moved by the vehicle as it comes to rest is given by <span class="math inline">\(d=kv^2\)</span>. When <span class="math inline">\(d\)</span> is measured in metres and <span class="math inline">\(v\)</span> is measured in metres per second, the constant has a value <span class="math inline">\(k_1\)</span>. What is the value of the constant when distance is measured in metres and speed is measured in kilometres per hour?
+<div class="mc-options">
+<button class="mc-choice" data-choice="A">
+<strong>A</strong> <span class="math inline">\(0.0772k_1\)</span>
+</button>
+<button class="mc-choice" data-choice="B">
+<strong>B</strong> <span class="math inline">\(0.278k_1\)</span>
+</button>
+<button class="mc-choice" data-choice="C">
+<strong>C</strong> <span class="math inline">\(3.60k_1\)</span>
+</button>
+<button class="mc-choice" data-choice="D">
+<strong>D</strong> <span class="math inline">\(13.0k_1\)</span>
+</button>
+</div>
+<button class="check-answer">
+Check answer
+</button>
+<p class="mc-feedback" aria-live="polite">
+</p>
+<details class="answer-panel">
+<summary>
+Show explanation
+</summary>
+<span class="math inline">\(1\ \mathrm{km\,h^{-1}}=1/3.6\ \mathrm{m\,s^{-1}}\)</span>.
+</details>
+</section>
+</div>
+<div id="mc-hard-q4" class="question-card mc-question" data-answer="B">
+<section id="example-18-1.1-mc-hard-q5" class="level3">
+<h3 class="anchored" data-anchor-id="example-18-1.1-mc-hard-q5">Example 18 · 1.1 MC Hard Q5</h3>
+The drag coefficient <span class="math inline">\(C_d\)</span> is a number with no units. It is given by <span class="math inline">\(C_d=\dfrac{2F}{\rho v^nA}\)</span>, where <span class="math inline">\(F\)</span> is drag force, <span class="math inline">\(\rho\)</span> is air density, <span class="math inline">\(A\)</span> is cross-sectional area and <span class="math inline">\(v\)</span> is speed. What is the value of <span class="math inline">\(n\)</span>?
+<div class="mc-options">
+<button class="mc-choice" data-choice="A">
+<strong>A</strong> 0
+</button>
+<button class="mc-choice" data-choice="B">
+<strong>B</strong> 2
+</button>
+<button class="mc-choice" data-choice="C">
+<strong>C</strong> 3
+</button>
+<button class="mc-choice" data-choice="D">
+<strong>D</strong> 4
+</button>
+</div>
+<button class="check-answer">
+Check answer
+</button>
+<p class="mc-feedback" aria-live="polite">
+</p>
+<details class="answer-panel">
+<summary>
+Show explanation
+</summary>
+Set the base units on both sides equal.
+</details>
+</section>
+</div>
+<div id="mc-hard-q5" class="question-card mc-question" data-answer="C">
+<section id="example-19-1.1-mc-hard-q7" class="level3">
+<h3 class="anchored" data-anchor-id="example-19-1.1-mc-hard-q7">Example 19 · 1.1 MC Hard Q7</h3>
+Which formula could be correct for the speed <span class="math inline">\(v\)</span> of ocean waves in terms of the density <span class="math inline">\(\rho\)</span> of sea-water, the acceleration of free fall <span class="math inline">\(g\)</span>, the height <span class="math inline">\(h\)</span> of the wave and the wavelength <span class="math inline">\(\lambda\)</span>?
+<div class="mc-options">
+<button class="mc-choice" data-choice="A">
+<strong>A</strong> <span class="math inline">\(v=\rho gh\)</span>
+</button>
+<button class="mc-choice" data-choice="B">
+<strong>B</strong> <span class="math inline">\(v=\sqrt{g/h}\)</span>
+</button>
+<button class="mc-choice" data-choice="C">
+<strong>C</strong> <span class="math inline">\(v=\sqrt{g\lambda}\)</span>
+</button>
+<button class="mc-choice" data-choice="D">
+<strong>D</strong> <span class="math inline">\(v=\sqrt{g/\rho}\)</span>
+</button>
+</div>
+<button class="check-answer">
+Check answer
+</button>
+<p class="mc-feedback" aria-live="polite">
+</p>
+<details class="answer-panel">
+<summary>
+Show explanation
+</summary>
+Only <span class="math inline">\(g\lambda\)</span> has units <span class="math inline">\(\mathrm{m^2\,s^{-2}}\)</span>.
+</details>
+</section>
+</div>
+<div id="mc-hard-q6" class="question-card mc-question" data-answer="D">
+<section id="example-20-1.2-mc-hard-q2" class="level3">
+<h3 class="anchored" data-anchor-id="example-20-1.2-mc-hard-q2">Example 20 · 1.2 MC Hard Q2</h3>
+<p>A student uses a digital ammeter to measure a current. The reading of the ammeter is found to fluctuate between <span class="math inline">\(1.98\ \mathrm{A}\)</span> and <span class="math inline">\(2.02\ \mathrm{A}\)</span>. The manufacturer of the ammeter states that any reading has a systematic uncertainty of <span class="math inline">\(\pm1\%\)</span>.</p>
+Which value of current should be quoted by the student?
+<div class="mc-options">
+<button class="mc-choice" data-choice="A">
+<strong>A</strong> <span class="math inline">\((2.00\pm0.01)\ \mathrm{A}\)</span>
+</button>
+<button class="mc-choice" data-choice="B">
+<strong>B</strong> <span class="math inline">\((2.00\pm0.02)\ \mathrm{A}\)</span>
+</button>
+<button class="mc-choice" data-choice="C">
+<strong>C</strong> <span class="math inline">\((2.00\pm0.03)\ \mathrm{A}\)</span>
+</button>
+<button class="mc-choice" data-choice="D">
+<strong>D</strong> <span class="math inline">\((2.00\pm0.04)\ \mathrm{A}\)</span>
+</button>
+</div>
+<button class="check-answer">
+Check answer
+</button>
+<p class="mc-feedback" aria-live="polite">
+</p>
+<details class="answer-panel">
+<summary>
+Show explanation
+</summary>
+The random uncertainty is <span class="math inline">\(\pm0.02\ \mathrm{A}\)</span> and the systematic uncertainty is <span class="math inline">\(\pm0.02\ \mathrm{A}\)</span>, giving <span class="math inline">\(\pm0.04\ \mathrm{A}\)</span>.
+</details>
+</section>
+</div>
+<script>
+(() => {
+  const explanations = [
+    ['C', '<li>The kelvin (K) is the SI base unit of temperature.</li><li>Current is a physical quantity rather than a unit; gram is not the SI base unit of mass; volt is a derived unit.</li>'],
+    ['C', '<li>Convert the prefixes to powers of ten: n = 10<sup>−9</sup>, m = 10<sup>−3</sup>, k = 10<sup>3</sup>, M = 10<sup>6</sup>.</li><li>The increasing order is nJ, mJ, kJ, MJ.</li>'],
+    ['D', '<li>A fully grown woman has a mass of order 65 kg.</li><li><em>W</em> = <em>mg</em> ≈ 65 × 10 = 650 N.</li>'],
+    ['B', '<li>Force has magnitude and direction, so it is a vector.</li><li>Kinetic energy has magnitude only, so it is a scalar.</li>'],
+    ['B', '<li>Density requires mass and volume.</li><li>Use a top-pan balance for mass, a micrometer for wire diameter and a metre rule for wire length; these give the most accurate volume estimate.</li>'],
+    ['A', '<li>For a body released from rest, <em>h</em> = ½<em>gt</em><sup>2</sup>.</li><li>Height and fall time are therefore sufficient to calculate <em>g</em>.</li>'],
+    ['D', '<li>For addition or subtraction, add absolute uncertainties.</li><li>Δ<em>d</em> = 0.02 + 0.03 = 0.05 mm.</li>'],
+    ['D', '<li>From <em>E</em> = 3<em>kT</em>/2, <em>k</em> has units energy divided by temperature.</li><li>[<em>k</em>] = kg m<sup>2</sup> s<sup>−2</sup> K<sup>−1</sup>.</li>'],
+    ['D', '<li>A wind from the west produces an eastward velocity of 85.0 km h<sup>−1</sup>.</li><li>The aeroplane must have an equal westward component: sin θ = 85.0/200.</li><li>θ = 25.2° west of north.</li>'],
+    ['B', '<li>Pressure and Young modulus are both force per unit area.</li><li>Both have SI unit Pa = kg m<sup>−1</sup> s<sup>−2</sup>.</li>'],
+    ['D', '<li>10<sup>−3</sup> THz = 10<sup>−3</sup> × 10<sup>12</sup> Hz = 10<sup>9</sup> Hz.</li><li>10<sup>3</sup> kHz = 10<sup>3</sup> × 10<sup>3</sup> Hz = 10<sup>6</sup> Hz.</li><li>The ratio is 10<sup>3</sup>.</li>'],
+    ['D', '<li><em>V</em> = <em>E</em>/<em>Q</em> and <em>Q</em> = <em>It</em>.</li><li>[<em>V</em>] = kg m<sup>2</sup> s<sup>−2</sup>/(A s) = kg m<sup>2</sup> s<sup>−3</sup> A<sup>−1</sup>.</li>'],
+    ['D', '<li>Green light has a wavelength of about 5 × 10<sup>−7</sup> m.</li><li>500 nm = 5 × 10<sup>−7</sup> m, so this estimate is realistic.</li>'],
+    ['C', '<li>Pressure has base units kg m<sup>−1</sup> s<sup>−2</sup>.</li><li>ρ<em>gh</em> gives (kg m<sup>−3</sup>)(m s<sup>−2</sup>)(m) = kg m<sup>−1</sup> s<sup>−2</sup>.</li>'],
+    ['D', '<li>0.03 m<sup>3</sup> is 30 litres, a realistic order of magnitude for air in a car tyre.</li><li>The other estimates are far from typical values: bus kinetic energy is much larger, a normal lamp is lower powered, and 300 K is near room temperature.</li>'],
+    ['B', '<li>Rearrange: η = <em>F</em>/(6π<em>av</em>).</li><li>[η] = (kg m s<sup>−2</sup>)/(m × m s<sup>−1</sup>) = kg m<sup>−1</sup> s<sup>−1</sup>.</li>'],
+    ['A', '<li>Convert speed: <em>v</em><sub>m/s</sub> = <em>v</em><sub>km/h</sub>/3.6.</li><li><em>d</em> = <em>k</em><sub>1</sub>(<em>v</em>/3.6)<sup>2</sup> = (<em>k</em><sub>1</sub>/12.96)<em>v</em><sup>2</sup>.</li><li>The new constant is 0.0772<em>k</em><sub>1</sub>.</li>'],
+    ['B', '<li>A dimensionless drag coefficient requires [<em>F</em>] = [ρ<em>v</em><sup>n</sup><em>A</em>].</li><li>kg m s<sup>−2</sup> = (kg m<sup>−3</sup>)(m<sup>n</sup> s<sup>−n</sup>)(m<sup>2</sup>), giving <em>n</em> = 2.</li>'],
+    ['C', '<li>Speed has units m s<sup>−1</sup>, so speed squared has units m<sup>2</sup> s<sup>−2</sup>.</li><li><em>gλ</em> has these units; therefore √(<em>gλ</em>) has units m s<sup>−1</sup>.</li>'],
+    ['D', '<li>The fluctuating range gives random uncertainty equal to half the range: ±(2.02 − 1.98)/2 = ±0.02 A.</li><li>The systematic uncertainty is 1% of 2.00 A = ±0.02 A.</li><li>Adding the absolute uncertainties gives (2.00 ± 0.04) A.</li>']
+  ];
+
+  const install = () => {
+    document.querySelectorAll('.mc-question').forEach((card, index) => {
+      if (!explanations[index]) return;
+      const [answer, points] = explanations[index];
+      let details = card.querySelector('details.answer-panel');
+      if (!details) {
+        details = document.createElement('details');
+        card.appendChild(details);
+      }
+      details.className = 'answer-panel mc-explanation';
+      details.innerHTML = `<summary>Show answer explanation</summary><p><strong>Correct answer: ${answer}</strong></p><ul>${points}</ul>`;
+    });
+  };
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', install);
+  else install();
+})();
+</script>
+<section id="structured-questions" class="level3">
+<h3 class="anchored" data-anchor-id="structured-questions">Structured Questions</h3>
+<p>以下为 10 道完整结构题：Easy 4、Medium 3、Hard 3。题干保持原题的英文结构；仅 <code>1.1 SQ Hard Q3</code> 使用已从 PDF 独立提取并完成遮罩合成的原图。</p>
+<section id="easy-4-questions" class="level4">
+<h4 class="anchored" data-anchor-id="easy-4-questions">Easy · 4 questions</h4>
+</section>
+</section>
+<div id="sq-easy-q1" class="question-card">
+<section id="example-1-si-base-and-derived-units-1.1-sq-easy-q2" class="level3">
+<h3 class="anchored" data-anchor-id="example-1-si-base-and-derived-units-1.1-sq-easy-q2">Example 1 · SI base and derived units · 1.1 SQ Easy Q2</h3>
+<p><strong>(a)</strong> Table 1.1 shows SI base quantities and their corresponding base unit.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>SI base quantity</th>
+<th>SI base unit</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>mass</td>
+<td>kilogram, kg</td>
+</tr>
+<tr class="even">
+<td>time</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>length</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<ol class="subparts" type="i">
+<li>
+Complete the missing SI base units for time and length. <code>[2 marks]</code>
+</li>
+<li>
+Add two other base quantities and their units. <code>[2 marks]</code>
+</li>
+</ol>
+<p><strong>(b)</strong> Newton’s second law describes the relationship between force <span class="math inline">\(F\)</span>, mass <span class="math inline">\(m\)</span> and acceleration <span class="math inline">\(a\)</span>: <span class="math inline">\(F=ma\)</span>. Use this to write <span class="math inline">\(1\ \mathrm{N}\)</span> in SI base units. <code>[2 marks]</code></p>
+<p><strong>(c)</strong> The kinetic energy equation describes the relationship between energy <span class="math inline">\(E\)</span>, mass <span class="math inline">\(m\)</span> and velocity <span class="math inline">\(v\)</span>: <span class="math inline">\(E=\frac12mv^2\)</span>. Use it to write <span class="math inline">\(1\ \mathrm{J}\)</span> in SI base units. <code>[2 marks]</code></p>
+<p><strong>(d)</strong> Power <span class="math inline">\(P\)</span> is energy transferred <span class="math inline">\(E\)</span> per unit time <span class="math inline">\(t\)</span>. Deduce the SI base units for power. <code>[2 marks]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<p><strong>(a)(i)</strong></p>
+<ul>
+<li>Time: second, s. <code>[1]</code></li>
+<li>Length: metre, m. <code>[1]</code></li>
+</ul>
+<p><strong>(a)(ii)</strong></p>
+<ul>
+<li>Electric current: ampere, A. <code>[1]</code></li>
+<li>Temperature: kelvin, K. <code>[1]</code></li>
+</ul>
+<p><strong>(b)</strong></p>
+<ul>
+<li>Acceleration has units <span class="math inline">\(\mathrm{m\,s^{-2}}\)</span>. <code>[1]</code></li>
+<li>From <span class="math inline">\(F=ma\)</span>, <span class="math inline">\(1\ \mathrm{N}=1\ \mathrm{kg\,m\,s^{-2}}\)</span>. <code>[1]</code></li>
+</ul>
+<p><strong>(c)</strong></p>
+<ul>
+<li>Velocity squared has units <span class="math inline">\(\mathrm{m^2\,s^{-2}}\)</span>. <code>[1]</code></li>
+<li>From <span class="math inline">\(E=\frac12mv^2\)</span>, <span class="math inline">\(1\ \mathrm{J}=1\ \mathrm{kg\,m^2\,s^{-2}}\)</span>. <code>[1]</code></li>
+</ul>
+<p><strong>(d)</strong></p>
+<ul>
+<li><span class="math inline">\(P=E/t\)</span>. <code>[1]</code></li>
+<li><span class="math inline">\([P]=\mathrm{kg\,m^2\,s^{-3}}\)</span>. <code>[1]</code></li>
+</ul>
+</details>
+</section>
+</div>
+<div id="sq-easy-q2" class="question-card">
+<section id="example-2-units-prefixes-and-estimates-1.1-sq-easy-q3" class="level3">
+<h3 class="anchored" data-anchor-id="example-2-units-prefixes-and-estimates-1.1-sq-easy-q3">Example 2 · Units, prefixes and estimates · 1.1 SQ Easy Q3</h3>
+<p><strong>(a)</strong> Draw a line from each quantity to its correct unit.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Quantity</th>
+<th>Unit</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>velocity</td>
+<td><span class="math inline">\(\mathrm{N\,m^{-2}}\)</span>, <span class="math inline">\(\mathrm{m\,s^{-1}}\)</span>, <span class="math inline">\(\mathrm{N\,m}\)</span>, <span class="math inline">\(\mathrm{kg\,m^{-3}}\)</span></td>
+</tr>
+<tr class="even">
+<td>work done</td>
+<td><span class="math inline">\(\mathrm{N\,m^{-2}}\)</span>, <span class="math inline">\(\mathrm{m\,s^{-1}}\)</span>, <span class="math inline">\(\mathrm{N\,m}\)</span>, <span class="math inline">\(\mathrm{kg\,m^{-3}}\)</span></td>
+</tr>
+<tr class="odd">
+<td>stress</td>
+<td><span class="math inline">\(\mathrm{N\,m^{-2}}\)</span>, <span class="math inline">\(\mathrm{m\,s^{-1}}\)</span>, <span class="math inline">\(\mathrm{N\,m}\)</span>, <span class="math inline">\(\mathrm{kg\,m^{-3}}\)</span></td>
+</tr>
+<tr class="even">
+<td>density</td>
+<td><span class="math inline">\(\mathrm{N\,m^{-2}}\)</span>, <span class="math inline">\(\mathrm{m\,s^{-1}}\)</span>, <span class="math inline">\(\mathrm{N\,m}\)</span>, <span class="math inline">\(\mathrm{kg\,m^{-3}}\)</span></td>
+</tr>
+</tbody>
+</table>
+<p><code>[3 marks]</code></p>
+<p><strong>(b)</strong> Complete the missing prefixes and powers of ten in the following list: tera, <span class="math inline">\(10^9\)</span>, <span class="math inline">\(10^3\)</span>, centi, milli, micro, <span class="math inline">\(10^{-9}\)</span>, pico. <code>[3 marks]</code></p>
+<p><strong>(c)</strong> Convert the following measurements into standard form and to the specified number of significant figures.</p>
+<ol class="subparts" type="i">
+<li>
+<span class="math inline">\(0.71\ \mathrm{GJ}\)</span> to 3 s.f.
+</li>
+<li>
+<span class="math inline">\(24.5\ \mathrm{kW}\)</span> to 4 s.f.
+</li>
+<li>
+<span class="math inline">\(0.003823\ \mathrm{mm}\)</span> to 1 s.f.
+</li>
+<li>
+<span class="math inline">\(644.9\ \mathrm{pN}\)</span> to 2 s.f.
+</li>
+</ol>
+<p><code>[4 marks]</code></p>
+<p><strong>(d)</strong> Estimate the orders of magnitude, with an appropriate SI unit and prefix, of: mass of a car; thickness of a sheet of paper; density of air at room temperature and pressure; time between two heart beats. <code>[4 marks]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<p><strong>(a)</strong></p>
+<ul>
+<li>Velocity: <span class="math inline">\(\mathrm{m\,s^{-1}}\)</span>. <code>[1]</code></li>
+<li>Work done: <span class="math inline">\(\mathrm{N\,m}\)</span>; stress: <span class="math inline">\(\mathrm{N\,m^{-2}}\)</span>. <code>[1]</code></li>
+<li>Density: <span class="math inline">\(\mathrm{kg\,m^{-3}}\)</span>. <code>[1]</code></li>
+</ul>
+<p><strong>(b)</strong></p>
+<ul>
+<li>tera, T: <span class="math inline">\(10^{12}\)</span>; giga, G: <span class="math inline">\(10^9\)</span>; kilo, k: <span class="math inline">\(10^3\)</span>. <code>[1]</code></li>
+<li>centi, c: <span class="math inline">\(10^{-2}\)</span>; milli, m: <span class="math inline">\(10^{-3}\)</span>; micro, <span class="math inline">\(\mu\)</span>: <span class="math inline">\(10^{-6}\)</span>. <code>[1]</code></li>
+<li>nano, n: <span class="math inline">\(10^{-9}\)</span>; pico, p: <span class="math inline">\(10^{-12}\)</span>. <code>[1]</code></li>
+</ul>
+<p><strong>(c)</strong></p>
+<ul>
+<li><span class="math inline">\(0.71\ \mathrm{GJ}=7.10\times10^8\ \mathrm{J}\)</span> (3 s.f.). <code>[1]</code></li>
+<li><span class="math inline">\(24.5\ \mathrm{kW}=2.450\times10^4\ \mathrm{W}\)</span> (4 s.f.). <code>[1]</code></li>
+<li><span class="math inline">\(0.003823\ \mathrm{mm}=4\times10^{-6}\ \mathrm{m}\)</span> (1 s.f.). <code>[1]</code></li>
+<li><span class="math inline">\(644.9\ \mathrm{pN}=6.4\times10^{-10}\ \mathrm{N}\)</span> (2 s.f.). <code>[1]</code></li>
+</ul>
+<p><strong>(d)</strong></p>
+<ul>
+<li>Mass of a car: about <span class="math inline">\(10^3\ \mathrm{kg}\)</span>. <code>[1]</code></li>
+<li>Thickness of paper: about <span class="math inline">\(10^{-4}\ \mathrm{m}\)</span> or <span class="math inline">\(0.1\ \mathrm{mm}\)</span>. <code>[1]</code></li>
+<li>Density of air: about <span class="math inline">\(1\ \mathrm{kg\,m^{-3}}\)</span>. <code>[1]</code></li>
+<li>Time between heart beats: about <span class="math inline">\(1\ \mathrm{s}\)</span>. <code>[1]</code></li>
+</ul>
+</details>
+</section>
+</div>
+<div id="sq-easy-q3" class="question-card">
+<section id="example-3-random-and-systematic-errors-1.2-sq-easy-q2" class="level3">
+<h3 class="anchored" data-anchor-id="example-3-random-and-systematic-errors-1.2-sq-easy-q2">Example 3 · Random and systematic errors · 1.2 SQ Easy Q2</h3>
+<p><strong>(a)</strong> Distinguish between random and systematic errors. <code>[2 marks]</code></p>
+<p><strong>(b)</strong> From a set of metal discs, one has a mass of <span class="math inline">\(9.5\ \mathrm{g}\)</span> and a thickness of approximately <span class="math inline">\(2\ \mathrm{mm}\)</span>. State the instrument that should be used to measure:</p>
+<ol class="subparts" type="i">
+<li>
+the mass of one or more discs;
+</li>
+<li>
+the thickness of one disc;
+</li>
+<li>
+the thickness of a stack of 20 discs.
+</li>
+</ol>
+<p><code>[3 marks]</code></p>
+<p><strong>(c)</strong> A student takes five repeat readings of the thickness of the disc. The readings are shown in Table 1.1.</p>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>thickness / mm</th>
+<th style="text-align: right;">2.012</th>
+<th style="text-align: right;">2.001</th>
+<th style="text-align: right;">1.998</th>
+<th style="text-align: right;">2.008</th>
+<th style="text-align: right;">1.994</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<p>Using the readings in Table 1.1, calculate:</p>
+<ol class="subparts" type="i">
+<li>
+the mean value of thickness;
+</li>
+<li>
+the range of the results;
+</li>
+<li>
+the uncertainty in the mean value of thickness.
+</li>
+</ol>
+<p><code>[5 marks]</code></p>
+<p><strong>(d)</strong> State how the instrument used to measure thickness can: (i) reduce or avoid a systematic error; (ii) reduce random errors. <code>[3 marks]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<p><strong>(a)</strong></p>
+<ul>
+<li>Random errors vary unpredictably between repeated readings and cause scatter. <code>[1]</code></li>
+<li>Systematic errors shift readings consistently in the same direction. <code>[1]</code></li>
+</ul>
+<p><strong>(b)</strong></p>
+<ul>
+<li>Mass: top-pan or electronic balance. <code>[1]</code></li>
+<li>Thickness of one disc: micrometer screw gauge. <code>[1]</code></li>
+<li>Thickness of 20 discs: micrometer screw gauge, then divide by 20 if the mean disc thickness is required. <code>[1]</code></li>
+</ul>
+<p><strong>(c)(i)</strong></p>
+<ul>
+<li>Mean <span class="math inline">\(=(2.012+2.001+1.998+2.008+1.994)/5=2.0026\ \mathrm{mm}\)</span>. <code>[2]</code></li>
+<li>Mean <span class="math inline">\(=2.003\ \mathrm{mm}\)</span>. <code>[1]</code></li>
+</ul>
+<p><strong>(c)(ii)</strong></p>
+<ul>
+<li>Range <span class="math inline">\(=2.012-1.994=0.018\ \mathrm{mm}\)</span>. <code>[1]</code></li>
+</ul>
+<p><strong>(c)(iii)</strong></p>
+<ul>
+<li>Uncertainty <span class="math inline">\(=\)</span> half-range <span class="math inline">\(=\pm0.009\ \mathrm{mm}\)</span>. <code>[1]</code></li>
+</ul>
+<p><strong>(d)</strong></p>
+<ul>
+<li>Check for a zero error before measurement and apply a correction or recalibrate. <code>[1]</code></li>
+<li>Measure at different positions/orientations. <code>[1]</code></li>
+<li>Repeat readings and calculate a mean. <code>[1]</code></li>
+</ul>
+</details>
+</section>
+</div>
+<div id="sq-easy-q4" class="question-card">
+<section id="example-4-pendulum-uncertainty-1.2-sq-easy-q3" class="level3">
+<h3 class="anchored" data-anchor-id="example-4-pendulum-uncertainty-1.2-sq-easy-q3">Example 4 · Pendulum uncertainty · 1.2 SQ Easy Q3</h3>
+<p><strong>(a)</strong> A student uses a stopwatch to measure the time taken for one complete swing of a pendulum. They measure the time for 10 complete oscillations to be <span class="math inline">\(16.4\pm0.1\ \mathrm{s}\)</span>. Calculate:</p>
+<ol class="subparts" type="i">
+<li>
+the mean value of the time taken for one complete swing;
+</li>
+<li>
+the absolute uncertainty in this mean value;
+</li>
+<li>
+the percentage uncertainty in this mean value.
+</li>
+</ol>
+<p><code>[4 marks]</code></p>
+<p><strong>(b)</strong> The student is using the pendulum to determine a value for the acceleration of free fall <span class="math inline">\(g\)</span>. As well as the period <span class="math inline">\(T\)</span> of oscillation, they also take measurements of the length <span class="math inline">\(L\)</span> of the pendulum. The value obtained, with its uncertainty, is <span class="math inline">\(L=67\pm1\ \mathrm{cm}\)</span>. Calculate the percentage uncertainty in the measurement of the length <span class="math inline">\(L\)</span>. <code>[2 marks]</code></p>
+<p><strong>(c)</strong> The relationship between <span class="math inline">\(T\)</span>, <span class="math inline">\(L\)</span> and <span class="math inline">\(g\)</span> is <span class="math inline">\(g=4\pi^2L/T^2\)</span>. Using your answers in (a) and (b), show that the percentage uncertainty in the value of <span class="math inline">\(g\)</span> is <span class="math inline">\(2.7\%\)</span>. <code>[2 marks]</code></p>
+<p><strong>(d)</strong> There are some occasions where the resolution of an instrument is not the only limiting factor of uncertainty in a measurement. State:</p>
+<ol class="subparts" type="i">
+<li>
+the meaning of the resolution of an instrument;
+</li>
+<li>
+one limiting factor that affects the uncertainty in the measurement of time using a stopwatch.
+</li>
+</ol>
+<p><code>[2 marks]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<p><strong>(a)(i)</strong></p>
+<ul>
+<li><span class="math inline">\(T=16.4/10=1.64\ \mathrm{s}\)</span>. <code>[1]</code></li>
+</ul>
+<p><strong>(a)(ii)</strong></p>
+<ul>
+<li>Absolute uncertainty <span class="math inline">\(=0.1/10=\pm0.01\ \mathrm{s}\)</span>. <code>[1]</code></li>
+</ul>
+<p><strong>(a)(iii)</strong></p>
+<ul>
+<li>Percentage uncertainty <span class="math inline">\(=(0.01/1.64)\times100\%=0.61\%\approx0.6\%\)</span>. <code>[2]</code></li>
+</ul>
+<p><strong>(b)</strong></p>
+<ul>
+<li>Percentage uncertainty in <span class="math inline">\(L=(1/67)\times100\%=1.49\%\approx1.5\%\)</span>. <code>[2]</code></li>
+</ul>
+<p><strong>(c)</strong></p>
+<ul>
+<li>Since <span class="math inline">\(g=4\pi^2L/T^2\)</span>, percentage uncertainty in <span class="math inline">\(g\)</span> is <span class="math inline">\(\%\Delta L+2\%\Delta T\)</span>. <code>[1]</code></li>
+<li><span class="math inline">\(1.5+2(0.6)=2.7\%\)</span>. <code>[1]</code></li>
+</ul>
+<p><strong>(d)</strong></p>
+<ul>
+<li>Resolution is the smallest change in a quantity that an instrument can detect or display. <code>[1]</code></li>
+<li>A valid additional limitation is human reaction time when starting/stopping the stopwatch. <code>[1]</code></li>
+</ul>
+</details>
+</section>
+</div>
+<section id="medium-3-questions" class="level4">
+<h4 class="anchored" data-anchor-id="medium-3-questions">Medium · 3 questions</h4>
+</section>
+<div id="sq-medium-q1" class="question-card">
+<section id="example-5-definitions-and-dimensional-analysis-1.1-sq-medium-q1" class="level3">
+<h3 class="anchored" data-anchor-id="example-5-definitions-and-dimensional-analysis-1.1-sq-medium-q1">Example 5 · Definitions and dimensional analysis · 1.1 SQ Medium Q1</h3>
+<p><strong>(a)</strong> Define each quantity and state its SI base units: (i) velocity, (ii) acceleration, (iii) density. <code>[6 marks]</code></p>
+<p><strong>(b)</strong> The pressure <span class="math inline">\(P\)</span> due to a liquid of density <span class="math inline">\(\rho\)</span> at depth <span class="math inline">\(h\)</span> is <span class="math inline">\(P=\rho gh\)</span>, where <span class="math inline">\(g\)</span> is acceleration of free fall. Determine the derived units of <span class="math inline">\(P\)</span>. <code>[2 marks]</code></p>
+<p><strong>(c)</strong> The speed <span class="math inline">\(v\)</span> of a sound wave through a gas of pressure <span class="math inline">\(P\)</span> and density <span class="math inline">\(\rho\)</span> is <span class="math inline">\(v=\sqrt{\gamma P/\rho}\)</span>, where <span class="math inline">\(\gamma\)</span> is a constant. Show that <span class="math inline">\(\gamma\)</span> has no unit. <code>[3 marks]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<p><strong>(a)(i)</strong></p>
+<ul>
+<li>Velocity is the rate of change of displacement. <code>[1]</code></li>
+<li>Base units: <span class="math inline">\(\mathrm{m\,s^{-1}}\)</span>. <code>[1]</code></li>
+</ul>
+<p><strong>(a)(ii)</strong></p>
+<ul>
+<li>Acceleration is the rate of change of velocity. <code>[1]</code></li>
+<li>Base units: <span class="math inline">\(\mathrm{m\,s^{-2}}\)</span>. <code>[1]</code></li>
+</ul>
+<p><strong>(a)(iii)</strong></p>
+<ul>
+<li>Density is mass per unit volume. <code>[1]</code></li>
+<li>Base units: <span class="math inline">\(\mathrm{kg\,m^{-3}}\)</span>. <code>[1]</code></li>
+</ul>
+<p><strong>(b)</strong></p>
+<ul>
+<li><span class="math inline">\([\rho gh]=(\mathrm{kg\,m^{-3}})(\mathrm{m\,s^{-2}})(\mathrm{m})\)</span>. <code>[1]</code></li>
+<li><span class="math inline">\([P]=\mathrm{kg\,m^{-1}\,s^{-2}}=\mathrm{Pa}\)</span>. <code>[1]</code></li>
+</ul>
+<p><strong>(c)</strong></p>
+<ul>
+<li><span class="math inline">\([P/\rho]=(\mathrm{kg\,m^{-1}\,s^{-2}})/(\mathrm{kg\,m^{-3}})=\mathrm{m^2\,s^{-2}}\)</span>. <code>[1]</code></li>
+<li>Taking the square root gives <span class="math inline">\(\mathrm{m\,s^{-1}}\)</span>, the units of <span class="math inline">\(v\)</span>. <code>[1]</code></li>
+<li>Therefore <span class="math inline">\(\gamma\)</span> contributes no units and is dimensionless. <code>[1]</code></li>
+</ul>
+</details>
+</section>
+</div>
+<div id="sq-medium-q2" class="question-card">
+<section id="example-6-estimation-1.1-sq-medium-q2" class="level3">
+<h3 class="anchored" data-anchor-id="example-6-estimation-1.1-sq-medium-q2">Example 6 · Estimation · 1.1 SQ Medium Q2</h3>
+<p>Estimate:</p>
+<ol class="subparts" type="a">
+<li>
+the speed of an apple as it hits the ground after falling from a tree;
+</li>
+<li>
+the number of kilowatt-hours used by a light bulb switched on for a whole day;
+</li>
+<li>
+the density, in <span class="math inline">\(\mathrm{g\,cm^{-3}}\)</span>, of the head of an adult person;
+</li>
+<li>
+the number of people it would take to circle the Earth holding hands.
+</li>
+</ol>
+<p><code>[12 marks]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<p><strong>(a) Apple falling from a tree</strong></p>
+<ul>
+<li>Take a fall height of a few metres and use <span class="math inline">\(v\approx\sqrt{2gh}\)</span>. <code>[2]</code></li>
+<li>A suitable estimate is about <span class="math inline">\(10\ \mathrm{m\,s^{-1}}\)</span>. <code>[1]</code></li>
+</ul>
+<p><strong>(b) Light bulb for one day</strong></p>
+<ul>
+<li>Take a typical power of <span class="math inline">\(60\ \mathrm{W}=0.060\ \mathrm{kW}\)</span>. <code>[1]</code></li>
+<li>Energy <span class="math inline">\(=0.060\times24=1.44\ \mathrm{kWh}\)</span>, so about <span class="math inline">\(1.4\ \mathrm{kWh}\)</span>. <code>[2]</code></li>
+</ul>
+<p><strong>(c) Density of an adult head</strong></p>
+<ul>
+<li>The head is mostly water-like tissue. <code>[1]</code></li>
+<li>A suitable estimate is about <span class="math inline">\(1\ \mathrm{g\,cm^{-3}}\)</span>. <code>[2]</code></li>
+</ul>
+<p><strong>(d) People around the Earth</strong></p>
+<ul>
+<li>Earth’s circumference is about <span class="math inline">\(4\times10^7\ \mathrm{m}\)</span>. <code>[1]</code></li>
+<li>Allow roughly <span class="math inline">\(2\ \mathrm{m}\)</span> per person holding hands. <code>[1]</code></li>
+<li>Number <span class="math inline">\(\approx(4\times10^7)/2=2\times10^7\)</span> people. <code>[1]</code></li>
+</ul>
+</details>
+</section>
+</div>
+<div id="sq-medium-q3" class="question-card">
+<section id="example-7-transverse-wave-measurement-1.2-sq-medium-q1" class="level3">
+<h3 class="anchored" data-anchor-id="example-7-transverse-wave-measurement-1.2-sq-medium-q1">Example 7 · Transverse wave measurement · 1.2 SQ Medium Q1</h3>
+<p>The speed <span class="math inline">\(v\)</span> of a transverse wave on a uniform string is given by</p>
+<p><span class="math display">\[v=\sqrt{\frac{Tl}{m}},\]</span></p>
+<p>where <span class="math inline">\(T\)</span> is the tension in the string, <span class="math inline">\(l\)</span> is its length and <span class="math inline">\(m\)</span> is its mass. An experiment is performed to determine the speed <span class="math inline">\(v\)</span> of the wave. The measurements are shown in Table 1.1.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>quantity</th>
+<th style="text-align: right;">measurement</th>
+<th style="text-align: right;">uncertainty</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\(T\)</span></td>
+<td style="text-align: right;"><span class="math inline">\(1.8\ \mathrm{N}\)</span></td>
+<td style="text-align: right;"><span class="math inline">\(\pm5\%\)</span></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(l\)</span></td>
+<td style="text-align: right;"><span class="math inline">\(126\ \mathrm{cm}\)</span></td>
+<td style="text-align: right;"><span class="math inline">\(\pm1\%\)</span></td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(m\)</span></td>
+<td style="text-align: right;"><span class="math inline">\(5.1\ \mathrm{g}\)</span></td>
+<td style="text-align: right;"><span class="math inline">\(\pm2\%\)</span></td>
+</tr>
+</tbody>
+</table>
+<p><strong>(a)</strong> Use the data in Table 1.1 to calculate the speed <span class="math inline">\(v\)</span>. <code>[2 marks]</code> <strong>(b)</strong> Use your answer in (a) and the data in Table 1.1 to calculate the absolute uncertainty in the value of <span class="math inline">\(v\)</span>. <code>[2 marks]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<p><strong>(a)</strong></p>
+<ul>
+<li>Convert <span class="math inline">\(l=1.26\ \mathrm{m}\)</span> and <span class="math inline">\(m=5.1\times10^{-3}\ \mathrm{kg}\)</span>. <code>[1]</code></li>
+<li><span class="math inline">\(v=\sqrt{(1.8)(1.26)/(5.1\times10^{-3})}=21\ \mathrm{m\,s^{-1}}\)</span> (2 s.f.). <code>[1]</code></li>
+</ul>
+<p><strong>(b)</strong></p>
+<ul>
+<li>Since <span class="math inline">\(v=(Tl/m)^{1/2}\)</span>, percentage uncertainty <span class="math inline">\(=\frac12(5+1+2)\%=4\%\)</span>. <code>[1]</code></li>
+<li>Absolute uncertainty <span class="math inline">\(=0.04(21)=0.84\ \mathrm{m\,s^{-1}}\approx\pm0.8\ \mathrm{m\,s^{-1}}\)</span>. <code>[1]</code></li>
+</ul>
+</details>
+</section>
+</div>
+<section id="hard-3-questions" class="level4">
+<h4 class="anchored" data-anchor-id="hard-3-questions">Hard · 3 questions</h4>
+</section>
+<div id="sq-hard-q1" class="question-card">
+<section id="example-8-conversions-homogeneity-and-orders-of-magnitude-1.1-sq-hard-q1" class="level3">
+<h3 class="anchored" data-anchor-id="example-8-conversions-homogeneity-and-orders-of-magnitude-1.1-sq-hard-q1">Example 8 · Conversions, homogeneity and orders of magnitude · 1.1 SQ Hard Q1</h3>
+<p><strong>(a)</strong> Convert:</p>
+<ol class="subparts" type="i">
+<li>
+<span class="math inline">\(42\ \mathrm{km^3}\)</span> into <span class="math inline">\(\mathrm{mm^3}\)</span>;
+</li>
+<li>
+<span class="math inline">\(25\)</span> light-years into nm;
+</li>
+<li>
+<span class="math inline">\(0.05\ \mathrm{kWh}\)</span> into PeV.
+</li>
+</ol>
+<p><code>[8 marks]</code></p>
+<p><strong>(b)</strong> The frequency <span class="math inline">\(f\)</span> of a stationary wave on a string is related to the tension <span class="math inline">\(T\)</span>, mass per unit length <span class="math inline">\(m\)</span> and string length <span class="math inline">\(L\)</span> by</p>
+<p><span class="math display">\[f^k=\frac{T}{4mL^2}.\]</span></p>
+<p>By considering the homogeneity of the equation, determine the value of <span class="math inline">\(k\)</span>. <code>[3 marks]</code></p>
+<p><strong>(c)</strong> A diode has current <span class="math inline">\(I=I_0e^{qV/nT}\)</span>, where <span class="math inline">\(I_0\)</span> is initial current, <span class="math inline">\(q\)</span> is electron charge, <span class="math inline">\(V\)</span> potential difference, <span class="math inline">\(T\)</span> temperature and <span class="math inline">\(n\)</span> is a constant.</p>
+<ol class="subparts" type="i">
+<li>
+Determine the units of <span class="math inline">\(n\)</span>.
+</li>
+<li>
+Use the datasheet to name this constant.
+</li>
+</ol>
+<p><code>[4 marks]</code></p>
+<p><strong>(d)</strong> Complete the SI base units and estimate the order of magnitude for: acceleration of free fall <span class="math inline">\(g\)</span>; Stefan-Boltzmann constant <span class="math inline">\(\sigma\)</span>; speed of a <span class="math inline">\(\beta\)</span> particle; specific heat capacity of water <span class="math inline">\(c\)</span>. <code>[4 marks]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<p><strong>(a)(i)</strong></p>
+<ul>
+<li><span class="math inline">\(1\ \mathrm{km}=10^6\ \mathrm{mm}\)</span>, so <span class="math inline">\(1\ \mathrm{km^3}=10^{18}\ \mathrm{mm^3}\)</span>. <code>[1]</code></li>
+<li><span class="math inline">\(42\ \mathrm{km^3}=4.2\times10^{19}\ \mathrm{mm^3}\)</span>. <code>[1]</code></li>
+</ul>
+<p><strong>(a)(ii)</strong></p>
+<ul>
+<li><span class="math inline">\(1\ \mathrm{ly}=c(1\ \mathrm{year})\approx9.46\times10^{15}\ \mathrm{m}\)</span>. <code>[2]</code></li>
+<li><span class="math inline">\(25\ \mathrm{ly}\approx2.4\times10^{26}\ \mathrm{nm}\)</span>. <code>[1]</code></li>
+</ul>
+<p><strong>(a)(iii)</strong></p>
+<ul>
+<li><span class="math inline">\(0.05\ \mathrm{kWh}=0.05(1000)(3600)=1.8\times10^5\ \mathrm{J}\)</span>. <code>[1]</code></li>
+<li>This is <span class="math inline">\(1.125\times10^{24}\ \mathrm{eV}\)</span>. <code>[1]</code></li>
+<li><span class="math inline">\(0.05\ \mathrm{kWh}\approx1.1\times10^9\ \mathrm{PeV}\)</span>. <code>[1]</code></li>
+</ul>
+<p><strong>(b)</strong></p>
+<ul>
+<li>The right-hand side has units <span class="math inline">\(\mathrm{N}/[(\mathrm{kg\,m^{-1}})\mathrm{m^2}]=\mathrm{s^{-2}}\)</span>. <code>[2]</code></li>
+<li>Since <span class="math inline">\([f^k]=\mathrm{s^{-k}}\)</span>, homogeneity gives <span class="math inline">\(k=2\)</span>. <code>[1]</code></li>
+</ul>
+<p><strong>(c)(i)</strong></p>
+<ul>
+<li>The exponent <span class="math inline">\(qV/(nT)\)</span> must be dimensionless. <code>[1]</code></li>
+<li>Since <span class="math inline">\(qV\)</span> is energy, <span class="math inline">\([n]=\mathrm{J\,K^{-1}}=\mathrm{kg\,m^2\,s^{-2}\,K^{-1}}\)</span>. <code>[2]</code></li>
+</ul>
+<p><strong>(c)(ii)</strong></p>
+<ul>
+<li><span class="math inline">\(n\)</span> is the Boltzmann constant. <code>[1]</code></li>
+</ul>
+<p><strong>(d)</strong></p>
+<ul>
+<li><span class="math inline">\(g\)</span>: <span class="math inline">\(\mathrm{m\,s^{-2}}\)</span>, order <span class="math inline">\(10^1\)</span>. <code>[1]</code></li>
+<li><span class="math inline">\(\sigma\)</span>: <span class="math inline">\(\mathrm{kg\,s^{-3}\,K^{-4}}\)</span>, order <span class="math inline">\(10^{-7}\)</span>. <code>[1]</code></li>
+<li><span class="math inline">\(\beta\)</span>-particle speed: <span class="math inline">\(\mathrm{m\,s^{-1}}\)</span>, order <span class="math inline">\(10^8\)</span>. <code>[1]</code></li>
+<li>Specific heat capacity of water: <span class="math inline">\(\mathrm{m^2\,s^{-2}\,K^{-1}}\)</span>, order <span class="math inline">\(10^3\)</span>. <code>[1]</code></li>
+</ul>
+</details>
+</section>
+</div>
+<div id="sq-hard-q2" class="question-card">
+<section id="example-9-nuclear-scale-estimates-1.1-sq-hard-q2" class="level3">
+<h3 class="anchored" data-anchor-id="example-9-nuclear-scale-estimates-1.1-sq-hard-q2">Example 9 · Nuclear-scale estimates · 1.1 SQ Hard Q2</h3>
+<p><strong>(a)</strong> Estimate the time taken for light to cross the nucleus of a hydrogen atom. <code>[2 marks]</code></p>
+<p><strong>(b)</strong> A gold foil has thickness <span class="math inline">\(0.132\ \mathrm{\mu m}\)</span> and a gold atom has radius <span class="math inline">\(146\ \mathrm{pm}\)</span>.</p>
+<ol class="subparts" type="i">
+<li>
+Estimate, to the nearest hundred, the number of layers of atoms in the foil.
+</li>
+<li>
+A gold nucleus has radius about <span class="math inline">\(20\,000\)</span> times smaller than its atomic radius. Estimate its cross-sectional area in barns, where <span class="math inline">\(1\ \mathrm{b}=100\ \mathrm{fm^2}\)</span>.
+</li>
+</ol>
+<p><code>[6 marks]</code></p>
+<p><strong>(c)</strong> One atomic mass unit is <span class="math inline">\(1\ \mathrm{u}=931.5\ \mathrm{MeV}\,c^{-2}\)</span>. Show that <span class="math inline">\(1\ \mathrm{u}\)</span> is approximately the mass of a proton in kg. <code>[3 marks]</code></p>
+<p><strong>(d)</strong> An acre is approximately <span class="math inline">\(4050\ \mathrm{m^2}\)</span>, roughly the size of a football field. One astronomical unit is approximately <span class="math inline">\(150\)</span> million km. Estimate the number of football fields that fit lengthways between Earth and the Sun. <code>[3 marks]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<p><strong>(a)</strong></p>
+<ul>
+<li>Take a nuclear diameter of order <span class="math inline">\(10^{-15}\ \mathrm{m}\)</span> and <span class="math inline">\(c=3\times10^8\ \mathrm{m\,s^{-1}}\)</span>. <code>[1]</code></li>
+<li><span class="math inline">\(t=d/c\approx3\times10^{-24}\ \mathrm{s}\)</span>. <code>[1]</code></li>
+</ul>
+<p><strong>(b)(i)</strong></p>
+<ul>
+<li>Gold atom diameter <span class="math inline">\(=2(146\ \mathrm{pm})=292\ \mathrm{pm}\)</span>. <code>[1]</code></li>
+<li>Layers <span class="math inline">\(=(0.132\ \mu\mathrm{m})/(292\ \mathrm{pm})\approx452\)</span>, giving about 500 to the nearest hundred. <code>[2]</code></li>
+</ul>
+<p><strong>(b)(ii)</strong></p>
+<ul>
+<li>Nuclear radius <span class="math inline">\(=146\ \mathrm{pm}/20\,000=7.3\ \mathrm{fm}\)</span>. <code>[1]</code></li>
+<li>Area <span class="math inline">\(=\pi r^2\approx167\ \mathrm{fm^2}=1.7\ \mathrm{b}\)</span>. <code>[2]</code></li>
+</ul>
+<p><strong>(c)</strong></p>
+<ul>
+<li>Convert <span class="math inline">\(931.5\ \mathrm{MeV}\)</span> to joules. <code>[1]</code></li>
+<li>Use <span class="math inline">\(E=mc^2\)</span>, so <span class="math inline">\(m=E/c^2\)</span>. <code>[1]</code></li>
+<li><span class="math inline">\(1\ \mathrm{u}\approx1.66\times10^{-27}\ \mathrm{kg}\)</span>, comparable to proton mass. <code>[1]</code></li>
+</ul>
+<p><strong>(d)</strong></p>
+<ul>
+<li>Estimate a football-field length as <span class="math inline">\(\sqrt{4050}\approx64\ \mathrm{m}\)</span>. <code>[1]</code></li>
+<li>Earth-Sun distance <span class="math inline">\(\approx1.5\times10^{11}\ \mathrm{m}\)</span>. <code>[1]</code></li>
+<li>Number <span class="math inline">\(\approx(1.5\times10^{11})/64\approx2\times10^9\)</span>. <code>[1]</code></li>
+</ul>
+</details>
+</section>
+</div>
+<div id="sq-hard-q3" class="question-card">
+<section id="example-10-scale-diagrams-and-vector-resultants-1.1-sq-hard-q3" class="level3">
+<h3 class="anchored" data-anchor-id="example-10-scale-diagrams-and-vector-resultants-1.1-sq-hard-q3">Example 10 · Scale diagrams and vector resultants · 1.1 SQ Hard Q3</h3>
+<p><strong>(a)</strong> Two taut, light ropes keep a pole vertically upright by applying two tension forces, one of magnitude <span class="math inline">\(200\ \mathrm{N}\)</span> and one of magnitude <span class="math inline">\(T\)</span>. By constructing a scale diagram, determine the weight of the pole <span class="math inline">\(W\)</span> and the magnitude of <span class="math inline">\(T\)</span>. <code>[4 marks]</code></p>
+<p><img src="../assets/questions/physical-quantities-and-units/pdf-object-pole.webp" class="question-figure img-fluid" alt="Original pole and supporting-rope diagram, extracted as an independent PDF image object"></p>
+<p><strong>(b)</strong> A canoeist can paddle at a speed of <span class="math inline">\(3.8\ \mathrm{m\,s^{-1}}\)</span> in still water. The canoeist encounters an opposing current, moving at a speed of <span class="math inline">\(1.5\ \mathrm{m\,s^{-1}}\)</span> at <span class="math inline">\(30^\circ\)</span> to their original direction of travel. Using a scale diagram, determine the magnitude of the canoeist’s resultant velocity. <code>[3 marks]</code></p>
+<p><img src="../assets/questions/physical-quantities-and-units/pdf-object-canoe.webp" class="question-figure img-fluid" alt="Original canoe and opposing-current diagram, extracted as an independent PDF image object"></p>
+<p><strong>(c)</strong> The boat shown is being towed at a constant velocity by a towing rope, which exerts a tension force <span class="math inline">\(F_T=2500\ \mathrm{N}\)</span>. There are two resistive forces: the force of the water on the keel <span class="math inline">\(F_K=3000\ \mathrm{N}\)</span> and the force of the water on the rudder <span class="math inline">\(F_R\)</span>. By scale diagram or otherwise, determine the magnitude of <span class="math inline">\(F_R\)</span>. <code>[4 marks]</code></p>
+<p><img src="../assets/questions/physical-quantities-and-units/pdf-object-boat.webp" class="question-figure img-fluid" alt="Original boat force diagram, extracted as an independent PDF image object"></p>
+<p><strong>(d)</strong> Another boat wishes to cross a river. The river flows from west to east at a constant velocity of <span class="math inline">\(35\ \mathrm{cm\,s^{-1}}\)</span> and the boat leaves the south bank, due north, at <span class="math inline">\(1.5\ \mathrm{m\,s^{-1}}\)</span>. Construct a scale diagram to show that the new direction of the boat is about <span class="math inline">\(13^\circ\)</span> east of north. <code>[4 marks]</code></p>
+<p><img src="../assets/questions/physical-quantities-and-units/pdf-object-river.webp" class="question-figure img-fluid" alt="Original river-crossing diagram, extracted as an independent PDF image object"></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<p><strong>(a)</strong></p>
+<ul>
+<li>Draw the two tension vectors to scale in their stated directions and complete a closed force triangle. <code>[2]</code></li>
+<li>Measure <span class="math inline">\(W\approx220\)</span>-<span class="math inline">\(230\ \mathrm{N}\)</span>. <code>[1]</code></li>
+<li>Measure <span class="math inline">\(T\approx160\)</span>-<span class="math inline">\(170\ \mathrm{N}\)</span>. <code>[1]</code></li>
+</ul>
+<p><strong>(b)</strong></p>
+<ul>
+<li>Draw the canoe velocity and opposing-current velocity head-to-tail to scale. <code>[2]</code></li>
+<li>Resultant speed <span class="math inline">\(\approx2.5\)</span>-<span class="math inline">\(2.7\ \mathrm{m\,s^{-1}}\)</span>. <code>[1]</code></li>
+</ul>
+<p><strong>(c)</strong></p>
+<ul>
+<li>Constant velocity means the three forces form a closed vector triangle. <code>[1]</code></li>
+<li>Resolve parallel and perpendicular components, or construct the triangle accurately. <code>[2]</code></li>
+<li><span class="math inline">\(F_R\approx1.1\)</span>-<span class="math inline">\(1.25\ \mathrm{kN}\)</span>. <code>[1]</code></li>
+</ul>
+<p><strong>(d)</strong></p>
+<ul>
+<li>Convert current speed: <span class="math inline">\(35\ \mathrm{cm\,s^{-1}}=0.35\ \mathrm{m\,s^{-1}}\)</span>. <code>[1]</code></li>
+<li>Draw <span class="math inline">\(1.5\ \mathrm{m\,s^{-1}}\)</span> north and <span class="math inline">\(0.35\ \mathrm{m\,s^{-1}}\)</span> east to scale. <code>[2]</code></li>
+<li>The resultant direction is about <span class="math inline">\(13^\circ\)</span> east of north. <code>[1]</code></li>
+</ul>
+</details>
+</section>
+</div>
+</section>
+<section id="章末自检" class="level2">
+<h2 class="anchored" data-anchor-id="章末自检">章末自检</h2>
+<div class="study-card">
+<p>不看笔记，能否完成以下事项？</p>
+<ul>
+<li>写出五个指定 SI 基本量及单位；</li>
+<li>从定义式推出 N、J、W、Pa、V；</li>
+<li>分清 <span class="math inline">\(\mathrm{m}\)</span> / <span class="math inline">\(\mathrm{M}\)</span> 及 <span class="math inline">\(\mathrm{n}\)</span> / <span class="math inline">\(\mathrm{p}\)</span>；</li>
+<li>用基本单位验证 <span class="math inline">\(p=\rho gh\)</span>；</li>
+<li>给出汽车质量、纸张厚度、空气密度、心跳周期的合理数量级。</li>
+</ul>
+</div>
+<section id="原始专题-pdf" class="level3">
+<h3 class="anchored" data-anchor-id="原始专题-pdf">原始专题 PDF</h3>
+<ul>
+<li><strong>1.1 Physical Quantities - Units</strong>: <a href="../resources/original-papers/physical-quantities-and-units/1.1 Physical Quantities - Units - C - Easy.pdf.pdf" target="_blank">MC Easy</a> · <a href="../resources/original-papers/physical-quantities-and-units/1.1 Physical Quantities - Units - C - Medium.pdf.pdf" target="_blank">MC Medium</a> · <a href="../resources/original-papers/physical-quantities-and-units/1.1 Physical Quantities - Units - C - Hard.pdf.pdf" target="_blank">MC Hard</a> · <a href="../resources/original-papers/physical-quantities-and-units/1.1 Physical Quantities - Units - SQ - Easy.pdf.pdf" target="_blank">SQ Easy</a> · <a href="../resources/original-papers/physical-quantities-and-units/1.1 Physical Quantities - Units - SQ - Medium.pdf.pdf" target="_blank">SQ Medium</a> · <a href="../resources/original-papers/physical-quantities-and-units/1.1 Physical Quantities - Units - SQ - Hard.pdf.pdf" target="_blank">SQ Hard</a></li>
+<li><strong>1.2 Measurements - Errors</strong>: <a href="../resources/original-papers/physical-quantities-and-units/1.2 Measurements - Errors - C - Easy.pdf.pdf" target="_blank">MC Easy</a> · <a href="../resources/original-papers/physical-quantities-and-units/1.2 Measurements - Errors - C - Medium.pdf.pdf" target="_blank">MC Medium</a> · <a href="../resources/original-papers/physical-quantities-and-units/1.2 Measurements - Errors - C - Hard.pdf.pdf" target="_blank">MC Hard</a> · <a href="../resources/original-papers/physical-quantities-and-units/1.2 Measurements - Errors - SQ - Easy.pdf.pdf" target="_blank">SQ Easy</a> · <a href="../resources/original-papers/physical-quantities-and-units/1.2 Measurements - Errors - SQ - Medium.pdf.pdf" target="_blank">SQ Medium</a> · <a href="../resources/original-papers/physical-quantities-and-units/1.2 Measurements - Errors - SQ - Hard.pdf.pdf" target="_blank">SQ Hard</a></li>
+</ul>
+<div class="source-line">
+<p>Content basis: Cambridge International AS &amp; A Level Physics 9702 syllabus (2025–2027), section 1.1–1.2; local notes <code>Note/1.1 Physical Quantities.pdf.pdf</code>, <code>Note/1.2 SI Units.pdf.pdf</code> and <code>Note/1.3 Errors - Uncertainties.pdf.pdf</code>; local topical past-paper packs under <code>PastPaper/Topical Past Papers/AS/1.1 Physical Quantities - Units</code> and <code>1.2 Measurements - Errors</code>.</p>
+</div>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll(".done-toggle input").forEach((input) => {
+    const key = `cie-physics-${input.dataset.progress}`;
+    input.checked = localStorage.getItem(key) === "true";
+    input.closest(".question-card")?.classList.toggle("is-complete", input.checked);
+    input.addEventListener("change", () => {
+      localStorage.setItem(key, input.checked);
+      input.closest(".question-card")?.classList.toggle("is-complete", input.checked);
+    });
+  });
+
+  document.querySelectorAll(".mc-question").forEach((card) => {
+    const answer = card.dataset.answer;
+    const feedback = card.querySelector(".mc-feedback");
+    const check = card.querySelector(".check-answer");
+    let selected = localStorage.getItem(`cie-physics-${card.id}-choice`) || "";
+
+    const showSelection = () => {
+      card.querySelectorAll(".mc-choice").forEach((choice) => {
+        choice.classList.toggle("is-selected", choice.dataset.choice === selected);
+      });
+    };
+    showSelection();
+
+    card.querySelectorAll(".mc-choice").forEach((choice) => {
+      choice.addEventListener("click", () => {
+        selected = choice.dataset.choice;
+        localStorage.setItem(`cie-physics-${card.id}-choice`, selected);
+        feedback.textContent = "";
+        feedback.className = "mc-feedback";
+        showSelection();
+      });
+    });
+
+    check?.addEventListener("click", () => {
+      if (!selected) {
+        feedback.textContent = "Select an answer first.";
+        feedback.className = "mc-feedback is-pending";
+        return;
+      }
+      const correct = selected === answer;
+      feedback.textContent = correct ? "Correct." : `Not quite. The correct answer is ${answer}.`;
+      feedback.className = `mc-feedback ${correct ? "is-correct" : "is-incorrect"}`;
+    });
+  });
+});
+</script>
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "已复制");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "已复制");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../index.html" class="pagination-link" aria-label="学习首页">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">学习首页</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../as-level/02-kinematics.html" class="pagination-link" aria-label="2 Kinematics">
+        <span class="nav-page-text">2 Kinematics</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>

@@ -1,0 +1,1877 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-Hans" xml:lang="zh-Hans"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.38">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>2 Kinematics – CIE Physics 9702</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../as-level/03-dynamics.html" rel="next">
+<link href="../as-level/01-physical-quantities-and-units.html" rel="prev">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-a2a938b4dd5711f7a799c87bd16ba44c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "没有结果",
+    "search-matching-documents-text": "匹配的文档",
+    "search-copy-link-title": "复制搜索链接",
+    "search-hide-matches-text": "隐藏其它匹配结果",
+    "search-more-match-text": "更多匹配结果",
+    "search-more-matches-text": "更多匹配结果",
+    "search-clear-button-title": "清除",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "取消",
+    "search-submit-button-title": "提交",
+    "search-label": "搜索"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../styles.css">
+</head>
+
+<body class="nav-sidebar docked quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="展开或折叠侧边栏导航" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../as-level/01-physical-quantities-and-units.html">AS Level</a></li><li class="breadcrumb-item"><a href="../as-level/02-kinematics.html">2 Kinematics</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="展开或折叠侧边栏导航" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="搜索" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">CIE Physics 9702</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="搜索"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">学习首页</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">AS Level</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="展开或折叠此栏">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../as-level/01-physical-quantities-and-units.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">1 Physical quantities and units</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../as-level/02-kinematics.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">2 Kinematics</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../as-level/03-dynamics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">3 Dynamics</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">该页面内容</h2>
+   
+  <ul>
+  <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link active" data-scroll-target="#learning-objectives">Learning objectives</a>
+  <ul class="collapse">
+  <li><a href="#distance-displacement-speed-and-velocity" id="toc-distance-displacement-speed-and-velocity" class="nav-link" data-scroll-target="#distance-displacement-speed-and-velocity">2.1.1 Distance, displacement, speed and velocity</a></li>
+  <li><a href="#acceleration-and-sign-conventions" id="toc-acceleration-and-sign-conventions" class="nav-link" data-scroll-target="#acceleration-and-sign-conventions">2.1.2 Acceleration and sign conventions</a></li>
+  <li><a href="#uniformly-accelerated-motion" id="toc-uniformly-accelerated-motion" class="nav-link" data-scroll-target="#uniformly-accelerated-motion">2.1.3 Uniformly accelerated motion</a></li>
+  <li><a href="#motion-graphs" id="toc-motion-graphs" class="nav-link" data-scroll-target="#motion-graphs">2.1.4 Motion graphs</a></li>
+  <li><a href="#free-fall-and-vertical-motion" id="toc-free-fall-and-vertical-motion" class="nav-link" data-scroll-target="#free-fall-and-vertical-motion">2.1.5 Free fall and vertical motion</a></li>
+  <li><a href="#projectile-motion" id="toc-projectile-motion" class="nav-link" data-scroll-target="#projectile-motion">2.1.6 Projectile motion</a></li>
+  <li><a href="#problem-solving-checklist" id="toc-problem-solving-checklist" class="nav-link" data-scroll-target="#problem-solving-checklist">2.1.7 Problem-solving checklist</a></li>
+  </ul></li>
+  <li><a href="#multiple-choice" id="toc-multiple-choice" class="nav-link" data-scroll-target="#multiple-choice">Multiple Choice</a>
+  <ul class="collapse">
+  <li><a href="#example-1-2.1-mc-easy-q1" id="toc-example-1-2.1-mc-easy-q1" class="nav-link" data-scroll-target="#example-1-2.1-mc-easy-q1">Example 1 · 2.1 MC Easy Q1</a></li>
+  <li><a href="#example-2-2.1-mc-easy-q2" id="toc-example-2-2.1-mc-easy-q2" class="nav-link" data-scroll-target="#example-2-2.1-mc-easy-q2">Example 2 · 2.1 MC Easy Q2</a></li>
+  <li><a href="#example-3-2.1-mc-easy-q3" id="toc-example-3-2.1-mc-easy-q3" class="nav-link" data-scroll-target="#example-3-2.1-mc-easy-q3">Example 3 · 2.1 MC Easy Q3</a></li>
+  <li><a href="#example-4-2.1-mc-easy-q4" id="toc-example-4-2.1-mc-easy-q4" class="nav-link" data-scroll-target="#example-4-2.1-mc-easy-q4">Example 4 · 2.1 MC Easy Q4</a></li>
+  <li><a href="#example-5-2.1-mc-easy-q5" id="toc-example-5-2.1-mc-easy-q5" class="nav-link" data-scroll-target="#example-5-2.1-mc-easy-q5">Example 5 · 2.1 MC Easy Q5</a></li>
+  <li><a href="#example-6-2.1-mc-easy-q6" id="toc-example-6-2.1-mc-easy-q6" class="nav-link" data-scroll-target="#example-6-2.1-mc-easy-q6">Example 6 · 2.1 MC Easy Q6</a></li>
+  <li><a href="#example-7-2.1-mc-easy-q7" id="toc-example-7-2.1-mc-easy-q7" class="nav-link" data-scroll-target="#example-7-2.1-mc-easy-q7">Example 7 · 2.1 MC Easy Q7</a></li>
+  <li><a href="#example-8-2.1-mc-medium-q2" id="toc-example-8-2.1-mc-medium-q2" class="nav-link" data-scroll-target="#example-8-2.1-mc-medium-q2">Example 8 · 2.1 MC Medium Q2</a></li>
+  <li><a href="#example-9-2.1-mc-medium-q3" id="toc-example-9-2.1-mc-medium-q3" class="nav-link" data-scroll-target="#example-9-2.1-mc-medium-q3">Example 9 · 2.1 MC Medium Q3</a></li>
+  <li><a href="#example-10-2.1-mc-medium-q4" id="toc-example-10-2.1-mc-medium-q4" class="nav-link" data-scroll-target="#example-10-2.1-mc-medium-q4">Example 10 · 2.1 MC Medium Q4</a></li>
+  <li><a href="#example-11-2.1-mc-medium-q5" id="toc-example-11-2.1-mc-medium-q5" class="nav-link" data-scroll-target="#example-11-2.1-mc-medium-q5">Example 11 · 2.1 MC Medium Q5</a></li>
+  <li><a href="#example-12-2.1-mc-medium-q6" id="toc-example-12-2.1-mc-medium-q6" class="nav-link" data-scroll-target="#example-12-2.1-mc-medium-q6">Example 12 · 2.1 MC Medium Q6</a></li>
+  <li><a href="#example-13-2.1-mc-medium-q8" id="toc-example-13-2.1-mc-medium-q8" class="nav-link" data-scroll-target="#example-13-2.1-mc-medium-q8">Example 13 · 2.1 MC Medium Q8</a></li>
+  <li><a href="#example-14-2.1-mc-medium-q9" id="toc-example-14-2.1-mc-medium-q9" class="nav-link" data-scroll-target="#example-14-2.1-mc-medium-q9">Example 14 · 2.1 MC Medium Q9</a></li>
+  <li><a href="#example-15-2.1-mc-hard-q1" id="toc-example-15-2.1-mc-hard-q1" class="nav-link" data-scroll-target="#example-15-2.1-mc-hard-q1">Example 15 · 2.1 MC Hard Q1</a></li>
+  <li><a href="#example-16-2.1-mc-hard-q2" id="toc-example-16-2.1-mc-hard-q2" class="nav-link" data-scroll-target="#example-16-2.1-mc-hard-q2">Example 16 · 2.1 MC Hard Q2</a></li>
+  <li><a href="#example-17-2.1-mc-hard-q5" id="toc-example-17-2.1-mc-hard-q5" class="nav-link" data-scroll-target="#example-17-2.1-mc-hard-q5">Example 17 · 2.1 MC Hard Q5</a></li>
+  <li><a href="#example-18-2.1-mc-hard-q6" id="toc-example-18-2.1-mc-hard-q6" class="nav-link" data-scroll-target="#example-18-2.1-mc-hard-q6">Example 18 · 2.1 MC Hard Q6</a></li>
+  <li><a href="#example-19-2.1-mc-hard-q7" id="toc-example-19-2.1-mc-hard-q7" class="nav-link" data-scroll-target="#example-19-2.1-mc-hard-q7">Example 19 · 2.1 MC Hard Q7</a></li>
+  <li><a href="#example-20-2.1-mc-hard-q9" id="toc-example-20-2.1-mc-hard-q9" class="nav-link" data-scroll-target="#example-20-2.1-mc-hard-q9">Example 20 · 2.1 MC Hard Q9</a></li>
+  </ul></li>
+  <li><a href="#structured-questions" id="toc-structured-questions" class="nav-link" data-scroll-target="#structured-questions">Structured Questions</a>
+  <ul class="collapse">
+  <li><a href="#example-1-distance-displacement-speed-and-velocity-2.1-sq-easy-q1a" id="toc-example-1-distance-displacement-speed-and-velocity-2.1-sq-easy-q1a" class="nav-link" data-scroll-target="#example-1-distance-displacement-speed-and-velocity-2.1-sq-easy-q1a">Example 1 · Distance, displacement, speed and velocity · 2.1 SQ Easy Q1(a)</a></li>
+  <li><a href="#example-2-scalars-and-vectors-2.1-sq-easy-q2a" id="toc-example-2-scalars-and-vectors-2.1-sq-easy-q2a" class="nav-link" data-scroll-target="#example-2-scalars-and-vectors-2.1-sq-easy-q2a">Example 2 · Scalars and vectors · 2.1 SQ Easy Q2(a)</a></li>
+  <li><a href="#example-3-uniform-acceleration-and-suvat-2.1-sq-easy-q2b" id="toc-example-3-uniform-acceleration-and-suvat-2.1-sq-easy-q2b" class="nav-link" data-scroll-target="#example-3-uniform-acceleration-and-suvat-2.1-sq-easy-q2b">Example 3 · Uniform acceleration and SUVAT · 2.1 SQ Easy Q2(b)</a></li>
+  <li><a href="#example-4-stone-dropped-into-a-well-2.1-sq-easy-q3a-b" id="toc-example-4-stone-dropped-into-a-well-2.1-sq-easy-q3a-b" class="nav-link" data-scroll-target="#example-4-stone-dropped-into-a-well-2.1-sq-easy-q3a-b">Example 4 · Stone dropped into a well · 2.1 SQ Easy Q3(a)-(b)</a></li>
+  <li><a href="#example-5-projectile-motion-to-a-wall-2.1-sq-medium-q1" id="toc-example-5-projectile-motion-to-a-wall-2.1-sq-medium-q1" class="nav-link" data-scroll-target="#example-5-projectile-motion-to-a-wall-2.1-sq-medium-q1">Example 5 · Projectile motion to a wall · 2.1 SQ Medium Q1</a></li>
+  <li><a href="#example-6-horizontal-projection-from-a-cliff-2.1-sq-medium-q3" id="toc-example-6-horizontal-projection-from-a-cliff-2.1-sq-medium-q3" class="nav-link" data-scroll-target="#example-6-horizontal-projection-from-a-cliff-2.1-sq-medium-q3">Example 6 · Horizontal projection from a cliff · 2.1 SQ Medium Q3</a></li>
+  <li><a href="#example-7-deriving-equations-of-motion-2.1-sq-medium-q4a" id="toc-example-7-deriving-equations-of-motion-2.1-sq-medium-q4a" class="nav-link" data-scroll-target="#example-7-deriving-equations-of-motion-2.1-sq-medium-q4a">Example 7 · Deriving equations of motion · 2.1 SQ Medium Q4(a)</a></li>
+  <li><a href="#example-8-fireworks-display-2.1-sq-hard-q1" id="toc-example-8-fireworks-display-2.1-sq-hard-q1" class="nav-link" data-scroll-target="#example-8-fireworks-display-2.1-sq-hard-q1">Example 8 · Fireworks display · 2.1 SQ Hard Q1</a></li>
+  <li><a href="#example-9-stunt-motorcyclist-2.1-sq-hard-q2" id="toc-example-9-stunt-motorcyclist-2.1-sq-hard-q2" class="nav-link" data-scroll-target="#example-9-stunt-motorcyclist-2.1-sq-hard-q2">Example 9 · Stunt motorcyclist · 2.1 SQ Hard Q2</a></li>
+  <li><a href="#example-10-motion-close-to-the-moon-2.1-sq-hard-q3" id="toc-example-10-motion-close-to-the-moon-2.1-sq-hard-q3" class="nav-link" data-scroll-target="#example-10-motion-close-to-the-moon-2.1-sq-hard-q3">Example 10 · Motion close to the Moon · 2.1 SQ Hard Q3</a></li>
+  </ul></li>
+  <li><a href="#章末自检" id="toc-章末自检" class="nav-link" data-scroll-target="#章末自检">章末自检</a>
+  <ul class="collapse">
+  <li><a href="#原始专题-pdf" id="toc-原始专题-pdf" class="nav-link" data-scroll-target="#原始专题-pdf">原始专题 PDF</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../as-level/01-physical-quantities-and-units.html">AS Level</a></li><li class="breadcrumb-item"><a href="../as-level/02-kinematics.html">2 Kinematics</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">2 Kinematics</h1>
+<p class="subtitle lead">2.1 Equations of Motion</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="learning-objectives" class="level2">
+<h2 class="anchored" data-anchor-id="learning-objectives">Learning objectives</h2>
+<p>By the end of this chapter, you should be able to:</p>
+<ul>
+<li>distinguish distance from displacement and speed from velocity;</li>
+<li>define acceleration and use a consistent sign convention;</li>
+<li>interpret displacement-time, velocity-time and acceleration-time graphs;</li>
+<li>select and apply the equations of uniformly accelerated motion;</li>
+<li>analyse free fall and vertical motion under gravity;</li>
+<li>resolve projectile motion into independent horizontal and vertical components;</li>
+<li>obtain instantaneous values from graph gradients and use graph areas correctly.</li>
+</ul>
+<section id="distance-displacement-speed-and-velocity" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="distance-displacement-speed-and-velocity">2.1.1 Distance, displacement, speed and velocity</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Quantity</th>
+<th>Definition</th>
+<th>SI unit</th>
+<th>Nature</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>distance</td>
+<td>total length of the path travelled</td>
+<td>m</td>
+<td>scalar</td>
+</tr>
+<tr class="even">
+<td>displacement <span class="math inline">\(s\)</span></td>
+<td>change in position in a specified direction</td>
+<td>m</td>
+<td>vector</td>
+</tr>
+<tr class="odd">
+<td>speed</td>
+<td>rate of change of distance</td>
+<td>m s<span class="math inline">\(^{-1}\)</span></td>
+<td>scalar</td>
+</tr>
+<tr class="even">
+<td>velocity <span class="math inline">\(v\)</span></td>
+<td>rate of change of displacement</td>
+<td>m s<span class="math inline">\(^{-1}\)</span></td>
+<td>vector</td>
+</tr>
+<tr class="odd">
+<td>acceleration <span class="math inline">\(a\)</span></td>
+<td>rate of change of velocity</td>
+<td>m s<span class="math inline">\(^{-2}\)</span></td>
+<td>vector</td>
+</tr>
+</tbody>
+</table>
+<p>Average speed and average velocity are not interchangeable:</p>
+<p><span class="math display">\[\text{average speed}=\frac{\text{total distance}}{\text{total time}},\qquad
+\text{average velocity}=\frac{\text{total displacement}}{\text{total time}}.\]</span></p>
+<p>A journey can have a non-zero average speed but zero average velocity, for example when an object returns to its starting point.</p>
+</section>
+<section id="acceleration-and-sign-conventions" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="acceleration-and-sign-conventions">2.1.2 Acceleration and sign conventions</h3>
+<p>Acceleration is the rate of change of velocity:</p>
+<p><span class="math display">\[a=\frac{\Delta v}{\Delta t}=\frac{v-u}{t}.\]</span></p>
+<p>Acceleration can be caused by a change in speed, a change in direction, or both. A negative acceleration does not automatically mean that an object is slowing down; it means that the acceleration acts in the negative direction chosen for the calculation.</p>
+<p>Choose the positive direction before substituting values. For vertical motion, if upward is positive, then:</p>
+<ul>
+<li>upward displacement and velocity are positive;</li>
+<li>downward displacement and velocity are negative;</li>
+<li>acceleration due to gravity is <span class="math inline">\(a=-g\)</span>.</li>
+</ul>
+<p>Use <span class="math inline">\(g=9.81\ \mathrm{m\,s^{-2}}\)</span> unless the question specifies another value.</p>
+</section>
+<section id="uniformly-accelerated-motion" class="level3 formula-panel">
+<h3 class="anchored" data-anchor-id="uniformly-accelerated-motion">2.1.3 Uniformly accelerated motion</h3>
+<p>For constant acceleration only:</p>
+<p><span class="math display">\[v=u+at\]</span> <span class="math display">\[s=ut+\frac12at^2\]</span> <span class="math display">\[v^2=u^2+2as\]</span> <span class="math display">\[s=\frac{u+v}{2}t\]</span></p>
+<p>Here <span class="math inline">\(u\)</span> is initial velocity, <span class="math inline">\(v\)</span> is final velocity, <span class="math inline">\(a\)</span> is acceleration, <span class="math inline">\(s\)</span> is displacement and <span class="math inline">\(t\)</span> is time.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Missing quantity</th>
+<th>Useful equation</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\(s\)</span></td>
+<td><span class="math inline">\(v=u+at\)</span></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(v\)</span></td>
+<td><span class="math inline">\(s=ut+\frac12at^2\)</span></td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(t\)</span></td>
+<td><span class="math inline">\(v^2=u^2+2as\)</span></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(a\)</span></td>
+<td><span class="math inline">\(s=\frac{u+v}{2}t\)</span></td>
+</tr>
+</tbody>
+</table>
+<p>Do not use these equations when acceleration varies. In that situation, use graphs, calculus, numerical data or an explicitly stated model.</p>
+</section>
+<section id="motion-graphs" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="motion-graphs">2.1.4 Motion graphs</h3>
+<p><strong>Displacement-time graphs</strong></p>
+<ul>
+<li>Gradient gives velocity.</li>
+<li>A horizontal line represents zero velocity.</li>
+<li>Increasing gradient means increasing speed.</li>
+<li>The gradient of a tangent gives instantaneous velocity on a curve.</li>
+</ul>
+<p><strong>Velocity-time graphs</strong></p>
+<ul>
+<li>Gradient gives acceleration.</li>
+<li>Signed area between the graph and the time axis gives displacement.</li>
+<li>Area below the time axis represents displacement in the negative direction.</li>
+<li>Total distance is found by adding the magnitudes of all areas.</li>
+</ul>
+<p><strong>Acceleration-time graphs</strong></p>
+<ul>
+<li>Signed area gives change in velocity.</li>
+<li>A horizontal line represents constant acceleration, not constant velocity.</li>
+</ul>
+<p>Always read the axis label carefully: a speed-time graph cannot show direction, whereas a velocity-time graph can contain negative values.</p>
+</section>
+<section id="free-fall-and-vertical-motion" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="free-fall-and-vertical-motion">2.1.5 Free fall and vertical motion</h3>
+<p>In free fall, gravity is the only significant force. Near the Earth’s surface and with air resistance neglected, acceleration is constant and downward.</p>
+<p>At the highest point of a vertical launch:</p>
+<ul>
+<li>instantaneous vertical velocity is zero;</li>
+<li>acceleration is still <span class="math inline">\(g\)</span> downward;</li>
+<li>the object immediately begins to gain downward velocity.</li>
+</ul>
+<p>For an object returning to its launch height with negligible air resistance, the time of ascent equals the time of descent and the final speed equals the launch speed, but the velocity has the opposite sign.</p>
+</section>
+<section id="projectile-motion" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="projectile-motion">2.1.6 Projectile motion</h3>
+<p>Resolve the initial velocity <span class="math inline">\(u\)</span> at angle <span class="math inline">\(\theta\)</span> into components:</p>
+<p><span class="math display">\[u_x=u\cos\theta,\qquad u_y=u\sin\theta.\]</span></p>
+<p>With negligible air resistance:</p>
+<ul>
+<li>horizontal acceleration is zero, so <span class="math inline">\(v_x=u\cos\theta\)</span> is constant;</li>
+<li>vertical acceleration is <span class="math inline">\(-g\)</span>, so <span class="math inline">\(v_y=u\sin\theta-gt\)</span>;</li>
+<li>horizontal and vertical motions have the same time <span class="math inline">\(t\)</span>;</li>
+<li>the resultant velocity is found from <span class="math inline">\(v=\sqrt{v_x^2+v_y^2}\)</span> and its direction from trigonometry.</li>
+</ul>
+<p>The curved trajectory is produced by constant horizontal velocity combined with uniformly accelerated vertical motion.</p>
+</section>
+<section id="problem-solving-checklist" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="problem-solving-checklist">2.1.7 Problem-solving checklist</h3>
+<ol type="1">
+<li>Draw a simple diagram and choose positive directions.</li>
+<li>List the known values of <span class="math inline">\(u\)</span>, <span class="math inline">\(v\)</span>, <span class="math inline">\(a\)</span>, <span class="math inline">\(s\)</span> and <span class="math inline">\(t\)</span> with signs and units.</li>
+<li>For projectiles, separate horizontal and vertical information before calculating.</li>
+<li>Select an equation that contains the required quantity and avoids an unknown you do not have.</li>
+<li>Check whether the acceleration is genuinely constant.</li>
+<li>Check the final sign, unit and physical scale of the answer.</li>
+</ol>
+</section>
+</section>
+<section id="multiple-choice" class="level2">
+<h2 class="anchored" data-anchor-id="multiple-choice">Multiple Choice</h2>
+<p>题干、数据与选项均整理自原始专题 PDF。含图选择题只使用可从 PDF 独立提取的完整图像对象。</p>
+<section id="easy-7-questions" class="level4">
+<h4 class="anchored" data-anchor-id="easy-7-questions">Easy · 7 questions</h4>
+</section>
+<section id="example-1-2.1-mc-easy-q1" class="level3 question-card mc-question" data-answer="C">
+<h3 class="anchored" data-anchor-id="example-1-2.1-mc-easy-q1">Example 1 · 2.1 MC Easy Q1</h3>
+An object moves directly from X to Z. In a shorter time, a second object moves from X to Y to Z. Which statement about the two objects is correct for the journey from X to Z?
+<div class="mc-options">
+<button class="mc-choice" data-choice="A">
+<strong>A</strong> they have the same average speed
+</button>
+<button class="mc-choice" data-choice="B">
+<strong>B</strong> they have the same average velocity
+</button>
+<button class="mc-choice" data-choice="C">
+<strong>C</strong> they have the same displacement
+</button>
+<button class="mc-choice" data-choice="D">
+<strong>D</strong> they travel the same distance
+</button>
+</div>
+<button class="check-answer">
+Check answer
+</button>
+<p class="mc-feedback">
+</p>
+</section>
+<section id="example-2-2.1-mc-easy-q2" class="level3 question-card mc-question" data-answer="A">
+<h3 class="anchored" data-anchor-id="example-2-2.1-mc-easy-q2">Example 2 · 2.1 MC Easy Q2</h3>
+An experiment is done to measure the acceleration of free fall of a body from rest. Which measurements are needed?
+<div class="mc-options">
+<button class="mc-choice" data-choice="A">
+<strong>A</strong> the height of fall and the time of fall
+</button>
+<button class="mc-choice" data-choice="B">
+<strong>B</strong> the height of fall and the weight of the body
+</button>
+<button class="mc-choice" data-choice="C">
+<strong>C</strong> the mass of the body and the height of fall
+</button>
+<button class="mc-choice" data-choice="D">
+<strong>D</strong> the mass of the body and the time of fall
+</button>
+</div>
+<button class="check-answer">
+Check answer
+</button>
+<p class="mc-feedback">
+</p>
+</section>
+<section id="example-3-2.1-mc-easy-q3" class="level3 question-card mc-question" data-answer="D">
+<h3 class="anchored" data-anchor-id="example-3-2.1-mc-easy-q3">Example 3 · 2.1 MC Easy Q3</h3>
+Which feature of a graph allows acceleration to be determined?
+<div class="mc-options">
+<button class="mc-choice" data-choice="A">
+<strong>A</strong> the area under a displacement-time graph
+</button>
+<button class="mc-choice" data-choice="B">
+<strong>B</strong> the area under a velocity-time graph
+</button>
+<button class="mc-choice" data-choice="C">
+<strong>C</strong> the slope of a displacement-time graph
+</button>
+<button class="mc-choice" data-choice="D">
+<strong>D</strong> the slope of a velocity-time graph
+</button>
+</div>
+<button class="check-answer">
+Check answer
+</button>
+<p class="mc-feedback">
+</p>
+</section>
+<section id="example-4-2.1-mc-easy-q4" class="level3 question-card mc-question" data-answer="C">
+<h3 class="anchored" data-anchor-id="example-4-2.1-mc-easy-q4">Example 4 · 2.1 MC Easy Q4</h3>
+<p>The velocity of an object during the first five seconds of its motion is shown on the graph. What is the displacement of the object in this time?</p>
+<p><img src="../assets/questions/kinematics/mc-easy-q4.webp" class="question-figure img-fluid" alt="Original velocity-time graph extracted from the PDF"></p>
+<div class="mc-options">
+<button class="mc-choice" data-choice="A">
+<strong>A</strong> <span class="math inline">\(4\ \mathrm{m}\)</span>
+</button>
+<button class="mc-choice" data-choice="B">
+<strong>B</strong> <span class="math inline">\(20\ \mathrm{m}\)</span>
+</button>
+<button class="mc-choice" data-choice="C">
+<strong>C</strong> <span class="math inline">\(50\ \mathrm{m}\)</span>
+</button>
+<button class="mc-choice" data-choice="D">
+<strong>D</strong> <span class="math inline">\(100\ \mathrm{m}\)</span>
+</button>
+</div>
+<button class="check-answer">
+Check answer
+</button>
+<p class="mc-feedback">
+</p>
+</section>
+<section id="example-5-2.1-mc-easy-q5" class="level3 question-card mc-question" data-answer="D">
+<h3 class="anchored" data-anchor-id="example-5-2.1-mc-easy-q5">Example 5 · 2.1 MC Easy Q5</h3>
+<p>The variation with time <span class="math inline">\(t\)</span> of the distance <span class="math inline">\(s\)</span> moved by a body is shown below. What can be deduced from the graph about the motion of the body?</p>
+<p><img src="../assets/questions/kinematics/mc-easy-q5.webp" class="question-figure img-fluid" alt="Original distance-time graph extracted from the PDF"></p>
+<div class="mc-options">
+<button class="mc-choice" data-choice="A">
+<strong>A</strong> it accelerates continuously
+</button>
+<button class="mc-choice" data-choice="B">
+<strong>B</strong> it starts from rest
+</button>
+<button class="mc-choice" data-choice="C">
+<strong>C</strong> the distance is proportional to time
+</button>
+<button class="mc-choice" data-choice="D">
+<strong>D</strong> the speed changes
+</button>
+</div>
+<button class="check-answer">
+Check answer
+</button>
+<p class="mc-feedback">
+</p>
+</section>
+<section id="example-6-2.1-mc-easy-q6" class="level3 question-card mc-question" data-answer="D">
+<h3 class="anchored" data-anchor-id="example-6-2.1-mc-easy-q6">Example 6 · 2.1 MC Easy Q6</h3>
+An object is thrown with velocity <span class="math inline">\(7.1\ \mathrm{m\,s^{-1}}\)</span> vertically upwards on the Moon. The acceleration due to gravity on the Moon is <span class="math inline">\(1.62\ \mathrm{m\,s^{-2}}\)</span>. What is the time taken for the object to return to its starting point?
+<div class="mc-options">
+<button class="mc-choice" data-choice="A">
+<strong>A</strong> <span class="math inline">\(3.5\ \mathrm{s}\)</span>
+</button>
+<button class="mc-choice" data-choice="B">
+<strong>B</strong> <span class="math inline">\(4.4\ \mathrm{s}\)</span>
+</button>
+<button class="mc-choice" data-choice="C">
+<strong>C</strong> <span class="math inline">\(6.5\ \mathrm{s}\)</span>
+</button>
+<button class="mc-choice" data-choice="D">
+<strong>D</strong> <span class="math inline">\(8.8\ \mathrm{s}\)</span>
+</button>
+</div>
+<button class="check-answer">
+Check answer
+</button>
+<p class="mc-feedback">
+</p>
+</section>
+<section id="example-7-2.1-mc-easy-q7" class="level3 question-card mc-question" data-answer="C">
+<h3 class="anchored" data-anchor-id="example-7-2.1-mc-easy-q7">Example 7 · 2.1 MC Easy Q7</h3>
+An insect jumps with an initial vertical velocity of <span class="math inline">\(1.5\ \mathrm{m\,s^{-1}}\)</span>, reaching a maximum height of <span class="math inline">\(4.5\times10^{-2}\ \mathrm{m}\)</span>. Assume the deceleration is uniform. What is the magnitude of the deceleration?
+<div class="mc-options">
+<button class="mc-choice" data-choice="A">
+<strong>A</strong> <span class="math inline">\(6.8\ \mathrm{m\,s^{-2}}\)</span>
+</button>
+<button class="mc-choice" data-choice="B">
+<strong>B</strong> <span class="math inline">\(9.8\ \mathrm{m\,s^{-2}}\)</span>
+</button>
+<button class="mc-choice" data-choice="C">
+<strong>C</strong> <span class="math inline">\(25\ \mathrm{m\,s^{-2}}\)</span>
+</button>
+<button class="mc-choice" data-choice="D">
+<strong>D</strong> <span class="math inline">\(50\ \mathrm{m\,s^{-2}}\)</span>
+</button>
+</div>
+<button class="check-answer">
+Check answer
+</button>
+<p class="mc-feedback">
+</p>
+</section>
+<section id="medium-7-questions" class="level4">
+<h4 class="anchored" data-anchor-id="medium-7-questions">Medium · 7 questions</h4>
+</section>
+<section id="example-8-2.1-mc-medium-q2" class="level3 question-card mc-question" data-answer="D">
+<h3 class="anchored" data-anchor-id="example-8-2.1-mc-medium-q2">Example 8 · 2.1 MC Medium Q2</h3>
+A bullet is fired horizontally with speed <span class="math inline">\(v\)</span> from a rifle. For a short time <span class="math inline">\(t\)</span> after leaving the rifle, the only force affecting its motion is gravity. The acceleration of free fall is <span class="math inline">\(g\)</span>. What is the value of <span class="math inline">\(\dfrac{\text{horizontal distance travelled in time }t}{\text{vertical distance travelled in time }t}\)</span>?
+<div class="mc-options">
+<button class="mc-choice" data-choice="A">
+<strong>A</strong> <span class="math inline">\(vt/g\)</span>
+</button>
+<button class="mc-choice" data-choice="B">
+<strong>B</strong> <span class="math inline">\(v/(gt)\)</span>
+</button>
+<button class="mc-choice" data-choice="C">
+<strong>C</strong> <span class="math inline">\(2vt/g\)</span>
+</button>
+<button class="mc-choice" data-choice="D">
+<strong>D</strong> <span class="math inline">\(2v/(gt)\)</span>
+</button>
+</div>
+<button class="check-answer">
+Check answer
+</button>
+<p class="mc-feedback">
+</p>
+</section>
+<section id="example-9-2.1-mc-medium-q3" class="level3 question-card mc-question" data-answer="C">
+<h3 class="anchored" data-anchor-id="example-9-2.1-mc-medium-q3">Example 9 · 2.1 MC Medium Q3</h3>
+The acceleration of free fall on the Moon is one-sixth of that on Earth. On Earth it takes time <span class="math inline">\(t\)</span> for a stone to fall from rest a distance of <span class="math inline">\(2\ \mathrm{m}\)</span>. What is the time taken for a stone to fall from rest a distance of <span class="math inline">\(2\ \mathrm{m}\)</span> on the Moon?
+<div class="mc-options">
+<button class="mc-choice" data-choice="A">
+<strong>A</strong> <span class="math inline">\(6t\)</span>
+</button>
+<button class="mc-choice" data-choice="B">
+<strong>B</strong> <span class="math inline">\(t/6\)</span>
+</button>
+<button class="mc-choice" data-choice="C">
+<strong>C</strong> <span class="math inline">\(t\sqrt6\)</span>
+</button>
+<button class="mc-choice" data-choice="D">
+<strong>D</strong> <span class="math inline">\(t/\sqrt6\)</span>
+</button>
+</div>
+<button class="check-answer">
+Check answer
+</button>
+<p class="mc-feedback">
+</p>
+</section>
+<section id="example-10-2.1-mc-medium-q4" class="level3 question-card mc-question" data-answer="A">
+<h3 class="anchored" data-anchor-id="example-10-2.1-mc-medium-q4">Example 10 · 2.1 MC Medium Q4</h3>
+A stone is thrown upwards and follows a curved path. Air resistance is negligible. Why does the path have this shape?
+<div class="mc-options">
+<button class="mc-choice" data-choice="A">
+<strong>A</strong> the stone has a constant horizontal velocity and constant vertical acceleration
+</button>
+<button class="mc-choice" data-choice="B">
+<strong>B</strong> the stone has a constant horizontal acceleration and constant vertical velocity
+</button>
+<button class="mc-choice" data-choice="C">
+<strong>C</strong> the stone has a constant upward acceleration followed by a constant downward acceleration
+</button>
+<button class="mc-choice" data-choice="D">
+<strong>D</strong> the stone has a constant upward velocity followed by a constant downward velocity
+</button>
+</div>
+<button class="check-answer">
+Check answer
+</button>
+<p class="mc-feedback">
+</p>
+</section>
+<section id="example-11-2.1-mc-medium-q5" class="level3 question-card mc-question" data-answer="D">
+<h3 class="anchored" data-anchor-id="example-11-2.1-mc-medium-q5">Example 11 · 2.1 MC Medium Q5</h3>
+A train passes through a station at a constant speed of <span class="math inline">\(20\ \mathrm{m\,s^{-1}}\)</span>. A second train is at rest at the station. It begins to leave the station with a uniform acceleration of <span class="math inline">\(1.0\ \mathrm{m\,s^{-2}}\)</span> just as the first train goes past. How much time passes before the second train overtakes the first train?
+<div class="mc-options">
+<button class="mc-choice" data-choice="A">
+<strong>A</strong> <span class="math inline">\(5\ \mathrm{s}\)</span>
+</button>
+<button class="mc-choice" data-choice="B">
+<strong>B</strong> <span class="math inline">\(10\ \mathrm{s}\)</span>
+</button>
+<button class="mc-choice" data-choice="C">
+<strong>C</strong> <span class="math inline">\(20\ \mathrm{s}\)</span>
+</button>
+<button class="mc-choice" data-choice="D">
+<strong>D</strong> <span class="math inline">\(40\ \mathrm{s}\)</span>
+</button>
+</div>
+<button class="check-answer">
+Check answer
+</button>
+<p class="mc-feedback">
+</p>
+</section>
+<section id="example-12-2.1-mc-medium-q6" class="level3 question-card mc-question" data-answer="A">
+<h3 class="anchored" data-anchor-id="example-12-2.1-mc-medium-q6">Example 12 · 2.1 MC Medium Q6</h3>
+<p>The graph shows how the speed <span class="math inline">\(v\)</span> of a sprinter changes with time <span class="math inline">\(t\)</span> during a <span class="math inline">\(100\ \mathrm{m}\)</span> race. What is the best estimate of the maximum acceleration of the sprinter?</p>
+<p><img src="../assets/questions/kinematics/mc-medium-q6.webp" class="question-figure img-fluid" alt="Original speed-time graph extracted from the PDF"></p>
+<div class="mc-options">
+<button class="mc-choice" data-choice="A">
+<strong>A</strong> <span class="math inline">\(3\ \mathrm{m\,s^{-2}}\)</span>
+</button>
+<button class="mc-choice" data-choice="B">
+<strong>B</strong> <span class="math inline">\(6\ \mathrm{m\,s^{-2}}\)</span>
+</button>
+<button class="mc-choice" data-choice="C">
+<strong>C</strong> <span class="math inline">\(9\ \mathrm{m\,s^{-2}}\)</span>
+</button>
+<button class="mc-choice" data-choice="D">
+<strong>D</strong> <span class="math inline">\(12\ \mathrm{m\,s^{-2}}\)</span>
+</button>
+</div>
+<button class="check-answer">
+Check answer
+</button>
+<p class="mc-feedback">
+</p>
+</section>
+<section id="example-13-2.1-mc-medium-q8" class="level3 question-card mc-question" data-answer="D">
+<h3 class="anchored" data-anchor-id="example-13-2.1-mc-medium-q8">Example 13 · 2.1 MC Medium Q8</h3>
+In a cathode-ray tube, an electron is accelerated uniformly in a straight line from a speed of <span class="math inline">\(4\times10^5\ \mathrm{m\,s^{-1}}\)</span> to one tenth of the speed of light over a distance of <span class="math inline">\(10\ \mathrm{mm}\)</span>. What is the acceleration of the electron?
+<div class="mc-options">
+<button class="mc-choice" data-choice="A">
+<strong>A</strong> <span class="math inline">\(4.5\times10^3\ \mathrm{m\,s^{-2}}\)</span>
+</button>
+<button class="mc-choice" data-choice="B">
+<strong>B</strong> <span class="math inline">\(4.5\times10^6\ \mathrm{m\,s^{-2}}\)</span>
+</button>
+<button class="mc-choice" data-choice="C">
+<strong>C</strong> <span class="math inline">\(4.5\times10^{13}\ \mathrm{m\,s^{-2}}\)</span>
+</button>
+<button class="mc-choice" data-choice="D">
+<strong>D</strong> <span class="math inline">\(4.5\times10^{16}\ \mathrm{m\,s^{-2}}\)</span>
+</button>
+</div>
+<button class="check-answer">
+Check answer
+</button>
+<p class="mc-feedback">
+</p>
+</section>
+<section id="example-14-2.1-mc-medium-q9" class="level3 question-card mc-question" data-answer="C">
+<h3 class="anchored" data-anchor-id="example-14-2.1-mc-medium-q9">Example 14 · 2.1 MC Medium Q9</h3>
+A projectile is fired at an angle <span class="math inline">\(a\)</span> to the horizontal at a speed <span class="math inline">\(u\)</span>. What are the vertical and horizontal components of its velocity after a time <span class="math inline">\(t\)</span>? Assume that air resistance is negligible. The acceleration of free fall is <span class="math inline">\(g\)</span>.
+<div class="mc-options">
+<button class="mc-choice" data-choice="A">
+<strong>A</strong> <span class="math inline">\(u\sin a\)</span>, <span class="math inline">\(u\cos a\)</span>
+</button>
+<button class="mc-choice" data-choice="B">
+<strong>B</strong> <span class="math inline">\(u\sin a-gt\)</span>, <span class="math inline">\(u\cos a-gt\)</span>
+</button>
+<button class="mc-choice" data-choice="C">
+<strong>C</strong> <span class="math inline">\(u\sin a-gt\)</span>, <span class="math inline">\(u\cos a\)</span>
+</button>
+<button class="mc-choice" data-choice="D">
+<strong>D</strong> <span class="math inline">\(u\cos a\)</span>, <span class="math inline">\(u\sin a-gt\)</span>
+</button>
+</div>
+<button class="check-answer">
+Check answer
+</button>
+<p class="mc-feedback">
+</p>
+</section>
+<section id="hard-6-questions" class="level4">
+<h4 class="anchored" data-anchor-id="hard-6-questions">Hard · 6 questions</h4>
+</section>
+<section id="example-15-2.1-mc-hard-q1" class="level3 question-card mc-question" data-answer="D">
+<h3 class="anchored" data-anchor-id="example-15-2.1-mc-hard-q1">Example 15 · 2.1 MC Hard Q1</h3>
+A body having uniform acceleration <span class="math inline">\(a\)</span> increases its velocity from <span class="math inline">\(u\)</span> to <span class="math inline">\(v\)</span> in time <span class="math inline">\(t\)</span>. Which expression would not give a correct value for the body’s displacement during time <span class="math inline">\(t\)</span>?
+<div class="mc-options">
+<button class="mc-choice" data-choice="A">
+<strong>A</strong> <span class="math inline">\(ut+\frac12at^2\)</span>
+</button>
+<button class="mc-choice" data-choice="B">
+<strong>B</strong> <span class="math inline">\(vt-\frac12at^2\)</span>
+</button>
+<button class="mc-choice" data-choice="C">
+<strong>C</strong> <span class="math inline">\(\dfrac{(v+u)(v-u)}{2a}\)</span>
+</button>
+<button class="mc-choice" data-choice="D">
+<strong>D</strong> <span class="math inline">\(\dfrac{(v-u)t}{2}\)</span>
+</button>
+</div>
+<button class="check-answer">
+Check answer
+</button>
+<p class="mc-feedback">
+</p>
+</section>
+<section id="example-16-2.1-mc-hard-q2" class="level3 question-card mc-question" data-answer="C">
+<h3 class="anchored" data-anchor-id="example-16-2.1-mc-hard-q2">Example 16 · 2.1 MC Hard Q2</h3>
+A cannon fires a cannonball with an initial speed <span class="math inline">\(v\)</span> at an angle <span class="math inline">\(a\)</span> to the horizontal. Which equation is correct for the maximum height <span class="math inline">\(H\)</span> reached?
+<div class="mc-options">
+<button class="mc-choice" data-choice="A">
+<strong>A</strong> <span class="math inline">\(H=\dfrac{v\sin a}{2g}\)</span>
+</button>
+<button class="mc-choice" data-choice="B">
+<strong>B</strong> <span class="math inline">\(H=\dfrac{g\sin a}{2v}\)</span>
+</button>
+<button class="mc-choice" data-choice="C">
+<strong>C</strong> <span class="math inline">\(H=\dfrac{(v\sin a)^2}{2g}\)</span>
+</button>
+<button class="mc-choice" data-choice="D">
+<strong>D</strong> <span class="math inline">\(H=\dfrac{2g\sin a}{v^2}\)</span>
+</button>
+</div>
+<button class="check-answer">
+Check answer
+</button>
+<p class="mc-feedback">
+</p>
+</section>
+<section id="example-17-2.1-mc-hard-q5" class="level3 question-card mc-question" data-answer="C">
+<h3 class="anchored" data-anchor-id="example-17-2.1-mc-hard-q5">Example 17 · 2.1 MC Hard Q5</h3>
+<p>Two markers <span class="math inline">\(M_1\)</span> and <span class="math inline">\(M_2\)</span> are set up a vertical distance <span class="math inline">\(h\)</span> apart. A steel ball is released at time zero from a point a distance <span class="math inline">\(x\)</span> above <span class="math inline">\(M_1\)</span>. The ball reaches <span class="math inline">\(M_1\)</span> at time <span class="math inline">\(t_1\)</span> and reaches <span class="math inline">\(M_2\)</span> at time <span class="math inline">\(t_2\)</span>. The acceleration of the ball is constant. Which expression gives the acceleration of the ball?</p>
+<p><img src="../assets/questions/kinematics/mc-hard-q5-diagram.webp" class="question-figure img-fluid" alt="Original steel-ball and marker diagram extracted from the PDF"></p>
+<div class="mc-options">
+<button class="mc-choice" data-choice="A">
+<strong>A</strong> <span class="math inline">\(2h/t_1^2\)</span>
+</button>
+<button class="mc-choice" data-choice="B">
+<strong>B</strong> <span class="math inline">\(2h/(t_1+t_2)^2\)</span>
+</button>
+<button class="mc-choice" data-choice="C">
+<strong>C</strong> <span class="math inline">\(2h/(t_2^2-t_1^2)\)</span>
+</button>
+<button class="mc-choice" data-choice="D">
+<strong>D</strong> <span class="math inline">\(2h/(t_2-t_1)^2\)</span>
+</button>
+</div>
+<button class="check-answer">
+Check answer
+</button>
+<p class="mc-feedback">
+</p>
+</section>
+<section id="example-18-2.1-mc-hard-q6" class="level3 question-card mc-question" data-answer="C">
+<h3 class="anchored" data-anchor-id="example-18-2.1-mc-hard-q6">Example 18 · 2.1 MC Hard Q6</h3>
+A sprinter runs a <span class="math inline">\(200\ \mathrm{m}\)</span> race in a straight line. He accelerates from the starting block at a constant acceleration of <span class="math inline">\(2.5\ \mathrm{m\,s^{-2}}\)</span> to reach his maximum speed of <span class="math inline">\(10\ \mathrm{m\,s^{-1}}\)</span>. He maintains this speed until he crosses the finish line. Which time does it take the sprinter to run the race?
+<div class="mc-options">
+<button class="mc-choice" data-choice="A">
+<strong>A</strong> <span class="math inline">\(8\ \mathrm{s}\)</span>
+</button>
+<button class="mc-choice" data-choice="B">
+<strong>B</strong> <span class="math inline">\(20\ \mathrm{s}\)</span>
+</button>
+<button class="mc-choice" data-choice="C">
+<strong>C</strong> <span class="math inline">\(22\ \mathrm{s}\)</span>
+</button>
+<button class="mc-choice" data-choice="D">
+<strong>D</strong> <span class="math inline">\(40\ \mathrm{s}\)</span>
+</button>
+</div>
+<button class="check-answer">
+Check answer
+</button>
+<p class="mc-feedback">
+</p>
+</section>
+<section id="example-19-2.1-mc-hard-q7" class="level3 question-card mc-question" data-answer="D">
+<h3 class="anchored" data-anchor-id="example-19-2.1-mc-hard-q7">Example 19 · 2.1 MC Hard Q7</h3>
+In order that a train can stop safely, it will always pass a signal showing a yellow light before it reaches a signal showing a red light. Drivers apply the brake at the yellow light and this results in a uniform deceleration to stop exactly at the red light. The distance between the red and yellow lights is <span class="math inline">\(x\)</span>. What must be the minimum distance between the lights if the train speed is increased by <span class="math inline">\(25\%\)</span>, without changing the deceleration of the trains?
+<div class="mc-options">
+<button class="mc-choice" data-choice="A">
+<strong>A</strong> <span class="math inline">\(1.20x\)</span>
+</button>
+<button class="mc-choice" data-choice="B">
+<strong>B</strong> <span class="math inline">\(1.25x\)</span>
+</button>
+<button class="mc-choice" data-choice="C">
+<strong>C</strong> <span class="math inline">\(1.44x\)</span>
+</button>
+<button class="mc-choice" data-choice="D">
+<strong>D</strong> <span class="math inline">\(1.56x\)</span>
+</button>
+</div>
+<button class="check-answer">
+Check answer
+</button>
+<p class="mc-feedback">
+</p>
+</section>
+<section id="example-20-2.1-mc-hard-q9" class="level3 question-card mc-question" data-answer="B">
+<h3 class="anchored" data-anchor-id="example-20-2.1-mc-hard-q9">Example 20 · 2.1 MC Hard Q9</h3>
+An aeroplane travels at an average speed of <span class="math inline">\(700\ \mathrm{km\,h^{-1}}\)</span> on an outward flight and at <span class="math inline">\(300\ \mathrm{km\,h^{-1}}\)</span> on the return flight over the same distance. What is the average speed of the whole flight?
+<div class="mc-options">
+<button class="mc-choice" data-choice="A">
+<strong>A</strong> <span class="math inline">\(400\ \mathrm{km\,h^{-1}}\)</span>
+</button>
+<button class="mc-choice" data-choice="B">
+<strong>B</strong> <span class="math inline">\(420\ \mathrm{km\,h^{-1}}\)</span>
+</button>
+<button class="mc-choice" data-choice="C">
+<strong>C</strong> <span class="math inline">\(480\ \mathrm{km\,h^{-1}}\)</span>
+</button>
+<button class="mc-choice" data-choice="D">
+<strong>D</strong> <span class="math inline">\(500\ \mathrm{km\,h^{-1}}\)</span>
+</button>
+</div>
+<button class="check-answer">
+Check answer
+</button>
+<p class="mc-feedback">
+</p>
+</section>
+<script>
+(() => {
+  const explanations = [
+    ['C', '<li>Both objects start at X and finish at Z, so they have the same displacement.</li><li>The second object follows a longer path and takes a different time, so distance, average speed and average velocity are not necessarily equal.</li>'],
+    ['A', '<li>For a body released from rest, <em>h</em> = ½<em>gt</em><sup>2</sup>.</li><li>Measuring height <em>h</em> and fall time <em>t</em> gives <em>g</em> = 2<em>h</em>/<em>t</em><sup>2</sup>; mass and weight are not required.</li>'],
+    ['D', '<li>Acceleration is the rate of change of velocity.</li><li>It is therefore the gradient of a velocity-time graph.</li>'],
+    ['C', '<li>Displacement equals the signed area under a velocity-time graph.</li><li>Adding the geometric areas over the first five seconds gives 50 m.</li>'],
+    ['D', '<li>The gradient of a distance-time graph is speed.</li><li>The changing gradient shows that the speed changes.</li>'],
+    ['D', '<li>Time to the highest point is <em>u</em>/<em>g</em> = 7.1/1.62 = 4.38 s.</li><li>The return time is twice this value: 8.77 s ≈ 8.8 s.</li>'],
+    ['C', '<li>At maximum height, <em>v</em> = 0.</li><li>Using <em>v</em><sup>2</sup> = <em>u</em><sup>2</sup> + 2<em>as</em>: 0 = 1.5<sup>2</sup> − 2<em>a</em>(0.045).</li><li><em>a</em> = 25 m s<sup>−2</sup>.</li>'],
+    ['D', '<li>Horizontal distance is <em>s</em><sub>x</sub> = <em>vt</em>.</li><li>Vertical distance is <em>s</em><sub>y</sub> = ½<em>gt</em><sup>2</sup>.</li><li>The ratio is <em>vt</em>/(½<em>gt</em><sup>2</sup>) = 2<em>v</em>/(<em>gt</em>).</li>'],
+    ['C', '<li>For the same fall distance, <em>s</em> = ½<em>gt</em><sup>2</sup>.</li><li>Reducing <em>g</em> by a factor of 6 increases time by √6, so the Moon time is <em>t</em>√6.</li>'],
+    ['A', '<li>With no air resistance, horizontal acceleration is zero and horizontal velocity is constant.</li><li>Gravity produces a constant vertical acceleration downward.</li>'],
+    ['D', '<li>First train: <em>s</em> = 20<em>t</em>.</li><li>Second train: <em>s</em> = ½(1.0)<em>t</em><sup>2</sup>.</li><li>Equating distances gives 20<em>t</em> = 0.5<em>t</em><sup>2</sup>, so <em>t</em> = 40 s.</li>'],
+    ['A', '<li>Maximum acceleration is the steepest gradient of the speed-time graph.</li><li>The steepest section gives approximately Δ<em>v</em>/Δ<em>t</em> ≈ 3 m s<sup>−2</sup>.</li>'],
+    ['D', '<li>Final speed is one tenth of the speed of light: about 3.0 × 10<sup>7</sup> m s<sup>−1</sup>.</li><li>Using <em>v</em><sup>2</sup> = <em>u</em><sup>2</sup> + 2<em>as</em> with <em>s</em> = 0.010 m gives <em>a</em> ≈ 4.5 × 10<sup>16</sup> m s<sup>−2</sup>.</li>'],
+    ['C', '<li>Initial vertical velocity is <em>u</em> sin α and changes by −<em>gt</em>.</li><li>Horizontal velocity remains <em>u</em> cos α because horizontal acceleration is zero.</li>'],
+    ['D', '<li>A, B and C are valid forms of the constant-acceleration equations.</li><li>(<em>v</em> − <em>u</em>)<em>t</em>/2 equals ½<em>at</em><sup>2</sup> and omits the initial-displacement contribution <em>ut</em>.</li>'],
+    ['C', '<li>At maximum height, vertical velocity is zero.</li><li>0 = (<em>v</em> sin α)<sup>2</sup> − 2<em>gH</em>, so <em>H</em> = (<em>v</em> sin α)<sup>2</sup>/(2<em>g</em>).</li>'],
+    ['C', '<li>From release to each marker: <em>s</em> = ½<em>at</em><sup>2</sup>.</li><li>The marker separation is <em>h</em> = ½<em>a</em>(<em>t</em><sub>2</sub><sup>2</sup> − <em>t</em><sub>1</sub><sup>2</sup>).</li><li>Therefore <em>a</em> = 2<em>h</em>/(<em>t</em><sub>2</sub><sup>2</sup> − <em>t</em><sub>1</sub><sup>2</sup>).</li>'],
+    ['C', '<li>Time accelerating to 10 m s<sup>−1</sup>: <em>t</em> = 10/2.5 = 4 s.</li><li>Distance during acceleration: ½(2.5)(4<sup>2</sup>) = 20 m.</li><li>The remaining 180 m takes 18 s, giving a total of 22 s.</li>'],
+    ['D', '<li>For unchanged deceleration, stopping distance is proportional to speed squared.</li><li>New distance = (1.25)<sup>2</sup><em>x</em> = 1.5625<em>x</em> ≈ 1.56<em>x</em>.</li>'],
+    ['B', '<li>Average speed is total distance divided by total time, not the arithmetic mean of the two speeds.</li><li>For equal outward and return distances: <em>v</em><sub>avg</sub> = 2(700)(300)/(700 + 300) = 420 km h<sup>−1</sup>.</li>']
+  ];
+
+  const install = () => {
+    document.querySelectorAll('.mc-question').forEach((card, index) => {
+      if (!explanations[index] || card.querySelector('.mc-explanation')) return;
+      const [answer, points] = explanations[index];
+      const details = document.createElement('details');
+      details.className = 'answer-panel mc-explanation';
+      details.innerHTML = `<summary>Show answer explanation</summary><p><strong>Correct answer: ${answer}</strong></p><ul>${points}</ul>`;
+      card.appendChild(details);
+    });
+  };
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', install);
+  else install();
+})();
+</script>
+</section>
+<section id="structured-questions" class="level2">
+<h2 class="anchored" data-anchor-id="structured-questions">Structured Questions</h2>
+<p>每道题均按原题的子题结构保留；连续小题使用独立列表显示。</p>
+<section id="easy-4-questions" class="level4">
+<h4 class="anchored" data-anchor-id="easy-4-questions">Easy · 4 questions</h4>
+</section>
+<section id="example-1-distance-displacement-speed-and-velocity-2.1-sq-easy-q1a" class="level3 question-card">
+<h3 class="anchored" data-anchor-id="example-1-distance-displacement-speed-and-velocity-2.1-sq-easy-q1a">Example 1 · Distance, displacement, speed and velocity · 2.1 SQ Easy Q1(a)</h3>
+<p>State the difference between:</p>
+<ol class="subparts" type="i">
+<li>
+distance and displacement;
+</li>
+<li>
+speed and velocity.
+</li>
+</ol>
+<p><code>[4 marks]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<p><strong>(i) Distance and displacement</strong></p>
+<ul>
+<li>Distance is the total path length travelled and is a scalar. <code>[1]</code></li>
+<li>Displacement is the change in position in a specified direction and is a vector. <code>[1]</code></li>
+</ul>
+<p><strong>(ii) Speed and velocity</strong></p>
+<ul>
+<li>Speed is distance travelled per unit time and is a scalar. <code>[1]</code></li>
+<li>Velocity is the rate of change of displacement and is a vector. <code>[1]</code></li>
+</ul>
+</details>
+</section>
+<section id="example-2-scalars-and-vectors-2.1-sq-easy-q2a" class="level3 question-card">
+<h3 class="anchored" data-anchor-id="example-2-scalars-and-vectors-2.1-sq-easy-q2a">Example 2 · Scalars and vectors · 2.1 SQ Easy Q2(a)</h3>
+<p>Place ticks in the table to indicate which of the quantities are vectors and which are scalars.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th></th>
+<th>velocity</th>
+<th>speed</th>
+<th>distance</th>
+<th>displacement</th>
+<th>acceleration</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>vector</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>scalar</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><code>[2 marks]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<ul>
+<li><strong>Vectors:</strong> velocity, displacement and acceleration. <code>[1]</code></li>
+<li><strong>Scalars:</strong> speed and distance. <code>[1]</code></li>
+</ul>
+</details>
+</section>
+<section id="example-3-uniform-acceleration-and-suvat-2.1-sq-easy-q2b" class="level3 question-card">
+<h3 class="anchored" data-anchor-id="example-3-uniform-acceleration-and-suvat-2.1-sq-easy-q2b">Example 3 · Uniform acceleration and SUVAT · 2.1 SQ Easy Q2(b)</h3>
+<p>Two of the equations of uniformly accelerated motion are</p>
+<p><span class="math display">\[s=ut+\frac12at^2\]</span> <span class="math display">\[v^2=u^2+2as.\]</span></p>
+<p>State:</p>
+<ol class="subparts" type="i">
+<li>
+the definition of uniform acceleration;
+</li>
+<li>
+the two other equations of motion that can be used to derive the above equations.
+</li>
+</ol>
+<p><code>[3 marks]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<p><strong>(i)</strong></p>
+<ul>
+<li>Uniform acceleration means that velocity changes by equal amounts in equal time intervals. <code>[1]</code></li>
+</ul>
+<p><strong>(ii)</strong></p>
+<ul>
+<li><span class="math inline">\(v=u+at\)</span>. <code>[1]</code></li>
+<li><span class="math inline">\(s=\dfrac{u+v}{2}t\)</span>. <code>[1]</code></li>
+</ul>
+</details>
+</section>
+<section id="example-4-stone-dropped-into-a-well-2.1-sq-easy-q3a-b" class="level3 question-card">
+<h3 class="anchored" data-anchor-id="example-4-stone-dropped-into-a-well-2.1-sq-easy-q3a-b">Example 4 · Stone dropped into a well · 2.1 SQ Easy Q3(a)-(b)</h3>
+<p>A student drops a stone into a well and measures the time it takes to hear the stone splash at the bottom.</p>
+<ol class="subparts" type="a">
+<li>
+Explain how this measurement of time can be used to find the depth of the well. <code>[3 marks]</code>
+</li>
+<li>
+It takes <span class="math inline">\(3.2\ \mathrm{s}\)</span> for the stone to drop from rest and splash into the water at the bottom. Calculate the speed of the stone when it hits the water. <code>[2 marks]</code>
+</li>
+</ol>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<p><strong>(a)</strong></p>
+<ul>
+<li>Treat the stone as starting from rest and accelerating uniformly at <span class="math inline">\(g\)</span>. <code>[1]</code></li>
+<li>Use <span class="math inline">\(s=ut+\frac12gt^2\)</span> with <span class="math inline">\(u=0\)</span>. <code>[1]</code></li>
+<li>Hence depth <span class="math inline">\(s=\frac12gt^2\)</span>; if the measured time includes the sound’s return time, correct for that before substitution. <code>[1]</code></li>
+</ul>
+<p><strong>(b)</strong></p>
+<ul>
+<li><span class="math inline">\(v=u+gt=0+9.81(3.2)\)</span>. <code>[1]</code></li>
+<li><span class="math inline">\(v=31.4\ \mathrm{m\,s^{-1}}\approx31\ \mathrm{m\,s^{-1}}\)</span> downward. <code>[1]</code></li>
+</ul>
+</details>
+</section>
+<section id="medium-3-questions" class="level4">
+<h4 class="anchored" data-anchor-id="medium-3-questions">Medium · 3 questions</h4>
+</section>
+<section id="example-5-projectile-motion-to-a-wall-2.1-sq-medium-q1" class="level3 question-card">
+<h3 class="anchored" data-anchor-id="example-5-projectile-motion-to-a-wall-2.1-sq-medium-q1">Example 5 · Projectile motion to a wall · 2.1 SQ Medium Q1</h3>
+<p><strong>(a)</strong> Define acceleration. <code>[1 mark]</code></p>
+<p><strong>(b)</strong> A ball is kicked from horizontal ground towards a vertical wall, as shown in Fig. 1.1. The horizontal distance between the initial position of the ball and the base of the wall is <span class="math inline">\(24\ \mathrm{m}\)</span>. The ball is kicked with an initial velocity <span class="math inline">\(v\)</span> at an angle of <span class="math inline">\(28^\circ\)</span> to the horizontal. The ball hits the top of the wall after a time of <span class="math inline">\(1.5\ \mathrm{s}\)</span>. Air resistance is negligible.</p>
+<p><img src="../assets/questions/kinematics/sq-medium-q1-diagram.webp" class="question-figure img-fluid" alt="Original ball, wall and projectile-path diagram extracted from the PDF"></p>
+<ol class="subparts" type="i">
+<li>
+Calculate the initial horizontal component <span class="math inline">\(v_x\)</span> of the velocity of the ball. <code>[1 mark]</code>
+</li>
+<li>
+Show that the initial vertical component <span class="math inline">\(v_y\)</span> of the velocity of the ball is <span class="math inline">\(8.5\ \mathrm{m\,s^{-1}}\)</span>. <code>[2 marks]</code>
+</li>
+<li>
+Calculate the time taken for the ball to reach its maximum height above the ground. <code>[2 marks]</code>
+</li>
+<li>
+The ball is kicked at time <span class="math inline">\(t=0\)</span>. Assume that the vertical component <span class="math inline">\(v_y\)</span> of the velocity of the ball is positive in the upwards direction. On Fig. 1.2, sketch the variation with time <span class="math inline">\(t\)</span> of <span class="math inline">\(v_y\)</span> for the time until the ball hits the wall. <code>[2 marks]</code>
+</li>
+</ol>
+<p><img src="../assets/questions/kinematics/sq-medium-q1-graph.webp" class="question-figure img-fluid" alt="Original blank vertical-velocity-time graph extracted from the PDF"></p>
+<p><strong>(c)</strong></p>
+<ol class="subparts" type="i">
+<li>
+Calculate the maximum height above the ground of the ball in (b). <code>[2 marks]</code>
+</li>
+<li>
+The maximum gravitational potential energy of the ball above the ground is <span class="math inline">\(22\ \mathrm{J}\)</span>. Calculate the mass of the ball. <code>[2 marks]</code>
+</li>
+</ol>
+<p><strong>(d)</strong> A ball of greater mass is kicked with the same velocity as the ball in (b). Air resistance is still negligible. State and explain the effect, if any, of the increased mass on the time taken by the ball to reach its maximum height. <code>[1 mark]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<p><strong>(a)</strong></p>
+<ul>
+<li>Acceleration is the rate of change of velocity. <code>[1]</code></li>
+</ul>
+<p><strong>(b)(i)</strong></p>
+<ul>
+<li>Horizontal velocity is constant, so <span class="math inline">\(v_x=24/1.5=16\ \mathrm{m\,s^{-1}}\)</span>. <code>[1]</code></li>
+</ul>
+<p><strong>(b)(ii)</strong></p>
+<ul>
+<li><span class="math inline">\(\tan28^\circ=v_y/v_x\)</span>. <code>[1]</code></li>
+<li><span class="math inline">\(v_y=16\tan28^\circ=8.5\ \mathrm{m\,s^{-1}}\)</span>. <code>[1]</code></li>
+</ul>
+<p><strong>(b)(iii)</strong></p>
+<ul>
+<li>At maximum height, vertical velocity is zero. <code>[1]</code></li>
+<li><span class="math inline">\(t=v_y/g=8.5/9.81=0.87\ \mathrm{s}\)</span>. <code>[1]</code></li>
+</ul>
+<p><strong>(b)(iv)</strong></p>
+<ul>
+<li>Draw a straight line with gradient <span class="math inline">\(-g\)</span>. <code>[1]</code></li>
+<li>It starts at <span class="math inline">\(+8.5\ \mathrm{m\,s^{-1}}\)</span> and reaches about <span class="math inline">\(-6.2\ \mathrm{m\,s^{-1}}\)</span> at <span class="math inline">\(1.5\ \mathrm{s}\)</span>. <code>[1]</code></li>
+</ul>
+<p><strong>(c)(i)</strong></p>
+<ul>
+<li><span class="math inline">\(0=8.5^2-2gH\)</span>. <code>[1]</code></li>
+<li><span class="math inline">\(H=3.7\ \mathrm{m}\)</span>. <code>[1]</code></li>
+</ul>
+<p><strong>(c)(ii)</strong></p>
+<ul>
+<li><span class="math inline">\(E_p=mgH\)</span>, so <span class="math inline">\(m=22/(9.81\times3.7)\)</span>. <code>[1]</code></li>
+<li><span class="math inline">\(m\approx0.61\ \mathrm{kg}\)</span>. <code>[1]</code></li>
+</ul>
+<p><strong>(d)</strong></p>
+<ul>
+<li>There is no effect: gravitational acceleration and the time to maximum height are independent of mass when air resistance is negligible. <code>[1]</code></li>
+</ul>
+</details>
+</section>
+<section id="example-6-horizontal-projection-from-a-cliff-2.1-sq-medium-q3" class="level3 question-card">
+<h3 class="anchored" data-anchor-id="example-6-horizontal-projection-from-a-cliff-2.1-sq-medium-q3">Example 6 · Horizontal projection from a cliff · 2.1 SQ Medium Q3</h3>
+<p>A ball is projected horizontally at <span class="math inline">\(27\ \mathrm{m\,s^{-1}}\)</span> from a vertical cliff. It travels a horizontal distance of <span class="math inline">\(40\ \mathrm{m}\)</span> before hitting the ground. Assume that air resistance is negligible.</p>
+<p><img src="../assets/questions/kinematics/sq-medium-q3-diagram.webp" class="question-figure img-fluid" alt="Original horizontal projection from a cliff diagram extracted from the PDF"></p>
+<ol class="subparts" type="a">
+<li>
+Calculate the vertical velocity of the ball just before it hits the ground. <code>[4 marks]</code>
+</li>
+<li>
+Calculate the height of the cliff. <code>[2 marks]</code>
+</li>
+<li>
+Sketch the graphs to show how the horizontal and vertical components of the velocity of the ball, <span class="math inline">\(v_x\)</span> and <span class="math inline">\(v_y\)</span>, change with time <span class="math inline">\(t\)</span> just before the ball hits the ground. Label any appropriate values on the axes. <code>[3 marks]</code>
+</li>
+<li>
+Calculate the resultant velocity of the ball just before it hits the ground. <code>[2 marks]</code>
+</li>
+</ol>
+<p><img src="../assets/questions/kinematics/sq-medium-q3-graph.webp" class="question-figure img-fluid" alt="Original blank component-velocity graph axes extracted from the PDF"></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<p><strong>(a)</strong></p>
+<ul>
+<li>Horizontal velocity is constant, so <span class="math inline">\(t=40/27=1.48\ \mathrm{s}\)</span>. <code>[2]</code></li>
+<li><span class="math inline">\(v_y=gt=9.81(1.48)=14.5\ \mathrm{m\,s^{-1}}\)</span> downward. <code>[2]</code></li>
+</ul>
+<p><strong>(b)</strong></p>
+<ul>
+<li><span class="math inline">\(h=\frac12gt^2\)</span>. <code>[1]</code></li>
+<li><span class="math inline">\(h=\frac12(9.81)(1.48)^2=10.8\ \mathrm{m}\)</span>. <code>[1]</code></li>
+</ul>
+<p><strong>(c)</strong></p>
+<ul>
+<li><span class="math inline">\(v_x\)</span> is a horizontal line at <span class="math inline">\(27\ \mathrm{m\,s^{-1}}\)</span>. <code>[1]</code></li>
+<li><span class="math inline">\(v_y\)</span> is a straight line of gradient <span class="math inline">\(-g\)</span>, from <span class="math inline">\(0\)</span> to <span class="math inline">\(-14.5\ \mathrm{m\,s^{-1}}\)</span>. <code>[2]</code></li>
+</ul>
+<p><strong>(d)</strong></p>
+<ul>
+<li><span class="math inline">\(v=\sqrt{27^2+14.5^2}\)</span>. <code>[1]</code></li>
+<li>Resultant speed <span class="math inline">\(\approx30.6\ \mathrm{m\,s^{-1}}\approx31\ \mathrm{m\,s^{-1}}\)</span>. <code>[1]</code></li>
+</ul>
+</details>
+</section>
+<section id="example-7-deriving-equations-of-motion-2.1-sq-medium-q4a" class="level3 question-card">
+<h3 class="anchored" data-anchor-id="example-7-deriving-equations-of-motion-2.1-sq-medium-q4a">Example 7 · Deriving equations of motion · 2.1 SQ Medium Q4(a)</h3>
+<p>A particle moves in a straight line with a constant acceleration <span class="math inline">\(a\)</span>. The initial velocity of the particle at <span class="math inline">\(t=0\)</span> is <span class="math inline">\(u\)</span>. After a further time <span class="math inline">\(t\)</span>, its velocity has increased to <span class="math inline">\(v\)</span>.</p>
+<ol class="subparts" type="i">
+<li>
+Using the definition of acceleration, show that <span class="math inline">\(v=u+at\)</span>. <code>[2 marks]</code>
+</li>
+<li>
+Using the definition of average velocity, show that <span class="math inline">\(s=ut+\frac12at^2\)</span>. <code>[3 marks]</code>
+</li>
+<li>
+Using these two equations, show that <span class="math inline">\(v^2=u^2+2as\)</span>. <code>[3 marks]</code>
+</li>
+</ol>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<p><strong>(i)</strong></p>
+<ul>
+<li><span class="math inline">\(a=(v-u)/t\)</span>. <code>[1]</code></li>
+<li>Rearranging gives <span class="math inline">\(v=u+at\)</span>. <code>[1]</code></li>
+</ul>
+<p><strong>(ii)</strong></p>
+<ul>
+<li>For constant acceleration, average velocity <span class="math inline">\(=(u+v)/2\)</span>, so <span class="math inline">\(s=(u+v)t/2\)</span>. <code>[1]</code></li>
+<li>Substitute <span class="math inline">\(v=u+at\)</span>. <code>[1]</code></li>
+<li><span class="math inline">\(s=\frac12[u+(u+at)]t=ut+\frac12at^2\)</span>. <code>[1]</code></li>
+</ul>
+<p><strong>(iii)</strong></p>
+<ul>
+<li>From <span class="math inline">\(v=u+at\)</span>, <span class="math inline">\(t=(v-u)/a\)</span>. <code>[1]</code></li>
+<li>Substitute into <span class="math inline">\(s=(u+v)t/2\)</span>. <code>[1]</code></li>
+<li><span class="math inline">\(s=(u+v)(v-u)/(2a)=(v^2-u^2)/(2a)\)</span>, hence <span class="math inline">\(v^2=u^2+2as\)</span>. <code>[1]</code></li>
+</ul>
+</details>
+</section>
+<section id="hard-3-questions" class="level4">
+<h4 class="anchored" data-anchor-id="hard-3-questions">Hard · 3 questions</h4>
+</section>
+<section id="example-8-fireworks-display-2.1-sq-hard-q1" class="level3 question-card">
+<h3 class="anchored" data-anchor-id="example-8-fireworks-display-2.1-sq-hard-q1">Example 8 · Fireworks display · 2.1 SQ Hard Q1</h3>
+<p>During a fireworks display, a firework is launched into the air and explodes once it reaches a maximum height of <span class="math inline">\(250\ \mathrm{m}\)</span>. The vertical component of the velocity at launch depends on both the initial velocity of the firework and the angle <span class="math inline">\(\theta\)</span> between the initial velocity and the horizontal. The maximum initial velocity a firework can be launched at is <span class="math inline">\(110\ \mathrm{m\,s^{-1}}\)</span>.</p>
+<ol class="subparts" type="i">
+<li>
+Calculate the initial launch velocity for a firework that is fired directly upwards. <code>[2 marks]</code>
+</li>
+<li>
+Show that the minimum launch angle between the initial velocity and the horizontal to reach <span class="math inline">\(250\ \mathrm{m}\)</span> is about <span class="math inline">\(40^\circ\)</span>. <code>[3 marks]</code>
+</li>
+</ol>
+<p><strong>(b)</strong> On Fig. 1.1, sketch the variation of angle <span class="math inline">\(\theta\)</span> with the initial velocity required for the firework to reach the maximum height of <span class="math inline">\(250\ \mathrm{m}\)</span>. Include values from (a) on the axes. <code>[4 marks]</code></p>
+<p><img src="../assets/questions/kinematics/sq-hard-q1b.webp" class="question-figure img-fluid" alt="Original launch-angle and initial-velocity axes extracted from the PDF"></p>
+<p><strong>(c)</strong> The length of the fuse within the firework is chosen to ensure it explodes just as it reaches its highest point above the ground. The firework is launched into the air at an angle of <span class="math inline">\(75^\circ\)</span> to the horizontal, as shown in Fig. 1.2. The firework contains a fuse with a burn rate of <span class="math inline">\(1.5\ \mathrm{cm\,s^{-1}}\)</span>. Determine the length of the fuse used in the firework. <code>[4 marks]</code></p>
+<p><img src="../assets/questions/kinematics/sq-hard-q1c.webp" class="question-figure img-fluid" alt="Original 75-degree firework trajectory diagram extracted from the PDF"></p>
+<p><strong>(d)</strong> During the display, one of the fireworks is lit but falls over before launching. When it launches, it leaves the ground with an initial velocity of <span class="math inline">\(75\ \mathrm{m\,s^{-1}}\)</span> at an angle of <span class="math inline">\(30^\circ\)</span> to the horizontal, as shown in Fig. 1.3. The firework moves in the direction of a hill. The side of the hill is inclined at <span class="math inline">\(8.5^\circ\)</span> to the horizontal. Deduce whether the firework ignites before it lands on the hillside. <code>[4 marks]</code></p>
+<p><img src="../assets/questions/kinematics/sq-hard-q1d.webp" class="question-figure img-fluid" alt="Original firework and hillside diagram extracted from the PDF"></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<p><strong>(a)(i)</strong></p>
+<ul>
+<li>At maximum height, <span class="math inline">\(v=0\)</span>, so <span class="math inline">\(0=u^2-2g(250)\)</span>. <code>[1]</code></li>
+<li><span class="math inline">\(u=70.0\ \mathrm{m\,s^{-1}}\)</span>. <code>[1]</code></li>
+</ul>
+<p><strong>(a)(ii)</strong></p>
+<ul>
+<li>Required vertical component is <span class="math inline">\(70.0\ \mathrm{m\,s^{-1}}\)</span>. <code>[1]</code></li>
+<li><span class="math inline">\(110\sin\theta=70.0\)</span>. <code>[1]</code></li>
+<li><span class="math inline">\(\theta=39.5^\circ\approx40^\circ\)</span>. <code>[1]</code></li>
+</ul>
+<p><strong>(b)</strong></p>
+<ul>
+<li>Draw a decreasing curve because <span class="math inline">\(u\sin\theta=70.0\)</span>. <code>[1]</code></li>
+<li>Include <span class="math inline">\((40^\circ,110\ \mathrm{m\,s^{-1}})\)</span> and <span class="math inline">\((90^\circ,70\ \mathrm{m\,s^{-1}})\)</span>. <code>[2]</code></li>
+<li>The curve approaches but does not meet the velocity axis. <code>[1]</code></li>
+</ul>
+<p><strong>(c)</strong></p>
+<ul>
+<li>At <span class="math inline">\(75^\circ\)</span>, the required launch speed is <span class="math inline">\(u=70.0/\sin75^\circ=72.5\ \mathrm{m\,s^{-1}}\)</span>. <code>[1]</code></li>
+<li>Time to maximum height <span class="math inline">\(=72.5/9.81=7.4\ \mathrm{s}\)</span>. <code>[2]</code></li>
+<li>Fuse length <span class="math inline">\(=1.5\times7.4=11.1\ \mathrm{cm}\)</span>. <code>[1]</code></li>
+</ul>
+<p><strong>(d)</strong></p>
+<ul>
+<li>Maximum height for the fallen firework <span class="math inline">\(=(75\sin30^\circ)^2/(2g)=71.7\ \mathrm{m}\)</span>. <code>[1]</code></li>
+<li>In <span class="math inline">\(7.4\ \mathrm{s}\)</span>, horizontal distance <span class="math inline">\(=75\cos30^\circ(7.4)=481\ \mathrm{m}\)</span>. <code>[1]</code></li>
+<li>Hill height there <span class="math inline">\(=481\tan8.5^\circ=71.9\ \mathrm{m}\)</span>. <code>[1]</code></li>
+<li>These heights are approximately equal, so the firework ignites just as it reaches the hillside. <code>[1]</code></li>
+</ul>
+</details>
+</section>
+<section id="example-9-stunt-motorcyclist-2.1-sq-hard-q2" class="level3 question-card">
+<h3 class="anchored" data-anchor-id="example-9-stunt-motorcyclist-2.1-sq-hard-q2">Example 9 · Stunt motorcyclist · 2.1 SQ Hard Q2</h3>
+<p>Fig. 1.1 shows a stunt motorcyclist descending down a ramp. The motorcyclist starts from rest at the top of the ramp at A and leaves the ramp at B horizontally. After leaving the ramp at B, the motorcyclist lands on the ground at C, which is <span class="math inline">\(6.4\ \mathrm{m}\)</span> away. At C, the motorcyclist lands with a resultant velocity of <span class="math inline">\(13.4\ \mathrm{m\,s^{-1}}\)</span> at an angle of <span class="math inline">\(29.5^\circ\)</span> with the horizontal. Calculate the initial velocity of the motorcyclist at B. Assume that air resistance is negligible. <code>[4 marks]</code></p>
+<p><img src="../assets/questions/kinematics/sq-hard-q2a.webp" class="question-figure img-fluid" alt="Original motorcyclist descending-ramp diagram extracted from the PDF"></p>
+<p>The motorcyclist practises a stunt on a different ramp inclined at <span class="math inline">\(25^\circ\)</span> and <span class="math inline">\(3\ \mathrm{m}\)</span> high. The other ramp is <span class="math inline">\(24\ \mathrm{m}\)</span> away and has a height of <span class="math inline">\(1\ \mathrm{m}\)</span>. Calculate the minimum initial velocity the motorcyclist requires in order to reach the other ramp. <code>[4 marks]</code></p>
+<p><img src="../assets/questions/kinematics/sq-hard-q2b.webp" class="question-figure img-fluid" alt="Original two-ramp diagram extracted from the PDF"></p>
+<p>The stunt motorcyclist’s ultimate goal is to jump across a river and land on the other side. The ramp is at an angle of <span class="math inline">\(25^\circ\)</span> to the horizontal and the height at the end of the ramp is <span class="math inline">\(3.0\ \mathrm{m}\)</span>. The width of the river is <span class="math inline">\(100\ \mathrm{m}\)</span>. The initial velocity of the motorcyclist is <span class="math inline">\(35\ \mathrm{m\,s^{-1}}\)</span>.</p>
+<p><img src="../assets/questions/kinematics/sq-hard-q2c.webp" class="question-figure img-fluid" alt="Original river-jump diagram extracted from the PDF"></p>
+<ol class="subparts" type="i">
+<li>
+Deduce whether the motorcyclist lands on the other side of the river. <code>[4 marks]</code>
+</li>
+<li>
+Explain how air resistance would affect the jump. <code>[3 marks]</code>
+</li>
+</ol>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<p><strong>(a)</strong></p>
+<ul>
+<li>Vertical component at C: <span class="math inline">\(v_y=13.4\sin29.5^\circ=6.6\ \mathrm{m\,s^{-1}}\)</span>. <code>[1]</code></li>
+<li>Since initial vertical velocity at B is zero, <span class="math inline">\(t=v_y/g=0.673\ \mathrm{s}\)</span>. <code>[1]</code></li>
+<li>Horizontal velocity <span class="math inline">\(u_x=6.4/0.673=9.5\ \mathrm{m\,s^{-1}}\)</span>. <code>[2]</code></li>
+</ul>
+<p><strong>(b)</strong></p>
+<ul>
+<li>Resolve launch velocity: <span class="math inline">\(u_x=u\cos25^\circ\)</span>, <span class="math inline">\(u_y=u\sin25^\circ\)</span>. <code>[1]</code></li>
+<li>Use the horizontal separation <span class="math inline">\(24\ \mathrm{m}\)</span> and vertical displacement <span class="math inline">\(-2\ \mathrm{m}\)</span>. <code>[1]</code></li>
+<li>Solving the horizontal and vertical equations gives <span class="math inline">\(t\approx1.64\ \mathrm{s}\)</span>. <code>[1]</code></li>
+<li>Minimum initial velocity <span class="math inline">\(u\approx16\ \mathrm{m\,s^{-1}}\)</span>. <code>[1]</code></li>
+</ul>
+<p><strong>(c)(i)</strong></p>
+<ul>
+<li><span class="math inline">\(u_x=35\cos25^\circ=31.7\ \mathrm{m\,s^{-1}}\)</span> and <span class="math inline">\(u_y=35\sin25^\circ=14.8\ \mathrm{m\,s^{-1}}\)</span>. <code>[1]</code></li>
+<li>Time to travel <span class="math inline">\(100\ \mathrm{m}\)</span> horizontally <span class="math inline">\(=100/31.7=3.155\ \mathrm{s}\)</span>. <code>[1]</code></li>
+<li>Vertical displacement <span class="math inline">\(=14.8(3.155)-\frac12(9.81)(3.155)^2=-2.13\ \mathrm{m}\)</span>. <code>[1]</code></li>
+<li>This is less than the <span class="math inline">\(3.0\ \mathrm{m}\)</span> ramp height, so the rider lands on the far side. <code>[1]</code></li>
+</ul>
+<p><strong>(c)(ii)</strong></p>
+<ul>
+<li>Air resistance opposes the rider’s motion. <code>[1]</code></li>
+<li>It reduces horizontal speed and range. <code>[1]</code></li>
+<li>The rider is therefore more likely to fall short of the far bank. <code>[1]</code></li>
+</ul>
+</details>
+</section>
+<section id="example-10-motion-close-to-the-moon-2.1-sq-hard-q3" class="level3 question-card">
+<h3 class="anchored" data-anchor-id="example-10-motion-close-to-the-moon-2.1-sq-hard-q3">Example 10 · Motion close to the Moon · 2.1 SQ Hard Q3</h3>
+<p>An object is released near the surface of the Moon at time <span class="math inline">\(t=0\)</span>. Fig. 1.1 shows the variation of displacement <span class="math inline">\(s\)</span> with time <span class="math inline">\(t\)</span> of the object from the point of release.</p>
+<p><img src="../assets/questions/kinematics/sq-hard-q3.webp" class="question-figure img-fluid" alt="Original displacement-time graph for an object close to the Moon extracted from the PDF"></p>
+<ol class="subparts" type="a">
+<li>
+State the significance of the negative values of <span class="math inline">\(s\)</span>, and state two assumptions about the motion of the object. <code>[3 marks]</code>
+</li>
+<li>
+Use the graph in Fig. 1.1 to determine a value for the acceleration of free fall close to the surface of the Moon. <code>[2 marks]</code>
+</li>
+<li>
+Use Fig. 1.1 to estimate the instantaneous velocity of the object when <span class="math inline">\(t=1.5\ \mathrm{s}\)</span>. <code>[3 marks]</code>
+</li>
+<li>
+On Fig. 1.1, sketch the variation of displacement with time <span class="math inline">\(t\)</span> if the same object was released close to the surface of the Earth instead. Describe and explain the features of your sketch. <code>[4 marks]</code>
+</li>
+</ol>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<p><strong>(a)</strong></p>
+<ul>
+<li>Negative displacement means motion below the release point, towards the Moon. <code>[1]</code></li>
+<li>Suitable assumptions: negligible air resistance and constant gravitational acceleration near the surface. <code>[2]</code></li>
+</ul>
+<p><strong>(b)</strong></p>
+<ul>
+<li>Read a displacement-time pair from the graph and use <span class="math inline">\(s=\frac12at^2\)</span>. <code>[1]</code></li>
+<li>This gives <span class="math inline">\(g_{\text{Moon}}\approx1.6\ \mathrm{m\,s^{-2}}\)</span>. <code>[1]</code></li>
+</ul>
+<p><strong>(c)</strong></p>
+<ul>
+<li>Draw a tangent at <span class="math inline">\(t=1.5\ \mathrm{s}\)</span>. <code>[1]</code></li>
+<li>Calculate its gradient, <span class="math inline">\(\Delta s/\Delta t\)</span>. <code>[1]</code></li>
+<li>Instantaneous velocity <span class="math inline">\(\approx-2.4\ \mathrm{m\,s^{-1}}\)</span>. <code>[1]</code></li>
+</ul>
+<p><strong>(d)</strong></p>
+<ul>
+<li>Draw a curve through the origin with the same negative direction but a much steeper gradient. <code>[2]</code></li>
+<li>Earth’s gravitational acceleration is larger, so displacement magnitude and speed increase more rapidly. <code>[2]</code></li>
+</ul>
+</details>
+</section>
+</section>
+<section id="章末自检" class="level2">
+<h2 class="anchored" data-anchor-id="章末自检">章末自检</h2>
+<section id="原始专题-pdf" class="level3">
+<h3 class="anchored" data-anchor-id="原始专题-pdf">原始专题 PDF</h3>
+<ul>
+<li><strong>2.1 Equations of Motion</strong>: <a href="../resources/original-papers/kinematics/2.1 Equations of Motion - C - Easy.pdf.pdf" target="_blank">MC Easy</a> · <a href="../resources/original-papers/kinematics/2.1 Equations of Motion - C - Medium.pdf.pdf" target="_blank">MC Medium</a> · <a href="../resources/original-papers/kinematics/2.1 Equations of Motion - C - Hard.pdf.pdf" target="_blank">MC Hard</a></li>
+<li><strong>2.1 Equations of Motion</strong>: <a href="../resources/original-papers/kinematics/2.1 Equations of Motion - SQ - Easy.pdf.pdf" target="_blank">SQ Easy</a> · <a href="../resources/original-papers/kinematics/2.1 Equations of Motion - SQ - Medium.pdf.pdf" target="_blank">SQ Medium</a> · <a href="../resources/original-papers/kinematics/2.1 Equations of Motion - SQ - Hard.pdf.pdf" target="_blank">SQ Hard</a></li>
+</ul>
+<p>Content basis: Cambridge International AS &amp; A Level Physics 9702 syllabus (2025-2027), section 2.1; local note <code>Note/2.1 Equations of Motion.pdf.pdf</code> and local topical past-paper packs under <code>PastPaper/Topical Past Papers/AS/2.1 Equations of Motion</code>.</p>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll(".done-toggle input").forEach((input) => {
+    const key = `cie-physics-${input.dataset.progress}`;
+    input.checked = localStorage.getItem(key) === "true";
+    input.closest(".question-card")?.classList.toggle("is-complete", input.checked);
+    input.addEventListener("change", () => {
+      localStorage.setItem(key, input.checked);
+      input.closest(".question-card")?.classList.toggle("is-complete", input.checked);
+    });
+  });
+
+  document.querySelectorAll(".mc-question").forEach((card) => {
+    const answer = card.dataset.answer;
+    const feedback = card.querySelector(".mc-feedback");
+    const check = card.querySelector(".check-answer");
+    let selected = localStorage.getItem(`cie-physics-${card.id}-choice`) || "";
+
+    const showSelection = () => {
+      card.querySelectorAll(".mc-choice").forEach((choice) => {
+        choice.classList.toggle("is-selected", choice.dataset.choice === selected);
+      });
+    };
+    showSelection();
+
+    card.querySelectorAll(".mc-choice").forEach((choice) => {
+      choice.addEventListener("click", () => {
+        selected = choice.dataset.choice;
+        localStorage.setItem(`cie-physics-${card.id}-choice`, selected);
+        feedback.textContent = "";
+        feedback.className = "mc-feedback";
+        showSelection();
+      });
+    });
+
+    check?.addEventListener("click", () => {
+      if (!selected) {
+        feedback.textContent = "Select an answer first.";
+        feedback.className = "mc-feedback is-pending";
+        return;
+      }
+      const correct = selected === answer;
+      feedback.textContent = correct ? "Correct." : `Not quite. The correct answer is ${answer}.`;
+      feedback.className = `mc-feedback ${correct ? "is-correct" : "is-incorrect"}`;
+    });
+  });
+});
+</script>
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "已复制");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "已复制");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../as-level/01-physical-quantities-and-units.html" class="pagination-link" aria-label="1 Physical quantities and units">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">1 Physical quantities and units</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../as-level/03-dynamics.html" class="pagination-link" aria-label="3 Dynamics">
+        <span class="nav-page-text">3 Dynamics</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>
