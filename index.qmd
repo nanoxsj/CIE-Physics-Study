@@ -1,0 +1,32 @@
+---
+title: "CIE Physics 学习页面"
+subtitle: "2025–2027 syllabus · 9702"
+---
+
+本网站按 Cambridge International AS & A Level Physics 9702 考纲组织。每一章把考纲、核心概念、例题和专题真题放在同一学习路径中。
+
+## 已完成内容
+
+::: {.topic-card}
+### [1 Physical quantities and units](as-level/01-physical-quantities-and-units.qmd)
+
+- 1.1 Physical quantities：数值、单位与数量级估算
+- 1.2 SI units：五个指定基本单位、导出单位、量纲齐次性及词头
+- 同一章节页面内的 Multiple Choice 与 Structured Questions；题目保持原始英文与图像，原始专题 PDF 可直接打开
+:::
+
+::: {.topic-card}
+### [3 Dynamics](as-level/03-dynamics.qmd)
+
+- Newton's laws、force and momentum、terminal velocity、momentum conservation and collisions
+- 题量扩展为 30 道 Multiple Choice 与 15 道完整 Structured Questions
+:::
+
+::: {.topic-card}
+### [2 Kinematics](as-level/02-kinematics.qmd)
+
+- 2.1 Equations of Motion：位移、速度与加速度；运动图像；SUVAT；自由落体与抛体运动
+- 同一章节页面内的 Multiple Choice 与 Structured Questions；原始专题 PDF 可直接打开
+:::
+
+后续 AS 与 A2 章节将沿用相同结构制作。

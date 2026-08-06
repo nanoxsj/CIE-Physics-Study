@@ -1,0 +1,205 @@
+---
+title: "2 Kinematics"
+subtitle: "2.1 Equations of Motion"
+---
+
+## Learning objectives
+
+By the end of this chapter, you should be able to:
+
+- distinguish distance from displacement and speed from velocity;
+- define acceleration and use a consistent sign convention;
+- interpret displacement-time, velocity-time and acceleration-time graphs;
+- select and apply the equations of uniformly accelerated motion;
+- analyse free fall and vertical motion under gravity;
+- resolve projectile motion into independent horizontal and vertical components;
+- obtain instantaneous values from graph gradients and use graph areas correctly.
+
+::: {.study-card}
+### 2.1.1 Distance, displacement, speed and velocity
+
+| Quantity | Definition | SI unit | Nature |
+|---|---|---|---|
+| distance | total length of the path travelled | m | scalar |
+| displacement $s$ | change in position in a specified direction | m | vector |
+| speed | rate of change of distance | m s$^{-1}$ | scalar |
+| velocity $v$ | rate of change of displacement | m s$^{-1}$ | vector |
+| acceleration $a$ | rate of change of velocity | m s$^{-2}$ | vector |
+
+Average speed and average velocity are not interchangeable:
+
+$$\text{average speed}=\frac{\text{total distance}}{\text{total time}},\qquad
+\text{average velocity}=\frac{\text{total displacement}}{\text{total time}}.$$
+
+A journey can have a non-zero average speed but zero average velocity, for example when an object returns to its starting point.
+:::
+
+::: {.study-card}
+### 2.1.2 Acceleration and sign conventions
+
+Acceleration is the rate of change of velocity:
+
+$$a=\frac{\Delta v}{\Delta t}=\frac{v-u}{t}.$$
+
+Acceleration can be caused by a change in speed, a change in direction, or both. A negative acceleration does not automatically mean that an object is slowing down; it means that the acceleration acts in the negative direction chosen for the calculation.
+
+Choose the positive direction before substituting values. For vertical motion, if upward is positive, then:
+
+- upward displacement and velocity are positive;
+- downward displacement and velocity are negative;
+- acceleration due to gravity is $a=-g$.
+
+Use $g=9.81\ \mathrm{m\,s^{-2}}$ unless the question specifies another value.
+:::
+
+::: {.formula-panel}
+### 2.1.3 Uniformly accelerated motion
+
+For constant acceleration only:
+
+$$v=u+at$$
+$$s=ut+\frac12at^2$$
+$$v^2=u^2+2as$$
+$$s=\frac{u+v}{2}t$$
+
+Here $u$ is initial velocity, $v$ is final velocity, $a$ is acceleration, $s$ is displacement and $t$ is time.
+
+| Missing quantity | Useful equation |
+|---|---|
+| $s$ | $v=u+at$ |
+| $v$ | $s=ut+\frac12at^2$ |
+| $t$ | $v^2=u^2+2as$ |
+| $a$ | $s=\frac{u+v}{2}t$ |
+
+Do not use these equations when acceleration varies. In that situation, use graphs, calculus, numerical data or an explicitly stated model.
+:::
+
+::: {.study-card}
+### 2.1.4 Motion graphs
+
+**Displacement-time graphs**
+
+- Gradient gives velocity.
+- A horizontal line represents zero velocity.
+- Increasing gradient means increasing speed.
+- The gradient of a tangent gives instantaneous velocity on a curve.
+
+**Velocity-time graphs**
+
+- Gradient gives acceleration.
+- Signed area between the graph and the time axis gives displacement.
+- Area below the time axis represents displacement in the negative direction.
+- Total distance is found by adding the magnitudes of all areas.
+
+**Acceleration-time graphs**
+
+- Signed area gives change in velocity.
+- A horizontal line represents constant acceleration, not constant velocity.
+
+Always read the axis label carefully: a speed-time graph cannot show direction, whereas a velocity-time graph can contain negative values.
+:::
+
+::: {.study-card}
+### 2.1.5 Free fall and vertical motion
+
+In free fall, gravity is the only significant force. Near the Earth's surface and with air resistance neglected, acceleration is constant and downward.
+
+At the highest point of a vertical launch:
+
+- instantaneous vertical velocity is zero;
+- acceleration is still $g$ downward;
+- the object immediately begins to gain downward velocity.
+
+For an object returning to its launch height with negligible air resistance, the time of ascent equals the time of descent and the final speed equals the launch speed, but the velocity has the opposite sign.
+:::
+
+::: {.study-card}
+### 2.1.6 Projectile motion
+
+Resolve the initial velocity $u$ at angle $\theta$ into components:
+
+$$u_x=u\cos\theta,\qquad u_y=u\sin\theta.$$
+
+With negligible air resistance:
+
+- horizontal acceleration is zero, so $v_x=u\cos\theta$ is constant;
+- vertical acceleration is $-g$, so $v_y=u\sin\theta-gt$;
+- horizontal and vertical motions have the same time $t$;
+- the resultant velocity is found from $v=\sqrt{v_x^2+v_y^2}$ and its direction from trigonometry.
+
+The curved trajectory is produced by constant horizontal velocity combined with uniformly accelerated vertical motion.
+:::
+
+::: {.study-card}
+### 2.1.7 Problem-solving checklist
+
+1. Draw a simple diagram and choose positive directions.
+2. List the known values of $u$, $v$, $a$, $s$ and $t$ with signs and units.
+3. For projectiles, separate horizontal and vertical information before calculating.
+4. Select an equation that contains the required quantity and avoids an unknown you do not have.
+5. Check whether the acceleration is genuinely constant.
+6. Check the final sign, unit and physical scale of the answer.
+:::
+
+## Multiple Choice
+
+题干、数据与选项均整理自原始专题 PDF。含图选择题只使用可从 PDF 独立提取的完整图像对象。
+
+{{< include 02-kinematics-mc.qmd >}}
+
+```{=html}
+<script>
+(() => {
+  const explanations = [
+    ['C', '<li>Both objects start at X and finish at Z, so they have the same displacement.</li><li>The second object follows a longer path and takes a different time, so distance, average speed and average velocity are not necessarily equal.</li>'],
+    ['A', '<li>For a body released from rest, <em>h</em> = ½<em>gt</em><sup>2</sup>.</li><li>Measuring height <em>h</em> and fall time <em>t</em> gives <em>g</em> = 2<em>h</em>/<em>t</em><sup>2</sup>; mass and weight are not required.</li>'],
+    ['D', '<li>Acceleration is the rate of change of velocity.</li><li>It is therefore the gradient of a velocity-time graph.</li>'],
+    ['C', '<li>Displacement equals the signed area under a velocity-time graph.</li><li>Adding the geometric areas over the first five seconds gives 50 m.</li>'],
+    ['D', '<li>The gradient of a distance-time graph is speed.</li><li>The changing gradient shows that the speed changes.</li>'],
+    ['D', '<li>Time to the highest point is <em>u</em>/<em>g</em> = 7.1/1.62 = 4.38 s.</li><li>The return time is twice this value: 8.77 s ≈ 8.8 s.</li>'],
+    ['C', '<li>At maximum height, <em>v</em> = 0.</li><li>Using <em>v</em><sup>2</sup> = <em>u</em><sup>2</sup> + 2<em>as</em>: 0 = 1.5<sup>2</sup> − 2<em>a</em>(0.045).</li><li><em>a</em> = 25 m s<sup>−2</sup>.</li>'],
+    ['D', '<li>Horizontal distance is <em>s</em><sub>x</sub> = <em>vt</em>.</li><li>Vertical distance is <em>s</em><sub>y</sub> = ½<em>gt</em><sup>2</sup>.</li><li>The ratio is <em>vt</em>/(½<em>gt</em><sup>2</sup>) = 2<em>v</em>/(<em>gt</em>).</li>'],
+    ['C', '<li>For the same fall distance, <em>s</em> = ½<em>gt</em><sup>2</sup>.</li><li>Reducing <em>g</em> by a factor of 6 increases time by √6, so the Moon time is <em>t</em>√6.</li>'],
+    ['A', '<li>With no air resistance, horizontal acceleration is zero and horizontal velocity is constant.</li><li>Gravity produces a constant vertical acceleration downward.</li>'],
+    ['D', '<li>First train: <em>s</em> = 20<em>t</em>.</li><li>Second train: <em>s</em> = ½(1.0)<em>t</em><sup>2</sup>.</li><li>Equating distances gives 20<em>t</em> = 0.5<em>t</em><sup>2</sup>, so <em>t</em> = 40 s.</li>'],
+    ['A', '<li>Maximum acceleration is the steepest gradient of the speed-time graph.</li><li>The steepest section gives approximately Δ<em>v</em>/Δ<em>t</em> ≈ 3 m s<sup>−2</sup>.</li>'],
+    ['D', '<li>Final speed is one tenth of the speed of light: about 3.0 × 10<sup>7</sup> m s<sup>−1</sup>.</li><li>Using <em>v</em><sup>2</sup> = <em>u</em><sup>2</sup> + 2<em>as</em> with <em>s</em> = 0.010 m gives <em>a</em> ≈ 4.5 × 10<sup>16</sup> m s<sup>−2</sup>.</li>'],
+    ['C', '<li>Initial vertical velocity is <em>u</em> sin α and changes by −<em>gt</em>.</li><li>Horizontal velocity remains <em>u</em> cos α because horizontal acceleration is zero.</li>'],
+    ['D', '<li>A, B and C are valid forms of the constant-acceleration equations.</li><li>(<em>v</em> − <em>u</em>)<em>t</em>/2 equals ½<em>at</em><sup>2</sup> and omits the initial-displacement contribution <em>ut</em>.</li>'],
+    ['C', '<li>At maximum height, vertical velocity is zero.</li><li>0 = (<em>v</em> sin α)<sup>2</sup> − 2<em>gH</em>, so <em>H</em> = (<em>v</em> sin α)<sup>2</sup>/(2<em>g</em>).</li>'],
+    ['C', '<li>From release to each marker: <em>s</em> = ½<em>at</em><sup>2</sup>.</li><li>The marker separation is <em>h</em> = ½<em>a</em>(<em>t</em><sub>2</sub><sup>2</sup> − <em>t</em><sub>1</sub><sup>2</sup>).</li><li>Therefore <em>a</em> = 2<em>h</em>/(<em>t</em><sub>2</sub><sup>2</sup> − <em>t</em><sub>1</sub><sup>2</sup>).</li>'],
+    ['C', '<li>Time accelerating to 10 m s<sup>−1</sup>: <em>t</em> = 10/2.5 = 4 s.</li><li>Distance during acceleration: ½(2.5)(4<sup>2</sup>) = 20 m.</li><li>The remaining 180 m takes 18 s, giving a total of 22 s.</li>'],
+    ['D', '<li>For unchanged deceleration, stopping distance is proportional to speed squared.</li><li>New distance = (1.25)<sup>2</sup><em>x</em> = 1.5625<em>x</em> ≈ 1.56<em>x</em>.</li>'],
+    ['B', '<li>Average speed is total distance divided by total time, not the arithmetic mean of the two speeds.</li><li>For equal outward and return distances: <em>v</em><sub>avg</sub> = 2(700)(300)/(700 + 300) = 420 km h<sup>−1</sup>.</li>']
+  ];
+
+  const install = () => {
+    document.querySelectorAll('.mc-question').forEach((card, index) => {
+      if (!explanations[index] || card.querySelector('.mc-explanation')) return;
+      const [answer, points] = explanations[index];
+      const details = document.createElement('details');
+      details.className = 'answer-panel mc-explanation';
+      details.innerHTML = `<summary>Show answer explanation</summary><p><strong>Correct answer: ${answer}</strong></p><ul>${points}</ul>`;
+      card.appendChild(details);
+    });
+  };
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', install);
+  else install();
+})();
+</script>
+```
+
+## Structured Questions
+
+每道题均按原题的子题结构保留；连续小题使用独立列表显示。
+
+{{< include 02-kinematics-structured.qmd >}}
+
+## 章末自检
+
+### 原始专题 PDF
+
+- **2.1 Equations of Motion**: [MC Easy](../resources/original-papers/kinematics/2.1%20Equations%20of%20Motion%20-%20C%20-%20Easy.pdf.pdf){target="_blank"} · [MC Medium](../resources/original-papers/kinematics/2.1%20Equations%20of%20Motion%20-%20C%20-%20Medium.pdf.pdf){target="_blank"} · [MC Hard](../resources/original-papers/kinematics/2.1%20Equations%20of%20Motion%20-%20C%20-%20Hard.pdf.pdf){target="_blank"}
+- **2.1 Equations of Motion**: [SQ Easy](../resources/original-papers/kinematics/2.1%20Equations%20of%20Motion%20-%20SQ%20-%20Easy.pdf.pdf){target="_blank"} · [SQ Medium](../resources/original-papers/kinematics/2.1%20Equations%20of%20Motion%20-%20SQ%20-%20Medium.pdf.pdf){target="_blank"} · [SQ Hard](../resources/original-papers/kinematics/2.1%20Equations%20of%20Motion%20-%20SQ%20-%20Hard.pdf.pdf){target="_blank"}
+
+Content basis: Cambridge International AS & A Level Physics 9702 syllabus (2025-2027), section 2.1; local note `Note/2.1 Equations of Motion.pdf.pdf` and local topical past-paper packs under `PastPaper/Topical Past Papers/AS/2.1 Equations of Motion`.

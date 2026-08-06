@@ -1,0 +1,375 @@
+---
+title: "1 Physical quantities and units"
+subtitle: "1.1–1.4 · Quantities, units, uncertainties, scalars and vectors"
+---
+
+## Learning objectives
+
+By the end of this chapter, you should be able to:
+
+- state that every physical quantity consists of a numerical value and a unit;
+- make sensible order-of-magnitude estimates for familiar physical quantities;
+- recall the required SI base quantities and base units;
+- derive the base units of force, energy, power, pressure, density and potential difference;
+- use dimensional homogeneity to test whether an equation could be correct;
+- convert accurately between SI prefixes, including squared and cubed units;
+- distinguish random error, systematic error, accuracy, precision and resolution;
+- express absolute, fractional and percentage uncertainties;
+- combine uncertainties in sums, differences, products, quotients and powers;
+- distinguish scalar and vector quantities and resolve coplanar vectors into components.
+
+::: {.study-card}
+### Chapter map
+
+| Section | Main ideas | Typical examination task |
+|---|---|---|
+| 1.1 Physical quantities | values, units and estimates | choose a realistic order of magnitude |
+| 1.2 SI units | base units, derived units and prefixes | reduce an unfamiliar unit to SI base units |
+| 1.3 Errors and uncertainties | measurement quality and uncertainty propagation | quote a result with a justified uncertainty |
+| 1.4 Scalars and vectors | direction, components and resultants | construct or calculate a vector resultant |
+
+These ideas are used throughout the whole Physics course. Unit checks, sign conventions and uncertainty rules should become part of every calculation rather than being treated as isolated topics.
+:::
+
+::: {.study-card}
+### Reporting a physical measurement
+
+A complete measured result should contain:
+
+1. a numerical value;
+2. an appropriate SI unit;
+3. a sensible number of significant figures;
+4. an uncertainty when the experiment or question requires one.
+
+For example,
+
+$$L=(12.6\pm0.1)\ \mathrm{cm}$$
+
+states both the best estimate and the absolute uncertainty. The uncertainty is normally written to one significant figure, or two when its first digit is 1 or 2. The measured value is rounded to the same decimal place as the uncertainty.
+
+Do not confuse decimal places with significant figures: $0.00450$ has three significant figures but five decimal places.
+:::
+
+::: {.study-card}
+### Measurement strategy
+
+Before collecting or processing data:
+
+- choose an instrument whose range and resolution suit the quantity;
+- check for zero error and calibration;
+- avoid parallax by viewing a scale normally;
+- repeat readings when random variation is expected;
+- measure a large number of small repeated objects, then divide, when one object is too small to measure accurately;
+- record raw readings before averaging so that spread and anomalous values remain visible.
+
+An improved instrument can reduce uncertainty from limited resolution, but it cannot automatically remove poor technique, uncontrolled variables or systematic bias.
+:::
+
+::: {.callout-tip}
+### A reliable calculation routine
+
+1. Write the defining equation. 2. Convert every value to compatible units. 3. Substitute without premature rounding. 4. Check dimensions. 5. Round the final value appropriately. 6. Add the unit and uncertainty.
+:::
+
+## 1.1 Physical quantities
+
+### 数值和单位缺一不可
+
+::: {.study-card}
+一个**物理量**必须同时说明数值大小和单位。例如：
+
+- $v = 3.0\ \mathrm{m\,s^{-1}}$ 表示速度；
+- $V = 3.0\ \mathrm{m^3}$ 表示体积；
+- $V = 3.0\ \mathrm{V}$ 表示电势差。
+
+同一个字母可以代表不同物理量；**单位给出物理意义的语境**。因此答案中不能只写“3.0”，也不能把单位混入定义中的物理量名称。
+:::
+
+### 合理估算：先判断数量级
+
+估算题通常考查你是否能选对合适的数量级和单位，而不是精确常数。先把情境换成熟悉的参照物，再做一位有效数字的计算。
+
+| Quantity | Useful estimate |
+|---|---:|
+| 成人质量 | $7\times10^1\ \mathrm{kg}$ |
+| 汽车质量 | $1\times10^3\ \mathrm{kg}$ |
+| 一天的时间 | $9\times10^4\ \mathrm{s}$ |
+| 空气中的声速 | $3\times10^2\ \mathrm{m\,s^{-1}}$ |
+| 普通灯泡功率 | $6\times10^1\ \mathrm{W}$ |
+| 大气压 | $1\times10^5\ \mathrm{Pa}$ |
+| 绿光波长 | $5\times10^{-7}\ \mathrm{m}$ |
+| 原子直径 | $1\times10^{-10}\ \mathrm{m}$ |
+
+::: {.callout-tip}
+### Estimate workflow
+
+1. 写出适用的关系式。2. 估算每一个量（带单位）。3. 用 SI 单位代入。4. 报告合理数量级，避免虚假的高精度。
+:::
+
+::: {.formula-panel}
+### Worked example: walking upstairs
+
+估算质量为 $70\ \mathrm{kg}$ 的人上升 $3\ \mathrm{m}$ 所需的能量。取 $g\approx10\ \mathrm{N\,kg^{-1}}$：
+
+$$
+\Delta E_\mathrm{p}=mgh\approx 70\times10\times3
+=2.1\times10^3\ \mathrm{J}.
+$$
+
+这个答案写成 $2\times10^3\ \mathrm{J}$ 同样合理；估算的重点是数量级。
+:::
+
+## 1.2 SI units
+
+### 考纲要求的五个 SI 基本量
+
+::: {.study-card}
+Cambridge 9702 在本课程中要求熟练使用以下五个基本量。SI 系统完整地还有两个基本量，但本课程的指定列表就是下表五项。
+
+| SI base quantity | SI base unit | Symbol |
+|---|---|---|
+| mass | kilogram | kg |
+| length | metre | m |
+| time | second | s |
+| electric current | ampere | A |
+| temperature | kelvin | K |
+:::
+
+### 从定义式推出导出单位
+
+不要死记所有单位。写出定义方程，再逐项换成基本单位即可。
+
+| Quantity | Definition | SI base units |
+|---|---|---|
+| force, $F$ | $F=ma$ | $\mathrm{kg\,m\,s^{-2}}$ |
+| energy, $E$ | $E=\tfrac12mv^2$ | $\mathrm{kg\,m^2\,s^{-2}}$ |
+| power, $P$ | $P=E/t$ | $\mathrm{kg\,m^2\,s^{-3}}$ |
+| pressure, $p$ | $p=F/A$ | $\mathrm{kg\,m^{-1}\,s^{-2}}$ |
+| density, $\rho$ | $\rho=m/V$ | $\mathrm{kg\,m^{-3}}$ |
+| potential difference, $V$ | $V=E/Q$ and $Q=It$ | $\mathrm{kg\,m^2\,s^{-3}\,A^{-1}}$ |
+
+::: {.unit-chain}
+For example: $\mathrm{Pa=N\,m^{-2}=(kg\,m\,s^{-2})m^{-2}=kg\,m^{-1}\,s^{-2}}$.
+:::
+
+### Homogeneity of physical equations
+
+一个正确的物理方程在等号两侧必须有相同的基本单位；这叫**量纲齐次**（homogeneous）。数值常数（如 $\tfrac12$）没有单位。
+
+::: {.formula-panel}
+### Example: check $p=\rho gh$
+
+左侧压强：
+
+$$[p]=\mathrm{Pa}=\mathrm{kg\,m^{-1}\,s^{-2}}.$$
+
+右侧：
+
+$$[\rho gh]=(\mathrm{kg\,m^{-3}})(\mathrm{m\,s^{-2}})(\mathrm{m})
+=\mathrm{kg\,m^{-1}\,s^{-2}}.$$
+
+两边相同，所以该方程的单位齐次。注意：齐次是方程成立的**必要条件**，但不证明方程一定正确。
+:::
+
+### SI prefixes
+
+| Prefix | Symbol | Factor |
+|---|:---:|---:|
+| tera | T | $10^{12}$ |
+| giga | G | $10^9$ |
+| mega | M | $10^6$ |
+| kilo | k | $10^3$ |
+| deci | d | $10^{-1}$ |
+| centi | c | $10^{-2}$ |
+| milli | m | $10^{-3}$ |
+| micro | $\mu$ | $10^{-6}$ |
+| nano | n | $10^{-9}$ |
+| pico | p | $10^{-12}$ |
+
+::: {.callout-warning}
+### Common traps
+
+- 前缀大小写有意义：$\,\mathrm{m}$ 是 milli，$\,\mathrm{M}$ 是 mega；$\,\mathrm{p}$ 是 pico。
+- 平方和立方单位要对换算因子同样乘方：$1\ \mathrm{cm^3}=10^{-6}\ \mathrm{m^3}$，不是 $10^{-2}\ \mathrm{m^3}$。
+- 先转换前缀，再按题目要求处理标准形式和有效数字。
+:::
+
+## 1.3 Errors and uncertainties
+
+### Error types, accuracy and precision
+
+::: {.study-card}
+
+| Term | Meaning | Main effect | How to reduce it |
+|---|---|---|---|
+| random error | Unpredictable variation between readings, for example due to judgement or changing conditions | Reduces **precision**; readings have a larger spread | Repeat readings and calculate a mean |
+| systematic error | A consistent bias from a faulty instrument or method | Reduces **accuracy**; all readings are shifted in the same direction | Recalibrate, correct a zero error, or improve the method |
+| zero error | An instrument reads non-zero when the true value is zero | A type of systematic error | Check before use and apply a correction |
+
+- **Accuracy**: how close a measurement is to the true value.
+- **Precision**: how close repeated readings are to one another. A single measurement cannot be described as precise.
+- **Resolution** is the smallest change an instrument can show. High resolution does not by itself guarantee accuracy.
+:::
+
+### Expressing uncertainty
+
+For a measurement written as $x\pm\Delta x$:
+
+$$
+\text{fractional uncertainty}=\frac{\Delta x}{x},\qquad
+\text{percentage uncertainty}=\frac{\Delta x}{x}\times100\%.
+$$
+
+::: {.formula-panel}
+### Finding an absolute uncertainty
+
+- Analogue scale reading: usually $\pm$ half the smallest division.
+- A measurement requiring two scale readings (for example a length from a ruler): at least $\pm$ one smallest division in total.
+- Digital display: usually $\pm$ one in the last displayed digit, unless stated otherwise.
+- Repeated readings: where appropriate, uncertainty $=$ half the range.
+
+Example: readings $12.55$, $12.45$ and $12.51\ \mathrm{cm}$ give a mean of about $12.50\ \mathrm{cm}$ and half-range uncertainty of $\pm0.05\ \mathrm{cm}$.
+:::
+
+### Combining uncertainties
+
+::: {.study-card}
+
+| Calculation | Rule |
+|---|---|
+| $z=x+y$ or $z=x-y$ | Add **absolute** uncertainties: $\Delta z=\Delta x+\Delta y$ |
+| $z=xy$ or $z=x/y$ | Add **percentage** (or fractional) uncertainties |
+| $z=x^n$ | Multiply the percentage (or fractional) uncertainty in $x$ by $n$ |
+
+For multiplication/division, calculate the resulting percentage uncertainty first; convert it to an absolute uncertainty only if the final answer needs to be written as $z\pm\Delta z$.
+:::
+
+::: {.formula-panel}
+### Worked examples
+
+1. $d_1=55.0\pm0.5\ \mathrm{cm}$ and $d_2=21.0\pm0.7\ \mathrm{cm}$:
+
+$$d_1-d_2=34.0\pm(0.5+0.7)=34.0\pm1.2\ \mathrm{cm}.$$
+
+2. $s=50.0\pm0.4\ \mathrm{m}$, $t=5.00\pm0.05\ \mathrm{s}$ and $v=s/t$:
+
+$$\frac{\Delta v}{v}=\frac{0.4}{50.0}+\frac{0.05}{5.00}=0.018=1.8\%.$$
+
+Since $v=10.0\ \mathrm{m\,s^{-1}}$, $\Delta v=0.018\times10.0=0.18\ \mathrm{m\,s^{-1}}$.
+:::
+
+## 1.4 Scalars and vectors
+
+### Scalar or vector?
+
+::: {.study-card}
+A **scalar** has magnitude only. A **vector** has magnitude and direction.
+
+| Scalars | Vectors |
+|---|---|
+| distance, speed, mass, time, energy, power, volume, density, pressure, charge, temperature | displacement, velocity, acceleration, force, momentum |
+
+The reliable test is not whether a quantity may be written with a plus or minus sign; vectors must obey vector addition and can be resolved into components. For example, electric current is treated as a scalar quantity in this course.
+:::
+
+### Adding and subtracting coplanar vectors
+
+::: {.formula-panel}
+### Triangle method
+
+To add $\mathbf{a}+\mathbf{b}$, draw $\mathbf{b}$ from the head of $\mathbf{a}$. The resultant goes from the tail of $\mathbf{a}$ to the head of $\mathbf{b}$.
+
+To subtract, rewrite $\mathbf{a}-\mathbf{b}$ as $\mathbf{a}+(-\mathbf{b})$: reverse the direction of $\mathbf{b}$ first, then add head-to-tail.
+
+The parallelogram method gives the same resultant: draw both vectors tail-to-tail and use the diagonal from the common tail.
+:::
+
+### Components of a vector
+
+For a vector $F$ at an angle $\theta$ above the positive horizontal:
+
+$$F_x=F\cos\theta,\qquad F_y=F\sin\theta.$$
+
+Choose signs from the direction. A component towards the left or downward is negative if right/up are defined as positive. If the angle is measured from the vertical, identify opposite and adjacent sides first rather than memorising a different rule.
+
+::: {.callout-tip}
+### Equilibrium check
+
+For coplanar forces in equilibrium, the resultant force is zero. Draw the vectors head-to-tail: they form a **closed vector triangle** (or closed polygon for more forces).
+:::
+
+## 专题真题
+
+### Multiple Choice
+
+{{< include 01-physical-quantities-and-units-mc.qmd >}}
+
+```{=html}
+<script>
+(() => {
+  const explanations = [
+    ['C', '<li>The kelvin (K) is the SI base unit of temperature.</li><li>Current is a physical quantity rather than a unit; gram is not the SI base unit of mass; volt is a derived unit.</li>'],
+    ['C', '<li>Convert the prefixes to powers of ten: n = 10<sup>−9</sup>, m = 10<sup>−3</sup>, k = 10<sup>3</sup>, M = 10<sup>6</sup>.</li><li>The increasing order is nJ, mJ, kJ, MJ.</li>'],
+    ['D', '<li>A fully grown woman has a mass of order 65 kg.</li><li><em>W</em> = <em>mg</em> ≈ 65 × 10 = 650 N.</li>'],
+    ['B', '<li>Force has magnitude and direction, so it is a vector.</li><li>Kinetic energy has magnitude only, so it is a scalar.</li>'],
+    ['B', '<li>Density requires mass and volume.</li><li>Use a top-pan balance for mass, a micrometer for wire diameter and a metre rule for wire length; these give the most accurate volume estimate.</li>'],
+    ['A', '<li>For a body released from rest, <em>h</em> = ½<em>gt</em><sup>2</sup>.</li><li>Height and fall time are therefore sufficient to calculate <em>g</em>.</li>'],
+    ['D', '<li>For addition or subtraction, add absolute uncertainties.</li><li>Δ<em>d</em> = 0.02 + 0.03 = 0.05 mm.</li>'],
+    ['D', '<li>From <em>E</em> = 3<em>kT</em>/2, <em>k</em> has units energy divided by temperature.</li><li>[<em>k</em>] = kg m<sup>2</sup> s<sup>−2</sup> K<sup>−1</sup>.</li>'],
+    ['D', '<li>A wind from the west produces an eastward velocity of 85.0 km h<sup>−1</sup>.</li><li>The aeroplane must have an equal westward component: sin θ = 85.0/200.</li><li>θ = 25.2° west of north.</li>'],
+    ['B', '<li>Pressure and Young modulus are both force per unit area.</li><li>Both have SI unit Pa = kg m<sup>−1</sup> s<sup>−2</sup>.</li>'],
+    ['D', '<li>10<sup>−3</sup> THz = 10<sup>−3</sup> × 10<sup>12</sup> Hz = 10<sup>9</sup> Hz.</li><li>10<sup>3</sup> kHz = 10<sup>3</sup> × 10<sup>3</sup> Hz = 10<sup>6</sup> Hz.</li><li>The ratio is 10<sup>3</sup>.</li>'],
+    ['D', '<li><em>V</em> = <em>E</em>/<em>Q</em> and <em>Q</em> = <em>It</em>.</li><li>[<em>V</em>] = kg m<sup>2</sup> s<sup>−2</sup>/(A s) = kg m<sup>2</sup> s<sup>−3</sup> A<sup>−1</sup>.</li>'],
+    ['D', '<li>Green light has a wavelength of about 5 × 10<sup>−7</sup> m.</li><li>500 nm = 5 × 10<sup>−7</sup> m, so this estimate is realistic.</li>'],
+    ['C', '<li>Pressure has base units kg m<sup>−1</sup> s<sup>−2</sup>.</li><li>ρ<em>gh</em> gives (kg m<sup>−3</sup>)(m s<sup>−2</sup>)(m) = kg m<sup>−1</sup> s<sup>−2</sup>.</li>'],
+    ['D', '<li>0.03 m<sup>3</sup> is 30 litres, a realistic order of magnitude for air in a car tyre.</li><li>The other estimates are far from typical values: bus kinetic energy is much larger, a normal lamp is lower powered, and 300 K is near room temperature.</li>'],
+    ['B', '<li>Rearrange: η = <em>F</em>/(6π<em>av</em>).</li><li>[η] = (kg m s<sup>−2</sup>)/(m × m s<sup>−1</sup>) = kg m<sup>−1</sup> s<sup>−1</sup>.</li>'],
+    ['A', '<li>Convert speed: <em>v</em><sub>m/s</sub> = <em>v</em><sub>km/h</sub>/3.6.</li><li><em>d</em> = <em>k</em><sub>1</sub>(<em>v</em>/3.6)<sup>2</sup> = (<em>k</em><sub>1</sub>/12.96)<em>v</em><sup>2</sup>.</li><li>The new constant is 0.0772<em>k</em><sub>1</sub>.</li>'],
+    ['B', '<li>A dimensionless drag coefficient requires [<em>F</em>] = [ρ<em>v</em><sup>n</sup><em>A</em>].</li><li>kg m s<sup>−2</sup> = (kg m<sup>−3</sup>)(m<sup>n</sup> s<sup>−n</sup>)(m<sup>2</sup>), giving <em>n</em> = 2.</li>'],
+    ['C', '<li>Speed has units m s<sup>−1</sup>, so speed squared has units m<sup>2</sup> s<sup>−2</sup>.</li><li><em>gλ</em> has these units; therefore √(<em>gλ</em>) has units m s<sup>−1</sup>.</li>'],
+    ['D', '<li>The fluctuating range gives random uncertainty equal to half the range: ±(2.02 − 1.98)/2 = ±0.02 A.</li><li>The systematic uncertainty is 1% of 2.00 A = ±0.02 A.</li><li>Adding the absolute uncertainties gives (2.00 ± 0.04) A.</li>']
+  ];
+
+  const install = () => {
+    document.querySelectorAll('.mc-question').forEach((card, index) => {
+      if (!explanations[index]) return;
+      const [answer, points] = explanations[index];
+      let details = card.querySelector('details.answer-panel');
+      if (!details) {
+        details = document.createElement('details');
+        card.appendChild(details);
+      }
+      details.className = 'answer-panel mc-explanation';
+      details.innerHTML = `<summary>Show answer explanation</summary><p><strong>Correct answer: ${answer}</strong></p><ul>${points}</ul>`;
+    });
+  };
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', install);
+  else install();
+})();
+</script>
+```
+
+### Structured Questions
+
+{{< include 01-physical-quantities-and-units-structured.qmd >}}
+
+## 章末自检
+
+::: {.study-card}
+不看笔记，能否完成以下事项？
+
+- 写出五个指定 SI 基本量及单位；
+- 从定义式推出 N、J、W、Pa、V；
+- 分清 $\mathrm{m}$ / $\mathrm{M}$ 及 $\mathrm{n}$ / $\mathrm{p}$；
+- 用基本单位验证 $p=\rho gh$；
+- 给出汽车质量、纸张厚度、空气密度、心跳周期的合理数量级。
+:::
+
+### 原始专题 PDF
+
+- **1.1 Physical Quantities - Units**: [MC Easy](../resources/original-papers/physical-quantities-and-units/1.1%20Physical%20Quantities%20-%20Units%20-%20C%20-%20Easy.pdf.pdf){target="_blank"} · [MC Medium](../resources/original-papers/physical-quantities-and-units/1.1%20Physical%20Quantities%20-%20Units%20-%20C%20-%20Medium.pdf.pdf){target="_blank"} · [MC Hard](../resources/original-papers/physical-quantities-and-units/1.1%20Physical%20Quantities%20-%20Units%20-%20C%20-%20Hard.pdf.pdf){target="_blank"} · [SQ Easy](../resources/original-papers/physical-quantities-and-units/1.1%20Physical%20Quantities%20-%20Units%20-%20SQ%20-%20Easy.pdf.pdf){target="_blank"} · [SQ Medium](../resources/original-papers/physical-quantities-and-units/1.1%20Physical%20Quantities%20-%20Units%20-%20SQ%20-%20Medium.pdf.pdf){target="_blank"} · [SQ Hard](../resources/original-papers/physical-quantities-and-units/1.1%20Physical%20Quantities%20-%20Units%20-%20SQ%20-%20Hard.pdf.pdf){target="_blank"}
+- **1.2 Measurements - Errors**: [MC Easy](../resources/original-papers/physical-quantities-and-units/1.2%20Measurements%20-%20Errors%20-%20C%20-%20Easy.pdf.pdf){target="_blank"} · [MC Medium](../resources/original-papers/physical-quantities-and-units/1.2%20Measurements%20-%20Errors%20-%20C%20-%20Medium.pdf.pdf){target="_blank"} · [MC Hard](../resources/original-papers/physical-quantities-and-units/1.2%20Measurements%20-%20Errors%20-%20C%20-%20Hard.pdf.pdf){target="_blank"} · [SQ Easy](../resources/original-papers/physical-quantities-and-units/1.2%20Measurements%20-%20Errors%20-%20SQ%20-%20Easy.pdf.pdf){target="_blank"} · [SQ Medium](../resources/original-papers/physical-quantities-and-units/1.2%20Measurements%20-%20Errors%20-%20SQ%20-%20Medium.pdf.pdf){target="_blank"} · [SQ Hard](../resources/original-papers/physical-quantities-and-units/1.2%20Measurements%20-%20Errors%20-%20SQ%20-%20Hard.pdf.pdf){target="_blank"}
+
+::: {.source-line}
+Content basis: Cambridge International AS & A Level Physics 9702 syllabus (2025–2027), section 1.1–1.2; local notes `Note/1.1 Physical Quantities.pdf.pdf`, `Note/1.2 SI Units.pdf.pdf` and `Note/1.3 Errors - Uncertainties.pdf.pdf`; local topical past-paper packs under `PastPaper/Topical Past Papers/AS/1.1 Physical Quantities - Units` and `1.2 Measurements - Errors`.
+:::

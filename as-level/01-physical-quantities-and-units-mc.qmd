@@ -1,0 +1,129 @@
+题干和选项保留英文原文。共 20 题：Easy 7、Medium 7、Hard 6。图像依赖而未能可靠独立提取的题目不列入本页。
+
+#### Easy · 7 questions
+
+::: {.question-card .mc-question #mc-easy-q1 data-answer="C"}
+### Example 1 · 1.1 MC Easy Q1
+Which of the following is an SI base unit?
+<div class="mc-options"><button class="mc-choice" data-choice="A"><strong>A</strong> Current</button><button class="mc-choice" data-choice="B"><strong>B</strong> Gram</button><button class="mc-choice" data-choice="C"><strong>C</strong> Kelvin</button><button class="mc-choice" data-choice="D"><strong>D</strong> Volt</button></div><button class="check-answer">Check answer</button><p class="mc-feedback" aria-live="polite"></p><details class="answer-panel"><summary>Show explanation</summary>Kelvin is an SI base unit.</details>
+:::
+
+::: {.question-card .mc-question #mc-easy-q2 data-answer="C"}
+### Example 2 · 1.1 MC Easy Q3
+Five energies are listed below: $5\ \mathrm{kJ}$, $5\ \mathrm{mJ}$, $5\ \mathrm{MJ}$ and $5\ \mathrm{nJ}$. Starting with the smallest first, what is the order of increasing magnitude of these energies?
+<div class="mc-options"><button class="mc-choice" data-choice="A"><strong>A</strong> $5\ \mathrm{kJ}\rightarrow5\ \mathrm{mJ}\rightarrow5\ \mathrm{MJ}\rightarrow5\ \mathrm{nJ}$</button><button class="mc-choice" data-choice="B"><strong>B</strong> $5\ \mathrm{nJ}\rightarrow5\ \mathrm{kJ}\rightarrow5\ \mathrm{MJ}\rightarrow5\ \mathrm{mJ}$</button><button class="mc-choice" data-choice="C"><strong>C</strong> $5\ \mathrm{nJ}\rightarrow5\ \mathrm{mJ}\rightarrow5\ \mathrm{kJ}\rightarrow5\ \mathrm{MJ}$</button><button class="mc-choice" data-choice="D"><strong>D</strong> $5\ \mathrm{mJ}\rightarrow5\ \mathrm{nJ}\rightarrow5\ \mathrm{kJ}\rightarrow5\ \mathrm{MJ}$</button></div><button class="check-answer">Check answer</button><p class="mc-feedback" aria-live="polite"></p><details class="answer-panel"><summary>Show explanation</summary>Use $\mathrm{n}=10^{-9}$, $\mathrm{m}=10^{-3}$, $\mathrm{k}=10^3$ and $\mathrm{M}=10^6$.</details>
+:::
+
+::: {.question-card .mc-question #mc-easy-q3 data-answer="D"}
+### Example 3 · 1.1 MC Easy Q4
+What is a reasonable estimate of the average gravitational force acting on a fully grown woman standing on the Earth?
+<div class="mc-options"><button class="mc-choice" data-choice="A"><strong>A</strong> $60\ \mathrm{N}$</button><button class="mc-choice" data-choice="B"><strong>B</strong> $250\ \mathrm{N}$</button><button class="mc-choice" data-choice="C"><strong>C</strong> $350\ \mathrm{N}$</button><button class="mc-choice" data-choice="D"><strong>D</strong> $650\ \mathrm{N}$</button></div><button class="check-answer">Check answer</button><p class="mc-feedback" aria-live="polite"></p><details class="answer-panel"><summary>Show explanation</summary>$W=mg\approx65\times10=650\ \mathrm{N}$.</details>
+:::
+
+::: {.question-card .mc-question #mc-easy-q4 data-answer="B"}
+### Example 4 · 1.1 MC Easy Q6
+Which pair contains one vector and one scalar quantity?
+<div class="mc-options"><button class="mc-choice" data-choice="A"><strong>A</strong> Displacement; acceleration</button><button class="mc-choice" data-choice="B"><strong>B</strong> Force; kinetic energy</button><button class="mc-choice" data-choice="C"><strong>C</strong> Momentum; velocity</button><button class="mc-choice" data-choice="D"><strong>D</strong> Power; speed</button></div><button class="check-answer">Check answer</button><p class="mc-feedback" aria-live="polite"></p><details class="answer-panel"><summary>Show explanation</summary>Force is a vector and kinetic energy is a scalar.</details>
+:::
+
+::: {.question-card .mc-question #mc-easy-q5 data-answer="B"}
+### Example 5 · 1.2 MC Easy Q1
+The density of the material of a coil of thin wire is to be found. Which set of instruments could be used to do this most accurately?
+<div class="mc-options"><button class="mc-choice" data-choice="A"><strong>A</strong> Metre rule, protractor, spring balance</button><button class="mc-choice" data-choice="B"><strong>B</strong> Micrometer, metre rule, top-pan balance</button><button class="mc-choice" data-choice="C"><strong>C</strong> Stopwatch, newton-meter, vernier calipers</button><button class="mc-choice" data-choice="D"><strong>D</strong> Tape measure, vernier calipers, lever balance</button></div><button class="check-answer">Check answer</button><p class="mc-feedback" aria-live="polite"></p><details class="answer-panel"><summary>Show explanation</summary>Measure mass, wire diameter and wire length with the most suitable instruments.</details>
+:::
+
+::: {.question-card .mc-question #mc-easy-q6 data-answer="A"}
+### Example 6 · 1.2 MC Easy Q7
+An experiment is done to measure the acceleration of free fall of a body from rest. Which measurements are needed?
+<div class="mc-options"><button class="mc-choice" data-choice="A"><strong>A</strong> The height of fall and the time of fall</button><button class="mc-choice" data-choice="B"><strong>B</strong> The height of fall and the weight of the body</button><button class="mc-choice" data-choice="C"><strong>C</strong> The mass of the body and the height of fall</button><button class="mc-choice" data-choice="D"><strong>D</strong> The mass of the body and the time of fall</button></div><button class="check-answer">Check answer</button><p class="mc-feedback" aria-live="polite"></p><details class="answer-panel"><summary>Show explanation</summary>For a body released from rest, $h=\tfrac12gt^2$.</details>
+:::
+
+::: {.question-card .mc-question #mc-easy-q7 data-answer="D"}
+### Example 7 · 1.2 MC Easy Q8
+A micrometer is used to measure the diameters of two cylinders: $12.78\pm0.02\ \mathrm{mm}$ and $16.24\pm0.03\ \mathrm{mm}$. The difference in the diameters is calculated. What is the uncertainty in this difference?
+<div class="mc-options"><button class="mc-choice" data-choice="A"><strong>A</strong> $\pm0.01\ \mathrm{mm}$</button><button class="mc-choice" data-choice="B"><strong>B</strong> $\pm0.02\ \mathrm{mm}$</button><button class="mc-choice" data-choice="C"><strong>C</strong> $\pm0.03\ \mathrm{mm}$</button><button class="mc-choice" data-choice="D"><strong>D</strong> $\pm0.05\ \mathrm{mm}$</button></div><button class="check-answer">Check answer</button><p class="mc-feedback" aria-live="polite"></p><details class="answer-panel"><summary>Show explanation</summary>Add absolute uncertainties when subtracting values.</details>
+:::
+
+#### Medium · 7 questions
+
+::: {.question-card .mc-question #mc-medium-q1 data-answer="D"}
+### Example 8 · 1.1 MC Medium Q1
+The average kinetic energy $E$ of a gas molecule is given by $E=\frac32kT$, where $T$ is the absolute temperature. What are the SI base units of $k$?
+<div class="mc-options"><button class="mc-choice" data-choice="A"><strong>A</strong> $\mathrm{kg^{-1}\,m^{-1}\,s^{2}\,K}$</button><button class="mc-choice" data-choice="B"><strong>B</strong> $\mathrm{kg^{-1}\,m^{-2}\,s^{2}\,K}$</button><button class="mc-choice" data-choice="C"><strong>C</strong> $\mathrm{kg\,m\,s^{-2}\,K^{-1}}$</button><button class="mc-choice" data-choice="D"><strong>D</strong> $\mathrm{kg\,m^{2}\,s^{-2}\,K^{-1}}$</button></div><button class="check-answer">Check answer</button><p class="mc-feedback" aria-live="polite"></p><details class="answer-panel"><summary>Show explanation</summary>$k=E/T$.</details>
+:::
+
+::: {.question-card .mc-question #mc-medium-q2 data-answer="D"}
+### Example 9 · 1.1 MC Medium Q2
+The speed of an aeroplane in still air is $200\ \mathrm{km\,h^{-1}}$. The wind blows from the west at $85.0\ \mathrm{km\,h^{-1}}$. In which direction must the pilot steer the aeroplane in order to fly due north?
+<div class="mc-options"><button class="mc-choice" data-choice="A"><strong>A</strong> $23.0^\circ$ east of north</button><button class="mc-choice" data-choice="B"><strong>B</strong> $23.0^\circ$ west of north</button><button class="mc-choice" data-choice="C"><strong>C</strong> $25.2^\circ$ east of north</button><button class="mc-choice" data-choice="D"><strong>D</strong> $25.2^\circ$ west of north</button></div><button class="check-answer">Check answer</button><p class="mc-feedback" aria-live="polite"></p><details class="answer-panel"><summary>Show explanation</summary>The plane must have a westward component equal to the eastward wind component.</details>
+:::
+
+::: {.question-card .mc-question #mc-medium-q3 data-answer="B"}
+### Example 10 · 1.1 MC Medium Q3
+The units of all physical quantities can be expressed in terms of SI base units. Which pair contains quantities with the same base units?
+<div class="mc-options"><button class="mc-choice" data-choice="A"><strong>A</strong> Force and momentum</button><button class="mc-choice" data-choice="B"><strong>B</strong> Pressure and Young modulus</button><button class="mc-choice" data-choice="C"><strong>C</strong> Power and kinetic energy</button><button class="mc-choice" data-choice="D"><strong>D</strong> Mass and weight</button></div><button class="check-answer">Check answer</button><p class="mc-feedback" aria-live="polite"></p><details class="answer-panel"><summary>Show explanation</summary>Both pressure and Young modulus have unit $\mathrm{Pa}$.</details>
+:::
+
+::: {.question-card .mc-question #mc-medium-q4 data-answer="D"}
+### Example 11 · 1.1 MC Medium Q6
+What is the ratio $\dfrac{10^{-3}\ \mathrm{THz}}{10^{3}\ \mathrm{kHz}}$?
+<div class="mc-options"><button class="mc-choice" data-choice="A"><strong>A</strong> $10^{-9}$</button><button class="mc-choice" data-choice="B"><strong>B</strong> $10^{-6}$</button><button class="mc-choice" data-choice="C"><strong>C</strong> $10^{0}$</button><button class="mc-choice" data-choice="D"><strong>D</strong> $10^{3}$</button></div><button class="check-answer">Check answer</button><p class="mc-feedback" aria-live="polite"></p><details class="answer-panel"><summary>Show explanation</summary>Convert both frequencies to hertz.</details>
+:::
+
+::: {.question-card .mc-question #mc-medium-q5 data-answer="D"}
+### Example 12 · 1.1 MC Medium Q7
+Which of the following correctly expresses the volt in terms of SI base units?
+<div class="mc-options"><button class="mc-choice" data-choice="A"><strong>A</strong> $\mathrm{A\,\Omega}$</button><button class="mc-choice" data-choice="B"><strong>B</strong> $\mathrm{W\,A^{-1}}$</button><button class="mc-choice" data-choice="C"><strong>C</strong> $\mathrm{kg\,m^{2}\,s^{-1}\,A^{-1}}$</button><button class="mc-choice" data-choice="D"><strong>D</strong> $\mathrm{kg\,m^{2}\,s^{-3}\,A^{-1}}$</button></div><button class="check-answer">Check answer</button><p class="mc-feedback" aria-live="polite"></p><details class="answer-panel"><summary>Show explanation</summary>$V=E/Q$ and $Q=It$.</details>
+:::
+
+::: {.question-card .mc-question #mc-medium-q6 data-answer="D"}
+### Example 13 · 1.1 MC Medium Q9
+For which quantity is the magnitude a reasonable estimate?
+<div class="mc-options"><button class="mc-choice" data-choice="A"><strong>A</strong> Frequency of a radio wave $500\ \mathrm{pHz}$</button><button class="mc-choice" data-choice="B"><strong>B</strong> Mass of an atom $500\ \mathrm{\mu g}$</button><button class="mc-choice" data-choice="C"><strong>C</strong> The Young modulus of a metal $500\ \mathrm{kPa}$</button><button class="mc-choice" data-choice="D"><strong>D</strong> Wavelength of green light $500\ \mathrm{nm}$</button></div><button class="check-answer">Check answer</button><p class="mc-feedback" aria-live="polite"></p><details class="answer-panel"><summary>Show explanation</summary>Visible green light has wavelength of order $10^{-7}\ \mathrm{m}$.</details>
+:::
+
+::: {.question-card .mc-question #mc-medium-q7 data-answer="C"}
+### Example 14 · 1.1 MC Medium Q10
+The equation relating pressure and density is $P=\rho gh$. How can both sides of this equation be written in terms of base units?
+<div class="mc-options"><button class="mc-choice" data-choice="A"><strong>A</strong> $\mathrm{N\,m^{-1}=kg\,m^{-3}\times m\,s^{-1}\times m}$</button><button class="mc-choice" data-choice="B"><strong>B</strong> $\mathrm{N\,m^{-2}=kg\,m^{-2}\times m\,s^{-2}\times m}$</button><button class="mc-choice" data-choice="C"><strong>C</strong> $\mathrm{kg\,m^{-1}\,s^{-2}=kg\,m^{-3}\times m\,s^{-2}\times m}$</button><button class="mc-choice" data-choice="D"><strong>D</strong> $\mathrm{kg\,m^{-1}\,s^{-1}=kg\,m^{-1}\times m\,s^{-2}\times m}$</button></div><button class="check-answer">Check answer</button><p class="mc-feedback" aria-live="polite"></p><details class="answer-panel"><summary>Show explanation</summary>Pressure is $\mathrm{kg\,m^{-1}\,s^{-2}}$.</details>
+:::
+
+#### Hard · 6 questions
+
+::: {.question-card .mc-question #mc-hard-q1 data-answer="D"}
+### Example 15 · 1.1 MC Hard Q2
+Which estimate is realistic?
+<div class="mc-options"><button class="mc-choice" data-choice="A"><strong>A</strong> The kinetic energy of a bus travelling on an expressway is $30\,000\ \mathrm{J}$</button><button class="mc-choice" data-choice="B"><strong>B</strong> The power of a domestic light is $300\ \mathrm{W}$</button><button class="mc-choice" data-choice="C"><strong>C</strong> The temperature of a hot oven is $300\ \mathrm{K}$</button><button class="mc-choice" data-choice="D"><strong>D</strong> The volume of air in a car tyre is $0.03\ \mathrm{m^3}$</button></div><button class="check-answer">Check answer</button><p class="mc-feedback" aria-live="polite"></p><details class="answer-panel"><summary>Show explanation</summary>A car tyre contains a few tens of litres of air.</details>
+:::
+
+::: {.question-card .mc-question #mc-hard-q2 data-answer="B"}
+### Example 16 · 1.1 MC Hard Q3
+The frictional force $F$ on a sphere falling through a fluid is given by $F=6\pi a\eta v$, where $a$ is the radius of the sphere, $\eta$ is a constant relating to the fluid and $v$ is the velocity of the sphere. What are the units of $\eta$?
+<div class="mc-options"><button class="mc-choice" data-choice="A"><strong>A</strong> $\mathrm{kg\,m\,s^{-1}}$</button><button class="mc-choice" data-choice="B"><strong>B</strong> $\mathrm{kg\,m^{-1}\,s^{-1}}$</button><button class="mc-choice" data-choice="C"><strong>C</strong> $\mathrm{kg\,m\,s^{-3}}$</button><button class="mc-choice" data-choice="D"><strong>D</strong> $\mathrm{kg\,m^{3}\,s^{-3}}$</button></div><button class="check-answer">Check answer</button><p class="mc-feedback" aria-live="polite"></p><details class="answer-panel"><summary>Show explanation</summary>$\eta=F/(av)$.</details>
+:::
+
+::: {.question-card .mc-question #mc-hard-q3 data-answer="A"}
+### Example 17 · 1.1 MC Hard Q4
+When a constant braking force is applied to a vehicle moving at speed $v$, the distance $d$ moved by the vehicle as it comes to rest is given by $d=kv^2$. When $d$ is measured in metres and $v$ is measured in metres per second, the constant has a value $k_1$. What is the value of the constant when distance is measured in metres and speed is measured in kilometres per hour?
+<div class="mc-options"><button class="mc-choice" data-choice="A"><strong>A</strong> $0.0772k_1$</button><button class="mc-choice" data-choice="B"><strong>B</strong> $0.278k_1$</button><button class="mc-choice" data-choice="C"><strong>C</strong> $3.60k_1$</button><button class="mc-choice" data-choice="D"><strong>D</strong> $13.0k_1$</button></div><button class="check-answer">Check answer</button><p class="mc-feedback" aria-live="polite"></p><details class="answer-panel"><summary>Show explanation</summary>$1\ \mathrm{km\,h^{-1}}=1/3.6\ \mathrm{m\,s^{-1}}$.</details>
+:::
+
+::: {.question-card .mc-question #mc-hard-q4 data-answer="B"}
+### Example 18 · 1.1 MC Hard Q5
+The drag coefficient $C_d$ is a number with no units. It is given by $C_d=\dfrac{2F}{\rho v^nA}$, where $F$ is drag force, $\rho$ is air density, $A$ is cross-sectional area and $v$ is speed. What is the value of $n$?
+<div class="mc-options"><button class="mc-choice" data-choice="A"><strong>A</strong> 0</button><button class="mc-choice" data-choice="B"><strong>B</strong> 2</button><button class="mc-choice" data-choice="C"><strong>C</strong> 3</button><button class="mc-choice" data-choice="D"><strong>D</strong> 4</button></div><button class="check-answer">Check answer</button><p class="mc-feedback" aria-live="polite"></p><details class="answer-panel"><summary>Show explanation</summary>Set the base units on both sides equal.</details>
+:::
+
+::: {.question-card .mc-question #mc-hard-q5 data-answer="C"}
+### Example 19 · 1.1 MC Hard Q7
+Which formula could be correct for the speed $v$ of ocean waves in terms of the density $\rho$ of sea-water, the acceleration of free fall $g$, the height $h$ of the wave and the wavelength $\lambda$?
+<div class="mc-options"><button class="mc-choice" data-choice="A"><strong>A</strong> $v=\rho gh$</button><button class="mc-choice" data-choice="B"><strong>B</strong> $v=\sqrt{g/h}$</button><button class="mc-choice" data-choice="C"><strong>C</strong> $v=\sqrt{g\lambda}$</button><button class="mc-choice" data-choice="D"><strong>D</strong> $v=\sqrt{g/\rho}$</button></div><button class="check-answer">Check answer</button><p class="mc-feedback" aria-live="polite"></p><details class="answer-panel"><summary>Show explanation</summary>Only $g\lambda$ has units $\mathrm{m^2\,s^{-2}}$.</details>
+:::
+
+::: {.question-card .mc-question #mc-hard-q6 data-answer="D"}
+### Example 20 · 1.2 MC Hard Q2
+A student uses a digital ammeter to measure a current. The reading of the ammeter is found to fluctuate between $1.98\ \mathrm{A}$ and $2.02\ \mathrm{A}$. The manufacturer of the ammeter states that any reading has a systematic uncertainty of $\pm1\%$.
+
+Which value of current should be quoted by the student?
+<div class="mc-options"><button class="mc-choice" data-choice="A"><strong>A</strong> $(2.00\pm0.01)\ \mathrm{A}$</button><button class="mc-choice" data-choice="B"><strong>B</strong> $(2.00\pm0.02)\ \mathrm{A}$</button><button class="mc-choice" data-choice="C"><strong>C</strong> $(2.00\pm0.03)\ \mathrm{A}$</button><button class="mc-choice" data-choice="D"><strong>D</strong> $(2.00\pm0.04)\ \mathrm{A}$</button></div><button class="check-answer">Check answer</button><p class="mc-feedback" aria-live="polite"></p><details class="answer-panel"><summary>Show explanation</summary>The random uncertainty is $\pm0.02\ \mathrm{A}$ and the systematic uncertainty is $\pm0.02\ \mathrm{A}$, giving $\pm0.04\ \mathrm{A}$.</details>
+:::
