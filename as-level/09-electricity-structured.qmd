@@ -1,0 +1,478 @@
+### 9.1 Electric Current - Medium
+
+::: {.question-card}
+#### Example 1 · 9.1 SQ Medium Q1
+
+**(a)** State what is meant by electric current.
+
+`[1 mark]`
+
+**(b)** The current in a wire is 3.2 A. The charge on an electron is $1.6 \times 10^{-19}\ \text{C}$.
+
+Calculate the number of electrons passing a point in the wire in 2.0 s.
+
+`[3 marks]`
+
+**(c)** A charge of 24 C flows through a resistor in 40 s. Calculate the current in the resistor.
+
+`[2 marks]`
+
+<details class="answer-panel"><summary>Show mark scheme / model answer</summary>
+
+**(a)** Electric current is the rate of flow of charge. `[1]`
+
+`[Total: 1 mark]`
+
+
+**(b)**
+- Total charge $Q = It = 3.2 \times 2.0 = 6.4\ \text{C}$. `[1]`
+- Using $Q = ne$, $n = Q/e = 6.4 / (1.6 \times 10^{-19})$. `[1]`
+- $n = 4.0 \times 10^{19}$ electrons. `[1]`
+
+`[Total: 3 marks]`
+
+
+**(c)**
+- Using $I = Q/t$. `[1]`
+- $I = 24/40 = 0.60\ \text{A}$. `[1]`
+
+`[Total: 2 marks]`
+</details>
+:::
+
+::: {.question-card}
+#### Example 2 · 9.1 SQ Medium Q2
+
+**(a)** State Kirchhoff's first law.
+
+`[1 mark]`
+
+**(b)** In the circuit shown in Fig. 1.1, the currents are $I_1 = 1.5\ \text{A}$, $I_2 = 0.8\ \text{A}$ and $I_3 = 1.2\ \text{A}$.
+
+Fig. 1.1 shows three wires meeting at a junction P, with $I_1$ and $I_2$ entering P and $I_3$ leaving P.
+
+Calculate the current $I_4$ leaving P along the fourth wire.
+
+`[2 marks]`
+
+**(c)** Explain how Kirchhoff's first law is a consequence of the conservation of charge.
+
+`[2 marks]`
+
+<details class="answer-panel"><summary>Show mark scheme / model answer</summary>
+
+**(a)** The sum of the currents entering a junction equals the sum of the currents leaving the junction. `[1]`
+
+`[Total: 1 mark]`
+
+
+**(b)**
+- Using $I_1 + I_2 = I_3 + I_4$. `[1]`
+- $I_4 = 1.5 + 0.8 - 1.2 = 1.1\ \text{A}$. `[1]`
+
+`[Total: 2 marks]`
+
+
+**(c)**
+- Charge cannot be created or destroyed / cannot accumulate at a junction. `[1]`
+- Therefore the total charge arriving per second must equal the total charge leaving per second, i.e. the currents balance. `[1]`
+
+`[Total: 2 marks]`
+</details>
+:::
+
+::: {.question-card}
+#### Example 3 · 9.1 SQ Medium Q3
+
+**(a)** The charge on an electron is $1.6 \times 10^{-19}\ \text{C}$.
+
+Calculate the number of electrons that must pass a point in a circuit per second to produce a current of 0.80 A.
+
+`[2 marks]`
+
+**(b)** A current of 2.4 A flows through a wire for 5.0 minutes.
+
+Calculate the total charge that flows through the wire.
+
+`[2 marks]`
+
+**(c)** The wire in part (b) carries a current in the direction shown in Fig. 1.2.
+
+State the direction of the electron flow, giving a reason.
+
+`[2 marks]`
+
+<details class="answer-panel"><summary>Show mark scheme / model answer</summary>
+
+**(a)**
+- Charge per second $= I = 0.80\ \text{C s}^{-1}$. `[1]`
+- Number of electrons per second $= I/e = 0.80/(1.6 \times 10^{-19}) = 5.0 \times 10^{18}$. `[1]`
+
+`[Total: 2 marks]`
+
+
+**(b)**
+- Time in seconds: $t = 5.0 \times 60 = 300\ \text{s}$. `[1]`
+- $Q = It = 2.4 \times 300 = 720\ \text{C}$. `[1]`
+
+`[Total: 2 marks]`
+
+
+**(c)**
+- Electron flow is opposite to the conventional current direction. `[1]`
+- Conventional current is the direction in which positive charge would flow, but the charge carriers in a metal are electrons, which are negative. `[1]`
+
+`[Total: 2 marks]`
+</details>
+:::
+
+### 9.2 Potential Difference and Resistance - Medium
+
+::: {.question-card}
+#### Example 4 · 9.2 SQ Medium Q1
+
+**(a)** State what is meant by potential difference across a component.
+
+`[1 mark]`
+
+**(b)** A p.d. of 6.0 V is applied across a resistor. The charge passing through the resistor in 30 s is 36 C.
+
+**(i)** Calculate the current through the resistor.
+
+**(ii)** Calculate the resistance of the resistor.
+
+**(iii)** Calculate the energy transferred to the resistor in 30 s.
+
+`[6 marks]`
+
+**(c)** A voltmeter is used to measure the p.d. across a resistor.
+
+State how the voltmeter should be connected in the circuit.
+
+`[1 mark]`
+
+<details class="answer-panel"><summary>Show mark scheme / model answer</summary>
+
+**(a)** Potential difference is the energy transferred per unit charge as charge passes through the component. `[1]`
+
+`[Total: 1 mark]`
+
+
+**(b)**
+- **(i)** $I = Q/t = 36/30 = 1.2\ \text{A}$. `[2]`
+- **(ii)** $R = V/I = 6.0/1.2 = 5.0\ \Omega$. `[2]`
+- **(iii)** Using $W = VQ$ (or $W = VIt$): $W = 6.0 \times 36 = 216\ \text{J}$. `[2]`
+
+`[Total: 6 marks]`
+
+
+**(c)** Connect the voltmeter in parallel with the resistor. `[1]`
+
+`[Total: 1 mark]`
+</details>
+:::
+
+::: {.question-card}
+#### Example 5 · 9.2 SQ Medium Q2
+
+**(a)** State Ohm's law.
+
+`[2 marks]`
+
+**(b)** A resistor is connected to a variable power supply. The current $I$ through the resistor and the p.d. $V$ across it are measured for several settings. The results are shown in the table.
+
+| $I$ / A | 0.00 | 0.20 | 0.40 | 0.60 | 0.80 | 1.00 |
+|---|---|---|---|---|---|---|
+| $V$ / V | 0.0 | 0.8 | 1.6 | 2.4 | 3.2 | 4.0 |
+
+**(i)** Plot a graph of $V$ against $I$ on the grid below.
+
+**(ii)** Use your graph to determine the resistance of the resistor.
+
+`[5 marks]`
+
+**(c)** The resistor is now replaced by a filament lamp and the experiment is repeated.
+
+Describe how the I–V characteristic of the filament lamp differs from that of the resistor.
+
+`[2 marks]`
+
+<details class="answer-panel"><summary>Show mark scheme / model answer</summary>
+
+**(a)** The current through a metallic conductor is directly proportional to the potential difference across it, provided the physical conditions (such as temperature) remain constant. `[2]`
+
+`[Total: 2 marks]`
+
+
+**(b)**
+- **(i)** All six points plotted correctly with labelled axes and suitable scales. `[3]`
+- **(ii)** Best-fit straight line through the origin drawn. `[1]` Gradient $= R = \Delta V/\Delta I = 4.0/1.0 = 4.0\ \Omega$. `[1]`
+
+`[Total: 5 marks]`
+
+
+**(c)**
+- The lamp's I–V graph is a curve, not a straight line. `[1]`
+- The gradient decreases at higher currents because the resistance increases as the filament heats up. `[1]`
+
+`[Total: 2 marks]`
+</details>
+:::
+
+::: {.question-card}
+#### Example 6 · 9.2 SQ Medium Q3
+
+**(a)** State what is meant by resistivity.
+
+`[1 mark]`
+
+**(b)** A wire of length 1.5 m and cross-sectional area $2.0 \times 10^{-7}\ \text{m}^2$ has a resistance of 0.13 $\Omega$.
+
+Calculate the resistivity of the material of the wire.
+
+`[3 marks]`
+
+**(c)** A second wire is made from the same material. It has twice the length and half the cross-sectional area of the first wire.
+
+Calculate the resistance of the second wire.
+
+`[2 marks]`
+
+**(d)** The resistance of a metallic conductor changes when its temperature changes.
+
+State and explain the effect of increasing temperature on the resistance of the wire.
+
+`[2 marks]`
+
+<details class="answer-panel"><summary>Show mark scheme / model answer</summary>
+
+**(a)** Resistivity is the resistance of a material of unit length and unit cross-sectional area / a property of the material, independent of its dimensions. `[1]`
+
+`[Total: 1 mark]`
+
+
+**(b)**
+- Using $R = \rho L/A$, rearranged: $\rho = RA/L$. `[1]`
+- $\rho = 0.13 \times (2.0 \times 10^{-7}) / 1.5$. `[1]`
+- $\rho = 1.73 \times 10^{-8}\ \Omega\ \text{m}$. `[1]`
+
+`[Total: 3 marks]`
+
+
+**(c)**
+- Doubling the length doubles $R$; halving the area doubles $R$ again. `[1]`
+- $R = 0.13 \times 2 \times 2 = 0.52\ \Omega$. `[1]`
+
+`[Total: 2 marks]`
+
+
+**(d)**
+- The resistance increases. `[1]`
+- The metal ions vibrate more vigorously at higher temperature, making it harder for the charge carriers (electrons) to pass through, so resistance increases. `[1]`
+
+`[Total: 2 marks]`
+</details>
+:::
+
+::: {.question-card}
+#### Example 7 · 9.2 SQ Medium Q4
+
+**(a)** Sketch, on the axes below, the I–V characteristic of:
+
+**(i)** an ohmic conductor;
+
+**(ii)** a semiconductor diode.
+
+`[4 marks]`
+
+**(b)** A fixed resistor has a resistance of 10 $\Omega$.
+
+Calculate the current through the resistor when the p.d. across it is 3.0 V.
+
+`[2 marks]`
+
+**(c)** The fixed resistor is replaced by a thermistor, and the p.d. across it is kept constant at 3.0 V. The temperature of the thermistor increases.
+
+State and explain what happens to the current through the thermistor.
+
+`[3 marks]`
+
+<details class="answer-panel"><summary>Show mark scheme / model answer</summary>
+
+**(a)**
+- **(i)** Straight line through the origin (with current proportional to p.d.). `[2]`
+- **(ii)** Current near zero for negative p.d. (reverse bias); current rises steeply once the forward threshold voltage (≈ 0.6 V) is exceeded. `[2]`
+
+`[Total: 4 marks]`
+
+
+**(b)**
+- Using $I = V/R$. `[1]`
+- $I = 3.0/10 = 0.30\ \text{A}$. `[1]`
+
+`[Total: 2 marks]`
+
+
+**(c)**
+- The current increases. `[1]`
+- The resistance of the thermistor decreases as its temperature increases. `[1]`
+- With constant p.d., $I = V/R$, so a smaller resistance gives a larger current. `[1]`
+
+`[Total: 3 marks]`
+</details>
+:::
+
+### 9.3 Sources of Electromotive Force - Medium
+
+::: {.question-card}
+#### Example 8 · 9.3 SQ Medium Q1
+
+**(a)** State what is meant by the electromotive force (e.m.f.) of a source.
+
+`[1 mark]`
+
+**(b)** A cell of e.m.f. 1.5 V is connected to a resistor of resistance 2.0 $\Omega$. The cell has an internal resistance of 0.50 $\Omega$.
+
+**(i)** Calculate the current in the circuit.
+
+**(ii)** Calculate the terminal p.d. of the cell.
+
+**(iii)** Calculate the lost volts in the cell.
+
+`[6 marks]`
+
+**(c)** State the difference between e.m.f. and potential difference.
+
+`[2 marks]`
+
+<details class="answer-panel"><summary>Show mark scheme / model answer</summary>
+
+**(a)** E.m.f. is the energy transferred from chemical (or other non-electrical) forms to electrical energy per unit charge by the source. `[1]`
+
+`[Total: 1 mark]`
+
+
+**(b)**
+- **(i)** Using $E = I(R + r)$: $I = 1.5/(2.0 + 0.50) = 0.60\ \text{A}$. `[2]`
+- **(ii)** $V = IR = 0.60 \times 2.0 = 1.2\ \text{V}$. `[2]`
+- **(iii)** Lost volts $= Ir = 0.60 \times 0.50 = 0.30\ \text{V}$ (or $E - V = 1.5 - 1.2 = 0.30\ \text{V}$). `[2]`
+
+`[Total: 6 marks]`
+
+
+**(c)**
+- E.m.f. is the energy transferred **to** electrical energy per unit charge by a source; p.d. is the energy transferred **from** electrical energy per unit charge by a component. `[1]`
+- E.m.f. is measured across a source when no current flows (open circuit); p.d. is measured across a component when current flows. `[1]`
+
+`[Total: 2 marks]`
+</details>
+:::
+
+::: {.question-card}
+#### Example 9 · 9.3 SQ Medium Q2
+
+**(a)** A battery has an e.m.f. of 9.0 V. When a current of 1.5 A is drawn from it, the terminal p.d. is 8.1 V.
+
+**(i)** Calculate the internal resistance of the battery.
+
+**(ii)** Calculate the power dissipated in the internal resistance.
+
+`[5 marks]`
+
+**(b)** The current drawn from the battery is now increased.
+
+State and explain the effect on the terminal p.d. of the battery.
+
+`[3 marks]`
+
+<details class="answer-panel"><summary>Show mark scheme / model answer</summary>
+
+**(a)**
+- **(i)** Using $E = V + Ir$: $r = (E - V)/I = (9.0 - 8.1)/1.5 = 0.60\ \Omega$. `[3]`
+- **(ii)** Power $= I^2 r = 1.5^2 \times 0.60 = 1.35\ \text{W}$. `[2]`
+
+`[Total: 5 marks]`
+
+
+**(b)**
+- The terminal p.d. decreases. `[1]`
+- The lost volts $Ir$ increase as the current increases. `[1]`
+- Since $V = E - Ir$, a larger lost volts gives a smaller terminal p.d. `[1]`
+
+`[Total: 3 marks]`
+</details>
+:::
+
+::: {.question-card}
+#### Example 10 · 9.3 SQ Medium Q3
+
+**(a)** A student investigates the e.m.f. $E$ and internal resistance $r$ of a cell. The cell is connected to a variable resistor, an ammeter and a voltmeter as shown in Fig. 1.1.
+
+Fig. 1.1 shows a cell in series with an ammeter and a variable resistor, with a voltmeter connected across the cell terminals.
+
+**(i)** State the readings that are recorded as the resistance of the variable resistor is changed.
+
+**(ii)** Describe how the student uses the readings to determine $E$ and $r$.
+
+`[5 marks]`
+
+**(b)** The graph of terminal p.d. $V$ against current $I$ has an intercept of 6.0 V on the $V$-axis and a gradient of $-2.0\ \text{V A}^{-1}$.
+
+**(i)** State the e.m.f. of the cell.
+
+**(ii)** State the internal resistance of the cell.
+
+`[2 marks]`
+
+<details class="answer-panel"><summary>Show mark scheme / model answer</summary>
+
+**(a)**
+- **(i)** The ammeter reading (current $I$) and the voltmeter reading (terminal p.d. $V$) for each setting of the variable resistor. `[1]`
+- **(ii)** Plot a graph of $V$ against $I$. `[1]` The equation $V = E - Ir$ is of the form $y = mx + c$. `[1]` The $V$-intercept gives the e.m.f. $E$. `[1]` The magnitude of the gradient gives the internal resistance $r$. `[1]`
+
+`[Total: 5 marks]`
+
+
+**(b)**
+- **(i)** $E = 6.0\ \text{V}$. `[1]`
+- **(ii)** $r = 2.0\ \Omega$. `[1]`
+
+`[Total: 2 marks]`
+</details>
+:::
+
+::: {.question-card}
+#### Example 11 · 9.3 SQ Medium Q4
+
+**(a)** Two identical cells, each of e.m.f. 1.5 V and internal resistance 1.0 $\Omega$, are connected in series with an external resistor of resistance 5.0 $\Omega$.
+
+**(i)** Calculate the total e.m.f. of the combination.
+
+**(ii)** Calculate the total internal resistance of the combination.
+
+**(iii)** Calculate the current in the circuit.
+
+`[5 marks]`
+
+**(b)** The two cells are now connected in parallel.
+
+State the total e.m.f. of the parallel combination.
+
+`[1 mark]`
+
+<details class="answer-panel"><summary>Show mark scheme / model answer</summary>
+
+**(a)**
+- **(i)** Total e.m.f. $= 1.5 + 1.5 = 3.0\ \text{V}$. `[1]`
+- **(ii)** Total internal resistance $= 1.0 + 1.0 = 2.0\ \Omega$. `[1]`
+- **(iii)** Using $E = I(R + r)$: $I = 3.0/(5.0 + 2.0) = 0.43\ \text{A}$. `[3]`
+
+`[Total: 5 marks]`
+
+
+**(b)** Total e.m.f. $= 1.5\ \text{V}$ (equal to the e.m.f. of one cell). `[1]`
+
+`[Total: 1 mark]`
+</details>
+:::
+

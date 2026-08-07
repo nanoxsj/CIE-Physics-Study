@@ -109,8 +109,6 @@ Which row in the table correctly describes the length of x and the name of W?
 </details>
 :::
 
-:::
-
 ### 8.1 Stationary Waves - Medium
 
 ::: {.question-card}
@@ -264,8 +262,6 @@ D. 5.0 cm
 </details>
 :::
 
-:::
-
 ### 8.1 Stationary Waves - Hard
 
 ::: {.question-card}
@@ -330,8 +326,6 @@ D. 2200 Hz
 
 **Answer: B.** The 4 heaps of powder correspond to 4 nodes. The distance between the first and fourth heap covers 3 node-to-node intervals. Each interval is $\lambda/2$, so $3 \times (\lambda/2) = 30\ \text{cm}$, giving $\lambda = 20\ \text{cm} = 0.20\ \text{m}$. Frequency $f = v/\lambda = 330/0.20 = 1650\ \text{Hz}$.
 </details>
-:::
-
 :::
 
 ### 8.2 Diffraction & Interference - Easy
@@ -438,4 +432,3 @@ D. 3rd
 **Answer: C.** Using $d\sin\theta = n\lambda$, for $n=3$, $\theta = 45^\circ$, so $d\sin45^\circ = 3\lambda$, giving $d = 3\lambda/\sin45^\circ = 3\sqrt{2}\lambda$. The maximum order occurs when $\sin\theta = 1$, so $n_{\text{max}} = d/\lambda = 3\sqrt{2} \approx 4.24$. Therefore the highest integer order is 4.
 </details>
 :::
-

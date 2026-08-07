@@ -74,6 +74,15 @@ subtitle: "2025–2027 syllabus · 9702"
 :::
 
 ::: {.topic-card}
+### [9 Electricity](as-level/09-electricity.qmd)
+
+- 9.1 Electric current: $I = Q/t$, $Q = ne$, Kirchhoff's first law and charge conservation
+- 9.2 Potential difference and resistance: $V = W/Q$, Ohm's law $R = V/I$, resistivity $R = \rho L/A$, temperature dependence and I-V characteristics
+- 9.3 Sources of electromotive force: e.m.f. vs p.d., internal resistance and $E = I(R + r)$
+- 20 Multiple Choice and 11 Structured Questions covering all three sections
+:::
+
+::: {.topic-card}
 ### [12 Motion in a circle](a-level/12-motion-in-a-circle.qmd)
 
 - 12.1 Kinematics of uniform circular motion: radians, angular speed, period, frequency and $v=r\omega$
