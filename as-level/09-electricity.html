@@ -1,0 +1,1679 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-Hans" xml:lang="zh-Hans"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.38">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>9 Electricity – CIE Physics 9702</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../a-level/12-motion-in-a-circle.html" rel="next">
+<link href="../as-level/08-superposition.html" rel="prev">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-a2a938b4dd5711f7a799c87bd16ba44c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "没有结果",
+    "search-matching-documents-text": "匹配的文档",
+    "search-copy-link-title": "复制搜索链接",
+    "search-hide-matches-text": "隐藏其它匹配结果",
+    "search-more-match-text": "更多匹配结果",
+    "search-more-matches-text": "更多匹配结果",
+    "search-clear-button-title": "清除",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "取消",
+    "search-submit-button-title": "提交",
+    "search-label": "搜索"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../styles.css">
+</head>
+
+<body class="nav-sidebar docked quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="展开或折叠侧边栏导航" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../as-level/01-physical-quantities-and-units.html">AS Level</a></li><li class="breadcrumb-item"><a href="../as-level/09-electricity.html">9 Electricity</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="展开或折叠侧边栏导航" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="搜索" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">CIE Physics 9702</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="搜索"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">学习首页</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">AS Level</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="展开或折叠此栏">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../as-level/01-physical-quantities-and-units.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">1 Physical quantities and units</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../as-level/02-kinematics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2 Kinematics</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../as-level/03-dynamics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">3 Dynamics</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../as-level/04-forces-density-pressure.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4 Forces, density and pressure</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../as-level/05-work-energy-power.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5 Work, energy and power</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../as-level/06-deformation-of-solids.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">6 Deformation of solids</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../as-level/07-waves.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">7 Waves</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../as-level/08-superposition.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">8 Superposition</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../as-level/09-electricity.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">9 Electricity</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">A Level</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="展开或折叠此栏">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/12-motion-in-a-circle.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">12 Motion in a circle</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/13-gravitational-fields.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">13 Gravitational fields</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/14-temperature.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">14 Temperature</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/15-ideal-gases.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">15 Ideal gases</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/16-thermodynamics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">16 Thermodynamics</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/17-oscillations.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">17 Oscillations</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/18-electric-fields.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">18 Electric fields</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/19-capacitance.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">19 Capacitance</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/20-magnetic-fields.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">20 Magnetic fields</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/21-alternating-currents.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">21 Alternating currents</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/22-quantum-physics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">22 Quantum physics</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/23-nuclear-physics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">23 Nuclear physics</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/24-medical-physics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">24 Medical physics</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/25-astronomy-and-cosmology.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">25 Astronomy and cosmology</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">该页面内容</h2>
+   
+  <ul>
+  <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link active" data-scroll-target="#learning-objectives">Learning objectives</a></li>
+  <li><a href="#electric-current" id="toc-electric-current" class="nav-link" data-scroll-target="#electric-current">9.1 Electric current</a>
+  <ul class="collapse">
+  <li><a href="#electric-current-1" id="toc-electric-current-1" class="nav-link" data-scroll-target="#electric-current-1">Electric current</a></li>
+  <li><a href="#quantisation-of-charge" id="toc-quantisation-of-charge" class="nav-link" data-scroll-target="#quantisation-of-charge">Quantisation of charge</a></li>
+  <li><a href="#current-and-charge" id="toc-current-and-charge" class="nav-link" data-scroll-target="#current-and-charge">Current and charge</a></li>
+  <li><a href="#kirchhoffs-first-law" id="toc-kirchhoffs-first-law" class="nav-link" data-scroll-target="#kirchhoffs-first-law">Kirchhoff’s first law</a></li>
+  </ul></li>
+  <li><a href="#potential-difference-and-resistance" id="toc-potential-difference-and-resistance" class="nav-link" data-scroll-target="#potential-difference-and-resistance">9.2 Potential difference and resistance</a>
+  <ul class="collapse">
+  <li><a href="#potential-difference" id="toc-potential-difference" class="nav-link" data-scroll-target="#potential-difference">Potential difference</a></li>
+  <li><a href="#ohms-law" id="toc-ohms-law" class="nav-link" data-scroll-target="#ohms-law">Ohm’s law</a></li>
+  <li><a href="#resistivity" id="toc-resistivity" class="nav-link" data-scroll-target="#resistivity">Resistivity</a></li>
+  <li><a href="#temperature-dependence-of-resistance" id="toc-temperature-dependence-of-resistance" class="nav-link" data-scroll-target="#temperature-dependence-of-resistance">Temperature dependence of resistance</a></li>
+  <li><a href="#i-v-characteristics" id="toc-i-v-characteristics" class="nav-link" data-scroll-target="#i-v-characteristics">I-V characteristics</a></li>
+  </ul></li>
+  <li><a href="#sources-of-electromotive-force" id="toc-sources-of-electromotive-force" class="nav-link" data-scroll-target="#sources-of-electromotive-force">9.3 Sources of electromotive force</a>
+  <ul class="collapse">
+  <li><a href="#electromotive-force-e.m.f." id="toc-electromotive-force-e.m.f." class="nav-link" data-scroll-target="#electromotive-force-e.m.f.">Electromotive force (e.m.f.)</a></li>
+  <li><a href="#distinction-between-e.m.f.-and-p.d." id="toc-distinction-between-e.m.f.-and-p.d." class="nav-link" data-scroll-target="#distinction-between-e.m.f.-and-p.d.">Distinction between e.m.f. and p.d.</a></li>
+  <li><a href="#internal-resistance" id="toc-internal-resistance" class="nav-link" data-scroll-target="#internal-resistance">Internal resistance</a></li>
+  <li><a href="#e.m.f.-internal-resistance-and-external-circuits" id="toc-e.m.f.-internal-resistance-and-external-circuits" class="nav-link" data-scroll-target="#e.m.f.-internal-resistance-and-external-circuits">E.m.f., internal resistance and external circuits</a></li>
+  <li><a href="#practical-determination-of-internal-resistance" id="toc-practical-determination-of-internal-resistance" class="nav-link" data-scroll-target="#practical-determination-of-internal-resistance">Practical determination of internal resistance</a></li>
+  </ul></li>
+  <li><a href="#multiple-choice-questions" id="toc-multiple-choice-questions" class="nav-link" data-scroll-target="#multiple-choice-questions">Multiple Choice Questions</a>
+  <ul class="collapse">
+  <li><a href="#electric-current---easy" id="toc-electric-current---easy" class="nav-link" data-scroll-target="#electric-current---easy">9.1 Electric Current - Easy</a></li>
+  <li><a href="#electric-current---medium" id="toc-electric-current---medium" class="nav-link" data-scroll-target="#electric-current---medium">9.1 Electric Current - Medium</a></li>
+  <li><a href="#electric-current---hard" id="toc-electric-current---hard" class="nav-link" data-scroll-target="#electric-current---hard">9.1 Electric Current - Hard</a></li>
+  <li><a href="#potential-difference-and-resistance---easy" id="toc-potential-difference-and-resistance---easy" class="nav-link" data-scroll-target="#potential-difference-and-resistance---easy">9.2 Potential Difference and Resistance - Easy</a></li>
+  <li><a href="#potential-difference-and-resistance---medium" id="toc-potential-difference-and-resistance---medium" class="nav-link" data-scroll-target="#potential-difference-and-resistance---medium">9.2 Potential Difference and Resistance - Medium</a></li>
+  <li><a href="#potential-difference-and-resistance---hard" id="toc-potential-difference-and-resistance---hard" class="nav-link" data-scroll-target="#potential-difference-and-resistance---hard">9.2 Potential Difference and Resistance - Hard</a></li>
+  <li><a href="#sources-of-electromotive-force---easy" id="toc-sources-of-electromotive-force---easy" class="nav-link" data-scroll-target="#sources-of-electromotive-force---easy">9.3 Sources of Electromotive Force - Easy</a></li>
+  <li><a href="#sources-of-electromotive-force---medium" id="toc-sources-of-electromotive-force---medium" class="nav-link" data-scroll-target="#sources-of-electromotive-force---medium">9.3 Sources of Electromotive Force - Medium</a></li>
+  <li><a href="#sources-of-electromotive-force---hard" id="toc-sources-of-electromotive-force---hard" class="nav-link" data-scroll-target="#sources-of-electromotive-force---hard">9.3 Sources of Electromotive Force - Hard</a></li>
+  </ul></li>
+  <li><a href="#structured-questions" id="toc-structured-questions" class="nav-link" data-scroll-target="#structured-questions">Structured Questions</a>
+  <ul class="collapse">
+  <li><a href="#electric-current---medium-1" id="toc-electric-current---medium-1" class="nav-link" data-scroll-target="#electric-current---medium-1">9.1 Electric Current - Medium</a></li>
+  <li><a href="#potential-difference-and-resistance---medium-1" id="toc-potential-difference-and-resistance---medium-1" class="nav-link" data-scroll-target="#potential-difference-and-resistance---medium-1">9.2 Potential Difference and Resistance - Medium</a></li>
+  <li><a href="#sources-of-electromotive-force---medium-1" id="toc-sources-of-electromotive-force---medium-1" class="nav-link" data-scroll-target="#sources-of-electromotive-force---medium-1">9.3 Sources of Electromotive Force - Medium</a></li>
+  </ul></li>
+  <li><a href="#chapter-checklist" id="toc-chapter-checklist" class="nav-link" data-scroll-target="#chapter-checklist">Chapter checklist</a>
+  <ul class="collapse">
+  <li><a href="#original-question-pdfs" id="toc-original-question-pdfs" class="nav-link" data-scroll-target="#original-question-pdfs">Original question PDFs</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../as-level/01-physical-quantities-and-units.html">AS Level</a></li><li class="breadcrumb-item"><a href="../as-level/09-electricity.html">9 Electricity</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">9 Electricity</h1>
+<p class="subtitle lead">Electric current, potential difference, resistance and electromotive force</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="learning-objectives" class="level2">
+<h2 class="anchored" data-anchor-id="learning-objectives">Learning objectives</h2>
+<p>By the end of this chapter, you should be able to:</p>
+<ul>
+<li>understand electric current as the rate of flow of charge;</li>
+<li>use <span class="math inline">\(I = Q/t\)</span> and <span class="math inline">\(Q = ne\)</span>;</li>
+<li>recall and apply Kirchhoff’s first law;</li>
+<li>understand potential difference as energy transferred per unit charge;</li>
+<li>use <span class="math inline">\(V = W/Q\)</span>;</li>
+<li>recall and use Ohm’s law <span class="math inline">\(R = V/I\)</span>;</li>
+<li>use <span class="math inline">\(R = \rho L / A\)</span> for the resistance of a wire;</li>
+<li>describe the effect of temperature on resistance;</li>
+<li>sketch and interpret I-V characteristics of ohmic and non-ohmic conductors;</li>
+<li>distinguish between e.m.f. and p.d.;</li>
+<li>understand internal resistance and use <span class="math inline">\(E = I(R + r)\)</span>;</li>
+<li>calculate terminal p.d. and lost volts.</li>
+</ul>
+</section>
+<section id="electric-current" class="level2">
+<h2 class="anchored" data-anchor-id="electric-current">9.1 Electric current</h2>
+<section id="electric-current-1" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="electric-current-1">Electric current</h3>
+<p><strong>Electric current</strong> <span class="math inline">\(I\)</span> is the rate of flow of charge.</p>
+<p><span class="math display">\[I = \frac{Q}{t}\]</span></p>
+<p>where: - <span class="math inline">\(I\)</span> = current in amperes (A) - <span class="math inline">\(Q\)</span> = charge passing a point in coulombs (C) - <span class="math inline">\(t\)</span> = time in seconds (s)</p>
+<p>The ampere is one of the seven SI base units. One ampere is defined as one coulomb of charge per second: <span class="math inline">\(1\ \text{A} = 1\ \text{C s}^{-1}\)</span>.</p>
+<p>The direction of conventional current is taken as the direction in which positive charge flows. In metallic conductors, the actual charge carriers are electrons (negative), so the electron flow is opposite to the conventional current direction.</p>
+</section>
+<section id="quantisation-of-charge" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="quantisation-of-charge">Quantisation of charge</h3>
+<p>The charge on any object is quantised — it is always an integer multiple of the elementary charge <span class="math inline">\(e\)</span>:</p>
+<p><span class="math display">\[Q = ne\]</span></p>
+<p>where: - <span class="math inline">\(n\)</span> = an integer (number of charge carriers) - <span class="math inline">\(e = 1.60 \times 10^{-19}\ \text{C}\)</span> (the elementary charge, the magnitude of charge on one electron)</p>
+<p>This means charge cannot be continuously divided; it exists in discrete packets of size <span class="math inline">\(e\)</span>.</p>
+</section>
+<section id="current-and-charge" class="level3 formula-panel">
+<h3 class="anchored" data-anchor-id="current-and-charge">Current and charge</h3>
+<p><span class="math display">\[I = \frac{Q}{t} \qquad Q = It \qquad Q = ne\]</span></p>
+<p>For a current <span class="math inline">\(I\)</span> flowing for time <span class="math inline">\(t\)</span> through a conductor:</p>
+<p><span class="math display">\[\text{number of charge carriers} = \frac{It}{e}\]</span></p>
+<p>This is useful for calculating the number of electrons passing a point in a circuit per second.</p>
+</section>
+<section id="kirchhoffs-first-law" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="kirchhoffs-first-law">Kirchhoff’s first law</h3>
+<p><strong>Kirchhoff’s first law</strong> states that the sum of the currents entering any junction in a circuit equals the sum of the currents leaving that junction.</p>
+<p><span class="math display">\[\sum I_{\text{in}} = \sum I_{\text{out}}\]</span></p>
+<p>This law is a consequence of the conservation of electric charge. Charge cannot accumulate at a junction, so the total charge arriving per second must equal the total charge leaving per second.</p>
+<p>For example, in a parallel circuit with two branches:</p>
+<p><span class="math display">\[I = I_1 + I_2\]</span></p>
+</section>
+</section>
+<section id="potential-difference-and-resistance" class="level2">
+<h2 class="anchored" data-anchor-id="potential-difference-and-resistance">9.2 Potential difference and resistance</h2>
+<section id="potential-difference" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="potential-difference">Potential difference</h3>
+<p><strong>Potential difference (p.d.)</strong> <span class="math inline">\(V\)</span> across a component is the energy transferred per unit charge as charge passes through the component.</p>
+<p><span class="math display">\[V = \frac{W}{Q}\]</span></p>
+<p>where: - <span class="math inline">\(V\)</span> = potential difference in volts (V) - <span class="math inline">\(W\)</span> = energy transferred (work done) in joules (J) - <span class="math inline">\(Q\)</span> = charge in coulombs (C)</p>
+<p>One volt is equal to one joule per coulomb: <span class="math inline">\(1\ \text{V} = 1\ \text{J C}^{-1}\)</span>.</p>
+<p>A voltmeter is always connected <strong>in parallel</strong> across a component to measure the potential difference.</p>
+</section>
+<section id="ohms-law" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="ohms-law">Ohm’s law</h3>
+<p><strong>Ohm’s law</strong> states that the current through a metallic conductor is directly proportional to the potential difference across it, provided the physical conditions (such as temperature) remain constant.</p>
+<p><span class="math display">\[R = \frac{V}{I}\]</span></p>
+<p>where: - <span class="math inline">\(R\)</span> = resistance in ohms (<span class="math inline">\(\Omega\)</span>) - <span class="math inline">\(V\)</span> = potential difference in volts (V) - <span class="math inline">\(I\)</span> = current in amperes (A)</p>
+<p>A component that obeys Ohm’s law is called an <strong>ohmic conductor</strong>. Its I-V characteristic is a straight line through the origin.</p>
+</section>
+<section id="resistivity" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="resistivity">Resistivity</h3>
+<p>The resistance of a wire depends on its length, cross-sectional area, and the material from which it is made. This relationship is given by:</p>
+<p><span class="math display">\[R = \frac{\rho L}{A}\]</span></p>
+<p>where: - <span class="math inline">\(R\)</span> = resistance (<span class="math inline">\(\Omega\)</span>) - <span class="math inline">\(\rho\)</span> = resistivity of the material (<span class="math inline">\(\Omega\ \text{m}\)</span>) - <span class="math inline">\(L\)</span> = length of the wire (m) - <span class="math inline">\(A\)</span> = cross-sectional area of the wire (m<span class="math inline">\(^2\)</span>)</p>
+<p><strong>Resistivity</strong> <span class="math inline">\(\rho\)</span> is a property of the material itself, independent of the dimensions of the wire. It depends on temperature.</p>
+<p>Common values at room temperature: - Copper: <span class="math inline">\(\rho \approx 1.7 \times 10^{-8}\ \Omega\ \text{m}\)</span> - Constantan: <span class="math inline">\(\rho \approx 4.9 \times 10^{-7}\ \Omega\ \text{m}\)</span> - Silicon: <span class="math inline">\(\rho \approx 6.4 \times 10^2\ \Omega\ \text{m}\)</span></p>
+</section>
+<section id="temperature-dependence-of-resistance" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="temperature-dependence-of-resistance">Temperature dependence of resistance</h3>
+<p>For <strong>metallic conductors</strong>, resistance increases with temperature. As temperature increases, the metal ions vibrate more vigorously, making it harder for the charge carriers (electrons) to pass through. This increases the resistance.</p>
+<p>For <strong>thermistors</strong> (semiconductor devices), resistance decreases as temperature increases. Thermistors are used in temperature sensing circuits.</p>
+<p>For a metallic conductor at constant temperature, the I-V characteristic is a straight line through the origin (ohmic). For a filament lamp, the I-V characteristic curves because the resistance increases as the filament heats up.</p>
+</section>
+<section id="i-v-characteristics" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="i-v-characteristics">I-V characteristics</h3>
+<p>The I-V characteristic of a component shows how the current through it varies with the potential difference across it.</p>
+<p><strong>Ohmic conductor (e.g.&nbsp;fixed resistor at constant temperature):</strong> - Straight line through the origin - Gradient <span class="math inline">\(= 1/R\)</span></p>
+<p><strong>Filament lamp:</strong> - Curve that bends towards the voltage axis at higher currents - As current increases, temperature rises, resistance increases, so the gradient decreases</p>
+<p><strong>Semiconductor diode:</strong> - Forward bias (p.d. positive): current flows easily once the threshold voltage (≈ 0.6 V for silicon) is exceeded - Reverse bias (p.d. negative): only a very small leakage current flows until breakdown</p>
+</section>
+</section>
+<section id="sources-of-electromotive-force" class="level2">
+<h2 class="anchored" data-anchor-id="sources-of-electromotive-force">9.3 Sources of electromotive force</h2>
+<section id="electromotive-force-e.m.f." class="level3 study-card">
+<h3 class="anchored" data-anchor-id="electromotive-force-e.m.f.">Electromotive force (e.m.f.)</h3>
+<p><strong>Electromotive force (e.m.f.)</strong> <span class="math inline">\(E\)</span> of a source is the energy transferred per unit charge from chemical (or other non-electrical) energy to electrical energy as the charge passes through the source.</p>
+<p><span class="math display">\[E = \frac{W}{Q}\]</span></p>
+<p>where: - <span class="math inline">\(E\)</span> = electromotive force in volts (V) - <span class="math inline">\(W\)</span> = total energy converted from other forms to electrical energy (J) - <span class="math inline">\(Q\)</span> = charge (C)</p>
+<p>The e.m.f. is the <strong>open-circuit</strong> terminal voltage of the source (when no current flows).</p>
+</section>
+<section id="distinction-between-e.m.f.-and-p.d." class="level3 study-card">
+<h3 class="anchored" data-anchor-id="distinction-between-e.m.f.-and-p.d.">Distinction between e.m.f. and p.d.</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Feature</th>
+<th>e.m.f. (<span class="math inline">\(E\)</span>)</th>
+<th>p.d. (<span class="math inline">\(V\)</span>)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Meaning</td>
+<td>Energy transferred <strong>to</strong> electrical energy per unit charge by a source</td>
+<td>Energy transferred <strong>from</strong> electrical energy per unit charge by a component</td>
+</tr>
+<tr class="even">
+<td>Where</td>
+<td>Across a source (battery, generator)</td>
+<td>Across a component (resistor, lamp)</td>
+</tr>
+<tr class="odd">
+<td>Measured</td>
+<td>When no current flows (open circuit)</td>
+<td>When current flows</td>
+</tr>
+<tr class="even">
+<td>Cause</td>
+<td>Converts chemical/mechanical energy to electrical energy</td>
+<td>Converts electrical energy to heat/light/motion</td>
+</tr>
+<tr class="odd">
+<td>Unit</td>
+<td>Volt (V)</td>
+<td>Volt (V)</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="internal-resistance" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="internal-resistance">Internal resistance</h3>
+<p>All real sources of e.m.f. have some <strong>internal resistance</strong> <span class="math inline">\(r\)</span>. This is the resistance inside the source itself (e.g.&nbsp;the resistance of the electrolyte in a battery).</p>
+<p>When current <span class="math inline">\(I\)</span> flows, some of the e.m.f. is used to overcome the internal resistance, causing a drop in the terminal voltage:</p>
+<p><span class="math display">\[E = V + Ir\]</span></p>
+<p>where: - <span class="math inline">\(E\)</span> = e.m.f. of the source (V) - <span class="math inline">\(V\)</span> = terminal p.d. (V) — the voltage across the terminals when current flows - <span class="math inline">\(I\)</span> = current (A) - <span class="math inline">\(r\)</span> = internal resistance (<span class="math inline">\(\Omega\)</span>)</p>
+<p>The term <span class="math inline">\(Ir\)</span> is called the <strong>lost volts</strong> — the energy per unit charge dissipated inside the source.</p>
+</section>
+<section id="e.m.f.-internal-resistance-and-external-circuits" class="level3 formula-panel">
+<h3 class="anchored" data-anchor-id="e.m.f.-internal-resistance-and-external-circuits">E.m.f., internal resistance and external circuits</h3>
+<p>For a source of e.m.f. <span class="math inline">\(E\)</span> and internal resistance <span class="math inline">\(r\)</span> connected to an external resistor <span class="math inline">\(R\)</span>:</p>
+<p><span class="math display">\[E = I(R + r)\]</span></p>
+<p>The terminal p.d. is:</p>
+<p><span class="math display">\[V = IR = E - Ir\]</span></p>
+<p>The current in the circuit:</p>
+<p><span class="math display">\[I = \frac{E}{R + r}\]</span></p>
+<p>The <strong>lost volts</strong> <span class="math inline">\(Ir\)</span> increases with the current drawn from the source. A high current demand (small external resistance) causes a larger drop in terminal voltage.</p>
+</section>
+<section id="practical-determination-of-internal-resistance" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="practical-determination-of-internal-resistance">Practical determination of internal resistance</h3>
+<p>To determine the internal resistance <span class="math inline">\(r\)</span> of a cell:</p>
+<ol type="1">
+<li>Connect the cell in series with a variable resistor and an ammeter.</li>
+<li>Connect a voltmeter across the terminals of the cell.</li>
+<li>Vary the resistance and record pairs of <span class="math inline">\(I\)</span> and <span class="math inline">\(V\)</span> readings.</li>
+<li>Plot a graph of <span class="math inline">\(V\)</span> against <span class="math inline">\(I\)</span>.</li>
+<li>The equation <span class="math inline">\(V = E - Ir\)</span> is of the form <span class="math inline">\(y = mx + c\)</span>:
+<ul>
+<li><span class="math inline">\(y\)</span>-intercept = <span class="math inline">\(E\)</span> (e.m.f.)</li>
+<li>Gradient = <span class="math inline">\(-r\)</span> (internal resistance)</li>
+</ul></li>
+<li>Alternatively, plot <span class="math inline">\(V\)</span> against <span class="math inline">\(I\)</span>; the intercept on the <span class="math inline">\(V\)</span>-axis gives <span class="math inline">\(E\)</span>, and the magnitude of the gradient gives <span class="math inline">\(r\)</span>.</li>
+</ol>
+</section>
+</section>
+<section id="multiple-choice-questions" class="level2">
+<h2 class="anchored" data-anchor-id="multiple-choice-questions">Multiple Choice Questions</h2>
+<section id="electric-current---easy" class="level3">
+<h3 class="anchored" data-anchor-id="electric-current---easy">9.1 Electric Current - Easy</h3>
+<section id="example-1-9.1-mc-easy-q1" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-1-9.1-mc-easy-q1">Example 1 · 9.1 MC Easy Q1</h4>
+<p>The current in a circuit is 2.0 A. How much charge passes a point in the circuit in 30 s?</p>
+<p>A. 15 C</p>
+<p>B. 0.067 C</p>
+<p>C. 60 C</p>
+<p>D. 15 A</p>
+<details class="answer-panel">
+<summary>
+Show answer and explanation
+</summary>
+<strong>Answer: C.</strong> Using <span class="math inline">\(Q = It = 2.0 \times 30 = 60\ \text{C}\)</span>.
+</details>
+</section>
+<section id="example-2-9.1-mc-easy-q2" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-2-9.1-mc-easy-q2">Example 2 · 9.1 MC Easy Q2</h4>
+<p>Which of the following is the correct definition of electric current?</p>
+<p>A. the rate of flow of energy through a conductor</p>
+<p>B. the rate of flow of charge through a conductor</p>
+<p>C. the charge stored in a conductor</p>
+<p>D. the energy transferred per unit charge</p>
+<details class="answer-panel">
+<summary>
+Show answer and explanation
+</summary>
+<strong>Answer: B.</strong> Electric current is the rate of flow of charge, <span class="math inline">\(I = Q/t\)</span>. A describes power, D describes potential difference.
+</details>
+</section>
+<section id="example-3-9.1-mc-easy-q3" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-3-9.1-mc-easy-q3">Example 3 · 9.1 MC Easy Q3</h4>
+<p>A current of 0.50 A flows through a lamp for 2.0 minutes.</p>
+<p>What is the total charge that flows through the lamp?</p>
+<p>A. 1.0 C</p>
+<p>B. 30 C</p>
+<p>C. 60 C</p>
+<p>D. 120 C</p>
+<details class="answer-panel">
+<summary>
+Show answer and explanation
+</summary>
+<strong>Answer: C.</strong> Time in seconds: <span class="math inline">\(t = 2.0 \times 60 = 120\ \text{s}\)</span>. Charge <span class="math inline">\(Q = It = 0.50 \times 120 = 60\ \text{C}\)</span>.
+</details>
+</section>
+</section>
+<section id="electric-current---medium" class="level3">
+<h3 class="anchored" data-anchor-id="electric-current---medium">9.1 Electric Current - Medium</h3>
+<section id="example-4-9.1-mc-medium-q1" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-4-9.1-mc-medium-q1">Example 4 · 9.1 MC Medium Q1</h4>
+<p>The current at a point in a wire is 4.8 A. The charge on each electron is <span class="math inline">\(1.6 \times 10^{-19}\ \text{C}\)</span>.</p>
+<p>What is the number of electrons passing this point in 5.0 s?</p>
+<p>A. <span class="math inline">\(3.0 \times 10^{19}\)</span></p>
+<p>B. <span class="math inline">\(1.5 \times 10^{20}\)</span></p>
+<p>C. <span class="math inline">\(7.5 \times 10^{18}\)</span></p>
+<p>D. <span class="math inline">\(2.4 \times 10^{19}\)</span></p>
+<details class="answer-panel">
+<summary>
+Show answer and explanation
+</summary>
+<strong>Answer: B.</strong> Total charge <span class="math inline">\(Q = It = 4.8 \times 5.0 = 24\ \text{C}\)</span>. Number of electrons <span class="math inline">\(n = Q/e = 24 / (1.6 \times 10^{-19}) = 1.5 \times 10^{20}\)</span>.
+</details>
+</section>
+<section id="example-5-9.1-mc-medium-q2" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-5-9.1-mc-medium-q2">Example 5 · 9.1 MC Medium Q2</h4>
+<p>The graph shows how the current through a component varies with time.</p>
+<p>What is the total charge that passes through the component between <span class="math inline">\(t = 0\)</span> and <span class="math inline">\(t = 4.0\ \text{s}\)</span>?</p>
+<p>A. the area under the graph</p>
+<p>B. the gradient of the graph</p>
+<p>C. the current at <span class="math inline">\(t = 4.0\ \text{s}\)</span></p>
+<p>D. the average current multiplied by the gradient</p>
+<details class="answer-panel">
+<summary>
+Show answer and explanation
+</summary>
+<strong>Answer: A.</strong> Charge is the integral of current with respect to time, <span class="math inline">\(Q = \int I\,dt\)</span>, which is the area under the I–t graph.
+</details>
+</section>
+</section>
+<section id="electric-current---hard" class="level3">
+<h3 class="anchored" data-anchor-id="electric-current---hard">9.1 Electric Current - Hard</h3>
+<section id="example-6-9.1-mc-hard-q1" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-6-9.1-mc-hard-q1">Example 6 · 9.1 MC Hard Q1</h4>
+<p>The current in a circuit is 4.0 A. The charge on an electron is <span class="math inline">\(1.6 \times 10^{-19}\ \text{C}\)</span>.</p>
+<p>How many electrons flow past a given point in the circuit every second?</p>
+<p>A. <span class="math inline">\(6.4 \times 10^{-19}\)</span></p>
+<p>B. <span class="math inline">\(2.5 \times 10^{19}\)</span></p>
+<p>C. <span class="math inline">\(2.5 \times 10^{18}\)</span></p>
+<p>D. <span class="math inline">\(4.0 \times 10^{19}\)</span></p>
+<details class="answer-panel">
+<summary>
+Show answer and explanation
+</summary>
+<strong>Answer: B.</strong> Electrons per second <span class="math inline">\(= I/e = 4.0 / (1.6 \times 10^{-19}) = 2.5 \times 10^{19}\)</span>.
+</details>
+</section>
+<section id="example-7-9.1-mc-hard-q2" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-7-9.1-mc-hard-q2">Example 7 · 9.1 MC Hard Q2</h4>
+<p>In the circuit shown, the currents at junction P are given by <span class="math inline">\(I_1 = 2.0\ \text{A}\)</span>, <span class="math inline">\(I_2 = 1.5\ \text{A}\)</span> and <span class="math inline">\(I_3\)</span> leaves the junction.</p>
+<p>What is the value of <span class="math inline">\(I_3\)</span>?</p>
+<p>A. 0.5 A</p>
+<p>B. 2.0 A</p>
+<p>C. 3.5 A</p>
+<p>D. 5.0 A</p>
+<details class="answer-panel">
+<summary>
+Show answer and explanation
+</summary>
+<strong>Answer: C.</strong> By Kirchhoff’s first law, the sum of currents entering a junction equals the sum leaving it: <span class="math inline">\(I_1 + I_2 = I_3\)</span>, so <span class="math inline">\(I_3 = 2.0 + 1.5 = 3.5\ \text{A}\)</span>.
+</details>
+</section>
+</section>
+<section id="potential-difference-and-resistance---easy" class="level3">
+<h3 class="anchored" data-anchor-id="potential-difference-and-resistance---easy">9.2 Potential Difference and Resistance - Easy</h3>
+<section id="example-8-9.2-mc-easy-q1" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-8-9.2-mc-easy-q1">Example 8 · 9.2 MC Easy Q1</h4>
+<p>Which of the following is the correct definition of potential difference across a component?</p>
+<p>A. the rate of flow of charge through the component</p>
+<p>B. the energy transferred per unit charge as charge passes through the component</p>
+<p>C. the energy stored in the component</p>
+<p>D. the force per unit charge on the charge carriers</p>
+<details class="answer-panel">
+<summary>
+Show answer and explanation
+</summary>
+<strong>Answer: B.</strong> Potential difference is the energy transferred per unit charge, <span class="math inline">\(V = W/Q\)</span>. A defines current, D defines electric field strength.
+</details>
+</section>
+<section id="example-9-9.2-mc-easy-q2" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-9-9.2-mc-easy-q2">Example 9 · 9.2 MC Easy Q2</h4>
+<p>A p.d. of 6.0 V is applied across a resistor of resistance 3.0 <span class="math inline">\(\Omega\)</span>.</p>
+<p>What is the current through the resistor?</p>
+<p>A. 18 A</p>
+<p>B. 0.5 A</p>
+<p>C. 2.0 A</p>
+<p>D. 9.0 A</p>
+<details class="answer-panel">
+<summary>
+Show answer and explanation
+</summary>
+<strong>Answer: C.</strong> Using Ohm’s law, <span class="math inline">\(I = V/R = 6.0/3.0 = 2.0\ \text{A}\)</span>.
+</details>
+</section>
+<section id="example-10-9.2-mc-easy-q3" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-10-9.2-mc-easy-q3">Example 10 · 9.2 MC Easy Q3</h4>
+<p>A p.d. of 12 V is applied across a wire of resistance 4.0 <span class="math inline">\(\Omega\)</span>.</p>
+<p>What is the current in the wire?</p>
+<p>A. 48 A</p>
+<p>B. 8.0 A</p>
+<p>C. 3.0 A</p>
+<p>D. 0.33 A</p>
+<details class="answer-panel">
+<summary>
+Show answer and explanation
+</summary>
+<strong>Answer: C.</strong> <span class="math inline">\(I = V/R = 12/4.0 = 3.0\ \text{A}\)</span>.
+</details>
+</section>
+</section>
+<section id="potential-difference-and-resistance---medium" class="level3">
+<h3 class="anchored" data-anchor-id="potential-difference-and-resistance---medium">9.2 Potential Difference and Resistance - Medium</h3>
+<section id="example-11-9.2-mc-medium-q1" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-11-9.2-mc-medium-q1">Example 11 · 9.2 MC Medium Q1</h4>
+<p>A wire of length 2.0 m has resistance 8.0 <span class="math inline">\(\Omega\)</span>. A second wire of the same material has length 4.0 m and the same cross-sectional area.</p>
+<p>What is the resistance of the second wire?</p>
+<p>A. 4.0 <span class="math inline">\(\Omega\)</span></p>
+<p>B. 8.0 <span class="math inline">\(\Omega\)</span></p>
+<p>C. 16 <span class="math inline">\(\Omega\)</span></p>
+<p>D. 32 <span class="math inline">\(\Omega\)</span></p>
+<details class="answer-panel">
+<summary>
+Show answer and explanation
+</summary>
+<strong>Answer: C.</strong> Since <span class="math inline">\(R = \rho L/A\)</span> and <span class="math inline">\(\rho\)</span> and <span class="math inline">\(A\)</span> are unchanged, doubling the length doubles the resistance: <span class="math inline">\(R = 2 \times 8.0 = 16\ \Omega\)</span>.
+</details>
+</section>
+<section id="example-12-9.2-mc-medium-q2" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-12-9.2-mc-medium-q2">Example 12 · 9.2 MC Medium Q2</h4>
+<p>A wire has resistance 12 <span class="math inline">\(\Omega\)</span>. It is stretched to twice its original length without changing its volume.</p>
+<p>What is the new resistance?</p>
+<p>A. 6.0 <span class="math inline">\(\Omega\)</span></p>
+<p>B. 12 <span class="math inline">\(\Omega\)</span></p>
+<p>C. 24 <span class="math inline">\(\Omega\)</span></p>
+<p>D. 48 <span class="math inline">\(\Omega\)</span></p>
+<details class="answer-panel">
+<summary>
+Show answer and explanation
+</summary>
+<strong>Answer: D.</strong> Stretching to twice the length doubles <span class="math inline">\(L\)</span> and halves <span class="math inline">\(A\)</span> (volume constant), so <span class="math inline">\(R\)</span> increases by a factor of <span class="math inline">\(2 \times 2 = 4\)</span>: <span class="math inline">\(R = 4 \times 12 = 48\ \Omega\)</span>.
+</details>
+</section>
+<section id="example-13-9.2-mc-medium-q3" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-13-9.2-mc-medium-q3">Example 13 · 9.2 MC Medium Q3</h4>
+<p>Which statement about the resistance of a metallic conductor is correct?</p>
+<p>A. Resistance is inversely proportional to the length of the conductor.</p>
+<p>B. Resistance is directly proportional to the cross-sectional area of the conductor.</p>
+<p>C. Resistance is directly proportional to the resistivity of the material.</p>
+<p>D. Resistance is independent of temperature.</p>
+<details class="answer-panel">
+<summary>
+Show answer and explanation
+</summary>
+<strong>Answer: C.</strong> From <span class="math inline">\(R = \rho L/A\)</span>, resistance is directly proportional to resistivity <span class="math inline">\(\rho\)</span> and length <span class="math inline">\(L\)</span>, and inversely proportional to area <span class="math inline">\(A\)</span>. Resistance of metals increases with temperature, so D is incorrect.
+</details>
+</section>
+</section>
+<section id="potential-difference-and-resistance---hard" class="level3">
+<h3 class="anchored" data-anchor-id="potential-difference-and-resistance---hard">9.2 Potential Difference and Resistance - Hard</h3>
+<section id="example-14-9.2-mc-hard-q1" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-14-9.2-mc-hard-q1">Example 14 · 9.2 MC Hard Q1</h4>
+<p>A battery of negligible internal resistance and e.m.f. 6.0 V is connected to two resistors of resistance 4.0 <span class="math inline">\(\Omega\)</span> and 8.0 <span class="math inline">\(\Omega\)</span> in series.</p>
+<p>What is the potential difference across the 8.0 <span class="math inline">\(\Omega\)</span> resistor?</p>
+<p>A. 2.0 V</p>
+<p>B. 3.0 V</p>
+<p>C. 4.0 V</p>
+<p>D. 6.0 V</p>
+<details class="answer-panel">
+<summary>
+Show answer and explanation
+</summary>
+<strong>Answer: C.</strong> Total resistance <span class="math inline">\(R = 4.0 + 8.0 = 12\ \Omega\)</span>, current <span class="math inline">\(I = 6.0/12 = 0.50\ \text{A}\)</span>. P.d. across the 8.0 <span class="math inline">\(\Omega\)</span> resistor <span class="math inline">\(V = IR = 0.50 \times 8.0 = 4.0\ \text{V}\)</span>.
+</details>
+</section>
+</section>
+<section id="sources-of-electromotive-force---easy" class="level3">
+<h3 class="anchored" data-anchor-id="sources-of-electromotive-force---easy">9.3 Sources of Electromotive Force - Easy</h3>
+<section id="example-15-9.3-mc-easy-q1" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-15-9.3-mc-easy-q1">Example 15 · 9.3 MC Easy Q1</h4>
+<p>Which of the following is the correct definition of electromotive force (e.m.f.)?</p>
+<p>A. the energy transferred from electrical to other forms per unit charge in a component</p>
+<p>B. the energy transferred from other forms to electrical energy per unit charge by a source</p>
+<p>C. the rate of flow of charge through a source</p>
+<p>D. the total energy stored in a battery</p>
+<details class="answer-panel">
+<summary>
+Show answer and explanation
+</summary>
+<strong>Answer: B.</strong> E.m.f. is the energy transferred from chemical (or other non-electrical) forms to electrical energy per unit charge by a source. A describes potential difference.
+</details>
+</section>
+<section id="example-16-9.3-mc-easy-q2" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-16-9.3-mc-easy-q2">Example 16 · 9.3 MC Easy Q2</h4>
+<p>A battery of e.m.f. 6.0 V has an internal resistance of 2.0 <span class="math inline">\(\Omega\)</span>. It is connected to an external resistor of resistance 4.0 <span class="math inline">\(\Omega\)</span>.</p>
+<p>What is the current in the circuit?</p>
+<p>A. 1.0 A</p>
+<p>B. 1.5 A</p>
+<p>C. 2.0 A</p>
+<p>D. 3.0 A</p>
+<details class="answer-panel">
+<summary>
+Show answer and explanation
+</summary>
+<strong>Answer: A.</strong> Using <span class="math inline">\(E = I(R + r)\)</span>: <span class="math inline">\(I = E/(R + r) = 6.0/(4.0 + 2.0) = 1.0\ \text{A}\)</span>.
+</details>
+</section>
+</section>
+<section id="sources-of-electromotive-force---medium" class="level3">
+<h3 class="anchored" data-anchor-id="sources-of-electromotive-force---medium">9.3 Sources of Electromotive Force - Medium</h3>
+<section id="example-17-9.3-mc-medium-q1" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-17-9.3-mc-medium-q1">Example 17 · 9.3 MC Medium Q1</h4>
+<p>A battery of e.m.f. 6.0 V and internal resistance 0.50 <span class="math inline">\(\Omega\)</span> is connected to a resistor of resistance 5.5 <span class="math inline">\(\Omega\)</span>.</p>
+<p>What is the terminal p.d. of the battery?</p>
+<p>A. 0.50 V</p>
+<p>B. 5.5 V</p>
+<p>C. 6.0 V</p>
+<p>D. 0.60 V</p>
+<details class="answer-panel">
+<summary>
+Show answer and explanation
+</summary>
+<strong>Answer: B.</strong> Current <span class="math inline">\(I = E/(R + r) = 6.0/(5.5 + 0.50) = 1.0\ \text{A}\)</span>. Terminal p.d. <span class="math inline">\(V = IR = 1.0 \times 5.5 = 5.5\ \text{V}\)</span>.
+</details>
+</section>
+<section id="example-18-9.3-mc-medium-q2" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-18-9.3-mc-medium-q2">Example 18 · 9.3 MC Medium Q2</h4>
+<p>The graph shows how the terminal p.d. <span class="math inline">\(V\)</span> of a cell varies with the current <span class="math inline">\(I\)</span> drawn from it.</p>
+<p>Which statement is correct?</p>
+<p>A. The intercept on the <span class="math inline">\(V\)</span>-axis gives the internal resistance.</p>
+<p>B. The gradient of the graph gives the internal resistance.</p>
+<p>C. The intercept on the <span class="math inline">\(I\)</span>-axis gives the e.m.f.</p>
+<p>D. The area under the graph gives the e.m.f.</p>
+<details class="answer-panel">
+<summary>
+Show answer and explanation
+</summary>
+<strong>Answer: B.</strong> The equation <span class="math inline">\(V = E - Ir\)</span> is of the form <span class="math inline">\(y = mx + c\)</span>: the <span class="math inline">\(V\)</span>-intercept gives the e.m.f. <span class="math inline">\(E\)</span> and the gradient is <span class="math inline">\(-r\)</span>, so the (magnitude of the) gradient gives the internal resistance.
+</details>
+</section>
+<section id="example-19-9.3-mc-medium-q3" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-19-9.3-mc-medium-q3">Example 19 · 9.3 MC Medium Q3</h4>
+<p>A battery of e.m.f. 9.0 V and internal resistance 1.0 <span class="math inline">\(\Omega\)</span> supplies a current of 3.0 A to an external circuit.</p>
+<p>What is the power dissipated in the internal resistance?</p>
+<p>A. 3.0 W</p>
+<p>B. 9.0 W</p>
+<p>C. 27 W</p>
+<p>D. 12 W</p>
+<details class="answer-panel">
+<summary>
+Show answer and explanation
+</summary>
+<strong>Answer: B.</strong> Power dissipated in internal resistance <span class="math inline">\(= I^2 r = 3.0^2 \times 1.0 = 9.0\ \text{W}\)</span>.
+</details>
+</section>
+</section>
+<section id="sources-of-electromotive-force---hard" class="level3">
+<h3 class="anchored" data-anchor-id="sources-of-electromotive-force---hard">9.3 Sources of Electromotive Force - Hard</h3>
+<section id="example-20-9.3-mc-hard-q1" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-20-9.3-mc-hard-q1">Example 20 · 9.3 MC Hard Q1</h4>
+<p>A battery of e.m.f. 6.0 V and internal resistance <span class="math inline">\(r\)</span> supplies a current of 0.50 A to an external resistor of resistance 11 <span class="math inline">\(\Omega\)</span>.</p>
+<p>What is the internal resistance <span class="math inline">\(r\)</span> of the battery?</p>
+<p>A. 0.50 <span class="math inline">\(\Omega\)</span></p>
+<p>B. 1.0 <span class="math inline">\(\Omega\)</span></p>
+<p>C. 2.0 <span class="math inline">\(\Omega\)</span></p>
+<p>D. 12 <span class="math inline">\(\Omega\)</span></p>
+<details class="answer-panel">
+<summary>
+Show answer and explanation
+</summary>
+<strong>Answer: B.</strong> Using <span class="math inline">\(E = I(R + r)\)</span>: <span class="math inline">\(6.0 = 0.50(11 + r)\)</span>, so <span class="math inline">\(11 + r = 12\)</span> and <span class="math inline">\(r = 1.0\ \Omega\)</span>.
+</details>
+</section>
+</section>
+</section>
+<section id="structured-questions" class="level2">
+<h2 class="anchored" data-anchor-id="structured-questions">Structured Questions</h2>
+<section id="electric-current---medium-1" class="level3">
+<h3 class="anchored" data-anchor-id="electric-current---medium-1">9.1 Electric Current - Medium</h3>
+<section id="example-1-9.1-sq-medium-q1" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-1-9.1-sq-medium-q1">Example 1 · 9.1 SQ Medium Q1</h4>
+<p><strong>(a)</strong> State what is meant by electric current.</p>
+<p><code>[1 mark]</code></p>
+<p><strong>(b)</strong> The current in a wire is 3.2 A. The charge on an electron is <span class="math inline">\(1.6 \times 10^{-19}\ \text{C}\)</span>.</p>
+<p>Calculate the number of electrons passing a point in the wire in 2.0 s.</p>
+<p><code>[3 marks]</code></p>
+<p><strong>(c)</strong> A charge of 24 C flows through a resistor in 40 s. Calculate the current in the resistor.</p>
+<p><code>[2 marks]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<p><strong>(a)</strong> Electric current is the rate of flow of charge. <code>[1]</code></p>
+<p><code>[Total: 1 mark]</code></p>
+<p><strong>(b)</strong> - Total charge <span class="math inline">\(Q = It = 3.2 \times 2.0 = 6.4\ \text{C}\)</span>. <code>[1]</code> - Using <span class="math inline">\(Q = ne\)</span>, <span class="math inline">\(n = Q/e = 6.4 / (1.6 \times 10^{-19})\)</span>. <code>[1]</code> - <span class="math inline">\(n = 4.0 \times 10^{19}\)</span> electrons. <code>[1]</code></p>
+<p><code>[Total: 3 marks]</code></p>
+<p><strong>(c)</strong> - Using <span class="math inline">\(I = Q/t\)</span>. <code>[1]</code> - <span class="math inline">\(I = 24/40 = 0.60\ \text{A}\)</span>. <code>[1]</code></p>
+<code>[Total: 2 marks]</code>
+</details>
+</section>
+<section id="example-2-9.1-sq-medium-q2" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-2-9.1-sq-medium-q2">Example 2 · 9.1 SQ Medium Q2</h4>
+<p><strong>(a)</strong> State Kirchhoff’s first law.</p>
+<p><code>[1 mark]</code></p>
+<p><strong>(b)</strong> In the circuit shown in Fig. 1.1, the currents are <span class="math inline">\(I_1 = 1.5\ \text{A}\)</span>, <span class="math inline">\(I_2 = 0.8\ \text{A}\)</span> and <span class="math inline">\(I_3 = 1.2\ \text{A}\)</span>.</p>
+<p>Fig. 1.1 shows three wires meeting at a junction P, with <span class="math inline">\(I_1\)</span> and <span class="math inline">\(I_2\)</span> entering P and <span class="math inline">\(I_3\)</span> leaving P.</p>
+<p>Calculate the current <span class="math inline">\(I_4\)</span> leaving P along the fourth wire.</p>
+<p><code>[2 marks]</code></p>
+<p><strong>(c)</strong> Explain how Kirchhoff’s first law is a consequence of the conservation of charge.</p>
+<p><code>[2 marks]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<p><strong>(a)</strong> The sum of the currents entering a junction equals the sum of the currents leaving the junction. <code>[1]</code></p>
+<p><code>[Total: 1 mark]</code></p>
+<p><strong>(b)</strong> - Using <span class="math inline">\(I_1 + I_2 = I_3 + I_4\)</span>. <code>[1]</code> - <span class="math inline">\(I_4 = 1.5 + 0.8 - 1.2 = 1.1\ \text{A}\)</span>. <code>[1]</code></p>
+<p><code>[Total: 2 marks]</code></p>
+<p><strong>(c)</strong> - Charge cannot be created or destroyed / cannot accumulate at a junction. <code>[1]</code> - Therefore the total charge arriving per second must equal the total charge leaving per second, i.e.&nbsp;the currents balance. <code>[1]</code></p>
+<code>[Total: 2 marks]</code>
+</details>
+</section>
+<section id="example-3-9.1-sq-medium-q3" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-3-9.1-sq-medium-q3">Example 3 · 9.1 SQ Medium Q3</h4>
+<p><strong>(a)</strong> The charge on an electron is <span class="math inline">\(1.6 \times 10^{-19}\ \text{C}\)</span>.</p>
+<p>Calculate the number of electrons that must pass a point in a circuit per second to produce a current of 0.80 A.</p>
+<p><code>[2 marks]</code></p>
+<p><strong>(b)</strong> A current of 2.4 A flows through a wire for 5.0 minutes.</p>
+<p>Calculate the total charge that flows through the wire.</p>
+<p><code>[2 marks]</code></p>
+<p><strong>(c)</strong> The wire in part (b) carries a current in the direction shown in Fig. 1.2.</p>
+<p>State the direction of the electron flow, giving a reason.</p>
+<p><code>[2 marks]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<p><strong>(a)</strong> - Charge per second <span class="math inline">\(= I = 0.80\ \text{C s}^{-1}\)</span>. <code>[1]</code> - Number of electrons per second <span class="math inline">\(= I/e = 0.80/(1.6 \times 10^{-19}) = 5.0 \times 10^{18}\)</span>. <code>[1]</code></p>
+<p><code>[Total: 2 marks]</code></p>
+<p><strong>(b)</strong> - Time in seconds: <span class="math inline">\(t = 5.0 \times 60 = 300\ \text{s}\)</span>. <code>[1]</code> - <span class="math inline">\(Q = It = 2.4 \times 300 = 720\ \text{C}\)</span>. <code>[1]</code></p>
+<p><code>[Total: 2 marks]</code></p>
+<p><strong>(c)</strong> - Electron flow is opposite to the conventional current direction. <code>[1]</code> - Conventional current is the direction in which positive charge would flow, but the charge carriers in a metal are electrons, which are negative. <code>[1]</code></p>
+<code>[Total: 2 marks]</code>
+</details>
+</section>
+</section>
+<section id="potential-difference-and-resistance---medium-1" class="level3">
+<h3 class="anchored" data-anchor-id="potential-difference-and-resistance---medium-1">9.2 Potential Difference and Resistance - Medium</h3>
+<section id="example-4-9.2-sq-medium-q1" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-4-9.2-sq-medium-q1">Example 4 · 9.2 SQ Medium Q1</h4>
+<p><strong>(a)</strong> State what is meant by potential difference across a component.</p>
+<p><code>[1 mark]</code></p>
+<p><strong>(b)</strong> A p.d. of 6.0 V is applied across a resistor. The charge passing through the resistor in 30 s is 36 C.</p>
+<p><strong>(i)</strong> Calculate the current through the resistor.</p>
+<p><strong>(ii)</strong> Calculate the resistance of the resistor.</p>
+<p><strong>(iii)</strong> Calculate the energy transferred to the resistor in 30 s.</p>
+<p><code>[6 marks]</code></p>
+<p><strong>(c)</strong> A voltmeter is used to measure the p.d. across a resistor.</p>
+<p>State how the voltmeter should be connected in the circuit.</p>
+<p><code>[1 mark]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<p><strong>(a)</strong> Potential difference is the energy transferred per unit charge as charge passes through the component. <code>[1]</code></p>
+<p><code>[Total: 1 mark]</code></p>
+<p><strong>(b)</strong> - <strong>(i)</strong> <span class="math inline">\(I = Q/t = 36/30 = 1.2\ \text{A}\)</span>. <code>[2]</code> - <strong>(ii)</strong> <span class="math inline">\(R = V/I = 6.0/1.2 = 5.0\ \Omega\)</span>. <code>[2]</code> - <strong>(iii)</strong> Using <span class="math inline">\(W = VQ\)</span> (or <span class="math inline">\(W = VIt\)</span>): <span class="math inline">\(W = 6.0 \times 36 = 216\ \text{J}\)</span>. <code>[2]</code></p>
+<p><code>[Total: 6 marks]</code></p>
+<p><strong>(c)</strong> Connect the voltmeter in parallel with the resistor. <code>[1]</code></p>
+<code>[Total: 1 mark]</code>
+</details>
+</section>
+<section id="example-5-9.2-sq-medium-q2" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-5-9.2-sq-medium-q2">Example 5 · 9.2 SQ Medium Q2</h4>
+<p><strong>(a)</strong> State Ohm’s law.</p>
+<p><code>[2 marks]</code></p>
+<p><strong>(b)</strong> A resistor is connected to a variable power supply. The current <span class="math inline">\(I\)</span> through the resistor and the p.d. <span class="math inline">\(V\)</span> across it are measured for several settings. The results are shown in the table.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th><span class="math inline">\(I\)</span> / A</th>
+<th>0.00</th>
+<th>0.20</th>
+<th>0.40</th>
+<th>0.60</th>
+<th>0.80</th>
+<th>1.00</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\(V\)</span> / V</td>
+<td>0.0</td>
+<td>0.8</td>
+<td>1.6</td>
+<td>2.4</td>
+<td>3.2</td>
+<td>4.0</td>
+</tr>
+</tbody>
+</table>
+<p><strong>(i)</strong> Plot a graph of <span class="math inline">\(V\)</span> against <span class="math inline">\(I\)</span> on the grid below.</p>
+<p><strong>(ii)</strong> Use your graph to determine the resistance of the resistor.</p>
+<p><code>[5 marks]</code></p>
+<p><strong>(c)</strong> The resistor is now replaced by a filament lamp and the experiment is repeated.</p>
+<p>Describe how the I–V characteristic of the filament lamp differs from that of the resistor.</p>
+<p><code>[2 marks]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<p><strong>(a)</strong> The current through a metallic conductor is directly proportional to the potential difference across it, provided the physical conditions (such as temperature) remain constant. <code>[2]</code></p>
+<p><code>[Total: 2 marks]</code></p>
+<p><strong>(b)</strong> - <strong>(i)</strong> All six points plotted correctly with labelled axes and suitable scales. <code>[3]</code> - <strong>(ii)</strong> Best-fit straight line through the origin drawn. <code>[1]</code> Gradient <span class="math inline">\(= R = \Delta V/\Delta I = 4.0/1.0 = 4.0\ \Omega\)</span>. <code>[1]</code></p>
+<p><code>[Total: 5 marks]</code></p>
+<p><strong>(c)</strong> - The lamp’s I–V graph is a curve, not a straight line. <code>[1]</code> - The gradient decreases at higher currents because the resistance increases as the filament heats up. <code>[1]</code></p>
+<code>[Total: 2 marks]</code>
+</details>
+</section>
+<section id="example-6-9.2-sq-medium-q3" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-6-9.2-sq-medium-q3">Example 6 · 9.2 SQ Medium Q3</h4>
+<p><strong>(a)</strong> State what is meant by resistivity.</p>
+<p><code>[1 mark]</code></p>
+<p><strong>(b)</strong> A wire of length 1.5 m and cross-sectional area <span class="math inline">\(2.0 \times 10^{-7}\ \text{m}^2\)</span> has a resistance of 0.13 <span class="math inline">\(\Omega\)</span>.</p>
+<p>Calculate the resistivity of the material of the wire.</p>
+<p><code>[3 marks]</code></p>
+<p><strong>(c)</strong> A second wire is made from the same material. It has twice the length and half the cross-sectional area of the first wire.</p>
+<p>Calculate the resistance of the second wire.</p>
+<p><code>[2 marks]</code></p>
+<p><strong>(d)</strong> The resistance of a metallic conductor changes when its temperature changes.</p>
+<p>State and explain the effect of increasing temperature on the resistance of the wire.</p>
+<p><code>[2 marks]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<p><strong>(a)</strong> Resistivity is the resistance of a material of unit length and unit cross-sectional area / a property of the material, independent of its dimensions. <code>[1]</code></p>
+<p><code>[Total: 1 mark]</code></p>
+<p><strong>(b)</strong> - Using <span class="math inline">\(R = \rho L/A\)</span>, rearranged: <span class="math inline">\(\rho = RA/L\)</span>. <code>[1]</code> - <span class="math inline">\(\rho = 0.13 \times (2.0 \times 10^{-7}) / 1.5\)</span>. <code>[1]</code> - <span class="math inline">\(\rho = 1.73 \times 10^{-8}\ \Omega\ \text{m}\)</span>. <code>[1]</code></p>
+<p><code>[Total: 3 marks]</code></p>
+<p><strong>(c)</strong> - Doubling the length doubles <span class="math inline">\(R\)</span>; halving the area doubles <span class="math inline">\(R\)</span> again. <code>[1]</code> - <span class="math inline">\(R = 0.13 \times 2 \times 2 = 0.52\ \Omega\)</span>. <code>[1]</code></p>
+<p><code>[Total: 2 marks]</code></p>
+<p><strong>(d)</strong> - The resistance increases. <code>[1]</code> - The metal ions vibrate more vigorously at higher temperature, making it harder for the charge carriers (electrons) to pass through, so resistance increases. <code>[1]</code></p>
+<code>[Total: 2 marks]</code>
+</details>
+</section>
+<section id="example-7-9.2-sq-medium-q4" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-7-9.2-sq-medium-q4">Example 7 · 9.2 SQ Medium Q4</h4>
+<p><strong>(a)</strong> Sketch, on the axes below, the I–V characteristic of:</p>
+<p><strong>(i)</strong> an ohmic conductor;</p>
+<p><strong>(ii)</strong> a semiconductor diode.</p>
+<p><code>[4 marks]</code></p>
+<p><strong>(b)</strong> A fixed resistor has a resistance of 10 <span class="math inline">\(\Omega\)</span>.</p>
+<p>Calculate the current through the resistor when the p.d. across it is 3.0 V.</p>
+<p><code>[2 marks]</code></p>
+<p><strong>(c)</strong> The fixed resistor is replaced by a thermistor, and the p.d. across it is kept constant at 3.0 V. The temperature of the thermistor increases.</p>
+<p>State and explain what happens to the current through the thermistor.</p>
+<p><code>[3 marks]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<p><strong>(a)</strong> - <strong>(i)</strong> Straight line through the origin (with current proportional to p.d.). <code>[2]</code> - <strong>(ii)</strong> Current near zero for negative p.d. (reverse bias); current rises steeply once the forward threshold voltage (≈ 0.6 V) is exceeded. <code>[2]</code></p>
+<p><code>[Total: 4 marks]</code></p>
+<p><strong>(b)</strong> - Using <span class="math inline">\(I = V/R\)</span>. <code>[1]</code> - <span class="math inline">\(I = 3.0/10 = 0.30\ \text{A}\)</span>. <code>[1]</code></p>
+<p><code>[Total: 2 marks]</code></p>
+<p><strong>(c)</strong> - The current increases. <code>[1]</code> - The resistance of the thermistor decreases as its temperature increases. <code>[1]</code> - With constant p.d., <span class="math inline">\(I = V/R\)</span>, so a smaller resistance gives a larger current. <code>[1]</code></p>
+<code>[Total: 3 marks]</code>
+</details>
+</section>
+</section>
+<section id="sources-of-electromotive-force---medium-1" class="level3">
+<h3 class="anchored" data-anchor-id="sources-of-electromotive-force---medium-1">9.3 Sources of Electromotive Force - Medium</h3>
+<section id="example-8-9.3-sq-medium-q1" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-8-9.3-sq-medium-q1">Example 8 · 9.3 SQ Medium Q1</h4>
+<p><strong>(a)</strong> State what is meant by the electromotive force (e.m.f.) of a source.</p>
+<p><code>[1 mark]</code></p>
+<p><strong>(b)</strong> A cell of e.m.f. 1.5 V is connected to a resistor of resistance 2.0 <span class="math inline">\(\Omega\)</span>. The cell has an internal resistance of 0.50 <span class="math inline">\(\Omega\)</span>.</p>
+<p><strong>(i)</strong> Calculate the current in the circuit.</p>
+<p><strong>(ii)</strong> Calculate the terminal p.d. of the cell.</p>
+<p><strong>(iii)</strong> Calculate the lost volts in the cell.</p>
+<p><code>[6 marks]</code></p>
+<p><strong>(c)</strong> State the difference between e.m.f. and potential difference.</p>
+<p><code>[2 marks]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<p><strong>(a)</strong> E.m.f. is the energy transferred from chemical (or other non-electrical) forms to electrical energy per unit charge by the source. <code>[1]</code></p>
+<p><code>[Total: 1 mark]</code></p>
+<p><strong>(b)</strong> - <strong>(i)</strong> Using <span class="math inline">\(E = I(R + r)\)</span>: <span class="math inline">\(I = 1.5/(2.0 + 0.50) = 0.60\ \text{A}\)</span>. <code>[2]</code> - <strong>(ii)</strong> <span class="math inline">\(V = IR = 0.60 \times 2.0 = 1.2\ \text{V}\)</span>. <code>[2]</code> - <strong>(iii)</strong> Lost volts <span class="math inline">\(= Ir = 0.60 \times 0.50 = 0.30\ \text{V}\)</span> (or <span class="math inline">\(E - V = 1.5 - 1.2 = 0.30\ \text{V}\)</span>). <code>[2]</code></p>
+<p><code>[Total: 6 marks]</code></p>
+<p><strong>(c)</strong> - E.m.f. is the energy transferred <strong>to</strong> electrical energy per unit charge by a source; p.d. is the energy transferred <strong>from</strong> electrical energy per unit charge by a component. <code>[1]</code> - E.m.f. is measured across a source when no current flows (open circuit); p.d. is measured across a component when current flows. <code>[1]</code></p>
+<code>[Total: 2 marks]</code>
+</details>
+</section>
+<section id="example-9-9.3-sq-medium-q2" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-9-9.3-sq-medium-q2">Example 9 · 9.3 SQ Medium Q2</h4>
+<p><strong>(a)</strong> A battery has an e.m.f. of 9.0 V. When a current of 1.5 A is drawn from it, the terminal p.d. is 8.1 V.</p>
+<p><strong>(i)</strong> Calculate the internal resistance of the battery.</p>
+<p><strong>(ii)</strong> Calculate the power dissipated in the internal resistance.</p>
+<p><code>[5 marks]</code></p>
+<p><strong>(b)</strong> The current drawn from the battery is now increased.</p>
+<p>State and explain the effect on the terminal p.d. of the battery.</p>
+<p><code>[3 marks]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<p><strong>(a)</strong> - <strong>(i)</strong> Using <span class="math inline">\(E = V + Ir\)</span>: <span class="math inline">\(r = (E - V)/I = (9.0 - 8.1)/1.5 = 0.60\ \Omega\)</span>. <code>[3]</code> - <strong>(ii)</strong> Power <span class="math inline">\(= I^2 r = 1.5^2 \times 0.60 = 1.35\ \text{W}\)</span>. <code>[2]</code></p>
+<p><code>[Total: 5 marks]</code></p>
+<p><strong>(b)</strong> - The terminal p.d. decreases. <code>[1]</code> - The lost volts <span class="math inline">\(Ir\)</span> increase as the current increases. <code>[1]</code> - Since <span class="math inline">\(V = E - Ir\)</span>, a larger lost volts gives a smaller terminal p.d. <code>[1]</code></p>
+<code>[Total: 3 marks]</code>
+</details>
+</section>
+<section id="example-10-9.3-sq-medium-q3" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-10-9.3-sq-medium-q3">Example 10 · 9.3 SQ Medium Q3</h4>
+<p><strong>(a)</strong> A student investigates the e.m.f. <span class="math inline">\(E\)</span> and internal resistance <span class="math inline">\(r\)</span> of a cell. The cell is connected to a variable resistor, an ammeter and a voltmeter as shown in Fig. 1.1.</p>
+<p>Fig. 1.1 shows a cell in series with an ammeter and a variable resistor, with a voltmeter connected across the cell terminals.</p>
+<p><strong>(i)</strong> State the readings that are recorded as the resistance of the variable resistor is changed.</p>
+<p><strong>(ii)</strong> Describe how the student uses the readings to determine <span class="math inline">\(E\)</span> and <span class="math inline">\(r\)</span>.</p>
+<p><code>[5 marks]</code></p>
+<p><strong>(b)</strong> The graph of terminal p.d. <span class="math inline">\(V\)</span> against current <span class="math inline">\(I\)</span> has an intercept of 6.0 V on the <span class="math inline">\(V\)</span>-axis and a gradient of <span class="math inline">\(-2.0\ \text{V A}^{-1}\)</span>.</p>
+<p><strong>(i)</strong> State the e.m.f. of the cell.</p>
+<p><strong>(ii)</strong> State the internal resistance of the cell.</p>
+<p><code>[2 marks]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<p><strong>(a)</strong> - <strong>(i)</strong> The ammeter reading (current <span class="math inline">\(I\)</span>) and the voltmeter reading (terminal p.d. <span class="math inline">\(V\)</span>) for each setting of the variable resistor. <code>[1]</code> - <strong>(ii)</strong> Plot a graph of <span class="math inline">\(V\)</span> against <span class="math inline">\(I\)</span>. <code>[1]</code> The equation <span class="math inline">\(V = E - Ir\)</span> is of the form <span class="math inline">\(y = mx + c\)</span>. <code>[1]</code> The <span class="math inline">\(V\)</span>-intercept gives the e.m.f. <span class="math inline">\(E\)</span>. <code>[1]</code> The magnitude of the gradient gives the internal resistance <span class="math inline">\(r\)</span>. <code>[1]</code></p>
+<p><code>[Total: 5 marks]</code></p>
+<p><strong>(b)</strong> - <strong>(i)</strong> <span class="math inline">\(E = 6.0\ \text{V}\)</span>. <code>[1]</code> - <strong>(ii)</strong> <span class="math inline">\(r = 2.0\ \Omega\)</span>. <code>[1]</code></p>
+<code>[Total: 2 marks]</code>
+</details>
+</section>
+<section id="example-11-9.3-sq-medium-q4" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-11-9.3-sq-medium-q4">Example 11 · 9.3 SQ Medium Q4</h4>
+<p><strong>(a)</strong> Two identical cells, each of e.m.f. 1.5 V and internal resistance 1.0 <span class="math inline">\(\Omega\)</span>, are connected in series with an external resistor of resistance 5.0 <span class="math inline">\(\Omega\)</span>.</p>
+<p><strong>(i)</strong> Calculate the total e.m.f. of the combination.</p>
+<p><strong>(ii)</strong> Calculate the total internal resistance of the combination.</p>
+<p><strong>(iii)</strong> Calculate the current in the circuit.</p>
+<p><code>[5 marks]</code></p>
+<p><strong>(b)</strong> The two cells are now connected in parallel.</p>
+<p>State the total e.m.f. of the parallel combination.</p>
+<p><code>[1 mark]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<p><strong>(a)</strong> - <strong>(i)</strong> Total e.m.f. <span class="math inline">\(= 1.5 + 1.5 = 3.0\ \text{V}\)</span>. <code>[1]</code> - <strong>(ii)</strong> Total internal resistance <span class="math inline">\(= 1.0 + 1.0 = 2.0\ \Omega\)</span>. <code>[1]</code> - <strong>(iii)</strong> Using <span class="math inline">\(E = I(R + r)\)</span>: <span class="math inline">\(I = 3.0/(5.0 + 2.0) = 0.43\ \text{A}\)</span>. <code>[3]</code></p>
+<p><code>[Total: 5 marks]</code></p>
+<p><strong>(b)</strong> Total e.m.f. <span class="math inline">\(= 1.5\ \text{V}\)</span> (equal to the e.m.f. of one cell). <code>[1]</code></p>
+<code>[Total: 1 mark]</code>
+</details>
+</section>
+</section>
+</section>
+<section id="chapter-checklist" class="level2">
+<h2 class="anchored" data-anchor-id="chapter-checklist">Chapter checklist</h2>
+<ul class="task-list">
+<li><label><input type="checkbox">I can define electric current and use <span class="math inline">\(I = Q/t\)</span>.</label></li>
+<li><label><input type="checkbox">I can use <span class="math inline">\(Q = ne\)</span> and recall the value of <span class="math inline">\(e\)</span>.</label></li>
+<li><label><input type="checkbox">I can apply Kirchhoff’s first law.</label></li>
+<li><label><input type="checkbox">I can define potential difference and use <span class="math inline">\(V = W/Q\)</span>.</label></li>
+<li><label><input type="checkbox">I can recall and use Ohm’s law <span class="math inline">\(R = V/I\)</span>.</label></li>
+<li><label><input type="checkbox">I can use <span class="math inline">\(R = \rho L / A\)</span> and describe the effect of temperature on resistance.</label></li>
+<li><label><input type="checkbox">I can sketch and interpret I-V characteristics.</label></li>
+<li><label><input type="checkbox">I can distinguish between e.m.f. and p.d.</label></li>
+<li><label><input type="checkbox">I can use <span class="math inline">\(E = I(R + r)\)</span> and calculate terminal p.d. and lost volts.</label></li>
+</ul>
+<section id="original-question-pdfs" class="level3">
+<h3 class="anchored" data-anchor-id="original-question-pdfs">Original question PDFs</h3>
+<ul>
+<li><a href="https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/electricity/9.1-electric-current-c-easy.pdf">9.1 Electric Current - MC Easy</a></li>
+<li><a href="https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/electricity/9.1-electric-current-c-medium.pdf">9.1 Electric Current - MC Medium</a></li>
+<li><a href="https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/electricity/9.1-electric-current-c-hard.pdf">9.1 Electric Current - MC Hard</a></li>
+<li><a href="https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/electricity/9.1-electric-current-sq-medium.pdf">9.1 Electric Current - SQ Medium</a></li>
+<li><a href="https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/electricity/9.2-pd-resistance-c-easy.pdf">9.2 P.D. &amp; Resistance - MC Easy</a></li>
+<li><a href="https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/electricity/9.2-pd-resistance-c-medium.pdf">9.2 P.D. &amp; Resistance - MC Medium</a></li>
+<li><a href="https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/electricity/9.2-pd-resistance-c-hard.pdf">9.2 P.D. &amp; Resistance - MC Hard</a></li>
+<li><a href="https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/electricity/9.2-pd-resistance-sq-medium.pdf">9.2 P.D. &amp; Resistance - SQ Medium</a></li>
+<li><a href="https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/electricity/9.3-emf-internal-resistance-c-easy.pdf">9.3 E.M.F. &amp; Internal Resistance - MC Easy</a></li>
+<li><a href="https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/electricity/9.3-emf-internal-resistance-c-medium.pdf">9.3 E.M.F. &amp; Internal Resistance - MC Medium</a></li>
+<li><a href="https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/electricity/9.3-emf-internal-resistance-c-hard.pdf">9.3 E.M.F. &amp; Internal Resistance - MC Hard</a></li>
+<li><a href="https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/electricity/9.3-emf-internal-resistance-sq-medium.pdf">9.3 E.M.F. &amp; Internal Resistance - SQ Medium</a></li>
+</ul>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll(".done-toggle input").forEach((input) => {
+    const key = `cie-physics-${input.dataset.progress}`;
+    input.checked = localStorage.getItem(key) === "true";
+    input.closest(".question-card")?.classList.toggle("is-complete", input.checked);
+    input.addEventListener("change", () => {
+      localStorage.setItem(key, input.checked);
+      input.closest(".question-card")?.classList.toggle("is-complete", input.checked);
+    });
+  });
+
+  document.querySelectorAll(".mc-question").forEach((card) => {
+    const answer = card.dataset.answer;
+    const feedback = card.querySelector(".mc-feedback");
+    const check = card.querySelector(".check-answer");
+    let selected = localStorage.getItem(`cie-physics-${card.id}-choice`) || "";
+
+    const showSelection = () => {
+      card.querySelectorAll(".mc-choice").forEach((choice) => {
+        choice.classList.toggle("is-selected", choice.dataset.choice === selected);
+      });
+    };
+    showSelection();
+
+    card.querySelectorAll(".mc-choice").forEach((choice) => {
+      choice.addEventListener("click", () => {
+        selected = choice.dataset.choice;
+        localStorage.setItem(`cie-physics-${card.id}-choice`, selected);
+        feedback.textContent = "";
+        feedback.className = "mc-feedback";
+        showSelection();
+      });
+    });
+
+    check?.addEventListener("click", () => {
+      if (!selected) {
+        feedback.textContent = "Select an answer first.";
+        feedback.className = "mc-feedback is-pending";
+        return;
+      }
+      const correct = selected === answer;
+      feedback.textContent = correct ? "Correct." : `Not quite. The correct answer is ${answer}.`;
+      feedback.className = `mc-feedback ${correct ? "is-correct" : "is-incorrect"}`;
+    });
+  });
+});
+</script>
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "已复制");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "已复制");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../as-level/08-superposition.html" class="pagination-link" aria-label="8 Superposition">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">8 Superposition</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../a-level/12-motion-in-a-circle.html" class="pagination-link" aria-label="12 Motion in a circle">
+        <span class="nav-page-text">12 Motion in a circle</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>
