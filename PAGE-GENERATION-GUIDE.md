@@ -37,13 +37,16 @@ pdftoppm -f 1 -l <题目页数> -r 180 -png <pdf> tmp/pdfs/<topic>/render/<key>/
 
 严格按以下优先级选择题目，不要凭感觉换题：
 
-1. **先提取题目页可独立提取的图**：用 `pdfimages -png` 导出对象，找出「image + 相邻 smask 尺寸一致」的对，合成白底图。
+1. **先提取题目页的独立 image 对象**：用 `pdfimages -png` 导出对象。只要对象是 PDF 里的独立 image（不要求有 smask 掩码），都可以使用：
+   - 有匹配 smask（相邻对象尺寸一致）→ 合成白底图；
+   - 无 smask 且本身是白底图 → 直接转成 WEBP 使用。
 2. **只加入两类题**：
    - 原题带图，且图可以独立提取的题；
    - 原题就是纯文字、不需要图的题。
 3. **原题带图但图无法独立提取的题：跳过，不加入页面**。不要把它改写成纯文字题，也不要拿其它纯文字题顶替。
+   - 注意：很多 PDF 的题目图就是「无 smask 的独立 image 对象」，不要因为缺 smask 就误判为不可提取。用 `pdfimages -list` 列出的对象页号 + 尺寸即可确认。
 4. **不要使用答案页的图**。判断方法：pdfimages 的对象页号必须落在题目页范围内（PDF 前半部分是题目页，后半部分是 Model Answers）。
-5. 带图题优先；数量不足 20 MC / 10 SQ 时，用纯文字题补齐。
+5. 带图题优先；目标状态下 20 道 MC 和 10 道 SQ 尽量全部带图（第 6 章已做到 MC 20/20 带图）。数量不足时用纯文字题补齐。
 
 ## 4. 图像处理细节
 
@@ -55,7 +58,9 @@ pdfimages -list <pdf> | awk 'NR>2 && $1<=<题目页数> && $3=="image"'
 pdfimages -png <pdf> tmp/pdfs/<topic>/objects/<key>
 ```
 
-合成白底 WEBP（用 Python + Pillow）：
+处理分两种情况（用 Python + Pillow）：
+
+**情况一：对象带匹配 smask（相邻编号、尺寸一致）**
 
 ```python
 im = Image.open(img).convert("RGB")
@@ -65,6 +70,16 @@ white = Image.new("RGB", im.size, "white")
 white.paste(im, mask=m)
 white.save(out, "WEBP", lossless=True, method=6)
 ```
+
+**情况二：对象无 smask（独立完整图）**
+
+```python
+im = Image.open(img).convert("RGB")
+# 先检查四角是否为白色，确认没有黑底
+im.save(out, "WEBP", lossless=True, method=6)
+```
+
+无 smask 的对象通常是题目页直接嵌入的白底图，直接保存即可。若四角出现黑底，说明该对象本身是黑底图，放弃使用或改用有 mask 的对象。
 
 完成后必须抽查：
 
@@ -207,7 +222,8 @@ git worktree remove "$pages_dir"
 ## 9. 常见坑
 
 - **答案页图混入**：pdfimages 对象页号超出题目页范围 = 答案页图，禁止使用。
-- **图与题不对应**：对象编号不等于题目编号；合成后必须逐张核对内容。
+- **误判「无 smask = 不可提取」**：很多题目图是无 smask 的独立对象，检查四角是否为白底后直接使用即可；只有页面内嵌的矢量图或截图才需要放弃。
+- **图与题不对应**：对象编号不等于题目编号；必须用 pdfimages 的页号 + 对象尺寸与 OCR 题干对应，合成后逐张核对内容。
 - **Quarto 缓存报错**：`unable to open database file` 时用升权限重跑，不要改项目文件。
 - **gh-pages 混入 PDF / .DS_Store**：Pages 只应包含 HTML/CSS/WEBP；发布前检查 `git ls-tree` 确认没有 `.pdf` 和 `.DS_Store`。
 - **标题格式不统一**：始终用 `Example N · X.Y MC/SQ 难度 Q#`。
