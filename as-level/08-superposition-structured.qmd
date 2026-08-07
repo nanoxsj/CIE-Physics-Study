@@ -95,8 +95,8 @@ For the wave in Fig. 1.2, the frequency of vibration is 180 Hz and the speed of 
 
 <details class="answer-panel"><summary>Show mark scheme / model answer</summary>
 
-- **(i)** $T = 1/f = 1/180 = 5.6 	imes 10^{-3}\ 	ext{s}$ (or 5.6 ms). `[1]`
-- **(ii)** Using $v = f\lambda$, $\lambda = v/f = 60/180 = 0.33\ 	ext{m}$. `[1]` From the diagram, the string contains 2.5 wavelengths, so length $= 2.5 	imes 0.33 = 0.83\ 	ext{m}$ (83 cm). `[1]`
+- **(i)** $T = 1/f = 1/180 = 5.6 \times 10^{-3}\ \text{s}$ (or 5.6 ms). `[1]`
+- **(ii)** Using $v = f\lambda$, $\lambda = v/f = 60/180 = 0.33\ \text{m}$. `[1]` From the diagram, the string contains 2.5 wavelengths, so length $= 2.5 \times 0.33 = 0.83\ \text{m}$ (83 cm). `[1]`
 
 `[Total: 3 marks]`
 </details>
@@ -140,8 +140,8 @@ Calculate the time taken for the string at point X to move from maximum displace
 <details class="answer-panel"><summary>Show mark scheme / model answer</summary>
 
 - The next maximum displacement occurs after half a cycle. `[1]`
-- Time period for one cycle, $T = 1/f = 1/146.83 = 6.8 	imes 10^{-3}\ 	ext{s}$. `[1]`
-- Time for half a cycle $= 0.5 	imes 6.8 	imes 10^{-3} = 3.4 	imes 10^{-3}\ 	ext{s}$. `[1]`
+- Time period for one cycle, $T = 1/f = 1/146.83 = 6.8 \times 10^{-3}\ \text{s}$. `[1]`
+- Time for half a cycle $= 0.5 \times 6.8 \times 10^{-3} = 3.4 \times 10^{-3}\ \text{s}$. `[1]`
 
 `[Total: 3 marks]`
 </details>
@@ -158,8 +158,8 @@ Calculate the length of the D string.
 
 <details class="answer-panel"><summary>Show mark scheme / model answer</summary>
 
-- Using $v = f\lambda$, $\lambda = v/f = 190/146.83 = 1.29\ 	ext{m}$. `[1]`
-- Fig. 1.1 shows half a wavelength for the fundamental mode, so length of string $L = 0.5 	imes 1.29 = 0.65\ 	ext{m}$ (65 cm). `[1]`
+- Using $v = f\lambda$, $\lambda = v/f = 190/146.83 = 1.29\ \text{m}$. `[1]`
+- Fig. 1.1 shows half a wavelength for the fundamental mode, so length of string $L = 0.5 \times 1.29 = 0.65\ \text{m}$ (65 cm). `[1]`
 
 `[Total: 2 marks]`
 </details>
@@ -179,44 +179,32 @@ Calculate the frequency of note E.
 <details class="answer-panel"><summary>Show mark scheme / model answer</summary>
 
 - The length of the shortened string is RQ = 0.29 m, which is half a wavelength (fundamental mode). `[1]`
-- Wavelength $\lambda = 2 	imes 0.29 = 0.58\ 	ext{m}$. `[1]`
-- Frequency $f = v/\lambda = 190/0.58 = 328\ 	ext{Hz}$ (330 Hz to 2 s.f.). `[1]`
+- Wavelength $\lambda = 2 \times 0.29 = 0.58\ \text{m}$. `[1]`
+- Frequency $f = v/\lambda = 190/0.58 = 328\ \text{Hz}$ (330 Hz to 2 s.f.). `[1]`
 
 `[Total: 3 marks]`
 </details>
 :::
 
 ::: {.question-card}
-#### Example 10 · 8.2 SQ Medium Q1a
+::: {.question-card}
+#### Example 10 · 8.2 SQ Medium Q1
 
 Fig. 1.1 shows an arrangement for observing the interference pattern produced by laser light passing through two narrow slits S$_1$ and S$_2$.
 
 ![](../assets/questions/superposition/82medsq-obj-000.webp){.question-figure fig-alt="Double-slit interference arrangement with laser light, single slit, double slit, and screen"}
 
-The distance S$_1$S$_2$ is $d$, and the distance between the double slit and the screen is $D$, where $D \gg d$, so angles $lpha$ and $	heta$ are small.
+The distance S$_1$S$_2$ is $d$, and the distance between the double slit and the screen is $D$, where $D \gg d$, so angles $\alpha$ and $\theta$ are small.
 
 M is the midpoint of S$_1$S$_2$ and it is observed that there is a bright fringe at point A on the screen, a distance $f_1$ from point O on the screen. Light from S$_1$ travels a distance S$_2$Y further to point A than light from S$_2$.
 
-The wavelength of light from the laser is 650 nm and the angular separation of the bright fringes on the screen is $5.00 	imes 10^{-4}$ rad.
+The wavelength of light from the laser is 650 nm and the angular separation of the bright fringes on the screen is $5.00 \times 10^{-4}$ rad.
 
-Calculate the distance between the two slits.
+**(a)** Calculate the distance between the two slits.
 
 `[3 marks]`
 
-<details class="answer-panel"><summary>Show mark scheme / model answer</summary>
-
-- Angular separation of fringes $	heta = \lambda/d$. `[1]`
-- Rearranging: $d = \lambda/	heta = 650 	imes 10^{-9} / 5.00 	imes 10^{-4}$. `[1]`
-- $d = 1.30 	imes 10^{-3}\ 	ext{m} = 1.30\ 	ext{mm}$. `[1]`
-
-`[Total: 3 marks]`
-</details>
-:::
-
-::: {.question-card}
-#### Example 11 · 8.2 SQ Medium Q1b
-
-A bright fringe is observed at A.
+**(b)** A bright fringe is observed at A.
 
 **(i)** Explain the conditions required in the paths of the rays coming from S$_1$ and S$_2$ to obtain this bright fringe.
 
@@ -224,17 +212,43 @@ A bright fringe is observed at A.
 
 `[3 marks]`
 
+**(c)** Deduce expressions for the following angles in the double-slit arrangement shown in Fig. 1.1.
+
+**(i)** $\theta$ in terms of S$_2$Y and $d$
+
+**(ii)** $\phi$ in terms of $D$ and $f_1$
+
+`[4 marks]`
+
+**(d)** The separation of the slits S$_1$ and S$_2$ is 1.30 mm. The distance MO is 1.40 m. The distance $f_n$ is the distance of the ninth bright fringe from O and the angle $\theta$ is $3.70 \times 10^{-3}$ rad.
+
+Calculate the wavelength of the laser light.
+
+`[2 marks]`
+
 <details class="answer-panel"><summary>Show mark scheme / model answer</summary>
 
+**(a)**
+- Angular separation of fringes $\theta = \lambda/d$. `[1]`
+- Rearranging: $d = \lambda/\theta = 650 \times 10^{-9} / 5.00 \times 10^{-4}$. `[1]`
+- $d = 1.30 \times 10^{-3}\ \text{m} = 1.30\ \text{mm}$. `[1]`
+
+**(b)**
 - **(i)** The path difference (S$_2$Y) must be equal to a whole number of wavelengths. `[1]` The waves must be in phase / coherent. `[1]`
 - **(ii)** S$_2$Y = $n\lambda$ (where $n$ is the order number). `[1]`
 
-`[Total: 3 marks]`
+**(c)**
+- **(i)** $\sin\theta = \text{S}_2\text{Y} / d$. `[1]` Using small-angle approximation, $\theta \approx \text{S}_2\text{Y} / d$. `[1]`
+- **(ii)** $\tan\phi = f_1 / D$. `[1]` Using small-angle approximation, $\phi \approx f_1 / D$. `[1]`
+
+**(d)**
+- Using S$_2$Y = $d\theta$ (from (c)) and S$_2$Y = $n\lambda$ (from (b)): $\lambda = d\theta / n$. `[1]`
+- $\lambda = (1.30 \times 10^{-3})(3.70 \times 10^{-3}) / 9 = 5.34 \times 10^{-7}\ \text{m}$. `[1]`
+
+`[Total: 12 marks]`
 </details>
 :::
-
-::: {.question-card}
-#### Example 12 · 8.2 SQ Medium Q2a
+#### Example 11 · 8.2 SQ Medium Q2a
 
 A student is conducting a series of investigations on diffraction and interference with two slits.
 
@@ -260,7 +274,7 @@ Explain the effect of this change on the appearance of:
 :::
 
 ::: {.question-card}
-#### Example 13 · 8.2 SQ Medium Q2b
+#### Example 12 · 8.2 SQ Medium Q2b
 
 In an investigation, a white light source is incident on an orange filter, a single slit, and then a double-slit, as shown in Fig. 1.2. An interference pattern of light and dark fringes is observed on the screen.
 
@@ -282,7 +296,7 @@ In an investigation, a white light source is incident on an orange filter, a sin
 :::
 
 ::: {.question-card}
-#### Example 14 · 8.2 SQ Medium Q2c
+#### Example 13 · 8.2 SQ Medium Q2c
 
 In a third experiment, the white light is replaced by orange light of wavelength 600 nm. The double-slit has a separation of 0.350 mm and the screen is 6.35 m away.
 
@@ -293,14 +307,14 @@ Calculate the distance between the central and first maximum as seen on the scre
 <details class="answer-panel"><summary>Show mark scheme / model answer</summary>
 
 - Using $x = \lambda D / d$. `[1]`
-- $x = (600 	imes 10^{-9})(6.35) / (0.350 	imes 10^{-3}) = 1.09 	imes 10^{-2}\ 	ext{m} = 1.09\ 	ext{cm}$. `[1]`
+- $x = (600 \times 10^{-9})(6.35) / (0.350 \times 10^{-3}) = 1.09 \times 10^{-2}\ \text{m} = 1.09\ \text{cm}$. `[1]`
 
 `[Total: 2 marks]`
 </details>
 :::
 
 ::: {.question-card}
-#### Example 15 · 8.2 SQ Medium Q3a
+#### Example 14 · 8.2 SQ Medium Q3a
 
 A teacher explains a diffraction investigation to a group of physics students.
 
@@ -324,7 +338,7 @@ Define the following terms used by the teacher:
 :::
 
 ::: {.question-card}
-#### Example 16 · 8.2 SQ Medium Q3b
+#### Example 15 · 8.2 SQ Medium Q3b
 
 During the investigation, a second-order maximum is produced at an angle of 35° measured from the normal to the grating.
 
@@ -336,15 +350,15 @@ During the investigation, a second-order maximum is produced at an angle of 35°
 
 <details class="answer-panel"><summary>Show mark scheme / model answer</summary>
 
-- **(i)** Using $d\sin	heta = n\lambda$: $d = n\lambda / \sin	heta = 2 	imes 581.9 	imes 10^{-9} / \sin 35^\circ$. `[1]` $d = 2.029 	imes 10^{-6}\ 	ext{m}$. `[1]` Number of lines per metre $N = 1/d = 4.93 	imes 10^5\ 	ext{lines m}^{-1}$. `[1]`
-- **(ii)** Maximum order occurs when $\sin	heta = 1$: $n_{	ext{max}} = d/\lambda = 2.029 	imes 10^{-6} / 581.9 	imes 10^{-9} = 3.49$. `[1]` Therefore the highest observable order is $n = 3$. `[1]`
+- **(i)** Using $d\sin\theta = n\lambda$: $d = n\lambda / \sin\theta = 2 \times 581.9 \times 10^{-9} / \sin 35^\circ$. `[1]` $d = 2.029 \times 10^{-6}\ \text{m}$. `[1]` Number of lines per metre $N = 1/d = 4.93 \times 10^5\ \text{lines m}^{-1}$. `[1]`
+- **(ii)** Maximum order occurs when $\sin\theta = 1$: $n_{\text{max}} = d/\lambda = 2.029 \times 10^{-6} / 581.9 \times 10^{-9} = 3.49$. `[1]` Therefore the highest observable order is $n = 3$. `[1]`
 
 `[Total: 6 marks]`
 </details>
 :::
 
 ::: {.question-card}
-#### Example 17 · 8.2 SQ Medium Q3c
+#### Example 16 · 8.2 SQ Medium Q3c
 
 Calculate the angular separation between the highest order and second order maxima.
 
@@ -352,15 +366,15 @@ Calculate the angular separation between the highest order and second order maxi
 
 <details class="answer-panel"><summary>Show mark scheme / model answer</summary>
 
-- For $n=3$: $\sin	heta_3 = 3\lambda/d = 3 	imes 581.9 	imes 10^{-9} / 2.029 	imes 10^{-6} = 0.860$. `[1]` $	heta_3 = \sin^{-1}(0.860) = 59.3^\circ$. `[1]`
-- Angular separation $= 	heta_3 - 	heta_2 = 59.3^\circ - 35^\circ = 24.3^\circ$. `[1]`
+- For $n=3$: $\sin\theta_3 = 3\lambda/d = 3 \times 581.9 \times 10^{-9} / 2.029 \times 10^{-6} = 0.860$. `[1]` $\theta_3 = \sin^{-1}(0.860) = 59.3^\circ$. `[1]`
+- Angular separation $= \theta_3 - \theta_2 = 59.3^\circ - 35^\circ = 24.3^\circ$. `[1]`
 
 `[Total: 3 marks]`
 </details>
 :::
 
 ::: {.question-card}
-#### Example 18 · 8.2 SQ Medium Q3d
+#### Example 17 · 8.2 SQ Medium Q3d
 
 The investigation is repeated using the same grating but a different monochromatic source. In this experiment, the second-order maximum is observed at an angle of 25.7°.
 
@@ -370,8 +384,8 @@ Calculate the wavelength of this second source.
 
 <details class="answer-panel"><summary>Show mark scheme / model answer</summary>
 
-- Using $d\sin	heta = n\lambda$: $\lambda = d\sin	heta / n = (2.029 	imes 10^{-6})(\sin 25.7^\circ) / 2$. `[1]`
-- $\lambda = 4.40 	imes 10^{-7}\ 	ext{m} = 440\ 	ext{nm}$. `[1]`
+- Using $d\sin\theta = n\lambda$: $\lambda = d\sin\theta / n = (2.029 \times 10^{-6})(\sin 25.7^\circ) / 2$. `[1]`
+- $\lambda = 4.40 \times 10^{-7}\ \text{m} = 440\ \text{nm}$. `[1]`
 
 `[Total: 2 marks]`
 </details>

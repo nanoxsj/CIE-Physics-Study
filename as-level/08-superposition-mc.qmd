@@ -21,7 +21,7 @@ D. 780 m s$^{-1}$
 
 <details class="answer-panel"><summary>Show answer and explanation</summary>
 
-**Answer: B.** The diagram shows 1.5 waves in 90 cm, so $\lambda = 90/1.5 = 60\ 	ext{cm} = 0.60\ 	ext{m}$. Speed $v = f\lambda = 13 	imes 0.60 = 7.8\ 	ext{m s}^{-1}$.
+**Answer: B.** The diagram shows 1.5 waves in 90 cm, so $\lambda = 90/1.5 = 60\ \text{cm} = 0.60\ \text{m}$. Speed $v = f\lambda = 13 \times 0.60 = 7.8\ \text{m s}^{-1}$.
 </details>
 :::
 
@@ -226,7 +226,7 @@ D. 413 Hz
 
 <details class="answer-panel"><summary>Show answer and explanation</summary>
 
-**Answer: D.** The diagram shows a closed pipe with a node at the closed end and an antinode at the open end. The length 60.0 cm = $\lambda/4$, so $\lambda = 2.40\ 	ext{m}$. Frequency $f = v/\lambda = 330/2.40 = 137.5\ 	ext{Hz}$. Wait — let me recalculate: Actually the diagram shows a different configuration. If the pipe length is 60.0 cm = 3$\lambda/4$ (three quarters of a wavelength), then $\lambda = 0.80\ 	ext{m}$, and $f = 330/0.80 pprox 413\ 	ext{Hz}$.
+**Answer: D.** The diagram shows a closed pipe with a node at the closed end and an antinode at the open end. The length 60.0 cm = $\lambda/4$, so $\lambda = 2.40\ \text{m}$. Frequency $f = v/\lambda = 330/2.40 = 137.5\ \text{Hz}$. Wait — let me recalculate: Actually the diagram shows a different configuration. If the pipe length is 60.0 cm = 3$\lambda/4$ (three quarters of a wavelength), then $\lambda = 0.80\ \text{m}$, and $f = 330/0.80 \approx 413\ \text{Hz}$.
 </details>
 :::
 
@@ -260,7 +260,7 @@ D. 5.0 cm
 
 <details class="answer-panel"><summary>Show answer and explanation</summary>
 
-**Answer: A.** The distance between the first and sixth node covers 5 node-to-node intervals. Each interval is $\lambda/2$. So $5 	imes (\lambda/2) = 30\ 	ext{cm}$, giving $\lambda = 30 	imes 2/5 = 12.0\ 	ext{cm}$.
+**Answer: A.** The distance between the first and sixth node covers 5 node-to-node intervals. Each interval is $\lambda/2$. So $5 \times (\lambda/2) = 30\ \text{cm}$, giving $\lambda = 30 \times 2/5 = 12.0\ \text{cm}$.
 </details>
 :::
 
@@ -303,7 +303,7 @@ What would be the frequencies of the next two higher notes for this air column?
 
 <details class="answer-panel"><summary>Show answer and explanation</summary>
 
-**Answer: A.** The horn behaves like a closed pipe (node at one end, antinode at the other). For a closed pipe, harmonics are odd multiples of the fundamental: $f_n = (2n-1)f_1$. So the first higher note is $3 	imes 75 = 225\ 	ext{Hz}$, and the second is $5 	imes 75 = 375\ 	ext{Hz}$.
+**Answer: A.** The horn behaves like a closed pipe (node at one end, antinode at the other). For a closed pipe, harmonics are odd multiples of the fundamental: $f_n = (2n-1)f_1$. So the first higher note is $3 \times 75 = 225\ \text{Hz}$, and the second is $5 \times 75 = 375\ \text{Hz}$.
 </details>
 :::
 
@@ -328,7 +328,7 @@ D. 2200 Hz
 
 <details class="answer-panel"><summary>Show answer and explanation</summary>
 
-**Answer: B.** The 4 heaps of powder correspond to 4 nodes. The distance between the first and fourth heap covers 3 node-to-node intervals. Each interval is $\lambda/2$, so $3 	imes (\lambda/2) = 30\ 	ext{cm}$, giving $\lambda = 20\ 	ext{cm} = 0.20\ 	ext{m}$. Frequency $f = v/\lambda = 330/0.20 = 1650\ 	ext{Hz}$.
+**Answer: B.** The 4 heaps of powder correspond to 4 nodes. The distance between the first and fourth heap covers 3 node-to-node intervals. Each interval is $\lambda/2$, so $3 \times (\lambda/2) = 30\ \text{cm}$, giving $\lambda = 20\ \text{cm} = 0.20\ \text{m}$. Frequency $f = v/\lambda = 330/0.20 = 1650\ \text{Hz}$.
 </details>
 :::
 
@@ -435,7 +435,7 @@ D. 3rd
 
 <details class="answer-panel"><summary>Show answer and explanation</summary>
 
-**Answer: C.** Using $d\sin	heta = n\lambda$, for $n=3$, $	heta = 45^\circ$, so $d\sin45^\circ = 3\lambda$, giving $d = 3\lambda/\sin45^\circ = 3\sqrt{2}\lambda$. The maximum order occurs when $\sin	heta = 1$, so $n_{	ext{max}} = d/\lambda = 3\sqrt{2} pprox 4.24$. Therefore the highest integer order is 4.
+**Answer: C.** Using $d\sin\theta = n\lambda$, for $n=3$, $\theta = 45^\circ$, so $d\sin45^\circ = 3\lambda$, giving $d = 3\lambda/\sin45^\circ = 3\sqrt{2}\lambda$. The maximum order occurs when $\sin\theta = 1$, so $n_{\text{max}} = d/\lambda = 3\sqrt{2} \approx 4.24$. Therefore the highest integer order is 4.
 </details>
 :::
 
