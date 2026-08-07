@@ -1,0 +1,145 @@
+---
+title: "5 Work, energy and power"
+subtitle: "Energy conservation, work, power, efficiency, gravitational potential energy and kinetic energy"
+---
+
+## Learning objectives
+
+By the end of this chapter, you should be able to:
+
+- understand the concept of work and use $\text{work done}=Fs$ in the direction of the force;
+- recall and apply the principle of conservation of energy;
+- understand and use efficiency as the ratio of useful energy output to total energy input;
+- define power as work done per unit time and use $P=W/t$;
+- derive and use $P=Fv$;
+- derive and use $\Delta E_P=mg\Delta h$;
+- derive and use $E_K=\frac{1}{2}mv^2$.
+
+## 5.1 Energy conservation
+
+::: {.study-card}
+### Work done
+
+**Work** is done when a force moves its point of application in the direction of the force:
+
+$$W=Fs,$$
+
+where $F$ is the force and $s$ is the displacement in the direction of the force.
+
+When the force acts at an angle $\theta$ to the displacement,
+
+$$W=Fs\cos\theta.$$
+
+The unit of work is the joule, $\mathrm{J}=1\ \mathrm{N\,m}$. No work is done by a force that is perpendicular to the displacement.
+:::
+
+::: {.study-card}
+### Principle of conservation of energy
+
+The **principle of conservation of energy** states that energy cannot be created or destroyed, but it can only be transferred from one form to another. The total energy of an isolated system remains constant.
+
+In any energy transfer, useful energy may be transferred to a useful store while some energy is dissipated (for example to thermal energy by friction). The total energy before and after a transfer is always the same.
+:::
+
+::: {.formula-panel}
+### Efficiency
+
+The **efficiency** of a system is the ratio of the useful energy output from the system to the total energy input:
+
+$$\text{efficiency}=\frac{\text{useful energy output}}{\text{total energy input}}.$$
+
+Efficiency can also be written as a ratio of powers:
+
+$$\text{efficiency}=\frac{\text{useful power output}}{\text{total power input}}.$$
+
+Efficiency has no units. It is often expressed as a percentage.
+:::
+
+::: {.formula-panel}
+### Power
+
+**Power** is the rate of transfer of energy, or the rate at which work is done:
+
+$$P=\frac{W}{t}.$$
+
+The unit of power is the watt, $\mathrm{W}=1\ \mathrm{J\,s^{-1}}$.
+
+For an object moving at velocity $v$ with a force $F$ acting in the direction of motion,
+
+$$P=Fv.$$
+
+The mean power over a time interval is the total work done divided by the time taken.
+:::
+
+::: {.study-card}
+### Energy changes in falling and bouncing
+
+For a falling object, gravitational potential energy is converted into kinetic energy. Ignoring air resistance,
+
+$$\Delta E_P=E_K \qquad \Rightarrow \qquad mg\Delta h=\frac{1}{2}mv^2.$$
+
+When a ball bounces, some energy is dissipated as heat and sound, so the rebound height is smaller than the original height. The kinetic energy just after impact is a fixed fraction of the kinetic energy just before impact.
+:::
+
+## 5.2 Gravitational potential energy and kinetic energy
+
+::: {.formula-panel}
+### Gravitational potential energy
+
+When an object of mass $m$ is raised by a height $\Delta h$ in a uniform gravitational field, work is done against gravity:
+
+$$\Delta E_P=mg\Delta h.$$
+
+This is derived from $W=Fs$: the force is the weight $mg$ and the displacement in the direction of the force is $\Delta h$. The zero level of gravitational potential energy is chosen for convenience.
+:::
+
+::: {.formula-panel}
+### Kinetic energy
+
+The kinetic energy of an object of mass $m$ moving at speed $v$ is
+
+$$E_K=\frac{1}{2}mv^2.$$
+
+This is derived from $W=Fs$ together with the equation of motion $v^2=u^2+2as$: the work done to accelerate an object from rest is $F s=ma\times\frac{v^2}{2a}=\frac{1}{2}mv^2$.
+
+Because kinetic energy depends on $v^2$, doubling the speed increases the kinetic energy by a factor of four.
+:::
+
+::: {.study-card}
+### Energy transfers in machines
+
+In a machine such as a crane, a pump or a turbine, energy is transferred between stores. The useful output is less than the input because of energy losses:
+
+- friction between moving parts converts energy to thermal energy;
+- sound and vibration carry away energy;
+- resistance forces (air resistance, drag) dissipate energy.
+
+The efficiency of the machine compares the useful output with the total input.
+:::
+
+## Multiple Choice Questions
+
+{{< include 05-work-energy-power-mc.qmd >}}
+
+## Structured Questions
+
+{{< include 05-work-energy-power-structured.qmd >}}
+
+## Chapter checklist
+
+- [ ] I can calculate work done by a force in the direction of motion.
+- [ ] I can apply the principle of conservation of energy.
+- [ ] I can calculate efficiency from energy or power ratios.
+- [ ] I can use $P=W/t$ and $P=Fv$.
+- [ ] I can use $\Delta E_P=mg\Delta h$ and $E_K=\frac{1}{2}mv^2$.
+
+### Original question PDFs
+
+- [5.1 Energy, Conservation, Work, Power & Efficiency - MC Easy](https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/work-energy-power/5.1-energy-conservation-work-power-efficiency-c-easy.pdf)
+- [5.1 Energy, Conservation, Work, Power & Efficiency - MC Medium](https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/work-energy-power/5.1-energy-conservation-work-power-efficiency-c-medium.pdf)
+- [5.1 Energy, Conservation, Work, Power & Efficiency - MC Hard](https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/work-energy-power/5.1-energy-conservation-work-power-efficiency-c-hard.pdf)
+- [5.1 Energy, Conservation, Work, Power & Efficiency - SQ Easy](https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/work-energy-power/5.1-energy-conservation-work-power-efficiency-sq-easy.pdf)
+- [5.1 Energy, Conservation, Work, Power & Efficiency - SQ Medium](https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/work-energy-power/5.1-energy-conservation-work-power-efficiency-sq-medium.pdf)
+- [5.2 Energy, GPE & KE - MC Easy](https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/work-energy-power/5.2-energy-gpe-ke-c-easy.pdf)
+- [5.2 Energy, GPE & KE - MC Medium](https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/work-energy-power/5.2-energy-gpe-ke-c-medium.pdf)
+- [5.2 Energy, GPE & KE - MC Hard](https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/work-energy-power/5.2-energy-gpe-ke-c-hard.pdf)
