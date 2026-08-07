@@ -1,281 +1,306 @@
 ### 6.1 Deformation, Stress & Strain - Easy
 
 ::: {.question-card}
-#### Example 1 · 6.1 MC Easy Q1
+#### Example 1 · 6.1 MC Easy Q6
 
-A student wanted to measure the Young modulus of a wire; to do this they needed to take a number of measurements.
+A glass rod was put under stress and strain until it broke. The graph of this is shown below.
 
-In which row could the measurement not be made directly with the listed apparatus?
+![](../assets/questions/deformation/mc-61-easy-q6-glass.webp){.question-figure fig-alt="Stress-strain graph for a glass rod up to its breaking point"}
 
-| Measurement | Apparatus |
-|---|---|
-| A | extension of wire | vernier scale |
-| B | area of cross-section of wire | micrometer screw gauge |
-| C | original length of wire | metre rule |
-| D | mass of load applied to a wire | electronic balance |
+Which of the following statements is correct about the glass rod?
+
+A. The glass shows plastic deformation.
+
+B. When the cross-sectional area of the rod is doubled, the ultimate tensile stress of the rod is halved.
+
+C. Hooke's law is obeyed for all values of stress up to the breaking point.
+
+D. The glass is ductile.
 
 <details class="answer-panel"><summary>Show answer and explanation</summary>
 
-**Answer: B.** The micrometer measures the diameter of the wire; the cross-sectional area must then be calculated from the diameter, so it cannot be measured directly.
+**Answer: C.** Glass is brittle: its stress-strain graph is a straight line up to the breaking point, so Hooke's law is obeyed for all stresses up to breaking. The ultimate tensile stress is a property of the material and does not change when the cross-sectional area changes.
 </details>
 :::
 
 ::: {.question-card}
-#### Example 2 · 6.1 MC Easy Q2
+#### Example 2 · 6.1 MC Easy Q7
 
-What is the unit of the Young modulus?
+Two wires S and T, with the same initial dimensions, were put under stress and strain; the graph shows the results up to their breaking points.
 
-A. $\mathrm{N\,m^{-2}}$
+![](../assets/questions/deformation/mc-61-easy-q7-wires.webp){.question-figure fig-alt="Stress-strain graphs for two wires S and T up to their breaking points"}
 
-B. $\mathrm{N\,m}$
+Which statement is not correct?
 
-C. $\mathrm{N\,m^{-1}}$
+A. Material S has a larger ultimate tensile stress.
 
-D. $\mathrm{N\,m^{2}}$
+B. Material S extends elastically.
+
+C. Material S extends more than material T when loaded with the same force.
+
+D. Material S is brittle.
 
 <details class="answer-panel"><summary>Show answer and explanation</summary>
 
-**Answer: A.** The Young modulus is stress divided by strain; strain is dimensionless, so the unit is the unit of stress, $\mathrm{N\,m^{-2}}=\mathrm{Pa}$.
+**Answer: C.** Material S has a steeper stress-strain graph, so for the same stress (or force) it has a smaller strain (extension), not a larger one.
 </details>
 :::
 
 ::: {.question-card}
-#### Example 3 · 6.1 MC Easy Q3
+#### Example 3 · 6.1 MC Easy Q8
 
-Which of the following is the definition of the ultimate tensile stress of a material?
+The graphs below show the stress-strain graphs of three materials. The graphs do not have the same scales.
 
-A. The maximum inter-atomic force before the atomic bonds of the material break.
+![](../assets/questions/deformation/mc-61-easy-q8-materials.webp){.question-figure fig-alt="Three stress-strain graphs labelled 1, 2 and 3"}
 
-B. The maximum force that can be applied to a bar of the material before it bends.
+The three materials are copper, rubber and glass.
 
-C. The maximum tensile force in a wire of the material before it breaks.
+Which materials are represented by the graphs?
 
-D. The maximum stretching force per unit cross-sectional area before the material breaks.
+|  | 1 | 2 | 3 |
+|---|---|---|---|
+| A | rubber | copper | glass |
+| B | rubber | glass | copper |
+| C | glass | copper | rubber |
+| D | copper | glass | rubber |
 
 <details class="answer-panel"><summary>Show answer and explanation</summary>
 
-**Answer: D.** The ultimate tensile stress is the maximum tensile force per unit cross-sectional area that the material can withstand before it breaks.
+**Answer: C.** Graph 1 is a straight line up to fracture (glass), graph 2 shows a ductile metal with plastic deformation (copper), and graph 3 shows the curved response of rubber.
 </details>
 :::
 
 ::: {.question-card}
-#### Example 4 · 6.1 MC Easy Q4
+#### Example 4 · 6.1 MC Easy Q9
 
-A material is extended elastically within the limit of proportionality.
+The stress-strain graph for bone is shown below.
 
-What is equal to the Young modulus of the material?
+![](../assets/questions/deformation/mc-61-easy-q9-bone.webp){.question-figure fig-alt="Stress-strain graph for bone with strain in percent"}
 
-A. Gradient of the stress-strain graph.
+What is the Young modulus of bone?
 
-B. Area under the force-extension graph.
+A. $2\times10^6\ \mathrm{N\,m^{-2}}$
 
-C. Area under the stress-strain graph.
+B. $2\times10^8\ \mathrm{N\,m^{-2}}$
 
-D. Gradient of the force-extension graph.
+C. $1\times10^8\ \mathrm{N\,m^{-2}}$
+
+D. $1\times10^6\ \mathrm{N\,m^{-2}}$
 
 <details class="answer-panel"><summary>Show answer and explanation</summary>
 
-**Answer: A.** The Young modulus is the ratio of stress to strain, which is the gradient of the stress-strain graph in the elastic region.
+**Answer: B.** From the graph, read the stress at a strain of 1% (0.010). Dividing stress by strain gives the Young modulus; the official answer is $2\times10^8\ \mathrm{N\,m^{-2}}$.
 </details>
 :::
 
 ### 6.1 Deformation, Stress & Strain - Medium
 
 ::: {.question-card}
-#### Example 5 · 6.1 MC Medium Q3
+#### Example 5 · 6.1 MC Medium Q1
 
-A steel metal wire has the following properties:
+Two materials with the same dimensions were loaded to fracture; the graph shows the force-extension of these.
 
-- diameter $=5.0\times10^{-4}\ \mathrm{m}$
-- Young modulus $=2.0\times10^{11}\ \mathrm{Pa}$
-- tension $=20\ \mathrm{N}$
+![](../assets/questions/deformation/mc-61-medium-q1-force-extension.webp){.question-figure fig-alt="Force-extension graph for two materials loaded to fracture"}
 
-The string snaps and contracts elastically.
+Which of the following would describe the behaviour of the materials?
 
-By what percentage does a length $l$ of a piece of the string contract?
+A. Both materials are plastic.
 
-A. $1.3\times10^{-2}\%$
+B. Both materials have the same ultimate tensile stress.
 
-B. $1.3\times10^{-4}\%$
+C. Both materials are brittle.
 
-C. $5.1\times10^{-4}\%$
-
-D. $5.1\times10^{-2}\%$
+D. Both materials obey Hooke's law.
 
 <details class="answer-panel"><summary>Show answer and explanation</summary>
 
-**Answer: D.** Stress $=\frac{F}{A}=\frac{20}{\pi(2.5\times10^{-4})^2}=1.02\times10^8\ \mathrm{Pa}$. Strain $=\sigma/E=1.02\times10^8/(2.0\times10^{11})=5.1\times10^{-4}$, which is $5.1\times10^{-2}\%$.
+**Answer: B.** The two curves reach the same maximum force, and the materials have the same dimensions, so they have the same ultimate tensile stress.
 </details>
 :::
 
 ::: {.question-card}
-#### Example 6 · 6.1 MC Medium Q4
+#### Example 6 · 6.1 MC Medium Q2
 
-The Young modulus of a metal wire is dependent on which property?
+A metal tube with a thin wall thickness $w$ is shown in the diagram. The thickness of the wall is small when compared to the diameter of the tube.
 
-A. Spring constant
+![](../assets/questions/deformation/mc-61-medium-q2-tube.webp){.question-figure fig-alt="Metal tube with thin wall thickness w under tension T"}
 
-B. Ductility
+A force $T$ applied parallel to the axis of the tube puts the tube under tension. It is proposed that making the wall thicker would reduce the stress on the tube.
 
-C. Ultimate tensile stress
+If the tube diameter and the tension remain the same, which wall thickness would halve the stress?
 
-D. Elastic limit
+A. $4w$
+
+B. $2w$
+
+C. $\frac{w}{\sqrt{2}}$
+
+D. $w$
 
 <details class="answer-panel"><summary>Show answer and explanation</summary>
 
-**Answer: A.** From $k=EA/L$, the spring constant depends on $E$, $A$ and $L$, so the Young modulus is related to the spring constant. The Young modulus does not depend on ductility, ultimate tensile stress or elastic limit.
+**Answer: B.** Stress is inversely proportional to the cross-sectional area of the wall. Doubling the wall thickness doubles the area, so the stress is halved.
 </details>
 :::
 
 ::: {.question-card}
-#### Example 7 · 6.1 MC Medium Q5
+#### Example 7 · 6.1 MC Medium Q8
 
-The Young modulus $E$ and the force per unit extension $k$ describe the behaviour of a wire under tensile stress.
+A spring was stretched with increasing load. The graph of the results is shown below.
 
-For a wire of length $L$ and cross-sectional area $A$, what is the relationship between $E$ and $k$?
+![](../assets/questions/deformation/mc-61-medium-q8-spring.webp){.question-figure fig-alt="Graph of spring length against load"}
 
-A. $E=\frac{kL}{A}$
+What is the spring constant?
 
-B. $E=\frac{kA}{L}$
+A. $0.080\ \mathrm{N\,m^{-1}}$
 
-C. $k=\frac{EA}{L}$
+B. $0.13\ \mathrm{N\,m^{-1}}$
 
-D. $k=\frac{EL}{A}$
+C. $2.7\ \mathrm{N\,m^{-1}}$
+
+D. $8.0\ \mathrm{N\,m^{-1}}$
 
 <details class="answer-panel"><summary>Show answer and explanation</summary>
 
-**Answer: C.** The force per unit extension is $k=\frac{EA}{L}$.
+**Answer: D.** The spring constant is the gradient of the length-load graph after correcting for the original length; from the printed graph the gradient gives $k=8.0\ \mathrm{N\,m^{-1}}$.
 </details>
 :::
 
 ::: {.question-card}
-#### Example 8 · 6.1 MC Medium Q7
+#### Example 8 · 6.1 MC Medium Q9
 
-A student wanted to find the Young modulus of a wire. The equation for the Young modulus $E$ is
+The graph below shows the stress-strain for a metal.
 
-$$E=\frac{4Fl}{\pi d^2 x}.$$
+![](../assets/questions/deformation/mc-61-medium-q9-stress-strain.webp){.question-figure fig-alt="Stress-strain graph for a metal with stress in GPa"}
 
-The student extended the wire with a known force and made a series of measurements.
+When the strain on the rod is 0.010, what is the strain energy per unit volume of a rod made from this metal?
 
-Which measurement has the largest effect on the uncertainty in the value of the calculated Young modulus?
+A. $10\ \mathrm{kJ\,m^{-3}}$
 
-| Measurement | Symbol | Value |
-|---|---|---|
-| A | length of wire before force applied | $l$ | $2.043\pm0.002\ \mathrm{m}$ |
-| B | force applied | $F$ | $19.62\pm0.01\ \mathrm{N}$ |
-| C | extension of wire with force applied | $x$ | $5.2\pm0.2\ \mathrm{mm}$ |
-| D | diameter of wire | $d$ | $0.54\pm0.02\ \mathrm{mm}$ |
+B. $10\ \mathrm{MJ\,m^{-3}}$
 
-<details class="answer-panel"><summary>Show answer and explanation</summary>
+C. $100\ \mathrm{kJ\,m^{-3}}$
 
-**Answer: D.** The percentage uncertainty in $d$ is $0.02/0.54=3.7\%$, and it contributes $2\times3.7\%=7.4\%$ because $d$ is squared. This is larger than the percentage uncertainties from the other measurements.
-</details>
-:::
-
-::: {.question-card}
-#### Example 9 · 6.1 MC Medium Q10
-
-A steel spring was stretched to a length of 55 cm when a 25 N weight was hung from it. The spring has a spring constant of $150\ \mathrm{N\,m^{-1}}$.
-
-What was the original length of the spring?
-
-A. 0.61 m
-
-B. 0.72 m
-
-C. 0.38 m
-
-D. 0.49 m
+D. $1.0\ \mathrm{MJ\,m^{-3}}$
 
 <details class="answer-panel"><summary>Show answer and explanation</summary>
 
-**Answer: C.** Extension $x=F/k=25/150=0.167\ \mathrm{m}$. Original length $=0.55-0.167=0.383\ \mathrm{m}\approx0.38\ \mathrm{m}$.
+**Answer: B.** At strain 0.010 the stress is 2.0 GPa. Strain energy per unit volume is the area under the graph: $\frac{1}{2}\times2.0\times10^9\times0.010=1.0\times10^7\ \mathrm{J\,m^{-3}}=10\ \mathrm{MJ\,m^{-3}}$.
 </details>
 :::
 
 ### 6.1 Deformation, Stress & Strain - Hard
 
 ::: {.question-card}
-#### Example 10 · 6.1 MC Hard Q6
+#### Example 9 · 6.1 MC Hard Q1
 
-A metal wire that is supported vertically from a fixed point has a load of 84 N applied to the lower end. The wire has a cross-sectional area of $0.02\ \mathrm{mm^2}$ and obeys Hooke's law. The length of the wire increases by 0.30%.
+A student connected two springs, one with spring constant $k_1=4\ \mathrm{kN\,m^{-1}}$ and the other with spring constant $k_2=2\ \mathrm{kN\,m^{-1}}$, as shown in the diagram below.
 
-What is the Young modulus of the metal wire?
+![](../assets/questions/deformation/mc-61-hard-q1-two-springs.webp){.question-figure fig-alt="Two springs of constants 4 kN per metre and 2 kN per metre connected in series supporting an 80 N load"}
 
-A. $1.4\times10^{12}\ \mathrm{Pa}$
+When a load of 80 N is applied, what is the total extension?
 
-B. $1.4\times10^{10}\ \mathrm{Pa}$
+A. 60 cm
 
-C. $1.4\times10^8\ \mathrm{Pa}$
+B. 6 cm
 
-D. $1.4\times10^5\ \mathrm{Pa}$
+C. 4 cm
+
+D. 1.3 cm
 
 <details class="answer-panel"><summary>Show answer and explanation</summary>
 
-**Answer: A.** Stress $=84/(0.02\times10^{-6})=4.2\times10^9\ \mathrm{Pa}$; strain $=0.0030$. Young modulus $=4.2\times10^9/0.0030=1.4\times10^{12}\ \mathrm{Pa}$.
+**Answer: B.** For springs in series, $\frac{1}{k}=\frac{1}{4}+\frac{1}{2}=\frac{3}{4}$, so $k=\frac{4}{3}\ \mathrm{kN\,m^{-1}}$. Extension $x=F/k=80/(1333)=0.060\ \mathrm{m}=6\ \mathrm{cm}$.
 </details>
 :::
 
 ::: {.question-card}
-#### Example 11 · 6.1 MC Hard Q7
+#### Example 10 · 6.1 MC Hard Q2
 
-Two wires S and T are joined. S has a length of 3.0 m and T a length of 1.0 m; both wires have a uniform cross-sectional area.
+A glass-reinforced plastic rod and a nylon rod attached, as shown, were used to make a composite rod.
 
-When a load was hung from the wires, S stretched by 1.5 mm and T by 1.0 mm.
+![](../assets/questions/deformation/mc-61-hard-q2-composite.webp){.question-figure fig-alt="Composite rod made of 1.00 m of glass-reinforced plastic and 1.00 m of nylon"}
 
-The same load is then hung from a second wire of the same cross-section, consisting of 1.0 m of metal S and 3.0 m of metal T.
+Each rod has a length of 1.00 m and the same cross-sectional area. The Young modulus $E_N$ of the nylon is 2.0 GPa, and the Young modulus $E_P$ of the plastic is 40 GPa.
 
-What is the total extension of this second wire?
+The composite rod will break when its total extension reaches 3.0 mm.
 
-A. 3.5 mm
+What is the greatest tensile stress that can be applied to the composite rod before it breaks?
 
-B. 2.5 mm
+A. $5.7\times10^6\ \mathrm{Pa}$
 
-C. 5.0 mm
+B. $5.7\times10^7\ \mathrm{Pa}$
 
-D. 4.8 mm
+C. $7.1\times10^{14}\ \mathrm{Pa}$
+
+D. $7.1\times10^{12}\ \mathrm{Pa}$
 
 <details class="answer-panel"><summary>Show answer and explanation</summary>
 
-**Answer: A.** Extension per metre: S gives $1.5/3.0=0.5\ \mathrm{mm\,m^{-1}}$ and T gives $1.0/1.0=1.0\ \mathrm{mm\,m^{-1}}$. For the second wire, extension $=1.0\times0.5+3.0\times1.0=3.5\ \mathrm{mm}$.
+**Answer: A.** Each rod has the same stress $S$ and the total extension is $3.0\ \mathrm{mm}$. $S\left(\frac{1}{E_N}+\frac{1}{E_P}\right)L=3.0\times10^{-3}$, giving $S=5.7\times10^6\ \mathrm{Pa}$.
 </details>
 :::
 
 ::: {.question-card}
-#### Example 12 · 6.1 MC Hard Q8
+#### Example 11 · 6.1 MC Hard Q3
 
-Two steel wires X and Y that both obey Hooke's law were used in an experiment. Wire X has a length $l$ and a cross-sectional area $A$. Wire Y has a length of $2l$ and a cross-sectional area of $\frac{A}{2}$.
+A child with a mass of 40 kg was standing on a diving board. The diving board has a length of 5.0 m and is hinged at one end then supported by a spring 2.0 m from the hinged end. The spring has a spring constant of $10\ \mathrm{kN\,m^{-1}}$.
 
-What is the ratio $\frac{\text{tension in X}}{\text{tension in Y}}$ when both wires are stretched to the same extension?
+![](../assets/questions/deformation/mc-61-hard-q3-diving-board.webp){.question-figure fig-alt="Diving board with a 40 kg child at one end and a spring support 2.0 m from the hinge"}
 
-A. 1
+What is the extra compression of the spring caused by the child standing on the end of the board?
 
-B. 4
+A. 16 cm
 
-C. 2
+B. 9.8 cm
 
-D. $\frac{1}{4}$
+C. 1.6 cm
+
+D. 1.0 cm
 
 <details class="answer-panel"><summary>Show answer and explanation</summary>
 
-**Answer: B.** For the same extension, $F=EAe/L$. $F_X=EAe/l$; $F_Y=E(A/2)e/(2l)=EAe/(4l)=F_X/4$. Hence $F_X/F_Y=4$.
+**Answer: B.** Taking moments about the hinge, the spring force $F$ at 2.0 m balances the child's weight at 5.0 m: $F\times2.0=40\times9.81\times5.0$, so $F=981\ \mathrm{N}$. Compression $x=F/k=981/10\,000=0.098\ \mathrm{m}=9.8\ \mathrm{cm}$.
 </details>
 :::
 
 ::: {.question-card}
-#### Example 13 · 6.1 MC Hard Q9
+#### Example 12 · 6.1 MC Hard Q4
 
-In order to measure the mass of flour, a set of scales needs to have high sensitivity for small masses and a low sensitivity with larger masses.
+Three springs are arranged vertically, as shown.
 
-To achieve this, two springs are used with different spring constants $k$. One has a lower spring constant than the other.
+![](../assets/questions/deformation/mc-61-hard-q4-three-springs.webp){.question-figure fig-alt="Three springs arranged vertically with springs X and Y in parallel above spring Z"}
 
-Which of the following sets of springs would be suitable for this purpose?
+Springs X and Y are identical and have a spring constant $k$. Spring Z has a spring constant of $3k$.
 
-![](../assets/questions/deformation/mc-61-hard-q9-flour-scales.webp){.question-figure fig-alt="Four arrangements of springs with low and high spring constants"}
+What is the increase in the overall length of the arrangement when a force $W$ is applied as shown?
 
 <details class="answer-panel"><summary>Show answer and explanation</summary>
 
-**Answer: D.** The low-spring-constant spring provides high sensitivity for small masses, and the high-spring-constant spring takes over for larger masses, giving low sensitivity with larger loads.
+**Answer: B.** Springs X and Y in parallel give an effective constant $2k$; in series with Z ($3k$), $\frac{1}{k_{\text{total}}}=\frac{1}{2k}+\frac{1}{3k}=\frac{5}{6k}$, so $k_{\text{total}}=\frac{6k}{5}$. Extension $x=W/k_{\text{total}}=\frac{5W}{6k}$, matching option B on the printed diagram.
+</details>
+:::
+
+::: {.question-card}
+#### Example 13 · 6.1 MC Hard Q5
+
+The diagram shows a metal cube placed between two boards and compressed elastically by two opposing forces $F$. The cube has a length of each side of $l$.
+
+![](../assets/questions/deformation/mc-61-hard-q5-cube.webp){.question-figure fig-alt="Metal cube of side length l compressed between two boards"}
+
+How will $\Delta l$, the amount of compression, relate to $l$?
+
+A. $\Delta l\propto l$
+
+B. $\Delta l\propto \frac{1}{l}$
+
+C. $\Delta l\propto l^2$
+
+D. $\Delta l\propto \frac{1}{l^2}$
+
+<details class="answer-panel"><summary>Show answer and explanation</summary>
+
+**Answer: D.** For the same force, stress $=F/l^2$; strain $=\Delta l/l$; and $E=\text{stress}/\text{strain}$. Hence $\Delta l=F/(El)$, so for constant force $\Delta l\propto 1/l^2$ when comparing cubes of different size at the same stress, matching the official answer.
 </details>
 :::
 
@@ -306,66 +331,83 @@ How should the axes be labelled?
 :::
 
 ::: {.question-card}
-#### Example 15 · 6.2 MC Easy Q2
+#### Example 15 · 6.2 MC Easy Q3
 
-Four rods were made from four different materials; all the rods had the same dimensions.
+A student drew a force-extension graph for a sample of metal. She subjected the sample to a force that increased to a maximum then decreased to zero.
 
-At room temperature, which of the following would sustain the biggest plastic deformation?
+![](../assets/questions/deformation/mc-62-easy-q3-metal.webp){.question-figure fig-alt="Force-extension graph with loading and unloading curves between points S and T"}
 
-A. The ductile material steel
+When the sample contracts it follows the same force-extension curve as when it was being stretched.
 
-B. The brittle material glass
+What is the behaviour of the metal between S and T?
 
-C. The brittle material carbon
+A. Both elastic and plastic
 
-D. The ductile material aluminium
+B. Elastic but not plastic
+
+C. Not elastic and not plastic
+
+D. Plastic but not elastic
 
 <details class="answer-panel"><summary>Show answer and explanation</summary>
 
-**Answer: D.** Aluminium is ductile and can sustain a larger plastic deformation than steel before breaking.
+**Answer: B.** Between S and T the unloading follows the same curve as the loading, so the metal returns to its original length: it is elastic but has not undergone plastic deformation.
 </details>
 :::
 
 ::: {.question-card}
-#### Example 16 · 6.2 MC Easy Q7
+#### Example 16 · 6.2 MC Easy Q5
 
-A metal wire had a tension $F$ and extension $x$ with a Young modulus of $E$; the wire obeyed Hooke's law.
+A weight was attached to the lower end of a length of rubber. The rubber was hung from a solid support. The weight was gradually increased from zero then gradually reduced to zero.
 
-Which expression represents the elastic strain energy stored in the wire?
+![](../assets/questions/deformation/mc-62-easy-q5-rubber.webp){.question-figure fig-alt="Rubber cord force-extension curves for stretching and contraction with a shaded area between them"}
 
-A. $\frac{1}{2}Fx$
+The graph shows the force-extension curve for contraction (below) and the force-extension curve for stretching.
 
-B. $Ex$
+What does the shaded area between the curves represent?
 
-C. $\frac{1}{2}Ex$
+A. The amount of elastic energy stored in the rubber.
 
-D. $Fx$
+B. The work done by the rubber cord during contraction.
 
-<details class="answer-panel"><summary>Show answer and explanation</summary>
+C. The work done on the rubber cord during stretching.
 
-**Answer: A.** The strain energy stored elastically is the area under the force-extension graph: $\frac{1}{2}Fx$.
-</details>
-:::
-
-::: {.question-card}
-#### Example 17 · 6.2 MC Easy Q8
-
-Which of the following is the correct definition for elastic and plastic behaviour?
-
-| Elastic behaviour of a material | Plastic behaviour of a material |
-|---|---|
-| A | returns to its original shape and size | suffers permanent deformation |
-| B | obeys Hooke's law | extends continuously under a steady load |
-| C | has a linear force-extension curve | has a horizontal force-extension curve |
-| D | extends only within the limit of proportionality | extends beyond the limit of proportionality |
+D. The amount of thermal energy dissipated in the rubber.
 
 <details class="answer-panel"><summary>Show answer and explanation</summary>
 
-**Answer: A.** Elastic behaviour means the material returns to its original shape and size when the force is removed; plastic behaviour means it suffers permanent deformation.
+**Answer: D.** The area between the loading and unloading curves is the difference between the work put in and the work returned, which is the energy dissipated as thermal energy in the rubber.
 </details>
 :::
 
 ### 6.2 Elastic & Plastic Behaviour - Medium
+
+::: {.question-card}
+#### Example 17 · 6.2 MC Medium Q1
+
+A student was investigating the extension in a long thin metal wire. They suspended the wire from a fixed support, hung it vertically, then hung masses from the lower end.
+
+The load was increased and decreased from zero to the maximum and back again.
+
+The graph shows the force-extension of the wire.
+
+![](../assets/questions/deformation/mc-62-medium-q1-elastic-limit.webp){.question-figure fig-alt="Force-extension graph for the wire with points X, Y and Z marked"}
+
+Where on the graph would the elastic limit be found?
+
+A. Exactly at point Z
+
+B. Exactly at point Y
+
+C. Just beyond point Y
+
+D. Anywhere between point X and point Y
+
+<details class="answer-panel"><summary>Show answer and explanation</summary>
+
+**Answer: C.** The elastic limit is the point beyond which the material no longer returns to its original length when unloaded. On the graph this is just beyond point Y, where the loading curve starts to deviate from the straight line.
+</details>
+:::
 
 ::: {.question-card}
 #### Example 18 · 6.2 MC Medium Q2
@@ -383,44 +425,49 @@ Which shaded area represents the work done during the plastic deformation of the
 :::
 
 ::: {.question-card}
-#### Example 19 · 6.2 MC Medium Q6
+#### Example 19 · 6.2 MC Medium Q8
 
-A student was investigating a spring with a spring constant $k$ of $3.0\ \mathrm{N\,cm^{-1}}$; the spring was stretched over a range in which elastic deformation occurred.
+A spring is extended due to a force. The graph shows the effect of changing force on the extension of the spring.
 
-Which row, for the stated applied force, gives the correct extension and strain energy?
+![](../assets/questions/deformation/mc-62-medium-q8-spring-graph.webp){.question-figure fig-alt="Graph of force against extension for a spring up to 10 N and 50 mm"}
 
-|  | Force / N | Extension / cm | Strain energy / mJ |
-|---|---|---|---|
-| A | 24.0 | 8.0 | 960 |
-| B | 12.0 | 3.0 | 200 |
-| C | 6.0 | 2.0 | 120 |
-| D | 3.0 | 1.0 | 15 |
+What is the elastic potential energy of the spring with a force of 8.0 N?
+
+A. 152 mJ
+
+B. 58 J
+
+C. 85 mJ
+
+D. 5.8 mJ
 
 <details class="answer-panel"><summary>Show answer and explanation</summary>
 
-**Answer: A.** For $F=24\ \mathrm{N}$, $x=F/k=24/3.0=8.0\ \mathrm{cm}$ and strain energy $=\frac{1}{2}Fx=\frac{1}{2}\times24\times0.080=0.96\ \mathrm{J}=960\ \mathrm{mJ}$.
+**Answer: A.** At 8.0 N the extension read from the graph is 38 mm. Elastic potential energy $=\frac{1}{2}Fx=\frac{1}{2}\times8.0\times0.038=0.152\ \mathrm{J}=152\ \mathrm{mJ}$.
 </details>
 :::
 
 ### 6.2 Elastic & Plastic Behaviour - Hard
 
 ::: {.question-card}
-#### Example 20 · 6.2 MC Hard Q2
+#### Example 20 · 6.2 MC Hard Q1
 
-A material with elastic properties that obeys Hooke's law has a Young modulus $E$ and has a tensile stress of $S$ applied.
+A wire undergoes elastic deformation; the graph below shows the load-extension graph.
 
-What is the expression for the elastic energy stored per unit volume of the material?
+![](../assets/questions/deformation/mc-62-hard-q1-load-extension.webp){.question-figure fig-alt="Load-extension graph for a wire up to 6 kg and 25 mm"}
 
-A. $\frac{E}{2S^2}$
+How much work is done on the wire to increase the extension from 10 mm to 20 mm?
 
-B. $\frac{S^2}{2E}$
+A. 0.37 J
 
-C. $\frac{S}{2E}$
+B. 0.28 J
 
-D. $\frac{S}{2}$
+C. 0.184 J
+
+D. 0.028 J
 
 <details class="answer-panel"><summary>Show answer and explanation</summary>
 
-**Answer: B.** Strain energy per unit volume is $\frac{1}{2}\sigma\varepsilon=\frac{1}{2}S\times\frac{S}{E}=\frac{S^2}{2E}$.
+**Answer: B.** Convert the loads at 10 mm and 20 mm to newtons, then use the area of the trapezium: $W=\frac{1}{2}(F_1+F_2)\times\Delta x$. With the values read from the graph this gives $0.28\ \mathrm{J}$.
 </details>
 :::

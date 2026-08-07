@@ -51,7 +51,7 @@ subtitle: "2025–2027 syllabus · 9702"
 
 - 6.1 Stress and strain: Hooke's law, spring constant, stress, strain and the Young modulus
 - 6.2 Elastic and plastic behaviour: stress-strain graphs and elastic strain energy
-- 20 Multiple Choice and 10 Structured Questions; three MC and eleven SQ figures are independently extracted
+- 20 Multiple Choice and 10 Structured Questions; all 20 MC and 12 SQ figures use independently extracted images
 :::
 
 ::: {.topic-card}
