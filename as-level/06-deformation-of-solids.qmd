@@ -1,0 +1,139 @@
+---
+title: "6 Deformation of solids"
+subtitle: "Stress and strain, elastic and plastic behaviour, and the Young modulus"
+---
+
+## Learning objectives
+
+By the end of this chapter, you should be able to:
+
+- understand that deformation is caused by tensile or compressive forces;
+- use the terms load, extension, compression and limit of proportionality;
+- recall and use Hooke's law $F=kx$;
+- recall and use the spring constant $k=F/x$;
+- define and use stress, strain and the Young modulus;
+- describe an experiment to determine the Young modulus of a wire;
+- interpret and compare stress-strain graphs;
+- calculate elastic strain energy from force-extension graphs.
+
+## 6.1 Stress and strain
+
+::: {.study-card}
+### Deformation and Hooke's law
+
+Forces can change the motion of a body or cause deformation. A **tensile** force stretches an object; a **compressive** force squashes it.
+
+**Hooke's law** states that the extension $x$ of a material is proportional to the applied force $F$, provided the limit of proportionality is not exceeded:
+
+$$F=kx,$$
+
+where $k$ is the spring constant in $\mathrm{N\,m^{-1}}$.
+:::
+
+::: {.formula-panel}
+### Stress and strain
+
+**Tensile stress** is the force per unit cross-sectional area:
+
+$$\sigma=\frac{F}{A},$$
+
+with unit $\mathrm{Pa}=\mathrm{N\,m^{-2}}$.
+
+**Tensile strain** is the extension per unit original length:
+
+$$\varepsilon=\frac{x}{L},$$
+
+which is dimensionless.
+:::
+
+::: {.formula-panel}
+### Young modulus
+
+The **Young modulus** is the ratio of stress to strain in the elastic region:
+
+$$E=\frac{\sigma}{\varepsilon}=\frac{F/A}{x/L}=\frac{FL}{Ax}.$$
+
+The unit is $\mathrm{Pa}$ (or $\mathrm{N\,m^{-2}}$). On a stress-strain graph, the Young modulus is the gradient of the straight-line (elastic) region.
+
+For a wire, the force per unit extension $k$ is related to the Young modulus by
+
+$$k=\frac{EA}{L}.$$
+:::
+
+::: {.study-card}
+### Determining the Young modulus of a wire
+
+The experiment uses a long thin wire suspended from a fixed support, with masses added to produce extension:
+
+- original length $L$ measured with a metre rule;
+- diameter measured with a micrometer screw gauge to find the cross-sectional area $A$;
+- extension $x$ measured with a vernier scale or travelling microscope;
+- stress and strain calculated from $F$, $A$, $x$ and $L$;
+- $E$ obtained from the gradient of a stress-strain graph.
+
+Safety: wear safety glasses because the wire may snap, and ensure masses cannot fall onto feet.
+:::
+
+## 6.2 Elastic and plastic behaviour
+
+::: {.study-card}
+### Elastic and plastic deformation
+
+**Elastic deformation**: the material returns to its original shape and size when the deforming force is removed. The behaviour is reversible.
+
+**Plastic deformation**: the material suffers permanent deformation; it does not return to its original shape when the force is removed.
+
+The **limit of proportionality** is the point beyond which force is no longer proportional to extension. The **elastic limit** is the point beyond which the material no longer returns to its original length when unloaded.
+:::
+
+::: {.study-card}
+### Stress-strain graphs for different materials
+
+- **Ductile materials** (e.g. copper, aluminium): show a long plastic region and can be drawn into wires.
+- **Brittle materials** (e.g. glass): break with little or no plastic deformation; the graph is straight up to the breaking point.
+- **Rubber / polymers**: show a curved loading curve with a large extension; the unloading curve differs, producing a hysteresis loop.
+
+The **ultimate tensile stress (UTS)** is the maximum stress a material can withstand before it breaks.
+:::
+
+::: {.formula-panel}
+### Elastic strain energy
+
+The work done in stretching a spring or wire elastically is the area under the force-extension graph:
+
+$$E_{\text{elastic}}=\frac{1}{2}Fx=\frac{1}{2}kx^2.$$
+
+The strain energy per unit volume of a material with tensile stress $\sigma$ and Young modulus $E$ is
+
+$$\frac{\text{strain energy}}{\text{volume}}=\frac{\sigma^2}{2E}.$$
+
+If a material is loaded beyond its elastic limit and then unloaded, the unloading curve lies below the loading curve. The area between the two curves is the energy dissipated as thermal energy.
+:::
+
+## Multiple Choice Questions
+
+{{< include 06-deformation-of-solids-mc.qmd >}}
+
+## Structured Questions
+
+{{< include 06-deformation-of-solids-structured.qmd >}}
+
+## Chapter checklist
+
+- [ ] I can use Hooke's law and the spring constant.
+- [ ] I can calculate stress, strain and the Young modulus.
+- [ ] I can describe the Young modulus experiment and its safety precautions.
+- [ ] I can interpret stress-strain graphs for ductile, brittle and elastic materials.
+- [ ] I can calculate elastic strain energy from graphs and formulae.
+
+### Original question PDFs
+
+- [6.1 Deformation, Stress & Strain - MC Easy](https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/deformation/6.1-deformation-stress-strain-c-easy.pdf)
+- [6.1 Deformation, Stress & Strain - MC Medium](https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/deformation/6.1-deformation-stress-strain-c-medium.pdf)
+- [6.1 Deformation, Stress & Strain - MC Hard](https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/deformation/6.1-deformation-stress-strain-c-hard.pdf)
+- [6.1 Deformation, Stress & Strain - SQ Easy](https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/deformation/6.1-deformation-stress-strain-sq-easy.pdf)
+- [6.1 Deformation, Stress & Strain - SQ Medium](https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/deformation/6.1-deformation-stress-strain-sq-medium.pdf)
+- [6.2 Elastic & Plastic Behaviour - MC Easy](https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/deformation/6.2-deformation-elastic-plastic-c-easy.pdf)
+- [6.2 Elastic & Plastic Behaviour - MC Medium](https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/deformation/6.2-deformation-elastic-plastic-c-medium.pdf)
+- [6.2 Elastic & Plastic Behaviour - MC Hard](https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/deformation/6.2-deformation-elastic-plastic-c-hard.pdf)
+- [6.2 Elastic & Plastic Behaviour - SQ Medium](https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/deformation/6.2-deformation-elastic-plastic-sq-medium.pdf)

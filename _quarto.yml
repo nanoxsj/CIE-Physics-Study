@@ -8,6 +8,7 @@ project:
     - as-level/03-dynamics.qmd
     - as-level/04-forces-density-pressure.qmd
     - as-level/05-work-energy-power.qmd
+    - as-level/06-deformation-of-solids.qmd
     - a-level/12-motion-in-a-circle.qmd
     - a-level/13-gravitational-fields.qmd
     - a-level/14-temperature.qmd
@@ -44,6 +45,8 @@ website:
             text: "4 Forces, density and pressure"
           - href: as-level/05-work-energy-power.qmd
             text: "5 Work, energy and power"
+          - href: as-level/06-deformation-of-solids.qmd
+            text: "6 Deformation of solids"
       - section: "A Level"
         contents:
           - href: a-level/12-motion-in-a-circle.qmd
