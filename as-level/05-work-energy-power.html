@@ -1,0 +1,1538 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-Hans" xml:lang="zh-Hans"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.38">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>5 Work, energy and power – CIE Physics 9702</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../a-level/12-motion-in-a-circle.html" rel="next">
+<link href="../as-level/04-forces-density-pressure.html" rel="prev">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-a2a938b4dd5711f7a799c87bd16ba44c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "没有结果",
+    "search-matching-documents-text": "匹配的文档",
+    "search-copy-link-title": "复制搜索链接",
+    "search-hide-matches-text": "隐藏其它匹配结果",
+    "search-more-match-text": "更多匹配结果",
+    "search-more-matches-text": "更多匹配结果",
+    "search-clear-button-title": "清除",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "取消",
+    "search-submit-button-title": "提交",
+    "search-label": "搜索"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../styles.css">
+</head>
+
+<body class="nav-sidebar docked quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="展开或折叠侧边栏导航" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../as-level/01-physical-quantities-and-units.html">AS Level</a></li><li class="breadcrumb-item"><a href="../as-level/05-work-energy-power.html">5 Work, energy and power</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="展开或折叠侧边栏导航" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="搜索" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">CIE Physics 9702</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="搜索"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">学习首页</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">AS Level</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="展开或折叠此栏">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../as-level/01-physical-quantities-and-units.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">1 Physical quantities and units</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../as-level/02-kinematics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2 Kinematics</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../as-level/03-dynamics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">3 Dynamics</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../as-level/04-forces-density-pressure.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4 Forces, density and pressure</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../as-level/05-work-energy-power.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">5 Work, energy and power</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">A Level</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="展开或折叠此栏">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/12-motion-in-a-circle.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">12 Motion in a circle</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/13-gravitational-fields.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">13 Gravitational fields</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/14-temperature.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">14 Temperature</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/15-ideal-gases.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">15 Ideal gases</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/16-thermodynamics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">16 Thermodynamics</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/17-oscillations.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">17 Oscillations</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/18-electric-fields.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">18 Electric fields</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/19-capacitance.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">19 Capacitance</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/20-magnetic-fields.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">20 Magnetic fields</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/21-alternating-currents.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">21 Alternating currents</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/22-quantum-physics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">22 Quantum physics</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/23-nuclear-physics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">23 Nuclear physics</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/24-medical-physics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">24 Medical physics</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/25-astronomy-and-cosmology.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">25 Astronomy and cosmology</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">该页面内容</h2>
+   
+  <ul>
+  <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link active" data-scroll-target="#learning-objectives">Learning objectives</a></li>
+  <li><a href="#energy-conservation" id="toc-energy-conservation" class="nav-link" data-scroll-target="#energy-conservation">5.1 Energy conservation</a>
+  <ul class="collapse">
+  <li><a href="#work-done" id="toc-work-done" class="nav-link" data-scroll-target="#work-done">Work done</a></li>
+  <li><a href="#principle-of-conservation-of-energy" id="toc-principle-of-conservation-of-energy" class="nav-link" data-scroll-target="#principle-of-conservation-of-energy">Principle of conservation of energy</a></li>
+  <li><a href="#efficiency" id="toc-efficiency" class="nav-link" data-scroll-target="#efficiency">Efficiency</a></li>
+  <li><a href="#power" id="toc-power" class="nav-link" data-scroll-target="#power">Power</a></li>
+  <li><a href="#energy-changes-in-falling-and-bouncing" id="toc-energy-changes-in-falling-and-bouncing" class="nav-link" data-scroll-target="#energy-changes-in-falling-and-bouncing">Energy changes in falling and bouncing</a></li>
+  </ul></li>
+  <li><a href="#gravitational-potential-energy-and-kinetic-energy" id="toc-gravitational-potential-energy-and-kinetic-energy" class="nav-link" data-scroll-target="#gravitational-potential-energy-and-kinetic-energy">5.2 Gravitational potential energy and kinetic energy</a>
+  <ul class="collapse">
+  <li><a href="#gravitational-potential-energy" id="toc-gravitational-potential-energy" class="nav-link" data-scroll-target="#gravitational-potential-energy">Gravitational potential energy</a></li>
+  <li><a href="#kinetic-energy" id="toc-kinetic-energy" class="nav-link" data-scroll-target="#kinetic-energy">Kinetic energy</a></li>
+  <li><a href="#energy-transfers-in-machines" id="toc-energy-transfers-in-machines" class="nav-link" data-scroll-target="#energy-transfers-in-machines">Energy transfers in machines</a></li>
+  </ul></li>
+  <li><a href="#multiple-choice-questions" id="toc-multiple-choice-questions" class="nav-link" data-scroll-target="#multiple-choice-questions">Multiple Choice Questions</a>
+  <ul class="collapse">
+  <li><a href="#energy-conservation---easy" id="toc-energy-conservation---easy" class="nav-link" data-scroll-target="#energy-conservation---easy">5.1 Energy Conservation - Easy</a></li>
+  <li><a href="#energy-conservation---medium" id="toc-energy-conservation---medium" class="nav-link" data-scroll-target="#energy-conservation---medium">5.1 Energy Conservation - Medium</a></li>
+  <li><a href="#energy-conservation---hard" id="toc-energy-conservation---hard" class="nav-link" data-scroll-target="#energy-conservation---hard">5.1 Energy Conservation - Hard</a></li>
+  <li><a href="#gravitational-potential-energy-kinetic-energy---easy" id="toc-gravitational-potential-energy-kinetic-energy---easy" class="nav-link" data-scroll-target="#gravitational-potential-energy-kinetic-energy---easy">5.2 Gravitational Potential Energy &amp; Kinetic Energy - Easy</a></li>
+  <li><a href="#gravitational-potential-energy-kinetic-energy---medium" id="toc-gravitational-potential-energy-kinetic-energy---medium" class="nav-link" data-scroll-target="#gravitational-potential-energy-kinetic-energy---medium">5.2 Gravitational Potential Energy &amp; Kinetic Energy - Medium</a></li>
+  <li><a href="#gravitational-potential-energy-kinetic-energy---hard" id="toc-gravitational-potential-energy-kinetic-energy---hard" class="nav-link" data-scroll-target="#gravitational-potential-energy-kinetic-energy---hard">5.2 Gravitational Potential Energy &amp; Kinetic Energy - Hard</a></li>
+  </ul></li>
+  <li><a href="#structured-questions" id="toc-structured-questions" class="nav-link" data-scroll-target="#structured-questions">Structured Questions</a>
+  <ul class="collapse">
+  <li><a href="#energy-conservation---easy-1" id="toc-energy-conservation---easy-1" class="nav-link" data-scroll-target="#energy-conservation---easy-1">5.1 Energy Conservation - Easy</a></li>
+  <li><a href="#energy-conservation---medium-1" id="toc-energy-conservation---medium-1" class="nav-link" data-scroll-target="#energy-conservation---medium-1">5.1 Energy Conservation - Medium</a></li>
+  </ul></li>
+  <li><a href="#chapter-checklist" id="toc-chapter-checklist" class="nav-link" data-scroll-target="#chapter-checklist">Chapter checklist</a>
+  <ul class="collapse">
+  <li><a href="#original-question-pdfs" id="toc-original-question-pdfs" class="nav-link" data-scroll-target="#original-question-pdfs">Original question PDFs</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../as-level/01-physical-quantities-and-units.html">AS Level</a></li><li class="breadcrumb-item"><a href="../as-level/05-work-energy-power.html">5 Work, energy and power</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">5 Work, energy and power</h1>
+<p class="subtitle lead">Energy conservation, work, power, efficiency, gravitational potential energy and kinetic energy</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="learning-objectives" class="level2">
+<h2 class="anchored" data-anchor-id="learning-objectives">Learning objectives</h2>
+<p>By the end of this chapter, you should be able to:</p>
+<ul>
+<li>understand the concept of work and use <span class="math inline">\(\text{work done}=Fs\)</span> in the direction of the force;</li>
+<li>recall and apply the principle of conservation of energy;</li>
+<li>understand and use efficiency as the ratio of useful energy output to total energy input;</li>
+<li>define power as work done per unit time and use <span class="math inline">\(P=W/t\)</span>;</li>
+<li>derive and use <span class="math inline">\(P=Fv\)</span>;</li>
+<li>derive and use <span class="math inline">\(\Delta E_P=mg\Delta h\)</span>;</li>
+<li>derive and use <span class="math inline">\(E_K=\frac{1}{2}mv^2\)</span>.</li>
+</ul>
+</section>
+<section id="energy-conservation" class="level2">
+<h2 class="anchored" data-anchor-id="energy-conservation">5.1 Energy conservation</h2>
+<section id="work-done" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="work-done">Work done</h3>
+<p><strong>Work</strong> is done when a force moves its point of application in the direction of the force:</p>
+<p><span class="math display">\[W=Fs,\]</span></p>
+<p>where <span class="math inline">\(F\)</span> is the force and <span class="math inline">\(s\)</span> is the displacement in the direction of the force.</p>
+<p>When the force acts at an angle <span class="math inline">\(\theta\)</span> to the displacement,</p>
+<p><span class="math display">\[W=Fs\cos\theta.\]</span></p>
+<p>The unit of work is the joule, <span class="math inline">\(\mathrm{J}=1\ \mathrm{N\,m}\)</span>. No work is done by a force that is perpendicular to the displacement.</p>
+</section>
+<section id="principle-of-conservation-of-energy" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="principle-of-conservation-of-energy">Principle of conservation of energy</h3>
+<p>The <strong>principle of conservation of energy</strong> states that energy cannot be created or destroyed, but it can only be transferred from one form to another. The total energy of an isolated system remains constant.</p>
+<p>In any energy transfer, useful energy may be transferred to a useful store while some energy is dissipated (for example to thermal energy by friction). The total energy before and after a transfer is always the same.</p>
+</section>
+<section id="efficiency" class="level3 formula-panel">
+<h3 class="anchored" data-anchor-id="efficiency">Efficiency</h3>
+<p>The <strong>efficiency</strong> of a system is the ratio of the useful energy output from the system to the total energy input:</p>
+<p><span class="math display">\[\text{efficiency}=\frac{\text{useful energy output}}{\text{total energy input}}.\]</span></p>
+<p>Efficiency can also be written as a ratio of powers:</p>
+<p><span class="math display">\[\text{efficiency}=\frac{\text{useful power output}}{\text{total power input}}.\]</span></p>
+<p>Efficiency has no units. It is often expressed as a percentage.</p>
+</section>
+<section id="power" class="level3 formula-panel">
+<h3 class="anchored" data-anchor-id="power">Power</h3>
+<p><strong>Power</strong> is the rate of transfer of energy, or the rate at which work is done:</p>
+<p><span class="math display">\[P=\frac{W}{t}.\]</span></p>
+<p>The unit of power is the watt, <span class="math inline">\(\mathrm{W}=1\ \mathrm{J\,s^{-1}}\)</span>.</p>
+<p>For an object moving at velocity <span class="math inline">\(v\)</span> with a force <span class="math inline">\(F\)</span> acting in the direction of motion,</p>
+<p><span class="math display">\[P=Fv.\]</span></p>
+<p>The mean power over a time interval is the total work done divided by the time taken.</p>
+</section>
+<section id="energy-changes-in-falling-and-bouncing" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="energy-changes-in-falling-and-bouncing">Energy changes in falling and bouncing</h3>
+<p>For a falling object, gravitational potential energy is converted into kinetic energy. Ignoring air resistance,</p>
+<p><span class="math display">\[\Delta E_P=E_K \qquad \Rightarrow \qquad mg\Delta h=\frac{1}{2}mv^2.\]</span></p>
+<p>When a ball bounces, some energy is dissipated as heat and sound, so the rebound height is smaller than the original height. The kinetic energy just after impact is a fixed fraction of the kinetic energy just before impact.</p>
+</section>
+</section>
+<section id="gravitational-potential-energy-and-kinetic-energy" class="level2">
+<h2 class="anchored" data-anchor-id="gravitational-potential-energy-and-kinetic-energy">5.2 Gravitational potential energy and kinetic energy</h2>
+<section id="gravitational-potential-energy" class="level3 formula-panel">
+<h3 class="anchored" data-anchor-id="gravitational-potential-energy">Gravitational potential energy</h3>
+<p>When an object of mass <span class="math inline">\(m\)</span> is raised by a height <span class="math inline">\(\Delta h\)</span> in a uniform gravitational field, work is done against gravity:</p>
+<p><span class="math display">\[\Delta E_P=mg\Delta h.\]</span></p>
+<p>This is derived from <span class="math inline">\(W=Fs\)</span>: the force is the weight <span class="math inline">\(mg\)</span> and the displacement in the direction of the force is <span class="math inline">\(\Delta h\)</span>. The zero level of gravitational potential energy is chosen for convenience.</p>
+</section>
+<section id="kinetic-energy" class="level3 formula-panel">
+<h3 class="anchored" data-anchor-id="kinetic-energy">Kinetic energy</h3>
+<p>The kinetic energy of an object of mass <span class="math inline">\(m\)</span> moving at speed <span class="math inline">\(v\)</span> is</p>
+<p><span class="math display">\[E_K=\frac{1}{2}mv^2.\]</span></p>
+<p>This is derived from <span class="math inline">\(W=Fs\)</span> together with the equation of motion <span class="math inline">\(v^2=u^2+2as\)</span>: the work done to accelerate an object from rest is <span class="math inline">\(F s=ma\times\frac{v^2}{2a}=\frac{1}{2}mv^2\)</span>.</p>
+<p>Because kinetic energy depends on <span class="math inline">\(v^2\)</span>, doubling the speed increases the kinetic energy by a factor of four.</p>
+</section>
+<section id="energy-transfers-in-machines" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="energy-transfers-in-machines">Energy transfers in machines</h3>
+<p>In a machine such as a crane, a pump or a turbine, energy is transferred between stores. The useful output is less than the input because of energy losses:</p>
+<ul>
+<li>friction between moving parts converts energy to thermal energy;</li>
+<li>sound and vibration carry away energy;</li>
+<li>resistance forces (air resistance, drag) dissipate energy.</li>
+</ul>
+<p>The efficiency of the machine compares the useful output with the total input.</p>
+</section>
+</section>
+<section id="multiple-choice-questions" class="level2">
+<h2 class="anchored" data-anchor-id="multiple-choice-questions">Multiple Choice Questions</h2>
+<section id="energy-conservation---easy" class="level3">
+<h3 class="anchored" data-anchor-id="energy-conservation---easy">5.1 Energy Conservation - Easy</h3>
+<section id="example-1-5.1-mc-easy-q1" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-1-5.1-mc-easy-q1">Example 1 · 5.1 MC Easy Q1</h4>
+<p>Which of the following is a statement of the principle of conservation of energy?</p>
+<p>A. Energy is the product of force and distance.</p>
+<p>B. Energy cannot be created, destroyed or transformed.</p>
+<p>C. The total energy of an isolated system is constant.</p>
+<p>D. The power transmitted by a system is proportional to the rate of transfer of energy.</p>
+<details class="answer-panel">
+<summary>
+Show answer and explanation
+</summary>
+<strong>Answer: C.</strong> The principle of conservation of energy states that energy cannot be created or destroyed, only transferred from one form to another, so the total energy of an isolated system remains constant.
+</details>
+</section>
+<section id="example-2-5.1-mc-easy-q4" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-2-5.1-mc-easy-q4">Example 2 · 5.1 MC Easy Q4</h4>
+<p>A boat moving at constant speed <span class="math inline">\(v\)</span> through still water experiences a total frictional drag <span class="math inline">\(F\)</span>.</p>
+<p>What is the power developed by the boat?</p>
+<p>A. <span class="math inline">\(\frac{Fv}{2}\)</span></p>
+<p>B. <span class="math inline">\(Fv\)</span></p>
+<p>C. <span class="math inline">\(\frac{1}{2}Fv^2\)</span></p>
+<p>D. <span class="math inline">\(Fv^2\)</span></p>
+<details class="answer-panel">
+<summary>
+Show answer and explanation
+</summary>
+<strong>Answer: B.</strong> At constant speed the driving force equals the drag <span class="math inline">\(F\)</span>. The power is <span class="math inline">\(P=Fv\)</span>.
+</details>
+</section>
+<section id="example-3-5.1-mc-easy-q6" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-3-5.1-mc-easy-q6">Example 3 · 5.1 MC Easy Q6</h4>
+<p>A transformer has the following input and output:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th></th>
+<th>Potential difference / V</th>
+<th style="text-align: right;">Current / A</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Input</td>
+<td>11 000</td>
+<td style="text-align: right;">28</td>
+</tr>
+<tr class="even">
+<td>Output</td>
+<td>240</td>
+<td style="text-align: right;">1200</td>
+</tr>
+</tbody>
+</table>
+<p>What is the efficiency of the transformer?</p>
+<p>A. 0.94%</p>
+<p>B. 1.0%</p>
+<p>C. 11%</p>
+<p>D. 94%</p>
+<details class="answer-panel">
+<summary>
+Show answer and explanation
+</summary>
+<strong>Answer: D.</strong> Power input <span class="math inline">\(=11\,000\times28=3.08\times10^5\ \mathrm{W}\)</span>; power output <span class="math inline">\(=240\times1200=2.88\times10^5\ \mathrm{W}\)</span>. Efficiency <span class="math inline">\(=2.88\times10^5/3.08\times10^5=0.94=94\%\)</span>.
+</details>
+</section>
+<section id="example-4-5.1-mc-easy-q7" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-4-5.1-mc-easy-q7">Example 4 · 5.1 MC Easy Q7</h4>
+<p>Which operation involves the greatest mean power?</p>
+<p>A. A car moving against a resistive force of 0.4 kN at a constant speed of <span class="math inline">\(20\ \mathrm{m\,s^{-1}}\)</span>.</p>
+<p>B. A crane lifting a weight of 3 kN at a speed of <span class="math inline">\(2\ \mathrm{m\,s^{-1}}\)</span>.</p>
+<p>C. A crane lifting a weight of 5 kN at a speed of <span class="math inline">\(1\ \mathrm{m\,s^{-1}}\)</span>.</p>
+<p>D. A weight being pulled across a horizontal surface at a speed of <span class="math inline">\(6\ \mathrm{m\,s^{-1}}\)</span> against a frictional force of 1.5 kN.</p>
+<details class="answer-panel">
+<summary>
+Show answer and explanation
+</summary>
+<strong>Answer: D.</strong> Using <span class="math inline">\(P=Fv\)</span>: A gives <span class="math inline">\(400\times20=8000\ \mathrm{W}\)</span>; B gives <span class="math inline">\(3000\times2=6000\ \mathrm{W}\)</span>; C gives <span class="math inline">\(5000\times1=5000\ \mathrm{W}\)</span>; D gives <span class="math inline">\(1500\times6=9000\ \mathrm{W}\)</span>, the greatest mean power.
+</details>
+</section>
+</section>
+<section id="energy-conservation---medium" class="level3">
+<h3 class="anchored" data-anchor-id="energy-conservation---medium">5.1 Energy Conservation - Medium</h3>
+<section id="example-5-5.1-mc-medium-q9" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-5-5.1-mc-medium-q9">Example 5 · 5.1 MC Medium Q9</h4>
+<p>A bungee jumper has 24 kJ of gravitational potential energy at the top of his jump. He is attached to an elastic rope which starts to stretch after a short time of free fall. Assume that energy loss through air resistance is negligible.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th></th>
+<th>GPE / kJ</th>
+<th>EPE / kJ</th>
+<th>KE / kJ</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Top</td>
+<td>24</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr class="even">
+<td>Bottom</td>
+<td>0</td>
+<td>24</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
+<p>What are the possible values when the jumper is half-way down?</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th></th>
+<th>GPE / kJ</th>
+<th>EPE / kJ</th>
+<th>KE / kJ</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>A</td>
+<td>12</td>
+<td>10</td>
+<td>2</td>
+</tr>
+<tr class="even">
+<td>B</td>
+<td>12</td>
+<td>8</td>
+<td>4</td>
+</tr>
+<tr class="odd">
+<td>C</td>
+<td>8</td>
+<td>8</td>
+<td>8</td>
+</tr>
+<tr class="even">
+<td>D</td>
+<td>12</td>
+<td>2</td>
+<td>10</td>
+</tr>
+</tbody>
+</table>
+<details class="answer-panel">
+<summary>
+Show answer and explanation
+</summary>
+<strong>Answer: D.</strong> Half-way down the jumper has fallen 12 m (half of the 24 m), so the GPE is 12 kJ. The rope has not fully unwound until halfway, so EPE is small (2 kJ) and the remainder is kinetic energy (10 kJ), keeping the total at 24 kJ.
+</details>
+</section>
+<section id="example-6-5.1-mc-medium-q12" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-6-5.1-mc-medium-q12">Example 6 · 5.1 MC Medium Q12</h4>
+<p>The force resisting the motion of a car is taken as being proportional to the square of the car’s speed. The magnitude of the force at a speed of <span class="math inline">\(20\ \mathrm{m\,s^{-1}}\)</span> is 800 N.</p>
+<p>What effective power is required from the car’s engine to maintain a steady speed of <span class="math inline">\(40\ \mathrm{m\,s^{-1}}\)</span>?</p>
+<p>A. 32 kW</p>
+<p>B. 64 kW</p>
+<p>C. 128 kW</p>
+<p>D. 512 kW</p>
+<details class="answer-panel">
+<summary>
+Show answer and explanation
+</summary>
+<strong>Answer: D.</strong> <span class="math inline">\(F\propto v^2\)</span>, so at <span class="math inline">\(40\ \mathrm{m\,s^{-1}}\)</span>, <span class="math inline">\(F=800\times(40/20)^2=3200\ \mathrm{N}\)</span>. The required power is <span class="math inline">\(P=Fv=3200\times40=128\,000\ \mathrm{W}=128\ \mathrm{kW}\)</span>.
+</details>
+</section>
+<section id="example-7-5.1-mc-medium-q13" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-7-5.1-mc-medium-q13">Example 7 · 5.1 MC Medium Q13</h4>
+<p>A mass is raised vertically. In a time <span class="math inline">\(t\)</span>, the increase in its gravitational potential energy is <span class="math inline">\(E_P\)</span>, and the increase in its kinetic energy is <span class="math inline">\(E_K\)</span>.</p>
+<p>What is the average power input to the mass?</p>
+<p>A. <span class="math inline">\((E_P-E_K)t\)</span></p>
+<p>B. <span class="math inline">\((E_P+E_K)t\)</span></p>
+<p>C. <span class="math inline">\(\frac{E_P-E_K}{t}\)</span></p>
+<p>D. <span class="math inline">\(\frac{E_P+E_K}{t}\)</span></p>
+<details class="answer-panel">
+<summary>
+Show answer and explanation
+</summary>
+<strong>Answer: D.</strong> The total energy input is the sum of the increases in GPE and KE. Average power is energy transferred divided by time: <span class="math inline">\(P=\frac{E_P+E_K}{t}\)</span>.
+</details>
+</section>
+</section>
+<section id="energy-conservation---hard" class="level3">
+<h3 class="anchored" data-anchor-id="energy-conservation---hard">5.1 Energy Conservation - Hard</h3>
+<section id="example-8-5.1-mc-hard-q1" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-8-5.1-mc-hard-q1">Example 8 · 5.1 MC Hard Q1</h4>
+<p>A turbine at a hydroelectric power station is situated 30 m below the level of the surface of a large lake. The water passes through the turbine at a rate of <span class="math inline">\(340\ \mathrm{m^3}\)</span> per minute.</p>
+<p>The overall efficiency of the turbine and generator system is 90%.</p>
+<p>What is the output power of the power station? (The density of water is <span class="math inline">\(1000\ \mathrm{kg\,m^{-3}}\)</span>.)</p>
+<p>A. 0.15 MW</p>
+<p>B. 1.5 MW</p>
+<p>C. 1.7 MW</p>
+<p>D. 90 MW</p>
+<details class="answer-panel">
+<summary>
+Show answer and explanation
+</summary>
+<strong>Answer: B.</strong> Mass flow rate <span class="math inline">\(=340\times1000/60=5667\ \mathrm{kg\,s^{-1}}\)</span>. Input power <span class="math inline">\(=\rho gQh=5667\times9.81\times30=1.67\times10^6\ \mathrm{W}\)</span>. Output <span class="math inline">\(=0.90\times1.67\times10^6=1.5\ \mathrm{MW}\)</span>.
+</details>
+</section>
+<section id="example-9-5.1-mc-hard-q2" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-9-5.1-mc-hard-q2">Example 9 · 5.1 MC Hard Q2</h4>
+<p>A small mass is placed at point P on the inside surface of a smooth hemisphere. It is then released from rest. When it reaches the lowest point T, its speed is <span class="math inline">\(4.0\ \mathrm{m\,s^{-1}}\)</span>.</p>
+<p><img src="../assets/questions/work-energy-power/mc-5.1-hard-q2-hemisphere.webp" class="question-figure img-fluid" alt="Mass sliding down the inside of a smooth hemisphere with speeds at Q, R, S and T"></p>
+<p>The mass loses potential energy <span class="math inline">\(E\)</span> in falling from P to T.</p>
+<p>At which point has the mass lost potential energy <span class="math inline">\(\frac{E}{4}\)</span>?</p>
+<p>A. Q</p>
+<p>B. R</p>
+<p>C. S</p>
+<p>D. none of these</p>
+<details class="answer-panel">
+<summary>
+Show answer and explanation
+</summary>
+<strong>Answer: B.</strong> From conservation of energy, the speed squared is proportional to the potential energy lost. At T, <span class="math inline">\(v^2=16\)</span>, so losing <span class="math inline">\(\frac{1}{4}E\)</span> means <span class="math inline">\(v^2=4\)</span>, i.e.&nbsp;<span class="math inline">\(v=2.0\ \mathrm{m\,s^{-1}}\)</span>, which occurs at point R.
+</details>
+</section>
+<section id="example-10-5.1-mc-hard-q3" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-10-5.1-mc-hard-q3">Example 10 · 5.1 MC Hard Q3</h4>
+<p>A wind turbine has blades that sweep an area of <span class="math inline">\(2000\ \mathrm{m^2}\)</span>. It converts the power available in the wind to electrical power with an efficiency of 50%.</p>
+<p>What is the electrical power generated if the wind speed is <span class="math inline">\(10\ \mathrm{m\,s^{-1}}\)</span>? (The density of air is <span class="math inline">\(1.3\ \mathrm{kg\,m^{-3}}\)</span>.)</p>
+<p>A. 130 kW</p>
+<p>B. 650 kW</p>
+<p>C. 1300 kW</p>
+<p>D. 2600 kW</p>
+<details class="answer-panel">
+<summary>
+Show answer and explanation
+</summary>
+<strong>Answer: B.</strong> Power available in the wind <span class="math inline">\(=\frac{1}{2}\rho Av^3=\frac{1}{2}\times1.3\times2000\times10^3=1.3\times10^6\ \mathrm{W}\)</span>. Electrical output <span class="math inline">\(=0.50\times1.3\times10^6=650\ \mathrm{kW}\)</span>.
+</details>
+</section>
+</section>
+<section id="gravitational-potential-energy-kinetic-energy---easy" class="level3">
+<h3 class="anchored" data-anchor-id="gravitational-potential-energy-kinetic-energy---easy">5.2 Gravitational Potential Energy &amp; Kinetic Energy - Easy</h3>
+<section id="example-11-5.2-mc-easy-q1" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-11-5.2-mc-easy-q1">Example 11 · 5.2 MC Easy Q1</h4>
+<p>What is the approximate kinetic energy of an Olympic athlete when running at maximum speed during a 100 m race?</p>
+<p>A. 400 J</p>
+<p>B. 4000 J</p>
+<p>C. 40 000 J</p>
+<p>D. 400 000 J</p>
+<details class="answer-panel">
+<summary>
+Show answer and explanation
+</summary>
+<strong>Answer: B.</strong> An athlete of mass about 80 kg running at about <span class="math inline">\(10\ \mathrm{m\,s^{-1}}\)</span> has <span class="math inline">\(E_K=\frac{1}{2}\times80\times10^2=4000\ \mathrm{J}\)</span>.
+</details>
+</section>
+<section id="example-12-5.2-mc-easy-q2" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-12-5.2-mc-easy-q2">Example 12 · 5.2 MC Easy Q2</h4>
+<p>A body travelling with a speed of <span class="math inline">\(10\ \mathrm{m\,s^{-1}}\)</span> has kinetic energy 1500 J.</p>
+<p>If the speed of the body is increased to <span class="math inline">\(40\ \mathrm{m\,s^{-1}}\)</span>, what is its new kinetic energy?</p>
+<p>A. 4.5 kJ</p>
+<p>B. 6 kJ</p>
+<p>C. 24 kJ</p>
+<p>D. 1350 kJ</p>
+<details class="answer-panel">
+<summary>
+Show answer and explanation
+</summary>
+<strong>Answer: C.</strong> <span class="math inline">\(E_K\propto v^2\)</span>. The speed increases by a factor of 4, so the kinetic energy increases by a factor of <span class="math inline">\(4^2=16\)</span>: <span class="math inline">\(1500\times16=24\,000\ \mathrm{J}=24\ \mathrm{kJ}\)</span>.
+</details>
+</section>
+<section id="example-13-5.2-mc-easy-q3" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-13-5.2-mc-easy-q3">Example 13 · 5.2 MC Easy Q3</h4>
+<p>An object is thrown into the air.</p>
+<p>Which graph shows how the potential energy <span class="math inline">\(E_P\)</span> of the object varies with height <span class="math inline">\(h\)</span> above the ground?</p>
+<p><img src="../assets/questions/work-energy-power/mc-5.2-easy-q3-pe-graphs.webp" class="question-figure img-fluid" alt="Four graphs of potential energy against height"></p>
+<details class="answer-panel">
+<summary>
+Show answer and explanation
+</summary>
+<strong>Answer: A.</strong> Gravitational potential energy is <span class="math inline">\(E_P=mgh\)</span>, which increases linearly with height, so the graph is a straight line through the origin.
+</details>
+</section>
+<section id="example-14-5.2-mc-easy-q9" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-14-5.2-mc-easy-q9">Example 14 · 5.2 MC Easy Q9</h4>
+<p>A cyclist is travelling at a constant speed up a hill. The frictional force resisting the cyclist’s motion is 8.0 N.</p>
+<p>The cyclist uses 450 J of energy to travel 20 m.</p>
+<p>What is the increase in gravitational potential energy of the cyclist?</p>
+<p>A. 160 J</p>
+<p>B. 290 J</p>
+<p>C. 440 J</p>
+<p>D. 610 J</p>
+<details class="answer-panel">
+<summary>
+Show answer and explanation
+</summary>
+<strong>Answer: B.</strong> Work done against friction <span class="math inline">\(=8.0\times20=160\ \mathrm{J}\)</span>. By conservation of energy, <span class="math inline">\(450=160+\Delta E_P\)</span>, so <span class="math inline">\(\Delta E_P=290\ \mathrm{J}\)</span>.
+</details>
+</section>
+</section>
+<section id="gravitational-potential-energy-kinetic-energy---medium" class="level3">
+<h3 class="anchored" data-anchor-id="gravitational-potential-energy-kinetic-energy---medium">5.2 Gravitational Potential Energy &amp; Kinetic Energy - Medium</h3>
+<section id="example-15-5.2-mc-medium-q2" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-15-5.2-mc-medium-q2">Example 15 · 5.2 MC Medium Q2</h4>
+<p>A body travelling with a speed of <span class="math inline">\(20\ \mathrm{m\,s^{-1}}\)</span> has kinetic energy <span class="math inline">\(E\)</span>.</p>
+<p>If the speed of the body is increased to <span class="math inline">\(80\ \mathrm{m\,s^{-1}}\)</span>, what is its kinetic energy?</p>
+<p>A. <span class="math inline">\(4E\)</span></p>
+<p>B. <span class="math inline">\(8E\)</span></p>
+<p>C. <span class="math inline">\(12E\)</span></p>
+<p>D. <span class="math inline">\(16E\)</span></p>
+<details class="answer-panel">
+<summary>
+Show answer and explanation
+</summary>
+<strong>Answer: D.</strong> The speed increases by a factor of 4, so the kinetic energy increases by a factor of <span class="math inline">\(4^2=16\)</span>.
+</details>
+</section>
+<section id="example-16-5.2-mc-medium-q7" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-16-5.2-mc-medium-q7">Example 16 · 5.2 MC Medium Q7</h4>
+<p>A steel ball is falling at constant speed in oil.</p>
+<p>Which graph shows the variation with time of the gravitational potential energy <span class="math inline">\(E_P\)</span> and the kinetic energy <span class="math inline">\(E_K\)</span> of the ball?</p>
+<p><img src="../assets/questions/work-energy-power/mc-5.2-medium-q7-energy-graphs.webp" class="question-figure img-fluid" alt="Four graphs of energy against time for a ball falling in oil"></p>
+<details class="answer-panel">
+<summary>
+Show answer and explanation
+</summary>
+<strong>Answer: B.</strong> At constant speed the kinetic energy is constant, while the gravitational potential energy decreases linearly with time as the ball falls.
+</details>
+</section>
+<section id="example-17-5.2-mc-medium-q8" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-17-5.2-mc-medium-q8">Example 17 · 5.2 MC Medium Q8</h4>
+<p>Car X is travelling at half the speed of car Y. Car X has twice the mass of car Y.</p>
+<p>Which statement is correct?</p>
+<p>A. Car X has half the kinetic energy of car Y.</p>
+<p>B. Car X has one quarter of the kinetic energy of car Y.</p>
+<p>C. Car X has twice the kinetic energy of car Y.</p>
+<p>D. The two cars have the same kinetic energy.</p>
+<details class="answer-panel">
+<summary>
+Show answer and explanation
+</summary>
+<strong>Answer: A.</strong> With <span class="math inline">\(m_X=2m\)</span> and <span class="math inline">\(v_X=\frac{1}{2}v\)</span>, <span class="math inline">\(E_X=\frac{1}{2}(2m)(\frac{1}{2}v)^2=\frac{1}{4}mv^2\)</span>, which is half of <span class="math inline">\(E_Y=\frac{1}{2}mv^2\)</span>.
+</details>
+</section>
+</section>
+<section id="gravitational-potential-energy-kinetic-energy---hard" class="level3">
+<h3 class="anchored" data-anchor-id="gravitational-potential-energy-kinetic-energy---hard">5.2 Gravitational Potential Energy &amp; Kinetic Energy - Hard</h3>
+<section id="example-18-5.2-mc-hard-q1" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-18-5.2-mc-hard-q1">Example 18 · 5.2 MC Hard Q1</h4>
+<p>A loaded aeroplane has a total mass of <span class="math inline">\(1.2\times10^5\ \mathrm{kg}\)</span> while climbing after take-off. It climbs at an angle of <span class="math inline">\(23^\circ\)</span> to the horizontal with a speed of <span class="math inline">\(50\ \mathrm{m\,s^{-1}}\)</span>.</p>
+<p>What is the rate at which it is gaining potential energy at this time?</p>
+<p>A. <span class="math inline">\(2.3\times10^6\ \mathrm{J\,s^{-1}}\)</span></p>
+<p>B. <span class="math inline">\(2.5\times10^6\ \mathrm{J\,s^{-1}}\)</span></p>
+<p>C. <span class="math inline">\(2.3\times10^7\ \mathrm{J\,s^{-1}}\)</span></p>
+<p>D. <span class="math inline">\(2.5\times10^7\ \mathrm{J\,s^{-1}}\)</span></p>
+<details class="answer-panel">
+<summary>
+Show answer and explanation
+</summary>
+<strong>Answer: C.</strong> Vertical component of speed <span class="math inline">\(=50\sin23^\circ\)</span>. Rate of gaining GPE <span class="math inline">\(=mgv\sin\theta=1.2\times10^5\times9.81\times50\times\sin23^\circ=2.3\times10^7\ \mathrm{J\,s^{-1}}\)</span>.
+</details>
+</section>
+<section id="example-19-5.2-mc-hard-q3" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-19-5.2-mc-hard-q3">Example 19 · 5.2 MC Hard Q3</h4>
+<p>A steel sphere is dropped vertically onto a horizontal metal plate. The sphere hits the plate with a speed <span class="math inline">\(u\)</span>, leaves it at a speed <span class="math inline">\(v\)</span>, and rebounds vertically to half of its original height.</p>
+<p>Which expression gives the value of <span class="math inline">\(\frac{v}{u}\)</span>?</p>
+<p>A. <span class="math inline">\(\frac{1}{2^2}\)</span></p>
+<p>B. <span class="math inline">\(\frac{1}{2}\)</span></p>
+<p>C. <span class="math inline">\(\frac{1}{\sqrt{2}}\)</span></p>
+<p>D. <span class="math inline">\(1-\frac{1}{\sqrt{2}}\)</span></p>
+<details class="answer-panel">
+<summary>
+Show answer and explanation
+</summary>
+<strong>Answer: C.</strong> Before impact <span class="math inline">\(u^2=2gh\)</span>; after rebound <span class="math inline">\(v^2=2g(h/2)=gh\)</span>. Hence <span class="math inline">\(\frac{v}{u}=\sqrt{\frac{gh}{2gh}}=\frac{1}{\sqrt{2}}\)</span>.
+</details>
+</section>
+<section id="example-20-5.2-mc-hard-q7" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-20-5.2-mc-hard-q7">Example 20 · 5.2 MC Hard Q7</h4>
+<p>A 4 kg ball and a 3 kg block of wood were placed in an arrangement as shown below. When the ball was released, it fell through a distance of 5 m, pulling the block of wood up the ramp.</p>
+<p><img src="../assets/questions/work-energy-power/mc-5.2-hard-q7-ball-block.webp" class="question-figure img-fluid" alt="4 kg ball and 3 kg block connected by a string over pulleys on a ramp"></p>
+<p>If the pulleys were well oiled and the surface of the ramp exerts a frictional force of 2 N, what is the final speed of the sphere after falling through the 5 m?</p>
+<p>A. <span class="math inline">\(5.0\ \mathrm{m\,s^{-1}}\)</span></p>
+<p>B. <span class="math inline">\(5.3\ \mathrm{m\,s^{-1}}\)</span></p>
+<p>C. <span class="math inline">\(6.9\ \mathrm{m\,s^{-1}}\)</span></p>
+<p>D. <span class="math inline">\(10.0\ \mathrm{m\,s^{-1}}\)</span></p>
+<details class="answer-panel">
+<summary>
+Show answer and explanation
+</summary>
+<strong>Answer: B.</strong> Energy lost by the 4 kg ball is used to gain GPE of the 3 kg block, to overcome friction and to provide kinetic energy of the system. Using the dimensions in the diagram, the energy balance gives <span class="math inline">\(\frac{1}{2}(4+3)v^2=4g\times5-3g\times3-2\times5\)</span>, so <span class="math inline">\(v=5.3\ \mathrm{m\,s^{-1}}\)</span>.
+</details>
+</section>
+</section>
+</section>
+<section id="structured-questions" class="level2">
+<h2 class="anchored" data-anchor-id="structured-questions">Structured Questions</h2>
+<section id="energy-conservation---easy-1" class="level3">
+<h3 class="anchored" data-anchor-id="energy-conservation---easy-1">5.1 Energy Conservation - Easy</h3>
+<section id="example-1-5.1-sq-easy-q1" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-1-5.1-sq-easy-q1">Example 1 · 5.1 SQ Easy Q1</h4>
+<p><strong>(a)</strong> A small child does work on a large suitcase by pushing it along a smooth floor, as shown in Fig. 1.1.</p>
+<p><img src="../assets/questions/work-energy-power/sq-5.1-easy-q1-suitcase-fig1.webp" class="question-figure img-fluid" alt="Child pushing a suitcase along a smooth floor"></p>
+<p>State the definition of work done and write the equation. <code>[2 marks]</code></p>
+<p><strong>(b)</strong> The suitcase is moved back to its original position by an adult who pulls it at an angle of <span class="math inline">\(70^\circ\)</span> to the floor, as shown in Fig. 1.2.</p>
+<p><img src="../assets/questions/work-energy-power/sq-5.1-easy-q1-suitcase-fig2.webp" class="question-figure img-fluid" alt="Adult pulling a suitcase at 70 degrees to the floor"></p>
+<p>Write an expression for the work done on the suitcase by the adult in terms of force <span class="math inline">\(F\)</span>, distance <span class="math inline">\(d\)</span> and the angle <span class="math inline">\(70^\circ\)</span>. <code>[2 marks]</code></p>
+<p><strong>(c)</strong> In moving the suitcase the child and adult both exerted equal forces of 20 N. They each move the suitcase a distance of 2.5 m.</p>
+<p>Calculate the work done by:</p>
+<p><strong>(i)</strong> the child; <code>[2]</code></p>
+<p><strong>(ii)</strong> the adult. <code>[2]</code></p>
+<p><code>[4 marks]</code></p>
+<p><strong>(d)</strong> State whether the child or the adult are more efficient at moving the suitcase, explaining your reasoning. <code>[3 marks]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<ul>
+<li><strong>(a)</strong> Work done is force multiplied by the distance moved in the direction of the force: <span class="math inline">\(W=F\times d\)</span>. <code>[2]</code></li>
+<li><strong>(b)</strong> Only the horizontal component of the pull does work: <span class="math inline">\(W=Fd\cos70^\circ\)</span>. <code>[2]</code></li>
+<li><strong>(c)(i)</strong> Child: <span class="math inline">\(W=20\times2.5=50\ \mathrm{J}\)</span>. <code>[2]</code></li>
+<li><strong>(c)(ii)</strong> Adult: <span class="math inline">\(W=20\times2.5\times\cos70^\circ=17\ \mathrm{J}\)</span>. <code>[2]</code></li>
+<li><strong>(d)</strong> The adult is more efficient because less work (or energy) is needed to move the suitcase the same distance; <code>[2]</code> the adult’s force is partly vertical, so less energy is wasted (or the wheels reduce friction with the floor). <code>[1]</code></li>
+</ul>
+</details>
+</section>
+<section id="example-2-5.1-sq-easy-q2" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-2-5.1-sq-easy-q2">Example 2 · 5.1 SQ Easy Q2</h4>
+<p>A block of weight <span class="math inline">\(4.25\times10^3\ \mathrm{N}\)</span> is placed on a frictionless slope inclined at <span class="math inline">\(30^\circ\)</span> to the horizontal as shown in Fig. 1.1.</p>
+<p><img src="../assets/questions/work-energy-power/sq-5.1-easy-q2-slope.webp" class="question-figure img-fluid" alt="Block on a frictionless slope inclined at 30 degrees to the horizontal"></p>
+<p>The block is moved up the slope at constant speed by applying a force parallel to the slope.</p>
+<p><strong>(a)</strong> Calculate the component of the weight of the block which acts parallel to the slope. <code>[2 marks]</code></p>
+<p><strong>(b)</strong> Calculate the work done in moving the block a distance of 6.0 m up the slope. <code>[2 marks]</code></p>
+<p><strong>(c)</strong> The block in part (a) is pushed 6.0 m up the slope in 18 s.</p>
+<p>Calculate the power needed to move the block in this amount of time. <code>[2 marks]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<ul>
+<li><strong>(a)</strong> Component parallel to slope <span class="math inline">\(=W\sin30^\circ=4.25\times10^3\times0.5=2.1\times10^3\ \mathrm{N}\)</span>. <code>[2]</code></li>
+<li><strong>(b)</strong> Work done <span class="math inline">\(=F s=2.1\times10^3\times6.0=1.28\times10^4\ \mathrm{J}\)</span>. <code>[2]</code></li>
+<li><strong>(c)</strong> Power <span class="math inline">\(=W/t=1.28\times10^4/18=708\ \mathrm{W}\)</span>. <code>[2]</code></li>
+</ul>
+</details>
+</section>
+<section id="example-3-5.1-sq-easy-q3" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-3-5.1-sq-easy-q3">Example 3 · 5.1 SQ Easy Q3</h4>
+<p>A beaker is filled with ice and then an electric heater is placed into it, as shown in Fig. 1.1. The heater is turned on and heats up until it glows red.</p>
+<p><img src="../assets/questions/work-energy-power/sq-5.1-easy-q3-beaker.webp" class="question-figure img-fluid" alt="Electric heater placed in a beaker of ice"></p>
+<p>A student states that when the ice is being heated up the total amount of energy in the ice remains the same.</p>
+<p><strong>(a)</strong> State the principle of conservation of energy. <code>[2 marks]</code></p>
+<p><strong>(b)</strong> Explain whether the student is correct, giving your reason. <code>[3 marks]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<ul>
+<li><strong>(a)</strong> Energy cannot be created or destroyed, but it can be transferred from one form to another. <code>[2]</code></li>
+<li><strong>(b)</strong> The student is not correct. <code>[1]</code> Energy is transferred from the electrical supply to the heater, <code>[1]</code> and then to the ice as thermal energy, so the energy of the ice increases. <code>[1]</code></li>
+</ul>
+</details>
+</section>
+</section>
+<section id="energy-conservation---medium-1" class="level3">
+<h3 class="anchored" data-anchor-id="energy-conservation---medium-1">5.1 Energy Conservation - Medium</h3>
+<section id="example-4-5.1-sq-medium-q1" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-4-5.1-sq-medium-q1">Example 4 · 5.1 SQ Medium Q1</h4>
+<p><strong>(a)</strong> Define work done by a force. <code>[1 mark]</code></p>
+<p><strong>(b)</strong> A heavy bag is pulled across a rough surface at a constant speed.</p>
+<p>Describe and explain how work is done in this situation. <code>[2 marks]</code></p>
+<p><strong>(c)</strong> A crane is used to lift the bag from the ground onto the loading area of a truck.</p>
+<p>Fig. 1.1 shows the crane moving the bag from the ground to the truck.</p>
+<p><img src="../assets/questions/work-energy-power/sq-5.1-medium-q1-crane.webp" class="question-figure img-fluid" alt="Crane lifting a bag from the ground to a truck loading area"></p>
+<p>The mass of the bag is 64 kg. The crane takes 0.1 minutes to lift the bag from the ground to the loading area of the truck.</p>
+<p>Calculate the rate of work done by the crane when moving the bag. <code>[3 marks]</code></p>
+<p><strong>(d)</strong> The crane is powered using an electric motor. The efficiency of the crane is 74%.</p>
+<p>The crane is used to load approximately 400 bags with an average mass of 60 kg each day.</p>
+<p><strong>(i)</strong> Calculate the power used by the crane’s motor to lift the bag in part (c). <code>[3]</code></p>
+<p><strong>(ii)</strong> The typical working efficiency of a crane is 80%.</p>
+<p>Explain how the difference in efficiency may affect the number of bags the crane can lift in a day. <code>[2]</code></p>
+<p><strong>(iii)</strong> Suggest one change which could increase the efficiency of the motor and explain how it would achieve this. <code>[2]</code></p>
+<p><code>[6 marks]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<ul>
+<li><strong>(a)</strong> Work done is force multiplied by the displacement in the direction of the force. <code>[1]</code></li>
+<li><strong>(b)</strong> Work is done against friction between the bag and the ground, <code>[1]</code> transferring energy to thermal energy of the bag and the surface. <code>[1]</code></li>
+<li><strong>(c)</strong> Vertical height lifted: <span class="math inline">\(\Delta h=\sqrt{2.25^2-1.25^2}=1.871\ \mathrm{m}\)</span>. <code>[1]</code> Work done <span class="math inline">\(=mg\Delta h=64\times9.81\times1.871=1175\ \mathrm{J}\)</span>. <code>[1]</code> Power <span class="math inline">\(=1175/6=196\approx200\ \mathrm{W}\)</span>. <code>[1]</code></li>
+<li><strong>(d)(i)</strong> Motor power <span class="math inline">\(=200/0.74=270\ \mathrm{W}\)</span>. <code>[3]</code></li>
+<li><strong>(d)(ii)</strong> At higher efficiency less input energy is needed for the same useful work. <code>[1]</code> At 80% the motor needs <span class="math inline">\(120\ \mathrm{J}\)</span> less per bag, so over 400 bags it saves <span class="math inline">\(48\,000\ \mathrm{J}\)</span>, equivalent to about 44 extra bags per day. <code>[1]</code></li>
+<li><strong>(d)(iii)</strong> Lubricate or oil the moving parts, <code>[1]</code> which reduces energy losses due to friction and heat. <code>[1]</code> (Alternative: tighten loose parts to reduce losses due to sound and vibration.)</li>
+</ul>
+</details>
+</section>
+<section id="example-5-5.1-sq-medium-q2" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-5-5.1-sq-medium-q2">Example 5 · 5.1 SQ Medium Q2</h4>
+<p><strong>(a)</strong> Engineers around the world are working on ways to provide enough energy to sustain human activity. Off-shore wind farms use the kinetic energy of strong offshore winds to generate electricity.</p>
+<p>Fig. 1.1 shows an offshore wind power installation.</p>
+<p><img src="../assets/questions/work-energy-power/sq-5.1-medium-q2-windfarm.webp" class="question-figure img-fluid" alt="Offshore wind power installation"></p>
+<p>State the definition of power and give the units used to measure power output. <code>[1 mark]</code></p>
+<p><strong>(b)</strong> The UK is a world leader in the installation of offshore wind power.</p>
+<p>Located in the North Sea off the east coast of England, the Hornsea Phase 2 offshore wind farm was the largest wind farm in the world when it opened in 2022. It uses 165 turbines rated at 8 MW each, to generate 1.4 GW of energy, enough to supply more than 1.3 million homes. Each turbine has blades of length 81 m.</p>
+<p>The power output of a single turbine can be calculated using</p>
+<p><span class="math display">\[P=\frac{1}{2}\rho Av^3,\]</span></p>
+<p>where <span class="math inline">\(\rho\)</span> is the density of the air, <span class="math inline">\(A\)</span> is the area swept out by the blades and <span class="math inline">\(v\)</span> is the wind speed.</p>
+<p>Calculate the average wind speed at Hornsea Two. The density of air is <span class="math inline">\(1.225\ \mathrm{kg\,m^{-3}}\)</span>. <code>[3 marks]</code></p>
+<p><strong>(c)</strong> The Hornsea wind turbines are found to have an efficiency of 40%.</p>
+<p><strong>(i)</strong> Calculate the energy required from the wind every second to achieve the desired power output. <code>[2]</code></p>
+<p><strong>(ii)</strong> Explain why it is impossible to transfer all the energy available from the wind. <code>[3]</code></p>
+<p><code>[5 marks]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<ul>
+<li><strong>(a)</strong> Power is the rate of transfer of energy (or the rate of doing work); the unit is the watt (W). <code>[1]</code></li>
+<li><strong>(b)</strong> Area swept <span class="math inline">\(A=\pi r^2=\pi(81)^2=20\,600\ \mathrm{m^2}\)</span>. <code>[1]</code> Rearranging <span class="math inline">\(P=\frac{1}{2}\rho Av^3\)</span> gives <span class="math inline">\(v=\sqrt[3]{\frac{2P}{\rho A}}=\sqrt[3]{\frac{2\times8\times10^6}{1.225\times20\,600}}\)</span>. <code>[1]</code> <span class="math inline">\(v=8.6\ \mathrm{m\,s^{-1}}\)</span>. <code>[1]</code></li>
+<li><strong>(c)(i)</strong> Power input <span class="math inline">\(=1.4\times10^9/0.40=3.5\times10^9\ \mathrm{J}\)</span> per second. <code>[2]</code></li>
+<li><strong>(c)(ii)</strong> The wind’s energy is in the form of kinetic energy. <code>[1]</code> To extract all of it the wind would have to stop moving, <code>[1]</code> which would prevent further air from reaching the turbine. <code>[1]</code></li>
+</ul>
+</details>
+</section>
+<section id="example-6-5.1-sq-medium-q3" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-6-5.1-sq-medium-q3">Example 6 · 5.1 SQ Medium Q3</h4>
+<p><strong>(a)</strong> A hybrid electric bike is fitted with both pedals and a battery. The cyclist can use pedals only, pedals and battery, or battery only as they ride. Fig. 1.1 shows a cyclist riding a hybrid electric bike up an inclined road.</p>
+<p><img src="../assets/questions/work-energy-power/sq-5.1-medium-q3-bike.webp" class="question-figure img-fluid" alt="Cyclist riding a hybrid electric bike up an inclined road"></p>
+<p>At one hill the cyclist switches to battery only. A road sign at the base of the hill states that it has an incline of 5%, meaning that for every 100 m travelled horizontally, the height increases by 5 m.</p>
+<p>The bike travels at a steady speed of <span class="math inline">\(6.0\ \mathrm{m\,s^{-1}}\)</span>.</p>
+<p>The mass of the rider and bike combined is 72.8 kg. The distance from the base to the top of the hill is 35 m.</p>
+<p>Calculate the minimum power required from the battery. Assume that there is no energy loss due to friction. <code>[5 marks]</code></p>
+<p><strong>(b)</strong> Near the top of the hill, the cyclist stops pedalling and the bicycle freewheels for 1.6 s until coming to a stop.</p>
+<p>The frictional forces which slow down the motion are constant.</p>
+<p><strong>(i)</strong> Show that the bicycle travels about 5 m before coming to a stop. <code>[2]</code></p>
+<p><strong>(ii)</strong> Calculate the magnitude of the frictional force which slows the bicycle down. <code>[3]</code></p>
+<p><code>[5 marks]</code></p>
+<p><strong>(c)</strong> Once the cyclist reaches the top, they turn off the motor and head back down to the bottom. At the bottom of the hill, they reach a velocity of <span class="math inline">\(8.8\ \mathrm{m\,s^{-1}}\)</span>.</p>
+<p><strong>(i)</strong> Calculate the energy the cyclist has at the top of the hill. <code>[2]</code></p>
+<p><strong>(ii)</strong> Calculate the energy the cyclist has at the bottom of the hill. <code>[2]</code></p>
+<p><strong>(iii)</strong> Compare the two values you have calculated and suggest a reason for the difference. <code>[3]</code></p>
+<p><code>[7 marks]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<ul>
+<li><strong>(a)</strong> Angle of incline: <span class="math inline">\(\theta=\tan^{-1}(5/100)=2.86^\circ\)</span>. <code>[1]</code> Force parallel to slope <span class="math inline">\(=mg\sin\theta=72.8\times9.81\times\sin2.86^\circ=35.6\ \mathrm{N}\)</span>. <code>[1]</code> Height gained in 35 m: <span class="math inline">\(35\sin2.86^\circ=1.75\ \mathrm{m}\)</span>. <code>[1]</code> Power <span class="math inline">\(=Fv=35.6\times6.0=213.6\ \mathrm{W}\)</span>. <code>[2]</code></li>
+<li><strong>(b)(i)</strong> Average speed during freewheeling <span class="math inline">\(=(6.0+0)/2=3.0\ \mathrm{m\,s^{-1}}\)</span>; distance <span class="math inline">\(=3.0\times1.6=4.8\ \mathrm{m}\approx5\ \mathrm{m}\)</span>. <code>[2]</code></li>
+<li><strong>(b)(ii)</strong> Deceleration <span class="math inline">\(a=(0-6.0)/1.6=3.75\ \mathrm{m\,s^{-2}}\)</span>. <code>[1]</code> Frictional force <span class="math inline">\(=ma=72.8\times3.75=273\ \mathrm{N}\)</span>. <code>[2]</code></li>
+<li><strong>(c)(i)</strong> GPE at top <span class="math inline">\(=mg\Delta h=72.8\times9.81\times1.75=1250\ \mathrm{J}\)</span>. <code>[2]</code></li>
+<li><strong>(c)(ii)</strong> KE at bottom <span class="math inline">\(=\frac{1}{2}mv^2=\frac{1}{2}\times72.8\times8.8^2=2820\ \mathrm{J}\)</span>. <code>[2]</code></li>
+<li><strong>(c)(iii)</strong> The energy at the bottom is larger than at the top. <code>[1]</code> The cyclist has done work (pedalling or battery energy) during the descent, <code>[1]</code> and/or frictional losses are smaller than the input energy. <code>[1]</code></li>
+</ul>
+</details>
+</section>
+<section id="example-7-5.1-sq-medium-q4" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-7-5.1-sq-medium-q4">Example 7 · 5.1 SQ Medium Q4</h4>
+<p>Fig. 1.1 shows a ride at a water park. Customers are seated in a circular glider which is subject to an accelerating force at point A.</p>
+<p><img src="../assets/questions/work-energy-power/sq-5.1-medium-q4-waterpark.webp" class="question-figure img-fluid" alt="Water park ride with a circular glider accelerated from A to B"></p>
+<p>The first part of the ride is horizontal. In this section, the glider is accelerated from rest at point A to <span class="math inline">\(30\ \mathrm{m\,s^{-1}}\)</span> at point B. At point B, the track is angled at <span class="math inline">\(30^\circ\)</span> to the horizontal for 2.5 m.</p>
+<p>The total mass of the glider and passengers is 350 kg.</p>
+<p><strong>(a)</strong> Calculate the work done by the glider against gravity when it travels through point B. <code>[3 marks]</code></p>
+<p><strong>(b)</strong></p>
+<p><strong>(i)</strong> Calculate the maximum height above A that the passengers and glider could reach. <code>[3]</code></p>
+<p><strong>(ii)</strong> Point C is 28 m above A.</p>
+<p>Suggest why the ride is built to this height instead of the maximum height calculated in (i). <code>[1]</code></p>
+<p><code>[4 marks]</code></p>
+<p><strong>(c)</strong> At point C, the glider stops momentarily before sliding down the incline until it lands in the water pool at point D with a speed of <span class="math inline">\(22\ \mathrm{m\,s^{-1}}\)</span>.</p>
+<p>Determine the efficiency of the energy transfer between points C and D. <code>[3 marks]</code></p>
+<p><strong>(d)</strong> Once the glider reaches point D, the water applies a decelerating force until it comes to a stop after 8.5 m.</p>
+<p>Calculate the decelerating force exerted on the glider by the water. State any assumptions you made in your calculation. <code>[3 marks]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<ul>
+<li><strong>(a)</strong> <span class="math inline">\(W=mgs\cos\theta=350\times9.81\times2.5\times\cos30^\circ\)</span>. <code>[2]</code> <span class="math inline">\(W=7434=7400\ \mathrm{J}\)</span> (2 s.f.). <code>[1]</code></li>
+<li><strong>(b)(i)</strong> <span class="math inline">\(\frac{1}{2}mv^2=mg\Delta h\)</span>, so <span class="math inline">\(\Delta h=v^2/(2g)=30^2/(2\times9.81)\)</span>. <code>[2]</code> <span class="math inline">\(\Delta h=45.87\approx46\ \mathrm{m}\)</span>. <code>[1]</code></li>
+<li><strong>(b)(ii)</strong> The ride is built lower than the maximum height for safety, or because energy losses make the theoretical maximum unattainable. <code>[1]</code></li>
+<li><strong>(c)</strong> GPE at C <span class="math inline">\(=350\times9.81\times28=9.61\times10^4\ \mathrm{J}\)</span>; KE at D <span class="math inline">\(=\frac{1}{2}\times350\times22^2=8.47\times10^4\ \mathrm{J}\)</span>. <code>[2]</code> Efficiency <span class="math inline">\(=8.47/9.61=88\%\)</span>. <code>[1]</code></li>
+<li><strong>(d)</strong> Deceleration <span class="math inline">\(a=v^2/(2s)=22^2/(2\times8.5)=28.5\ \mathrm{m\,s^{-2}}\)</span>. <code>[1]</code> Force <span class="math inline">\(=ma=350\times28.5\approx9800\ \mathrm{N}\)</span>. <code>[1]</code> Assumption: the decelerating force (or acceleration) is constant. <code>[1]</code></li>
+</ul>
+</details>
+</section>
+<section id="example-8-5.1-sq-medium-q5" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-8-5.1-sq-medium-q5">Example 8 · 5.1 SQ Medium Q5</h4>
+<p>Pumped hydroelectric systems store large bodies of water behind a dam. When electricity is needed in the grid, the dam is lifted, allowing water to flow from the upper reservoir.</p>
+<p>One such power station, known as the Cruachan power station, is shown in Fig. 1.1. This facility has been producing hydroelectric power since 1965.</p>
+<p><img src="../assets/questions/work-energy-power/sq-5.1-medium-q5-cruachan.webp" class="question-figure img-fluid" alt="Cruachan pumped hydroelectric power station with upper and lower reservoirs"></p>
+<p>The vertical distance between the base of the upper reservoir and the turbine is 396 m. This arrangement allows Cruachan power station to produce a power output of 0.62 GW with an efficiency of 76%.</p>
+<p><strong>(a)</strong> Determine the energy transferred by the water each second in order to achieve this power output. <code>[2 marks]</code></p>
+<p><strong>(b)</strong> Water is made to flow out of the upper reservoir through connecting pipes at a rate of <span class="math inline">\(200\ \mathrm{m^3}\)</span> per second. The density of water is <span class="math inline">\(1.0\times10^3\ \mathrm{kg\,m^{-3}}\)</span>.</p>
+<p><strong>(i)</strong> Use this flow rate to determine the energy transferred by the water each second. <code>[4]</code></p>
+<p><strong>(ii)</strong> Explain why this value is not consistent with the energy transfer rate calculated in (a). <code>[1]</code></p>
+<p><code>[5 marks]</code></p>
+<p><strong>(c)</strong> Estimate the depth of the water held in the upper reservoir. State any assumptions made. <code>[3 marks]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<ul>
+<li><strong>(a)</strong> Power input <span class="math inline">\(=0.62/0.76=0.816\ \mathrm{GW}\)</span>. <code>[1]</code> Energy transferred each second <span class="math inline">\(=0.82\ \mathrm{GJ}=8.2\times10^8\ \mathrm{J}\)</span>. <code>[1]</code></li>
+<li><strong>(b)(i)</strong> Mass flow rate <span class="math inline">\(=200\times1.0\times10^3=2.0\times10^5\ \mathrm{kg\,s^{-1}}\)</span>. <code>[1]</code> Energy per second <span class="math inline">\(=\dot{m}g\Delta h\)</span>. <code>[1]</code> <span class="math inline">\(=2.0\times10^5\times9.81\times396\)</span>. <code>[1]</code> <span class="math inline">\(=7.8\times10^8\ \mathrm{J\,s^{-1}}\)</span>. <code>[1]</code></li>
+<li><strong>(b)(ii)</strong> The value differs because the effective head is less than 396 m, or because some energy is lost in the pipes and turbine. <code>[1]</code></li>
+<li><strong>(c)</strong> Let the depth be <span class="math inline">\(h\)</span>. Equating the energy available with the required input gives an estimate of the depth, assuming the full 396 m head and no losses in the pipe. <code>[2]</code> The calculation gives a depth of the order of a few tens of metres, depending on the assumptions used. <code>[1]</code></li>
+</ul>
+</details>
+</section>
+</section>
+</section>
+<section id="chapter-checklist" class="level2">
+<h2 class="anchored" data-anchor-id="chapter-checklist">Chapter checklist</h2>
+<ul class="task-list">
+<li><label><input type="checkbox">I can calculate work done by a force in the direction of motion.</label></li>
+<li><label><input type="checkbox">I can apply the principle of conservation of energy.</label></li>
+<li><label><input type="checkbox">I can calculate efficiency from energy or power ratios.</label></li>
+<li><label><input type="checkbox">I can use <span class="math inline">\(P=W/t\)</span> and <span class="math inline">\(P=Fv\)</span>.</label></li>
+<li><label><input type="checkbox">I can use <span class="math inline">\(\Delta E_P=mg\Delta h\)</span> and <span class="math inline">\(E_K=\frac{1}{2}mv^2\)</span>.</label></li>
+</ul>
+<section id="original-question-pdfs" class="level3">
+<h3 class="anchored" data-anchor-id="original-question-pdfs">Original question PDFs</h3>
+<ul>
+<li><a href="https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/work-energy-power/5.1-energy-conservation-work-power-efficiency-c-easy.pdf">5.1 Energy, Conservation, Work, Power &amp; Efficiency - MC Easy</a></li>
+<li><a href="https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/work-energy-power/5.1-energy-conservation-work-power-efficiency-c-medium.pdf">5.1 Energy, Conservation, Work, Power &amp; Efficiency - MC Medium</a></li>
+<li><a href="https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/work-energy-power/5.1-energy-conservation-work-power-efficiency-c-hard.pdf">5.1 Energy, Conservation, Work, Power &amp; Efficiency - MC Hard</a></li>
+<li><a href="https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/work-energy-power/5.1-energy-conservation-work-power-efficiency-sq-easy.pdf">5.1 Energy, Conservation, Work, Power &amp; Efficiency - SQ Easy</a></li>
+<li><a href="https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/work-energy-power/5.1-energy-conservation-work-power-efficiency-sq-medium.pdf">5.1 Energy, Conservation, Work, Power &amp; Efficiency - SQ Medium</a></li>
+<li><a href="https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/work-energy-power/5.2-energy-gpe-ke-c-easy.pdf">5.2 Energy, GPE &amp; KE - MC Easy</a></li>
+<li><a href="https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/work-energy-power/5.2-energy-gpe-ke-c-medium.pdf">5.2 Energy, GPE &amp; KE - MC Medium</a></li>
+<li><a href="https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/work-energy-power/5.2-energy-gpe-ke-c-hard.pdf">5.2 Energy, GPE &amp; KE - MC Hard</a></li>
+</ul>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll(".done-toggle input").forEach((input) => {
+    const key = `cie-physics-${input.dataset.progress}`;
+    input.checked = localStorage.getItem(key) === "true";
+    input.closest(".question-card")?.classList.toggle("is-complete", input.checked);
+    input.addEventListener("change", () => {
+      localStorage.setItem(key, input.checked);
+      input.closest(".question-card")?.classList.toggle("is-complete", input.checked);
+    });
+  });
+
+  document.querySelectorAll(".mc-question").forEach((card) => {
+    const answer = card.dataset.answer;
+    const feedback = card.querySelector(".mc-feedback");
+    const check = card.querySelector(".check-answer");
+    let selected = localStorage.getItem(`cie-physics-${card.id}-choice`) || "";
+
+    const showSelection = () => {
+      card.querySelectorAll(".mc-choice").forEach((choice) => {
+        choice.classList.toggle("is-selected", choice.dataset.choice === selected);
+      });
+    };
+    showSelection();
+
+    card.querySelectorAll(".mc-choice").forEach((choice) => {
+      choice.addEventListener("click", () => {
+        selected = choice.dataset.choice;
+        localStorage.setItem(`cie-physics-${card.id}-choice`, selected);
+        feedback.textContent = "";
+        feedback.className = "mc-feedback";
+        showSelection();
+      });
+    });
+
+    check?.addEventListener("click", () => {
+      if (!selected) {
+        feedback.textContent = "Select an answer first.";
+        feedback.className = "mc-feedback is-pending";
+        return;
+      }
+      const correct = selected === answer;
+      feedback.textContent = correct ? "Correct." : `Not quite. The correct answer is ${answer}.`;
+      feedback.className = `mc-feedback ${correct ? "is-correct" : "is-incorrect"}`;
+    });
+  });
+});
+</script>
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "已复制");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "已复制");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../as-level/04-forces-density-pressure.html" class="pagination-link" aria-label="4 Forces, density and pressure">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">4 Forces, density and pressure</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../a-level/12-motion-in-a-circle.html" class="pagination-link" aria-label="12 Motion in a circle">
+        <span class="nav-page-text">12 Motion in a circle</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>
