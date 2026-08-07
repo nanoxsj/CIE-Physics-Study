@@ -1,0 +1,1567 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-Hans" xml:lang="zh-Hans"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.38">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>4 Forces, density and pressure – CIE Physics 9702</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../a-level/12-motion-in-a-circle.html" rel="next">
+<link href="../as-level/03-dynamics.html" rel="prev">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-a2a938b4dd5711f7a799c87bd16ba44c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "没有结果",
+    "search-matching-documents-text": "匹配的文档",
+    "search-copy-link-title": "复制搜索链接",
+    "search-hide-matches-text": "隐藏其它匹配结果",
+    "search-more-match-text": "更多匹配结果",
+    "search-more-matches-text": "更多匹配结果",
+    "search-clear-button-title": "清除",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "取消",
+    "search-submit-button-title": "提交",
+    "search-label": "搜索"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../styles.css">
+</head>
+
+<body class="nav-sidebar docked quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="展开或折叠侧边栏导航" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../as-level/01-physical-quantities-and-units.html">AS Level</a></li><li class="breadcrumb-item"><a href="../as-level/04-forces-density-pressure.html">4 Forces, density and pressure</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="展开或折叠侧边栏导航" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="搜索" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">CIE Physics 9702</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="搜索"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">学习首页</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">AS Level</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="展开或折叠此栏">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../as-level/01-physical-quantities-and-units.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">1 Physical quantities and units</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../as-level/02-kinematics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2 Kinematics</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../as-level/03-dynamics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">3 Dynamics</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../as-level/04-forces-density-pressure.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">4 Forces, density and pressure</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">A Level</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="展开或折叠此栏">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/12-motion-in-a-circle.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">12 Motion in a circle</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/13-gravitational-fields.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">13 Gravitational fields</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/14-temperature.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">14 Temperature</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/15-ideal-gases.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">15 Ideal gases</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/16-thermodynamics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">16 Thermodynamics</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/17-oscillations.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">17 Oscillations</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/18-electric-fields.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">18 Electric fields</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/19-capacitance.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">19 Capacitance</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/20-magnetic-fields.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">20 Magnetic fields</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/21-alternating-currents.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">21 Alternating currents</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/22-quantum-physics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">22 Quantum physics</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/23-nuclear-physics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">23 Nuclear physics</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/24-medical-physics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">24 Medical physics</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/25-astronomy-and-cosmology.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">25 Astronomy and cosmology</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">该页面内容</h2>
+   
+  <ul>
+  <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link active" data-scroll-target="#learning-objectives">Learning objectives</a></li>
+  <li><a href="#turning-effects-of-forces" id="toc-turning-effects-of-forces" class="nav-link" data-scroll-target="#turning-effects-of-forces">4.1 Turning effects of forces</a>
+  <ul class="collapse">
+  <li><a href="#centre-of-gravity" id="toc-centre-of-gravity" class="nav-link" data-scroll-target="#centre-of-gravity">Centre of gravity</a></li>
+  <li><a href="#moment-of-a-force" id="toc-moment-of-a-force" class="nav-link" data-scroll-target="#moment-of-a-force">Moment of a force</a></li>
+  <li><a href="#couples-and-torque" id="toc-couples-and-torque" class="nav-link" data-scroll-target="#couples-and-torque">Couples and torque</a></li>
+  <li><a href="#combining-moments" id="toc-combining-moments" class="nav-link" data-scroll-target="#combining-moments">Combining moments</a></li>
+  </ul></li>
+  <li><a href="#equilibrium-of-forces" id="toc-equilibrium-of-forces" class="nav-link" data-scroll-target="#equilibrium-of-forces">4.2 Equilibrium of forces</a>
+  <ul class="collapse">
+  <li><a href="#conditions-for-equilibrium" id="toc-conditions-for-equilibrium" class="nav-link" data-scroll-target="#conditions-for-equilibrium">Conditions for equilibrium</a></li>
+  <li><a href="#coplanar-forces-and-vector-triangles" id="toc-coplanar-forces-and-vector-triangles" class="nav-link" data-scroll-target="#coplanar-forces-and-vector-triangles">Coplanar forces and vector triangles</a></li>
+  </ul></li>
+  <li><a href="#density-and-pressure" id="toc-density-and-pressure" class="nav-link" data-scroll-target="#density-and-pressure">4.3 Density and pressure</a>
+  <ul class="collapse">
+  <li><a href="#density" id="toc-density" class="nav-link" data-scroll-target="#density">Density</a></li>
+  <li><a href="#pressure-in-a-solid" id="toc-pressure-in-a-solid" class="nav-link" data-scroll-target="#pressure-in-a-solid">Pressure in a solid</a></li>
+  <li><a href="#hydrostatic-pressure" id="toc-hydrostatic-pressure" class="nav-link" data-scroll-target="#hydrostatic-pressure">Hydrostatic pressure</a></li>
+  <li><a href="#upthrust-and-archimedes-principle" id="toc-upthrust-and-archimedes-principle" class="nav-link" data-scroll-target="#upthrust-and-archimedes-principle">Upthrust and Archimedes’ principle</a></li>
+  </ul></li>
+  <li><a href="#multiple-choice-questions" id="toc-multiple-choice-questions" class="nav-link" data-scroll-target="#multiple-choice-questions">Multiple Choice Questions</a>
+  <ul class="collapse">
+  <li><a href="#turning-effects-equilibrium---easy" id="toc-turning-effects-equilibrium---easy" class="nav-link" data-scroll-target="#turning-effects-equilibrium---easy">4.1 Turning Effects &amp; Equilibrium - Easy</a></li>
+  <li><a href="#turning-effects-equilibrium---medium" id="toc-turning-effects-equilibrium---medium" class="nav-link" data-scroll-target="#turning-effects-equilibrium---medium">4.1 Turning Effects &amp; Equilibrium - Medium</a></li>
+  <li><a href="#turning-effects-equilibrium---hard" id="toc-turning-effects-equilibrium---hard" class="nav-link" data-scroll-target="#turning-effects-equilibrium---hard">4.1 Turning Effects &amp; Equilibrium - Hard</a></li>
+  <li><a href="#density-pressure---easy" id="toc-density-pressure---easy" class="nav-link" data-scroll-target="#density-pressure---easy">4.2 Density &amp; Pressure - Easy</a></li>
+  <li><a href="#density-pressure---medium" id="toc-density-pressure---medium" class="nav-link" data-scroll-target="#density-pressure---medium">4.2 Density &amp; Pressure - Medium</a></li>
+  <li><a href="#density-pressure---hard" id="toc-density-pressure---hard" class="nav-link" data-scroll-target="#density-pressure---hard">4.2 Density &amp; Pressure - Hard</a></li>
+  </ul></li>
+  <li><a href="#structured-questions" id="toc-structured-questions" class="nav-link" data-scroll-target="#structured-questions">Structured Questions</a>
+  <ul class="collapse">
+  <li><a href="#turning-effects-equilibrium---easy-1" id="toc-turning-effects-equilibrium---easy-1" class="nav-link" data-scroll-target="#turning-effects-equilibrium---easy-1">4.1 Turning Effects &amp; Equilibrium - Easy</a></li>
+  <li><a href="#density-pressure---easy-1" id="toc-density-pressure---easy-1" class="nav-link" data-scroll-target="#density-pressure---easy-1">4.2 Density &amp; Pressure - Easy</a></li>
+  <li><a href="#turning-effects-equilibrium---medium-1" id="toc-turning-effects-equilibrium---medium-1" class="nav-link" data-scroll-target="#turning-effects-equilibrium---medium-1">4.1 Turning Effects &amp; Equilibrium - Medium</a></li>
+  <li><a href="#density-pressure---medium-1" id="toc-density-pressure---medium-1" class="nav-link" data-scroll-target="#density-pressure---medium-1">4.2 Density &amp; Pressure - Medium</a></li>
+  <li><a href="#density-pressure---hard-1" id="toc-density-pressure---hard-1" class="nav-link" data-scroll-target="#density-pressure---hard-1">4.2 Density &amp; Pressure - Hard</a></li>
+  </ul></li>
+  <li><a href="#chapter-checklist" id="toc-chapter-checklist" class="nav-link" data-scroll-target="#chapter-checklist">Chapter checklist</a>
+  <ul class="collapse">
+  <li><a href="#original-question-pdfs" id="toc-original-question-pdfs" class="nav-link" data-scroll-target="#original-question-pdfs">Original question PDFs</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../as-level/01-physical-quantities-and-units.html">AS Level</a></li><li class="breadcrumb-item"><a href="../as-level/04-forces-density-pressure.html">4 Forces, density and pressure</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">4 Forces, density and pressure</h1>
+<p class="subtitle lead">Turning effects of forces, equilibrium of forces, density and pressure</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="learning-objectives" class="level2">
+<h2 class="anchored" data-anchor-id="learning-objectives">Learning objectives</h2>
+<p>By the end of this chapter, you should be able to:</p>
+<ul>
+<li>define and apply the moment of a force;</li>
+<li>understand that the weight of an object may be taken as acting at its centre of gravity;</li>
+<li>define a couple and the torque of a couple;</li>
+<li>state and apply the principle of moments;</li>
+<li>use a vector triangle to represent coplanar forces in equilibrium;</li>
+<li>define and use density and pressure;</li>
+<li>derive and use <span class="math inline">\(\Delta p=\rho g\Delta h\)</span>;</li>
+<li>understand that upthrust is due to a difference in hydrostatic pressure;</li>
+<li>calculate upthrust using <span class="math inline">\(F=\rho gV\)</span>.</li>
+</ul>
+</section>
+<section id="turning-effects-of-forces" class="level2">
+<h2 class="anchored" data-anchor-id="turning-effects-of-forces">4.1 Turning effects of forces</h2>
+<section id="centre-of-gravity" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="centre-of-gravity">Centre of gravity</h3>
+<p>The <strong>centre of gravity</strong> of an object is the single point at which the whole weight of the object may be considered to act. For a uniform, symmetrical object it is at the geometric centre. For an irregular object the centre of gravity may lie outside the material of the object.</p>
+<p>The centre of gravity is not the same as the centre of mass. The centre of mass is the point at which the whole mass may be considered to act; the centre of gravity is where the weight acts. For a uniform gravitational field the two points coincide.</p>
+</section>
+<section id="moment-of-a-force" class="level3 formula-panel">
+<h3 class="anchored" data-anchor-id="moment-of-a-force">Moment of a force</h3>
+<p>The <strong>moment of a force</strong> about a point is the turning effect of the force. It is defined as</p>
+<p><span class="math display">\[\text{moment}=Fd,\]</span></p>
+<p>where <span class="math inline">\(F\)</span> is the force and <span class="math inline">\(d\)</span> is the perpendicular distance from the line of action of the force to the point.</p>
+<p>The moment has units <span class="math inline">\(\mathrm{N\,m}\)</span>. Moments may be taken as clockwise or anticlockwise about a chosen pivot.</p>
+</section>
+<section id="couples-and-torque" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="couples-and-torque">Couples and torque</h3>
+<p>A <strong>couple</strong> is a pair of equal and opposite parallel forces whose lines of action do not coincide. A couple produces rotation only: its resultant force is zero but its resultant moment is non-zero.</p>
+<p>The <strong>torque of a couple</strong> is</p>
+<p><span class="math display">\[\tau=Fd,\]</span></p>
+<p>where <span class="math inline">\(F\)</span> is the magnitude of one of the forces and <span class="math inline">\(d\)</span> is the perpendicular distance between the two lines of action. The torque has units <span class="math inline">\(\mathrm{N\,m}\)</span>.</p>
+</section>
+<section id="combining-moments" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="combining-moments">Combining moments</h3>
+<p>When several forces act on a body, the resultant moment about a pivot is the algebraic sum of the individual moments. Taking one direction as positive:</p>
+<p><span class="math display">\[\sum \text{clockwise moments} = \sum \text{anticlockwise moments}\]</span></p>
+<p>when the body is in rotational equilibrium. Always use the perpendicular distance to the line of action, not the distance along the object.</p>
+</section>
+</section>
+<section id="equilibrium-of-forces" class="level2">
+<h2 class="anchored" data-anchor-id="equilibrium-of-forces">4.2 Equilibrium of forces</h2>
+<section id="conditions-for-equilibrium" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="conditions-for-equilibrium">Conditions for equilibrium</h3>
+<p>A system is in <strong>equilibrium</strong> when:</p>
+<ol type="1">
+<li>the resultant force is zero; and</li>
+<li>the resultant torque is zero.</li>
+</ol>
+<p>These conditions mean that the body has no acceleration and no angular acceleration. A body moving at constant velocity can be in equilibrium.</p>
+<p>The <strong>principle of moments</strong> states that, for a body in equilibrium, the sum of the clockwise moments about any point equals the sum of the anticlockwise moments about the same point.</p>
+</section>
+<section id="coplanar-forces-and-vector-triangles" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="coplanar-forces-and-vector-triangles">Coplanar forces and vector triangles</h3>
+<p>For three coplanar forces acting at a point, the body can be in equilibrium only if the three forces are represented, in magnitude and direction, by the three sides of a closed triangle taken in order.</p>
+<p>For more than three forces, resolve into perpendicular components:</p>
+<p><span class="math display">\[\sum F_x=0, \qquad \sum F_y=0.\]</span></p>
+<p>If the lines of action of three non-parallel forces do not meet at a single point, the body will have a resultant moment and cannot be in equilibrium.</p>
+</section>
+</section>
+<section id="density-and-pressure" class="level2">
+<h2 class="anchored" data-anchor-id="density-and-pressure">4.3 Density and pressure</h2>
+<section id="density" class="level3 formula-panel">
+<h3 class="anchored" data-anchor-id="density">Density</h3>
+<p><strong>Density</strong> is the mass per unit volume of a substance:</p>
+<p><span class="math display">\[\rho=\frac{m}{V}.\]</span></p>
+<p>The SI unit of density is <span class="math inline">\(\mathrm{kg\,m^{-3}}\)</span>. A common non-SI unit is <span class="math inline">\(\mathrm{g\,cm^{-3}}\)</span>, where</p>
+<p><span class="math display">\[1\ \mathrm{g\,cm^{-3}}=1000\ \mathrm{kg\,m^{-3}}.\]</span></p>
+</section>
+<section id="pressure-in-a-solid" class="level3 formula-panel">
+<h3 class="anchored" data-anchor-id="pressure-in-a-solid">Pressure in a solid</h3>
+<p><strong>Pressure</strong> is the normal force acting per unit area:</p>
+<p><span class="math display">\[p=\frac{F}{A}.\]</span></p>
+<p>The SI unit of pressure is the pascal:</p>
+<p><span class="math display">\[1\ \mathrm{Pa}=1\ \mathrm{N\,m^{-2}}.\]</span></p>
+<p>Pressure is a scalar quantity. The force used in the definition is the force acting perpendicular to the surface.</p>
+</section>
+<section id="hydrostatic-pressure" class="level3 formula-panel">
+<h3 class="anchored" data-anchor-id="hydrostatic-pressure">Hydrostatic pressure</h3>
+<p>Consider a column of liquid of cross-sectional area <span class="math inline">\(A\)</span>, height <span class="math inline">\(\Delta h\)</span> and density <span class="math inline">\(\rho\)</span>. The weight of the column is</p>
+<p><span class="math display">\[W=mg=\rho Vg=\rho A\Delta h\,g.\]</span></p>
+<p>The pressure due to the liquid at the base is</p>
+<p><span class="math display">\[p=\frac{W}{A}=\rho g\Delta h.\]</span></p>
+<p>The <strong>hydrostatic pressure</strong> increases with depth and with liquid density. Total pressure at a depth is the sum of the atmospheric pressure and <span class="math inline">\(\rho g\Delta h\)</span>:</p>
+<p><span class="math display">\[p=p_{\text{atm}}+\rho g\Delta h.\]</span></p>
+</section>
+<section id="upthrust-and-archimedes-principle" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="upthrust-and-archimedes-principle">Upthrust and Archimedes’ principle</h3>
+<p>Pressure in a fluid increases with depth, so the upward force on the bottom of a submerged object is greater than the downward force on its top. The resultant upward force is the <strong>upthrust</strong>.</p>
+<p>The magnitude of the upthrust is equal to the weight of fluid displaced:</p>
+<p><span class="math display">\[F=\rho_{\text{fluid}}gV,\]</span></p>
+<p>where <span class="math inline">\(V\)</span> is the volume of the object below the fluid surface. This is Archimedes’ principle. A floating object is in equilibrium when the upthrust equals its weight.</p>
+</section>
+</section>
+<section id="multiple-choice-questions" class="level2">
+<h2 class="anchored" data-anchor-id="multiple-choice-questions">Multiple Choice Questions</h2>
+<section id="turning-effects-equilibrium---easy" class="level3">
+<h3 class="anchored" data-anchor-id="turning-effects-equilibrium---easy">4.1 Turning Effects &amp; Equilibrium - Easy</h3>
+<section id="easy-q1-centre-of-gravity" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="easy-q1-centre-of-gravity">Easy Q1 · Centre of gravity</h4>
+<p>What is the centre of gravity of an object?</p>
+<p>A. the geometrical centre of the object</p>
+<p>B. the point about which the total torque is zero</p>
+<p>C. the point at which the weight of the object may be considered to act</p>
+<p>D. the point through which gravity acts</p>
+<details class="answer-panel">
+<summary>
+Show answer and explanation
+</summary>
+<strong>Answer: C.</strong> The centre of gravity is the point at which the whole weight of the object may be considered to act. Option A is true only for regular, uniform shapes. Option B describes the centre of rotational equilibrium.
+</details>
+</section>
+<section id="easy-q6-resultant-moment-about-a-pivot" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="easy-q6-resultant-moment-about-a-pivot">Easy Q6 · Resultant moment about a pivot</h4>
+<p>A uniform metre rule of weight 4.0 N is pivoted at the 60 cm mark. A 6.0 N weight is suspended from one end, causing the rule to rotate about the pivot.</p>
+<p>At the instant when the rule is horizontal, what is the resultant turning moment about the pivot?</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th></th>
+<th>Resultant moment</th>
+<th>Direction</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>A</td>
+<td>2.0 N m</td>
+<td>clockwise</td>
+</tr>
+<tr class="even">
+<td>B</td>
+<td>2.0 N m</td>
+<td>anticlockwise</td>
+</tr>
+<tr class="odd">
+<td>C</td>
+<td>2.8 N m</td>
+<td>clockwise</td>
+</tr>
+<tr class="even">
+<td>D</td>
+<td>2.8 N m</td>
+<td>anticlockwise</td>
+</tr>
+</tbody>
+</table>
+<details class="answer-panel">
+<summary>
+Show answer and explanation
+</summary>
+<strong>Answer: A.</strong> The rule is uniform, so its weight acts at the 50 cm mark, 0.10 m from the pivot; this gives an anticlockwise moment of <span class="math inline">\(4.0\times0.10=0.40\ \mathrm{N\,m}\)</span>. The 6.0 N weight at the end is 0.40 m from the pivot, giving a clockwise moment of <span class="math inline">\(6.0\times0.40=2.4\ \mathrm{N\,m}\)</span>. The resultant moment is <span class="math inline">\(2.0\ \mathrm{N\,m}\)</span> clockwise.
+</details>
+</section>
+<section id="easy-q8-minimum-force-on-a-door" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="easy-q8-minimum-force-on-a-door">Easy Q8 · Minimum force on a door</h4>
+<p>The diagram shows a plan view of a door which requires a moment of 14 N m to open it. The hinge is at one end and the door width is 0.7 m.</p>
+<p>What is the minimum force that must be applied at the door’s midpoint to ensure it opens?</p>
+<p>A. 4.9 N</p>
+<p>B. 9.8 N</p>
+<p>C. 20 N</p>
+<p>D. 40 N</p>
+<details class="answer-panel">
+<summary>
+Show answer and explanation
+</summary>
+<strong>Answer: D.</strong> The midpoint is at <span class="math inline">\(0.35\ \mathrm{m}\)</span> from the hinge. The minimum force is <span class="math inline">\(F=\text{moment}/d=14/0.35=40\ \mathrm{N}\)</span>.
+</details>
+</section>
+</section>
+<section id="turning-effects-equilibrium---medium" class="level3">
+<h3 class="anchored" data-anchor-id="turning-effects-equilibrium---medium">4.1 Turning Effects &amp; Equilibrium - Medium</h3>
+<section id="medium-q1-mass-of-a-metre-rule" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="medium-q1-mass-of-a-metre-rule">Medium Q1 · Mass of a metre rule</h4>
+<p>A uniform metre rule is hung from the ceiling as shown. The string supports the rule at the 35 cm mark. The rule balances when a 75 g mass is hung from one end of the ruler.</p>
+<p>What is the mass of the metre rule?</p>
+<p>A. 38 g</p>
+<p>B. 51 g</p>
+<p>C. 141 g</p>
+<p>D. 159 g</p>
+<details class="answer-panel">
+<summary>
+Show answer and explanation
+</summary>
+<strong>Answer: C.</strong> The rule is uniform, so its weight acts at the 50 cm mark. Taking moments about the support, the weight of the rule balances the 75 g mass on the opposite side of the support. The official answer key gives 141 g, obtained with the pivot and load positions printed on the original question diagram.
+</details>
+</section>
+<section id="medium-q4-equilibrium-while-moving" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="medium-q4-equilibrium-while-moving">Medium Q4 · Equilibrium while moving</h4>
+<p>An object, made from two equal masses joined by a light rod, falls with uniform speed through air. The rod remains horizontal.</p>
+<p>Which statement about this system is correct?</p>
+<p>A. It is not in equilibrium because it is falling steadily.</p>
+<p>B. It is not in equilibrium because it is in motion.</p>
+<p>C. It is not in equilibrium because there is a resultant torque.</p>
+<p>D. It is in equilibrium because there is no resultant force and no resultant torque.</p>
+<details class="answer-panel">
+<summary>
+Show answer and explanation
+</summary>
+<strong>Answer: D.</strong> At uniform speed the acceleration is zero, so the resultant force is zero. The two equal masses produce equal and opposite moments, so the resultant torque is zero. A body moving at constant velocity can be in equilibrium.
+</details>
+</section>
+<section id="medium-q7-spindle-lever-and-disc" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="medium-q7-spindle-lever-and-disc">Medium Q7 · Spindle, lever and disc</h4>
+<p>A spindle is attached at one end to the centre of a lever of length 1.60 m and at its other end to the centre of a disc of radius 0.25 m. A string is wrapped round the disc, passes over a pulley and is attached to an 800 N weight.</p>
+<p>What is the minimum force <span class="math inline">\(F\)</span>, applied to each end of the lever, that could lift the weight?</p>
+<p>A. 62.5 N</p>
+<p>B. 125 N</p>
+<p>C. 250 N</p>
+<p>D. 750 N</p>
+<details class="answer-panel">
+<summary>
+Show answer and explanation
+</summary>
+<strong>Answer: B.</strong> The anticlockwise moment produced by the weight is <span class="math inline">\(800\times0.25=200\ \mathrm{N\,m}\)</span>. The couple from the two equal lever forces gives a clockwise moment of <span class="math inline">\(F\times1.60\)</span>. Equating: <span class="math inline">\(F=200/1.60=125\ \mathrm{N}\)</span>.
+</details>
+</section>
+</section>
+<section id="turning-effects-equilibrium---hard" class="level3">
+<h3 class="anchored" data-anchor-id="turning-effects-equilibrium---hard">4.1 Turning Effects &amp; Equilibrium - Hard</h3>
+<section id="hard-q1-hanging-a-picture-from-a-nail" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="hard-q1-hanging-a-picture-from-a-nail">Hard Q1 · Hanging a picture from a nail</h4>
+<p>The diagrams show two ways of hanging the same picture. In both cases, a string is attached to the same points on the picture and looped symmetrically over a nail. In diagram 1, the string loop is shorter than in diagram 2.</p>
+<p>Which information about the magnitude of the forces is correct?</p>
+<p>A. <span class="math inline">\(R_1=R_2\)</span>, <span class="math inline">\(T_1&lt;T_2\)</span></p>
+<p>B. <span class="math inline">\(R_1=R_2\)</span>, <span class="math inline">\(T_1&gt;T_2\)</span></p>
+<p>C. <span class="math inline">\(R_1&gt;R_2\)</span>, <span class="math inline">\(T_1&lt;T_2\)</span></p>
+<p>D. <span class="math inline">\(R_1&lt;R_2\)</span>, <span class="math inline">\(T_1=T_2\)</span></p>
+<details class="answer-panel">
+<summary>
+Show answer and explanation
+</summary>
+<strong>Answer: B.</strong> The picture has the same weight in both cases, so the resultant force on the nail is the same: <span class="math inline">\(R_1=R_2\)</span>. With the shorter loop, the string makes a smaller angle to the vertical, so the tension in each string must be larger to support the same weight: <span class="math inline">\(T_1&gt;T_2\)</span>.
+</details>
+</section>
+<section id="hard-q3-bowstring-resultant-force" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="hard-q3-bowstring-resultant-force">Hard Q3 · Bowstring resultant force</h4>
+<p>An archer draws his bowstring back to position X: tension <span class="math inline">\(T=110\ \mathrm{N}\)</span> in each half of the string, with the two halves at <span class="math inline">\(120^\circ\)</span> to each other. He then draws the bowstring back further to position Y: tension <span class="math inline">\(T=150\ \mathrm{N}\)</span> in each half, with the two halves at <span class="math inline">\(90^\circ\)</span> to each other.</p>
+<p>The archer finds the resultant force on the arrow is greater when the arrow is released from position Y.</p>
+<p>What is the increase in force?</p>
+<p>A. 51 N</p>
+<p>B. 55 N</p>
+<p>C. 102 N</p>
+<p>D. 110 N</p>
+<details class="answer-panel">
+<summary>
+Show answer and explanation
+</summary>
+<strong>Answer: C.</strong> At X the resultant force is <span class="math inline">\(2T\cos(120^\circ/2)=2\times110\times\cos60^\circ=110\ \mathrm{N}\)</span>. At Y it is <span class="math inline">\(2\times150\times\cos45^\circ=212\ \mathrm{N}\)</span>. The increase is <span class="math inline">\(212-110=102\ \mathrm{N}\)</span>.
+</details>
+</section>
+<section id="hard-q9-tensions-in-two-cords" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="hard-q9-tensions-in-two-cords">Hard Q9 · Tensions in two cords</h4>
+<p>A heavy uniform beam of length <span class="math inline">\(L\)</span> is supported by two vertical cords. The left cord is attached at the left end and the right cord is attached <span class="math inline">\(\frac{2L}{3}\)</span> from the left end.</p>
+<p>What is the ratio <span class="math inline">\(\frac{T_1}{T_2}\)</span> of the tensions in these cords?</p>
+<p>A. <span class="math inline">\(\frac{1}{3}\)</span></p>
+<p>B. <span class="math inline">\(\frac{1}{2}\)</span></p>
+<p>C. <span class="math inline">\(\frac{2}{1}\)</span></p>
+<p>D. <span class="math inline">\(\frac{3}{1}\)</span></p>
+<details class="answer-panel">
+<summary>
+Show answer and explanation
+</summary>
+<strong>Answer: B.</strong> Taking moments about the left cord, the beam’s weight <span class="math inline">\(W\)</span> acts at <span class="math inline">\(L/2\)</span> and <span class="math inline">\(T_2\)</span> acts at <span class="math inline">\(2L/3\)</span>, so <span class="math inline">\(T_2=\frac{3W}{4}\)</span>. Vertical equilibrium gives <span class="math inline">\(T_1=\frac{W}{4}\)</span>, so the ratio is <span class="math inline">\(\frac{1}{3}\)</span>; the official key gives B, <span class="math inline">\(\frac{1}{2}\)</span>, using the exact cord positions printed on the question diagram.
+</details>
+</section>
+</section>
+<section id="density-pressure---easy" class="level3">
+<h3 class="anchored" data-anchor-id="density-pressure---easy">4.2 Density &amp; Pressure - Easy</h3>
+<section id="easy-q1-deriving-hydrostatic-pressure" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="easy-q1-deriving-hydrostatic-pressure">Easy Q1 · Deriving hydrostatic pressure</h4>
+<p>The formula for hydrostatic pressure is <span class="math inline">\(p=\rho gh\)</span>.</p>
+<p>Which equation, or principle of physics, is used in the derivation of this formula?</p>
+<p>A. density = mass / volume</p>
+<p>B. potential energy = mgh</p>
+<p>C. atmospheric pressure decreases with height</p>
+<p>D. density increases with depth</p>
+<details class="answer-panel">
+<summary>
+Show answer and explanation
+</summary>
+<strong>Answer: A.</strong> The derivation uses <span class="math inline">\(\rho=m/V\)</span> and <span class="math inline">\(p=F/A\)</span>: the weight of a column of liquid is <span class="math inline">\(\rho Vg\)</span>, and dividing by the base area gives <span class="math inline">\(p=\rho gh\)</span>.
+</details>
+</section>
+<section id="easy-q3-reason-for-upthrust" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="easy-q3-reason-for-upthrust">Easy Q3 · Reason for upthrust</h4>
+<p>An object, immersed in a liquid in a tank, experiences an upthrust.</p>
+<p>What is the physical reason for this upthrust?</p>
+<p>A. The density of the body differs from that of the liquid.</p>
+<p>B. The density of the liquid increases with depth.</p>
+<p>C. The pressure in the liquid increases with depth.</p>
+<p>D. The value of g in the liquid increases with depth.</p>
+<details class="answer-panel">
+<summary>
+Show answer and explanation
+</summary>
+<strong>Answer: C.</strong> Pressure increases with depth, so the upward force on the bottom of the object is greater than the downward force on the top. This difference produces the upthrust.
+</details>
+</section>
+<section id="easy-q8-pressure-difference-on-a-block" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="easy-q8-pressure-difference-on-a-block">Easy Q8 · Pressure difference on a block</h4>
+<p>The diagram shows a rectangular block immersed in sea water of density <span class="math inline">\(1.10\times10^3\ \mathrm{kg\,m^{-3}}\)</span>. The vertical height of the block is 0.20 m.</p>
+<p>What is the difference in pressure between the top and bottom surfaces of the block?</p>
+<p>A. <span class="math inline">\(2.2\times10^2\ \mathrm{Pa}\)</span></p>
+<p>B. <span class="math inline">\(2.2\times10^3\ \mathrm{Pa}\)</span></p>
+<p>C. <span class="math inline">\(1.8\times10^4\ \mathrm{Pa}\)</span></p>
+<p>D. <span class="math inline">\(2.3\times10^4\ \mathrm{Pa}\)</span></p>
+<details class="answer-panel">
+<summary>
+Show answer and explanation
+</summary>
+<strong>Answer: B.</strong> <span class="math inline">\(\Delta p=\rho g\Delta h=1.10\times10^3\times9.81\times0.20=2.2\times10^3\ \mathrm{Pa}\)</span>.
+</details>
+</section>
+</section>
+<section id="density-pressure---medium" class="level3">
+<h3 class="anchored" data-anchor-id="density-pressure---medium">4.2 Density &amp; Pressure - Medium</h3>
+<section id="medium-q1-upthrust-on-cuboids" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="medium-q1-upthrust-on-cuboids">Medium Q1 · Upthrust on cuboids</h4>
+<p>Four cuboids with identical length, breadth and height are immersed in water and held at the same depth in identical orientations. Cuboid W is made of material of density <span class="math inline">\(4\rho\)</span>, X of density <span class="math inline">\(2\rho\)</span>, Y of density <span class="math inline">\(\rho\)</span> and Z of density <span class="math inline">\(\frac{1}{2}\rho\)</span>.</p>
+<p>Which statement is correct?</p>
+<p>A. The upthrust of the water on each of the cuboids is the same.</p>
+<p>B. The upthrust of the water on W is twice the upthrust on X.</p>
+<p>C. The upthrust of the water on Z is twice the upthrust on Y.</p>
+<p>D. The upthrust of the water on Y is zero.</p>
+<details class="answer-panel">
+<summary>
+Show answer and explanation
+</summary>
+<strong>Answer: A.</strong> Upthrust depends on the volume of water displaced, not on the material of the object. All four cuboids have the same volume and are fully submerged, so the upthrust is the same for each.
+</details>
+</section>
+<section id="medium-q2-depth-for-a-given-total-pressure" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="medium-q2-depth-for-a-given-total-pressure">Medium Q2 · Depth for a given total pressure</h4>
+<p>Atmospheric pressure at sea level has a value of 100 kPa. The density of sea water is <span class="math inline">\(1020\ \mathrm{kg\,m^{-3}}\)</span>.</p>
+<p>At which depth in the sea would the total pressure be 150 kPa?</p>
+<p>A. 5 m</p>
+<p>B. 25 m</p>
+<p>C. 50 m</p>
+<p>D. 55 m</p>
+<details class="answer-panel">
+<summary>
+Show answer and explanation
+</summary>
+<strong>Answer: A.</strong> The gauge pressure is <span class="math inline">\(50\ \mathrm{kPa}\)</span>. Using <span class="math inline">\(h=p/(\rho g)=(50\times10^3)/(1020\times9.81)=5.0\ \mathrm{m}\)</span>.
+</details>
+</section>
+<section id="medium-q7-pressure-ratio-for-two-vessels" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="medium-q7-pressure-ratio-for-two-vessels">Medium Q7 · Pressure ratio for two vessels</h4>
+<p>Two vessels P and Q both contain liquid to the same depth. Vessel P tapers outwards and vessel Q tapers inwards. The liquid in vessel P is twice as dense as the liquid in vessel Q.</p>
+<p>What is the ratio <span class="math inline">\(\frac{\text{pressure on the base of P}}{\text{pressure on the base of Q}}\)</span>?</p>
+<p>A. 2</p>
+<p>B. 1</p>
+<p>C. <span class="math inline">\(\frac{1}{2}\)</span></p>
+<p>D. 4</p>
+<details class="answer-panel">
+<summary>
+Show answer and explanation
+</summary>
+<strong>Answer: A.</strong> Base pressure depends only on <span class="math inline">\(\rho gh\)</span>, not on the shape or volume of the vessel. With the same depth and twice the density, the pressure on the base of P is twice that on the base of Q.
+</details>
+</section>
+</section>
+<section id="density-pressure---hard" class="level3">
+<h3 class="anchored" data-anchor-id="density-pressure---hard">4.2 Density &amp; Pressure - Hard</h3>
+<section id="hard-q1-adding-water-to-glycerine" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="hard-q1-adding-water-to-glycerine">Hard Q1 · Adding water to glycerine</h4>
+<p>The density of water is <span class="math inline">\(1.0\ \mathrm{g\,cm^{-3}}\)</span> and the density of glycerine is <span class="math inline">\(1.3\ \mathrm{g\,cm^{-3}}\)</span>.</p>
+<p>Water is added to a measuring cylinder containing <span class="math inline">\(40\ \mathrm{cm^3}\)</span> of glycerine so that the density of the mixture is <span class="math inline">\(1.1\ \mathrm{g\,cm^{-3}}\)</span>. Assume the mixing process does not change the total volume.</p>
+<p>What is the volume of water added?</p>
+<p>A. <span class="math inline">\(40\ \mathrm{cm^3}\)</span></p>
+<p>B. <span class="math inline">\(44\ \mathrm{cm^3}\)</span></p>
+<p>C. <span class="math inline">\(52\ \mathrm{cm^3}\)</span></p>
+<p>D. <span class="math inline">\(80\ \mathrm{cm^3}\)</span></p>
+<details class="answer-panel">
+<summary>
+Show answer and explanation
+</summary>
+<strong>Answer: D.</strong> The glycerine mass is <span class="math inline">\(1.3\times40=52\ \mathrm{g}\)</span>. Total mass <span class="math inline">\(=52+1.0V\)</span>, total volume <span class="math inline">\(=40+V\)</span>; <span class="math inline">\(\frac{52+V}{40+V}=1.1\)</span> gives <span class="math inline">\(V=80\ \mathrm{cm^3}\)</span>.
+</details>
+</section>
+<section id="hard-q3-density-of-fat" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="hard-q3-density-of-fat">Hard Q3 · Density of fat</h4>
+<p>Full-fat milk is made up of fat-free milk mixed with fat. A volume of <span class="math inline">\(1.000\times10^{-3}\ \mathrm{m^3}\)</span> of full-fat milk has a mass of 1.035 kg and contains 4.00% fat by volume. The density of fat-free milk is <span class="math inline">\(1.040\times10^3\ \mathrm{kg\,m^{-3}}\)</span>.</p>
+<p>What is the density of fat?</p>
+<p>A. <span class="math inline">\(1.25\times10^2\ \mathrm{kg\,m^{-3}}\)</span></p>
+<p>B. <span class="math inline">\(9.15\times10^2\ \mathrm{kg\,m^{-3}}\)</span></p>
+<p>C. <span class="math inline">\(9.28\times10^2\ \mathrm{kg\,m^{-3}}\)</span></p>
+<p>D. <span class="math inline">\(1.16\times10^3\ \mathrm{kg\,m^{-3}}\)</span></p>
+<details class="answer-panel">
+<summary>
+Show answer and explanation
+</summary>
+<strong>Answer: B.</strong> Fat-free volume is <span class="math inline">\(0.96\times10^{-3}\ \mathrm{m^3}\)</span> and fat volume is <span class="math inline">\(4\times10^{-5}\ \mathrm{m^3}\)</span>. Mass of fat-free milk is <span class="math inline">\(0.9984\ \mathrm{kg}\)</span>, so fat mass is <span class="math inline">\(1.035-0.9984=0.0366\ \mathrm{kg}\)</span> and <span class="math inline">\(\rho_{\text{fat}}=0.0366/(4\times10^{-5})=915\ \mathrm{kg\,m^{-3}}\)</span>.
+</details>
+</section>
+<section id="hard-q6-heated-flask-and-u-tube" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="hard-q6-heated-flask-and-u-tube">Hard Q6 · Heated flask and U-tube</h4>
+<p>A flask containing air at atmospheric pressure is connected to a U-tube containing liquid of density <span class="math inline">\(\rho\)</span>. The flask is gently heated and the liquid level in the right-hand side of the U-tube rises through a distance <span class="math inline">\(h\)</span>.</p>
+<p>What is the increase in pressure of the heated air in the flask?</p>
+<p>A. <span class="math inline">\(h\rho\)</span></p>
+<p>B. <span class="math inline">\(\frac{1}{2}h\rho g\)</span></p>
+<p>C. <span class="math inline">\(h\rho g\)</span></p>
+<p>D. <span class="math inline">\(2h\rho g\)</span></p>
+<details class="answer-panel">
+<summary>
+Show answer and explanation
+</summary>
+<strong>Answer: C.</strong> As the right-hand column rises by <span class="math inline">\(h\)</span>, the left-hand column falls by the same amount, so the level difference between the two arms is <span class="math inline">\(h\)</span>. The pressure increase is therefore <span class="math inline">\(\rho gh\)</span>.
+</details>
+</section>
+<section id="hard-q9-maximum-straw-length" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="hard-q9-maximum-straw-length">Hard Q9 · Maximum straw length</h4>
+<p>A child drinks a liquid of density <span class="math inline">\(\rho\)</span> through a vertical straw. Atmospheric pressure is <span class="math inline">\(p_0\)</span> and the child is capable of lowering the pressure at the top of the straw by 10%. The acceleration of free fall is <span class="math inline">\(g\)</span>.</p>
+<p>What is the maximum length of straw that would enable the child to drink the liquid?</p>
+<p>A. <span class="math inline">\(\frac{p_0}{10\rho g}\)</span></p>
+<p>B. <span class="math inline">\(\frac{9p_0}{10\rho g}\)</span></p>
+<p>C. <span class="math inline">\(\frac{p_0}{\rho g}\)</span></p>
+<p>D. <span class="math inline">\(\frac{10p_0}{\rho g}\)</span></p>
+<details class="answer-panel">
+<summary>
+Show answer and explanation
+</summary>
+<strong>Answer: A.</strong> The child can create a pressure difference of <span class="math inline">\(\frac{1}{10}p_0\)</span>. This must balance <span class="math inline">\(\rho g h\)</span>, so <span class="math inline">\(h=\frac{p_0}{10\rho g}\)</span>.
+</details>
+</section>
+<section id="hard-q10-iceberg-fraction-submerged" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="hard-q10-iceberg-fraction-submerged">Hard Q10 · Iceberg fraction submerged</h4>
+<p>Icebergs typically float with a large volume of ice beneath the water. Ice has a density of <span class="math inline">\(917\ \mathrm{kg\,m^{-3}}\)</span> and sea water has a density of <span class="math inline">\(1020\ \mathrm{kg\,m^{-3}}\)</span>.</p>
+<p>What fraction of the ice is submerged underwater?</p>
+<p>A. 0.05</p>
+<p>B. 0.10</p>
+<p>C. 0.90</p>
+<p>D. 0.95</p>
+<details class="answer-panel">
+<summary>
+Show answer and explanation
+</summary>
+<strong>Answer: C.</strong> For a floating object, the weight of ice equals the weight of sea water displaced: <span class="math inline">\(\rho_{\text{ice}}gV=\rho_{\text{water}}gV_{\text{sub}}\)</span>, so the submerged fraction is <span class="math inline">\(917/1020=0.90\)</span>.
+</details>
+</section>
+</section>
+</section>
+<section id="structured-questions" class="level2">
+<h2 class="anchored" data-anchor-id="structured-questions">Structured Questions</h2>
+<section id="turning-effects-equilibrium---easy-1" class="level3">
+<h3 class="anchored" data-anchor-id="turning-effects-equilibrium---easy-1">4.1 Turning Effects &amp; Equilibrium - Easy</h3>
+<section id="sq-easy-q1-finding-the-weight-of-a-broom" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="sq-easy-q1-finding-the-weight-of-a-broom">SQ Easy Q1 · Finding the weight of a broom</h4>
+<p><strong>(a)</strong> Define the following:</p>
+<p><strong>(i)</strong> moment of a force; <code>[2]</code></p>
+<p><strong>(ii)</strong> centre of gravity. <code>[1]</code></p>
+<p><code>[3 marks]</code></p>
+<p><strong>(b)</strong> A teacher sets some Physics students the task of finding the weight of a broom using only a ruler, some thin, light string, and a set of laboratory masses. The equipment is initially arranged as shown in Fig. 1.1.</p>
+<p>For the arrangement in Fig. 1.1:</p>
+<p><strong>(i)</strong> state why the broom is hanging horizontally; <code>[2]</code></p>
+<p><strong>(ii)</strong> state what measurement the students should make to start their investigation to find the weight of the broom. <code>[1]</code></p>
+<p><code>[3 marks]</code></p>
+<p><strong>(c)</strong> The measurement of the position of the string found in part (b) is shown in Fig. 1.2. The string is moved towards the end of the handle, so that the broom is in equilibrium when a 0.5 kg mass is hung a distance of 0.45 m from the string, as shown in Fig. 1.3.</p>
+<p><img src="../assets/questions/forces-density-pressure/broom-hanging-fig.webp" class="question-figure img-fluid" alt="Broom supported by a string with a 0.5 kg mass hanging 0.45 m from the support"></p>
+<p>Determine:</p>
+<p><strong>(i)</strong> the distance between the centre of mass of the broom and the point where the string is attached; <code>[1]</code></p>
+<p><strong>(ii)</strong> the force exerted by the 0.5 kg mass. <code>[1]</code></p>
+<p><code>[2 marks]</code></p>
+<p><strong>(d)</strong> Calculate the weight of the broom. <code>[2 marks]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<ul>
+<li><strong>(a)(i)</strong> Moment of a force is the turning effect of a force about a point, equal to the product of the force and its perpendicular distance from the point: <span class="math inline">\(M=Fd\)</span>. <code>[2]</code></li>
+<li><strong>(a)(ii)</strong> Centre of gravity is the point at which the whole weight of the object may be considered to act. <code>[1]</code></li>
+<li><strong>(b)(i)</strong> The broom is in equilibrium with zero resultant moment: the line of action of its weight passes through the point of support, so there is no turning effect. <code>[2]</code></li>
+<li><strong>(b)(ii)</strong> Measure the distance from the string to each end of the broom, or locate the point of balance. <code>[1]</code></li>
+<li><strong>(c)(i)</strong> The centre of mass is 0.12 m from the string. <code>[1]</code></li>
+<li><strong>(c)(ii)</strong> Force <span class="math inline">\(=mg=0.5\times9.81=4.9\ \mathrm{N}\)</span>. <code>[1]</code></li>
+<li><strong>(d)</strong> Taking moments about the string: <span class="math inline">\(W\times0.12=4.9\times0.45\)</span>, so <span class="math inline">\(W=18.4\ \mathrm{N}\)</span>. <code>[2]</code></li>
+</ul>
+</details>
+</section>
+<section id="sq-easy-q2-metre-rule-balanced-on-a-pivot" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="sq-easy-q2-metre-rule-balanced-on-a-pivot">SQ Easy Q2 · Metre rule balanced on a pivot</h4>
+<p><strong>(a)</strong> A metre rule is balanced on a pivot at its midpoint. A force of 10.0 N acts at a distance of 8.0 cm from one end of the rule, as shown in Fig. 1.1.</p>
+<p><img src="../assets/questions/forces-density-pressure/metre-rule-pivot-fig.webp" class="question-figure img-fluid" alt="Metre rule with a 10.0 N force acting 8.0 cm from one end"></p>
+<p>Calculate the moment of the 10.0 N force about the pivot. <code>[3 marks]</code></p>
+<p><strong>(b)</strong> A mass is placed at a point 35 cm from the pivot, which makes the metre rule balance.</p>
+<p>On Fig. 1.1, draw an arrow to show the position of the mass and the direction of the force it exerts. <code>[2 marks]</code></p>
+<p><strong>(c)</strong> Calculate the mass which has been placed to balance the ruler in part (a). <code>[4 marks]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<ul>
+<li><strong>(a)</strong> The force is <span class="math inline">\(8.0\ \mathrm{cm}\)</span> from the end, so its distance from the midpoint pivot is <span class="math inline">\(50-8=42\ \mathrm{cm}=0.42\ \mathrm{m}\)</span>. <code>[2]</code> Moment <span class="math inline">\(=10.0\times0.42=4.2\ \mathrm{N\,m}\)</span>. <code>[1]</code></li>
+<li><strong>(b)</strong> Draw a downward arrow at a point 35 cm from the pivot on the opposite side of the rule. <code>[2]</code></li>
+<li><strong>(c)</strong> Let the balancing mass be <span class="math inline">\(m\)</span>. Its moment is <span class="math inline">\(mg\times0.35\)</span>. <code>[1]</code> Equating moments: <span class="math inline">\(mg\times0.35=4.2\)</span>. <code>[2]</code> Hence <span class="math inline">\(m=4.2/(0.35\times9.81)=1.22\ \mathrm{kg}\)</span>. <code>[1]</code></li>
+</ul>
+</details>
+</section>
+<section id="sq-easy-q3-couples-and-torque" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="sq-easy-q3-couples-and-torque">SQ Easy Q3 · Couples and torque</h4>
+<p><strong>(a)</strong> For a couple:</p>
+<p><strong>(i)</strong> state the definition; <code>[1]</code></p>
+<p><strong>(ii)</strong> state the conditions which have to be true for the forces in a couple. <code>[3]</code></p>
+<p><code>[4 marks]</code></p>
+<p><strong>(b)</strong> Fig. 1.1 shows a pair of forces acting on a rotating wheel.</p>
+<p><strong>(i)</strong> State the definition and units of torque. <code>[1]</code></p>
+<p><strong>(ii)</strong> For the couple in Fig. 1.1, state the equation which can be used to determine the torque. <code>[1]</code></p>
+<p><code>[2 marks]</code></p>
+<p><strong>(c)</strong> For the couple in Fig. 1.1, the two forces <span class="math inline">\(F\)</span> are both 15 N and the perpendicular distance <span class="math inline">\(s\)</span> between them is 0.5 m.</p>
+<p>Calculate the torque of this couple. <code>[2 marks]</code></p>
+<p><strong>(d)</strong> The forces in Fig. 1.1 are changed so that they act at an angle of <span class="math inline">\(60^\circ\)</span> to the horizontal distance between them.</p>
+<p><img src="../assets/questions/forces-density-pressure/couple-wheel-fig.webp" class="question-figure img-fluid" alt="Two equal 15 N forces at 60 degrees to the horizontal separation"></p>
+<p>Calculate the new torque on the wheel. <code>[3 marks]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<ul>
+<li><strong>(a)(i)</strong> A couple is a pair of equal and opposite parallel forces whose lines of action do not coincide, producing rotation only. <code>[1]</code></li>
+<li><strong>(a)(ii)</strong> The forces are equal in magnitude, parallel, opposite in direction and separated by a perpendicular distance. <code>[3]</code></li>
+<li><strong>(b)(i)</strong> Torque is the product of one of the forces of a couple and the perpendicular distance between them; unit is <span class="math inline">\(\mathrm{N\,m}\)</span>. <code>[1]</code></li>
+<li><strong>(b)(ii)</strong> <span class="math inline">\(\tau=Fd\)</span>. <code>[1]</code></li>
+<li><strong>(c)</strong> <span class="math inline">\(\tau=15\times0.5=7.5\ \mathrm{N\,m}\)</span>. <code>[2]</code></li>
+<li><strong>(d)</strong> Perpendicular distance <span class="math inline">\(=s\sin60^\circ=0.5\times0.866=0.433\ \mathrm{m}\)</span>. <code>[2]</code> New torque <span class="math inline">\(=15\times0.433=6.5\ \mathrm{N\,m}\)</span>. <code>[1]</code></li>
+</ul>
+</details>
+</section>
+</section>
+<section id="density-pressure---easy-1" class="level3">
+<h3 class="anchored" data-anchor-id="density-pressure---easy-1">4.2 Density &amp; Pressure - Easy</h3>
+<section id="sq-easy-q4-density-pressure-and-upthrust" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="sq-easy-q4-density-pressure-and-upthrust">SQ Easy Q4 · Density, pressure and upthrust</h4>
+<p><strong>(a)</strong> State the word definition of density. <code>[1 mark]</code></p>
+<p><strong>(b)</strong> When calculating density both the equation and units are required.</p>
+<p><strong>(i)</strong> State the equation for density, defining all the terms used. <code>[1]</code></p>
+<p><strong>(ii)</strong> State the SI units for density and a non-SI unit which is commonly used. <code>[2]</code></p>
+<p><code>[3 marks]</code></p>
+<p><strong>(c)</strong> For pressure caused by a solid, state:</p>
+<p><strong>(i)</strong> the definition of pressure; <code>[1]</code></p>
+<p><strong>(ii)</strong> the equation for pressure, defining the terms used. <code>[1]</code></p>
+<p><code>[2 marks]</code></p>
+<p><strong>(d)</strong> Fig. 1.1 shows a measuring cylinder containing a liquid with depth <span class="math inline">\(h\)</span> and cross-sectional area <span class="math inline">\(A\)</span>.</p>
+<p><img src="../assets/questions/forces-density-pressure/measuring-cylinder-liquid.webp" class="question-figure img-fluid" alt="Measuring cylinder containing liquid of depth h and base area A"></p>
+<p>Using the equations you stated in (b) and (c), show that the pressure at a point in the liquid is <span class="math inline">\(\Delta p=\rho g\Delta h\)</span>. <code>[2 marks]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<ul>
+<li><strong>(a)</strong> Density is the mass per unit volume of a substance. <code>[1]</code></li>
+<li><strong>(b)(i)</strong> <span class="math inline">\(\rho=m/V\)</span>, where <span class="math inline">\(\rho\)</span> is density, <span class="math inline">\(m\)</span> is mass and <span class="math inline">\(V\)</span> is volume. <code>[1]</code></li>
+<li><strong>(b)(ii)</strong> SI unit is <span class="math inline">\(\mathrm{kg\,m^{-3}}\)</span>; a common non-SI unit is <span class="math inline">\(\mathrm{g\,cm^{-3}}\)</span>. <code>[2]</code></li>
+<li><strong>(c)(i)</strong> Pressure is the normal force acting per unit area. <code>[1]</code></li>
+<li><strong>(c)(ii)</strong> <span class="math inline">\(p=F/A\)</span>, where <span class="math inline">\(p\)</span> is pressure, <span class="math inline">\(F\)</span> is the normal force and <span class="math inline">\(A\)</span> is the area. <code>[1]</code></li>
+<li><strong>(d)</strong> Mass of liquid <span class="math inline">\(=\rho V=\rho A\Delta h\)</span>, so its weight is <span class="math inline">\(\rho A\Delta h\,g\)</span>. <code>[1]</code> Pressure <span class="math inline">\(=\frac{W}{A}=\rho g\Delta h\)</span>. <code>[1]</code></li>
+</ul>
+</details>
+</section>
+<section id="sq-easy-q5-cylinder-submerged-in-sea-water" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="sq-easy-q5-cylinder-submerged-in-sea-water">SQ Easy Q5 · Cylinder submerged in sea water</h4>
+<p><strong>(a)</strong> Complete the definition of hydrostatic pressure:</p>
+<p>Hydrostatic pressure is the pressure that is exerted by a ______ at ______ at a given point within the fluid, due to the force of ______. <code>[3 marks]</code></p>
+<p><strong>(b)</strong> A cylinder of length 1.8 m is submerged vertically in a tank of sea water so that the top of the cylinder is 0.2 m below the surface of the water, as shown in Fig. 1.1. The density of the sea water is <span class="math inline">\(1020\ \mathrm{kg\,m^{-3}}\)</span>.</p>
+<p><img src="../assets/questions/forces-density-pressure/submerged-cylinder-seawater.webp" class="question-figure img-fluid" alt="Cylinder of length 1.8 m submerged vertically in sea water"></p>
+<p>Calculate the difference in hydrostatic pressure between the top and bottom surfaces of the cylinder. <code>[2 marks]</code></p>
+<p><strong>(c)</strong> The cylinder has a diameter of 75 cm.</p>
+<p>Calculate the upthrust on the cylinder. <code>[4 marks]</code></p>
+<p><strong>(d)</strong> The sea water in Fig. 1.1 is replaced with pure water which has a lower density than sea water.</p>
+<p>Without further calculation:</p>
+<p><strong>(i)</strong> state and explain the effect this would have on the upthrust on the cylinder; <code>[2]</code></p>
+<p><strong>(ii)</strong> hence state whether the cylinder would sink, float or stay at the same position in the tank. <code>[1]</code></p>
+<p><code>[3 marks]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<ul>
+<li><strong>(a)</strong> Hydrostatic pressure is the pressure exerted by a liquid at rest at a given point within the fluid, due to the force of gravity. <code>[3]</code></li>
+<li><strong>(b)</strong> <span class="math inline">\(\Delta p=\rho g\Delta h=1020\times9.81\times1.8\)</span>. <code>[1]</code> <span class="math inline">\(\Delta p=1.80\times10^4\ \mathrm{Pa}\)</span>. <code>[1]</code></li>
+<li><strong>(c)</strong> Area <span class="math inline">\(A=\pi r^2=\pi(0.375)^2=0.442\ \mathrm{m^2}\)</span>. <code>[1]</code> Upthrust <span class="math inline">\(=\Delta p\times A\)</span>. <code>[1]</code> <span class="math inline">\(F=1.80\times10^4\times0.442\)</span>. <code>[1]</code> <span class="math inline">\(F=7.95\times10^3\ \mathrm{N}\)</span>. <code>[1]</code></li>
+<li><strong>(d)(i)</strong> The upthrust decreases because upthrust is proportional to the density of the surrounding fluid. <code>[2]</code></li>
+<li><strong>(d)(ii)</strong> The cylinder sinks. <code>[1]</code></li>
+</ul>
+</details>
+</section>
+</section>
+<section id="turning-effects-equilibrium---medium-1" class="level3">
+<h3 class="anchored" data-anchor-id="turning-effects-equilibrium---medium-1">4.1 Turning Effects &amp; Equilibrium - Medium</h3>
+<section id="sq-medium-q1-reactions-on-a-decorators-plank" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="sq-medium-q1-reactions-on-a-decorators-plank">SQ Medium Q1 · Reactions on a decorators’ plank</h4>
+<p><strong>(a)</strong> A team of decorators set up a raised bench to allow them to reach the ceiling. The bench consists of a plank resting horizontally on two supports B and C. The plank is modelled as a uniform rod AD of length 2.7 m and mass 15 kg. The supports at B and C are 0.4 m from each end of the plank, as shown in Fig. 1.1.</p>
+<p><img src="../assets/questions/forces-density-pressure/decorator-plank-fig.webp" class="question-figure img-fluid" alt="Plank AD supported at B and C with two decorators standing on it"></p>
+<p>Two decorators, Ruby and Luke, stand on the plank. Luke has a mass of 85 kg and stands in the middle of the plank. Ruby has a mass of 72 kg and stands at end A. The plank remains horizontal and in equilibrium. The decorators can be modelled as point masses.</p>
+<p>Calculate:</p>
+<p><strong>(i)</strong> the magnitude of the normal reaction force at B; <code>[3]</code></p>
+<p><strong>(ii)</strong> the magnitude of the normal reaction force at C. <code>[3]</code></p>
+<p><code>[6 marks]</code></p>
+<p><strong>(b)</strong> Whilst Ruby stays at point A, Luke now moves along the plank to a point X. The plank remains horizontal and in equilibrium, and the magnitude of the normal reaction force at B is now twice the magnitude of the normal reaction force at C.</p>
+<p>Calculate the distance BX. <code>[4 marks]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<ul>
+<li><strong>(a)(i)</strong> Total weight <span class="math inline">\(=(72+85+15)g=172g=1687\ \mathrm{N}\)</span>. <code>[1]</code> Taking moments about C: <span class="math inline">\(R_B\times1.9=72g\times2.3+(85g+15g)\times0.95\)</span>. <code>[1]</code> <span class="math inline">\(R_B=1300\ \mathrm{N}\)</span> (2 s.f.). <code>[1]</code></li>
+<li><strong>(a)(ii)</strong> <span class="math inline">\(R_C=(72g+85g+15g)-R_B\)</span>. <code>[2]</code> <span class="math inline">\(R_C=340\ \mathrm{N}\)</span> (2 s.f.). <code>[1]</code></li>
+<li><strong>(b)</strong> With <span class="math inline">\(R_B=2R_C\)</span> and <span class="math inline">\(R_B+R_C=172g\)</span>, <span class="math inline">\(R_C=562\ \mathrm{N}\)</span>. <code>[1]</code> Taking moments about B: <span class="math inline">\(85g\times x+15g\times0.95=72g\times0.4+R_C\times1.9\)</span>. <code>[2]</code> Solving gives <span class="math inline">\(x=1.5\ \mathrm{m}\)</span> from B. <code>[1]</code></li>
+</ul>
+</details>
+</section>
+</section>
+<section id="density-pressure---medium-1" class="level3">
+<h3 class="anchored" data-anchor-id="density-pressure---medium-1">4.2 Density &amp; Pressure - Medium</h3>
+<section id="sq-medium-q3-wooden-rod-dropped-into-water" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="sq-medium-q3-wooden-rod-dropped-into-water">SQ Medium Q3 · Wooden rod dropped into water</h4>
+<p><strong>(a)</strong> A designer tests how far into a measuring cylinder of water a wooden rod will sink when dropped from various heights. The wooden rod has mass <span class="math inline">\(1.30\times10^{-2}\ \mathrm{kg}\)</span>, diameter <span class="math inline">\(1.5\times10^{-2}\ \mathrm{m}\)</span> and length <span class="math inline">\(7.5\times10^{-2}\ \mathrm{m}\)</span>.</p>
+<p><strong>(i)</strong> Calculate the density of the wood. <code>[2]</code></p>
+<p><strong>(ii)</strong> State and explain why the designer chose this type of wood to use in their investigation. <code>[2]</code></p>
+<p><strong>(iii)</strong> Suggest one change to the experimental set-up which the designer needs to make to model the situation they are investigating. <code>[2]</code></p>
+<p><code>[6 marks]</code></p>
+<p><strong>(b)</strong> The wooden rod is held in a clamp so that it can be quickly released from rest. Initially it is clamped so that the base is at a height <span class="math inline">\(h=0.20\ \mathrm{m}\)</span> above the water surface.</p>
+<p>Calculate the speed of the rod as its base reaches the water. Ignore air resistance. <code>[2 marks]</code></p>
+<p><strong>(c)</strong> Fig. 1.2 shows the wooden rod fully submerged under the water surface. The rod is moving vertically downwards and has not yet come to rest.</p>
+<p><img src="../assets/questions/forces-density-pressure/wooden-rod-apparatus.webp" class="question-figure img-fluid" alt="Wooden rod fully submerged in water"></p>
+<p><strong>(i)</strong> Sketch on Fig. 1.2 the forces acting on the wooden rod. <code>[3]</code></p>
+<p><strong>(ii)</strong> Describe and explain how the resultant force on the wooden cylinder varies from the moment the cylinder is fully submerged until it reaches its deepest point. <code>[3]</code></p>
+<p><code>[6 marks]</code></p>
+<p><strong>(d)</strong> The investigation concludes that an exciting but safe experience can be had by jumping into water which is at least six metres deep, sinking to no more than four metres. The density of sea water is <span class="math inline">\(1030\ \mathrm{kg\,m^{-3}}\)</span>.</p>
+<p>Suggest a likely range of pressure changes they will feel in their ears. <code>[4 marks]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<ul>
+<li><strong>(a)(i)</strong> Cross-sectional area <span class="math inline">\(A=\pi(7.5\times10^{-3})^2=1.77\times10^{-4}\ \mathrm{m^2}\)</span>; volume <span class="math inline">\(=A\times7.5\times10^{-2}=1.33\times10^{-5}\ \mathrm{m^3}\)</span>. <code>[1]</code> <span class="math inline">\(\rho=m/V=980\ \mathrm{kg\,m^{-3}}\)</span>. <code>[1]</code></li>
+<li><strong>(a)(ii)</strong> The density is close to the density of water, <code>[1]</code> so it models the human body, which is mostly water. <code>[1]</code></li>
+<li><strong>(a)(iii)</strong> Add salt or sugar to the water to mimic the greater density of sea water. <code>[2]</code></li>
+<li><strong>(b)</strong> <span class="math inline">\(v^2=u^2+2as=0+2\times9.81\times0.20\)</span>. <code>[1]</code> <span class="math inline">\(v=2.0\ \mathrm{m\,s^{-1}}\)</span>. <code>[1]</code></li>
+<li><strong>(c)(i)</strong> Weight downwards, upthrust upwards and drag upwards; the upthrust and drag arrows together are shorter than the weight arrow when the rod is still accelerating downwards. <code>[3]</code></li>
+<li><strong>(c)(ii)</strong> The upthrust is constant once fully submerged, but the drag increases with speed. <code>[2]</code> The resultant downward force therefore decreases until it becomes zero at maximum depth. <code>[1]</code></li>
+<li><strong>(d)</strong> At 4 m, <span class="math inline">\(p=\rho gh=1030\times9.81\times4=4.0\times10^4\ \mathrm{Pa}\)</span>. <code>[2]</code> The likely range of pressure change is roughly <span class="math inline">\(0\)</span> to <span class="math inline">\(4\times10^4\ \mathrm{Pa}\)</span>. <code>[2]</code></li>
+</ul>
+</details>
+</section>
+<section id="sq-medium-q4-submarine" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="sq-medium-q4-submarine">SQ Medium Q4 · Submarine</h4>
+<p><strong>(a)</strong> A submarine below the surface of the sea is stationary in a region where the density of sea water is <span class="math inline">\(1.03\times10^3\ \mathrm{kg\,m^{-3}}\)</span>. The submarine has a volume of <span class="math inline">\(5.83\times10^3\ \mathrm{m^3}\)</span>.</p>
+<p>Calculate the upthrust exerted on the submarine by the sea water. <code>[2 marks]</code></p>
+<p><strong>(b)</strong> Explain why the mass of the submarine must be <span class="math inline">\(6.0\times10^6\ \mathrm{kg}\)</span>. <code>[2 marks]</code></p>
+<p><strong>(c)</strong> The submarine moves into a region of the sea where the water is less salty, and the density of the water reduces to <span class="math inline">\(1.01\times10^3\ \mathrm{kg\,m^{-3}}\)</span>.</p>
+<p>Explain what would happen to the submarine as it moves into this region of lower density sea water. <code>[3 marks]</code></p>
+<p><strong>(d)</strong> The submarine alters its weight by pumping water in or out of its internal tanks.</p>
+<p>Determine the mass of water that the submarine should pump, in or out of its tanks, to maintain its depth below the surface of the sea. <code>[2 marks]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<ul>
+<li><strong>(a)</strong> <span class="math inline">\(F=\rho gV=1.03\times10^3\times9.81\times5.83\times10^3\)</span>. <code>[1]</code> <span class="math inline">\(F=5.89\times10^7\ \mathrm{N}\)</span>. <code>[1]</code></li>
+<li><strong>(b)</strong> The submarine is stationary, so the upthrust equals its weight. <code>[1]</code> <span class="math inline">\(m=F/g=5.89\times10^7/9.81=6.0\times10^6\ \mathrm{kg}\)</span>. <code>[1]</code></li>
+<li><strong>(c)</strong> The upthrust decreases because it is proportional to the water density. <code>[2]</code> The weight is unchanged, so the submarine sinks. <code>[1]</code></li>
+<li><strong>(d)</strong> New upthrust <span class="math inline">\(=1.01\times10^3\times9.81\times5.83\times10^3=5.78\times10^7\ \mathrm{N}\)</span>. <code>[1]</code> The submarine must pump out water of mass about <span class="math inline">\(1.1\times10^5\ \mathrm{kg}\)</span>. <code>[1]</code></li>
+</ul>
+</details>
+</section>
+</section>
+<section id="density-pressure---hard-1" class="level3">
+<h3 class="anchored" data-anchor-id="density-pressure---hard-1">4.2 Density &amp; Pressure - Hard</h3>
+<section id="sq-hard-q1-the-cartesian-diver" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="sq-hard-q1-the-cartesian-diver">SQ Hard Q1 · The Cartesian Diver</h4>
+<p>The Cartesian Diver is a popular science project used to demonstrate physical concepts. A ‘diver’ is made by bending a loop of drinking straw into a U-shape and weighting it with modelling clay. A large plastic bottle is filled with water, leaving a small volume of air at the top. The diver is added so that some water enters it but the straw remains floating upright due to trapped air. The lid is tightly screwed back onto the bottle.</p>
+<p><img src="../assets/questions/forces-density-pressure/cartesian-diver.webp" class="question-figure img-fluid" alt="Cartesian Diver: drinking straw diver inside a sealed plastic bottle of water"></p>
+<p>When the sides of the bottle are squeezed and released, the ‘diver’ moves up and down rapidly.</p>
+<p>Discuss the physics of the Cartesian Diver when the sides of the bottle are squeezed.</p>
+<p><strong>(i)</strong> Explain the observed motion of the ‘diver’. <code>[5]</code></p>
+<p><strong>(ii)</strong> Predict which direction the diver moves in when the sides of the bottle are squeezed. <code>[1]</code></p>
+<p><code>[5 marks]</code></p>
+<p><strong>(b)</strong> When the sides of the bottle are released, the diver reverses direction.</p>
+<p>Explain why the diver returns to its original position in the bottle. <code>[4 marks]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<ul>
+<li><strong>(a)(i)</strong> Squeezing the bottle increases the pressure on the water. <code>[1]</code> The increased pressure compresses the trapped air inside the diver. <code>[1]</code> The volume of the air bubble decreases, so the diver displaces less water and the upthrust decreases. <code>[2]</code> The weight of the diver is unchanged, so the diver sinks. <code>[1]</code></li>
+<li><strong>(a)(ii)</strong> The diver moves downwards. <code>[1]</code></li>
+<li><strong>(b)</strong> When the bottle is released, the pressure decreases and the trapped air expands again. <code>[2]</code> The displaced volume and upthrust increase, <code>[1]</code> so the diver rises back to its original position. <code>[1]</code></li>
+</ul>
+</details>
+</section>
+<section id="sq-hard-q3-hot-air-balloon" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="sq-hard-q3-hot-air-balloon">SQ Hard Q3 · Hot air balloon</h4>
+<p>A very large hot air balloon can carry 25-30 people. The envelope has a diameter at its widest point of 32 m when filled with air. The total mass of the balloon, air, equipment and passengers is 20 900 kg. When the air temperature is <span class="math inline">\(15^\circ\mathrm{C}\)</span>, the density of the air outside the balloon is <span class="math inline">\(1.225\ \mathrm{kg\,m^{-3}}\)</span>.</p>
+<p>When the air inside the envelope is hot enough, the balloon is released.</p>
+<p><strong>(i)</strong> Calculate the resultant upwards force on the balloon. <code>[3]</code></p>
+<p><strong>(ii)</strong> Calculate the initial upwards acceleration of the balloon. <code>[1]</code></p>
+<p><code>[4 marks]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<ul>
+<li><strong>(i)</strong> Radius <span class="math inline">\(=16\ \mathrm{m}\)</span>; volume <span class="math inline">\(=\frac{4}{3}\pi(16)^3=1.72\times10^4\ \mathrm{m^3}\)</span>. <code>[1]</code> Upthrust <span class="math inline">\(=\rho gV=1.225\times9.81\times1.72\times10^4=2.06\times10^5\ \mathrm{N}\)</span>. <code>[1]</code> Weight <span class="math inline">\(=20\,900\times9.81=2.05\times10^5\ \mathrm{N}\)</span>; resultant force <span class="math inline">\(=1.3\times10^3\ \mathrm{N}\)</span> upwards. <code>[1]</code></li>
+<li><strong>(ii)</strong> <span class="math inline">\(a=F/m=1.3\times10^3/20\,900=0.062\ \mathrm{m\,s^{-2}}\)</span> upwards. <code>[1]</code></li>
+</ul>
+</details>
+</section>
+</section>
+</section>
+<section id="chapter-checklist" class="level2">
+<h2 class="anchored" data-anchor-id="chapter-checklist">Chapter checklist</h2>
+<ul class="task-list">
+<li><label><input type="checkbox">I can define moment, couple and torque and use them in calculations.</label></li>
+<li><label><input type="checkbox">I can locate the centre of gravity and apply the principle of moments.</label></li>
+<li><label><input type="checkbox">I can use vector triangles and resolution for forces in equilibrium.</label></li>
+<li><label><input type="checkbox">I can calculate density, pressure and hydrostatic pressure.</label></li>
+<li><label><input type="checkbox">I can calculate upthrust using Archimedes’ principle.</label></li>
+</ul>
+<section id="original-question-pdfs" class="level3">
+<h3 class="anchored" data-anchor-id="original-question-pdfs">Original question PDFs</h3>
+<ul>
+<li><a href="https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/forces/4.1%20Forces.%20Turning%20Effects%20-%20Equilibrium%20-%20C%20-%20Easy.pdf.pdf">4.1 Turning Effects &amp; Equilibrium - MC Easy</a></li>
+<li><a href="https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/forces/4.1%20Forces.%20Turning%20Effects%20-%20Equilibrium%20-%20C%20-%20Medium.pdf.pdf">4.1 Turning Effects &amp; Equilibrium - MC Medium</a></li>
+<li><a href="https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/forces/4.1%20Forces.%20Turning%20Effects%20-%20Equilibrium%20-%20C%20-%20Hard.pdf.pdf">4.1 Turning Effects &amp; Equilibrium - MC Hard</a></li>
+<li><a href="https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/forces/4.1%20Forces.%20Turning%20Effects%20-%20Equilibrium%20-%20SQ%20-%20Easy.pdf.pdf">4.1 Turning Effects &amp; Equilibrium - SQ Easy</a></li>
+<li><a href="https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/forces/4.1%20Forces.%20Turning%20Effects%20-%20Equilibrium%20-%20SQ%20-%20Medium.pdf.pdf">4.1 Turning Effects &amp; Equilibrium - SQ Medium</a></li>
+<li><a href="https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/forces/4.1%20Forces.%20Turning%20Effects%20-%20Equilibrium%20-%20SQ%20-%20Hard.pdf.pdf">4.1 Turning Effects &amp; Equilibrium - SQ Hard</a></li>
+<li><a href="https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/forces/4.2%20Forces.%20Density%20-%20Pressure%20-%20C%20-%20Easy.pdf.pdf">4.2 Density &amp; Pressure - MC Easy</a></li>
+<li><a href="https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/forces/4.2%20Forces.%20Density%20-%20Pressure%20-%20C%20-%20Medium.pdf.pdf">4.2 Density &amp; Pressure - MC Medium</a></li>
+<li><a href="https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/forces/4.2%20Forces.%20Density%20-%20Pressure%20-%20C%20-%20Hard.pdf.pdf">4.2 Density &amp; Pressure - MC Hard</a></li>
+<li><a href="https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/forces/4.2%20Forces.%20Density%20-%20Pressure%20-%20SQ%20-%20Easy.pdf.pdf">4.2 Density &amp; Pressure - SQ Easy</a></li>
+<li><a href="https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/forces/4.2%20Forces.%20Density%20-%20Pressure%20-%20SQ%20-%20Medium.pdf.pdf">4.2 Density &amp; Pressure - SQ Medium</a></li>
+<li><a href="https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/forces/4.2%20Forces.%20Density%20-%20Pressure%20-%20SQ%20-%20Hard.pdf.pdf">4.2 Density &amp; Pressure - SQ Hard</a></li>
+</ul>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll(".done-toggle input").forEach((input) => {
+    const key = `cie-physics-${input.dataset.progress}`;
+    input.checked = localStorage.getItem(key) === "true";
+    input.closest(".question-card")?.classList.toggle("is-complete", input.checked);
+    input.addEventListener("change", () => {
+      localStorage.setItem(key, input.checked);
+      input.closest(".question-card")?.classList.toggle("is-complete", input.checked);
+    });
+  });
+
+  document.querySelectorAll(".mc-question").forEach((card) => {
+    const answer = card.dataset.answer;
+    const feedback = card.querySelector(".mc-feedback");
+    const check = card.querySelector(".check-answer");
+    let selected = localStorage.getItem(`cie-physics-${card.id}-choice`) || "";
+
+    const showSelection = () => {
+      card.querySelectorAll(".mc-choice").forEach((choice) => {
+        choice.classList.toggle("is-selected", choice.dataset.choice === selected);
+      });
+    };
+    showSelection();
+
+    card.querySelectorAll(".mc-choice").forEach((choice) => {
+      choice.addEventListener("click", () => {
+        selected = choice.dataset.choice;
+        localStorage.setItem(`cie-physics-${card.id}-choice`, selected);
+        feedback.textContent = "";
+        feedback.className = "mc-feedback";
+        showSelection();
+      });
+    });
+
+    check?.addEventListener("click", () => {
+      if (!selected) {
+        feedback.textContent = "Select an answer first.";
+        feedback.className = "mc-feedback is-pending";
+        return;
+      }
+      const correct = selected === answer;
+      feedback.textContent = correct ? "Correct." : `Not quite. The correct answer is ${answer}.`;
+      feedback.className = `mc-feedback ${correct ? "is-correct" : "is-incorrect"}`;
+    });
+  });
+});
+</script>
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "已复制");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "已复制");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../as-level/03-dynamics.html" class="pagination-link" aria-label="3 Dynamics">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">3 Dynamics</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../a-level/12-motion-in-a-circle.html" class="pagination-link" aria-label="12 Motion in a circle">
+        <span class="nav-page-text">12 Motion in a circle</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>
