@@ -1,0 +1,1656 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-Hans" xml:lang="zh-Hans"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.38">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>6 Deformation of solids – CIE Physics 9702</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../a-level/12-motion-in-a-circle.html" rel="next">
+<link href="../as-level/05-work-energy-power.html" rel="prev">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-a2a938b4dd5711f7a799c87bd16ba44c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "没有结果",
+    "search-matching-documents-text": "匹配的文档",
+    "search-copy-link-title": "复制搜索链接",
+    "search-hide-matches-text": "隐藏其它匹配结果",
+    "search-more-match-text": "更多匹配结果",
+    "search-more-matches-text": "更多匹配结果",
+    "search-clear-button-title": "清除",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "取消",
+    "search-submit-button-title": "提交",
+    "search-label": "搜索"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../styles.css">
+</head>
+
+<body class="nav-sidebar docked quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="展开或折叠侧边栏导航" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../as-level/01-physical-quantities-and-units.html">AS Level</a></li><li class="breadcrumb-item"><a href="../as-level/06-deformation-of-solids.html">6 Deformation of solids</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="展开或折叠侧边栏导航" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="搜索" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">CIE Physics 9702</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="搜索"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">学习首页</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">AS Level</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="展开或折叠此栏">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../as-level/01-physical-quantities-and-units.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">1 Physical quantities and units</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../as-level/02-kinematics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2 Kinematics</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../as-level/03-dynamics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">3 Dynamics</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../as-level/04-forces-density-pressure.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4 Forces, density and pressure</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../as-level/05-work-energy-power.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5 Work, energy and power</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../as-level/06-deformation-of-solids.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">6 Deformation of solids</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">A Level</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="展开或折叠此栏">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/12-motion-in-a-circle.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">12 Motion in a circle</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/13-gravitational-fields.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">13 Gravitational fields</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/14-temperature.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">14 Temperature</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/15-ideal-gases.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">15 Ideal gases</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/16-thermodynamics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">16 Thermodynamics</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/17-oscillations.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">17 Oscillations</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/18-electric-fields.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">18 Electric fields</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/19-capacitance.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">19 Capacitance</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/20-magnetic-fields.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">20 Magnetic fields</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/21-alternating-currents.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">21 Alternating currents</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/22-quantum-physics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">22 Quantum physics</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/23-nuclear-physics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">23 Nuclear physics</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/24-medical-physics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">24 Medical physics</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/25-astronomy-and-cosmology.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">25 Astronomy and cosmology</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">该页面内容</h2>
+   
+  <ul>
+  <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link active" data-scroll-target="#learning-objectives">Learning objectives</a></li>
+  <li><a href="#stress-and-strain" id="toc-stress-and-strain" class="nav-link" data-scroll-target="#stress-and-strain">6.1 Stress and strain</a>
+  <ul class="collapse">
+  <li><a href="#deformation-and-hookes-law" id="toc-deformation-and-hookes-law" class="nav-link" data-scroll-target="#deformation-and-hookes-law">Deformation and Hooke’s law</a></li>
+  <li><a href="#stress-and-strain-1" id="toc-stress-and-strain-1" class="nav-link" data-scroll-target="#stress-and-strain-1">Stress and strain</a></li>
+  <li><a href="#young-modulus" id="toc-young-modulus" class="nav-link" data-scroll-target="#young-modulus">Young modulus</a></li>
+  <li><a href="#determining-the-young-modulus-of-a-wire" id="toc-determining-the-young-modulus-of-a-wire" class="nav-link" data-scroll-target="#determining-the-young-modulus-of-a-wire">Determining the Young modulus of a wire</a></li>
+  </ul></li>
+  <li><a href="#elastic-and-plastic-behaviour" id="toc-elastic-and-plastic-behaviour" class="nav-link" data-scroll-target="#elastic-and-plastic-behaviour">6.2 Elastic and plastic behaviour</a>
+  <ul class="collapse">
+  <li><a href="#elastic-and-plastic-deformation" id="toc-elastic-and-plastic-deformation" class="nav-link" data-scroll-target="#elastic-and-plastic-deformation">Elastic and plastic deformation</a></li>
+  <li><a href="#stress-strain-graphs-for-different-materials" id="toc-stress-strain-graphs-for-different-materials" class="nav-link" data-scroll-target="#stress-strain-graphs-for-different-materials">Stress-strain graphs for different materials</a></li>
+  <li><a href="#elastic-strain-energy" id="toc-elastic-strain-energy" class="nav-link" data-scroll-target="#elastic-strain-energy">Elastic strain energy</a></li>
+  </ul></li>
+  <li><a href="#multiple-choice-questions" id="toc-multiple-choice-questions" class="nav-link" data-scroll-target="#multiple-choice-questions">Multiple Choice Questions</a>
+  <ul class="collapse">
+  <li><a href="#deformation-stress-strain---easy" id="toc-deformation-stress-strain---easy" class="nav-link" data-scroll-target="#deformation-stress-strain---easy">6.1 Deformation, Stress &amp; Strain - Easy</a></li>
+  <li><a href="#deformation-stress-strain---medium" id="toc-deformation-stress-strain---medium" class="nav-link" data-scroll-target="#deformation-stress-strain---medium">6.1 Deformation, Stress &amp; Strain - Medium</a></li>
+  <li><a href="#deformation-stress-strain---hard" id="toc-deformation-stress-strain---hard" class="nav-link" data-scroll-target="#deformation-stress-strain---hard">6.1 Deformation, Stress &amp; Strain - Hard</a></li>
+  <li><a href="#elastic-plastic-behaviour---easy" id="toc-elastic-plastic-behaviour---easy" class="nav-link" data-scroll-target="#elastic-plastic-behaviour---easy">6.2 Elastic &amp; Plastic Behaviour - Easy</a></li>
+  <li><a href="#elastic-plastic-behaviour---medium" id="toc-elastic-plastic-behaviour---medium" class="nav-link" data-scroll-target="#elastic-plastic-behaviour---medium">6.2 Elastic &amp; Plastic Behaviour - Medium</a></li>
+  <li><a href="#elastic-plastic-behaviour---hard" id="toc-elastic-plastic-behaviour---hard" class="nav-link" data-scroll-target="#elastic-plastic-behaviour---hard">6.2 Elastic &amp; Plastic Behaviour - Hard</a></li>
+  </ul></li>
+  <li><a href="#structured-questions" id="toc-structured-questions" class="nav-link" data-scroll-target="#structured-questions">Structured Questions</a>
+  <ul class="collapse">
+  <li><a href="#deformation-stress-strain---easy-1" id="toc-deformation-stress-strain---easy-1" class="nav-link" data-scroll-target="#deformation-stress-strain---easy-1">6.1 Deformation, Stress &amp; Strain - Easy</a></li>
+  <li><a href="#deformation-stress-strain---medium-1" id="toc-deformation-stress-strain---medium-1" class="nav-link" data-scroll-target="#deformation-stress-strain---medium-1">6.1 Deformation, Stress &amp; Strain - Medium</a></li>
+  <li><a href="#elastic-plastic-behaviour---medium-1" id="toc-elastic-plastic-behaviour---medium-1" class="nav-link" data-scroll-target="#elastic-plastic-behaviour---medium-1">6.2 Elastic &amp; Plastic Behaviour - Medium</a></li>
+  </ul></li>
+  <li><a href="#chapter-checklist" id="toc-chapter-checklist" class="nav-link" data-scroll-target="#chapter-checklist">Chapter checklist</a>
+  <ul class="collapse">
+  <li><a href="#original-question-pdfs" id="toc-original-question-pdfs" class="nav-link" data-scroll-target="#original-question-pdfs">Original question PDFs</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../as-level/01-physical-quantities-and-units.html">AS Level</a></li><li class="breadcrumb-item"><a href="../as-level/06-deformation-of-solids.html">6 Deformation of solids</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">6 Deformation of solids</h1>
+<p class="subtitle lead">Stress and strain, elastic and plastic behaviour, and the Young modulus</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="learning-objectives" class="level2">
+<h2 class="anchored" data-anchor-id="learning-objectives">Learning objectives</h2>
+<p>By the end of this chapter, you should be able to:</p>
+<ul>
+<li>understand that deformation is caused by tensile or compressive forces;</li>
+<li>use the terms load, extension, compression and limit of proportionality;</li>
+<li>recall and use Hooke’s law <span class="math inline">\(F=kx\)</span>;</li>
+<li>recall and use the spring constant <span class="math inline">\(k=F/x\)</span>;</li>
+<li>define and use stress, strain and the Young modulus;</li>
+<li>describe an experiment to determine the Young modulus of a wire;</li>
+<li>interpret and compare stress-strain graphs;</li>
+<li>calculate elastic strain energy from force-extension graphs.</li>
+</ul>
+</section>
+<section id="stress-and-strain" class="level2">
+<h2 class="anchored" data-anchor-id="stress-and-strain">6.1 Stress and strain</h2>
+<section id="deformation-and-hookes-law" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="deformation-and-hookes-law">Deformation and Hooke’s law</h3>
+<p>Forces can change the motion of a body or cause deformation. A <strong>tensile</strong> force stretches an object; a <strong>compressive</strong> force squashes it.</p>
+<p><strong>Hooke’s law</strong> states that the extension <span class="math inline">\(x\)</span> of a material is proportional to the applied force <span class="math inline">\(F\)</span>, provided the limit of proportionality is not exceeded:</p>
+<p><span class="math display">\[F=kx,\]</span></p>
+<p>where <span class="math inline">\(k\)</span> is the spring constant in <span class="math inline">\(\mathrm{N\,m^{-1}}\)</span>.</p>
+</section>
+<section id="stress-and-strain-1" class="level3 formula-panel">
+<h3 class="anchored" data-anchor-id="stress-and-strain-1">Stress and strain</h3>
+<p><strong>Tensile stress</strong> is the force per unit cross-sectional area:</p>
+<p><span class="math display">\[\sigma=\frac{F}{A},\]</span></p>
+<p>with unit <span class="math inline">\(\mathrm{Pa}=\mathrm{N\,m^{-2}}\)</span>.</p>
+<p><strong>Tensile strain</strong> is the extension per unit original length:</p>
+<p><span class="math display">\[\varepsilon=\frac{x}{L},\]</span></p>
+<p>which is dimensionless.</p>
+</section>
+<section id="young-modulus" class="level3 formula-panel">
+<h3 class="anchored" data-anchor-id="young-modulus">Young modulus</h3>
+<p>The <strong>Young modulus</strong> is the ratio of stress to strain in the elastic region:</p>
+<p><span class="math display">\[E=\frac{\sigma}{\varepsilon}=\frac{F/A}{x/L}=\frac{FL}{Ax}.\]</span></p>
+<p>The unit is <span class="math inline">\(\mathrm{Pa}\)</span> (or <span class="math inline">\(\mathrm{N\,m^{-2}}\)</span>). On a stress-strain graph, the Young modulus is the gradient of the straight-line (elastic) region.</p>
+<p>For a wire, the force per unit extension <span class="math inline">\(k\)</span> is related to the Young modulus by</p>
+<p><span class="math display">\[k=\frac{EA}{L}.\]</span></p>
+</section>
+<section id="determining-the-young-modulus-of-a-wire" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="determining-the-young-modulus-of-a-wire">Determining the Young modulus of a wire</h3>
+<p>The experiment uses a long thin wire suspended from a fixed support, with masses added to produce extension:</p>
+<ul>
+<li>original length <span class="math inline">\(L\)</span> measured with a metre rule;</li>
+<li>diameter measured with a micrometer screw gauge to find the cross-sectional area <span class="math inline">\(A\)</span>;</li>
+<li>extension <span class="math inline">\(x\)</span> measured with a vernier scale or travelling microscope;</li>
+<li>stress and strain calculated from <span class="math inline">\(F\)</span>, <span class="math inline">\(A\)</span>, <span class="math inline">\(x\)</span> and <span class="math inline">\(L\)</span>;</li>
+<li><span class="math inline">\(E\)</span> obtained from the gradient of a stress-strain graph.</li>
+</ul>
+<p>Safety: wear safety glasses because the wire may snap, and ensure masses cannot fall onto feet.</p>
+</section>
+</section>
+<section id="elastic-and-plastic-behaviour" class="level2">
+<h2 class="anchored" data-anchor-id="elastic-and-plastic-behaviour">6.2 Elastic and plastic behaviour</h2>
+<section id="elastic-and-plastic-deformation" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="elastic-and-plastic-deformation">Elastic and plastic deformation</h3>
+<p><strong>Elastic deformation</strong>: the material returns to its original shape and size when the deforming force is removed. The behaviour is reversible.</p>
+<p><strong>Plastic deformation</strong>: the material suffers permanent deformation; it does not return to its original shape when the force is removed.</p>
+<p>The <strong>limit of proportionality</strong> is the point beyond which force is no longer proportional to extension. The <strong>elastic limit</strong> is the point beyond which the material no longer returns to its original length when unloaded.</p>
+</section>
+<section id="stress-strain-graphs-for-different-materials" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="stress-strain-graphs-for-different-materials">Stress-strain graphs for different materials</h3>
+<ul>
+<li><strong>Ductile materials</strong> (e.g.&nbsp;copper, aluminium): show a long plastic region and can be drawn into wires.</li>
+<li><strong>Brittle materials</strong> (e.g.&nbsp;glass): break with little or no plastic deformation; the graph is straight up to the breaking point.</li>
+<li><strong>Rubber / polymers</strong>: show a curved loading curve with a large extension; the unloading curve differs, producing a hysteresis loop.</li>
+</ul>
+<p>The <strong>ultimate tensile stress (UTS)</strong> is the maximum stress a material can withstand before it breaks.</p>
+</section>
+<section id="elastic-strain-energy" class="level3 formula-panel">
+<h3 class="anchored" data-anchor-id="elastic-strain-energy">Elastic strain energy</h3>
+<p>The work done in stretching a spring or wire elastically is the area under the force-extension graph:</p>
+<p><span class="math display">\[E_{\text{elastic}}=\frac{1}{2}Fx=\frac{1}{2}kx^2.\]</span></p>
+<p>The strain energy per unit volume of a material with tensile stress <span class="math inline">\(\sigma\)</span> and Young modulus <span class="math inline">\(E\)</span> is</p>
+<p><span class="math display">\[\frac{\text{strain energy}}{\text{volume}}=\frac{\sigma^2}{2E}.\]</span></p>
+<p>If a material is loaded beyond its elastic limit and then unloaded, the unloading curve lies below the loading curve. The area between the two curves is the energy dissipated as thermal energy.</p>
+</section>
+</section>
+<section id="multiple-choice-questions" class="level2">
+<h2 class="anchored" data-anchor-id="multiple-choice-questions">Multiple Choice Questions</h2>
+<section id="deformation-stress-strain---easy" class="level3">
+<h3 class="anchored" data-anchor-id="deformation-stress-strain---easy">6.1 Deformation, Stress &amp; Strain - Easy</h3>
+<section id="example-1-6.1-mc-easy-q1" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-1-6.1-mc-easy-q1">Example 1 · 6.1 MC Easy Q1</h4>
+<p>A student wanted to measure the Young modulus of a wire; to do this they needed to take a number of measurements.</p>
+<p>In which row could the measurement not be made directly with the listed apparatus?</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Measurement</th>
+<th>Apparatus</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>A</td>
+<td>extension of wire</td>
+</tr>
+<tr class="even">
+<td>B</td>
+<td>area of cross-section of wire</td>
+</tr>
+<tr class="odd">
+<td>C</td>
+<td>original length of wire</td>
+</tr>
+<tr class="even">
+<td>D</td>
+<td>mass of load applied to a wire</td>
+</tr>
+</tbody>
+</table>
+<details class="answer-panel">
+<summary>
+Show answer and explanation
+</summary>
+<strong>Answer: B.</strong> The micrometer measures the diameter of the wire; the cross-sectional area must then be calculated from the diameter, so it cannot be measured directly.
+</details>
+</section>
+<section id="example-2-6.1-mc-easy-q2" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-2-6.1-mc-easy-q2">Example 2 · 6.1 MC Easy Q2</h4>
+<p>What is the unit of the Young modulus?</p>
+<p>A. <span class="math inline">\(\mathrm{N\,m^{-2}}\)</span></p>
+<p>B. <span class="math inline">\(\mathrm{N\,m}\)</span></p>
+<p>C. <span class="math inline">\(\mathrm{N\,m^{-1}}\)</span></p>
+<p>D. <span class="math inline">\(\mathrm{N\,m^{2}}\)</span></p>
+<details class="answer-panel">
+<summary>
+Show answer and explanation
+</summary>
+<strong>Answer: A.</strong> The Young modulus is stress divided by strain; strain is dimensionless, so the unit is the unit of stress, <span class="math inline">\(\mathrm{N\,m^{-2}}=\mathrm{Pa}\)</span>.
+</details>
+</section>
+<section id="example-3-6.1-mc-easy-q3" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-3-6.1-mc-easy-q3">Example 3 · 6.1 MC Easy Q3</h4>
+<p>Which of the following is the definition of the ultimate tensile stress of a material?</p>
+<p>A. The maximum inter-atomic force before the atomic bonds of the material break.</p>
+<p>B. The maximum force that can be applied to a bar of the material before it bends.</p>
+<p>C. The maximum tensile force in a wire of the material before it breaks.</p>
+<p>D. The maximum stretching force per unit cross-sectional area before the material breaks.</p>
+<details class="answer-panel">
+<summary>
+Show answer and explanation
+</summary>
+<strong>Answer: D.</strong> The ultimate tensile stress is the maximum tensile force per unit cross-sectional area that the material can withstand before it breaks.
+</details>
+</section>
+<section id="example-4-6.1-mc-easy-q4" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-4-6.1-mc-easy-q4">Example 4 · 6.1 MC Easy Q4</h4>
+<p>A material is extended elastically within the limit of proportionality.</p>
+<p>What is equal to the Young modulus of the material?</p>
+<p>A. Gradient of the stress-strain graph.</p>
+<p>B. Area under the force-extension graph.</p>
+<p>C. Area under the stress-strain graph.</p>
+<p>D. Gradient of the force-extension graph.</p>
+<details class="answer-panel">
+<summary>
+Show answer and explanation
+</summary>
+<strong>Answer: A.</strong> The Young modulus is the ratio of stress to strain, which is the gradient of the stress-strain graph in the elastic region.
+</details>
+</section>
+</section>
+<section id="deformation-stress-strain---medium" class="level3">
+<h3 class="anchored" data-anchor-id="deformation-stress-strain---medium">6.1 Deformation, Stress &amp; Strain - Medium</h3>
+<section id="example-5-6.1-mc-medium-q3" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-5-6.1-mc-medium-q3">Example 5 · 6.1 MC Medium Q3</h4>
+<p>A steel metal wire has the following properties:</p>
+<ul>
+<li>diameter <span class="math inline">\(=5.0\times10^{-4}\ \mathrm{m}\)</span></li>
+<li>Young modulus <span class="math inline">\(=2.0\times10^{11}\ \mathrm{Pa}\)</span></li>
+<li>tension <span class="math inline">\(=20\ \mathrm{N}\)</span></li>
+</ul>
+<p>The string snaps and contracts elastically.</p>
+<p>By what percentage does a length <span class="math inline">\(l\)</span> of a piece of the string contract?</p>
+<p>A. <span class="math inline">\(1.3\times10^{-2}\%\)</span></p>
+<p>B. <span class="math inline">\(1.3\times10^{-4}\%\)</span></p>
+<p>C. <span class="math inline">\(5.1\times10^{-4}\%\)</span></p>
+<p>D. <span class="math inline">\(5.1\times10^{-2}\%\)</span></p>
+<details class="answer-panel">
+<summary>
+Show answer and explanation
+</summary>
+<strong>Answer: D.</strong> Stress <span class="math inline">\(=\frac{F}{A}=\frac{20}{\pi(2.5\times10^{-4})^2}=1.02\times10^8\ \mathrm{Pa}\)</span>. Strain <span class="math inline">\(=\sigma/E=1.02\times10^8/(2.0\times10^{11})=5.1\times10^{-4}\)</span>, which is <span class="math inline">\(5.1\times10^{-2}\%\)</span>.
+</details>
+</section>
+<section id="example-6-6.1-mc-medium-q4" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-6-6.1-mc-medium-q4">Example 6 · 6.1 MC Medium Q4</h4>
+<p>The Young modulus of a metal wire is dependent on which property?</p>
+<p>A. Spring constant</p>
+<p>B. Ductility</p>
+<p>C. Ultimate tensile stress</p>
+<p>D. Elastic limit</p>
+<details class="answer-panel">
+<summary>
+Show answer and explanation
+</summary>
+<strong>Answer: A.</strong> From <span class="math inline">\(k=EA/L\)</span>, the spring constant depends on <span class="math inline">\(E\)</span>, <span class="math inline">\(A\)</span> and <span class="math inline">\(L\)</span>, so the Young modulus is related to the spring constant. The Young modulus does not depend on ductility, ultimate tensile stress or elastic limit.
+</details>
+</section>
+<section id="example-7-6.1-mc-medium-q5" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-7-6.1-mc-medium-q5">Example 7 · 6.1 MC Medium Q5</h4>
+<p>The Young modulus <span class="math inline">\(E\)</span> and the force per unit extension <span class="math inline">\(k\)</span> describe the behaviour of a wire under tensile stress.</p>
+<p>For a wire of length <span class="math inline">\(L\)</span> and cross-sectional area <span class="math inline">\(A\)</span>, what is the relationship between <span class="math inline">\(E\)</span> and <span class="math inline">\(k\)</span>?</p>
+<p>A. <span class="math inline">\(E=\frac{kL}{A}\)</span></p>
+<p>B. <span class="math inline">\(E=\frac{kA}{L}\)</span></p>
+<p>C. <span class="math inline">\(k=\frac{EA}{L}\)</span></p>
+<p>D. <span class="math inline">\(k=\frac{EL}{A}\)</span></p>
+<details class="answer-panel">
+<summary>
+Show answer and explanation
+</summary>
+<strong>Answer: C.</strong> The force per unit extension is <span class="math inline">\(k=\frac{EA}{L}\)</span>.
+</details>
+</section>
+<section id="example-8-6.1-mc-medium-q7" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-8-6.1-mc-medium-q7">Example 8 · 6.1 MC Medium Q7</h4>
+<p>A student wanted to find the Young modulus of a wire. The equation for the Young modulus <span class="math inline">\(E\)</span> is</p>
+<p><span class="math display">\[E=\frac{4Fl}{\pi d^2 x}.\]</span></p>
+<p>The student extended the wire with a known force and made a series of measurements.</p>
+<p>Which measurement has the largest effect on the uncertainty in the value of the calculated Young modulus?</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Measurement</th>
+<th>Symbol</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>A</td>
+<td>length of wire before force applied</td>
+<td><span class="math inline">\(l\)</span></td>
+</tr>
+<tr class="even">
+<td>B</td>
+<td>force applied</td>
+<td><span class="math inline">\(F\)</span></td>
+</tr>
+<tr class="odd">
+<td>C</td>
+<td>extension of wire with force applied</td>
+<td><span class="math inline">\(x\)</span></td>
+</tr>
+<tr class="even">
+<td>D</td>
+<td>diameter of wire</td>
+<td><span class="math inline">\(d\)</span></td>
+</tr>
+</tbody>
+</table>
+<details class="answer-panel">
+<summary>
+Show answer and explanation
+</summary>
+<strong>Answer: D.</strong> The percentage uncertainty in <span class="math inline">\(d\)</span> is <span class="math inline">\(0.02/0.54=3.7\%\)</span>, and it contributes <span class="math inline">\(2\times3.7\%=7.4\%\)</span> because <span class="math inline">\(d\)</span> is squared. This is larger than the percentage uncertainties from the other measurements.
+</details>
+</section>
+<section id="example-9-6.1-mc-medium-q10" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-9-6.1-mc-medium-q10">Example 9 · 6.1 MC Medium Q10</h4>
+<p>A steel spring was stretched to a length of 55 cm when a 25 N weight was hung from it. The spring has a spring constant of <span class="math inline">\(150\ \mathrm{N\,m^{-1}}\)</span>.</p>
+<p>What was the original length of the spring?</p>
+<p>A. 0.61 m</p>
+<p>B. 0.72 m</p>
+<p>C. 0.38 m</p>
+<p>D. 0.49 m</p>
+<details class="answer-panel">
+<summary>
+Show answer and explanation
+</summary>
+<strong>Answer: C.</strong> Extension <span class="math inline">\(x=F/k=25/150=0.167\ \mathrm{m}\)</span>. Original length <span class="math inline">\(=0.55-0.167=0.383\ \mathrm{m}\approx0.38\ \mathrm{m}\)</span>.
+</details>
+</section>
+</section>
+<section id="deformation-stress-strain---hard" class="level3">
+<h3 class="anchored" data-anchor-id="deformation-stress-strain---hard">6.1 Deformation, Stress &amp; Strain - Hard</h3>
+<section id="example-10-6.1-mc-hard-q6" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-10-6.1-mc-hard-q6">Example 10 · 6.1 MC Hard Q6</h4>
+<p>A metal wire that is supported vertically from a fixed point has a load of 84 N applied to the lower end. The wire has a cross-sectional area of <span class="math inline">\(0.02\ \mathrm{mm^2}\)</span> and obeys Hooke’s law. The length of the wire increases by 0.30%.</p>
+<p>What is the Young modulus of the metal wire?</p>
+<p>A. <span class="math inline">\(1.4\times10^{12}\ \mathrm{Pa}\)</span></p>
+<p>B. <span class="math inline">\(1.4\times10^{10}\ \mathrm{Pa}\)</span></p>
+<p>C. <span class="math inline">\(1.4\times10^8\ \mathrm{Pa}\)</span></p>
+<p>D. <span class="math inline">\(1.4\times10^5\ \mathrm{Pa}\)</span></p>
+<details class="answer-panel">
+<summary>
+Show answer and explanation
+</summary>
+<strong>Answer: A.</strong> Stress <span class="math inline">\(=84/(0.02\times10^{-6})=4.2\times10^9\ \mathrm{Pa}\)</span>; strain <span class="math inline">\(=0.0030\)</span>. Young modulus <span class="math inline">\(=4.2\times10^9/0.0030=1.4\times10^{12}\ \mathrm{Pa}\)</span>.
+</details>
+</section>
+<section id="example-11-6.1-mc-hard-q7" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-11-6.1-mc-hard-q7">Example 11 · 6.1 MC Hard Q7</h4>
+<p>Two wires S and T are joined. S has a length of 3.0 m and T a length of 1.0 m; both wires have a uniform cross-sectional area.</p>
+<p>When a load was hung from the wires, S stretched by 1.5 mm and T by 1.0 mm.</p>
+<p>The same load is then hung from a second wire of the same cross-section, consisting of 1.0 m of metal S and 3.0 m of metal T.</p>
+<p>What is the total extension of this second wire?</p>
+<p>A. 3.5 mm</p>
+<p>B. 2.5 mm</p>
+<p>C. 5.0 mm</p>
+<p>D. 4.8 mm</p>
+<details class="answer-panel">
+<summary>
+Show answer and explanation
+</summary>
+<strong>Answer: A.</strong> Extension per metre: S gives <span class="math inline">\(1.5/3.0=0.5\ \mathrm{mm\,m^{-1}}\)</span> and T gives <span class="math inline">\(1.0/1.0=1.0\ \mathrm{mm\,m^{-1}}\)</span>. For the second wire, extension <span class="math inline">\(=1.0\times0.5+3.0\times1.0=3.5\ \mathrm{mm}\)</span>.
+</details>
+</section>
+<section id="example-12-6.1-mc-hard-q8" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-12-6.1-mc-hard-q8">Example 12 · 6.1 MC Hard Q8</h4>
+<p>Two steel wires X and Y that both obey Hooke’s law were used in an experiment. Wire X has a length <span class="math inline">\(l\)</span> and a cross-sectional area <span class="math inline">\(A\)</span>. Wire Y has a length of <span class="math inline">\(2l\)</span> and a cross-sectional area of <span class="math inline">\(\frac{A}{2}\)</span>.</p>
+<p>What is the ratio <span class="math inline">\(\frac{\text{tension in X}}{\text{tension in Y}}\)</span> when both wires are stretched to the same extension?</p>
+<p>A. 1</p>
+<p>B. 4</p>
+<p>C. 2</p>
+<p>D. <span class="math inline">\(\frac{1}{4}\)</span></p>
+<details class="answer-panel">
+<summary>
+Show answer and explanation
+</summary>
+<strong>Answer: B.</strong> For the same extension, <span class="math inline">\(F=EAe/L\)</span>. <span class="math inline">\(F_X=EAe/l\)</span>; <span class="math inline">\(F_Y=E(A/2)e/(2l)=EAe/(4l)=F_X/4\)</span>. Hence <span class="math inline">\(F_X/F_Y=4\)</span>.
+</details>
+</section>
+<section id="example-13-6.1-mc-hard-q9" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-13-6.1-mc-hard-q9">Example 13 · 6.1 MC Hard Q9</h4>
+<p>In order to measure the mass of flour, a set of scales needs to have high sensitivity for small masses and a low sensitivity with larger masses.</p>
+<p>To achieve this, two springs are used with different spring constants <span class="math inline">\(k\)</span>. One has a lower spring constant than the other.</p>
+<p>Which of the following sets of springs would be suitable for this purpose?</p>
+<p><img src="../assets/questions/deformation/mc-61-hard-q9-flour-scales.webp" class="question-figure img-fluid" alt="Four arrangements of springs with low and high spring constants"></p>
+<details class="answer-panel">
+<summary>
+Show answer and explanation
+</summary>
+<strong>Answer: D.</strong> The low-spring-constant spring provides high sensitivity for small masses, and the high-spring-constant spring takes over for larger masses, giving low sensitivity with larger loads.
+</details>
+</section>
+</section>
+<section id="elastic-plastic-behaviour---easy" class="level3">
+<h3 class="anchored" data-anchor-id="elastic-plastic-behaviour---easy">6.2 Elastic &amp; Plastic Behaviour - Easy</h3>
+<section id="example-14-6.2-mc-easy-q1" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-14-6.2-mc-easy-q1">Example 14 · 6.2 MC Easy Q1</h4>
+<p>A student experimented on a metal wire; the graph below was plotted.</p>
+<p><img src="../assets/questions/deformation/mc-62-easy-q1-wire-graph.webp" class="question-figure img-fluid" alt="Graph with axes to be labelled showing the area under the curve"></p>
+<p>The area under the graph shows the total strain energy stored in the wire when stretched.</p>
+<p>How should the axes be labelled?</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th></th>
+<th>Y</th>
+<th>X</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>A</td>
+<td>mass</td>
+<td>extension</td>
+</tr>
+<tr class="even">
+<td>B</td>
+<td>force</td>
+<td>extension</td>
+</tr>
+<tr class="odd">
+<td>C</td>
+<td>strain energy</td>
+<td>extension</td>
+</tr>
+<tr class="even">
+<td>D</td>
+<td>stress</td>
+<td>strain</td>
+</tr>
+</tbody>
+</table>
+<details class="answer-panel">
+<summary>
+Show answer and explanation
+</summary>
+<strong>Answer: B.</strong> The area under a force-extension graph is the work done, which equals the strain energy stored in the wire.
+</details>
+</section>
+<section id="example-15-6.2-mc-easy-q2" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-15-6.2-mc-easy-q2">Example 15 · 6.2 MC Easy Q2</h4>
+<p>Four rods were made from four different materials; all the rods had the same dimensions.</p>
+<p>At room temperature, which of the following would sustain the biggest plastic deformation?</p>
+<p>A. The ductile material steel</p>
+<p>B. The brittle material glass</p>
+<p>C. The brittle material carbon</p>
+<p>D. The ductile material aluminium</p>
+<details class="answer-panel">
+<summary>
+Show answer and explanation
+</summary>
+<strong>Answer: D.</strong> Aluminium is ductile and can sustain a larger plastic deformation than steel before breaking.
+</details>
+</section>
+<section id="example-16-6.2-mc-easy-q7" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-16-6.2-mc-easy-q7">Example 16 · 6.2 MC Easy Q7</h4>
+<p>A metal wire had a tension <span class="math inline">\(F\)</span> and extension <span class="math inline">\(x\)</span> with a Young modulus of <span class="math inline">\(E\)</span>; the wire obeyed Hooke’s law.</p>
+<p>Which expression represents the elastic strain energy stored in the wire?</p>
+<p>A. <span class="math inline">\(\frac{1}{2}Fx\)</span></p>
+<p>B. <span class="math inline">\(Ex\)</span></p>
+<p>C. <span class="math inline">\(\frac{1}{2}Ex\)</span></p>
+<p>D. <span class="math inline">\(Fx\)</span></p>
+<details class="answer-panel">
+<summary>
+Show answer and explanation
+</summary>
+<strong>Answer: A.</strong> The strain energy stored elastically is the area under the force-extension graph: <span class="math inline">\(\frac{1}{2}Fx\)</span>.
+</details>
+</section>
+<section id="example-17-6.2-mc-easy-q8" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-17-6.2-mc-easy-q8">Example 17 · 6.2 MC Easy Q8</h4>
+<p>Which of the following is the correct definition for elastic and plastic behaviour?</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Elastic behaviour of a material</th>
+<th>Plastic behaviour of a material</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>A</td>
+<td>returns to its original shape and size</td>
+</tr>
+<tr class="even">
+<td>B</td>
+<td>obeys Hooke’s law</td>
+</tr>
+<tr class="odd">
+<td>C</td>
+<td>has a linear force-extension curve</td>
+</tr>
+<tr class="even">
+<td>D</td>
+<td>extends only within the limit of proportionality</td>
+</tr>
+</tbody>
+</table>
+<details class="answer-panel">
+<summary>
+Show answer and explanation
+</summary>
+<strong>Answer: A.</strong> Elastic behaviour means the material returns to its original shape and size when the force is removed; plastic behaviour means it suffers permanent deformation.
+</details>
+</section>
+</section>
+<section id="elastic-plastic-behaviour---medium" class="level3">
+<h3 class="anchored" data-anchor-id="elastic-plastic-behaviour---medium">6.2 Elastic &amp; Plastic Behaviour - Medium</h3>
+<section id="example-18-6.2-mc-medium-q2" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-18-6.2-mc-medium-q2">Example 18 · 6.2 MC Medium Q2</h4>
+<p>A rod is extended with a force so that its length increases. The variation with load <span class="math inline">\(L\)</span> of the extension <span class="math inline">\(e\)</span> of the rod is shown in the graph. Point P is the elastic limit.</p>
+<p><img src="../assets/questions/deformation/mc-62-medium-q2-plastic-work.webp" class="question-figure img-fluid" alt="Load-extension graph for a rod with elastic limit marked at P"></p>
+<p>Which shaded area represents the work done during the plastic deformation of the rod?</p>
+<details class="answer-panel">
+<summary>
+Show answer and explanation
+</summary>
+<strong>Answer: B.</strong> The work done during plastic deformation is the area under the load-extension graph beyond the elastic limit P, i.e.&nbsp;the area between the curve and the vertical (load) axis beyond P.
+</details>
+</section>
+<section id="example-19-6.2-mc-medium-q6" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-19-6.2-mc-medium-q6">Example 19 · 6.2 MC Medium Q6</h4>
+<p>A student was investigating a spring with a spring constant <span class="math inline">\(k\)</span> of <span class="math inline">\(3.0\ \mathrm{N\,cm^{-1}}\)</span>; the spring was stretched over a range in which elastic deformation occurred.</p>
+<p>Which row, for the stated applied force, gives the correct extension and strain energy?</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th></th>
+<th>Force / N</th>
+<th>Extension / cm</th>
+<th>Strain energy / mJ</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>A</td>
+<td>24.0</td>
+<td>8.0</td>
+<td>960</td>
+</tr>
+<tr class="even">
+<td>B</td>
+<td>12.0</td>
+<td>3.0</td>
+<td>200</td>
+</tr>
+<tr class="odd">
+<td>C</td>
+<td>6.0</td>
+<td>2.0</td>
+<td>120</td>
+</tr>
+<tr class="even">
+<td>D</td>
+<td>3.0</td>
+<td>1.0</td>
+<td>15</td>
+</tr>
+</tbody>
+</table>
+<details class="answer-panel">
+<summary>
+Show answer and explanation
+</summary>
+<strong>Answer: A.</strong> For <span class="math inline">\(F=24\ \mathrm{N}\)</span>, <span class="math inline">\(x=F/k=24/3.0=8.0\ \mathrm{cm}\)</span> and strain energy <span class="math inline">\(=\frac{1}{2}Fx=\frac{1}{2}\times24\times0.080=0.96\ \mathrm{J}=960\ \mathrm{mJ}\)</span>.
+</details>
+</section>
+</section>
+<section id="elastic-plastic-behaviour---hard" class="level3">
+<h3 class="anchored" data-anchor-id="elastic-plastic-behaviour---hard">6.2 Elastic &amp; Plastic Behaviour - Hard</h3>
+<section id="example-20-6.2-mc-hard-q2" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-20-6.2-mc-hard-q2">Example 20 · 6.2 MC Hard Q2</h4>
+<p>A material with elastic properties that obeys Hooke’s law has a Young modulus <span class="math inline">\(E\)</span> and has a tensile stress of <span class="math inline">\(S\)</span> applied.</p>
+<p>What is the expression for the elastic energy stored per unit volume of the material?</p>
+<p>A. <span class="math inline">\(\frac{E}{2S^2}\)</span></p>
+<p>B. <span class="math inline">\(\frac{S^2}{2E}\)</span></p>
+<p>C. <span class="math inline">\(\frac{S}{2E}\)</span></p>
+<p>D. <span class="math inline">\(\frac{S}{2}\)</span></p>
+<details class="answer-panel">
+<summary>
+Show answer and explanation
+</summary>
+<strong>Answer: B.</strong> Strain energy per unit volume is <span class="math inline">\(\frac{1}{2}\sigma\varepsilon=\frac{1}{2}S\times\frac{S}{E}=\frac{S^2}{2E}\)</span>.
+</details>
+</section>
+</section>
+</section>
+<section id="structured-questions" class="level2">
+<h2 class="anchored" data-anchor-id="structured-questions">Structured Questions</h2>
+<section id="deformation-stress-strain---easy-1" class="level3">
+<h3 class="anchored" data-anchor-id="deformation-stress-strain---easy-1">6.1 Deformation, Stress &amp; Strain - Easy</h3>
+<section id="example-1-6.1-sq-easy-q1" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-1-6.1-sq-easy-q1">Example 1 · 6.1 SQ Easy Q1</h4>
+<p>Forces can change the motion of a body, or cause deformation.</p>
+<p><strong>(a)</strong> State:</p>
+<p><strong>(i)</strong> the definition of deformation; <code>[1]</code></p>
+<p><strong>(ii)</strong> the name of the force which stretches an object; <code>[1]</code></p>
+<p><strong>(iii)</strong> the name of the force which squashes an object. <code>[1]</code></p>
+<p><code>[3 marks]</code></p>
+<p><strong>(b)</strong> Hooke’s Law can be applied to objects which are stretched or compressed.</p>
+<p>State the equation for Hooke’s Law, defining any terms used. <code>[2 marks]</code></p>
+<p><strong>(c)</strong> A spring is suspended from a stand as shown in Fig. 1.1 and has a load of 5.0 N applied to it. The spring extends by 4.2 cm.</p>
+<p><img src="../assets/questions/deformation/sq-61-easy-q1c-spring.webp" class="question-figure img-fluid" alt="Spring suspended from a stand with a 5.0 N load applied"></p>
+<p>Calculate the spring constant, expressing your answer in SI units. <code>[3 marks]</code></p>
+<p><strong>(d)</strong> Another, thicker spring is attached to a base so that it stands upright, as shown in Fig. 1.2.</p>
+<p><img src="../assets/questions/deformation/sq-61-easy-q1d-spring-compress.webp" class="question-figure img-fluid" alt="Thicker spring compressed by a 6.3 N force, before and after compression"></p>
+<p>A force of 6.3 N pushes down on the spring which compresses it by 2.4 cm.</p>
+<p>Calculate the spring constant, expressing your answer in SI units. <code>[3 marks]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<ul>
+<li><strong>(a)(i)</strong> Deformation is a change in the size or shape of an object. <code>[1]</code></li>
+<li><strong>(a)(ii)</strong> Tensile force (or tensile stress). <code>[1]</code></li>
+<li><strong>(a)(iii)</strong> Compressive force (or compressive stress). <code>[1]</code></li>
+<li><strong>(b)</strong> <span class="math inline">\(F=kx\)</span>, where <span class="math inline">\(F\)</span> is the applied force, <span class="math inline">\(k\)</span> is the spring constant and <span class="math inline">\(x\)</span> is the extension. <code>[2]</code></li>
+<li><strong>(c)</strong> <span class="math inline">\(x=4.2\ \mathrm{cm}=0.042\ \mathrm{m}\)</span>. <code>[1]</code> <span class="math inline">\(k=F/x=5.0/0.042\)</span>. <code>[1]</code> <span class="math inline">\(k=119\ \mathrm{N\,m^{-1}}\)</span>. <code>[1]</code></li>
+<li><strong>(d)</strong> <span class="math inline">\(x=2.4\ \mathrm{cm}=0.024\ \mathrm{m}\)</span>. <code>[1]</code> <span class="math inline">\(k=6.3/0.024\)</span>. <code>[1]</code> <span class="math inline">\(k=260\ \mathrm{N\,m^{-1}}\)</span> (2 s.f.). <code>[1]</code></li>
+</ul>
+</details>
+</section>
+<section id="example-2-6.1-sq-easy-q2" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-2-6.1-sq-easy-q2">Example 2 · 6.1 SQ Easy Q2</h4>
+<p><strong>(a)</strong> Define:</p>
+<p><strong>(i)</strong> tensile stress; <code>[1]</code></p>
+<p><strong>(ii)</strong> tensile strain; <code>[1]</code></p>
+<p><strong>(iii)</strong> the Young modulus. <code>[1]</code></p>
+<p><code>[3 marks]</code></p>
+<p><strong>(b)</strong> Fig. 1.1 shows stress-strain graphs for two different metal wires X and Y.</p>
+<p><img src="../assets/questions/deformation/sq-61-easy-q2b-stress-strain.webp" class="question-figure img-fluid" alt="Stress-strain graphs for two metal wires X and Y"></p>
+<p>Fill in the missing labels on Fig. 1.1 and state the definitions of these terms. <code>[4 marks]</code></p>
+<p><strong>(c)</strong> State and explain which wire, X or Y, has the greater Young modulus. <code>[2 marks]</code></p>
+<p><strong>(d)</strong> Use the graph in Fig. 1.1 to determine:</p>
+<p><strong>(i)</strong> the Young modulus of wire X and state the unit; <code>[2]</code></p>
+<p><strong>(ii)</strong> the extension of wire Y when the stress is 1.2 GPa, and state the unit. Original length of wire Y <span class="math inline">\(=2.0\ \mathrm{m}\)</span>. <code>[4]</code></p>
+<p><code>[6 marks]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<ul>
+<li><strong>(a)(i)</strong> Tensile stress is the force per unit cross-sectional area: <span class="math inline">\(\sigma=F/A\)</span>. <code>[1]</code></li>
+<li><strong>(a)(ii)</strong> Tensile strain is the extension per unit original length: <span class="math inline">\(\varepsilon=x/L\)</span>. <code>[1]</code></li>
+<li><strong>(a)(iii)</strong> The Young modulus is the ratio of tensile stress to tensile strain. <code>[1]</code></li>
+<li><strong>(b)</strong> Label the axes (stress and strain) and mark the ultimate tensile strength on the graph. <code>[2]</code> UTS is the maximum stress the wire can support before it breaks. <code>[2]</code></li>
+<li><strong>(c)</strong> Wire X has the greater Young modulus <code>[1]</code> because its stress-strain graph has a steeper gradient. <code>[1]</code></li>
+<li><strong>(d)(i)</strong> From the graph, when stress <span class="math inline">\(=1.6\ \mathrm{GPa}\)</span>, strain <span class="math inline">\(=2.0\times10^{-3}\)</span>. <code>[1]</code> <span class="math inline">\(E=\sigma/\varepsilon=1.6\times10^9/(2.0\times10^{-3})=8.0\times10^{11}\ \mathrm{Pa}\)</span>. <code>[1]</code></li>
+<li><strong>(d)(ii)</strong> At stress <span class="math inline">\(1.2\ \mathrm{GPa}\)</span>, read strain from the graph for wire Y. <code>[1]</code> Extension <span class="math inline">\(=\text{strain}\times L\)</span>. <code>[1]</code> Using the printed graph gives an extension of about <span class="math inline">\(2.4\ \mathrm{mm}\)</span> (values read from the graph). <code>[2]</code></li>
+</ul>
+</details>
+</section>
+<section id="example-3-6.1-sq-easy-q3" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-3-6.1-sq-easy-q3">Example 3 · 6.1 SQ Easy Q3</h4>
+<p>A student is carrying out an experiment to determine the Young modulus of a wire. The student sets up the apparatus as shown in Fig. 1.1.</p>
+<p><img src="../assets/questions/deformation/sq-61-easy-q3a-apparatus.webp" class="question-figure img-fluid" alt="Apparatus for determining the Young modulus of a wire"></p>
+<p><strong>(a)</strong> Fill in the missing labels for the apparatus in Fig. 1.1. <code>[5 marks]</code></p>
+<p><strong>(b)</strong> State and explain a safety consideration for this experiment. <code>[2 marks]</code></p>
+<p><strong>(c)</strong> On the axis of Fig. 1.2 below, draw a graph to show the expected variation of strain with stress for this experiment. Assume that the wire does not stretch beyond the limit of proportionality.</p>
+<p><img src="../assets/questions/deformation/sq-61-easy-q3c-axes.webp" class="question-figure img-fluid" alt="Empty axes for stress against strain"></p>
+<p><code>[2 marks]</code></p>
+<p><strong>(d)</strong> Explain how the student could use the graph in Fig. 1.2 to determine the Young modulus of the wire. <code>[2 marks]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<ul>
+<li><strong>(a)</strong> Labels include: fixed support / clamp, wire, masses (or load), metre rule for length, vernier scale (or marker) for extension, micrometer for the diameter. <code>[5]</code></li>
+<li><strong>(b)</strong> Wear safety glasses because the wire may snap and could damage the eyes; <code>[1]</code> also ensure the masses cannot fall and hit the feet if the wire breaks. <code>[1]</code></li>
+<li><strong>(c)</strong> A straight line through the origin, with stress on the vertical axis and strain on the horizontal axis. <code>[2]</code></li>
+<li><strong>(d)</strong> The Young modulus is the gradient of the stress-strain graph. <code>[2]</code></li>
+</ul>
+</details>
+</section>
+</section>
+<section id="deformation-stress-strain---medium-1" class="level3">
+<h3 class="anchored" data-anchor-id="deformation-stress-strain---medium-1">6.1 Deformation, Stress &amp; Strain - Medium</h3>
+<section id="example-4-6.1-sq-medium-q2" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-4-6.1-sq-medium-q2">Example 4 · 6.1 SQ Medium Q2</h4>
+<p><strong>(a)</strong> Define work done by a force. <code>[1 mark]</code></p>
+<p><strong>(b)</strong> A heavy suitcase is placed on a weighing machine consisting of a platform mounted on a spring, as shown in Fig. 1.1.</p>
+<p><img src="../assets/questions/deformation/sq-61-medium-q2b-suitcase.webp" class="question-figure img-fluid" alt="Suitcase on a weighing platform mounted on a spring"></p>
+<p>Describe and explain how work is done in this situation. <code>[3 marks]</code></p>
+<p><strong>(c)</strong> The diagram in Fig. 1.2 shows a suitcase of mass 22.6 kg positioned on the weighing platform.</p>
+<p><img src="../assets/questions/deformation/sq-61-medium-q2c-suitcase2.webp" class="question-figure img-fluid" alt="Suitcase of mass 22.6 kg on the weighing platform"></p>
+<p>The platform sinks down 3 cm when the suitcase is placed on it, and then returns to its original position when the suitcase is removed.</p>
+<p>Calculate the spring constant of the spring. <code>[2 marks]</code></p>
+<p><strong>(d)</strong> For the weighing platform described in part (c), sketch a graph to show the known properties of the spring. <code>[4 marks]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<ul>
+<li><strong>(a)</strong> Work done is force multiplied by the displacement in the direction of the force. <code>[1]</code></li>
+<li><strong>(b)</strong> The weight of the suitcase acts downwards; <code>[1]</code> work is done in compressing the spring; <code>[1]</code> this energy is transferred to elastic potential energy (and a little to thermal energy). <code>[1]</code></li>
+<li><strong>(c)</strong> Force <span class="math inline">\(=mg=22.6\times9.81=222\ \mathrm{N}\)</span>. <code>[1]</code> <span class="math inline">\(k=F/x=222/0.03=7400\ \mathrm{N\,m^{-1}}\)</span>. <code>[1]</code></li>
+<li><strong>(d)</strong> Force on the vertical axis and extension on the horizontal axis, <code>[1]</code> with a straight line through the origin from <span class="math inline">\((0,0)\)</span> to <span class="math inline">\((0.03, 222)\)</span>, <code>[2]</code> showing the spring obeys Hooke’s law within this range. <code>[1]</code></li>
+</ul>
+</details>
+</section>
+<section id="example-5-6.1-sq-medium-q3" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-5-6.1-sq-medium-q3">Example 5 · 6.1 SQ Medium Q3</h4>
+<p><strong>(a)</strong> Fig. 1.1 is a graph of stress against strain for two wires, X and Y. The wires are made from different materials but have the same dimensions.</p>
+<p><img src="../assets/questions/deformation/sq-61-medium-q3a-stress-strain.webp" class="question-figure img-fluid" alt="Stress-strain graphs for two wires X and Y with breaking points Fx and Fy"></p>
+<p><strong>(i)</strong> Describe, giving reasons for your answer, three properties of material X. <code>[6]</code></p>
+<p><strong>(ii)</strong> State the meaning of points <span class="math inline">\(F_X\)</span> and <span class="math inline">\(F_Y\)</span> and explain their significance. <code>[2]</code></p>
+<p><code>[8 marks]</code></p>
+<p><strong>(b)</strong> State and explain which wire would be more suitable for use as cables and structural beams. <code>[2 marks]</code></p>
+<p><strong>(c)</strong> A group of physics students are told that they will be performing the investigation which leads to the graph in part (a).</p>
+<p>State two safety precautions which they must take and explain your answer. <code>[2 marks]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<ul>
+<li><strong>(a)(i)</strong> Any three, each with a reason: X has a larger Young modulus (steeper gradient); <code>[2]</code> X does not undergo significant elastic deformation before breaking (the line stays straight); <code>[2]</code> X is stronger (higher breaking stress); <code>[2]</code> or X is brittle (no plastic region). <code>[2]</code></li>
+<li><strong>(a)(ii)</strong> <span class="math inline">\(F_X\)</span> and <span class="math inline">\(F_Y\)</span> are the breaking points (ultimate tensile strengths) of X and Y. <code>[1]</code> They show the maximum stress each material can withstand before breaking. <code>[1]</code></li>
+<li><strong>(b)</strong> Wire Y is more suitable for cables and beams <code>[1]</code> because it undergoes plastic deformation and gives warning before breaking, whereas wire X fails suddenly (brittle). <code>[1]</code></li>
+<li><strong>(c)</strong> Wear safety glasses or goggles because the wires may snap and cause eye damage; <code>[1]</code> keep feet clear / ensure masses are secured so that they cannot fall if the wire breaks. <code>[1]</code></li>
+</ul>
+</details>
+</section>
+<section id="example-6-6.1-sq-medium-q4" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-6-6.1-sq-medium-q4">Example 6 · 6.1 SQ Medium Q4</h4>
+<p>Fitness equipment often uses springs as a method of creating resistance. One example is the Push Down Bar, which the manufacturer says can help a person who uses it to ‘increase strength and burn calories’.</p>
+<p>To use a Push Down Bar, a person applies force by pushing the handles towards each other as shown in Fig. 1.1. Fig. 1.2 shows the construction of the Push Down Bar.</p>
+<p><img src="../assets/questions/deformation/sq-61-medium-q4a-pushdown.webp" class="question-figure img-fluid" alt="Push Down Bar with springs and hand grips"></p>
+<p><strong>(a)</strong></p>
+<p><strong>(i)</strong> State the type of force used when exercising with this equipment. <code>[1]</code></p>
+<p><strong>(ii)</strong> Explain why using this equipment would help the person burn calories. <code>[3]</code></p>
+<p><code>[4 marks]</code></p>
+<p><strong>(b)</strong> The relationship between applied force and change in length of the springs was measured for a range of values of force. The results are plotted on the graph in Fig. 1.3.</p>
+<p><img src="../assets/questions/deformation/sq-61-medium-q4b-graph.webp" class="question-figure img-fluid" alt="Graph of force against compression for the springs"></p>
+<p><strong>(i)</strong> State, with a reason, whether the spring obeys Hooke’s law over the range of values tested. <code>[2]</code></p>
+<p><strong>(ii)</strong> Use the graph in Fig. 1.3 to calculate the spring constant, stating an appropriate unit. <code>[3]</code></p>
+<p><code>[5 marks]</code></p>
+<p><strong>(c)</strong> Derive the formula for the elastic potential energy stored by the spring from the graph of force against extension. <code>[4 marks]</code></p>
+<p><strong>(d)</strong> State and explain whether the material chosen for the spring for the equipment in Fig. 1.1 should exhibit elastic or plastic behaviour. <code>[2 marks]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<ul>
+<li><strong>(a)(i)</strong> Compressive force. <code>[1]</code></li>
+<li><strong>(a)(ii)</strong> A force is applied across a distance, so work is done; <code>[1]</code> the work is done to compress the springs; <code>[1]</code> energy is transferred from the person’s chemical energy, so calories are burned. <code>[1]</code></li>
+<li><strong>(b)(i)</strong> Yes, the spring obeys Hooke’s law <code>[1]</code> because the graph is a straight line through the origin. <code>[1]</code></li>
+<li><strong>(b)(ii)</strong> Spring constant is the gradient of the graph. <code>[1]</code> Using a large triangle on the straight line gives <span class="math inline">\(k=\Delta F/\Delta x\)</span>. <code>[1]</code> From the printed graph, <span class="math inline">\(k=1600\ \mathrm{N\,m^{-1}}\)</span>. <code>[1]</code></li>
+<li><strong>(c)</strong> The work done is the area under the force-extension graph. <code>[1]</code> The area is a triangle: <span class="math inline">\(\frac{1}{2}\times\text{base}\times\text{height}\)</span>. <code>[1]</code> Hence <span class="math inline">\(E_P=\frac{1}{2}\times x\times F\)</span>. <code>[1]</code> Since <span class="math inline">\(F=kx\)</span>, <span class="math inline">\(E_P=\frac{1}{2}kx^2\)</span>. <code>[1]</code></li>
+<li><strong>(d)</strong> The spring should exhibit elastic behaviour <code>[1]</code> so that it returns to its original shape after each use and can be used repeatedly. <code>[1]</code></li>
+</ul>
+</details>
+</section>
+<section id="example-7-6.1-sq-medium-q5" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-7-6.1-sq-medium-q5">Example 7 · 6.1 SQ Medium Q5</h4>
+<p>Nichrome is a common alloy used to make coins and heating elements in electrical appliances. It consists of 80% by volume of nickel and 20% by volume of chromium.</p>
+<p><strong>(a)</strong> Determine the mass of nickel and the mass of chromium required to make a wire of nichrome of volume <span class="math inline">\(0.50\times10^{-5}\ \mathrm{m^3}\)</span>.</p>
+<ul>
+<li>Density of nickel <span class="math inline">\(=8.9\times10^3\ \mathrm{kg\,m^{-3}}\)</span></li>
+<li>Density of chromium <span class="math inline">\(=7.1\times10^3\ \mathrm{kg\,m^{-3}}\)</span> <code>[2 marks]</code></li>
+</ul>
+<p><strong>(b)</strong> To calculate the breaking stress of the nichrome wire, both the cross-sectional area of the wire and the applied load must be known.</p>
+<p>For each value, briefly describe an experimental method to determine the value, mentioning any equipment required.</p>
+<p><strong>(i)</strong> The cross-sectional area of the wire. <code>[2]</code></p>
+<p><strong>(ii)</strong> The applied load. <code>[2]</code></p>
+<p><code>[4 marks]</code></p>
+<p><strong>(c)</strong> The radius of the nichrome wire is 5.7 mm. The wire breaks under an applied force of 72 kN.</p>
+<p>Calculate the breaking stress of nichrome. <code>[3 marks]</code></p>
+<p><strong>(d)</strong> The breaking stress of nickel is 59 MPa. The breaking stress of chromium is 131 MPa.</p>
+<p>Use your answer to part (c) to suggest why nichrome is a suitable material for making coins. <code>[2 marks]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<ul>
+<li><strong>(a)</strong> Volume of nickel <span class="math inline">\(=0.80\times0.50\times10^{-5}=4.0\times10^{-6}\ \mathrm{m^3}\)</span>; mass <span class="math inline">\(=8.9\times10^3\times4.0\times10^{-6}=0.0356\ \mathrm{kg}\)</span>. <code>[1]</code> Volume of chromium <span class="math inline">\(=1.0\times10^{-6}\ \mathrm{m^3}\)</span>; mass <span class="math inline">\(=7.1\times10^3\times1.0\times10^{-6}=0.0071\ \mathrm{kg}\)</span>. <code>[1]</code></li>
+<li><strong>(b)(i)</strong> Measure the diameter at several places with a micrometer screw gauge and calculate the area from <span class="math inline">\(A=\pi d^2/4\)</span>. <code>[2]</code></li>
+<li><strong>(b)(ii)</strong> Measure the load with a calibrated force meter or by adding known masses and using <span class="math inline">\(F=mg\)</span>. <code>[2]</code></li>
+<li><strong>(c)</strong> Area <span class="math inline">\(=\pi(5.7\times10^{-3})^2=1.02\times10^{-4}\ \mathrm{m^2}\)</span>. <code>[1]</code> Breaking stress <span class="math inline">\(=F/A=72\times10^3/(1.02\times10^{-4})\)</span>. <code>[1]</code> <span class="math inline">\(=7.05\times10^8\ \mathrm{Pa}\)</span>. <code>[1]</code></li>
+<li><strong>(d)</strong> The breaking stress of nichrome lies between the values for nickel and chromium, and is high enough to resist normal wear in coins. <code>[2]</code></li>
+</ul>
+</details>
+</section>
+</section>
+<section id="elastic-plastic-behaviour---medium-1" class="level3">
+<h3 class="anchored" data-anchor-id="elastic-plastic-behaviour---medium-1">6.2 Elastic &amp; Plastic Behaviour - Medium</h3>
+<section id="example-8-6.2-sq-medium-q1" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-8-6.2-sq-medium-q1">Example 8 · 6.2 SQ Medium Q1</h4>
+<p>A manufacturer produces springs for use in school laboratory investigations. As part of quality control, the springs are spot-checked by measuring the extension produced for certain applied loads.</p>
+<p>The graph of the testing data is shown in Fig. 1.1.</p>
+<p><img src="../assets/questions/deformation/sq-62-medium-q1a-spring-graph.webp" class="question-figure img-fluid" alt="Graph of load against extension for the spring with points A and B"></p>
+<p><strong>(a)</strong> Use a graphical method to calculate the spring constant of the spring. Show your working. <code>[3 marks]</code></p>
+<p><strong>(b)</strong> Show that the work done in extending the spring up to point A is approximately 0.5 J. <code>[3 marks]</code></p>
+<p><strong>(c)</strong> When the spring reaches an extension of 0.046 m, the load on it is gradually reduced to zero.</p>
+<p>On the graph in Fig. 1.1, sketch how the extension of the spring will vary with load as the load is reduced to zero. Explain why the graph has this shape. <code>[3 marks]</code></p>
+<p><strong>(d)</strong> Without further calculation, compare the total work done by the spring when the load is removed with the work that was done by the load in producing the extension of 0.046 m. Explain how this is represented on the graph drawn in part (c). <code>[3 marks]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<ul>
+<li><strong>(a)</strong> Mark a large triangle on the straight part of the line and use <span class="math inline">\(k=\Delta F/\Delta x\)</span>. <code>[1]</code> Taking values from the graph gives <span class="math inline">\(k=\Delta y/\Delta x=30/0.026\)</span>. <code>[1]</code> <span class="math inline">\(k=1154\ \mathrm{N\,m^{-1}}\)</span>. <code>[1]</code></li>
+<li><strong>(b)</strong> Work done is the area under the graph up to point A. <code>[1]</code> Triangle area <span class="math inline">\(=\frac{1}{2}\times0.026\times30=0.39\ \mathrm{J}\)</span> and rectangle area <span class="math inline">\(=0.003\times30=0.09\ \mathrm{J}\)</span>. <code>[1]</code> Total <span class="math inline">\(=0.39+0.09+0.005=0.485\ \mathrm{J}\approx0.5\ \mathrm{J}\)</span>. <code>[1]</code></li>
+<li><strong>(c)</strong> When the load is reduced, the spring has been permanently deformed, so the unloading line is straight and returns to the extension axis at about <span class="math inline">\(0.013-0.014\ \mathrm{m}\)</span>. <code>[2]</code> This is because the spring has undergone plastic deformation. <code>[1]</code></li>
+<li><strong>(d)</strong> The work done by the spring when unloaded is less than the work done by the load in extending it. <code>[1]</code> On the graph, the work done is the area under the respective curve, <code>[1]</code> so the area under the unloading line is smaller than the area under the loading line. <code>[1]</code></li>
+</ul>
+</details>
+</section>
+<section id="example-9-6.2-sq-medium-q2" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-9-6.2-sq-medium-q2">Example 9 · 6.2 SQ Medium Q2</h4>
+<p>Materials scientists are asked to produce a material which would be suitable to use in constructing the wing of an aeroplane.</p>
+<p>The team of scientists work with two materials, an aluminium alloy and a carbon fibre composite.</p>
+<p><strong>(a)</strong> Suggest a material property which the scientists are likely to investigate and report on, and give a reason. <code>[2 marks]</code></p>
+<p><strong>(b)</strong> Fig. 1.1 shows the stress-strain graph that the scientists obtain for the aluminium alloy. They have labelled a point Q on the graph.</p>
+<p><img src="../assets/questions/deformation/sq-62-medium-q2b-aluminium.webp" class="question-figure img-fluid" alt="Stress-strain graph for an aluminium alloy with point Q marked"></p>
+<p><strong>(i)</strong> State the name of point Q and suggest why the scientists have drawn attention to it. <code>[3]</code></p>
+<p><strong>(ii)</strong> Use the graph to determine the Young modulus of the aluminium alloy. Show your working. <code>[3]</code></p>
+<p><code>[6 marks]</code></p>
+<p><strong>(c)</strong> The aluminium alloy wire has a diameter of 1.2 mm. Calculate the elastic potential energy stored in the wire when it shows an extension of 7.5 cm under a total strain of 190 MPa. <code>[6 marks]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<ul>
+<li><strong>(a)</strong> Breaking stress (or Young modulus / stiffness), <code>[1]</code> because the wing must withstand large forces without breaking or excessive deformation. <code>[1]</code></li>
+<li><strong>(b)(i)</strong> Point Q is the elastic limit. <code>[1]</code> Beyond this point the material no longer returns to its original length or shape when the force is removed. <code>[2]</code></li>
+<li><strong>(b)(ii)</strong> Mark a large triangle on the straight part of the graph and use <span class="math inline">\(E=\Delta\sigma/\Delta\varepsilon\)</span>. <code>[1]</code> Taking values from the graph gives gradient <span class="math inline">\(=\frac{400\times10^6}{0.053}\)</span>. <code>[1]</code> <span class="math inline">\(E=7.5\times10^9\ \mathrm{Pa}\)</span>. <code>[1]</code></li>
+<li><strong>(c)</strong> Stress <span class="math inline">\(\sigma=190\ \mathrm{MPa}=1.90\times10^8\ \mathrm{Pa}\)</span>; extension <span class="math inline">\(x=0.075\ \mathrm{m}\)</span>; area <span class="math inline">\(A=\pi(0.6\times10^{-3})^2=1.13\times10^{-6}\ \mathrm{m^2}\)</span>. <code>[2]</code> Elastic strain energy <span class="math inline">\(=\frac{1}{2}Fx=\frac{1}{2}\times\sigma Ax\)</span>. <code>[2]</code> <span class="math inline">\(E_P=\frac{1}{2}\times1.90\times10^8\times1.13\times10^{-6}\times0.075\)</span>. <code>[1]</code> <span class="math inline">\(E_P=12\,700\ \mathrm{J}\)</span>. <code>[1]</code></li>
+</ul>
+</details>
+</section>
+<section id="example-10-6.2-sq-medium-q3" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-10-6.2-sq-medium-q3">Example 10 · 6.2 SQ Medium Q3</h4>
+<p>A steel bar is 40 mm long and has cross-sectional area <span class="math inline">\(4.5\times10^{-4}\ \mathrm{m^2}\)</span>.</p>
+<p>The bar is compressed using a vice so that the length is reduced by 0.20 mm.</p>
+<p>The Young modulus of steel <span class="math inline">\(=2.1\times10^{11}\ \mathrm{Pa}\)</span>.</p>
+<p><strong>(a)</strong> Calculate the compressive force exerted on the bar. <code>[2 marks]</code></p>
+<p><strong>(b)</strong> Calculate the work done compressing the bar. <code>[2 marks]</code></p>
+<p><strong>(c)</strong> For the compression described in part (a):</p>
+<p><strong>(i)</strong> sketch a graph to show the compression, assuming that the elastic limit has not been reached; <code>[2]</code></p>
+<p><strong>(ii)</strong> suggest how the elastic potential energy could be ascertained from the graph. <code>[1]</code></p>
+<p><code>[3 marks]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<ul>
+<li><strong>(a)</strong> <span class="math inline">\(F=EA\Delta L/L=2.1\times10^{11}\times4.5\times10^{-4}\times0.0002/0.040\)</span>. <code>[1]</code> <span class="math inline">\(F=4.7\times10^5\ \mathrm{N}\)</span>. <code>[1]</code></li>
+<li><strong>(b)</strong> Work done <span class="math inline">\(=\frac{1}{2}F\Delta L=\frac{1}{2}\times4.7\times10^5\times0.0002\)</span>. <code>[1]</code> <span class="math inline">\(W=47\ \mathrm{J}\)</span>. <code>[1]</code></li>
+<li><strong>(c)(i)</strong> A straight line through the origin with force on the vertical axis and compression on the horizontal axis, ending at <span class="math inline">\((0.0002,\ 4.7\times10^5)\)</span>. <code>[2]</code></li>
+<li><strong>(c)(ii)</strong> The elastic potential energy is the area under the force-compression graph. <code>[1]</code></li>
+</ul>
+</details>
+</section>
+</section>
+</section>
+<section id="chapter-checklist" class="level2">
+<h2 class="anchored" data-anchor-id="chapter-checklist">Chapter checklist</h2>
+<ul class="task-list">
+<li><label><input type="checkbox">I can use Hooke’s law and the spring constant.</label></li>
+<li><label><input type="checkbox">I can calculate stress, strain and the Young modulus.</label></li>
+<li><label><input type="checkbox">I can describe the Young modulus experiment and its safety precautions.</label></li>
+<li><label><input type="checkbox">I can interpret stress-strain graphs for ductile, brittle and elastic materials.</label></li>
+<li><label><input type="checkbox">I can calculate elastic strain energy from graphs and formulae.</label></li>
+</ul>
+<section id="original-question-pdfs" class="level3">
+<h3 class="anchored" data-anchor-id="original-question-pdfs">Original question PDFs</h3>
+<ul>
+<li><a href="https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/deformation/6.1-deformation-stress-strain-c-easy.pdf">6.1 Deformation, Stress &amp; Strain - MC Easy</a></li>
+<li><a href="https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/deformation/6.1-deformation-stress-strain-c-medium.pdf">6.1 Deformation, Stress &amp; Strain - MC Medium</a></li>
+<li><a href="https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/deformation/6.1-deformation-stress-strain-c-hard.pdf">6.1 Deformation, Stress &amp; Strain - MC Hard</a></li>
+<li><a href="https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/deformation/6.1-deformation-stress-strain-sq-easy.pdf">6.1 Deformation, Stress &amp; Strain - SQ Easy</a></li>
+<li><a href="https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/deformation/6.1-deformation-stress-strain-sq-medium.pdf">6.1 Deformation, Stress &amp; Strain - SQ Medium</a></li>
+<li><a href="https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/deformation/6.2-deformation-elastic-plastic-c-easy.pdf">6.2 Elastic &amp; Plastic Behaviour - MC Easy</a></li>
+<li><a href="https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/deformation/6.2-deformation-elastic-plastic-c-medium.pdf">6.2 Elastic &amp; Plastic Behaviour - MC Medium</a></li>
+<li><a href="https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/deformation/6.2-deformation-elastic-plastic-c-hard.pdf">6.2 Elastic &amp; Plastic Behaviour - MC Hard</a></li>
+<li><a href="https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/deformation/6.2-deformation-elastic-plastic-sq-medium.pdf">6.2 Elastic &amp; Plastic Behaviour - SQ Medium</a></li>
+</ul>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll(".done-toggle input").forEach((input) => {
+    const key = `cie-physics-${input.dataset.progress}`;
+    input.checked = localStorage.getItem(key) === "true";
+    input.closest(".question-card")?.classList.toggle("is-complete", input.checked);
+    input.addEventListener("change", () => {
+      localStorage.setItem(key, input.checked);
+      input.closest(".question-card")?.classList.toggle("is-complete", input.checked);
+    });
+  });
+
+  document.querySelectorAll(".mc-question").forEach((card) => {
+    const answer = card.dataset.answer;
+    const feedback = card.querySelector(".mc-feedback");
+    const check = card.querySelector(".check-answer");
+    let selected = localStorage.getItem(`cie-physics-${card.id}-choice`) || "";
+
+    const showSelection = () => {
+      card.querySelectorAll(".mc-choice").forEach((choice) => {
+        choice.classList.toggle("is-selected", choice.dataset.choice === selected);
+      });
+    };
+    showSelection();
+
+    card.querySelectorAll(".mc-choice").forEach((choice) => {
+      choice.addEventListener("click", () => {
+        selected = choice.dataset.choice;
+        localStorage.setItem(`cie-physics-${card.id}-choice`, selected);
+        feedback.textContent = "";
+        feedback.className = "mc-feedback";
+        showSelection();
+      });
+    });
+
+    check?.addEventListener("click", () => {
+      if (!selected) {
+        feedback.textContent = "Select an answer first.";
+        feedback.className = "mc-feedback is-pending";
+        return;
+      }
+      const correct = selected === answer;
+      feedback.textContent = correct ? "Correct." : `Not quite. The correct answer is ${answer}.`;
+      feedback.className = `mc-feedback ${correct ? "is-correct" : "is-incorrect"}`;
+    });
+  });
+});
+</script>
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "已复制");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "已复制");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../as-level/05-work-energy-power.html" class="pagination-link" aria-label="5 Work, energy and power">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">5 Work, energy and power</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../a-level/12-motion-in-a-circle.html" class="pagination-link" aria-label="12 Motion in a circle">
+        <span class="nav-page-text">12 Motion in a circle</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>
