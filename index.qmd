@@ -55,6 +55,25 @@ subtitle: "2025–2027 syllabus · 9702"
 :::
 
 ::: {.topic-card}
+### [7 Waves](as-level/07-waves.qmd)
+
+- 7.1 Progressive waves: wave equation, phase difference, intensity and CRO traces
+- 7.2 Transverse and longitudinal waves: wave types and the Doppler effect for sound
+- 7.3 Electromagnetic spectrum: regions, wavelength ranges and polarisation with Malus's law
+- 20 Multiple Choice and 6 Structured Questions; 18 of the MC and all 12 SQ figures use independently extracted images
+:::
+
+::: {.topic-card}
+### [8 Superposition](as-level/08-superposition.qmd)
+
+- 8.1 Stationary waves: formation, nodes and antinodes, stretched strings and air columns, microwave experiments
+- 8.2 Diffraction: spreading of waves, effect of gap width relative to wavelength
+- 8.3 Interference: two-source interference, coherence, Young's double-slit experiment with $\lambda = ax/D$
+- 8.4 The diffraction grating: $d\sin\theta = n\lambda$ and determination of wavelength
+- 20 Multiple Choice and 18 Structured Questions; all MC and SQ figures use independently extracted images
+:::
+
+::: {.topic-card}
 ### [12 Motion in a circle](a-level/12-motion-in-a-circle.qmd)
 
 - 12.1 Kinematics of uniform circular motion: radians, angular speed, period, frequency and $v=r\omega$

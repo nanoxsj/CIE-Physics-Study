@@ -1,0 +1,181 @@
+---
+title: "7 Waves"
+subtitle: "Progressive waves, transverse and longitudinal waves, the Doppler effect, the electromagnetic spectrum and polarisation"
+---
+
+## Learning objectives
+
+By the end of this chapter, you should be able to:
+
+- describe wave motion as illustrated by vibration in ropes, springs and ripple tanks;
+- use the terms displacement, amplitude, phase difference, period, frequency, wavelength and speed;
+- use the time-base and y-gain of a cathode-ray oscilloscope (CRO) to determine frequency and amplitude;
+- derive and use the wave equation $v=f\lambda$;
+- understand that energy is transferred by a progressive wave;
+- recall and use intensity $=\text{power}/\text{area}$ and intensity $\propto(\text{amplitude})^2$;
+- compare transverse and longitudinal waves, and interpret graphical representations of both;
+- understand the Doppler effect for sound and use $f_o=f_s\dfrac{v}{v\pm v_s}$;
+- state the regions of the electromagnetic spectrum and their wavelength ranges;
+- understand polarisation and use Malus's law $I=I_0\cos^2\theta$.
+
+## 7.1 Progressive waves
+
+::: {.study-card}
+### Wave motion
+
+A **progressive wave** transfers energy from one place to another without transferring matter. Wave motion can be seen when a pulse travels along a stretched rope or spring, or across the surface of a ripple tank: each particle oscillates about a fixed position while the disturbance (the wave) moves on.
+
+Key terms:
+
+- **Displacement** $x$ is the distance of a particle from its equilibrium position (measured in m).
+- **Amplitude** $A$ is the maximum displacement from equilibrium (m).
+- **Wavelength** $\lambda$ is the distance between two successive points oscillating in phase (m).
+- **Period** $T$ is the time for one complete oscillation (s).
+- **Frequency** $f$ is the number of complete oscillations per second (Hz), with $f=1/T$.
+- **Phase difference** is the fraction of a cycle between two points, usually measured in degrees or radians.
+- **Speed** $v$ is the distance travelled by the wave per unit time.
+:::
+
+::: {.formula-panel}
+### The wave equation
+
+Since one wavelength is travelled in one period:
+
+$$v=\frac{\lambda}{T}=f\lambda.$$
+
+The wave equation can be derived from the definitions of speed, frequency and wavelength. It applies to all waves, including sound, light and water waves.
+:::
+
+::: {.study-card}
+### Energy and intensity
+
+A progressive wave carries energy. The **intensity** of a wave is the power transmitted per unit cross-sectional area:
+
+$$I=\frac{P}{A}.$$
+
+For a progressive wave, the intensity is proportional to the square of the amplitude:
+
+$$I\propto A^2.$$
+
+Doubling the amplitude therefore quadruples the intensity.
+:::
+
+::: {.study-card}
+### Using a cathode-ray oscilloscope
+
+On a CRO, the **time-base** controls the horizontal axis (time per division) and the **y-gain** controls the vertical axis (voltage or displacement per division).
+
+- The **period** is read from the horizontal scale: count the time for one complete cycle.
+- The **amplitude** is read from the vertical scale: the height of a peak above the centre line.
+- The **frequency** is then $f=1/T$.
+:::
+
+## 7.2 Transverse and longitudinal waves
+
+::: {.study-card}
+### Comparing transverse and longitudinal waves
+
+In a **transverse wave**, the particles vibrate perpendicular (at $90^\circ$) to the direction of energy transfer. Examples: waves on a rope, water waves, electromagnetic waves.
+
+In a **longitudinal wave**, the particles vibrate parallel to the direction of energy transfer. The wave consists of compressions and rarefactions. Examples: sound waves in air, waves on a slinky spring.
+
+Graphically, a transverse wave is drawn as a sine curve of displacement against distance; a longitudinal wave is represented by the same sinusoidal graph, where positive displacement means a compression and negative displacement a rarefaction.
+:::
+
+::: {.study-card}
+### Doppler effect for sound
+
+When a source of sound moves relative to a stationary observer, the observed frequency differs from the emitted frequency:
+
+$$f_o=f_s\frac{v}{v\pm v_s},$$
+
+where $v$ is the speed of sound, $v_s$ is the speed of the source and $v_o=0$ for a stationary observer.
+
+- Source moving **towards** the observer: waves bunch up, wavelength decreases, observed frequency increases (use the minus sign).
+- Source moving **away**: waves spread out, wavelength increases, observed frequency decreases (use the plus sign).
+:::
+
+## 7.3 The electromagnetic spectrum
+
+::: {.study-card}
+### Electromagnetic waves
+
+All electromagnetic waves:
+
+- are transverse waves;
+- travel at the same speed $c=3.0\times10^8\ \mathrm{m\,s^{-1}}$ in free space;
+- transfer energy without needing a medium.
+
+From longest wavelength to shortest wavelength, the principal regions are:
+
+radio waves, microwaves, infrared, visible light, ultraviolet, X-rays, gamma-rays.
+
+The visible region is approximately 400–700 nm.
+:::
+
+::: {.formula-panel}
+### Wavelength ranges
+
+| Region | Approximate wavelength |
+|---|---|
+| Radio | $>10^{-1}\ \mathrm{m}$ |
+| Microwaves | $10^{-1}$ – $10^{-3}\ \mathrm{m}$ |
+| Infrared | $10^{-3}$ – $7\times10^{-7}\ \mathrm{m}$ |
+| Visible | $7\times10^{-7}$ – $4\times10^{-7}\ \mathrm{m}$ |
+| Ultraviolet | $4\times10^{-7}$ – $10^{-8}\ \mathrm{m}$ |
+| X-rays | $10^{-8}$ – $10^{-13}\ \mathrm{m}$ |
+| Gamma-rays | $<10^{-13}\ \mathrm{m}$ |
+
+For any region, $c=f\lambda$, so the frequency ranges are found from $\lambda=c/f$.
+:::
+
+## 7.4 Polarisation
+
+::: {.study-card}
+### Polarisation
+
+**Polarisation** is the process by which the oscillations of a transverse wave are made to occur in one plane only. It is a property of **transverse waves only** – longitudinal waves cannot be polarised because their particles vibrate parallel to the direction of travel.
+
+An unpolarised wave vibrates in many planes perpendicular to the direction of travel. After passing through a polarising filter, the oscillations are restricted to a single plane.
+:::
+
+::: {.formula-panel}
+### Malus's law
+
+For plane-polarised light incident on a polarising filter (analyser), the transmitted intensity is
+
+$$I=I_0\cos^2\theta,$$
+
+where $I_0$ is the intensity of the incident polarised light and $\theta$ is the angle between the plane of polarisation of the light and the transmission axis of the filter.
+
+When $\theta=90^\circ$, no light is transmitted; when $\theta=0^\circ$, all the light is transmitted. Note: the factor of $\frac{1}{2}$ for unpolarised light passing through a first polariser is not part of Malus's law.
+:::
+
+## Multiple Choice Questions
+
+{{< include 07-waves-mc.qmd >}}
+
+## Structured Questions
+
+{{< include 07-waves-structured.qmd >}}
+
+## Chapter checklist
+
+- [ ] I can use $v=f\lambda$ and the terms amplitude, wavelength, period, frequency and phase difference.
+- [ ] I can determine frequency and amplitude from a CRO display.
+- [ ] I can use intensity $=P/A$ and $I\propto A^2$.
+- [ ] I can compare transverse and longitudinal waves.
+- [ ] I can use the Doppler equation $f_o=f_s v/(v\pm v_s)$.
+- [ ] I can name the regions of the electromagnetic spectrum in order of wavelength.
+- [ ] I can use Malus's law $I=I_0\cos^2\theta$.
+
+### Original question PDFs
+
+- [7.1 Waves: Transverse & Longitudinal - MC Easy](https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/waves/7.1-waves-transverse-longitudinal-c-easy.pdf)
+- [7.1 Waves: Transverse & Longitudinal - MC Medium](https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/waves/7.1-waves-transverse-longitudinal-c-medium.pdf)
+- [7.1 Waves: Transverse & Longitudinal - MC Hard](https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/waves/7.1-waves-transverse-longitudinal-c-hard.pdf)
+- [7.1 Waves: Transverse & Longitudinal - SQ Medium](https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/waves/7.1-waves-transverse-longitudinal-sq-medium.pdf)
+- [7.2 Transverse Waves: EM Spectrum & Polarisation - MC Easy](https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/waves/7.2-transverse-waves-em-spectrum-polarisation-c-easy.pdf)
+- [7.2 Transverse Waves: EM Spectrum & Polarisation - MC Medium](https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/waves/7.2-transverse-waves-em-spectrum-polarisation-c-medium.pdf)
+- [7.2 Transverse Waves: EM Spectrum & Polarisation - MC Hard](https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/waves/7.2-transverse-waves-em-spectrum-polarisation-c-hard.pdf)
+- [7.2 Transverse Waves: EM Spectrum & Polarisation - SQ Medium](https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/waves/7.2-transverse-waves-em-spectrum-polarisation-sq-medium.pdf)

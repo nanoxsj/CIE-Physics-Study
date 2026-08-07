@@ -9,6 +9,8 @@ project:
     - as-level/04-forces-density-pressure.qmd
     - as-level/05-work-energy-power.qmd
     - as-level/06-deformation-of-solids.qmd
+    - as-level/07-waves.qmd
+    - as-level/08-superposition.qmd
     - a-level/12-motion-in-a-circle.qmd
     - a-level/13-gravitational-fields.qmd
     - a-level/14-temperature.qmd
@@ -47,6 +49,10 @@ website:
             text: "5 Work, energy and power"
           - href: as-level/06-deformation-of-solids.qmd
             text: "6 Deformation of solids"
+          - href: as-level/07-waves.qmd
+            text: "7 Waves"
+          - href: as-level/08-superposition.qmd
+            text: "8 Superposition"
       - section: "A Level"
         contents:
           - href: a-level/12-motion-in-a-circle.qmd
