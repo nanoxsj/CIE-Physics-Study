@@ -6,6 +6,7 @@ project:
     - as-level/01-physical-quantities-and-units.qmd
     - as-level/02-kinematics.qmd
     - as-level/03-dynamics.qmd
+    - as-level/04-forces-density-pressure.qmd
     - a-level/12-motion-in-a-circle.qmd
     - a-level/13-gravitational-fields.qmd
     - a-level/14-temperature.qmd
@@ -38,6 +39,8 @@ website:
             text: "2 Kinematics"
           - href: as-level/03-dynamics.qmd
             text: "3 Dynamics"
+          - href: as-level/04-forces-density-pressure.qmd
+            text: "4 Forces, density and pressure"
       - section: "A Level"
         contents:
           - href: a-level/12-motion-in-a-circle.qmd

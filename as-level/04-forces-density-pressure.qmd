@@ -1,0 +1,176 @@
+---
+title: "4 Forces, density and pressure"
+subtitle: "Turning effects of forces, equilibrium of forces, density and pressure"
+---
+
+## Learning objectives
+
+By the end of this chapter, you should be able to:
+
+- define and apply the moment of a force;
+- understand that the weight of an object may be taken as acting at its centre of gravity;
+- define a couple and the torque of a couple;
+- state and apply the principle of moments;
+- use a vector triangle to represent coplanar forces in equilibrium;
+- define and use density and pressure;
+- derive and use $\Delta p=\rho g\Delta h$;
+- understand that upthrust is due to a difference in hydrostatic pressure;
+- calculate upthrust using $F=\rho gV$.
+
+## 4.1 Turning effects of forces
+
+::: {.study-card}
+### Centre of gravity
+
+The **centre of gravity** of an object is the single point at which the whole weight of the object may be considered to act. For a uniform, symmetrical object it is at the geometric centre. For an irregular object the centre of gravity may lie outside the material of the object.
+
+The centre of gravity is not the same as the centre of mass. The centre of mass is the point at which the whole mass may be considered to act; the centre of gravity is where the weight acts. For a uniform gravitational field the two points coincide.
+:::
+
+::: {.formula-panel}
+### Moment of a force
+
+The **moment of a force** about a point is the turning effect of the force. It is defined as
+
+$$\text{moment}=Fd,$$
+
+where $F$ is the force and $d$ is the perpendicular distance from the line of action of the force to the point.
+
+The moment has units $\mathrm{N\,m}$. Moments may be taken as clockwise or anticlockwise about a chosen pivot.
+:::
+
+::: {.study-card}
+### Couples and torque
+
+A **couple** is a pair of equal and opposite parallel forces whose lines of action do not coincide. A couple produces rotation only: its resultant force is zero but its resultant moment is non-zero.
+
+The **torque of a couple** is
+
+$$\tau=Fd,$$
+
+where $F$ is the magnitude of one of the forces and $d$ is the perpendicular distance between the two lines of action. The torque has units $\mathrm{N\,m}$.
+:::
+
+::: {.study-card}
+### Combining moments
+
+When several forces act on a body, the resultant moment about a pivot is the algebraic sum of the individual moments. Taking one direction as positive:
+
+$$\sum \text{clockwise moments} = \sum \text{anticlockwise moments}$$
+
+when the body is in rotational equilibrium. Always use the perpendicular distance to the line of action, not the distance along the object.
+:::
+
+## 4.2 Equilibrium of forces
+
+::: {.study-card}
+### Conditions for equilibrium
+
+A system is in **equilibrium** when:
+
+1. the resultant force is zero; and
+2. the resultant torque is zero.
+
+These conditions mean that the body has no acceleration and no angular acceleration. A body moving at constant velocity can be in equilibrium.
+
+The **principle of moments** states that, for a body in equilibrium, the sum of the clockwise moments about any point equals the sum of the anticlockwise moments about the same point.
+:::
+
+::: {.study-card}
+### Coplanar forces and vector triangles
+
+For three coplanar forces acting at a point, the body can be in equilibrium only if the three forces are represented, in magnitude and direction, by the three sides of a closed triangle taken in order.
+
+For more than three forces, resolve into perpendicular components:
+
+$$\sum F_x=0, \qquad \sum F_y=0.$$
+
+If the lines of action of three non-parallel forces do not meet at a single point, the body will have a resultant moment and cannot be in equilibrium.
+:::
+
+## 4.3 Density and pressure
+
+::: {.formula-panel}
+### Density
+
+**Density** is the mass per unit volume of a substance:
+
+$$\rho=\frac{m}{V}.$$
+
+The SI unit of density is $\mathrm{kg\,m^{-3}}$. A common non-SI unit is $\mathrm{g\,cm^{-3}}$, where
+
+$$1\ \mathrm{g\,cm^{-3}}=1000\ \mathrm{kg\,m^{-3}}.$$
+:::
+
+::: {.formula-panel}
+### Pressure in a solid
+
+**Pressure** is the normal force acting per unit area:
+
+$$p=\frac{F}{A}.$$
+
+The SI unit of pressure is the pascal:
+
+$$1\ \mathrm{Pa}=1\ \mathrm{N\,m^{-2}}.$$
+
+Pressure is a scalar quantity. The force used in the definition is the force acting perpendicular to the surface.
+:::
+
+::: {.formula-panel}
+### Hydrostatic pressure
+
+Consider a column of liquid of cross-sectional area $A$, height $\Delta h$ and density $\rho$. The weight of the column is
+
+$$W=mg=\rho Vg=\rho A\Delta h\,g.$$
+
+The pressure due to the liquid at the base is
+
+$$p=\frac{W}{A}=\rho g\Delta h.$$
+
+The **hydrostatic pressure** increases with depth and with liquid density. Total pressure at a depth is the sum of the atmospheric pressure and $\rho g\Delta h$:
+
+$$p=p_{\text{atm}}+\rho g\Delta h.$$
+:::
+
+::: {.study-card}
+### Upthrust and Archimedes' principle
+
+Pressure in a fluid increases with depth, so the upward force on the bottom of a submerged object is greater than the downward force on its top. The resultant upward force is the **upthrust**.
+
+The magnitude of the upthrust is equal to the weight of fluid displaced:
+
+$$F=\rho_{\text{fluid}}gV,$$
+
+where $V$ is the volume of the object below the fluid surface. This is Archimedes' principle. A floating object is in equilibrium when the upthrust equals its weight.
+:::
+
+## Multiple Choice Questions
+
+{{< include 04-forces-density-pressure-mc.qmd >}}
+
+## Structured Questions
+
+{{< include 04-forces-density-pressure-structured.qmd >}}
+
+## Chapter checklist
+
+- [ ] I can define moment, couple and torque and use them in calculations.
+- [ ] I can locate the centre of gravity and apply the principle of moments.
+- [ ] I can use vector triangles and resolution for forces in equilibrium.
+- [ ] I can calculate density, pressure and hydrostatic pressure.
+- [ ] I can calculate upthrust using Archimedes' principle.
+
+### Original question PDFs
+
+- [4.1 Turning Effects & Equilibrium - MC Easy](https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/forces/4.1%20Forces.%20Turning%20Effects%20-%20Equilibrium%20-%20C%20-%20Easy.pdf.pdf)
+- [4.1 Turning Effects & Equilibrium - MC Medium](https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/forces/4.1%20Forces.%20Turning%20Effects%20-%20Equilibrium%20-%20C%20-%20Medium.pdf.pdf)
+- [4.1 Turning Effects & Equilibrium - MC Hard](https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/forces/4.1%20Forces.%20Turning%20Effects%20-%20Equilibrium%20-%20C%20-%20Hard.pdf.pdf)
+- [4.1 Turning Effects & Equilibrium - SQ Easy](https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/forces/4.1%20Forces.%20Turning%20Effects%20-%20Equilibrium%20-%20SQ%20-%20Easy.pdf.pdf)
+- [4.1 Turning Effects & Equilibrium - SQ Medium](https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/forces/4.1%20Forces.%20Turning%20Effects%20-%20Equilibrium%20-%20SQ%20-%20Medium.pdf.pdf)
+- [4.1 Turning Effects & Equilibrium - SQ Hard](https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/forces/4.1%20Forces.%20Turning%20Effects%20-%20Equilibrium%20-%20SQ%20-%20Hard.pdf.pdf)
+- [4.2 Density & Pressure - MC Easy](https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/forces/4.2%20Forces.%20Density%20-%20Pressure%20-%20C%20-%20Easy.pdf.pdf)
+- [4.2 Density & Pressure - MC Medium](https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/forces/4.2%20Forces.%20Density%20-%20Pressure%20-%20C%20-%20Medium.pdf.pdf)
+- [4.2 Density & Pressure - MC Hard](https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/forces/4.2%20Forces.%20Density%20-%20Pressure%20-%20C%20-%20Hard.pdf.pdf)
+- [4.2 Density & Pressure - SQ Easy](https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/forces/4.2%20Forces.%20Density%20-%20Pressure%20-%20SQ%20-%20Easy.pdf.pdf)
+- [4.2 Density & Pressure - SQ Medium](https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/forces/4.2%20Forces.%20Density%20-%20Pressure%20-%20SQ%20-%20Medium.pdf.pdf)
+- [4.2 Density & Pressure - SQ Hard](https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/forces/4.2%20Forces.%20Density%20-%20Pressure%20-%20SQ%20-%20Hard.pdf.pdf)
