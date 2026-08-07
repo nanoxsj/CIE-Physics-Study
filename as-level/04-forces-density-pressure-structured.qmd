@@ -1,7 +1,7 @@
 ### 4.1 Turning Effects & Equilibrium - Easy
 
 ::: {.question-card}
-#### SQ Easy Q1 · Finding the weight of a broom
+#### Example 1 · 4.1 SQ Easy Q1
 
 **(a)** Define the following:
 
@@ -48,7 +48,7 @@ Determine:
 :::
 
 ::: {.question-card}
-#### SQ Easy Q2 · Metre rule balanced on a pivot
+#### Example 2 · 4.1 SQ Easy Q2
 
 **(a)** A metre rule is balanced on a pivot at its midpoint. A force of 10.0 N acts at a distance of 8.0 cm from one end of the rule, as shown in Fig. 1.1.
 
@@ -71,7 +71,7 @@ On Fig. 1.1, draw an arrow to show the position of the mass and the direction of
 :::
 
 ::: {.question-card}
-#### SQ Easy Q3 · Couples and torque
+#### Example 3 · 4.1 SQ Easy Q3
 
 **(a)** For a couple:
 
@@ -113,7 +113,7 @@ Calculate the new torque on the wheel. `[3 marks]`
 ### 4.2 Density & Pressure - Easy
 
 ::: {.question-card}
-#### SQ Easy Q4 · Density, pressure and upthrust
+#### Example 4 · 4.2 SQ Easy Q1
 
 **(a)** State the word definition of density. `[1 mark]`
 
@@ -151,7 +151,7 @@ Using the equations you stated in (b) and (c), show that the pressure at a point
 :::
 
 ::: {.question-card}
-#### SQ Easy Q5 · Cylinder submerged in sea water
+#### Example 5 · 4.2 SQ Easy Q3
 
 **(a)** Complete the definition of hydrostatic pressure:
 
@@ -190,7 +190,7 @@ Without further calculation:
 ### 4.1 Turning Effects & Equilibrium - Medium
 
 ::: {.question-card}
-#### SQ Medium Q1 · Reactions on a decorators' plank
+#### Example 6 · 4.1 SQ Medium Q1
 
 **(a)** A team of decorators set up a raised bench to allow them to reach the ceiling. The bench consists of a plank resting horizontally on two supports B and C. The plank is modelled as a uniform rod AD of length 2.7 m and mass 15 kg. The supports at B and C are 0.4 m from each end of the plank, as shown in Fig. 1.1.
 
@@ -221,7 +221,7 @@ Calculate the distance BX. `[4 marks]`
 ### 4.2 Density & Pressure - Medium
 
 ::: {.question-card}
-#### SQ Medium Q3 · Wooden rod dropped into water
+#### Example 7 · 4.2 SQ Medium Q1
 
 **(a)** A designer tests how far into a measuring cylinder of water a wooden rod will sink when dropped from various heights. The wooden rod has mass $1.30\times10^{-2}\ \mathrm{kg}$, diameter $1.5\times10^{-2}\ \mathrm{m}$ and length $7.5\times10^{-2}\ \mathrm{m}$.
 
@@ -264,7 +264,7 @@ Suggest a likely range of pressure changes they will feel in their ears. `[4 mar
 :::
 
 ::: {.question-card}
-#### SQ Medium Q4 · Submarine
+#### Example 8 · 4.2 SQ Medium Q4
 
 **(a)** A submarine below the surface of the sea is stationary in a region where the density of sea water is $1.03\times10^3\ \mathrm{kg\,m^{-3}}$. The submarine has a volume of $5.83\times10^3\ \mathrm{m^3}$.
 
@@ -292,7 +292,7 @@ Determine the mass of water that the submarine should pump, in or out of its tan
 ### 4.2 Density & Pressure - Hard
 
 ::: {.question-card}
-#### SQ Hard Q1 · The Cartesian Diver
+#### Example 9 · 4.2 SQ Hard Q1
 
 The Cartesian Diver is a popular science project used to demonstrate physical concepts. A 'diver' is made by bending a loop of drinking straw into a U-shape and weighting it with modelling clay. A large plastic bottle is filled with water, leaving a small volume of air at the top. The diver is added so that some water enters it but the straw remains floating upright due to trapped air. The lid is tightly screwed back onto the bottle.
 
@@ -321,7 +321,7 @@ Explain why the diver returns to its original position in the bottle. `[4 marks]
 :::
 
 ::: {.question-card}
-#### SQ Hard Q3 · Hot air balloon
+#### Example 10 · 4.2 SQ Hard Q3
 
 A very large hot air balloon can carry 25-30 people. The envelope has a diameter at its widest point of 32 m when filled with air. The total mass of the balloon, air, equipment and passengers is 20 900 kg. When the air temperature is $15^\circ\mathrm{C}$, the density of the air outside the balloon is $1.225\ \mathrm{kg\,m^{-3}}$.
 

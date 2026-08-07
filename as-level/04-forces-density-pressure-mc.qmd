@@ -1,7 +1,7 @@
 ### 4.1 Turning Effects & Equilibrium - Easy
 
 ::: {.question-card}
-#### Easy Q1 · Centre of gravity
+#### Example 1 · 4.1 MC Easy Q1
 
 What is the centre of gravity of an object?
 
@@ -20,11 +20,13 @@ D. the point through which gravity acts
 :::
 
 ::: {.question-card}
-#### Easy Q5 · Vector triangle for forces at a point
+#### Example 2 · 4.1 MC Easy Q5
 
 A street lamp is fixed to a wall by a metal rod and a cable.
 
-![](../assets/questions/forces-density-pressure/mc-easy-q5-lamp.webp){.question-figure fig-alt="Street lamp fixed by a rod and cable with the vector triangle of forces at P"}
+![](../assets/questions/forces-density-pressure/mc-easy-q5-lamp.webp){.question-figure fig-alt="Street lamp fixed to a wall by a metal rod and a cable"}
+
+![](../assets/questions/forces-density-pressure/mc-easy-q5-triangle-options.webp){.question-figure fig-alt="Four vector triangles labelled A, B, C and D"}
 
 Which vector triangle represents the forces acting at point P?
 
@@ -35,7 +37,7 @@ Which vector triangle represents the forces acting at point P?
 :::
 
 ::: {.question-card}
-#### Easy Q6 · Resultant moment about a pivot
+#### Example 3 · 4.1 MC Easy Q6
 
 A uniform metre rule of weight 4.0 N is pivoted at the 60 cm mark. A 6.0 N weight is suspended from one end, causing the rule to rotate about the pivot.
 
@@ -59,7 +61,7 @@ At the instant when the rule is horizontal, what is the resultant turning moment
 ### 4.1 Turning Effects & Equilibrium - Medium
 
 ::: {.question-card}
-#### Medium Q1 · Mass of a metre rule
+#### Example 4 · 4.1 MC Medium Q1
 
 A uniform metre rule is hung from the ceiling as shown. The string supports the rule at the 35 cm mark. The rule balances when a 75 g mass is hung from one end of the ruler.
 
@@ -82,7 +84,7 @@ D. 159 g
 :::
 
 ::: {.question-card}
-#### Medium Q2 · Zero resultant force and zero resultant torque
+#### Example 5 · 4.1 MC Medium Q2
 
 Four beams of the same length each have three forces acting on them.
 
@@ -97,7 +99,7 @@ Which beam has both zero resultant force and zero resultant torque acting?
 :::
 
 ::: {.question-card}
-#### Medium Q7 · Spindle, lever and disc
+#### Example 6 · 4.1 MC Medium Q7
 
 A spindle is attached at one end to the centre of a lever of length 1.60 m and at its other end to the centre of a disc of radius 0.25 m. A string is wrapped round the disc, passes over a pulley and is attached to an 800 N weight.
 
@@ -120,7 +122,7 @@ D. 750 N
 :::
 
 ::: {.question-card}
-#### Medium Q9 · Resultant moment on an L-shaped lever
+#### Example 7 · 4.1 MC Medium Q9
 
 A rigid L-shaped lever arm is pivoted at point P. A 20 N force acts 4 m from P, a 10 N force acts 3 m from P and a 15 N force acts 3 m from P, as shown.
 
@@ -145,7 +147,7 @@ D. 155 N m
 ### 4.1 Turning Effects & Equilibrium - Hard
 
 ::: {.question-card}
-#### Hard Q1 · Hanging a picture from a nail
+#### Example 8 · 4.1 MC Hard Q1
 
 The diagrams show two ways of hanging the same picture. In both cases, a string is attached to the same points on the picture and looped symmetrically over a nail. In diagram 1, the string loop is shorter than in diagram 2.
 
@@ -168,7 +170,7 @@ D. $R_1<R_2$, $T_1=T_2$
 :::
 
 ::: {.question-card}
-#### Hard Q2 · Moments on a ladder
+#### Example 9 · 4.1 MC Hard Q2
 
 A uniform ladder rests against a vertical wall where there is negligible friction. The bottom of the ladder rests on rough ground where there is friction. The top of the ladder is at height $h$ above the ground and the foot of the ladder is at distance $2a$ from the wall.
 
@@ -191,7 +193,7 @@ D. $Wa-2Wa=2Fh$
 :::
 
 ::: {.question-card}
-#### Hard Q3 · Bowstring resultant force
+#### Example 10 · 4.1 MC Hard Q3
 
 An archer draws his bowstring back to position X: tension $T=110\ \mathrm{N}$ in each half of the string, with the two halves at $120^\circ$ to each other. He then draws the bowstring back further to position Y: tension $T=150\ \mathrm{N}$ in each half, with the two halves at $90^\circ$ to each other.
 
@@ -218,7 +220,7 @@ D. 110 N
 ### 4.2 Density & Pressure - Easy
 
 ::: {.question-card}
-#### Easy Q1 · Deriving hydrostatic pressure
+#### Example 11 · 4.2 MC Easy Q1
 
 The formula for hydrostatic pressure is $p=\rho gh$.
 
@@ -239,7 +241,7 @@ D. density increases with depth
 :::
 
 ::: {.question-card}
-#### Easy Q2 · Height of a mercury column
+#### Example 12 · 4.2 MC Easy Q2
 
 The density of mercury is $13.6\times10^3\ \mathrm{kg\,m^{-3}}$. The pressure difference between the bottom and the top of a column of mercury is 100 kPa.
 
@@ -260,7 +262,7 @@ D. 720 m
 :::
 
 ::: {.question-card}
-#### Easy Q3 · Reason for upthrust
+#### Example 13 · 4.2 MC Easy Q3
 
 An object, immersed in a liquid in a tank, experiences an upthrust.
 
@@ -281,7 +283,7 @@ D. The value of g in the liquid increases with depth.
 :::
 
 ::: {.question-card}
-#### Easy Q4 · Pressure in the Mariana Trench
+#### Example 14 · 4.2 MC Easy Q4
 
 The Mariana Trench in the Pacific Ocean has a depth of about 10 km. Sea water is assumed incompressible with a density of about $1020\ \mathrm{kg\,m^{-3}}$.
 
@@ -304,7 +306,7 @@ D. $10^8\ \mathrm{Pa}$
 ### 4.2 Density & Pressure - Medium
 
 ::: {.question-card}
-#### Medium Q2 · Depth for a given total pressure
+#### Example 15 · 4.2 MC Medium Q2
 
 Atmospheric pressure at sea level has a value of 100 kPa. The density of sea water is $1020\ \mathrm{kg\,m^{-3}}$.
 
@@ -325,7 +327,7 @@ D. 55 m
 :::
 
 ::: {.question-card}
-#### Medium Q6 · Density of a mixture
+#### Example 16 · 4.2 MC Medium Q6
 
 $1.5\ \mathrm{m^3}$ of water is mixed with $0.50\ \mathrm{m^3}$ of alcohol. The density of water is $1000\ \mathrm{kg\,m^{-3}}$ and the density of alcohol is $800\ \mathrm{kg\,m^{-3}}$.
 
@@ -346,7 +348,7 @@ D. $950\ \mathrm{kg\,m^{-3}}$
 :::
 
 ::: {.question-card}
-#### Medium Q8 · Pressure at a different depth and density
+#### Example 17 · 4.2 MC Medium Q8
 
 At a depth of 20 cm in a liquid of density $1800\ \mathrm{kg\,m^{-3}}$, the pressure due to the liquid is $p$.
 
@@ -371,7 +373,7 @@ D. $4p$
 ### 4.2 Density & Pressure - Hard
 
 ::: {.question-card}
-#### Hard Q7 · Atomic densities
+#### Example 18 · 4.2 MC Hard Q7
 
 Two solid substances P and Q have atoms of mass $M_P$ and $M_Q$ and $n_P$ and $n_Q$ atoms per unit volume. The density of P is greater than the density of Q.
 
@@ -392,7 +394,7 @@ D. $M_Q n_Q>M_P n_P$
 :::
 
 ::: {.question-card}
-#### Hard Q9 · Maximum straw length
+#### Example 19 · 4.2 MC Hard Q9
 
 A child drinks a liquid of density $\rho$ through a vertical straw. Atmospheric pressure is $p_0$ and the child is capable of lowering the pressure at the top of the straw by 10%. The acceleration of free fall is $g$.
 
@@ -413,7 +415,7 @@ D. $\frac{10p_0}{\rho g}$
 :::
 
 ::: {.question-card}
-#### Hard Q10 · Iceberg fraction submerged
+#### Example 20 · 4.2 MC Hard Q10
 
 Icebergs typically float with a large volume of ice beneath the water. Ice has a density of $917\ \mathrm{kg\,m^{-3}}$ and sea water has a density of $1020\ \mathrm{kg\,m^{-3}}$.
 
