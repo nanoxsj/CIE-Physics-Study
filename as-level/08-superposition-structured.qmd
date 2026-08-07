@@ -163,13 +163,13 @@ Any three from:
 ::: {.question-card}
 #### Example 4 · 8.2 SQ Medium Q1
 
-Fig. 1.1 shows an arrangement for observing the interference pattern produced by laser light passing through two narrow slits S$_1$ and S$_2$.
+Fig. 1.1 shows an arrangement for observing the interference pattern produced by laser light passing through two narrow slits $S_1$ and $S_2$.
 
 ![](../assets/questions/superposition/82medsq-obj-000.webp){.question-figure fig-alt="Double-slit interference arrangement with laser light, single slit, double slit, and screen"}
 
-The distance S$_1$S$_2$ is $d$, and the distance between the double slit and the screen is $D$, where $D \gg d$, so angles $\alpha$ and $\theta$ are small.
+The distance $S_1 S_2$ is $d$, and the distance between the double slit and the screen is $D$, where $D \gg d$, so angles $\alpha$ and $\theta$ are small.
 
-M is the midpoint of S$_1$S$_2$ and it is observed that there is a bright fringe at point A on the screen, a distance $f_1$ from point O on the screen. Light from S$_1$ travels a distance S$_2$Y further to point A than light from S$_2$.
+M is the midpoint of $S_1 S_2$ and it is observed that there is a bright fringe at point A on the screen, a distance $f_1$ from point O on the screen. Light from $S_1$ travels a distance $S_2$Y further to point A than light from $S_2$.
 
 The wavelength of light from the laser is 650 nm and the angular separation of the bright fringes on the screen is $5.00 \times 10^{-4}$ rad.
 
@@ -179,21 +179,21 @@ The wavelength of light from the laser is 650 nm and the angular separation of t
 
 **(b)** A bright fringe is observed at A.
 
-**(i)** Explain the conditions required in the paths of the rays coming from S$_1$ and S$_2$ to obtain this bright fringe.
+**(i)** Explain the conditions required in the paths of the rays coming from $S_1$ and $S_2$ to obtain this bright fringe.
 
-**(ii)** State an equation in terms of wavelength for the distance S$_2$Y.
+**(ii)** State an equation in terms of wavelength for the distance $S_2$Y.
 
 `[3 marks]`
 
 **(c)** Deduce expressions for the following angles in the double-slit arrangement shown in Fig. 1.1.
 
-**(i)** $\theta$ in terms of S$_2$Y and $d$
+**(i)** $\theta$ in terms of $S_2$Y and $d$
 
 **(ii)** $\phi$ in terms of $D$ and $f_1$
 
 `[4 marks]`
 
-**(d)** The separation of the slits S$_1$ and S$_2$ is 1.30 mm. The distance MO is 1.40 m. The distance $f_n$ is the distance of the ninth bright fringe from O and the angle $\theta$ is $3.70 \times 10^{-3}$ rad.
+**(d)** The separation of the slits $S_1$ and $S_2$ is 1.30 mm. The distance MO is 1.40 m. The distance $f_n$ is the distance of the ninth bright fringe from O and the angle $\theta$ is $3.70 \times 10^{-3}$ rad.
 
 Calculate the wavelength of the laser light.
 
@@ -207,15 +207,15 @@ Calculate the wavelength of the laser light.
 - $d = 1.30 \times 10^{-3}\ \text{m} = 1.30\ \text{mm}$. `[1]`
 
 **(b)**
-- **(i)** The path difference (S$_2$Y) must be equal to a whole number of wavelengths. `[1]` The waves must be in phase / coherent. `[1]`
-- **(ii)** S$_2$Y = $n\lambda$ (where $n$ is the order number). `[1]`
+- **(i)** The path difference ($S_2$Y) must be equal to a whole number of wavelengths. `[1]` The waves must be in phase / coherent. `[1]`
+- **(ii)** $S_2$Y = $n\lambda$ (where $n$ is the order number). `[1]`
 
 **(c)**
 - **(i)** $\sin\theta = \text{S}_2\text{Y} / d$. `[1]` Using small-angle approximation, $\theta \approx \text{S}_2\text{Y} / d$. `[1]`
 - **(ii)** $\tan\phi = f_1 / D$. `[1]` Using small-angle approximation, $\phi \approx f_1 / D$. `[1]`
 
 **(d)**
-- Using S$_2$Y = $d\theta$ (from (c)) and S$_2$Y = $n\lambda$ (from (b)): $\lambda = d\theta / n$. `[1]`
+- Using $S_2$Y = $d\theta$ (from (c)) and $S_2$Y = $n\lambda$ (from (b)): $\lambda = d\theta / n$. `[1]`
 - $\lambda = (1.30 \times 10^{-3})(3.70 \times 10^{-3}) / 9 = 5.34 \times 10^{-7}\ \text{m}$. `[1]`
 
 `[Total: 12 marks]`

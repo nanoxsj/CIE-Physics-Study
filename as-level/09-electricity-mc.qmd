@@ -87,6 +87,8 @@ D. $2.4 \times 10^{19}$
 
 The graph shows how the current through a component varies with time.
 
+![](../assets/questions/electricity/9.1-current-pd-c-medium-obj-001.webp){.question-figure fig-alt="Current-time graph"}
+
 What is the total charge that passes through the component between $t = 0$ and $t = 4.0\ \text{s}$?
 
 A. the area under the graph
@@ -129,7 +131,9 @@ D. $4.0 \times 10^{19}$
 ::: {.question-card}
 #### Example 7 · 9.1 MC Hard Q2
 
-In the circuit shown, the currents at junction P are given by $I_1 = 2.0\ \text{A}$, $I_2 = 1.5\ \text{A}$ and $I_3$ leaves the junction.
+In the circuit shown, the currents at junction P are given by
+
+![](../assets/questions/electricity/9.1-current-pd-c-hard-obj-000.webp){.question-figure fig-alt="Circuit diagram with junction P"} $I_1 = 2.0\ \text{A}$, $I_2 = 1.5\ \text{A}$ and $I_3$ leaves the junction.
 
 What is the value of $I_3$?
 
@@ -365,6 +369,7 @@ D. 0.60 V
 #### Example 18 · 9.3 MC Medium Q2
 
 The graph shows how the terminal p.d. $V$ of a cell varies with the current $I$ drawn from it.
+![](../assets/questions/electricity/9.3-resistivity-c-medium-obj-000.webp){.question-figure fig-alt="Graph of terminal p.d. V against current I"}
 
 Which statement is correct?
 

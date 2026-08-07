@@ -46,6 +46,7 @@ Calculate the number of electrons passing a point in the wire in 2.0 s.
 **(a)** State Kirchhoff's first law.
 
 `[1 mark]`
+![](../assets/questions/electricity/9.1-current-pd-sq-medium-obj-000.webp){.question-figure fig-alt="Three wires meeting at a junction P with currents I1, I2 entering and I3, I4 leaving"}
 
 **(b)** In the circuit shown in Fig. 1.1, the currents are $I_1 = 1.5\ \text{A}$, $I_2 = 0.8\ \text{A}$ and $I_3 = 1.2\ \text{A}$.
 
@@ -95,6 +96,7 @@ Calculate the number of electrons that must pass a point in a circuit per second
 Calculate the total charge that flows through the wire.
 
 `[2 marks]`
+![](../assets/questions/electricity/9.1-current-pd-sq-medium-obj-001.webp){.question-figure fig-alt="Wire with conventional current direction shown"}
 
 **(c)** The wire in part (b) carries a current in the direction shown in Fig. 1.2.
 
@@ -176,6 +178,7 @@ State how the voltmeter should be connected in the circuit.
 #### Example 5 · 9.2 SQ Medium Q2
 
 **(a)** State Ohm's law.
+![](../assets/questions/electricity/9.2-resistance-sq-medium-obj-000.webp){.question-figure fig-alt="Grid for plotting V against I graph"}
 
 `[2 marks]`
 
@@ -277,6 +280,7 @@ State and explain the effect of increasing temperature on the resistance of the 
 ::: {.question-card}
 #### Example 7 · 9.2 SQ Medium Q4
 
+![](../assets/questions/electricity/9.2-resistance-sq-medium-obj-002.webp){.question-figure fig-alt="Axes for sketching I-V characteristics"}
 **(a)** Sketch, on the axes below, the I–V characteristic of:
 
 **(i)** an ohmic conductor;
@@ -407,6 +411,7 @@ State and explain the effect on the terminal p.d. of the battery.
 #### Example 10 · 9.3 SQ Medium Q3
 
 **(a)** A student investigates the e.m.f. $E$ and internal resistance $r$ of a cell. The cell is connected to a variable resistor, an ammeter and a voltmeter as shown in Fig. 1.1.
+![](../assets/questions/electricity/9.3-resistivity-sq-medium-obj-000.webp){.question-figure fig-alt="Cell in series with ammeter and variable resistor, voltmeter connected across cell terminals"}
 
 Fig. 1.1 shows a cell in series with an ammeter and a variable resistor, with a voltmeter connected across the cell terminals.
 
