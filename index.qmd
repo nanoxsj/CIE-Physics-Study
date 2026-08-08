@@ -82,6 +82,25 @@ subtitle: "2025–2027 syllabus · 9702"
 - 20 Multiple Choice and 11 Structured Questions covering all three sections
 :::
 
+
+::: {{.topic-card}}
+### [10 D.C. Circuits](as-level/10-dc-circuits.qmd)
+
+- 10.1 Practical circuits: e.m.f., internal resistance, terminal p.d. and lost volts
+- 10.2 Kirchhoff's laws: first law (charge conservation) and second law (energy conservation)
+- 10.3 Potential dividers: voltage division, thermistors, LDRs and sensor circuits
+- 20 Multiple Choice and 10 Structured Questions with independently extracted circuit diagrams
+:::
+
+::: {.topic-card}
+### [11 Particle Physics](as-level/11-particle-physics.qmd)
+
+- 11.1 Atoms, nuclei and radiation: nuclear structure, isotopes, α, β, γ radiation, decay equations, the Geiger–Marsden experiment and nuclear fission
+- 11.2 Fundamental particles: quarks, hadrons (baryons and mesons), leptons, β-decay in the quark model and conservation laws
+- 20 Multiple Choice and 6 Structured Questions with independently extracted diagrams and point-by-point answers
+:::
+
+
 ::: {.topic-card}
 ### [12 Motion in a circle](a-level/12-motion-in-a-circle.qmd)
 

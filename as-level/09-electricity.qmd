@@ -1,6 +1,6 @@
 ---
 title: "9 Electricity"
-subtitle: "Electric current, potential difference, resistance and electromotive force"
+subtitle: "Electric current, potential difference, power, resistance and resistivity"
 ---
 
 ## Learning objectives
@@ -8,17 +8,19 @@ subtitle: "Electric current, potential difference, resistance and electromotive 
 By the end of this chapter, you should be able to:
 
 - understand electric current as the rate of flow of charge;
-- use $I = Q/t$ and $Q = ne$;
+- recall and use $I = Q/t$ and $Q = ne$;
+- use $I = Anvq$ for a current-carrying conductor;
 - recall and apply Kirchhoff's first law;
-- understand potential difference as energy transferred per unit charge;
-- use $V = W/Q$;
-- recall and use Ohm's law $R = V/I$;
-- use $R = \rho L / A$ for the resistance of a wire;
-- describe the effect of temperature on resistance;
-- sketch and interpret I-V characteristics of ohmic and non-ohmic conductors;
-- distinguish between e.m.f. and p.d.;
-- understand internal resistance and use $E = I(R + r)$;
-- calculate terminal p.d. and lost volts.
+- define potential difference as energy transferred per unit charge;
+- recall and use $V = W/Q$;
+- recall and use $P = VI$, $P = I^2R$ and $P = V^2/R$;
+- define resistance and recall and use $V = IR$;
+- state Ohm's law;
+- sketch and interpret I-V characteristics of a metallic conductor, a semiconductor diode and a filament lamp;
+- explain that the resistance of a filament lamp increases with current due to temperature;
+- recall and use $R = \rho L / A$;
+- understand that the resistance of an LDR decreases as light intensity increases;
+- understand that the resistance of a thermistor (NTC) decreases as temperature increases.
 
 ## 9.1 Electric current
 
@@ -65,6 +67,24 @@ $$\text{number of charge carriers} = \frac{It}{e}$$
 This is useful for calculating the number of electrons passing a point in a circuit per second.
 :::
 
+::: {.formula-panel}
+### Current, charge carriers and drift velocity
+
+For a current-carrying conductor, the current can be expressed in terms of the charge carriers:
+
+$$I = Anvq$$
+
+where:
+- $A$ = cross-sectional area of the conductor (m$^2$)
+- $n$ = number density of charge carriers (m$^{-3}$)
+- $v$ = drift velocity of charge carriers (m s$^{-1}$)
+- $q$ = charge on each carrier (C)
+
+This expression shows that for a given current, a smaller cross-sectional area leads to a larger drift velocity.
+
+**Drift velocity** is the average velocity of charge carriers in the direction of the electric field. Despite the random thermal motion of electrons (≈ $10^6$ m s$^{-1}$), the drift velocity is typically very small (≈ $10^{-4}$ m s$^{-1}$).
+:::
+
 ::: {.study-card}
 ### Kirchhoff's first law
 
@@ -79,7 +99,7 @@ For example, in a parallel circuit with two branches:
 $$I = I_1 + I_2$$
 :::
 
-## 9.2 Potential difference and resistance
+## 9.2 Potential difference and power
 
 ::: {.study-card}
 ### Potential difference
@@ -99,9 +119,39 @@ A voltmeter is always connected **in parallel** across a component to measure th
 :::
 
 ::: {.study-card}
-### Ohm's law
+### Electrical power
 
-**Ohm's law** states that the current through a metallic conductor is directly proportional to the potential difference across it, provided the physical conditions (such as temperature) remain constant.
+Electrical power is the rate at which electrical energy is transferred:
+
+$$P = VI$$
+
+Combining with Ohm's law $V = IR$, we can also write:
+
+$$P = I^2R \qquad P = \frac{V^2}{R}$$
+
+where:
+- $P$ = power in watts (W)
+- $V$ = potential difference in volts (V)
+- $I$ = current in amperes (A)
+- $R$ = resistance in ohms ($\Omega$)
+
+These equations are used to calculate the power dissipated in any resistive component.
+:::
+
+::: {.formula-panel}
+### Power formulas summary
+
+$$P = VI = I^2R = \frac{V^2}{R}$$
+
+Use $P = VI$ when given voltage and current, $P = I^2R$ when given current and resistance, and $P = V^2/R$ when given voltage and resistance.
+:::
+
+## 9.3 Resistance and resistivity
+
+::: {.study-card}
+### Resistance and Ohm's law
+
+**Resistance** $R$ is defined as the ratio of the potential difference across a component to the current through it:
 
 $$R = \frac{V}{I}$$
 
@@ -110,38 +160,9 @@ where:
 - $V$ = potential difference in volts (V)
 - $I$ = current in amperes (A)
 
+**Ohm's law** states that the current through a metallic conductor is directly proportional to the potential difference across it, provided the physical conditions (such as temperature) remain constant.
+
 A component that obeys Ohm's law is called an **ohmic conductor**. Its I-V characteristic is a straight line through the origin.
-:::
-
-::: {.study-card}
-### Resistivity
-
-The resistance of a wire depends on its length, cross-sectional area, and the material from which it is made. This relationship is given by:
-
-$$R = \frac{\rho L}{A}$$
-
-where:
-- $R$ = resistance ($\Omega$)
-- $\rho$ = resistivity of the material ($\Omega\ \text{m}$)
-- $L$ = length of the wire (m)
-- $A$ = cross-sectional area of the wire (m$^2$)
-
-**Resistivity** $\rho$ is a property of the material itself, independent of the dimensions of the wire. It depends on temperature.
-
-Common values at room temperature:
-- Copper: $\rho \approx 1.7 \times 10^{-8}\ \Omega\ \text{m}$
-- Constantan: $\rho \approx 4.9 \times 10^{-7}\ \Omega\ \text{m}$
-- Silicon: $\rho \approx 6.4 \times 10^2\ \Omega\ \text{m}$
-:::
-
-::: {.study-card}
-### Temperature dependence of resistance
-
-For **metallic conductors**, resistance increases with temperature. As temperature increases, the metal ions vibrate more vigorously, making it harder for the charge carriers (electrons) to pass through. This increases the resistance.
-
-For **thermistors** (semiconductor devices), resistance decreases as temperature increases. Thermistors are used in temperature sensing circuits.
-
-For a metallic conductor at constant temperature, the I-V characteristic is a straight line through the origin (ohmic). For a filament lamp, the I-V characteristic curves because the resistance increases as the filament heats up.
 :::
 
 ::: {.study-card}
@@ -162,84 +183,43 @@ The I-V characteristic of a component shows how the current through it varies wi
 - Reverse bias (p.d. negative): only a very small leakage current flows until breakdown
 :::
 
-## 9.3 Sources of electromotive force
-
 ::: {.study-card}
-### Electromotive force (e.m.f.)
+### Resistivity
 
-**Electromotive force (e.m.f.)** $E$ of a source is the energy transferred per unit charge from chemical (or other non-electrical) energy to electrical energy as the charge passes through the source.
+The resistance of a wire depends on its length, cross-sectional area, and the material from which it is made:
 
-$$E = \frac{W}{Q}$$
+$$R = \frac{\rho L}{A}$$
 
 where:
-- $E$ = electromotive force in volts (V)
-- $W$ = total energy converted from other forms to electrical energy (J)
-- $Q$ = charge (C)
+- $R$ = resistance ($\Omega$)
+- $\rho$ = resistivity of the material ($\Omega\ \text{m}$)
+- $L$ = length of the wire (m)
+- $A$ = cross-sectional area of the wire (m$^2$)
 
-The e.m.f. is the **open-circuit** terminal voltage of the source (when no current flows).
+**Resistivity** $\rho$ is a property of the material itself, independent of the dimensions of the wire. It depends on temperature.
+
+Common values at room temperature:
+- Copper: $\rho \approx 1.7 \times 10^{-8}\ \Omega\ \text{m}$
+- Constantan: $\rho \approx 4.9 \times 10^{-7}\ \Omega\ \text{m}$
+- Silicon: $\rho \approx 6.4 \times 10^2\ \Omega\ \text{m}$
 :::
 
 ::: {.study-card}
-### Distinction between e.m.f. and p.d.
+### Temperature dependence of resistance
 
-| Feature | e.m.f. ($E$) | p.d. ($V$) |
-|---|---|---|
-| Meaning | Energy transferred **to** electrical energy per unit charge by a source | Energy transferred **from** electrical energy per unit charge by a component |
-| Where | Across a source (battery, generator) | Across a component (resistor, lamp) |
-| Measured | When no current flows (open circuit) | When current flows |
-| Cause | Converts chemical/mechanical energy to electrical energy | Converts electrical energy to heat/light/motion |
-| Unit | Volt (V) | Volt (V) |
-:::
+For **metallic conductors**, resistance increases with temperature. As temperature increases, the metal ions vibrate more vigorously, making it harder for the charge carriers (electrons) to pass through.
 
-::: {.study-card}
-### Internal resistance
+For **thermistors** (negative temperature coefficient NTC), resistance decreases as temperature increases. Thermistors are used in temperature sensing circuits.
 
-All real sources of e.m.f. have some **internal resistance** $r$. This is the resistance inside the source itself (e.g. the resistance of the electrolyte in a battery).
-
-When current $I$ flows, some of the e.m.f. is used to overcome the internal resistance, causing a drop in the terminal voltage:
-
-$$E = V + Ir$$
-
-where:
-- $E$ = e.m.f. of the source (V)
-- $V$ = terminal p.d. (V) — the voltage across the terminals when current flows
-- $I$ = current (A)
-- $r$ = internal resistance ($\Omega$)
-
-The term $Ir$ is called the **lost volts** — the energy per unit charge dissipated inside the source.
+For a **light-dependent resistor (LDR)**, resistance decreases as light intensity increases. The higher the light intensity, the more charge carriers are freed, so the lower the resistance.
 :::
 
 ::: {.formula-panel}
-### E.m.f., internal resistance and external circuits
+### Resistivity formula
 
-For a source of e.m.f. $E$ and internal resistance $r$ connected to an external resistor $R$:
+$$R = \frac{\rho L}{A} \qquad \rho = \frac{RA}{L}$$
 
-$$E = I(R + r)$$
-
-The terminal p.d. is:
-
-$$V = IR = E - Ir$$
-
-The current in the circuit:
-
-$$I = \frac{E}{R + r}$$
-
-The **lost volts** $Ir$ increases with the current drawn from the source. A high current demand (small external resistance) causes a larger drop in terminal voltage.
-:::
-
-::: {.study-card}
-### Practical determination of internal resistance
-
-To determine the internal resistance $r$ of a cell:
-
-1. Connect the cell in series with a variable resistor and an ammeter.
-2. Connect a voltmeter across the terminals of the cell.
-3. Vary the resistance and record pairs of $I$ and $V$ readings.
-4. Plot a graph of $V$ against $I$.
-5. The equation $V = E - Ir$ is of the form $y = mx + c$:
-   - $y$-intercept = $E$ (e.m.f.)
-   - Gradient = $-r$ (internal resistance)
-6. Alternatively, plot $V$ against $I$; the intercept on the $V$-axis gives $E$, and the magnitude of the gradient gives $r$.
+When a wire is stretched without changing its volume, $L$ increases and $A$ decreases proportionally. If the length doubles, the area halves, so the resistance increases by a factor of 4.
 :::
 
 ## Multiple Choice Questions
@@ -253,26 +233,28 @@ To determine the internal resistance $r$ of a cell:
 ## Chapter checklist
 
 - [ ] I can define electric current and use $I = Q/t$.
-- [ ] I can use $Q = ne$ and recall the value of $e$.
+- [ ] I can use $Q = ne$ and $I = Anvq$.
 - [ ] I can apply Kirchhoff's first law.
 - [ ] I can define potential difference and use $V = W/Q$.
+- [ ] I can calculate electrical power using $P = VI$, $P = I^2R$, $P = V^2/R$.
 - [ ] I can recall and use Ohm's law $R = V/I$.
+- [ ] I can sketch and interpret I-V characteristics of ohmic and non-ohmic conductors.
 - [ ] I can use $R = \rho L / A$ and describe the effect of temperature on resistance.
-- [ ] I can sketch and interpret I-V characteristics.
-- [ ] I can distinguish between e.m.f. and p.d.
-- [ ] I can use $E = I(R + r)$ and calculate terminal p.d. and lost volts.
+- [ ] I can describe the behaviour of LDRs and thermistors.
 
 ### Original question PDFs
 
-- [9.1 Electric Current - MC Easy](https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/electricity/9.1-current-pd-c-easy.pdf)
-- [9.1 Electric Current - MC Medium](https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/electricity/9.1-current-pd-c-medium.pdf)
-- [9.1 Electric Current - MC Hard](https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/electricity/9.1-current-pd-c-hard.pdf)
-- [9.1 Electric Current - SQ Medium](https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/electricity/9.1-current-pd-sq-medium.pdf)
-- [9.2 P.D. & Resistance - MC Easy](https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/electricity/9.2-resistance-c-easy.pdf)
-- [9.2 P.D. & Resistance - MC Medium](https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/electricity/9.2-resistance-c-medium.pdf)
-- [9.2 P.D. & Resistance - MC Hard](https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/electricity/9.2-resistance-c-hard.pdf)
-- [9.2 P.D. & Resistance - SQ Medium](https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/electricity/9.2-resistance-sq-medium.pdf)
-- [9.3 E.M.F. & Internal Resistance - MC Easy](https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/electricity/9.3-resistivity-c-easy.pdf)
-- [9.3 E.M.F. & Internal Resistance - MC Medium](https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/electricity/9.3-resistivity-c-medium.pdf)
-- [9.3 E.M.F. & Internal Resistance - MC Hard](https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/electricity/9.3-resistivity-c-hard.pdf)
-- [9.3 E.M.F. & Internal Resistance - SQ Medium](https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/electricity/9.3-resistivity-sq-medium.pdf)
+- [9.1 Current & Potential Difference - MC Easy](https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/electricity/9.1-current-pd-c-easy.pdf)
+- [9.1 Current & Potential Difference - MC Medium](https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/electricity/9.1-current-pd-c-medium.pdf)
+- [9.1 Current & Potential Difference - MC Hard](https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/electricity/9.1-current-pd-c-hard.pdf)
+- [9.1 Current & Potential Difference - SQ Medium](https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/electricity/9.1-current-pd-sq-medium.pdf)
+- [9.2 Resistance - MC Easy](https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/electricity/9.2-resistance-c-easy.pdf)
+- [9.2 Resistance - MC Medium](https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/electricity/9.2-resistance-c-medium.pdf)
+- [9.2 Resistance - MC Hard](https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/electricity/9.2-resistance-c-hard.pdf)
+- [9.2 Resistance - SQ Medium](https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/electricity/9.2-resistance-sq-medium.pdf)
+- [9.3 Resistivity - MC Easy](https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/electricity/9.3-resistivity-c-easy.pdf)
+- [9.3 Resistivity - MC Medium](https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/electricity/9.3-resistivity-c-medium.pdf)
+- [9.3 Resistivity - MC Hard](https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/electricity/9.3-resistivity-c-hard.pdf)
+- [9.3 Resistivity - SQ Easy](https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/electricity/9.3-resistivity-sq-easy.pdf)
+- [9.3 Resistivity - SQ Medium](https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/electricity/9.3-resistivity-sq-medium.pdf)
+- [9.3 Resistivity - SQ Hard](https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/electricity/9.3-resistivity-sq-hard.pdf)

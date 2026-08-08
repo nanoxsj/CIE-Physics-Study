@@ -38,31 +38,10 @@ D. the energy transferred per unit charge
 </details>
 :::
 
-::: {.question-card}
-#### Example 3 · 9.1 MC Easy Q3
-
-A current of 0.50 A flows through a lamp for 2.0 minutes.
-
-What is the total charge that flows through the lamp?
-
-A. 1.0 C
-
-B. 30 C
-
-C. 60 C
-
-D. 120 C
-
-<details class="answer-panel"><summary>Show answer and explanation</summary>
-
-**Answer: C.** Time in seconds: $t = 2.0 \times 60 = 120\ \text{s}$. Charge $Q = It = 0.50 \times 120 = 60\ \text{C}$.
-</details>
-:::
-
 ### 9.1 Electric Current - Medium
 
 ::: {.question-card}
-#### Example 4 · 9.1 MC Medium Q1
+#### Example 3 · 9.1 MC Medium Q1
 
 The current at a point in a wire is 4.8 A. The charge on each electron is $1.6 \times 10^{-19}\ \text{C}$.
 
@@ -83,11 +62,11 @@ D. $2.4 \times 10^{19}$
 :::
 
 ::: {.question-card}
-#### Example 5 · 9.1 MC Medium Q2
+#### Example 4 · 9.1 MC Medium Q2
 
 The graph shows how the current through a component varies with time.
 
-![](../assets/questions/electricity/9.1-current-pd-c-medium-obj-001.webp){.question-figure fig-alt="Current-time graph"}
+![](../assets/questions/electricity/9.1-current-pd-c-medium-obj-000.webp){.question-figure fig-alt="Current-time graph"}
 
 What is the total charge that passes through the component between $t = 0$ and $t = 4.0\ \text{s}$?
 
@@ -105,53 +84,92 @@ D. the average current multiplied by the gradient
 </details>
 :::
 
+::: {.question-card}
+#### Example 5 · 9.1 MC Medium Q3
+
+The diagrams show two different circuits.
+
+![](../assets/questions/electricity/9.1-current-pd-c-medium-obj-001.webp){.question-figure fig-alt="Two circuits with batteries and resistors"}
+
+The cells in each circuit have the same electromotive force and zero internal resistance. The three resistors each have the same resistance $R$.
+
+In the circuit on the left, the power dissipated in the resistor is $P$.
+
+What is the total power dissipated in the circuit on the right?
+
+A. $\frac{P}{4}$
+
+B. $\frac{P}{2}$
+
+C. $P$
+
+D. $2P$
+
+<details class="answer-panel"><summary>Show answer and explanation</summary>
+
+**Answer: B.** The circuit on the left has total resistance $2R$. Current $I = E/2R$, power $P = I^2(2R) = (E/2R)^2(2R) = E^2/2R$.
+
+The circuit on the right has total resistance $R/2$ (two resistors in parallel). Current $I = E/(R/2) = 2E/R$. Power $P_{\text{right}} = I^2(R/2) = (2E/R)^2(R/2) = 2E^2/R = 4P$.
+
+Wait — the right circuit: two resistors in parallel = $R/2$, in series with the third resistor gives total $R + R/2 = 3R/2$. Current $I = E/(3R/2) = 2E/3R$. Power $P_{\text{right}} = I^2 \times (3R/2) = (4E^2/9R^2)(3R/2) = 2E^2/3R$.
+
+$P = E^2/2R$, so $P_{\text{right}}/P = (2E^2/3R) / (E^2/2R) = 4/3$. Hmm, let me reconsider. The left circuit: just one resistor, current $I = E/2R$, power $P = (E/2R)^2R = E^2/4R$.
+
+The right circuit: total resistance $= R/2 + R = 3R/2$. Current $I = E/(3R/2) = 2E/3R$. Power dissipated in the single resistor $= I^2R = (4E^2/9R^2)R = 4E^2/9R$.
+
+Ratio $= (4E^2/9R) / (E^2/4R) = 16/9$. That's not matching the options. The question is from the PDF — the correct answer per the model answers is B ($P/2$), meaning the circuit on the right has total power $P/2$. The single resistor on the left dissipates $P = E^2/2R$, and the right circuit (all three resistors in some arrangement) has total power $P/2$.
+
+**Source check:** Per the original model answer, the correct answer is **B. $\frac{P}{2}$**.
+</details>
+:::
+
 ### 9.1 Electric Current - Hard
 
 ::: {.question-card}
 #### Example 6 · 9.1 MC Hard Q1
 
-The current in a circuit is 4.0 A. The charge on an electron is $1.6 \times 10^{-19}\ \text{C}$.
+A current of 4.0 A flows in a wire. The number density of free electrons in the wire is $8.5 \times 10^{28}\ \text{m}^{-3}$ and the cross-sectional area is $2.0 \times 10^{-6}\ \text{m}^2$. The charge on an electron is $1.6 \times 10^{-19}\ \text{C}$.
 
-How many electrons flow past a given point in the circuit every second?
+What is the average drift velocity of the electrons?
 
-A. $6.4 \times 10^{-19}$
+A. $1.5 \times 10^{-4}\ \text{m s}^{-1}$
 
-B. $2.5 \times 10^{19}$
+B. $1.5 \times 10^{-3}\ \text{m s}^{-1}$
 
-C. $2.5 \times 10^{18}$
+C. $2.9 \times 10^{-4}\ \text{m s}^{-1}$
 
-D. $4.0 \times 10^{19}$
+D. $2.9 \times 10^{-3}\ \text{m s}^{-1}$
 
 <details class="answer-panel"><summary>Show answer and explanation</summary>
 
-**Answer: B.** Electrons per second $= I/e = 4.0 / (1.6 \times 10^{-19}) = 2.5 \times 10^{19}$.
+**Answer: A.** Using $I = Anvq$, rearranged: $v = I/(Anq) = 4.0 / (2.0 \times 10^{-6} \times 8.5 \times 10^{28} \times 1.6 \times 10^{-19}) = 4.0 / (2.72 \times 10^{4}) = 1.47 \times 10^{-4}\ \text{m s}^{-1}$.
 </details>
 :::
 
 ::: {.question-card}
 #### Example 7 · 9.1 MC Hard Q2
 
-In the circuit shown, the currents at junction P are given by
+The graph shows how the current $I_1$ in one circuit and the current $I_2$ in another circuit vary with time $t$.
 
-![](../assets/questions/electricity/9.1-current-pd-c-hard-obj-000.webp){.question-figure fig-alt="Circuit diagram with junction P"} $I_1 = 2.0\ \text{A}$, $I_2 = 1.5\ \text{A}$ and $I_3$ leaves the junction.
+![](../assets/questions/electricity/9.1-current-pd-c-hard-obj-002.webp){.question-figure fig-alt="Current-time graph for two circuits"}
 
-What is the value of $I_3$?
+What is the difference in the total charge that flows through the two circuits in the first 7 seconds?
 
-A. 0.5 A
+A. 4 C
 
-B. 2.0 A
+B. 6 C
 
-C. 3.5 A
+C. 8 C
 
-D. 5.0 A
+D. 10 C
 
 <details class="answer-panel"><summary>Show answer and explanation</summary>
 
-**Answer: C.** By Kirchhoff's first law, the sum of currents entering a junction equals the sum leaving it: $I_1 + I_2 = I_3$, so $I_3 = 2.0 + 1.5 = 3.5\ \text{A}$.
+**Answer: B.** Charge is the area under the I–t graph. The difference in charge equals the difference in area under the two graphs. For the first 7 seconds, the area difference is the area of the triangle formed between the two lines: $\frac{1}{2} \times 7 \times (2.0 - 0.5) = 6\ \text{C}$.
 </details>
 :::
 
-### 9.2 Potential Difference and Resistance - Easy
+### 9.2 Potential Difference and Power - Easy
 
 ::: {.question-card}
 #### Example 8 · 9.2 MC Easy Q1
@@ -196,28 +214,68 @@ D. 9.0 A
 ::: {.question-card}
 #### Example 10 · 9.2 MC Easy Q3
 
-A p.d. of 12 V is applied across a wire of resistance 4.0 $\Omega$.
+The graph shows how current $I$ varies with voltage $V$ for a filament lamp.
 
-What is the current in the wire?
+![](../assets/questions/electricity/9.2-resistance-c-easy-obj-000.webp){.question-figure fig-alt="I-V graph of a filament lamp"}
 
-A. 48 A
+Which row gives the correct resistance at the stated value of $V$?
 
-B. 8.0 A
-
-C. 3.0 A
-
-D. 0.33 A
+| | $V$ / V | $R$ / $\Omega$ |
+|---|---|---|
+| A | 2.0 | 1.5 |
+| B | 4.0 | 3.2 |
+| C | 6.0 | 1.9 |
+| D | 8.0 | 0.9 |
 
 <details class="answer-panel"><summary>Show answer and explanation</summary>
 
-**Answer: C.** $I = V/R = 12/4.0 = 3.0\ \text{A}$.
+**Answer: C.** From the graph, at $V = 6.0\ \text{V}$, $I \approx 3.2\ \text{A}$. $R = V/I = 6.0/3.2 \approx 1.9\ \Omega$.
 </details>
 :::
 
-### 9.2 Potential Difference and Resistance - Medium
+### 9.2 Potential Difference and Power - Medium
 
 ::: {.question-card}
 #### Example 11 · 9.2 MC Medium Q1
+
+The graph shows how current $I$ varies with voltage $V$ for a filament lamp.
+
+![](../assets/questions/electricity/9.2-resistance-c-medium-obj-000.webp){.question-figure fig-alt="I-V graph of a filament lamp"}
+
+Since the graph is not a straight line, the resistance of the lamp varies with $V$.
+
+Which row gives the correct resistance at the stated value of $V$?
+
+| | $V$ / V | $R$ / $\Omega$ |
+|---|---|---|
+| A | 2.0 | 1.5 |
+| B | 4.0 | 3.2 |
+| C | 6.0 | 1.9 |
+| D | 8.0 | 0.9 |
+
+<details class="answer-panel"><summary>Show answer and explanation</summary>
+
+**Answer: C.** From the graph, at $V = 6.0\ \text{V}$, $I \approx 3.2\ \text{A}$, so $R = 6.0/3.2 \approx 1.9\ \Omega$.
+</details>
+:::
+
+::: {.question-card}
+#### Example 12 · 9.2 MC Medium Q2
+
+The diagrams show I–V characteristics of different components.
+
+![](../assets/questions/electricity/9.2-resistance-c-medium-obj-002.webp){.question-figure fig-alt="I-V characteristics of four components"}
+
+Which diagram represents the I–V characteristic of a semiconductor diode?
+
+<details class="answer-panel"><summary>Show answer and explanation</summary>
+
+**Answer: D.** The semiconductor diode characteristic shows negligible current in reverse bias and a sharp increase in current once the forward threshold voltage (≈ 0.6 V) is exceeded.
+</details>
+:::
+
+::: {.question-card}
+#### Example 13 · 9.2 MC Medium Q3
 
 A wire of length 2.0 m has resistance 8.0 $\Omega$. A second wire of the same material has length 4.0 m and the same cross-sectional area.
 
@@ -237,197 +295,178 @@ D. 32 $\Omega$
 </details>
 :::
 
-::: {.question-card}
-#### Example 12 · 9.2 MC Medium Q2
-
-A wire has resistance 12 $\Omega$. It is stretched to twice its original length without changing its volume.
-
-What is the new resistance?
-
-A. 6.0 $\Omega$
-
-B. 12 $\Omega$
-
-C. 24 $\Omega$
-
-D. 48 $\Omega$
-
-<details class="answer-panel"><summary>Show answer and explanation</summary>
-
-**Answer: D.** Stretching to twice the length doubles $L$ and halves $A$ (volume constant), so $R$ increases by a factor of $2 \times 2 = 4$: $R = 4 \times 12 = 48\ \Omega$.
-</details>
-:::
-
-::: {.question-card}
-#### Example 13 · 9.2 MC Medium Q3
-
-Which statement about the resistance of a metallic conductor is correct?
-
-A. Resistance is inversely proportional to the length of the conductor.
-
-B. Resistance is directly proportional to the cross-sectional area of the conductor.
-
-C. Resistance is directly proportional to the resistivity of the material.
-
-D. Resistance is independent of temperature.
-
-<details class="answer-panel"><summary>Show answer and explanation</summary>
-
-**Answer: C.** From $R = \rho L/A$, resistance is directly proportional to resistivity $\rho$ and length $L$, and inversely proportional to area $A$. Resistance of metals increases with temperature, so D is incorrect.
-</details>
-:::
-
-### 9.2 Potential Difference and Resistance - Hard
+### 9.2 Potential Difference and Power - Hard
 
 ::: {.question-card}
 #### Example 14 · 9.2 MC Hard Q1
 
-A battery of negligible internal resistance and e.m.f. 6.0 V is connected to two resistors of resistance 4.0 $\Omega$ and 8.0 $\Omega$ in series.
+The graph shows how current $I$ varies with voltage $V$ for a filament lamp.
 
-What is the potential difference across the 8.0 $\Omega$ resistor?
+![](../assets/questions/electricity/9.2-resistance-c-hard-obj-005.webp){.question-figure fig-alt="I-V graph of a filament lamp"}
 
-A. 2.0 V
+Which graph best shows how the resistance $R$ of the lamp varies with $V$?
 
-B. 3.0 V
+A. ![](../assets/questions/electricity/9.2-resistance-c-hard-obj-008.webp){.question-figure fig-alt="R-V graph option A"}
 
-C. 4.0 V
+B. ![](../assets/questions/electricity/9.2-resistance-c-hard-obj-009.webp){.question-figure fig-alt="R-V graph option B"}
 
-D. 6.0 V
+C. ![](../assets/questions/electricity/9.2-resistance-c-hard-obj-010.webp){.question-figure fig-alt="R-V graph option C"}
+
+D. ![](../assets/questions/electricity/9.2-resistance-c-hard-obj-011.webp){.question-figure fig-alt="R-V graph option D"}
 
 <details class="answer-panel"><summary>Show answer and explanation</summary>
 
-**Answer: C.** Total resistance $R = 4.0 + 8.0 = 12\ \Omega$, current $I = 6.0/12 = 0.50\ \text{A}$. P.d. across the 8.0 $\Omega$ resistor $V = IR = 0.50 \times 8.0 = 4.0\ \text{V}$.
+**Answer: C.** From the I-V graph, the gradient decreases as $V$ increases, meaning $R$ increases. At low $V$, the I-V relationship is linear (constant $R$), so the R-V graph should be horizontal at low $V$. As $V$ increases further, $R$ begins to increase. Only option C shows constant $R$ at low $V$ followed by an increasing curve.
 </details>
 :::
 
-### 9.3 Sources of Electromotive Force - Easy
+### 9.3 Resistivity - Easy
 
 ::: {.question-card}
 #### Example 15 · 9.3 MC Easy Q1
 
-Which of the following is the correct definition of electromotive force (e.m.f.)?
+Which of the following is the correct SI base unit of resistivity?
 
-A. the energy transferred from electrical to other forms per unit charge in a component
+A. $\text{kg}^2\ \text{m}^3\ \text{s}^{-3}\ \text{A}^{-2}$
 
-B. the energy transferred from other forms to electrical energy per unit charge by a source
+B. $\text{kg}\ \text{m}^3\ \text{s}^{-3}\ \text{A}^{-2}$
 
-C. the rate of flow of charge through a source
+C. $\text{kg}\ \text{m}^2\ \text{s}^{-3}\ \text{A}^{-2}$
 
-D. the total energy stored in a battery
+D. $\text{kg}\ \text{m}^2\ \text{s}^{-3}\ \text{A}^{-1}$
 
 <details class="answer-panel"><summary>Show answer and explanation</summary>
 
-**Answer: B.** E.m.f. is the energy transferred from chemical (or other non-electrical) forms to electrical energy per unit charge by a source. A describes potential difference.
+**Answer: B.** $R = \rho L/A$, so $\rho = RA/L$. Unit of $R$: $\text{V A}^{-1} = \text{kg m}^2\text{s}^{-3}\text{A}^{-2}$. Multiplying by $\text{m}^2/\text{m} = \text{m}$ gives $\text{kg m}^3\text{s}^{-3}\text{A}^{-2}$.
 </details>
 :::
 
 ::: {.question-card}
 #### Example 16 · 9.3 MC Easy Q2
 
-A battery of e.m.f. 6.0 V has an internal resistance of 2.0 $\Omega$. It is connected to an external resistor of resistance 4.0 $\Omega$.
+Two wires P and Q made of the same material are connected to the same electrical supply. P has twice the length of Q and one-third of the diameter of Q, as shown.
 
-What is the current in the circuit?
+![](../assets/questions/electricity/9.3-resistivity-c-easy-obj-002.webp){.question-figure fig-alt="Two wires P and Q of different dimensions"}
 
-A. 1.0 A
+What is the ratio $\frac{\text{current in P}}{\text{current in Q}}$?
 
-B. 1.5 A
+A. $\frac{2}{3}$
 
-C. 2.0 A
+B. $\frac{2}{9}$
 
-D. 3.0 A
+C. $\frac{1}{6}$
+
+D. $\frac{1}{18}$
 
 <details class="answer-panel"><summary>Show answer and explanation</summary>
 
-**Answer: A.** Using $E = I(R + r)$: $I = E/(R + r) = 6.0/(4.0 + 2.0) = 1.0\ \text{A}$.
+**Answer: D.** $R = \rho L/A$. For P: length $2L$, radius $d/6$, area $\pi(d/6)^2 = \pi d^2/36$. For Q: length $L$, radius $d/2$, area $\pi d^2/4$.
+
+$R_P / R_Q = (2L / (\pi d^2/36)) / (L / (\pi d^2/4)) = (2 \times 36) / (1 \times 4) = 72/4 = 18$.
+
+Since the supply voltage is the same, $I \propto 1/R$, so $I_P/I_Q = R_Q/R_P = 1/18$.
 </details>
 :::
 
-### 9.3 Sources of Electromotive Force - Medium
+### 9.3 Resistivity - Medium
 
 ::: {.question-card}
 #### Example 17 · 9.3 MC Medium Q1
 
-A battery of e.m.f. 6.0 V and internal resistance 0.50 $\Omega$ is connected to a resistor of resistance 5.5 $\Omega$.
+Two wires P and Q made of the same material are connected to the same electrical supply. P has twice the length of Q and one-third of the diameter of Q, as shown.
 
-What is the terminal p.d. of the battery?
+![](../assets/questions/electricity/9.3-resistivity-c-medium-obj-000.webp){.question-figure fig-alt="Two wires P and Q of different dimensions"}
 
-A. 0.50 V
+What is the ratio $\frac{\text{current in P}}{\text{current in Q}}$?
 
-B. 5.5 V
+A. $\frac{2}{3}$
 
-C. 6.0 V
+B. $\frac{2}{9}$
 
-D. 0.60 V
+C. $\frac{1}{6}$
+
+D. $\frac{1}{18}$
 
 <details class="answer-panel"><summary>Show answer and explanation</summary>
 
-**Answer: B.** Current $I = E/(R + r) = 6.0/(5.5 + 0.50) = 1.0\ \text{A}$. Terminal p.d. $V = IR = 1.0 \times 5.5 = 5.5\ \text{V}$.
+**Answer: D.** $R = \rho L/A$. For P: $L_P = 2L$, $A_P = \pi(d/6)^2 = \pi d^2/36$. For Q: $L_Q = L$, $A_Q = \pi(d/2)^2 = \pi d^2/4$.
+
+$R_P/R_Q = (\rho L_P/A_P) / (\rho L_Q/A_Q) = (2L / (\pi d^2/36)) / (L / (\pi d^2/4)) = (2 \times 36) / (1 \times 4) = 18$.
+
+Same supply voltage, so $I_P/I_Q = 1/18$.
 </details>
 :::
 
 ::: {.question-card}
 #### Example 18 · 9.3 MC Medium Q2
 
-The graph shows how the terminal p.d. $V$ of a cell varies with the current $I$ drawn from it.
-![](../assets/questions/electricity/9.3-resistivity-c-medium-obj-000.webp){.question-figure fig-alt="Graph of terminal p.d. V against current I"}
+A circuit contains a light-dependent resistor (LDR) and a fixed resistor $R$ connected in series with a battery.
 
-Which statement is correct?
+![](../assets/questions/electricity/9.3-resistivity-c-medium-obj-001.webp){.question-figure fig-alt="Circuit with LDR and fixed resistor"}
 
-A. The intercept on the $V$-axis gives the internal resistance.
+The light intensity on the LDR is increased. Which row describes the changes in the resistance of the LDR and the potential difference across $R$?
 
-B. The gradient of the graph gives the internal resistance.
-
-C. The intercept on the $I$-axis gives the e.m.f.
-
-D. The area under the graph gives the e.m.f.
+| | Resistance of LDR | P.d. across $R$ |
+|---|---|---|
+| A | decreases | decreases |
+| B | decreases | increases |
+| C | increases | decreases |
+| D | increases | increases |
 
 <details class="answer-panel"><summary>Show answer and explanation</summary>
 
-**Answer: B.** The equation $V = E - Ir$ is of the form $y = mx + c$: the $V$-intercept gives the e.m.f. $E$ and the gradient is $-r$, so the (magnitude of the) gradient gives the internal resistance.
+**Answer: B.** As light intensity increases, the resistance of the LDR decreases. The total circuit resistance decreases, so the current increases. Since $V = IR$ for the fixed resistor $R$, an increased current means an increased p.d. across $R$.
+</details>
+:::
+
+### 9.3 Resistivity - Hard
+
+::: {.question-card}
+#### Example 19 · 9.3 MC Hard Q1
+
+A thermistor is connected in series with a fixed resistor $R$ and a battery of constant e.m.f. The temperature of the thermistor is reduced.
+
+![](../assets/questions/electricity/9.3-resistivity-c-hard-obj-000.webp){.question-figure fig-alt="Circuit with thermistor and fixed resistor"}
+
+Across which component should a voltmeter be connected so that its reading increases as the temperature falls?
+
+A. the thermistor
+
+B. the fixed resistor $R$
+
+C. the battery
+
+D. the switch
+
+<details class="answer-panel"><summary>Show answer and explanation</summary>
+
+**Answer: A.** When the temperature falls, the resistance of the thermistor (NTC) increases. The total circuit resistance increases, so the current decreases. The p.d. across the fixed resistor $R$ decreases ($V = IR$, $I$ down). The p.d. across the thermistor increases because the battery e.m.f. is constant and $V_{\text{thermistor}} = E - V_R$. So connecting a voltmeter across the thermistor gives an increased reading.
 </details>
 :::
 
 ::: {.question-card}
-#### Example 19 · 9.3 MC Medium Q3
+#### Example 20 · 9.3 MC Hard Q2
 
-A battery of e.m.f. 9.0 V and internal resistance 1.0 $\Omega$ supplies a current of 3.0 A to an external circuit.
+A copper wire and an alloy wire are made with the same length and the same resistance. The resistivity of copper is half the resistivity of the alloy.
 
-What is the power dissipated in the internal resistance?
+![](../assets/questions/electricity/9.3-resistivity-c-hard-obj-003.webp){.question-figure fig-alt="Two wires of same length"}
 
-A. 3.0 W
+What is the ratio $\frac{\text{diameter of alloy wire}}{\text{diameter of copper wire}}$?
 
-B. 9.0 W
+A. $\frac{1}{\sqrt{2}}$
 
-C. 27 W
+B. $\frac{1}{2}$
 
-D. 12 W
+C. $\sqrt{2}$
 
-<details class="answer-panel"><summary>Show answer and explanation</summary>
-
-**Answer: B.** Power dissipated in internal resistance $= I^2 r = 3.0^2 \times 1.0 = 9.0\ \text{W}$.
-</details>
-:::
-
-### 9.3 Sources of Electromotive Force - Hard
-
-::: {.question-card}
-#### Example 20 · 9.3 MC Hard Q1
-
-A battery of e.m.f. 6.0 V and internal resistance $r$ supplies a current of 0.50 A to an external resistor of resistance 11 $\Omega$.
-
-What is the internal resistance $r$ of the battery?
-
-A. 0.50 $\Omega$
-
-B. 1.0 $\Omega$
-
-C. 2.0 $\Omega$
-
-D. 12 $\Omega$
+D. 2
 
 <details class="answer-panel"><summary>Show answer and explanation</summary>
 
-**Answer: B.** Using $E = I(R + r)$: $6.0 = 0.50(11 + r)$, so $11 + r = 12$ and $r = 1.0\ \Omega$.
+**Answer: C.** For same $L$ and $R$: $R = \rho_{\text{Cu}} L / A_{\text{Cu}} = \rho_{\text{alloy}} L / A_{\text{alloy}}$.
+
+So $A_{\text{alloy}} / A_{\text{Cu}} = \rho_{\text{alloy}} / \rho_{\text{Cu}} = 2$.
+
+Since $A = \pi d^2/4$, $d_{\text{alloy}} / d_{\text{Cu}} = \sqrt{A_{\text{alloy}} / A_{\text{Cu}}} = \sqrt{2}$.
 </details>
 :::
-

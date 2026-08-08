@@ -12,6 +12,9 @@ project:
     - as-level/07-waves.qmd
     - as-level/08-superposition.qmd
     - as-level/09-electricity.qmd
+    - as-level/10-dc-circuits.qmd
+    - as-level/11-particle-physics.qmd
+
     - a-level/12-motion-in-a-circle.qmd
     - a-level/13-gravitational-fields.qmd
     - a-level/14-temperature.qmd
@@ -26,7 +29,6 @@ project:
     - a-level/23-nuclear-physics.qmd
     - a-level/24-medical-physics.qmd
     - a-level/25-astronomy-and-cosmology.qmd
-
 website:
   title: "CIE Physics 9702"
   page-navigation: true
@@ -56,6 +58,11 @@ website:
             text: "8 Superposition"
           - href: as-level/09-electricity.qmd
             text: "9 Electricity"
+          - href: as-level/10-dc-circuits.qmd
+            text: "10 D.C. Circuits"
+          - href: as-level/11-particle-physics.qmd
+            text: "11 Particle Physics"
+
       - section: "A Level"
         contents:
           - href: a-level/12-motion-in-a-circle.qmd
@@ -86,7 +93,6 @@ website:
             text: "24 Medical physics"
           - href: a-level/25-astronomy-and-cosmology.qmd
             text: "25 Astronomy and cosmology"
-
 format:
   html:
     theme: cosmo

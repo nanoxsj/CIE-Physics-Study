@@ -46,6 +46,7 @@ Calculate the number of electrons passing a point in the wire in 2.0 s.
 **(a)** State Kirchhoff's first law.
 
 `[1 mark]`
+
 ![](../assets/questions/electricity/9.1-current-pd-sq-medium-obj-000.webp){.question-figure fig-alt="Three wires meeting at a junction P with currents I1, I2 entering and I3, I4 leaving"}
 
 **(b)** In the circuit shown in Fig. 1.1, the currents are $I_1 = 1.5\ \text{A}$, $I_2 = 0.8\ \text{A}$ and $I_3 = 1.2\ \text{A}$.
@@ -96,6 +97,7 @@ Calculate the number of electrons that must pass a point in a circuit per second
 Calculate the total charge that flows through the wire.
 
 `[2 marks]`
+
 ![](../assets/questions/electricity/9.1-current-pd-sq-medium-obj-001.webp){.question-figure fig-alt="Wire with conventional current direction shown"}
 
 **(c)** The wire in part (b) carries a current in the direction shown in Fig. 1.2.
@@ -128,7 +130,7 @@ State the direction of the electron flow, giving a reason.
 </details>
 :::
 
-### 9.2 Potential Difference and Resistance - Medium
+### 9.2 Potential Difference and Power - Medium
 
 ::: {.question-card}
 #### Example 4 · 9.2 SQ Medium Q1
@@ -178,6 +180,7 @@ State how the voltmeter should be connected in the circuit.
 #### Example 5 · 9.2 SQ Medium Q2
 
 **(a)** State Ohm's law.
+
 ![](../assets/questions/electricity/9.2-resistance-sq-medium-obj-000.webp){.question-figure fig-alt="Grid for plotting V against I graph"}
 
 `[2 marks]`
@@ -281,6 +284,7 @@ State and explain the effect of increasing temperature on the resistance of the 
 #### Example 7 · 9.2 SQ Medium Q4
 
 ![](../assets/questions/electricity/9.2-resistance-sq-medium-obj-002.webp){.question-figure fig-alt="Axes for sketching I-V characteristics"}
+
 **(a)** Sketch, on the axes below, the I–V characteristic of:
 
 **(i)** an ohmic conductor;
@@ -326,158 +330,143 @@ State and explain what happens to the current through the thermistor.
 </details>
 :::
 
-### 9.3 Sources of Electromotive Force - Medium
+### 9.3 Resistivity - Easy
 
 ::: {.question-card}
-#### Example 8 · 9.3 SQ Medium Q1
+#### Example 8 · 9.3 SQ Easy Q1
 
-**(a)** State what is meant by the electromotive force (e.m.f.) of a source.
+**(a)** State the relationship between resistance $R$, length $L$, cross-sectional area $A$ and resistivity $\rho$ of a wire.
 
 `[1 mark]`
 
-**(b)** A cell of e.m.f. 1.5 V is connected to a resistor of resistance 2.0 $\Omega$. The cell has an internal resistance of 0.50 $\Omega$.
+**(b)** An electrical heating element, made from uniform nichrome wire, is required to dissipate 600 W when connected to the 230 V mains supply. The radius of the wire is 0.16 mm.
 
-**(i)** Calculate the current in the circuit.
+The resistivity of nichrome is $1.1 \times 10^{-6}\ \Omega\ \text{m}$.
 
-**(ii)** Calculate the terminal p.d. of the cell.
+Calculate the length of nichrome wire required.
 
-**(iii)** Calculate the lost volts in the cell.
+`[4 marks]`
 
-`[6 marks]`
-
-**(c)** State the difference between e.m.f. and potential difference.
+**(c)** Suggest two properties that the nichrome wire must have to make it suitable as an electrical heating element.
 
 `[2 marks]`
 
 <details class="answer-panel"><summary>Show mark scheme / model answer</summary>
 
-**(a)** E.m.f. is the energy transferred from chemical (or other non-electrical) forms to electrical energy per unit charge by the source. `[1]`
+**(a)** $R = \rho L / A$ `[1]`
 
 `[Total: 1 mark]`
 
 
 **(b)**
-- **(i)** Using $E = I(R + r)$: $I = 1.5/(2.0 + 0.50) = 0.60\ \text{A}$. `[2]`
-- **(ii)** $V = IR = 0.60 \times 2.0 = 1.2\ \text{V}$. `[2]`
-- **(iii)** Lost volts $= Ir = 0.60 \times 0.50 = 0.30\ \text{V}$ (or $E - V = 1.5 - 1.2 = 0.30\ \text{V}$). `[2]`
+- Power $P = V^2/R$, so $R = V^2/P = 230^2/600 = 52900/600 = 88.2\ \Omega$. `[1]`
+- Cross-sectional area $A = \pi r^2 = \pi (0.16 \times 10^{-3})^2 = 8.04 \times 10^{-8}\ \text{m}^2$. `[1]`
+- Using $R = \rho L/A$, $L = RA/\rho = 88.2 \times (8.04 \times 10^{-8}) / (1.1 \times 10^{-6})$. `[1]`
+- $L = 6.45\ \text{m}$. `[1]`
 
-`[Total: 6 marks]`
+`[Total: 4 marks]`
 
 
 **(c)**
-- E.m.f. is the energy transferred **to** electrical energy per unit charge by a source; p.d. is the energy transferred **from** electrical energy per unit charge by a component. `[1]`
-- E.m.f. is measured across a source when no current flows (open circuit); p.d. is measured across a component when current flows. `[1]`
+- It must have a high melting point (to withstand high temperatures without melting). `[1]`
+- It must not oxidise / corrode at high temperatures (or: it must be a good conductor of heat / have a high resistivity). `[1]`
 
 `[Total: 2 marks]`
 </details>
 :::
 
 ::: {.question-card}
-#### Example 9 · 9.3 SQ Medium Q2
+#### Example 9 · 9.3 SQ Easy Q2
 
-**(a)** A battery has an e.m.f. of 9.0 V. When a current of 1.5 A is drawn from it, the terminal p.d. is 8.1 V.
+![](../assets/questions/electricity/9.3-resistivity-sq-easy-obj-001.webp){.question-figure fig-alt="Axes for sketching resistance-temperature and resistance-light intensity graphs"}
 
-**(i)** Calculate the internal resistance of the battery.
+**(a)** Sketch, on the axes provided, a graph to show how the resistance of a thermistor varies with temperature.
 
-**(ii)** Calculate the power dissipated in the internal resistance.
+`[2 marks]`
 
-`[5 marks]`
+**(b)** Sketch, on the axes provided, a graph to show how the resistance of a light-dependent resistor (LDR) varies with light intensity.
 
-**(b)** The current drawn from the battery is now increased.
+`[2 marks]`
 
-State and explain the effect on the terminal p.d. of the battery.
+**(c)** State what is meant by a negative temperature coefficient (NTC) thermistor.
+
+`[1 mark]`
+
+<details class="answer-panel"><summary>Show mark scheme / model answer</summary>
+
+**(a)**
+- Curved line showing decreasing gradient with rise in temperature. `[1]`
+- Smooth line not touching the temperature axis, and no horizontal or vertical line anywhere. `[1]`
+
+`[Total: 2 marks]`
+
+
+**(b)**
+- Curved line showing decreasing gradient with greater light intensity. `[1]`
+- Smooth line not touching the light intensity axis, and no horizontal or vertical line. `[1]`
+
+`[Total: 2 marks]`
+
+
+**(c)** A negative temperature coefficient thermistor is one whose resistance decreases as the temperature increases. `[1]`
+
+`[Total: 1 mark]`
+</details>
+:::
+
+### 9.3 Resistivity - Hard
+
+::: {.question-card}
+#### Example 10 · 9.3 SQ Hard Q1
+
+**(a)** A long thin wire of uniform cross-sectional area $A$ and resistivity $\rho$ is extended so that its length increases. The volume of the wire remains constant.
+
+Sketch on Fig. 1.1 how the resistance $R$ of the wire varies with its length $l$.
+
+![](../assets/questions/electricity/9.3-resistivity-sq-hard-obj-000.webp){.question-figure fig-alt="Axes for sketching R against l graph"}
+
+Determine the relationship between $R$ and $l$.
+
+`[2 marks]`
+
+**(b)** Two cylindrical wires X and Y are made from different metals. The wires are connected in series to a battery. Data for the two wires are given in Table 1.1.
+
+| Wire | Resistivity | Length | Diameter |
+|---|---|---|---|
+| X | $\rho$ | $l$ | $d$ |
+| Y | $\frac{\rho}{3}$ | $2l$ | $4d$ |
+
+Calculate the ratio $\frac{\text{power dissipated in Y}}{\text{power dissipated in X}}$ for the series arrangement.
+
+`[3 marks]`
+
+**(c)** The same two wires are now connected in parallel.
+
+Calculate the ratio $\frac{\text{power dissipated in Y}}{\text{power dissipated in X}}$ for the parallel arrangement.
 
 `[3 marks]`
 
 <details class="answer-panel"><summary>Show mark scheme / model answer</summary>
 
 **(a)**
-- **(i)** Using $E = V + Ir$: $r = (E - V)/I = (9.0 - 8.1)/1.5 = 0.60\ \Omega$. `[3]`
-- **(ii)** Power $= I^2 r = 1.5^2 \times 0.60 = 1.35\ \text{W}$. `[2]`
+- $R = \rho l/A$ and since volume $V = Al$ is constant, $A = V/l$, so $R = \rho l/(V/l) = \rho l^2/V$. `[1]`
+- Therefore $R \propto l^2$, so the graph is a curve with increasing gradient. `[1]`
 
-`[Total: 5 marks]`
+`[Total: 2 marks]`
 
 
 **(b)**
-- The terminal p.d. decreases. `[1]`
-- The lost volts $Ir$ increase as the current increases. `[1]`
-- Since $V = E - Ir$, a larger lost volts gives a smaller terminal p.d. `[1]`
+- Resistance of X: $R_X = \rho l / (\pi(d/2)^2) = 4\rho l / (\pi d^2)$
+- Resistance of Y: $R_Y = (\rho/3)(2l) / (\pi(4d/2)^2) = (2\rho l/3) / (\pi(2d)^2) = (2\rho l/3) / (4\pi d^2) = \rho l / (6\pi d^2)$
+- Ratio $R_Y/R_X = [\rho l/(6\pi d^2)] / [4\rho l/(\pi d^2)] = 1/24$
+- In series, same current: $P = I^2R$, so $P_Y/P_X = R_Y/R_X = 1/24$. `[3]`
+
+`[Total: 3 marks]`
+
+
+**(c)**
+- In parallel, same p.d.: $P = V^2/R$, so $P_Y/P_X = R_X/R_Y = 24$. `[3]`
 
 `[Total: 3 marks]`
 </details>
 :::
-
-::: {.question-card}
-#### Example 10 · 9.3 SQ Medium Q3
-
-**(a)** A student investigates the e.m.f. $E$ and internal resistance $r$ of a cell. The cell is connected to a variable resistor, an ammeter and a voltmeter as shown in Fig. 1.1.
-![](../assets/questions/electricity/9.3-resistivity-sq-medium-obj-000.webp){.question-figure fig-alt="Cell in series with ammeter and variable resistor, voltmeter connected across cell terminals"}
-
-Fig. 1.1 shows a cell in series with an ammeter and a variable resistor, with a voltmeter connected across the cell terminals.
-
-**(i)** State the readings that are recorded as the resistance of the variable resistor is changed.
-
-**(ii)** Describe how the student uses the readings to determine $E$ and $r$.
-
-`[5 marks]`
-
-**(b)** The graph of terminal p.d. $V$ against current $I$ has an intercept of 6.0 V on the $V$-axis and a gradient of $-2.0\ \text{V A}^{-1}$.
-
-**(i)** State the e.m.f. of the cell.
-
-**(ii)** State the internal resistance of the cell.
-
-`[2 marks]`
-
-<details class="answer-panel"><summary>Show mark scheme / model answer</summary>
-
-**(a)**
-- **(i)** The ammeter reading (current $I$) and the voltmeter reading (terminal p.d. $V$) for each setting of the variable resistor. `[1]`
-- **(ii)** Plot a graph of $V$ against $I$. `[1]` The equation $V = E - Ir$ is of the form $y = mx + c$. `[1]` The $V$-intercept gives the e.m.f. $E$. `[1]` The magnitude of the gradient gives the internal resistance $r$. `[1]`
-
-`[Total: 5 marks]`
-
-
-**(b)**
-- **(i)** $E = 6.0\ \text{V}$. `[1]`
-- **(ii)** $r = 2.0\ \Omega$. `[1]`
-
-`[Total: 2 marks]`
-</details>
-:::
-
-::: {.question-card}
-#### Example 11 · 9.3 SQ Medium Q4
-
-**(a)** Two identical cells, each of e.m.f. 1.5 V and internal resistance 1.0 $\Omega$, are connected in series with an external resistor of resistance 5.0 $\Omega$.
-
-**(i)** Calculate the total e.m.f. of the combination.
-
-**(ii)** Calculate the total internal resistance of the combination.
-
-**(iii)** Calculate the current in the circuit.
-
-`[5 marks]`
-
-**(b)** The two cells are now connected in parallel.
-
-State the total e.m.f. of the parallel combination.
-
-`[1 mark]`
-
-<details class="answer-panel"><summary>Show mark scheme / model answer</summary>
-
-**(a)**
-- **(i)** Total e.m.f. $= 1.5 + 1.5 = 3.0\ \text{V}$. `[1]`
-- **(ii)** Total internal resistance $= 1.0 + 1.0 = 2.0\ \Omega$. `[1]`
-- **(iii)** Using $E = I(R + r)$: $I = 3.0/(5.0 + 2.0) = 0.43\ \text{A}$. `[3]`
-
-`[Total: 5 marks]`
-
-
-**(b)** Total e.m.f. $= 1.5\ \text{V}$ (equal to the e.m.f. of one cell). `[1]`
-
-`[Total: 1 mark]`
-</details>
-:::
-
