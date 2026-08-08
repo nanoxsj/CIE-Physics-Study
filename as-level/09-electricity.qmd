@@ -1,0 +1,155 @@
+---
+title: "9 Electricity"
+subtitle: "Electric current, potential difference, resistance and resistivity"
+---
+
+## Learning objectives
+
+By the end of this chapter, you should be able to:
+
+- define electric current as the rate of flow of charge and use $I=Q/t$;
+- define potential difference as energy transferred per unit charge;
+- recall and use the equations $P=VI$, $P=I^2R$ and $P=V^2/R$;
+- define resistance and use Ohm's law $V=IR$;
+- sketch and interpret $I$-$V$ characteristics for ohmic conductors, filament lamps, diodes and thermistors;
+- define and use resistivity $\rho=RA/L$;
+- explain how the resistance of a wire changes when it is stretched, heated or illuminated.
+
+## 9.1 Electric current and potential difference
+
+::: {.formula-panel}
+### Electric current
+
+**Electric current** is the rate of flow of charge:
+
+$$I=\frac{Q}{t},$$
+
+where $Q$ is the charge passing a point and $t$ is the time. The unit is the ampere, $\mathrm{A}=1\ \mathrm{C\,s^{-1}}$.
+
+In a metal, the charge carriers are free electrons. The current is given by
+
+$$I=nAve,$$
+
+where $n$ is the number density of charge carriers, $A$ is the cross-sectional area, $v$ is the mean drift velocity and $e$ is the charge on each carrier.
+:::
+
+::: {.formula-panel}
+### Potential difference
+
+The **potential difference** between two points is the energy transferred per unit charge that passes between the points:
+
+$$V=\frac{W}{Q}.$$
+
+The unit is the volt, $\mathrm{V}=1\ \mathrm{J\,C^{-1}}$.
+
+For a component carrying current $I$ with p.d. $V$ across it, the electrical power is
+
+$$P=VI.$$
+:::
+
+::: {.study-card}
+### Electron flow and conventional current
+
+In a metal, electrons flow from the negative terminal to the positive terminal. Conventional current is taken as the direction in which positive charge would flow (opposite to electron flow).
+
+When there is no current, the free electrons move randomly. A current is a net drift of electrons in one direction superimposed on this random motion.
+:::
+
+## 9.2 Resistance
+
+::: {.formula-panel}
+### Resistance and Ohm's law
+
+**Resistance** is defined as the ratio of potential difference to current:
+
+$$R=\frac{V}{I}.$$
+
+The unit is the ohm, $\Omega=1\ \mathrm{V\,A^{-1}}$.
+
+**Ohm's law** states that the potential difference across a component is proportional to the current in it, provided the physical conditions (such as temperature) remain constant.
+:::
+
+::: {.study-card}
+### I-V characteristics
+
+- **Metal wire at constant temperature**: a straight line through the origin (ohmic, constant resistance).
+- **Filament lamp**: the curve bends because the filament heats up; resistance increases with temperature, so the $I$-$V$ graph becomes less steep at high $V$.
+- **Semiconductor diode**: current is (almost) zero for reverse bias; in forward bias, current rises steeply once the threshold voltage is exceeded.
+- **Thermistor**: resistance decreases as temperature increases.
+- **LDR**: resistance decreases as light intensity increases.
+
+For a curved $I$-$V$ graph, the resistance at a point is $V/I$ (the ratio, not the gradient).
+:::
+
+::: {.formula-panel}
+### Power in resistors
+
+Using $V=IR$ with $P=VI$:
+
+$$P=VI=I^2R=\frac{V^2}{R}.$$
+
+These forms are used when different pairs of quantities are known.
+:::
+
+## 9.3 Resistivity
+
+::: {.formula-panel}
+### Resistivity
+
+For a uniform conductor of length $L$ and cross-sectional area $A$,
+
+$$R=\frac{\rho L}{A},$$
+
+so the **resistivity** is
+
+$$\rho=\frac{RA}{L}.$$
+
+The unit of resistivity is $\Omega\,\mathrm{m}$. Resistivity is a property of the material; it does not depend on the dimensions of the sample.
+:::
+
+::: {.study-card}
+### Changing dimensions and resistance
+
+When a wire is stretched, its length increases and its cross-sectional area decreases. If the volume is constant, $R\propto L^2$.
+
+Resistance also changes with:
+
+- temperature (metals: increases; thermistors: decreases);
+- illumination (LDRs: decreases with more light);
+- strain (strain gauges: resistance changes with extension).
+
+To measure a small diameter accurately, use a micrometer screw gauge; the cross-sectional area is then $A=\pi d^2/4$.
+:::
+
+## Multiple Choice Questions
+
+{{< include 09-electricity-mc.qmd >}}
+
+## Structured Questions
+
+{{< include 09-electricity-structured.qmd >}}
+
+## Chapter checklist
+
+- [ ] I can use $I=Q/t$ and $I=nAve$.
+- [ ] I can use $V=W/Q$ and $P=VI$.
+- [ ] I can use $R=V/I$ and interpret $I$-$V$ graphs.
+- [ ] I can use $\rho=RA/L$.
+- [ ] I can explain how resistance changes with temperature, illumination and strain.
+
+### Original question PDFs
+
+- [9.1 Current & Potential Difference - MC Easy](https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/electricity/9.1-current-potential-difference-c-easy.pdf)
+- [9.1 Current & Potential Difference - MC Medium](https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/electricity/9.1-current-potential-difference-c-medium.pdf)
+- [9.1 Current & Potential Difference - MC Hard](https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/electricity/9.1-current-potential-difference-c-hard.pdf)
+- [9.1 Current & Potential Difference - SQ Medium](https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/electricity/9.1-current-potential-difference-sq-medium.pdf)
+- [9.2 Resistance - MC Easy](https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/electricity/9.2-resistance-c-easy.pdf)
+- [9.2 Resistance - MC Medium](https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/electricity/9.2-resistance-c-medium.pdf)
+- [9.2 Resistance - MC Hard](https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/electricity/9.2-resistance-c-hard.pdf)
+- [9.2 Resistance - SQ Medium](https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/electricity/9.2-resistance-sq-medium.pdf)
+- [9.3 Resistivity - MC Easy](https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/electricity/9.3-resistivity-c-easy.pdf)
+- [9.3 Resistivity - MC Medium](https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/electricity/9.3-resistivity-c-medium.pdf)
+- [9.3 Resistivity - MC Hard](https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/electricity/9.3-resistivity-c-hard.pdf)
+- [9.3 Resistivity - SQ Easy](https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/electricity/9.3-resistivity-sq-easy.pdf)
+- [9.3 Resistivity - SQ Medium](https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/electricity/9.3-resistivity-sq-medium.pdf)
+- [9.3 Resistivity - SQ Hard](https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/electricity/9.3-resistivity-sq-hard.pdf)

@@ -11,6 +11,7 @@ project:
     - as-level/06-deformation-of-solids.qmd
     - as-level/07-waves.qmd
     - as-level/08-superposition.qmd
+    - as-level/09-electricity.qmd
 
     - a-level/12-motion-in-a-circle.qmd
     - a-level/13-gravitational-fields.qmd
@@ -53,6 +54,8 @@ website:
             text: "7 Waves"
           - href: as-level/08-superposition.qmd
             text: "8 Superposition"
+          - href: as-level/09-electricity.qmd
+            text: "9 Electricity"
 
       - section: "A Level"
         contents:
