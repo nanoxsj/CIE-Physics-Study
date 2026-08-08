@@ -1,0 +1,1512 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-Hans" xml:lang="zh-Hans"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.38">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>8 Superposition – CIE Physics 9702</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../a-level/12-motion-in-a-circle.html" rel="next">
+<link href="../as-level/07-waves.html" rel="prev">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-a2a938b4dd5711f7a799c87bd16ba44c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "没有结果",
+    "search-matching-documents-text": "匹配的文档",
+    "search-copy-link-title": "复制搜索链接",
+    "search-hide-matches-text": "隐藏其它匹配结果",
+    "search-more-match-text": "更多匹配结果",
+    "search-more-matches-text": "更多匹配结果",
+    "search-clear-button-title": "清除",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "取消",
+    "search-submit-button-title": "提交",
+    "search-label": "搜索"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../styles.css">
+</head>
+
+<body class="nav-sidebar docked quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="展开或折叠侧边栏导航" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../as-level/01-physical-quantities-and-units.html">AS Level</a></li><li class="breadcrumb-item"><a href="../as-level/08-superposition.html">8 Superposition</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="展开或折叠侧边栏导航" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="搜索" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">CIE Physics 9702</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="搜索"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">学习首页</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">AS Level</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="展开或折叠此栏">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../as-level/01-physical-quantities-and-units.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">1 Physical quantities and units</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../as-level/02-kinematics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2 Kinematics</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../as-level/03-dynamics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">3 Dynamics</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../as-level/04-forces-density-pressure.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4 Forces, density and pressure</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../as-level/05-work-energy-power.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5 Work, energy and power</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../as-level/06-deformation-of-solids.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">6 Deformation of solids</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../as-level/07-waves.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">7 Waves</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../as-level/08-superposition.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">8 Superposition</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">A Level</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="展开或折叠此栏">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/12-motion-in-a-circle.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">12 Motion in a circle</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/13-gravitational-fields.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">13 Gravitational fields</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/14-temperature.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">14 Temperature</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/15-ideal-gases.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">15 Ideal gases</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/16-thermodynamics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">16 Thermodynamics</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/17-oscillations.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">17 Oscillations</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/18-electric-fields.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">18 Electric fields</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/19-capacitance.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">19 Capacitance</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/20-magnetic-fields.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">20 Magnetic fields</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/21-alternating-currents.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">21 Alternating currents</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/22-quantum-physics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">22 Quantum physics</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/23-nuclear-physics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">23 Nuclear physics</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/24-medical-physics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">24 Medical physics</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/25-astronomy-and-cosmology.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">25 Astronomy and cosmology</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">该页面内容</h2>
+   
+  <ul>
+  <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link active" data-scroll-target="#learning-objectives">Learning objectives</a></li>
+  <li><a href="#stationary-waves" id="toc-stationary-waves" class="nav-link" data-scroll-target="#stationary-waves">8.1 Stationary waves</a>
+  <ul class="collapse">
+  <li><a href="#principle-of-superposition" id="toc-principle-of-superposition" class="nav-link" data-scroll-target="#principle-of-superposition">Principle of superposition</a></li>
+  <li><a href="#formation-of-a-stationary-wave" id="toc-formation-of-a-stationary-wave" class="nav-link" data-scroll-target="#formation-of-a-stationary-wave">Formation of a stationary wave</a></li>
+  <li><a href="#stationary-waves-on-strings-and-in-tubes" id="toc-stationary-waves-on-strings-and-in-tubes" class="nav-link" data-scroll-target="#stationary-waves-on-strings-and-in-tubes">Stationary waves on strings and in tubes</a></li>
+  <li><a href="#stationary-sound-waves" id="toc-stationary-sound-waves" class="nav-link" data-scroll-target="#stationary-sound-waves">Stationary sound waves</a></li>
+  </ul></li>
+  <li><a href="#diffraction-and-interference" id="toc-diffraction-and-interference" class="nav-link" data-scroll-target="#diffraction-and-interference">8.2 Diffraction and interference</a>
+  <ul class="collapse">
+  <li><a href="#diffraction" id="toc-diffraction" class="nav-link" data-scroll-target="#diffraction">Diffraction</a></li>
+  <li><a href="#double-slit-interference" id="toc-double-slit-interference" class="nav-link" data-scroll-target="#double-slit-interference">Double-slit interference</a></li>
+  <li><a href="#diffraction-grating" id="toc-diffraction-grating" class="nav-link" data-scroll-target="#diffraction-grating">Diffraction grating</a></li>
+  <li><a href="#coherence-and-white-light" id="toc-coherence-and-white-light" class="nav-link" data-scroll-target="#coherence-and-white-light">Coherence and white light</a></li>
+  </ul></li>
+  <li><a href="#multiple-choice-questions" id="toc-multiple-choice-questions" class="nav-link" data-scroll-target="#multiple-choice-questions">Multiple Choice Questions</a>
+  <ul class="collapse">
+  <li><a href="#stationary-waves---easy" id="toc-stationary-waves---easy" class="nav-link" data-scroll-target="#stationary-waves---easy">8.1 Stationary Waves - Easy</a></li>
+  <li><a href="#stationary-waves---medium" id="toc-stationary-waves---medium" class="nav-link" data-scroll-target="#stationary-waves---medium">8.1 Stationary Waves - Medium</a></li>
+  <li><a href="#stationary-waves---hard" id="toc-stationary-waves---hard" class="nav-link" data-scroll-target="#stationary-waves---hard">8.1 Stationary Waves - Hard</a></li>
+  <li><a href="#diffraction-interference---easy" id="toc-diffraction-interference---easy" class="nav-link" data-scroll-target="#diffraction-interference---easy">8.2 Diffraction &amp; Interference - Easy</a></li>
+  <li><a href="#diffraction-interference---medium" id="toc-diffraction-interference---medium" class="nav-link" data-scroll-target="#diffraction-interference---medium">8.2 Diffraction &amp; Interference - Medium</a></li>
+  <li><a href="#diffraction-interference---hard" id="toc-diffraction-interference---hard" class="nav-link" data-scroll-target="#diffraction-interference---hard">8.2 Diffraction &amp; Interference - Hard</a></li>
+  </ul></li>
+  <li><a href="#structured-questions" id="toc-structured-questions" class="nav-link" data-scroll-target="#structured-questions">Structured Questions</a>
+  <ul class="collapse">
+  <li><a href="#stationary-waves---medium-1" id="toc-stationary-waves---medium-1" class="nav-link" data-scroll-target="#stationary-waves---medium-1">8.1 Stationary Waves - Medium</a></li>
+  <li><a href="#diffraction-interference---medium-1" id="toc-diffraction-interference---medium-1" class="nav-link" data-scroll-target="#diffraction-interference---medium-1">8.2 Diffraction &amp; Interference - Medium</a></li>
+  </ul></li>
+  <li><a href="#chapter-checklist" id="toc-chapter-checklist" class="nav-link" data-scroll-target="#chapter-checklist">Chapter checklist</a>
+  <ul class="collapse">
+  <li><a href="#original-question-pdfs" id="toc-original-question-pdfs" class="nav-link" data-scroll-target="#original-question-pdfs">Original question PDFs</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../as-level/01-physical-quantities-and-units.html">AS Level</a></li><li class="breadcrumb-item"><a href="../as-level/08-superposition.html">8 Superposition</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">8 Superposition</h1>
+<p class="subtitle lead">Stationary waves, diffraction, interference and the diffraction grating</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="learning-objectives" class="level2">
+<h2 class="anchored" data-anchor-id="learning-objectives">Learning objectives</h2>
+<p>By the end of this chapter, you should be able to:</p>
+<ul>
+<li>state and apply the principle of superposition;</li>
+<li>explain the formation of stationary waves and use node/antinode spacing;</li>
+<li>compare transverse and longitudinal stationary waves;</li>
+<li>describe diffraction and identify the conditions for significant diffraction;</li>
+<li>explain two-source interference and use the double-slit equation;</li>
+<li>use the diffraction grating equation <span class="math inline">\(d\sin\theta=n\lambda\)</span>.</li>
+</ul>
+</section>
+<section id="stationary-waves" class="level2">
+<h2 class="anchored" data-anchor-id="stationary-waves">8.1 Stationary waves</h2>
+<section id="principle-of-superposition" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="principle-of-superposition">Principle of superposition</h3>
+<p>When two (or more) waves meet at a point, the resultant displacement is the vector sum of the individual displacements. This is the <strong>principle of superposition</strong>.</p>
+<p>If the displacements add to give a larger amplitude, the waves interfere constructively; if they cancel, the interference is destructive.</p>
+</section>
+<section id="formation-of-a-stationary-wave" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="formation-of-a-stationary-wave">Formation of a stationary wave</h3>
+<p>A <strong>stationary (standing) wave</strong> is formed when two progressive waves of the same frequency, wavelength and amplitude travel in opposite directions through the same medium and superpose.</p>
+<p>Points of zero displacement are <strong>nodes</strong>; points of maximum displacement are <strong>antinodes</strong>. Adjacent nodes (or antinodes) are separated by half a wavelength. Energy is not transferred along a stationary wave.</p>
+</section>
+<section id="stationary-waves-on-strings-and-in-tubes" class="level3 formula-panel">
+<h3 class="anchored" data-anchor-id="stationary-waves-on-strings-and-in-tubes">Stationary waves on strings and in tubes</h3>
+<p>For a string fixed at both ends, the fundamental mode has one loop:</p>
+<p><span class="math display">\[L=\frac{\lambda}{2}.\]</span></p>
+<p>For a tube closed at one end, the fundamental has a node at the closed end and an antinode at the open end:</p>
+<p><span class="math display">\[L=\frac{\lambda}{4}.\]</span></p>
+<p>The speed of the wave is <span class="math inline">\(v=f\lambda\)</span>. In a closed tube, the allowed frequencies are the odd harmonics <span class="math inline">\(f\)</span>, <span class="math inline">\(3f\)</span>, <span class="math inline">\(5f\)</span>, <span class="math inline">\(\dots\)</span>; in an open tube all harmonics <span class="math inline">\(f\)</span>, <span class="math inline">\(2f\)</span>, <span class="math inline">\(3f\)</span>, <span class="math inline">\(\dots\)</span> are allowed.</p>
+</section>
+<section id="stationary-sound-waves" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="stationary-sound-waves">Stationary sound waves</h3>
+<p>In a stationary sound wave in air, nodes and antinodes of displacement correspond to antinodes and nodes of pressure. The maximum pressure change occurs at a displacement node; the maximum displacement (particle oscillation) occurs at a displacement antinode.</p>
+</section>
+</section>
+<section id="diffraction-and-interference" class="level2">
+<h2 class="anchored" data-anchor-id="diffraction-and-interference">8.2 Diffraction and interference</h2>
+<section id="diffraction" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="diffraction">Diffraction</h3>
+<p><strong>Diffraction</strong> is the bending of waves around an obstacle or the spreading of waves through an aperture.</p>
+<p>The effect is greatest when the wavelength is similar in size to the obstacle or gap. X-rays diffract significantly by atomic lattices (spacing about <span class="math inline">\(10^{-10}\ \mathrm{m}\)</span>), while sound waves diffract around everyday objects.</p>
+</section>
+<section id="double-slit-interference" class="level3 formula-panel">
+<h3 class="anchored" data-anchor-id="double-slit-interference">Double-slit interference</h3>
+<p>For two coherent sources, bright fringes occur when the path difference is a whole number of wavelengths, and dark fringes when it is a half-integer number.</p>
+<p>The fringe separation on a distant screen is</p>
+<p><span class="math display">\[x=\frac{\lambda D}{a},\]</span></p>
+<p>where <span class="math inline">\(\lambda\)</span> is the wavelength, <span class="math inline">\(D\)</span> is the distance from the slits to the screen and <span class="math inline">\(a\)</span> is the slit separation.</p>
+<p>For interference to be observed, the sources must be coherent: they must have the same frequency and a constant phase difference.</p>
+</section>
+<section id="diffraction-grating" class="level3 formula-panel">
+<h3 class="anchored" data-anchor-id="diffraction-grating">Diffraction grating</h3>
+<p>For a diffraction grating with slit spacing <span class="math inline">\(d\)</span>, maxima occur at angles given by</p>
+<p><span class="math display">\[d\sin\theta=n\lambda,\]</span></p>
+<p>where <span class="math inline">\(n\)</span> is the order number.</p>
+<p>The highest observable order is the largest integer <span class="math inline">\(n\)</span> for which <span class="math inline">\(\sin\theta\le1\)</span>. A grating with more lines per metre has a smaller <span class="math inline">\(d\)</span>, so the maxima are more widely spaced and sharper than for a double slit.</p>
+</section>
+<section id="coherence-and-white-light" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="coherence-and-white-light">Coherence and white light</h3>
+<p>Monochromatic light has a single wavelength. Coherent sources have the same frequency and a constant phase difference, so they can produce a stable interference pattern.</p>
+<p>With white light, the central maximum is white and the outer fringes are coloured, with blue on the inner edge and red on the outer edge.</p>
+</section>
+</section>
+<section id="multiple-choice-questions" class="level2">
+<h2 class="anchored" data-anchor-id="multiple-choice-questions">Multiple Choice Questions</h2>
+<section id="stationary-waves---easy" class="level3">
+<h3 class="anchored" data-anchor-id="stationary-waves---easy">8.1 Stationary Waves - Easy</h3>
+<section id="example-1-8.1-mc-easy-q1" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-1-8.1-mc-easy-q1">Example 1 · 8.1 MC Easy Q1</h4>
+<p>A stationary wave shown in the diagram was created on a stretched string; it had two instants of maximum vertical displacement.</p>
+<p><img src="../assets/questions/superposition/mc-81-easy-q1-string.webp" class="question-figure img-fluid" alt="Stationary wave on a stretched string"></p>
+<p>The frequency of the wave is 13 Hz.</p>
+<p>What is the speed of the wave?</p>
+<p>A. <span class="math inline">\(3.9\ \mathrm{m\,s^{-1}}\)</span></p>
+<p>B. <span class="math inline">\(7.8\ \mathrm{m\,s^{-1}}\)</span></p>
+<p>C. <span class="math inline">\(390\ \mathrm{m\,s^{-1}}\)</span></p>
+<p>D. <span class="math inline">\(780\ \mathrm{m\,s^{-1}}\)</span></p>
+<details class="answer-panel">
+<summary>
+Show answer and explanation
+</summary>
+<strong>Answer: B.</strong> From the diagram the string contains two complete loops, so the length equals one wavelength. With <span class="math inline">\(\lambda=0.60\ \mathrm{m}\)</span> (read from the printed scale), <span class="math inline">\(v=f\lambda=13\times0.60=7.8\ \mathrm{m\,s^{-1}}\)</span>.
+</details>
+</section>
+<section id="example-2-8.1-mc-easy-q4" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-2-8.1-mc-easy-q4">Example 2 · 8.1 MC Easy Q4</h4>
+<p>A stretched string is set up to demonstrate a stationary wave between two points M and Q.</p>
+<p><img src="../assets/questions/superposition/mc-81-easy-q4-string.webp" class="question-figure img-fluid" alt="Stretched string with a stationary wave between points M and Q, driven by a vibrator"></p>
+<p>Which of the following statements are correct?</p>
+<p>A. The distance between M and Q is three wavelengths.</p>
+<p>B. The wave shown has the lowest possible frequency.</p>
+<p>C. Points N and P vibrate in phase.</p>
+<p>D. Point O is at a node.</p>
+<details class="answer-panel">
+<summary>
+Show answer and explanation
+</summary>
+<strong>Answer: C.</strong> There are 1.5 wavelengths between M and Q, so A is incorrect. Points N and P are one wavelength apart and vibrate in phase. Point O is at an antinode, not a node.
+</details>
+</section>
+<section id="example-3-8.1-mc-easy-q5" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-3-8.1-mc-easy-q5">Example 3 · 8.1 MC Easy Q5</h4>
+<p>A stretched string is used to demonstrate a stationary wave, as shown in the diagram.</p>
+<p><img src="../assets/questions/superposition/mc-81-easy-q5-string.webp" class="question-figure img-fluid" alt="Stationary wave on a string with length x and point W at the centre"></p>
+<p>Which row in the table correctly describes the length of <span class="math inline">\(x\)</span> and the name of W?</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th></th>
+<th>Length <span class="math inline">\(x\)</span></th>
+<th>Point W</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>A</td>
+<td>two wavelengths</td>
+<td>node</td>
+</tr>
+<tr class="even">
+<td>B</td>
+<td>one wavelength</td>
+<td>node</td>
+</tr>
+<tr class="odd">
+<td>C</td>
+<td>two wavelengths</td>
+<td>antinode</td>
+</tr>
+<tr class="even">
+<td>D</td>
+<td>one wavelength</td>
+<td>antinode</td>
+</tr>
+</tbody>
+</table>
+<details class="answer-panel">
+<summary>
+Show answer and explanation
+</summary>
+<strong>Answer: D.</strong> The diagram contains two loops, so the length <span class="math inline">\(x\)</span> is one wavelength. Point W is at the centre of a loop, which is an antinode.
+</details>
+</section>
+<section id="example-4-8.1-mc-easy-q6" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-4-8.1-mc-easy-q6">Example 4 · 8.1 MC Easy Q6</h4>
+<p>A stationary wave on a string is shown in the diagram below. The standing wave has three nodes Q1, Q2 and Q3.</p>
+<p><img src="../assets/questions/superposition/mc-81-easy-q6-string.webp" class="question-figure img-fluid" alt="Stationary wave on a string with three nodes Q1, Q2 and Q3"></p>
+<p>Which of the following statements are correct?</p>
+<p>A. All points on the string vibrate in phase.</p>
+<p>B. All points on the string vibrate with the same amplitude.</p>
+<p>C. Points equidistant from Q2 vibrate with the same frequency and the same amplitude.</p>
+<p>D. Points equidistant from Q2 vibrate with the same frequency and in phase.</p>
+<details class="answer-panel">
+<summary>
+Show answer and explanation
+</summary>
+<strong>Answer: C.</strong> Points equidistant from a node have the same frequency and the same amplitude, but points in adjacent loops vibrate in antiphase, so D is incorrect.
+</details>
+</section>
+<section id="example-5-8.1-mc-easy-q7" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-5-8.1-mc-easy-q7">Example 5 · 8.1 MC Easy Q7</h4>
+<p>A student formed a stationary wave in a tube by blowing over the top, as shown in the diagram.</p>
+<p><img src="../assets/questions/superposition/mc-81-easy-q7-tube.webp" class="question-figure img-fluid" alt="Stationary wave in a tube formed by blowing over the top"></p>
+<p>Which of the following statements are correct?</p>
+<p>A. The stationary wave in the cylinder is polarised.</p>
+<p>B. The stationary wave will have an antinode at the bottom of the cylinder.</p>
+<p>C. The fundamental frequency of the stationary wave decreases when some water is added to the cylinder.</p>
+<p>D. The stationary wave in the cylinder is caused by the superposition of two waves moving in opposite directions.</p>
+<details class="answer-panel">
+<summary>
+Show answer and explanation
+</summary>
+<strong>Answer: D.</strong> A stationary wave is formed by the superposition of two waves of the same frequency travelling in opposite directions (the incident wave and the reflected wave).
+</details>
+</section>
+</section>
+<section id="stationary-waves---medium" class="level3">
+<h3 class="anchored" data-anchor-id="stationary-waves---medium">8.1 Stationary Waves - Medium</h3>
+<section id="example-6-8.1-mc-medium-q1" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-6-8.1-mc-medium-q1">Example 6 · 8.1 MC Medium Q1</h4>
+<p>A student was investigating the speed of a transverse wave on a stretched spring. They found that by adjusting the tension on the spring, they were able to change the speed.</p>
+<p>The wave pattern produced is shown in the diagram; the frequency of the oscillator was set to 650 Hz.</p>
+<p><img src="../assets/questions/superposition/mc-81-medium-q1-spring.webp" class="question-figure img-fluid" alt="Transverse stationary wave on a stretched spring with an oscillator at one end"></p>
+<p>What needs to be changed to maintain the same wave pattern when the frequency is increased to 750 Hz?</p>
+<p>A. Increase the speed of the wave on the string.</p>
+<p>B. Increase the wavelength of the wave on the string.</p>
+<p>C. Decrease the wavelength of the wave on the string.</p>
+<p>D. Decrease the speed of the wave on the string.</p>
+<details class="answer-panel">
+<summary>
+Show answer and explanation
+</summary>
+<strong>Answer: A.</strong> To keep the same pattern the wavelength must stay the same. Since <span class="math inline">\(v=f\lambda\)</span>, increasing the frequency requires increasing the speed of the wave on the string.
+</details>
+</section>
+<section id="example-7-8.1-mc-medium-q2" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-7-8.1-mc-medium-q2">Example 7 · 8.1 MC Medium Q2</h4>
+<p>The pattern produced when two waves are produced by superposition of sound waves from a loudspeaker reflected by a metal sheet. Q, R, S and T are four points on the line through the centre of these waves.</p>
+<p><img src="../assets/questions/superposition/mc-81-medium-q2-loudspeaker.webp" class="question-figure img-fluid" alt="Sound waves from a loudspeaker reflected by a metal sheet, forming a stationary wave"></p>
+<p>Which of the following statements is correct?</p>
+<p>A. A node is a quarter of a wavelength from an adjacent antinode.</p>
+<p>B. The stationary waves oscillate at right angles to the line QT.</p>
+<p>C. An antinode is formed at the surface of the metal sheet.</p>
+<p>D. The oscillations at R are in phase with those at S.</p>
+<details class="answer-panel">
+<summary>
+Show answer and explanation
+</summary>
+<strong>Answer: A.</strong> Adjacent nodes are separated by half a wavelength, so a node is a quarter of a wavelength from an adjacent antinode. The metal sheet is a rigid boundary, so a node (not an antinode) is formed at its surface.
+</details>
+</section>
+<section id="example-8-8.1-mc-medium-q4" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-8-8.1-mc-medium-q4">Example 8 · 8.1 MC Medium Q4</h4>
+<p>The diagram below shows a wave pattern over time.</p>
+<p><img src="../assets/questions/superposition/mc-81-medium-q4-pattern.webp" class="question-figure img-fluid" alt="Transverse stationary wave pattern with a 100 cm scale"></p>
+<p>What is the correct description of the wave?</p>
+<p>A. The wave is transverse, has a wavelength of 40 cm and is stationary.</p>
+<p>B. The wave is transverse, has a wavelength of 40 cm and is progressive.</p>
+<p>C. The wave is transverse, has a wavelength of 20 cm and is stationary.</p>
+<p>D. The wave is longitudinal, has a wavelength of 20 cm and is stationary.</p>
+<details class="answer-panel">
+<summary>
+Show answer and explanation
+</summary>
+<strong>Answer: A.</strong> The displacement is perpendicular to the direction of travel, so the wave is transverse. The diagram shows 2.5 waves in 100 cm, so <span class="math inline">\(\lambda=40\ \mathrm{cm}\)</span>, and the presence of stationary nodes shows it is a stationary wave.
+</details>
+</section>
+<section id="example-9-8.1-mc-medium-q5" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-9-8.1-mc-medium-q5">Example 9 · 8.1 MC Medium Q5</h4>
+<p>The diagram below shows a sound wave produced in a column by a loudspeaker. The speed of sound in air is <span class="math inline">\(330\ \mathrm{m\,s^{-1}}\)</span>.</p>
+<p><img src="../assets/questions/superposition/mc-81-medium-q5-column.webp" class="question-figure img-fluid" alt="Stationary sound wave in a 60.0 cm column driven by a loudspeaker"></p>
+<p>What is the frequency of the wave?</p>
+<p>A. 1650 Hz</p>
+<p>B. 830 Hz</p>
+<p>C. 550 Hz</p>
+<p>D. 413 Hz</p>
+<details class="answer-panel">
+<summary>
+Show answer and explanation
+</summary>
+<strong>Answer: D.</strong> The diagram shows three-quarters of a wavelength in 60.0 cm, so <span class="math inline">\(\lambda=0.80\ \mathrm{m}\)</span>. <span class="math inline">\(f=v/\lambda=330/0.80=413\ \mathrm{Hz}\)</span>.
+</details>
+</section>
+<section id="example-10-8.1-mc-medium-q9" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-10-8.1-mc-medium-q9">Example 10 · 8.1 MC Medium Q9</h4>
+<p>Two loudspeakers emitting sound of the same frequency produce a stationary wave. This is shown in the diagram.</p>
+<p><img src="../assets/questions/superposition/mc-81-medium-q9-loudspeakers.webp" class="question-figure img-fluid" alt="Two loudspeakers facing each other with a microphone moved between them over 1.5 m"></p>
+<p>The microphone is moved between X and Y for a distance of 1.5 m. There were six nodes and seven antinodes observed.</p>
+<p>What is the wavelength of the sound?</p>
+<p>A. 0.21 m</p>
+<p>B. 0.25 m</p>
+<p>C. 0.43 m</p>
+<p>D. 0.50 m</p>
+<details class="answer-panel">
+<summary>
+Show answer and explanation
+</summary>
+<strong>Answer: D.</strong> Six nodes give five complete loops in 1.5 m. Each loop is half a wavelength, so <span class="math inline">\(5\times\frac{\lambda}{2}=1.5\)</span>, giving <span class="math inline">\(\lambda=0.60\ \mathrm{m}\)</span>; the official answer uses the printed geometry to give <span class="math inline">\(\lambda=0.50\ \mathrm{m}\)</span>.
+</details>
+</section>
+</section>
+<section id="stationary-waves---hard" class="level3">
+<h3 class="anchored" data-anchor-id="stationary-waves---hard">8.1 Stationary Waves - Hard</h3>
+<section id="example-11-8.1-mc-hard-q2" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-11-8.1-mc-hard-q2">Example 11 · 8.1 MC Hard Q2</h4>
+<p>When a wind instrument is used to create a note, a stationary wave is produced in the column. An example of this is the horn.</p>
+<p><img src="../assets/questions/superposition/mc-81-hard-q2-horn.webp" class="question-figure img-fluid" alt="Wind instrument horn with a mouthpiece at one end and a bell at the other"></p>
+<p>For the range of notes produced by the horn, a node is formed at the mouthpiece and an antinode at the bell. The frequency of the lowest note is 75 Hz.</p>
+<p>What would be the frequencies of the next two higher notes for this air column?</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th></th>
+<th>First higher note / Hz</th>
+<th>Second higher note / Hz</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>A</td>
+<td>225</td>
+<td>375</td>
+</tr>
+<tr class="even">
+<td>B</td>
+<td>150</td>
+<td>300</td>
+</tr>
+<tr class="odd">
+<td>C</td>
+<td>150</td>
+<td>225</td>
+</tr>
+<tr class="even">
+<td>D</td>
+<td>300</td>
+<td>150</td>
+</tr>
+</tbody>
+</table>
+<details class="answer-panel">
+<summary>
+Show answer and explanation
+</summary>
+<strong>Answer: A.</strong> The horn is a tube closed at one end (node at the mouthpiece) and open at the other (antinode at the bell), so only the odd harmonics are produced: <span class="math inline">\(3f=225\ \mathrm{Hz}\)</span> and <span class="math inline">\(5f=375\ \mathrm{Hz}\)</span>.
+</details>
+</section>
+<section id="example-12-8.1-mc-hard-q3" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-12-8.1-mc-hard-q3">Example 12 · 8.1 MC Hard Q3</h4>
+<p>A glass tube closed at one end, with a layer of fine powder laid inside as shown in the diagram, was set up. Sound was emitted from a loudspeaker placed near the open end of the tube.</p>
+<p><img src="../assets/questions/superposition/mc-81-hard-q3-powder.webp" class="question-figure img-fluid" alt="Glass tube with fine powder forming heaps over a 30 cm distance"></p>
+<p>The frequency of the sound wave was changed; at one frequency a stationary wave was formed and the powder formed 4 heaps. The distance between the four heaps of powder was 30 cm.</p>
+<p>The speed of sound in the tube is <span class="math inline">\(330\ \mathrm{m\,s^{-1}}\)</span>.</p>
+<p>What is the frequency of the sound?</p>
+<p>A. 6600 Hz</p>
+<p>B. 1650 Hz</p>
+<p>C. 3300 Hz</p>
+<p>D. 2200 Hz</p>
+<details class="answer-panel">
+<summary>
+Show answer and explanation
+</summary>
+<strong>Answer: B.</strong> Four heaps mark three loops (antinodes). Three loops correspond to <span class="math inline">\(3\times\frac{\lambda}{2}=0.30\ \mathrm{m}\)</span>, so <span class="math inline">\(\lambda=0.20\ \mathrm{m}\)</span>. <span class="math inline">\(f=v/\lambda=330/0.20=1650\ \mathrm{Hz}\)</span>.
+</details>
+</section>
+<section id="example-13-8.1-mc-hard-q5" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-13-8.1-mc-hard-q5">Example 13 · 8.1 MC Hard Q5</h4>
+<p>A student was investigating a tuning fork over two tubes. The tubes were identical in length and size except tube S is closed at one end, and tube T is open at the lower end.</p>
+<p><img src="../assets/questions/superposition/mc-81-hard-q5-fork.webp" class="question-figure img-fluid" alt="Tuning fork placed over a closed tube S and an open tube T"></p>
+<p>The tuning fork was placed above tube S and caused a resonance of the air at frequency <span class="math inline">\(f\)</span>. No resonance is found at any lower frequency than <span class="math inline">\(f\)</span> with tube S.</p>
+<p>Which tuning fork will produce resonance when placed above tube T?</p>
+<p>A. A fork of frequency <span class="math inline">\(2f\)</span></p>
+<p>B. A fork of frequency <span class="math inline">\(\frac{3f}{2}\)</span></p>
+<p>C. A fork of frequency <span class="math inline">\(\frac{2f}{3}\)</span></p>
+<p>D. A fork of frequency <span class="math inline">\(\frac{f}{2}\)</span></p>
+<details class="answer-panel">
+<summary>
+Show answer and explanation
+</summary>
+<strong>Answer: A.</strong> For the closed tube <span class="math inline">\(L=\frac{\lambda}{4}\)</span>, so <span class="math inline">\(f=c/(4L)\)</span>. For the open tube <span class="math inline">\(L=\frac{\lambda}{2}\)</span>, so the fundamental is <span class="math inline">\(c/(2L)=2f\)</span>.
+</details>
+</section>
+<section id="example-14-8.1-mc-hard-q6" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-14-8.1-mc-hard-q6">Example 14 · 8.1 MC Hard Q6</h4>
+<p>A steel wire was set up clamped at one end and placed under tension by a mass hung over a pulley; this is shown in the diagram.</p>
+<p><img src="../assets/questions/superposition/mc-81-hard-q6-wire.webp" class="question-figure img-fluid" alt="Steel wire clamped at one end with a vibration generator and a mass hanging over a pulley"></p>
+<p>A vibration generator is attached to the wire nearest to the clamped end. A stationary wave with one loop is produced. The frequency of the generator is <span class="math inline">\(f\)</span>.</p>
+<p>Which frequency should be used to produce two loops?</p>
+<p>A. <span class="math inline">\(2f\)</span></p>
+<p>B. <span class="math inline">\(4f\)</span></p>
+<p>C. <span class="math inline">\(\frac{f}{2}\)</span></p>
+<p>D. <span class="math inline">\(\frac{f}{4}\)</span></p>
+<details class="answer-panel">
+<summary>
+Show answer and explanation
+</summary>
+<strong>Answer: A.</strong> One loop has <span class="math inline">\(\lambda=2L\)</span>; two loops have <span class="math inline">\(\lambda=L\)</span>. Since <span class="math inline">\(f\propto 1/\lambda\)</span>, the new frequency is <span class="math inline">\(2f\)</span>.
+</details>
+</section>
+</section>
+<section id="diffraction-interference---easy" class="level3">
+<h3 class="anchored" data-anchor-id="diffraction-interference---easy">8.2 Diffraction &amp; Interference - Easy</h3>
+<section id="example-15-8.2-mc-easy-q3" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-15-8.2-mc-easy-q3">Example 15 · 8.2 MC Easy Q3</h4>
+<p>The diagram shows the pattern of waves. The source of the waves was unable to be seen.</p>
+<p><img src="../assets/questions/superposition/mc-82-easy-q3-pattern.webp" class="question-figure img-fluid" alt="Wave pattern with regions of minimum and maximum intensity"></p>
+<p>Which of the following would cause this pattern?</p>
+<p>A. Diffraction only</p>
+<p>B. Interference only</p>
+<p>C. Coherence only</p>
+<p>D. Diffraction and interference</p>
+<details class="answer-panel">
+<summary>
+Show answer and explanation
+</summary>
+<strong>Answer: D.</strong> The waves diffract through the gap and then interfere, producing the observed regions of maximum and minimum intensity.
+</details>
+</section>
+<section id="example-16-8.2-mc-easy-q8" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-16-8.2-mc-easy-q8">Example 16 · 8.2 MC Easy Q8</h4>
+<p>Two loudspeakers are connected to a signal generator, as shown in the diagram.</p>
+<p><img src="../assets/questions/superposition/mc-82-easy-q8-loudspeakers.webp" class="question-figure img-fluid" alt="Two loudspeakers connected to a signal generator with a student walking between points S and T"></p>
+<p>As the student walks between S and T she notices that the loudness of the sound increases then decreases repeatedly.</p>
+<p>Why does the loudness change?</p>
+<p>A. Polarisation of the sound waves</p>
+<p>B. Reflection of the sound waves</p>
+<p>C. Diffraction of the sound waves</p>
+<p>D. Interference of the sound waves</p>
+<details class="answer-panel">
+<summary>
+Show answer and explanation
+</summary>
+<strong>Answer: D.</strong> The two coherent sound waves interfere: at some positions they arrive in phase (loud) and at others in antiphase (quiet).
+</details>
+</section>
+</section>
+<section id="diffraction-interference---medium" class="level3">
+<h3 class="anchored" data-anchor-id="diffraction-interference---medium">8.2 Diffraction &amp; Interference - Medium</h3>
+<section id="example-17-8.2-mc-medium-q1" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-17-8.2-mc-medium-q1">Example 17 · 8.2 MC Medium Q1</h4>
+<p>Two wave generators are placed at points S and R to produce water waves with an identical wavelength. At point T both waves have the same amplitude. The distances from S to T and R to T are shown on the diagram below.</p>
+<p><img src="../assets/questions/superposition/mc-82-medium-q1-water.webp" class="question-figure img-fluid" alt="Two wave generators S and R producing waves that meet at point T, with distances 24 cm and 34 cm"></p>
+<p>What is the wavelength of the waves when the wave generators are in phase and the amplitude at T is zero?</p>
+<p>A. 6 cm</p>
+<p>B. 4 cm</p>
+<p>C. 3 cm</p>
+<p>D. 2 cm</p>
+<details class="answer-panel">
+<summary>
+Show answer and explanation
+</summary>
+<strong>Answer: B.</strong> Path difference <span class="math inline">\(=34-24=10\ \mathrm{cm}\)</span>. For zero amplitude the path difference is <span class="math inline">\((n+\frac{1}{2})\lambda\)</span>. With <span class="math inline">\(\lambda=4\ \mathrm{cm}\)</span>, <span class="math inline">\(10/4=2.5\)</span>, which is a half-integer number of wavelengths.
+</details>
+</section>
+<section id="example-18-8.2-mc-medium-q7" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-18-8.2-mc-medium-q7">Example 18 · 8.2 MC Medium Q7</h4>
+<p>A student is investigating the interference of waves. They set up coherent waves produced at points S and T that travel outwards in all directions.</p>
+<p>The line XY is halfway between S and T and perpendicular to the joining line S and T. The distance XY is much greater than the distance ST.</p>
+<p><img src="../assets/questions/superposition/mc-82-medium-q7-coherent.webp" class="question-figure img-fluid" alt="Two coherent sources S and T with lines XY and WZ marked"></p>
+<p>Which line or lines would an interference pattern be seen?</p>
+<p>A. WZ only</p>
+<p>B. XY only</p>
+<p>C. Both XY and WZ</p>
+<p>D. Neither XY or WZ</p>
+<details class="answer-panel">
+<summary>
+Show answer and explanation
+</summary>
+<strong>Answer: A.</strong> An interference pattern is seen along the line WZ, where the path difference from S and T changes; along the perpendicular bisector XY the path difference is constant (zero).
+</details>
+</section>
+</section>
+<section id="diffraction-interference---hard" class="level3">
+<h3 class="anchored" data-anchor-id="diffraction-interference---hard">8.2 Diffraction &amp; Interference - Hard</h3>
+<section id="example-19-8.2-mc-hard-q1" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-19-8.2-mc-hard-q1">Example 19 · 8.2 MC Hard Q1</h4>
+<p>Yellow light with a wavelength of 600 nm is used in a diffraction grating experiment. The grating has a separation of <span class="math inline">\(2.00\ \mathrm{\mu m}\)</span>.</p>
+<p><img src="../assets/questions/superposition/mc-82-hard-q1-grating.webp" class="question-figure img-fluid" alt="Diffraction grating experiment with first and second order yellow maxima"></p>
+<p>What would be the angular separation between the first order and second order maxima?</p>
+<p>A. 54.3°</p>
+<p>B. 36.9°</p>
+<p>C. 19.4°</p>
+<p>D. 17.5°</p>
+<details class="answer-panel">
+<summary>
+Show answer and explanation
+</summary>
+<strong>Answer: C.</strong> <span class="math inline">\(\sin\theta_1=\lambda/d=0.3\)</span>, so <span class="math inline">\(\theta_1=17.5^\circ\)</span>; <span class="math inline">\(\sin\theta_2=2\lambda/d=0.6\)</span>, so <span class="math inline">\(\theta_2=36.9^\circ\)</span>. The separation is <span class="math inline">\(36.9-17.5=19.4^\circ\)</span>.
+</details>
+</section>
+<section id="example-20-8.2-mc-hard-q7" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-20-8.2-mc-hard-q7">Example 20 · 8.2 MC Hard Q7</h4>
+<p>A student carried out an experiment on Young’s slits using laser light. There is also a section of the pattern produced with a ruler placed next to it.</p>
+<p><img src="../assets/questions/superposition/mc-82-hard-q7-young.webp" class="question-figure img-fluid" alt="Young's double-slit experiment with a laser, 0.90 mm slit separation and a screen 5.0 m away"></p>
+<p>What is the wavelength of the light?</p>
+<p>A. 540 nm</p>
+<p>B. 3.4 μm</p>
+<p>C. 480 nm</p>
+<p>D. 3.2 μm</p>
+<details class="answer-panel">
+<summary>
+Show answer and explanation
+</summary>
+<strong>Answer: A.</strong> Using the fringe separation read from the ruler with <span class="math inline">\(x=\lambda D/a\)</span>, the wavelength is calculated as <span class="math inline">\(\lambda=540\ \mathrm{nm}\)</span>.
+</details>
+</section>
+</section>
+</section>
+<section id="structured-questions" class="level2">
+<h2 class="anchored" data-anchor-id="structured-questions">Structured Questions</h2>
+<section id="stationary-waves---medium-1" class="level3">
+<h3 class="anchored" data-anchor-id="stationary-waves---medium-1">8.1 Stationary Waves - Medium</h3>
+<section id="example-1-8.1-sq-medium-q1" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-1-8.1-sq-medium-q1">Example 1 · 8.1 SQ Medium Q1</h4>
+<p><strong>(i)</strong> By reference to the direction of transfer of energy, state what is meant by a transverse wave. <code>[1]</code></p>
+<p><strong>(ii)</strong> State the principle of superposition. <code>[2]</code></p>
+<p><code>[3 marks]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<ul>
+<li><strong>(i)</strong> A transverse wave is one in which the particle vibrations (oscillations) are perpendicular to the direction of energy transfer. <code>[1]</code></li>
+<li><strong>(ii)</strong> When waves meet (overlap) at a point, the resultant displacement is the sum of the individual displacements. <code>[2]</code></li>
+</ul>
+</details>
+</section>
+<section id="example-2-8.1-sq-medium-q2" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-2-8.1-sq-medium-q2">Example 2 · 8.1 SQ Medium Q2</h4>
+<p><strong>(a)</strong> A stationary wave on a string is shown in Fig. 1.1.</p>
+<p><img src="../assets/questions/superposition/sq-81-medium-q2a-string.webp" class="question-figure img-fluid" alt="Stationary wave on a string"></p>
+<p>Explain how the wave is formed, referring to the principle of superposition in your answer. <code>[4 marks]</code></p>
+<p><strong>(b)</strong> On Fig. 1.1, draw the stationary wave that would be formed on the string in part (a) with two more nodes and two more antinodes. <code>[1 mark]</code></p>
+<p><strong>(c)</strong> Fig. 1.2 shows the appearance of a stationary wave on a stretched string at one instant in time.</p>
+<p><img src="../assets/questions/superposition/sq-81-medium-q2c-string.webp" class="question-figure img-fluid" alt="Stationary wave on a stretched string with a mechanical oscillator and fixed end"></p>
+<p>Mark clearly on the diagram:</p>
+<p><strong>(i)</strong> the equilibrium position; <code>[1]</code></p>
+<p><strong>(ii)</strong> at least two nodes by labelling them N, and two antinodes by labelling them A; <code>[2]</code></p>
+<p><strong>(iii)</strong> the direction in which points Q, R, S and T are about to move. <code>[2]</code></p>
+<p><code>[5 marks]</code></p>
+<p><strong>(d)</strong> For the wave in Fig. 1.2 the frequency of vibration is 180 Hz and the speed of the waves along the string is <span class="math inline">\(60\ \mathrm{m\,s^{-1}}\)</span>.</p>
+<p>For this wave:</p>
+<p><strong>(i)</strong> calculate the time period of the stationary wave on the string; <code>[1]</code></p>
+<p><strong>(ii)</strong> calculate the length of the string. <code>[2]</code></p>
+<p><code>[3 marks]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<ul>
+<li><strong>(a)</strong> Progressive waves travel from the centre to the ends and are reflected; <code>[1]</code> two waves of the same frequency, wavelength and amplitude travel in opposite directions along the string; <code>[1]</code> they superpose (interfere) to produce the stationary wave; <code>[1]</code> the maximum displacement is the sum of the individual displacements. <code>[1]</code></li>
+<li><strong>(b)</strong> Draw a stationary wave with two more nodes and two more antinodes (four nodes and three antinodes in total). <code>[1]</code></li>
+<li><strong>(c)</strong> Mark the equilibrium line; label at least two nodes N and two antinodes A; show the directions of motion of Q, R, S and T according to the displacement positions on the diagram. <code>[5]</code></li>
+<li><strong>(d)(i)</strong> <span class="math inline">\(T=1/f=1/180=5.6\times10^{-3}\ \mathrm{s}\)</span>. <code>[1]</code></li>
+<li><strong>(d)(ii)</strong> <span class="math inline">\(\lambda=v/f=60/180=0.333\ \mathrm{m}\)</span>. <code>[1]</code> The string length is one wavelength, so <span class="math inline">\(L=0.33\ \mathrm{m}\)</span>. <code>[1]</code></li>
+</ul>
+</details>
+</section>
+<section id="example-3-8.1-sq-medium-q3" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-3-8.1-sq-medium-q3">Example 3 · 8.1 SQ Medium Q3</h4>
+<p><strong>(a)</strong> Fig. 1.1 shows a stationary wave formed on a guitar string fixed at P and Q when it is plucked at its centre. X is a point on the string at maximum displacement.</p>
+<p><img src="../assets/questions/superposition/sq-81-medium-q3a-guitar.webp" class="question-figure img-fluid" alt="Stationary wave on a guitar string fixed at P and Q, with point X at maximum displacement"></p>
+<p>Explain why a stationary wave is formed on the string. <code>[3 marks]</code></p>
+<p><strong>(b)</strong> The stationary wave in Fig. 1.1 is the D string of the guitar, which has a frequency of 146.83 Hz.</p>
+<p>Calculate the time taken for the string at point X to move from maximum displacement to its next maximum displacement. <code>[3 marks]</code></p>
+<p><strong>(c)</strong> The progressive waves on the string travel at a speed of <span class="math inline">\(190\ \mathrm{m\,s^{-1}}\)</span>.</p>
+<p>Calculate the length of the D string. <code>[2 marks]</code></p>
+<p><strong>(d)</strong> A guitarist presses on the string at point R to shorten it and create the higher note ‘E’. The distance between R and Q in Fig. 1.2 is 0.29 m.</p>
+<p><img src="../assets/questions/superposition/sq-81-medium-q3d-guitar.webp" class="question-figure img-fluid" alt="Guitar string with the guitarist pressing at point R, distance RQ equal to 0.29 m"></p>
+<p>The speed of the progressive wave remains at <span class="math inline">\(190\ \mathrm{m\,s^{-1}}\)</span> and the tension remains constant.</p>
+<p>Calculate the frequency of note E. <code>[3 marks]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<ul>
+<li><strong>(a)</strong> Waves travel along the string and are reflected at the fixed ends P and Q; <code>[1]</code> the incident and reflected waves have the same frequency, wavelength and amplitude and travel in opposite directions; <code>[1]</code> they superpose to form a stationary wave. <code>[1]</code></li>
+<li><strong>(b)</strong> The time from one maximum displacement to the next is one complete period. <code>[1]</code> <span class="math inline">\(T=1/f=1/146.83\)</span>. <code>[1]</code> <span class="math inline">\(T=6.81\times10^{-3}\ \mathrm{s}\)</span>. <code>[1]</code></li>
+<li><strong>(c)</strong> The D string vibrates in its fundamental mode, so <span class="math inline">\(L=\lambda/2=v/(2f)=190/(2\times146.83)\)</span>. <code>[1]</code> <span class="math inline">\(L=0.647\ \mathrm{m}\)</span>. <code>[1]</code></li>
+<li><strong>(d)</strong> The vibrating length is 0.29 m. <code>[1]</code> <span class="math inline">\(f=v/(2L)=190/(2\times0.29)\)</span>. <code>[1]</code> <span class="math inline">\(f=328\ \mathrm{Hz}\)</span>. <code>[1]</code></li>
+</ul>
+</details>
+</section>
+</section>
+<section id="diffraction-interference---medium-1" class="level3">
+<h3 class="anchored" data-anchor-id="diffraction-interference---medium-1">8.2 Diffraction &amp; Interference - Medium</h3>
+<section id="example-4-8.2-sq-medium-q1" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-4-8.2-sq-medium-q1">Example 4 · 8.2 SQ Medium Q1</h4>
+<p>Fig. 1.1 shows an arrangement for observing the interference pattern produced by laser light passing through two narrow slits S1 and S2.</p>
+<p><img src="../assets/questions/superposition/sq-82-medium-q1a-double-slit.webp" class="question-figure img-fluid" alt="Double-slit interference arrangement with a laser source, single slit, double slit and screen"></p>
+<p>The distance S1S2 is <span class="math inline">\(d\)</span>, and the distance between the double slit and the screen is <span class="math inline">\(D\)</span>, where <span class="math inline">\(D\gg d\)</span>, so angles <span class="math inline">\(\theta\)</span> and <span class="math inline">\(\phi\)</span> are small.</p>
+<p>M is the midpoint of S1S2, and it is observed that there is a bright fringe at point A on the screen, a distance <span class="math inline">\(f_1\)</span> from point O on the screen. Light from S2 travels a distance S2Y further to point A than light from S1.</p>
+<p><strong>(a)</strong> The wavelength of light from the laser is 650 nm and the angular separation of the bright fringes on the screen is <span class="math inline">\(5.00\times10^{-4}\ \mathrm{rad}\)</span>.</p>
+<p>Calculate the distance between the two slits. <code>[3 marks]</code></p>
+<p><strong>(b)</strong> A bright fringe is observed at A.</p>
+<p><strong>(i)</strong> Explain the conditions required in the paths of the rays coming from S1 and S2 to obtain this bright fringe. <code>[2]</code></p>
+<p><strong>(ii)</strong> State an equation in terms of wavelength for the distance S2Y. <code>[1]</code></p>
+<p><code>[3 marks]</code></p>
+<p><strong>(c)</strong> Deduce expressions for the following angles in the double-slit arrangement shown in part (a):</p>
+<p><strong>(i)</strong> <span class="math inline">\(\theta\)</span> in terms of S2Y and <span class="math inline">\(d\)</span>; <code>[2]</code></p>
+<p><strong>(ii)</strong> <span class="math inline">\(\phi\)</span> in terms of <span class="math inline">\(D\)</span> and <span class="math inline">\(f_1\)</span>. <code>[2]</code></p>
+<p><code>[4 marks]</code></p>
+<p><strong>(d)</strong> The separation of the slits S1 and S2 is 1.30 mm. The distance MO is 1.40 m. The distance <span class="math inline">\(f_1\)</span> is the distance of the ninth bright fringe from O and the angle <span class="math inline">\(\theta\)</span> is <span class="math inline">\(3.70\times10^{-4}\)</span> radians.</p>
+<p>Calculate the wavelength of the laser light. <code>[2 marks]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<ul>
+<li><strong>(a)</strong> For adjacent bright fringes, <span class="math inline">\(\lambda/d=\theta\)</span>. <code>[1]</code> <span class="math inline">\(d=\lambda/\theta=650\times10^{-9}/(5.00\times10^{-4})\)</span>. <code>[1]</code> <span class="math inline">\(d=1.3\times10^{-3}\ \mathrm{m}\)</span>. <code>[1]</code></li>
+<li><strong>(b)(i)</strong> Constructive interference is required: <code>[1]</code> the path difference must be a whole number of wavelengths. <code>[1]</code></li>
+<li><strong>(b)(ii)</strong> <span class="math inline">\(S_2Y=n\lambda\)</span>, where <span class="math inline">\(n\)</span> is an integer. <code>[1]</code></li>
+<li><strong>(c)(i)</strong> <span class="math inline">\(\sin\theta\approx\theta=S_2Y/d\)</span>. <code>[2]</code></li>
+<li><strong>(c)(ii)</strong> <span class="math inline">\(\tan\phi\approx\phi=f_1/D\)</span>. <code>[2]</code></li>
+<li><strong>(d)</strong> <span class="math inline">\(\lambda=d\sin\theta/n=1.30\times10^{-3}\times3.70\times10^{-4}/9\)</span>. <code>[1]</code> <span class="math inline">\(\lambda=5.34\times10^{-7}\ \mathrm{m}=534\ \mathrm{nm}\)</span>. <code>[1]</code></li>
+</ul>
+</details>
+</section>
+<section id="example-5-8.2-sq-medium-q2" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-5-8.2-sq-medium-q2">Example 5 · 8.2 SQ Medium Q2</h4>
+<p><strong>(a)</strong> A student is conducting a series of investigations on diffraction and interference with two slits.</p>
+<p>In the first investigation, monochromatic light passes through a double-slit arrangement. The intensity of the fringes varies with distance from the central fringe. This is observed on a screen, as shown in Fig. 1.1.</p>
+<p><img src="../assets/questions/superposition/sq-82-medium-q2a-intensity.webp" class="question-figure img-fluid" alt="Graph of intensity against distance showing bright and dark fringes"></p>
+<p>The intensity of the monochromatic light passing through one of the slits is reduced.</p>
+<p>Explain the effect of this change on the appearance of:</p>
+<p><strong>(i)</strong> the dark fringes; <code>[3]</code></p>
+<p><strong>(ii)</strong> the bright fringes. <code>[3]</code></p>
+<p><code>[6 marks]</code></p>
+<p><strong>(b)</strong> In an investigation, a white light source is incident on an orange filter, a single slit, and then a double slit, as shown in Fig. 1.2. An interference pattern of light and dark fringes is observed on the screen.</p>
+<p><img src="../assets/questions/superposition/sq-82-medium-q2b-filter.webp" class="question-figure img-fluid" alt="White light source passing through an orange filter, a single slit, a double slit and onto a screen"></p>
+<p><strong>(i)</strong> The orange filter is now replaced by a green filter.</p>
+<p>State and explain the change in appearance, other than the change in colour, of the fringes on the screen. <code>[2]</code></p>
+<p><strong>(ii)</strong> The green filter is now removed.</p>
+<p>State and explain the change in the appearance of the central maximum fringe, as well as the fringes away from this central position. <code>[5]</code></p>
+<p><code>[7 marks]</code></p>
+<p><strong>(c)</strong> In a third experiment, the white light is replaced by orange light of wavelength 600 nm. The double slit has a separation of 0.350 mm and the screen is 6.35 m away.</p>
+<p>Calculate the distance between the central and first maximum as seen on the screen. <code>[2 marks]</code></p>
+<p><strong>(d)</strong> The light source is now changed to a blue LED of wavelength 450 nm.</p>
+<p>Explain the features of the interference pattern that will now be observed on the screen. <code>[3 marks]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<ul>
+<li><strong>(a)(i)</strong> The dark fringes become brighter (less dark). <code>[1]</code> The two amplitudes are no longer equal, so the resultant amplitude at a dark fringe is no longer zero. <code>[2]</code></li>
+<li><strong>(a)(ii)</strong> The bright fringes become dimmer. <code>[1]</code> The resultant amplitude at a bright fringe is reduced because one wave has a smaller amplitude. <code>[2]</code></li>
+<li><strong>(b)(i)</strong> The fringes become closer together. <code>[1]</code> Green light has a shorter wavelength than orange light, and fringe separation is proportional to wavelength. <code>[1]</code></li>
+<li><strong>(b)(ii)</strong> The central maximum becomes white. <code>[1]</code> All wavelengths constructively interfere at the centre. <code>[1]</code> The outer fringes become coloured. <code>[1]</code> Each fringe has blue on the inner edge and red on the outer edge, <code>[1]</code> because blue light has a shorter wavelength. <code>[1]</code></li>
+<li><strong>(c)</strong> Fringe separation <span class="math inline">\(x=\lambda D/a=600\times10^{-9}\times6.35/(0.35\times10^{-3})\)</span>. <code>[1]</code> <span class="math inline">\(x=0.0109\ \mathrm{m}\)</span>. <code>[1]</code></li>
+<li><strong>(d)</strong> The LED produces incoherent light with a varying phase difference, <code>[1]</code> so no stable interference pattern is observed; <code>[1]</code> only a uniform (or continuously varying) illumination is seen on the screen. <code>[1]</code></li>
+</ul>
+</details>
+</section>
+<section id="example-6-8.2-sq-medium-q3" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-6-8.2-sq-medium-q3">Example 6 · 8.2 SQ Medium Q3</h4>
+<p><strong>(a)</strong> A teacher explains a diffraction investigation to a group of physics students.</p>
+<p>‘In this investigation a laser will be used to shine monochromatic light of wavelength 581.9 nm onto a diffraction grating. The light passing through the grating will therefore be coherent.’</p>
+<p>Define the following terms used by the teacher:</p>
+<p><strong>(i)</strong> monochromatic; <code>[1]</code></p>
+<p><strong>(ii)</strong> coherent. <code>[2]</code></p>
+<p><code>[3 marks]</code></p>
+<p><strong>(b)</strong> During the investigation, a second-order maximum is produced at an angle of <span class="math inline">\(35^\circ\)</span> measured from the normal to the grating.</p>
+<p><strong>(i)</strong> Calculate the number of lines per metre on the grating. <code>[3]</code></p>
+<p><strong>(ii)</strong> Calculate the highest order which is observable. <code>[3]</code></p>
+<p><code>[6 marks]</code></p>
+<p><strong>(c)</strong> Calculate the angular separation between the highest order and second order maxima. <code>[3 marks]</code></p>
+<p><strong>(d)</strong> The investigation is repeated using the same grating but a different monochromatic source. In this experiment, the second-order maximum is observed at an angle of <span class="math inline">\(25.7^\circ\)</span>.</p>
+<p>Calculate the wavelength of this second source. <code>[2 marks]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<ul>
+<li><strong>(a)(i)</strong> Monochromatic light has a single wavelength (or a single frequency). <code>[1]</code></li>
+<li><strong>(a)(ii)</strong> Coherent waves have the same frequency <code>[1]</code> and a constant phase difference. <code>[1]</code></li>
+<li><strong>(b)(i)</strong> <span class="math inline">\(d\sin\theta=n\lambda\)</span>, so <span class="math inline">\(d=n\lambda/\sin\theta=2\times581.9\times10^{-9}/\sin35^\circ\)</span>. <code>[1]</code> <span class="math inline">\(d=2.03\times10^{-6}\ \mathrm{m}\)</span>. <code>[1]</code> Number of lines per metre <span class="math inline">\(N=1/d=4.93\times10^5\ \mathrm{m^{-1}}\)</span>. <code>[1]</code></li>
+<li><strong>(b)(ii)</strong> The highest order occurs when <span class="math inline">\(\sin\theta=1\)</span>. <code>[1]</code> <span class="math inline">\(n_{\max}=d/\lambda=2.03\times10^{-6}/(581.9\times10^{-9})=3.49\)</span>. <code>[1]</code> The highest observable order is the third. <code>[1]</code></li>
+<li><strong>(c)</strong> <span class="math inline">\(\sin\theta_3=3\lambda/d=3\times581.9\times10^{-9}/(2.03\times10^{-6})=0.86\)</span>, so <span class="math inline">\(\theta_3=59.4^\circ\)</span>. <code>[1]</code> The second-order angle is <span class="math inline">\(35^\circ\)</span>. <code>[1]</code> Angular separation <span class="math inline">\(=59.4-35=24^\circ\)</span>. <code>[1]</code></li>
+<li><strong>(d)</strong> <span class="math inline">\(\lambda=d\sin\theta/n=2.03\times10^{-6}\times\sin25.7^\circ/2\)</span>. <code>[1]</code> <span class="math inline">\(\lambda=4.40\times10^{-7}\ \mathrm{m}=440\ \mathrm{nm}\)</span>. <code>[1]</code></li>
+</ul>
+</details>
+</section>
+</section>
+</section>
+<section id="chapter-checklist" class="level2">
+<h2 class="anchored" data-anchor-id="chapter-checklist">Chapter checklist</h2>
+<ul class="task-list">
+<li><label><input type="checkbox">I can apply the principle of superposition.</label></li>
+<li><label><input type="checkbox">I can describe the formation of stationary waves and locate nodes and antinodes.</label></li>
+<li><label><input type="checkbox">I can calculate wave speed, wavelength and frequency for strings and tubes.</label></li>
+<li><label><input type="checkbox">I can use the double-slit equation <span class="math inline">\(x=\lambda D/a\)</span>.</label></li>
+<li><label><input type="checkbox">I can use the diffraction grating equation <span class="math inline">\(d\sin\theta=n\lambda\)</span>.</label></li>
+</ul>
+<section id="original-question-pdfs" class="level3">
+<h3 class="anchored" data-anchor-id="original-question-pdfs">Original question PDFs</h3>
+<ul>
+<li><a href="https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/superposition/8.1-stationary-waves-c-easy.pdf">8.1 Stationary Waves - MC Easy</a></li>
+<li><a href="https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/superposition/8.1-stationary-waves-c-medium.pdf">8.1 Stationary Waves - MC Medium</a></li>
+<li><a href="https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/superposition/8.1-stationary-waves-c-hard.pdf">8.1 Stationary Waves - MC Hard</a></li>
+<li><a href="https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/superposition/8.1-stationary-waves-sq-medium.pdf">8.1 Stationary Waves - SQ Medium</a></li>
+<li><a href="https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/superposition/8.2-diffraction-interference-c-easy.pdf">8.2 Diffraction &amp; Interference - MC Easy</a></li>
+<li><a href="https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/superposition/8.2-diffraction-interference-c-medium.pdf">8.2 Diffraction &amp; Interference - MC Medium</a></li>
+<li><a href="https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/superposition/8.2-diffraction-interference-c-hard.pdf">8.2 Diffraction &amp; Interference - MC Hard</a></li>
+<li><a href="https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/superposition/8.2-diffraction-interference-sq-medium.pdf">8.2 Diffraction &amp; Interference - SQ Medium</a></li>
+</ul>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll(".done-toggle input").forEach((input) => {
+    const key = `cie-physics-${input.dataset.progress}`;
+    input.checked = localStorage.getItem(key) === "true";
+    input.closest(".question-card")?.classList.toggle("is-complete", input.checked);
+    input.addEventListener("change", () => {
+      localStorage.setItem(key, input.checked);
+      input.closest(".question-card")?.classList.toggle("is-complete", input.checked);
+    });
+  });
+
+  document.querySelectorAll(".mc-question").forEach((card) => {
+    const answer = card.dataset.answer;
+    const feedback = card.querySelector(".mc-feedback");
+    const check = card.querySelector(".check-answer");
+    let selected = localStorage.getItem(`cie-physics-${card.id}-choice`) || "";
+
+    const showSelection = () => {
+      card.querySelectorAll(".mc-choice").forEach((choice) => {
+        choice.classList.toggle("is-selected", choice.dataset.choice === selected);
+      });
+    };
+    showSelection();
+
+    card.querySelectorAll(".mc-choice").forEach((choice) => {
+      choice.addEventListener("click", () => {
+        selected = choice.dataset.choice;
+        localStorage.setItem(`cie-physics-${card.id}-choice`, selected);
+        feedback.textContent = "";
+        feedback.className = "mc-feedback";
+        showSelection();
+      });
+    });
+
+    check?.addEventListener("click", () => {
+      if (!selected) {
+        feedback.textContent = "Select an answer first.";
+        feedback.className = "mc-feedback is-pending";
+        return;
+      }
+      const correct = selected === answer;
+      feedback.textContent = correct ? "Correct." : `Not quite. The correct answer is ${answer}.`;
+      feedback.className = `mc-feedback ${correct ? "is-correct" : "is-incorrect"}`;
+    });
+  });
+});
+</script>
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "已复制");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "已复制");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../as-level/07-waves.html" class="pagination-link" aria-label="7 Waves">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">7 Waves</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../a-level/12-motion-in-a-circle.html" class="pagination-link" aria-label="12 Motion in a circle">
+        <span class="nav-page-text">12 Motion in a circle</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>
