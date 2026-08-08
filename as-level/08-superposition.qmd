@@ -1,0 +1,124 @@
+---
+title: "8 Superposition"
+subtitle: "Stationary waves, diffraction, interference and the diffraction grating"
+---
+
+## Learning objectives
+
+By the end of this chapter, you should be able to:
+
+- state and apply the principle of superposition;
+- explain the formation of stationary waves and use node/antinode spacing;
+- compare transverse and longitudinal stationary waves;
+- describe diffraction and identify the conditions for significant diffraction;
+- explain two-source interference and use the double-slit equation;
+- use the diffraction grating equation $d\sin\theta=n\lambda$.
+
+## 8.1 Stationary waves
+
+::: {.study-card}
+### Principle of superposition
+
+When two (or more) waves meet at a point, the resultant displacement is the vector sum of the individual displacements. This is the **principle of superposition**.
+
+If the displacements add to give a larger amplitude, the waves interfere constructively; if they cancel, the interference is destructive.
+:::
+
+::: {.study-card}
+### Formation of a stationary wave
+
+A **stationary (standing) wave** is formed when two progressive waves of the same frequency, wavelength and amplitude travel in opposite directions through the same medium and superpose.
+
+Points of zero displacement are **nodes**; points of maximum displacement are **antinodes**. Adjacent nodes (or antinodes) are separated by half a wavelength. Energy is not transferred along a stationary wave.
+:::
+
+::: {.formula-panel}
+### Stationary waves on strings and in tubes
+
+For a string fixed at both ends, the fundamental mode has one loop:
+
+$$L=\frac{\lambda}{2}.$$
+
+For a tube closed at one end, the fundamental has a node at the closed end and an antinode at the open end:
+
+$$L=\frac{\lambda}{4}.$$
+
+The speed of the wave is $v=f\lambda$. In a closed tube, the allowed frequencies are the odd harmonics $f$, $3f$, $5f$, $\dots$; in an open tube all harmonics $f$, $2f$, $3f$, $\dots$ are allowed.
+:::
+
+::: {.study-card}
+### Stationary sound waves
+
+In a stationary sound wave in air, nodes and antinodes of displacement correspond to antinodes and nodes of pressure. The maximum pressure change occurs at a displacement node; the maximum displacement (particle oscillation) occurs at a displacement antinode.
+:::
+
+## 8.2 Diffraction and interference
+
+::: {.study-card}
+### Diffraction
+
+**Diffraction** is the bending of waves around an obstacle or the spreading of waves through an aperture.
+
+The effect is greatest when the wavelength is similar in size to the obstacle or gap. X-rays diffract significantly by atomic lattices (spacing about $10^{-10}\ \mathrm{m}$), while sound waves diffract around everyday objects.
+:::
+
+::: {.formula-panel}
+### Double-slit interference
+
+For two coherent sources, bright fringes occur when the path difference is a whole number of wavelengths, and dark fringes when it is a half-integer number.
+
+The fringe separation on a distant screen is
+
+$$x=\frac{\lambda D}{a},$$
+
+where $\lambda$ is the wavelength, $D$ is the distance from the slits to the screen and $a$ is the slit separation.
+
+For interference to be observed, the sources must be coherent: they must have the same frequency and a constant phase difference.
+:::
+
+::: {.formula-panel}
+### Diffraction grating
+
+For a diffraction grating with slit spacing $d$, maxima occur at angles given by
+
+$$d\sin\theta=n\lambda,$$
+
+where $n$ is the order number.
+
+The highest observable order is the largest integer $n$ for which $\sin\theta\le1$. A grating with more lines per metre has a smaller $d$, so the maxima are more widely spaced and sharper than for a double slit.
+:::
+
+::: {.study-card}
+### Coherence and white light
+
+Monochromatic light has a single wavelength. Coherent sources have the same frequency and a constant phase difference, so they can produce a stable interference pattern.
+
+With white light, the central maximum is white and the outer fringes are coloured, with blue on the inner edge and red on the outer edge.
+:::
+
+## Multiple Choice Questions
+
+{{< include 08-superposition-mc.qmd >}}
+
+## Structured Questions
+
+{{< include 08-superposition-structured.qmd >}}
+
+## Chapter checklist
+
+- [ ] I can apply the principle of superposition.
+- [ ] I can describe the formation of stationary waves and locate nodes and antinodes.
+- [ ] I can calculate wave speed, wavelength and frequency for strings and tubes.
+- [ ] I can use the double-slit equation $x=\lambda D/a$.
+- [ ] I can use the diffraction grating equation $d\sin\theta=n\lambda$.
+
+### Original question PDFs
+
+- [8.1 Stationary Waves - MC Easy](https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/superposition/8.1-stationary-waves-c-easy.pdf)
+- [8.1 Stationary Waves - MC Medium](https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/superposition/8.1-stationary-waves-c-medium.pdf)
+- [8.1 Stationary Waves - MC Hard](https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/superposition/8.1-stationary-waves-c-hard.pdf)
+- [8.1 Stationary Waves - SQ Medium](https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/superposition/8.1-stationary-waves-sq-medium.pdf)
+- [8.2 Diffraction & Interference - MC Easy](https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/superposition/8.2-diffraction-interference-c-easy.pdf)
+- [8.2 Diffraction & Interference - MC Medium](https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/superposition/8.2-diffraction-interference-c-medium.pdf)
+- [8.2 Diffraction & Interference - MC Hard](https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/superposition/8.2-diffraction-interference-c-hard.pdf)
+- [8.2 Diffraction & Interference - SQ Medium](https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/superposition/8.2-diffraction-interference-sq-medium.pdf)
