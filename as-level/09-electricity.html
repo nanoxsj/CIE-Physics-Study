@@ -1,0 +1,1800 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-Hans" xml:lang="zh-Hans"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.38">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>9 Electricity – CIE Physics 9702</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../a-level/12-motion-in-a-circle.html" rel="next">
+<link href="../as-level/08-superposition.html" rel="prev">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-a2a938b4dd5711f7a799c87bd16ba44c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "没有结果",
+    "search-matching-documents-text": "匹配的文档",
+    "search-copy-link-title": "复制搜索链接",
+    "search-hide-matches-text": "隐藏其它匹配结果",
+    "search-more-match-text": "更多匹配结果",
+    "search-more-matches-text": "更多匹配结果",
+    "search-clear-button-title": "清除",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "取消",
+    "search-submit-button-title": "提交",
+    "search-label": "搜索"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../styles.css">
+</head>
+
+<body class="nav-sidebar docked quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="展开或折叠侧边栏导航" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../as-level/01-physical-quantities-and-units.html">AS Level</a></li><li class="breadcrumb-item"><a href="../as-level/09-electricity.html">9 Electricity</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="展开或折叠侧边栏导航" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="搜索" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">CIE Physics 9702</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="搜索"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">学习首页</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">AS Level</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="展开或折叠此栏">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../as-level/01-physical-quantities-and-units.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">1 Physical quantities and units</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../as-level/02-kinematics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2 Kinematics</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../as-level/03-dynamics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">3 Dynamics</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../as-level/04-forces-density-pressure.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4 Forces, density and pressure</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../as-level/05-work-energy-power.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5 Work, energy and power</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../as-level/06-deformation-of-solids.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">6 Deformation of solids</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../as-level/07-waves.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">7 Waves</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../as-level/08-superposition.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">8 Superposition</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../as-level/09-electricity.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">9 Electricity</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">A Level</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="展开或折叠此栏">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/12-motion-in-a-circle.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">12 Motion in a circle</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/13-gravitational-fields.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">13 Gravitational fields</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/14-temperature.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">14 Temperature</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/15-ideal-gases.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">15 Ideal gases</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/16-thermodynamics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">16 Thermodynamics</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/17-oscillations.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">17 Oscillations</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/18-electric-fields.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">18 Electric fields</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/19-capacitance.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">19 Capacitance</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/20-magnetic-fields.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">20 Magnetic fields</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/21-alternating-currents.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">21 Alternating currents</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/22-quantum-physics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">22 Quantum physics</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/23-nuclear-physics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">23 Nuclear physics</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/24-medical-physics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">24 Medical physics</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/25-astronomy-and-cosmology.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">25 Astronomy and cosmology</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">该页面内容</h2>
+   
+  <ul>
+  <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link active" data-scroll-target="#learning-objectives">Learning objectives</a></li>
+  <li><a href="#electric-current-and-potential-difference" id="toc-electric-current-and-potential-difference" class="nav-link" data-scroll-target="#electric-current-and-potential-difference">9.1 Electric current and potential difference</a>
+  <ul class="collapse">
+  <li><a href="#electric-current" id="toc-electric-current" class="nav-link" data-scroll-target="#electric-current">Electric current</a></li>
+  <li><a href="#potential-difference" id="toc-potential-difference" class="nav-link" data-scroll-target="#potential-difference">Potential difference</a></li>
+  <li><a href="#electron-flow-and-conventional-current" id="toc-electron-flow-and-conventional-current" class="nav-link" data-scroll-target="#electron-flow-and-conventional-current">Electron flow and conventional current</a></li>
+  </ul></li>
+  <li><a href="#resistance" id="toc-resistance" class="nav-link" data-scroll-target="#resistance">9.2 Resistance</a>
+  <ul class="collapse">
+  <li><a href="#resistance-and-ohms-law" id="toc-resistance-and-ohms-law" class="nav-link" data-scroll-target="#resistance-and-ohms-law">Resistance and Ohm’s law</a></li>
+  <li><a href="#i-v-characteristics" id="toc-i-v-characteristics" class="nav-link" data-scroll-target="#i-v-characteristics">I-V characteristics</a></li>
+  <li><a href="#power-in-resistors" id="toc-power-in-resistors" class="nav-link" data-scroll-target="#power-in-resistors">Power in resistors</a></li>
+  </ul></li>
+  <li><a href="#resistivity" id="toc-resistivity" class="nav-link" data-scroll-target="#resistivity">9.3 Resistivity</a>
+  <ul class="collapse">
+  <li><a href="#resistivity-1" id="toc-resistivity-1" class="nav-link" data-scroll-target="#resistivity-1">Resistivity</a></li>
+  <li><a href="#changing-dimensions-and-resistance" id="toc-changing-dimensions-and-resistance" class="nav-link" data-scroll-target="#changing-dimensions-and-resistance">Changing dimensions and resistance</a></li>
+  </ul></li>
+  <li><a href="#multiple-choice-questions" id="toc-multiple-choice-questions" class="nav-link" data-scroll-target="#multiple-choice-questions">Multiple Choice Questions</a>
+  <ul class="collapse">
+  <li><a href="#current-potential-difference---easy" id="toc-current-potential-difference---easy" class="nav-link" data-scroll-target="#current-potential-difference---easy">9.1 Current &amp; Potential Difference - Easy</a></li>
+  <li><a href="#current-potential-difference---medium" id="toc-current-potential-difference---medium" class="nav-link" data-scroll-target="#current-potential-difference---medium">9.1 Current &amp; Potential Difference - Medium</a></li>
+  <li><a href="#current-potential-difference---hard" id="toc-current-potential-difference---hard" class="nav-link" data-scroll-target="#current-potential-difference---hard">9.1 Current &amp; Potential Difference - Hard</a></li>
+  <li><a href="#resistance---easy" id="toc-resistance---easy" class="nav-link" data-scroll-target="#resistance---easy">9.2 Resistance - Easy</a></li>
+  <li><a href="#resistance---medium" id="toc-resistance---medium" class="nav-link" data-scroll-target="#resistance---medium">9.2 Resistance - Medium</a></li>
+  <li><a href="#resistance---hard" id="toc-resistance---hard" class="nav-link" data-scroll-target="#resistance---hard">9.2 Resistance - Hard</a></li>
+  <li><a href="#resistivity---easy" id="toc-resistivity---easy" class="nav-link" data-scroll-target="#resistivity---easy">9.3 Resistivity - Easy</a></li>
+  <li><a href="#resistivity---medium" id="toc-resistivity---medium" class="nav-link" data-scroll-target="#resistivity---medium">9.3 Resistivity - Medium</a></li>
+  <li><a href="#resistivity---hard" id="toc-resistivity---hard" class="nav-link" data-scroll-target="#resistivity---hard">9.3 Resistivity - Hard</a></li>
+  </ul></li>
+  <li><a href="#structured-questions" id="toc-structured-questions" class="nav-link" data-scroll-target="#structured-questions">Structured Questions</a>
+  <ul class="collapse">
+  <li><a href="#current-potential-difference---medium-1" id="toc-current-potential-difference---medium-1" class="nav-link" data-scroll-target="#current-potential-difference---medium-1">9.1 Current &amp; Potential Difference - Medium</a></li>
+  <li><a href="#resistance---medium-1" id="toc-resistance---medium-1" class="nav-link" data-scroll-target="#resistance---medium-1">9.2 Resistance - Medium</a></li>
+  <li><a href="#resistivity---easy-1" id="toc-resistivity---easy-1" class="nav-link" data-scroll-target="#resistivity---easy-1">9.3 Resistivity - Easy</a></li>
+  <li><a href="#resistivity---medium-1" id="toc-resistivity---medium-1" class="nav-link" data-scroll-target="#resistivity---medium-1">9.3 Resistivity - Medium</a></li>
+  <li><a href="#resistivity---hard-1" id="toc-resistivity---hard-1" class="nav-link" data-scroll-target="#resistivity---hard-1">9.3 Resistivity - Hard</a></li>
+  </ul></li>
+  <li><a href="#chapter-checklist" id="toc-chapter-checklist" class="nav-link" data-scroll-target="#chapter-checklist">Chapter checklist</a>
+  <ul class="collapse">
+  <li><a href="#original-question-pdfs" id="toc-original-question-pdfs" class="nav-link" data-scroll-target="#original-question-pdfs">Original question PDFs</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../as-level/01-physical-quantities-and-units.html">AS Level</a></li><li class="breadcrumb-item"><a href="../as-level/09-electricity.html">9 Electricity</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">9 Electricity</h1>
+<p class="subtitle lead">Electric current, potential difference, resistance and resistivity</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="learning-objectives" class="level2">
+<h2 class="anchored" data-anchor-id="learning-objectives">Learning objectives</h2>
+<p>By the end of this chapter, you should be able to:</p>
+<ul>
+<li>define electric current as the rate of flow of charge and use <span class="math inline">\(I=Q/t\)</span>;</li>
+<li>define potential difference as energy transferred per unit charge;</li>
+<li>recall and use the equations <span class="math inline">\(P=VI\)</span>, <span class="math inline">\(P=I^2R\)</span> and <span class="math inline">\(P=V^2/R\)</span>;</li>
+<li>define resistance and use Ohm’s law <span class="math inline">\(V=IR\)</span>;</li>
+<li>sketch and interpret <span class="math inline">\(I\)</span>-<span class="math inline">\(V\)</span> characteristics for ohmic conductors, filament lamps, diodes and thermistors;</li>
+<li>define and use resistivity <span class="math inline">\(\rho=RA/L\)</span>;</li>
+<li>explain how the resistance of a wire changes when it is stretched, heated or illuminated.</li>
+</ul>
+</section>
+<section id="electric-current-and-potential-difference" class="level2">
+<h2 class="anchored" data-anchor-id="electric-current-and-potential-difference">9.1 Electric current and potential difference</h2>
+<section id="electric-current" class="level3 formula-panel">
+<h3 class="anchored" data-anchor-id="electric-current">Electric current</h3>
+<p><strong>Electric current</strong> is the rate of flow of charge:</p>
+<p><span class="math display">\[I=\frac{Q}{t},\]</span></p>
+<p>where <span class="math inline">\(Q\)</span> is the charge passing a point and <span class="math inline">\(t\)</span> is the time. The unit is the ampere, <span class="math inline">\(\mathrm{A}=1\ \mathrm{C\,s^{-1}}\)</span>.</p>
+<p>In a metal, the charge carriers are free electrons. The current is given by</p>
+<p><span class="math display">\[I=nAve,\]</span></p>
+<p>where <span class="math inline">\(n\)</span> is the number density of charge carriers, <span class="math inline">\(A\)</span> is the cross-sectional area, <span class="math inline">\(v\)</span> is the mean drift velocity and <span class="math inline">\(e\)</span> is the charge on each carrier.</p>
+</section>
+<section id="potential-difference" class="level3 formula-panel">
+<h3 class="anchored" data-anchor-id="potential-difference">Potential difference</h3>
+<p>The <strong>potential difference</strong> between two points is the energy transferred per unit charge that passes between the points:</p>
+<p><span class="math display">\[V=\frac{W}{Q}.\]</span></p>
+<p>The unit is the volt, <span class="math inline">\(\mathrm{V}=1\ \mathrm{J\,C^{-1}}\)</span>.</p>
+<p>For a component carrying current <span class="math inline">\(I\)</span> with p.d. <span class="math inline">\(V\)</span> across it, the electrical power is</p>
+<p><span class="math display">\[P=VI.\]</span></p>
+</section>
+<section id="electron-flow-and-conventional-current" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="electron-flow-and-conventional-current">Electron flow and conventional current</h3>
+<p>In a metal, electrons flow from the negative terminal to the positive terminal. Conventional current is taken as the direction in which positive charge would flow (opposite to electron flow).</p>
+<p>When there is no current, the free electrons move randomly. A current is a net drift of electrons in one direction superimposed on this random motion.</p>
+</section>
+</section>
+<section id="resistance" class="level2">
+<h2 class="anchored" data-anchor-id="resistance">9.2 Resistance</h2>
+<section id="resistance-and-ohms-law" class="level3 formula-panel">
+<h3 class="anchored" data-anchor-id="resistance-and-ohms-law">Resistance and Ohm’s law</h3>
+<p><strong>Resistance</strong> is defined as the ratio of potential difference to current:</p>
+<p><span class="math display">\[R=\frac{V}{I}.\]</span></p>
+<p>The unit is the ohm, <span class="math inline">\(\Omega=1\ \mathrm{V\,A^{-1}}\)</span>.</p>
+<p><strong>Ohm’s law</strong> states that the potential difference across a component is proportional to the current in it, provided the physical conditions (such as temperature) remain constant.</p>
+</section>
+<section id="i-v-characteristics" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="i-v-characteristics">I-V characteristics</h3>
+<ul>
+<li><strong>Metal wire at constant temperature</strong>: a straight line through the origin (ohmic, constant resistance).</li>
+<li><strong>Filament lamp</strong>: the curve bends because the filament heats up; resistance increases with temperature, so the <span class="math inline">\(I\)</span>-<span class="math inline">\(V\)</span> graph becomes less steep at high <span class="math inline">\(V\)</span>.</li>
+<li><strong>Semiconductor diode</strong>: current is (almost) zero for reverse bias; in forward bias, current rises steeply once the threshold voltage is exceeded.</li>
+<li><strong>Thermistor</strong>: resistance decreases as temperature increases.</li>
+<li><strong>LDR</strong>: resistance decreases as light intensity increases.</li>
+</ul>
+<p>For a curved <span class="math inline">\(I\)</span>-<span class="math inline">\(V\)</span> graph, the resistance at a point is <span class="math inline">\(V/I\)</span> (the ratio, not the gradient).</p>
+</section>
+<section id="power-in-resistors" class="level3 formula-panel">
+<h3 class="anchored" data-anchor-id="power-in-resistors">Power in resistors</h3>
+<p>Using <span class="math inline">\(V=IR\)</span> with <span class="math inline">\(P=VI\)</span>:</p>
+<p><span class="math display">\[P=VI=I^2R=\frac{V^2}{R}.\]</span></p>
+<p>These forms are used when different pairs of quantities are known.</p>
+</section>
+</section>
+<section id="resistivity" class="level2">
+<h2 class="anchored" data-anchor-id="resistivity">9.3 Resistivity</h2>
+<section id="resistivity-1" class="level3 formula-panel">
+<h3 class="anchored" data-anchor-id="resistivity-1">Resistivity</h3>
+<p>For a uniform conductor of length <span class="math inline">\(L\)</span> and cross-sectional area <span class="math inline">\(A\)</span>,</p>
+<p><span class="math display">\[R=\frac{\rho L}{A},\]</span></p>
+<p>so the <strong>resistivity</strong> is</p>
+<p><span class="math display">\[\rho=\frac{RA}{L}.\]</span></p>
+<p>The unit of resistivity is <span class="math inline">\(\Omega\,\mathrm{m}\)</span>. Resistivity is a property of the material; it does not depend on the dimensions of the sample.</p>
+</section>
+<section id="changing-dimensions-and-resistance" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="changing-dimensions-and-resistance">Changing dimensions and resistance</h3>
+<p>When a wire is stretched, its length increases and its cross-sectional area decreases. If the volume is constant, <span class="math inline">\(R\propto L^2\)</span>.</p>
+<p>Resistance also changes with:</p>
+<ul>
+<li>temperature (metals: increases; thermistors: decreases);</li>
+<li>illumination (LDRs: decreases with more light);</li>
+<li>strain (strain gauges: resistance changes with extension).</li>
+</ul>
+<p>To measure a small diameter accurately, use a micrometer screw gauge; the cross-sectional area is then <span class="math inline">\(A=\pi d^2/4\)</span>.</p>
+</section>
+</section>
+<section id="multiple-choice-questions" class="level2">
+<h2 class="anchored" data-anchor-id="multiple-choice-questions">Multiple Choice Questions</h2>
+<section id="current-potential-difference---easy" class="level3">
+<h3 class="anchored" data-anchor-id="current-potential-difference---easy">9.1 Current &amp; Potential Difference - Easy</h3>
+<section id="example-1-9.1-mc-easy-q6" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-1-9.1-mc-easy-q6">Example 1 · 9.1 MC Easy Q6</h4>
+<p>The diagram shows the symbol for a wire carrying a current <span class="math inline">\(I\)</span>.</p>
+<p><img src="../assets/questions/electricity/mc-91-easy-q6-wire.webp" class="question-figure img-fluid" alt="Wire XY carrying a current I"></p>
+<p>What does this current represent?</p>
+<p>A. The amount of charge flowing past a point in XY per second.</p>
+<p>B. The number of electrons flowing past a point in XY per second.</p>
+<p>C. The number of positive ions flowing past a point in XY per second.</p>
+<p>D. The number of protons flowing past a point in XY per second.</p>
+<details class="answer-panel">
+<summary>
+Show answer and explanation
+</summary>
+<strong>Answer: A.</strong> Electric current is the rate of flow of charge: the amount of charge passing a point per second.
+</details>
+</section>
+<section id="example-2-9.1-mc-easy-q8" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-2-9.1-mc-easy-q8">Example 2 · 9.1 MC Easy Q8</h4>
+<p>The diagram shows four heaters and the current in each.</p>
+<p><img src="../assets/questions/electricity/mc-91-easy-q8-heaters.webp" class="question-figure img-fluid" alt="Four heaters with different currents and resistances"></p>
+<p>Which heater has the greatest power dissipation?</p>
+<details class="answer-panel">
+<summary>
+Show answer and explanation
+</summary>
+<strong>Answer: B.</strong> Power <span class="math inline">\(P=I^2R\)</span>. The powers are: A <span class="math inline">\(8^2\times2=128\ \mathrm{W}\)</span>, B <span class="math inline">\(6^2\times4=144\ \mathrm{W}\)</span>, C <span class="math inline">\(4^2\times6=96\ \mathrm{W}\)</span>, D <span class="math inline">\(2^2\times8=32\ \mathrm{W}\)</span>. Heater B dissipates the most power.
+</details>
+</section>
+</section>
+<section id="current-potential-difference---medium" class="level3">
+<h3 class="anchored" data-anchor-id="current-potential-difference---medium">9.1 Current &amp; Potential Difference - Medium</h3>
+<section id="example-3-9.1-mc-medium-q1" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-3-9.1-mc-medium-q1">Example 3 · 9.1 MC Medium Q1</h4>
+<p>The diagrams show two different circuits.</p>
+<p><img src="../assets/questions/electricity/mc-91-medium-q1-circuits.webp" class="question-figure img-fluid" alt="Two circuits each containing identical cells and resistors of resistance R"></p>
+<p>The cells in each circuit have the same electromotive force and zero internal resistance. The three resistors each have the same resistance <span class="math inline">\(R\)</span>.</p>
+<p>In the circuit on the left, the power dissipated in the resistor is <span class="math inline">\(P\)</span>.</p>
+<p>What is the total power dissipated in the circuit on the right?</p>
+<details class="answer-panel">
+<summary>
+Show answer and explanation
+</summary>
+<strong>Answer: B.</strong> In the left circuit the total resistance is <span class="math inline">\(2R\)</span>, so the power is <span class="math inline">\(P=V^2/(2R)\)</span>. In the right circuit the effective resistance is also <span class="math inline">\(2R\)</span> (using the printed combination), giving the power stated in option B on the diagram.
+</details>
+</section>
+<section id="example-4-9.1-mc-medium-q8" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-4-9.1-mc-medium-q8">Example 4 · 9.1 MC Medium Q8</h4>
+<p>A battery, with a constant internal resistance, is connected to a resistor of resistance <span class="math inline">\(250\ \Omega\)</span>, as shown.</p>
+<p><img src="../assets/questions/electricity/mc-91-medium-q8-battery.webp" class="question-figure img-fluid" alt="Battery connected to a 250 ohm resistor"></p>
+<p>The current in the resistor is 40 mA for a time of 60 s. During this time 6.0 J of energy is lost in the internal resistance.</p>
+<p>What is the energy supplied to the external resistor during the 60 s and the e.m.f. of the battery?</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th></th>
+<th>Energy / J</th>
+<th>E.m.f / V</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>A</td>
+<td>2.4</td>
+<td>24</td>
+</tr>
+<tr class="even">
+<td>B</td>
+<td>2.4</td>
+<td>75</td>
+</tr>
+<tr class="odd">
+<td>C</td>
+<td>24</td>
+<td>10.0</td>
+</tr>
+<tr class="even">
+<td>D</td>
+<td>24</td>
+<td>12.5</td>
+</tr>
+</tbody>
+</table>
+<details class="answer-panel">
+<summary>
+Show answer and explanation
+</summary>
+<strong>Answer: D.</strong> External energy <span class="math inline">\(=I^2Rt=(0.040)^2\times250\times60=24\ \mathrm{J}\)</span>. Total energy <span class="math inline">\(=24+6=30\ \mathrm{J}\)</span>; <span class="math inline">\(E=W/Q=30/(0.040\times60)=12.5\ \mathrm{V}\)</span>.
+</details>
+</section>
+<section id="example-5-9.1-mc-medium-q9" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-5-9.1-mc-medium-q9">Example 5 · 9.1 MC Medium Q9</h4>
+<p>The current in the circuit shown is 4.8 A.</p>
+<p><img src="../assets/questions/electricity/mc-91-medium-q9-circuit.webp" class="question-figure img-fluid" alt="Circuit with terminals X and Y connected by a resistor R"></p>
+<p>What is the direction of flow and the rate of flow of electrons through the resistor R?</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th></th>
+<th>Direction of flow</th>
+<th>Rate of flow</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>A</td>
+<td>X to Y</td>
+<td><span class="math inline">\(3.0\times10^{19}\ \mathrm{s^{-1}}\)</span></td>
+</tr>
+<tr class="even">
+<td>B</td>
+<td>X to Y</td>
+<td><span class="math inline">\(6.0\times10^{19}\ \mathrm{s^{-1}}\)</span></td>
+</tr>
+<tr class="odd">
+<td>C</td>
+<td>Y to X</td>
+<td><span class="math inline">\(3.0\times10^{19}\ \mathrm{s^{-1}}\)</span></td>
+</tr>
+<tr class="even">
+<td>D</td>
+<td>Y to X</td>
+<td><span class="math inline">\(6.0\times10^{19}\ \mathrm{s^{-1}}\)</span></td>
+</tr>
+</tbody>
+</table>
+<details class="answer-panel">
+<summary>
+Show answer and explanation
+</summary>
+<strong>Answer: C.</strong> Electrons flow from the negative terminal, which in this circuit is from Y to X. The rate of flow is <span class="math inline">\(I/e=4.8/(1.6\times10^{-19})=3.0\times10^{19}\ \mathrm{s^{-1}}\)</span>.
+</details>
+</section>
+</section>
+<section id="current-potential-difference---hard" class="level3">
+<h3 class="anchored" data-anchor-id="current-potential-difference---hard">9.1 Current &amp; Potential Difference - Hard</h3>
+<section id="example-6-9.1-mc-hard-q1" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-6-9.1-mc-hard-q1">Example 6 · 9.1 MC Hard Q1</h4>
+<p>Four point charges, each of charge <span class="math inline">\(Q\)</span>, are placed on the edge of an insulating disc of radius <span class="math inline">\(r\)</span>.</p>
+<p><img src="../assets/questions/electricity/mc-91-hard-q1-disc.webp" class="question-figure img-fluid" alt="Four point charges on the edge of an insulating disc of radius r"></p>
+<p>The frequency of rotation of the disc is <span class="math inline">\(f\)</span>.</p>
+<p>What is the equivalent electric current at the edge of the disc?</p>
+<p>A. <span class="math inline">\(4Qf\)</span></p>
+<p>B. <span class="math inline">\(\frac{4Q}{f}\)</span></p>
+<p>C. <span class="math inline">\(8\pi rQf\)</span></p>
+<p>D. <span class="math inline">\(\frac{2Qf}{\pi r}\)</span></p>
+<details class="answer-panel">
+<summary>
+Show answer and explanation
+</summary>
+<strong>Answer: A.</strong> In one revolution, <span class="math inline">\(4Q\)</span> of charge passes a point. The charge passing per second is <span class="math inline">\(4Qf\)</span>, so the equivalent current is <span class="math inline">\(4Qf\)</span>.
+</details>
+</section>
+<section id="example-7-9.1-mc-hard-q5" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-7-9.1-mc-hard-q5">Example 7 · 9.1 MC Hard Q5</h4>
+<p>The diagram shows a model of an atom in which two electrons move round a circular orbit. The electrons complete <span class="math inline">\(1.0\times10^{15}\)</span> revolutions around the nucleus every second.</p>
+<p><img src="../assets/questions/electricity/mc-91-hard-q5-atom.webp" class="question-figure img-fluid" alt="Model of an atom with two electrons moving round a circular orbit"></p>
+<p>What is the current caused by the motion of the electrons in the orbit?</p>
+<p>A. <span class="math inline">\(1.6\times10^{-4}\ \mathrm{A}\)</span></p>
+<p>B. <span class="math inline">\(3.2\times10^{-4}\ \mathrm{A}\)</span></p>
+<p>C. <span class="math inline">\(1.6\times10^{4}\ \mathrm{A}\)</span></p>
+<p>D. <span class="math inline">\(3.2\times10^{4}\ \mathrm{A}\)</span></p>
+<details class="answer-panel">
+<summary>
+Show answer and explanation
+</summary>
+<strong>Answer: D.</strong> Two electrons pass any point per revolution, so the charge per revolution is <span class="math inline">\(2e\)</span>. Current <span class="math inline">\(=2e\times1.0\times10^{15}=3.2\times10^{-4}\ \mathrm{A}\)</span>.
+</details>
+</section>
+<section id="example-8-9.1-mc-hard-q6" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-8-9.1-mc-hard-q6">Example 8 · 9.1 MC Hard Q6</h4>
+<p>A slice of germanium of cross-sectional area <span class="math inline">\(1.0\ \mathrm{cm^2}\)</span> carries a current of <span class="math inline">\(56\ \mathrm{\mu A}\)</span>. The number density of charge carriers in the germanium is <span class="math inline">\(2.0\times10^{19}\ \mathrm{cm^{-3}}\)</span>.</p>
+<p><img src="../assets/questions/electricity/mc-91-hard-q6-germanium.webp" class="question-figure img-fluid" alt="Slice of germanium of area 1.0 square centimetre carrying a current"></p>
+<p>Each charge carrier has a charge equal to the charge on an electron.</p>
+<p>What is the average drift velocity of the charge carriers in the germanium?</p>
+<p>A. <span class="math inline">\(0.18\ \mathrm{m\,s^{-1}}\)</span></p>
+<p>B. <span class="math inline">\(18\ \mathrm{m\,s^{-1}}\)</span></p>
+<p>C. <span class="math inline">\(180\ \mathrm{m\,s^{-1}}\)</span></p>
+<p>D. <span class="math inline">\(1800\ \mathrm{m\,s^{-1}}\)</span></p>
+<details class="answer-panel">
+<summary>
+Show answer and explanation
+</summary>
+<strong>Answer: A.</strong> <span class="math inline">\(v=I/(nAe)=56\times10^{-6}/(2.0\times10^{25}\times1.0\times10^{-4}\times1.6\times10^{-19})\)</span>. <span class="math inline">\(v=0.18\ \mathrm{m\,s^{-1}}\)</span>.
+</details>
+</section>
+<section id="example-9-9.1-mc-hard-q7" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-9-9.1-mc-hard-q7">Example 9 · 9.1 MC Hard Q7</h4>
+<p><span class="math inline">\(I_1\)</span> and <span class="math inline">\(I_2\)</span> are currents flowing through two different circuits, as shown in the diagram below.</p>
+<p><img src="../assets/questions/electricity/mc-91-hard-q7-currents.webp" class="question-figure img-fluid" alt="Graphs of current against time for currents I1 and I2"></p>
+<p>Calculate the difference in the total charge that flows through the two circuits in the first 7 seconds.</p>
+<p>A. 0 C</p>
+<p>B. 21 C</p>
+<p>C. 42 C</p>
+<p>D. 49 C</p>
+<details class="answer-panel">
+<summary>
+Show answer and explanation
+</summary>
+<strong>Answer: B.</strong> The total charge is the area under each current-time graph. The difference between the two areas over the first 7 s is <span class="math inline">\(21\ \mathrm{C}\)</span>.
+</details>
+</section>
+</section>
+<section id="resistance---easy" class="level3">
+<h3 class="anchored" data-anchor-id="resistance---easy">9.2 Resistance - Easy</h3>
+<section id="example-10-9.2-mc-easy-q5" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-10-9.2-mc-easy-q5">Example 10 · 9.2 MC Easy Q5</h4>
+<p>The graph shows how the electric current <span class="math inline">\(I\)</span> through a conducting liquid varies with the potential difference <span class="math inline">\(V\)</span> across it.</p>
+<p><img src="../assets/questions/electricity/mc-92-easy-q5-liquid.webp" class="question-figure img-fluid" alt="Current-potential difference graph for a conducting liquid"></p>
+<p>At which point on the graph does the liquid have the smallest resistance?</p>
+<details class="answer-panel">
+<summary>
+Show answer and explanation
+</summary>
+<strong>Answer: B.</strong> Resistance is <span class="math inline">\(V/I\)</span>. The smallest resistance occurs where the graph is steepest, i.e.&nbsp;where <span class="math inline">\(I/V\)</span> is largest.
+</details>
+</section>
+<section id="example-11-9.2-mc-easy-q6" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-11-9.2-mc-easy-q6">Example 11 · 9.2 MC Easy Q6</h4>
+<p>The graphs show the variation with potential difference <span class="math inline">\(V\)</span> of the current <span class="math inline">\(I\)</span> for three circuit components.</p>
+<p><img src="../assets/questions/electricity/mc-92-easy-q6-components.webp" class="question-figure img-fluid" alt="I-V graphs for three components labelled X, Y and Z"></p>
+<p>The components are a metal wire at constant temperature, a semiconductor diode and a filament lamp.</p>
+<p>Which row of the table correctly identifies these graphs?</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th></th>
+<th>Metal wire</th>
+<th>Semiconductor diode</th>
+<th>Filament lamp</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>A</td>
+<td>X</td>
+<td>Z</td>
+<td>Y</td>
+</tr>
+<tr class="even">
+<td>B</td>
+<td>Y</td>
+<td>X</td>
+<td>Z</td>
+</tr>
+<tr class="odd">
+<td>C</td>
+<td>Y</td>
+<td>Z</td>
+<td>X</td>
+</tr>
+<tr class="even">
+<td>D</td>
+<td>Z</td>
+<td>X</td>
+<td>Y</td>
+</tr>
+</tbody>
+</table>
+<details class="answer-panel">
+<summary>
+Show answer and explanation
+</summary>
+<strong>Answer: B.</strong> The metal wire gives a straight line through the origin (Y); the diode shows a sharp threshold (X); the filament lamp has a curved characteristic (Z).
+</details>
+</section>
+</section>
+<section id="resistance---medium" class="level3">
+<h3 class="anchored" data-anchor-id="resistance---medium">9.2 Resistance - Medium</h3>
+<section id="example-12-9.2-mc-medium-q1" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-12-9.2-mc-medium-q1">Example 12 · 9.2 MC Medium Q1</h4>
+<p>The graph shows how current <span class="math inline">\(I\)</span> varies with voltage <span class="math inline">\(V\)</span> for a filament lamp.</p>
+<p><img src="../assets/questions/electricity/mc-92-medium-q1-lamp.webp" class="question-figure img-fluid" alt="Current-voltage graph for a filament lamp"></p>
+<p>Since the graph is not a straight line, the resistance of the lamp varies with <span class="math inline">\(V\)</span>.</p>
+<p>Which row gives the correct resistance at the stated value of <span class="math inline">\(V\)</span>?</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th></th>
+<th><span class="math inline">\(V\)</span> / V</th>
+<th><span class="math inline">\(R\)</span> / <span class="math inline">\(\Omega\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>A</td>
+<td>2.0</td>
+<td>15</td>
+</tr>
+<tr class="even">
+<td>B</td>
+<td>4.0</td>
+<td>3.2</td>
+</tr>
+<tr class="odd">
+<td>C</td>
+<td>6.0</td>
+<td>19</td>
+</tr>
+<tr class="even">
+<td>D</td>
+<td>8.0</td>
+<td>09</td>
+</tr>
+</tbody>
+</table>
+<details class="answer-panel">
+<summary>
+Show answer and explanation
+</summary>
+<strong>Answer: C.</strong> At <span class="math inline">\(V=6.0\ \mathrm{V}\)</span>, the current read from the graph is about 0.32 A, so <span class="math inline">\(R=V/I=6.0/0.32=19\ \Omega\)</span>.
+</details>
+</section>
+<section id="example-13-9.2-mc-medium-q3" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-13-9.2-mc-medium-q3">Example 13 · 9.2 MC Medium Q3</h4>
+<p>The <span class="math inline">\(I\)</span>-<span class="math inline">\(V\)</span> characteristics of two electrical components P and Q are shown below.</p>
+<p><img src="../assets/questions/electricity/mc-92-medium-q3-pq.webp" class="question-figure img-fluid" alt="I-V characteristics of two components P and Q"></p>
+<p>Which statement is correct?</p>
+<p>A. P is a resistor and Q is a filament lamp.</p>
+<p>B. The resistance of Q increases as the current in it increases.</p>
+<p>C. For a current of 1.9 A, the resistance of Q is approximately half that of P.</p>
+<p>D. For a current of 0.5 A, the power dissipated in Q is double that in P.</p>
+<details class="answer-panel">
+<summary>
+Show answer and explanation
+</summary>
+<strong>Answer: D.</strong> At <span class="math inline">\(I=0.5\ \mathrm{A}\)</span>, the voltage across Q is twice that across P, so <span class="math inline">\(P_Q=VI\)</span> is double <span class="math inline">\(P_P\)</span>.
+</details>
+</section>
+<section id="example-14-9.2-mc-medium-q5" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-14-9.2-mc-medium-q5">Example 14 · 9.2 MC Medium Q5</h4>
+<p>The variation with potential difference <span class="math inline">\(V\)</span> of the current <span class="math inline">\(I\)</span> in a semiconductor diode is shown below.</p>
+<p><img src="../assets/questions/electricity/mc-92-medium-q5-diode.webp" class="question-figure img-fluid" alt="Current-potential difference graph for a semiconductor diode"></p>
+<p>What is the resistance of the diode for applied potential differences of <span class="math inline">\(+1.0\ \mathrm{V}\)</span> and <span class="math inline">\(-1.0\ \mathrm{V}\)</span>?</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th>Resistance at <span class="math inline">\(+1.0\ \mathrm{V}\)</span></th>
+<th>Resistance at <span class="math inline">\(-1.0\ \mathrm{V}\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>A</td>
+<td>200</td>
+<td>infinite</td>
+</tr>
+<tr class="even">
+<td>B</td>
+<td>200</td>
+<td>zero</td>
+</tr>
+<tr class="odd">
+<td>C</td>
+<td>0.05</td>
+<td>infinite</td>
+</tr>
+<tr class="even">
+<td>D</td>
+<td>0.05</td>
+<td>zero</td>
+</tr>
+</tbody>
+</table>
+<details class="answer-panel">
+<summary>
+Show answer and explanation
+</summary>
+<strong>Answer: A.</strong> In forward bias at 1.0 V the current is 5 mA, so <span class="math inline">\(R=1.0/0.005=200\ \Omega\)</span>. In reverse bias the current is zero, so the resistance is effectively infinite.
+</details>
+</section>
+</section>
+<section id="resistance---hard" class="level3">
+<h3 class="anchored" data-anchor-id="resistance---hard">9.2 Resistance - Hard</h3>
+<section id="example-15-9.2-mc-hard-q1" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-15-9.2-mc-hard-q1">Example 15 · 9.2 MC Hard Q1</h4>
+<p>The diagram shows an electric pump for a garden fountain connected by an 18 m cable to a 230 V mains electrical supply.</p>
+<p><img src="../assets/questions/electricity/mc-92-hard-q1-pump.webp" class="question-figure img-fluid" alt="Electric fountain pump connected by an 18 m cable to a 230 V mains supply"></p>
+<p>The performance of the pump is acceptable if the potential difference across it is at least 218 V. The current through it is then 0.83 A.</p>
+<p>What is the maximum resistance per metre of each of the two wires in the cable if the pump is to perform acceptably?</p>
+<p>A. <span class="math inline">\(0.40\ \Omega\,\mathrm{m^{-1}}\)</span></p>
+<p>B. <span class="math inline">\(0.80\ \Omega\,\mathrm{m^{-1}}\)</span></p>
+<p>C. <span class="math inline">\(1.30\ \Omega\,\mathrm{m^{-1}}\)</span></p>
+<p>D. <span class="math inline">\(1.4\ \Omega\,\mathrm{m^{-1}}\)</span></p>
+<details class="answer-panel">
+<summary>
+Show answer and explanation
+</summary>
+<strong>Answer: A.</strong> The maximum voltage drop in the cable is <span class="math inline">\(230-218=12\ \mathrm{V}\)</span>, so the total cable resistance is <span class="math inline">\(12/0.83=14.5\ \Omega\)</span>. Over two wires of 18 m each (36 m total), the resistance per metre is <span class="math inline">\(14.5/36=0.40\ \Omega\,\mathrm{m^{-1}}\)</span>.
+</details>
+</section>
+<section id="example-16-9.2-mc-hard-q3" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-16-9.2-mc-hard-q3">Example 16 · 9.2 MC Hard Q3</h4>
+<p>The circuit contains three identical lamps A, B and C and three switches S1, S2 and S3, as shown.</p>
+<p><img src="../assets/questions/electricity/mc-92-hard-q3-switches.webp" class="question-figure img-fluid" alt="Circuit with three lamps A, B and C and three switches S1, S2 and S3"></p>
+<p>One of the lamps is faulty. An ohm-meter is connected between terminals X and Y.</p>
+<p>Readings of the ohm-meter for different switch positions are:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>S1</th>
+<th>S2</th>
+<th>S3</th>
+<th>Meter reading / <span class="math inline">\(\Omega\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>open</td>
+<td>open</td>
+<td>open</td>
+<td>infinity</td>
+</tr>
+<tr class="even">
+<td>closed</td>
+<td>open</td>
+<td>open</td>
+<td>15</td>
+</tr>
+<tr class="odd">
+<td>open</td>
+<td>closed</td>
+<td>open</td>
+<td>30</td>
+</tr>
+<tr class="even">
+<td>open</td>
+<td>closed</td>
+<td>closed</td>
+<td>15</td>
+</tr>
+</tbody>
+</table>
+<p>Which lamps are faulty?</p>
+<p>A. A &amp; B</p>
+<p>B. B only</p>
+<p>C. B &amp; C</p>
+<p>D. C only</p>
+<details class="answer-panel">
+<summary>
+Show answer and explanation
+</summary>
+<strong>Answer: D.</strong> With S2 closed the reading is 30 (lamp A only); adding S3 gives 15, so the parallel path through C is faulty, leaving only lamp B’s path. Lamp C is the faulty lamp.
+</details>
+</section>
+<section id="example-17-9.2-mc-hard-q8" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-17-9.2-mc-hard-q8">Example 17 · 9.2 MC Hard Q8</h4>
+<p>The graph shows the relationship between potential difference <span class="math inline">\(V\)</span> and current <span class="math inline">\(I\)</span> for a fixed 20 Ω resistor and a filament lamp.</p>
+<p><img src="../assets/questions/electricity/mc-92-hard-q8-lamp9v.webp" class="question-figure img-fluid" alt="Potential difference-current graph for a 20 ohm resistor and a filament lamp"></p>
+<p>The resistor and lamp are placed in series with a 9 V battery of negligible internal resistance.</p>
+<p>What is the current in the circuit?</p>
+<p>A. 0.1 A</p>
+<p>B. 0.2 A</p>
+<p>C. 0.3 A</p>
+<p>D. 0.4 A</p>
+<details class="answer-panel">
+<summary>
+Show answer and explanation
+</summary>
+<strong>Answer: C.</strong> For the same current, the sum of the p.d.s across the lamp and resistor must be 9 V. Reading the graphs at the current where <span class="math inline">\(V_{\text{lamp}}+V_{\text{resistor}}=9\ \mathrm{V}\)</span> gives <span class="math inline">\(I=0.3\ \mathrm{A}\)</span>.
+</details>
+</section>
+</section>
+<section id="resistivity---easy" class="level3">
+<h3 class="anchored" data-anchor-id="resistivity---easy">9.3 Resistivity - Easy</h3>
+<section id="example-18-9.3-mc-easy-q4" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-18-9.3-mc-easy-q4">Example 18 · 9.3 MC Easy Q4</h4>
+<p>A light-dependent resistor (LDR) is connected in series with a resistor <span class="math inline">\(R\)</span> and a battery.</p>
+<p><img src="../assets/questions/electricity/mc-93-easy-q4-ldr.webp" class="question-figure img-fluid" alt="LDR in series with a resistor R and a battery, with a voltmeter across the LDR"></p>
+<p>The resistance of the LDR is equal to the resistance of <span class="math inline">\(R\)</span> when no light falls on the LDR. When the light intensity falling on the LDR increases, which statement is correct?</p>
+<p>A. The current in R decreases.</p>
+<p>B. The current through the LDR decreases.</p>
+<p>C. The p.d. across R decreases.</p>
+<p>D. The p.d. across the LDR decreases.</p>
+<details class="answer-panel">
+<summary>
+Show answer and explanation
+</summary>
+<strong>Answer: D.</strong> When the light intensity increases, the LDR resistance decreases. A smaller fraction of the supply p.d. is then across the LDR, so the p.d. across the LDR decreases.
+</details>
+</section>
+</section>
+<section id="resistivity---medium" class="level3">
+<h3 class="anchored" data-anchor-id="resistivity---medium">9.3 Resistivity - Medium</h3>
+<section id="example-19-9.3-mc-medium-q1" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-19-9.3-mc-medium-q1">Example 19 · 9.3 MC Medium Q1</h4>
+<p>Two wires P and Q made of the same material are connected to the same electrical supply.</p>
+<p><img src="../assets/questions/electricity/mc-93-medium-q1-wires.webp" class="question-figure img-fluid" alt="Wire P with twice the length and one third of the diameter of wire Q"></p>
+<p>P has twice the length of Q and one-third of the diameter of Q.</p>
+<p>What is the ratio <span class="math inline">\(\frac{\text{current in P}}{\text{current in Q}}\)</span>?</p>
+<p>A. <span class="math inline">\(\frac{2}{9}\)</span></p>
+<p>B. <span class="math inline">\(\frac{2}{3}\)</span></p>
+<p>C. <span class="math inline">\(\frac{1}{6}\)</span></p>
+<p>D. <span class="math inline">\(\frac{1}{18}\)</span></p>
+<details class="answer-panel">
+<summary>
+Show answer and explanation
+</summary>
+<strong>Answer: D.</strong> <span class="math inline">\(R_P/R_Q=(\rho L/A)_P/(\rho L/A)_Q\)</span>. <span class="math inline">\(A_P=A_Q/9\)</span> and <span class="math inline">\(L_P=2L_Q\)</span>, so <span class="math inline">\(R_P=18R_Q\)</span>. With the same supply voltage, <span class="math inline">\(I_P/I_Q=R_Q/R_P=1/18\)</span>.
+</details>
+</section>
+</section>
+<section id="resistivity---hard" class="level3">
+<h3 class="anchored" data-anchor-id="resistivity---hard">9.3 Resistivity - Hard</h3>
+<section id="example-20-9.3-mc-hard-q1" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-20-9.3-mc-hard-q1">Example 20 · 9.3 MC Hard Q1</h4>
+<p>A thermistor and another component are connected to a constant voltage supply. A voltmeter is connected across one of the components. The temperature of the thermistor is then reduced, but no other changes are made.</p>
+<p><img src="../assets/questions/electricity/mc-93-hard-q1-thermistor.webp" class="question-figure img-fluid" alt="Four circuits with a thermistor, a resistor and a voltmeter"></p>
+<p>In which circuit will the voltmeter reading increase?</p>
+<details class="answer-panel">
+<summary>
+Show answer and explanation
+</summary>
+<strong>Answer: D.</strong> When the temperature is reduced, the thermistor resistance increases. The voltmeter reading increases when it is connected across the thermistor (option D), because the p.d. across the larger resistance increases.
+</details>
+</section>
+</section>
+</section>
+<section id="structured-questions" class="level2">
+<h2 class="anchored" data-anchor-id="structured-questions">Structured Questions</h2>
+<section id="current-potential-difference---medium-1" class="level3">
+<h3 class="anchored" data-anchor-id="current-potential-difference---medium-1">9.1 Current &amp; Potential Difference - Medium</h3>
+<section id="example-1-9.1-sq-medium-q2" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-1-9.1-sq-medium-q2">Example 1 · 9.1 SQ Medium Q2</h4>
+<p>The smallest conductor within a computer processing chip can be represented as a rectangular block that is one atom high, four atoms wide and twenty atoms long. One such block is shown in Fig. 1.1.</p>
+<p><img src="../assets/questions/electricity/sq-91-medium-q2-chip.webp" class="question-figure img-fluid" alt="Rectangular block of atoms on an insulating surface"></p>
+<p>The block is made from phosphorus atoms of diameter <span class="math inline">\(d=3.8\times10^{-10}\ \mathrm{m}\)</span>. The atoms are deposited on an insulating surface. This ensures that the atoms touch each other.</p>
+<p>The processing chip has a resistance, measured from P to Q, of <span class="math inline">\(220\ \Omega\)</span>.</p>
+<p><strong>(a)</strong></p>
+<p><strong>(i)</strong> Define current. <code>[1]</code></p>
+<p><strong>(ii)</strong> Describe, for this processing chip, the properties which will affect the current. <code>[3]</code></p>
+<p><code>[4 marks]</code></p>
+<p><strong>(b)</strong> Calculate the number density of free electrons within the block. Assume that each phosphorus atom contributes one free electron. <code>[1 mark]</code></p>
+<p><strong>(c)</strong> Calculate the current between P and Q when the mean drift velocity of free electrons in the block is <span class="math inline">\(1.9\times10^{-5}\ \mathrm{m\,s^{-1}}\)</span>. <code>[3 marks]</code></p>
+<p><strong>(d)</strong> There are about <span class="math inline">\(10^{12}\)</span> of these tiny conductors in a single chip, each carrying the current calculated in part (c).</p>
+<p>Estimate the total power dissipated in these conductors in a single chip. <code>[3 marks]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<ul>
+<li><strong>(a)(i)</strong> Current is the rate of flow of charge carriers. <code>[1]</code></li>
+<li><strong>(a)(ii)</strong> Current depends on the charge per carrier, <code>[1]</code> the number density of free electrons (one per atom), <code>[1]</code> and the cross-sectional area of the block. <code>[1]</code></li>
+<li><strong>(b)</strong> Number density <span class="math inline">\(n=1/d^3=1/(3.8\times10^{-10})^3=1.82\times10^{28}\ \mathrm{m^{-3}}\)</span>. <code>[1]</code></li>
+<li><strong>(c)</strong> Cross-sectional area <span class="math inline">\(A=4d\times d=4(3.8\times10^{-10})^2=5.78\times10^{-19}\ \mathrm{m^2}\)</span>. <code>[1]</code> <span class="math inline">\(I=nAve=1.82\times10^{28}\times5.78\times10^{-19}\times1.9\times10^{-5}\times1.6\times10^{-19}\)</span>. <code>[1]</code> <span class="math inline">\(I=3.2\times10^{-14}\ \mathrm{A}\)</span>. <code>[1]</code></li>
+<li><strong>(d)</strong> Power per conductor <span class="math inline">\(=I^2R=(3.2\times10^{-14})^2\times220\)</span>. <code>[1]</code> Total power <span class="math inline">\(=I^2R\times10^{12}\)</span>. <code>[1]</code> Total <span class="math inline">\(\approx2\times10^{-13}\ \mathrm{W}\)</span>. <code>[1]</code></li>
+</ul>
+</details>
+</section>
+<section id="example-2-9.1-sq-medium-q3" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-2-9.1-sq-medium-q3">Example 2 · 9.1 SQ Medium Q3</h4>
+<p>A power source is connected across a component. The current in the component is 40 mA.</p>
+<p><strong>(a)</strong> Calculate the total charge that flows past a point in the component in 3 minutes. <code>[1 mark]</code></p>
+<p><strong>(b)</strong> Calculate the number of electron charge carriers passing the same point in the conductor in this time. <code>[1 mark]</code></p>
+<p><strong>(c)</strong> 8.6 J of energy are transferred to the conductor in this time.</p>
+<p><strong>(i)</strong> Calculate the potential difference across the component. <code>[2]</code></p>
+<p><strong>(ii)</strong> Calculate the resistance of the conductor. <code>[2]</code></p>
+<p><code>[4 marks]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<ul>
+<li><strong>(a)</strong> <span class="math inline">\(Q=It=0.040\times180=7.2\ \mathrm{C}\)</span>. <code>[1]</code></li>
+<li><strong>(b)</strong> Number of electrons <span class="math inline">\(=Q/e=7.2/(1.6\times10^{-19})=4.5\times10^{19}\)</span>. <code>[1]</code></li>
+<li><strong>(c)(i)</strong> <span class="math inline">\(V=W/Q=8.6/7.2=1.2\ \mathrm{V}\)</span>. <code>[2]</code></li>
+<li><strong>(c)(ii)</strong> <span class="math inline">\(R=V/I=1.2/0.040=30\ \Omega\)</span>. <code>[2]</code></li>
+</ul>
+</details>
+</section>
+</section>
+<section id="resistance---medium-1" class="level3">
+<h3 class="anchored" data-anchor-id="resistance---medium-1">9.2 Resistance - Medium</h3>
+<section id="example-3-9.2-sq-medium-q1" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-3-9.2-sq-medium-q1">Example 3 · 9.2 SQ Medium Q1</h4>
+<p>The photograph shows a statue of Buddha in Sri Lanka, which is protected by a lightning conductor.</p>
+<p><img src="../assets/questions/electricity/sq-92-medium-q1-lightning.webp" class="question-figure img-fluid" alt="Statue of Buddha protected by a lightning conductor"></p>
+<p>During a storm, a potential difference of 2.7 MV was generated between a cloud and the top of the lightning conductor on the statue. A flash of lightning passed between the cloud and the lightning conductor, producing a current of 25 kA for a time of 7.5 ms.</p>
+<p><strong>(a)</strong> Calculate the energy transferred by the lightning strike. <code>[3 marks]</code></p>
+<p><strong>(b)</strong> The lightning conductor is made from copper.</p>
+<p>Sketch an <span class="math inline">\(I\)</span>-<span class="math inline">\(V\)</span> graph for the rod when it conducts a lightning strike to earth. <code>[3 marks]</code></p>
+<p><strong>(c)</strong> Explain any changes which the lightning rod would undergo during a lightning strike. <code>[3 marks]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<ul>
+<li><strong>(a)</strong> <span class="math inline">\(Q=It=25\times10^3\times7.5\times10^{-3}=187.5\ \mathrm{C}\)</span>. <code>[1]</code> <span class="math inline">\(W=VQ=2.7\times10^6\times187.5\)</span>. <code>[1]</code> <span class="math inline">\(W=5.1\times10^8\ \mathrm{J}\)</span>. <code>[1]</code></li>
+<li><strong>(b)</strong> The rod heats up during the strike, so it behaves like a non-ohmic conductor. Sketch a curved <span class="math inline">\(I\)</span>-<span class="math inline">\(V\)</span> graph similar to a filament lamp, with the curve flattening at high current. <code>[3]</code></li>
+<li><strong>(c)</strong> The rod becomes hot (temperature rises); <code>[1]</code> its resistance increases with temperature; <code>[1]</code> it may glow or expand slightly due to heating. <code>[1]</code></li>
+</ul>
+</details>
+</section>
+<section id="example-4-9.2-sq-medium-q2" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-4-9.2-sq-medium-q2">Example 4 · 9.2 SQ Medium Q2</h4>
+<p><strong>(a)</strong> Fig. 1.1 shows the graph of <span class="math inline">\(V\)</span> against <span class="math inline">\(I\)</span> for a non-ohmic conductor.</p>
+<p><img src="../assets/questions/electricity/sq-92-medium-q2-graph.webp" class="question-figure img-fluid" alt="Graph of potential difference against current for a non-ohmic conductor"></p>
+<p>Calculate the maximum resistance of the lamp over the range shown by the graph. <code>[3 marks]</code></p>
+<p><strong>(b)</strong> Using the axes in Fig. 1.2, sketch the graph of current against potential difference for a diode. <code>[2 marks]</code></p>
+<p><strong>(c)</strong> For the graph in Fig. 1.3 determine:</p>
+<p><img src="../assets/questions/electricity/sq-92-medium-q2c-graph.webp" class="question-figure img-fluid" alt="Graph of potential difference against current with points marked at 10 mA"></p>
+<p><strong>(i)</strong> the resistance when current <span class="math inline">\(=10\ \mathrm{mA}\)</span>; <code>[2]</code></p>
+<p><strong>(ii)</strong> the power when current <span class="math inline">\(=10\ \mathrm{mA}\)</span>. <code>[1]</code></p>
+<p><code>[3 marks]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<ul>
+<li><strong>(a)</strong> The maximum resistance occurs at the steepest point of the graph. <code>[1]</code> From the graph, <span class="math inline">\(V=12.8\ \mathrm{V}\)</span> and <span class="math inline">\(I=1.75\ \mathrm{A}\)</span>. <code>[1]</code> <span class="math inline">\(R=V/I=12.8/1.75=7.3\ \Omega\)</span>. <code>[1]</code></li>
+<li><strong>(b)</strong> Draw a diode characteristic: current zero for negative voltages, then a steep rise between about 0.6 V and 1.0 V in forward bias. <code>[2]</code></li>
+<li><strong>(c)(i)</strong> At <span class="math inline">\(I=10\ \mathrm{mA}\)</span>, <span class="math inline">\(V=1.9\ \mathrm{V}\)</span>, so <span class="math inline">\(R=V/I=1.9/0.010=190\ \Omega\)</span>. <code>[2]</code></li>
+<li><strong>(c)(ii)</strong> <span class="math inline">\(P=I^2R=(0.010)^2\times190=1.9\times10^{-2}\ \mathrm{W}=19\ \mathrm{mW}\)</span>. <code>[1]</code></li>
+</ul>
+</details>
+</section>
+<section id="example-5-9.2-sq-medium-q3" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-5-9.2-sq-medium-q3">Example 5 · 9.2 SQ Medium Q3</h4>
+<p>An electrical component has the <span class="math inline">\(I\)</span>-<span class="math inline">\(V\)</span> characteristic shown in Fig. 1.1.</p>
+<p><img src="../assets/questions/electricity/sq-92-medium-q3-iv.webp" class="question-figure img-fluid" alt="I-V characteristic of an electrical component"></p>
+<p><strong>(a)</strong> Determine the resistance of the component when a potential difference of 6.0 V is applied across it. <code>[2 marks]</code></p>
+<p><strong>(b)</strong> For the component in part (a), calculate the minimum value of <span class="math inline">\(R\)</span> as the potential difference across it changes over the range 0–10 V. <code>[2 marks]</code></p>
+<p><strong>(c)</strong> For the component in part (a) calculate:</p>
+<p><strong>(i)</strong> the power dissipated when <span class="math inline">\(V=2.0\ \mathrm{V}\)</span>; <code>[2]</code></p>
+<p><strong>(ii)</strong> the maximum power dissipated before the component heats up; <code>[2]</code></p>
+<p><strong>(iii)</strong> the value of resistance at the point identified in part (ii). <code>[2]</code></p>
+<p><code>[6 marks]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<ul>
+<li><strong>(a)</strong> At <span class="math inline">\(V=6.0\ \mathrm{V}\)</span>, read <span class="math inline">\(I\)</span> from the graph (about 1.43 A). <code>[1]</code> <span class="math inline">\(R=V/I=6.0/1.43=4.2\ \Omega\)</span>. <code>[1]</code></li>
+<li><strong>(b)</strong> The minimum resistance occurs where the graph is steepest. <code>[1]</code> <span class="math inline">\(R_{\min}=3.0\ \Omega\)</span>. <code>[1]</code></li>
+<li><strong>(c)(i)</strong> At <span class="math inline">\(V=2.0\ \mathrm{V}\)</span>, <span class="math inline">\(I\approx0.9\ \mathrm{A}\)</span>, so <span class="math inline">\(P=VI=2.0\times0.9=1.8\ \mathrm{W}\)</span>. <code>[2]</code></li>
+<li><strong>(c)(ii)</strong> The maximum power before heating occurs at the highest point of the graph: <span class="math inline">\(P_{\max}=V_{\max}I_{\max}\)</span>. <code>[2]</code></li>
+<li><strong>(c)(iii)</strong> The resistance at that point is <span class="math inline">\(R=V/I\)</span> using the values from part (ii). <code>[2]</code></li>
+</ul>
+</details>
+</section>
+</section>
+<section id="resistivity---easy-1" class="level3">
+<h3 class="anchored" data-anchor-id="resistivity---easy-1">9.3 Resistivity - Easy</h3>
+<section id="example-6-9.3-sq-easy-q1" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-6-9.3-sq-easy-q1">Example 6 · 9.3 SQ Easy Q1</h4>
+<p>A straight wire of unstretched length <span class="math inline">\(L\)</span> has an electrical resistance <span class="math inline">\(R\)</span>. The area of the cross-section <span class="math inline">\(A\)</span> of the wire may be assumed to be constant.</p>
+<p><strong>(a)</strong> State the relation between <span class="math inline">\(R\)</span>, <span class="math inline">\(L\)</span>, <span class="math inline">\(A\)</span> and the resistivity <span class="math inline">\(\rho\)</span> of the material of the wire. <code>[1 mark]</code></p>
+<p><strong>(b)</strong> Measurements made for a sample of metal wire are shown in Table 1.1.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Quantity</th>
+<th>Measurement</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>resistance</td>
+<td>61 Ω</td>
+</tr>
+<tr class="even">
+<td>diameter</td>
+<td>0.44 mm</td>
+</tr>
+<tr class="odd">
+<td>length</td>
+<td>1390 mm</td>
+</tr>
+</tbody>
+</table>
+<p>State the most appropriate instrument to use to measure:</p>
+<p><strong>(i)</strong> the resistance of the wire; <code>[1]</code></p>
+<p><strong>(ii)</strong> the diameter of the wire; <code>[1]</code></p>
+<p><strong>(iii)</strong> the length of the wire. <code>[1]</code></p>
+<p><code>[3 marks]</code></p>
+<p><strong>(c)</strong> Show that the resistivity of the metal is <span class="math inline">\(6.67\times10^{-7}\ \Omega\,\mathrm{m}\)</span>. <code>[1 mark]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<ul>
+<li><strong>(a)</strong> <span class="math inline">\(R=\rho L/A\)</span>. <code>[1]</code></li>
+<li><strong>(b)(i)</strong> Voltmeter and ammeter, or an ohmmeter (multimeter on the ohm setting). <code>[1]</code></li>
+<li><strong>(b)(ii)</strong> Micrometer screw gauge (or vernier callipers). <code>[1]</code></li>
+<li><strong>(b)(iii)</strong> Metre rule or tape measure. <code>[1]</code></li>
+<li><strong>(c)</strong> <span class="math inline">\(\rho=RA/L=61\times\pi(0.22\times10^{-3})^2/1.39\)</span>. <code>[1]</code> <span class="math inline">\(\rho=6.67\times10^{-7}\ \Omega\,\mathrm{m}\)</span>. <code>[1]</code></li>
+</ul>
+</details>
+</section>
+<section id="example-7-9.3-sq-easy-q2" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-7-9.3-sq-easy-q2">Example 7 · 9.3 SQ Easy Q2</h4>
+<p><strong>(a)</strong> On Fig. 1.1, sketch the change in resistance with temperature for a thermistor.</p>
+<p><img src="../assets/questions/electricity/sq-93-easy-q2a-thermistor.webp" class="question-figure img-fluid" alt="Axes of resistance against temperature for a thermistor"></p>
+<p><code>[2 marks]</code></p>
+<p><strong>(b)</strong> Cobalt is commonly used to create thermistors. At <span class="math inline">\(20^\circ\mathrm{C}\)</span> a wire of cobalt is used to create a thermistor and has an electrical resistivity of <span class="math inline">\(5.6\times10^{-8}\ \Omega\,\mathrm{m}\)</span>.</p>
+<p>State and explain what would happen to the resistivity of the thermistor if its temperature is increased to <span class="math inline">\(60^\circ\mathrm{C}\)</span>. <code>[3 marks]</code></p>
+<p><strong>(c)</strong></p>
+<p><strong>(i)</strong> State the meaning of LDR. <code>[1]</code></p>
+<p><strong>(ii)</strong> On Fig. 1.2, sketch the change in resistance with light intensity for an LDR.</p>
+<p><img src="../assets/questions/electricity/sq-93-easy-q2c-ldr.webp" class="question-figure img-fluid" alt="Axes of resistance against light intensity for an LDR"></p>
+<p><code>[2]</code></p>
+<p><code>[3 marks]</code></p>
+<p><strong>(d)</strong> An LDR is connected to a circuit to operate an automatic street light. The resistance of the LDR is measured to be 5 kΩ at one time and 20 MΩ at another.</p>
+<p>State which resistance the LDR is likely to be at during the day and which it will be at night. <code>[2 marks]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<ul>
+<li><strong>(a)</strong> Draw a curve showing resistance decreasing as temperature increases, starting high at low temperature and flattening at high temperature. <code>[2]</code></li>
+<li><strong>(b)</strong> The resistivity of the thermistor decreases. <code>[1]</code> As temperature increases, more charge carriers become available. <code>[1]</code> This reduces the resistance (and hence the resistivity) of the thermistor. <code>[1]</code></li>
+<li><strong>(c)(i)</strong> LDR stands for light-dependent resistor. <code>[1]</code></li>
+<li><strong>(c)(ii)</strong> Draw a curve showing resistance decreasing as light intensity increases. <code>[2]</code></li>
+<li><strong>(d)</strong> During the day the LDR is illuminated, so its resistance is the low value of 5 kΩ. <code>[1]</code> At night it is dark, so its resistance is the high value of 20 MΩ. <code>[1]</code></li>
+</ul>
+</details>
+</section>
+</section>
+<section id="resistivity---medium-1" class="level3">
+<h3 class="anchored" data-anchor-id="resistivity---medium-1">9.3 Resistivity - Medium</h3>
+<section id="example-8-9.3-sq-medium-q1" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-8-9.3-sq-medium-q1">Example 8 · 9.3 SQ Medium Q1</h4>
+<p>An electrical heating element, made from uniform nichrome wire, is required to dissipate 600 W when connected to the 230 V mains supply.</p>
+<p>The radius of the wire is 0.16 mm.</p>
+<p><strong>(a)</strong> Calculate the length of nichrome wire required.</p>
+<p>Resistivity of nichrome <span class="math inline">\(=1.1\times10^{-6}\ \Omega\,\mathrm{m}\)</span> <code>[5 marks]</code></p>
+<p><strong>(b)</strong> Suggest two properties that the nichrome wire must have to make it suitable as an electrical heating element. <code>[2 marks]</code></p>
+<p><strong>(c)</strong> Explain why the resistivity of the nichrome wire changes with temperature. <code>[3 marks]</code></p>
+<p><strong>(d)</strong> An engineer wants to use the same uniform nichrome wire in another identical electrical heating element which is also required to dissipate 600 W when connected to the 230 V mains supply.</p>
+<p>The only nichrome wire they have available has a radius of 0.08 mm.</p>
+<p>Calculate the length needed for this new nichrome wire to produce the same current through the heating element. <code>[3 marks]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<ul>
+<li><strong>(a)</strong> <span class="math inline">\(R=V^2/P=230^2/600=88.2\ \Omega\)</span>. <code>[1]</code> <span class="math inline">\(A=\pi r^2=\pi(0.16\times10^{-3})^2=8.04\times10^{-8}\ \mathrm{m^2}\)</span>. <code>[1]</code> <span class="math inline">\(L=RA/\rho=88.2\times8.04\times10^{-8}/(1.1\times10^{-6})\)</span>. <code>[2]</code> <span class="math inline">\(L=6.4\ \mathrm{m}\)</span>. <code>[1]</code></li>
+<li><strong>(b)</strong> High resistivity, <code>[1]</code> and a high melting point (or resistance to oxidation at high temperature). <code>[1]</code></li>
+<li><strong>(c)</strong> As the temperature rises, the metal atoms vibrate more. <code>[1]</code> This increases the rate of collisions with the charge carriers, <code>[1]</code> so the resistivity increases with temperature. <code>[1]</code></li>
+<li><strong>(d)</strong> For the same current, the resistance must remain 88.2 Ω. <code>[1]</code> The new area is one quarter of the original, <code>[1]</code> so the required length is <span class="math inline">\(6.4/4=1.6\ \mathrm{m}\)</span>. <code>[1]</code></li>
+</ul>
+</details>
+</section>
+<section id="example-9-9.3-sq-medium-q2" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-9-9.3-sq-medium-q2">Example 9 · 9.3 SQ Medium Q2</h4>
+<p><strong>(a)</strong> A student investigates the resistivity <span class="math inline">\(\rho\)</span> of a length of wire <span class="math inline">\(l\)</span>, with resistance <span class="math inline">\(R\)</span>, diameter <span class="math inline">\(d\)</span> and a potential difference <span class="math inline">\(V\)</span> through it.</p>
+<p>Determine the resistivity, in terms of <span class="math inline">\(\rho\)</span>, of a wire of the same length with a diameter <span class="math inline">\(2d\)</span> and a potential difference <span class="math inline">\(3V\)</span> through it instead. <code>[3 marks]</code></p>
+<p><strong>(b)</strong> The student decides to investigate how the cross-sectional area of a wire affects its resistance. The circuit they use to carry out the experiment is shown in Fig. 1.1.</p>
+<p><img src="../assets/questions/electricity/sq-93-medium-q2b-circuit.webp" class="question-figure img-fluid" alt="Circuit used to investigate how the cross-sectional area of a wire affects its resistance"></p>
+<p>Describe a method to accurately determine the cross-sectional area of the wires. <code>[3 marks]</code></p>
+<p><strong>(c)</strong> The student uses three pieces of nichrome wire, each 1.5 m long. The cross-sectional areas of the pieces of wire are <span class="math inline">\(0.45\ \mathrm{mm^2}\)</span>, <span class="math inline">\(0.21\ \mathrm{mm^2}\)</span> and <span class="math inline">\(0.89\ \mathrm{mm^2}\)</span>.</p>
+<p>Sketch a graph of voltage <span class="math inline">\(V\)</span> against the current <span class="math inline">\(I\)</span> for each of the wires. <code>[3 marks]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<ul>
+<li><strong>(a)</strong> Resistivity is a property of the material and does not change with dimensions or applied voltage. <code>[1]</code> The new wire has the same material, so its resistivity is still <span class="math inline">\(\rho\)</span>. <code>[2]</code></li>
+<li><strong>(b)</strong> Measure the diameter at several points along the wire with a micrometer screw gauge. <code>[1]</code> Calculate the mean diameter. <code>[1]</code> Use <span class="math inline">\(A=\pi d^2/4\)</span> to find the cross-sectional area. <code>[1]</code></li>
+<li><strong>(c)</strong> For each wire, <span class="math inline">\(V=IR\)</span> with <span class="math inline">\(R=\rho L/A\)</span>. <code>[1]</code> The wire with the largest area has the smallest gradient; the wire with the smallest area has the largest gradient. <code>[1]</code> Draw three straight lines through the origin with gradients in the order <span class="math inline">\(A=0.21\)</span>, then 0.45, then 0.89 (steepest to least steep). <code>[1]</code></li>
+</ul>
+</details>
+</section>
+</section>
+<section id="resistivity---hard-1" class="level3">
+<h3 class="anchored" data-anchor-id="resistivity---hard-1">9.3 Resistivity - Hard</h3>
+<section id="example-10-9.3-sq-hard-q1" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-10-9.3-sq-hard-q1">Example 10 · 9.3 SQ Hard Q1</h4>
+<p>A wire of cross-sectional area <span class="math inline">\(A\)</span> is made from metal of resistivity <span class="math inline">\(\rho\)</span>. The wire is extended. Assume that the volume <span class="math inline">\(V\)</span> of the wire remains constant as it is extended.</p>
+<p><strong>(a)</strong> On Fig. 1.1, sketch how the resistance <span class="math inline">\(R\)</span> of the extending wire varies with the length <span class="math inline">\(l\)</span>.</p>
+<p><img src="../assets/questions/electricity/sq-93-hard-q1a-plot.webp" class="question-figure img-fluid" alt="Axes of resistance against length for an extending wire"></p>
+<p><code>[2 marks]</code></p>
+<p><strong>(b)</strong> Two resistors X and Y have resistance <span class="math inline">\(R_X\)</span> and <span class="math inline">\(R_Y\)</span> respectively. The resistors are connected in series with a battery with electromotive force <span class="math inline">\(E\)</span> and zero internal resistance, as shown in Fig. 1.1.</p>
+<p><img src="../assets/questions/electricity/sq-93-hard-q1b-resistors.webp" class="question-figure img-fluid" alt="Resistors X and Y connected in series with a battery of e.m.f. E"></p>
+<p>The resistors are made from metal wires. Data from the resistors are given in Table 1.1.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th></th>
+<th>resistor X</th>
+<th>resistor Y</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>diameter of metal</td>
+<td><span class="math inline">\(d\)</span></td>
+<td><span class="math inline">\(4d\)</span></td>
+</tr>
+<tr class="even">
+<td>length of metal</td>
+<td><span class="math inline">\(2l\)</span></td>
+<td><span class="math inline">\(l\)</span></td>
+</tr>
+<tr class="odd">
+<td>resistivity of metal</td>
+<td><span class="math inline">\(4\rho\)</span></td>
+<td><span class="math inline">\(\rho\)</span></td>
+</tr>
+</tbody>
+</table>
+<p>Use information from Table 1.1 to determine the ratio</p>
+<p><span class="math display">\[\frac{\text{power dissipated in Y}}{\text{power dissipated in X}}.\]</span> <code>[3 marks]</code></p>
+<p><strong>(c)</strong> Show that the product of the ratio <span class="math inline">\(\frac{\text{power dissipated in Y}}{\text{power dissipated in X}}\)</span> of X and Y connected in series and connected in parallel is 1. <code>[3 marks]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<ul>
+<li><strong>(a)</strong> Since the volume is constant, <span class="math inline">\(R=\rho l^2/V\)</span>, so <span class="math inline">\(R\propto l^2\)</span>. <code>[1]</code> Draw a curve through the origin with an increasing gradient. <code>[1]</code></li>
+<li><strong>(b)</strong> <span class="math inline">\(R_X=\rho_X L_X/A_X=4\rho(2l)/(\pi d^2/4)=32\rho l/(\pi d^2)\)</span>; <span class="math inline">\(R_Y=\rho l/(\pi(4d)^2/4)=\rho l/(4\pi d^2)\)</span>. <code>[1]</code> In series the current is the same, so <span class="math inline">\(P=I^2R\)</span>. <code>[1]</code> <span class="math inline">\(P_Y/P_X=R_Y/R_X=(\rho l/4)/(32\rho l)=1/128\)</span>. <code>[1]</code></li>
+<li><strong>(c)</strong> In parallel the voltage is the same, so <span class="math inline">\(P=V^2/R\)</span>, giving <span class="math inline">\(P_Y/P_X=R_X/R_Y=128\)</span>. <code>[1]</code> The product of the series and parallel ratios is <span class="math inline">\(1/128\times128=1\)</span>. <code>[2]</code></li>
+</ul>
+</details>
+</section>
+</section>
+</section>
+<section id="chapter-checklist" class="level2">
+<h2 class="anchored" data-anchor-id="chapter-checklist">Chapter checklist</h2>
+<ul class="task-list">
+<li><label><input type="checkbox">I can use <span class="math inline">\(I=Q/t\)</span> and <span class="math inline">\(I=nAve\)</span>.</label></li>
+<li><label><input type="checkbox">I can use <span class="math inline">\(V=W/Q\)</span> and <span class="math inline">\(P=VI\)</span>.</label></li>
+<li><label><input type="checkbox">I can use <span class="math inline">\(R=V/I\)</span> and interpret <span class="math inline">\(I\)</span>-<span class="math inline">\(V\)</span> graphs.</label></li>
+<li><label><input type="checkbox">I can use <span class="math inline">\(\rho=RA/L\)</span>.</label></li>
+<li><label><input type="checkbox">I can explain how resistance changes with temperature, illumination and strain.</label></li>
+</ul>
+<section id="original-question-pdfs" class="level3">
+<h3 class="anchored" data-anchor-id="original-question-pdfs">Original question PDFs</h3>
+<ul>
+<li><a href="https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/electricity/9.1-current-potential-difference-c-easy.pdf">9.1 Current &amp; Potential Difference - MC Easy</a></li>
+<li><a href="https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/electricity/9.1-current-potential-difference-c-medium.pdf">9.1 Current &amp; Potential Difference - MC Medium</a></li>
+<li><a href="https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/electricity/9.1-current-potential-difference-c-hard.pdf">9.1 Current &amp; Potential Difference - MC Hard</a></li>
+<li><a href="https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/electricity/9.1-current-potential-difference-sq-medium.pdf">9.1 Current &amp; Potential Difference - SQ Medium</a></li>
+<li><a href="https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/electricity/9.2-resistance-c-easy.pdf">9.2 Resistance - MC Easy</a></li>
+<li><a href="https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/electricity/9.2-resistance-c-medium.pdf">9.2 Resistance - MC Medium</a></li>
+<li><a href="https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/electricity/9.2-resistance-c-hard.pdf">9.2 Resistance - MC Hard</a></li>
+<li><a href="https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/electricity/9.2-resistance-sq-medium.pdf">9.2 Resistance - SQ Medium</a></li>
+<li><a href="https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/electricity/9.3-resistivity-c-easy.pdf">9.3 Resistivity - MC Easy</a></li>
+<li><a href="https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/electricity/9.3-resistivity-c-medium.pdf">9.3 Resistivity - MC Medium</a></li>
+<li><a href="https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/electricity/9.3-resistivity-c-hard.pdf">9.3 Resistivity - MC Hard</a></li>
+<li><a href="https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/electricity/9.3-resistivity-sq-easy.pdf">9.3 Resistivity - SQ Easy</a></li>
+<li><a href="https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/electricity/9.3-resistivity-sq-medium.pdf">9.3 Resistivity - SQ Medium</a></li>
+<li><a href="https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/electricity/9.3-resistivity-sq-hard.pdf">9.3 Resistivity - SQ Hard</a></li>
+</ul>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll(".done-toggle input").forEach((input) => {
+    const key = `cie-physics-${input.dataset.progress}`;
+    input.checked = localStorage.getItem(key) === "true";
+    input.closest(".question-card")?.classList.toggle("is-complete", input.checked);
+    input.addEventListener("change", () => {
+      localStorage.setItem(key, input.checked);
+      input.closest(".question-card")?.classList.toggle("is-complete", input.checked);
+    });
+  });
+
+  document.querySelectorAll(".mc-question").forEach((card) => {
+    const answer = card.dataset.answer;
+    const feedback = card.querySelector(".mc-feedback");
+    const check = card.querySelector(".check-answer");
+    let selected = localStorage.getItem(`cie-physics-${card.id}-choice`) || "";
+
+    const showSelection = () => {
+      card.querySelectorAll(".mc-choice").forEach((choice) => {
+        choice.classList.toggle("is-selected", choice.dataset.choice === selected);
+      });
+    };
+    showSelection();
+
+    card.querySelectorAll(".mc-choice").forEach((choice) => {
+      choice.addEventListener("click", () => {
+        selected = choice.dataset.choice;
+        localStorage.setItem(`cie-physics-${card.id}-choice`, selected);
+        feedback.textContent = "";
+        feedback.className = "mc-feedback";
+        showSelection();
+      });
+    });
+
+    check?.addEventListener("click", () => {
+      if (!selected) {
+        feedback.textContent = "Select an answer first.";
+        feedback.className = "mc-feedback is-pending";
+        return;
+      }
+      const correct = selected === answer;
+      feedback.textContent = correct ? "Correct." : `Not quite. The correct answer is ${answer}.`;
+      feedback.className = `mc-feedback ${correct ? "is-correct" : "is-incorrect"}`;
+    });
+  });
+});
+</script>
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "已复制");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "已复制");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../as-level/08-superposition.html" class="pagination-link" aria-label="8 Superposition">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">8 Superposition</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../a-level/12-motion-in-a-circle.html" class="pagination-link" aria-label="12 Motion in a circle">
+        <span class="nav-page-text">12 Motion in a circle</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>
