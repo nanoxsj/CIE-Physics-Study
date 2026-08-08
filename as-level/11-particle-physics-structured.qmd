@@ -19,9 +19,9 @@ A nucleus X decays by emitting a β⁺ particle to form a new nucleus, ${}^{23}_
 ::: {.question-card}
 #### Example 2 · 11.1 SQ Medium Q2
 
-The diagram shows the deflection of β-particles in a magnetic field.
+The diagram shows the Geiger–Marsden (gold foil) experiment, where α-particles are directed at a thin gold foil and detected by detector D at various positions.
 
-![Beta deflection](../assets/questions/particle-physics/11.1-atoms-nuclei-sq-medium-obj-000.webp)
+![Gold foil experiment with α-particle scattering, showing detector D at positions W, X, Y](../assets/questions/particle-physics/11.1-sq-medium-q02-gold-foil-apparatus.webp)
 
 (a) State the environment the apparatus must be enclosed in and explain why this is required for the experiment.
 
@@ -53,11 +53,7 @@ The diagram shows the deflection of β-particles in a magnetic field.
 ::: {.question-card}
 #### Example 3 · 11.1 SQ Medium Q3
 
-The diagram shows the fission of a plutonium-239 nucleus.
-
-![Fission diagram](../assets/questions/particle-physics/11.1-atoms-nuclei-sq-medium-obj-000.webp)
-
-The nuclear equation for the fission is:
+The nuclear equation for the fission of a plutonium-239 nucleus is:
 
 $${}^{239}_{94}\text{Pu} + a\,{}^{b}_{0}\text{n} \rightarrow {}^{x}_{54}\text{Xe} + {}^{103}_{y}\text{Zr} + 3\,{}^{a}_{b}\text{n}$$
 
@@ -142,10 +138,6 @@ Carbon-10 (${}^{10}_{6}\text{C}$) is an isotope that decays to boron (symbol B) 
 #### Example 6 · 11.2 SQ Medium Q3
 
 (a) Determine the number of 'up' quarks in the nucleus of ${}^{27}_{13}\text{Al}$.
-
-The diagram shows a D meson.
-
-![D meson](../assets/questions/particle-physics/11.2-fundamental-particles-c-hard-obj-000.webp)
 
 (b) (i) State the classification of the D particle.
 

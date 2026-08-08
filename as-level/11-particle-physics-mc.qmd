@@ -199,9 +199,14 @@ D. The mass of a neutron
 ::: {.question-card}
 #### Example 11 · 11.1 MC Medium Q1
 
-A radioactive nucleus is formed by β⁻-decay. This nucleus then decays by α-emission. The graphs show the nucleon number N plotted against proton number Z. Which one shows the β⁻-decay followed by the α-emission?
+A radioactive nucleus is formed by β⁻-decay. This nucleus then decays by α-emission. The graphs below show the nucleon number N plotted against proton number Z. Which one shows the β⁻-decay followed by the α-emission?
 
-![Decay graph options](../assets/questions/particle-physics/11.1-atoms-nuclei-c-medium-obj-000.webp)
+![Decay graphs A, B, C, D (N vs Z)](../assets/questions/particle-physics/11.1-c-medium-q01-decay-graphs.webp)
+
+A. Graph A
+B. Graph B
+C. Graph C
+D. Graph D
 
 <details class="answer-panel"><summary>Show answer and explanation</summary>
 
@@ -210,92 +215,116 @@ A radioactive nucleus is formed by β⁻-decay. This nucleus then decays by α-e
 :::
 
 ::: {.question-card}
-#### Example 12 · 11.1 MC Medium Q2
+#### Example 12 · 11.1 MC Medium Q6
 
-The Geiger–Marsden (gold foil) experiment directed parallel beams of α-particles at a thin gold foil. Which of the following was **NOT** an observation?
+Alpha, beta and gamma radiations: (1) are absorbed to different extents in solids, (2) behave differently in an electric field, and (3) behave differently in a magnetic field. Diagrams 1, 2 and 3 below illustrate these behaviours.
 
-A. Most α-particles went straight through the foil
+![Radiation absorption (Diagram 1), electric field (Diagram 2) and magnetic field (Diagram 3)](../assets/questions/particle-physics/11.1-c-medium-q06-radiation-properties.webp)
 
-B. Some α-particles were deflected through large angles
+A. X, L, R
 
-C. All α-particles were absorbed by the foil
+B. W, L, R
 
-D. About 1 in 20 000 α-particles were deflected by more than 90°
+C. W, L, P
+
+D. Y, M, P
 
 <details class="answer-panel"><summary>Show answer and explanation</summary>
 
-**Answer: C.** The gold foil experiment showed that most α-particles passed straight through (empty space), some were deflected slightly (passing near the nucleus), and very few (about 1 in 20 000) were deflected through large angles or bounced back. α-particles were not all absorbed.
+**Answer: A.** Diagram 1 shows W = α (stopped by paper), X = β (stopped by 1 mm aluminium) and Y = γ (reduced by lead). Diagram 2 shows L = β (attracted to the positive terminal), M = γ (undeflected) and N = α (attracted to the negative terminal). Diagram 3 shows R = β, P = α and Q = γ (deflection in the magnetic field). The three labels that all refer to the same (β) radiation are therefore X, L and R.
 </details>
 :::
 
 ::: {.question-card}
-#### Example 13 · 11.1 MC Medium Q3
+#### Example 13 · 11.1 MC Medium Q7
 
-The diagram shows the neutron number N plotted against the proton number Z for several nuclei.
+The nuclides shown in the grid below are arranged according to the number of protons and neutrons in each. A nucleus of the nuclide ${}^{8}_{3}\text{Li}$ decays by emitting a β⁻-particle. What is the resulting nuclide?
 
-![N vs Z diagram](../assets/questions/particle-physics/11.1-atoms-nuclei-c-medium-obj-002.webp)
+![Nuclide grid arranged by proton number vs neutron number](../assets/questions/particle-physics/11.1-c-medium-q07-nuclide-grid.webp)
+
+A. Nuclide A
+B. Nuclide B
+C. Nuclide C
+D. Nuclide D
 
 <details class="answer-panel"><summary>Show answer and explanation</summary>
 
-**Answer: A.** The graph shows the relationship between neutron number and proton number for stable nuclei. The line of stability follows approximately N = Z for light nuclei, with the neutron-proton ratio increasing for heavier nuclei.
+**Answer: D.** ${}^{8}_{3}\text{Li}$ has proton number 3 and neutron number 5. In β⁻-decay a neutron changes into a proton, so the proton number increases by 1 (to 4) while the neutron number decreases by 1 (to 4). The resulting nuclide is ${}^{8}_{4}\text{Be}$, which on the grid is at the position labelled D.
 </details>
 :::
 
 ::: {.question-card}
-#### Example 14 · 11.1 MC Medium Q4
+#### Example 14 · 11.1 MC Medium Q9
 
-An α-particle is emitted from a nucleus. The kinetic energy of the α-particle:
+Two α-particles with equal energies are deflected by a gold nucleus. Which diagram best represents their paths?
 
-A. is always a fixed value for a given decay
+![α-particle paths deflected by a gold nucleus (options A–D)](../assets/questions/particle-physics/11.1-c-medium-q09-alpha-deflection.webp)
 
-B. has a continuous spectrum of values
+A. Diagram A
 
-C. increases as the particle travels through air
+B. Diagram B
 
-D. is independent of the source nucleus
+C. Diagram C
+
+D. Diagram D
 
 <details class="answer-panel"><summary>Show answer and explanation</summary>
 
-**Answer: A.** α-particles emitted from a particular nuclear decay have discrete (fixed) energies, because the energy difference between the initial and final nuclear states is fixed. In contrast, β-particles have a continuous spectrum of energies because the energy is shared between the β-particle and the (anti)neutrino.
+**Answer: D.** The gold nucleus is positively charged, so it repels the α-particles (also positive). The closer an α-particle passes to the nucleus, the stronger the repulsive force and the greater the deflection. The correct diagram shows both paths curving away from the nucleus, with the closer path deflected more. Diagrams showing attraction, or paths that do not diverge, are incorrect.
 </details>
 :::
 
 ::: {.question-card}
-#### Example 15 · 11.1 MC Medium Q5
+#### Example 15 · 11.1 MC Medium Q10
 
-The diagram shows the neutron number N against proton number Z for several nuclei.
+Three successive radioactive decays are shown in the diagram below; each one results in a particle being emitted. The first decay emits a β-particle, the second decay emits an α-particle, and the third decay emits another β-particle. Nuclides W and Z are compared. Which statement is correct?
 
-![N/Z diagram](../assets/questions/particle-physics/11.1-atoms-nuclei-c-medium-obj-004.webp)
+![Decay sequence W → X → Y → Z](../assets/questions/particle-physics/11.1-c-medium-q10-decay-sequence.webp)
+
+A. W and Z are isotopes of the same element
+B. Z is a different element of reduced mass
+C. Z is a different element of lower atomic number
+D. W and Z are identical in all respects
 
 <details class="answer-panel"><summary>Show answer and explanation</summary>
 
-**Answer: D.** The diagram shows the neutron number against proton number for various nuclei. The line of stability curves upward because as Z increases, more neutrons are needed to offset the increasing electrostatic repulsion between protons.
+**Answer: A.** The first β⁻-decay increases the proton number by 1. The α-decay then decreases the proton number by 2. The final β⁻-decay increases the proton number by 1 again. The net change in proton number is 0, so W and Z have the same proton number but a different number of neutrons — they are isotopes of the same element.
 </details>
 :::
 
 ::: {.question-card}
-#### Example 16 · 11.1 MC Medium Q6
+#### Example 16 · 11.1 MC Medium Q12
 
-A decay chain is shown in the diagram.
+A sequence of radioactive decays is shown in the graph of neutron number against proton number. Nucleus S is at the start of the sequence and, after the decays have occurred, nucleus T is formed. What is emitted during the sequence of decays?
 
-![Decay chain](../assets/questions/particle-physics/11.1-atoms-nuclei-c-medium-obj-005.webp)
+![Neutron number against proton number, showing S → T](../assets/questions/particle-physics/11.1-c-medium-q12-neutron-proton-graph.webp)
+
+A. one α-particle followed by one β-particle
+B. two β-particles followed by one α-particle
+C. two α-particles followed by two β-particles
+D. one α-particle followed by two β-particles
 
 <details class="answer-panel"><summary>Show answer and explanation</summary>
 
-**Answer: B.** The decay chain shows a sequence of α and β decays. Each α-decay reduces the nucleon number by 4 and the proton number by 2. Each β⁻-decay increases the proton number by 1 while keeping the nucleon number unchanged.
+**Answer: D.** Nucleus S decays to nucleus T. Reading the graph, the first stage is an α-decay (both the neutron number and proton number decrease). The nucleon number then no longer changes but the proton number increases, which corresponds to two β⁻-decays. The sequence is therefore one α-particle followed by two β-particles.
 </details>
 :::
 
 ::: {.question-card}
-#### Example 17 · 11.1 MC Medium Q7
+#### Example 17 · 11.1 MC Medium Q13
 
-An unstable nucleus can decay by different types of radiation.
+A radioactive substance with a nucleon number of 234 and a proton number of 90 decays by β-emission into a daughter product, which in turn decays by further β-emission into a granddaughter product. Which letter in the diagram represents the granddaughter product?
 
-![Unstable nucleus decay](../assets/questions/particle-physics/11.1-atoms-nuclei-c-medium-obj-008.webp)
+![Nucleon number against proton number, with positions A–D marked](../assets/questions/particle-physics/11.1-c-medium-q13-nucleon-proton-graph.webp)
+
+A. A
+B. B
+C. C
+D. D
 
 <details class="answer-panel"><summary>Show answer and explanation</summary>
 
-**Answer: D.** The diagram shows the different decay modes available to an unstable nucleus. The type of decay depends on the neutron-proton ratio of the nucleus. Nuclei with too many neutrons tend to undergo β⁻-decay, while those with too many protons tend to undergo β⁺-decay or electron capture.
+**Answer: C.** The parent has A = 234 and Z = 90. Each β⁻-decay leaves the nucleon number unchanged but increases the proton number by 1, so after two β⁻-decays the granddaughter has A = 234 and Z = 92. On the diagram the point with nucleon number 234 and proton number 92 is labelled C.
 </details>
 :::
 
@@ -304,26 +333,43 @@ An unstable nucleus can decay by different types of radiation.
 ::: {.question-card}
 #### Example 18 · 11.1 MC Hard Q1
 
-In the Geiger–Marsden (gold foil) experiment, the number of α-particles n detected at an angle θ is measured. Which graph shows the correct relationship between n and θ?
+In an α-particle scattering experiment, a student sets up the apparatus shown below to determine the number n of α-particles incident per unit time on a detector held at various angles θ.
 
-![Scattering graph](../assets/questions/particle-physics/11.1-atoms-nuclei-c-hard-obj-000.webp)
+![α-particle scattering apparatus with detector at angle θ](../assets/questions/particle-physics/11.1-c-hard-q01-scattering-apparatus.webp)
+
+Which of the following graphs best represents the variation of n with θ?
+
+![Graphs of n against θ, options A–D](../assets/questions/particle-physics/11.1-c-hard-q01-scattering-graphs.webp)
+
+A. Graph A
+B. Graph B
+C. Graph C
+D. Graph D
 
 <details class="answer-panel"><summary>Show answer and explanation</summary>
 
-**Answer: C.** Most α-particles pass through with little or no deflection, so n is largest at small θ. The number drops rapidly as θ increases, and very few α-particles are detected at large angles (θ > 90°). This corresponds to a graph that starts high at small θ and drops off sharply.
+**Answer: C.** Most α-particles pass straight through the foil with little or no deflection, so n is largest at small θ. The number drops rapidly as θ increases, and very few α-particles (about 1 in 20 000) are detected at large angles (θ > 90°). This corresponds to the graph that starts high at small θ and falls off sharply.
 </details>
 :::
 
 ::: {.question-card}
 #### Example 19 · 11.1 MC Hard Q2
 
-A stationary nucleus of polonium-210 (${}^{210}_{84}\text{Po}$) decays by α-emission. The α-particle is emitted with kinetic energy $E_\text{k}$.
+A stationary nucleus of polonium-210 (${}^{210}_{84}\text{Po}$) decays by α-emission with a total kinetic energy of $E_\text{k}$:
 
-![Alpha decay energy](../assets/questions/particle-physics/11.1-atoms-nuclei-c-hard-obj-001.webp)
+$${}^{210}_{84}\text{Po} \rightarrow {}^{206}_{82}\text{Pb} + {}^{4}_{2}\alpha$$
+
+![Energy levels for the α-decay of Po-210](../assets/questions/particle-physics/11.1-c-hard-q02-alpha-energy.webp)
+
+What is the kinetic energy of the daughter nucleus ${}^{206}_{82}\text{Pb}$?
+A. $0$
+B. between $0$ and $\frac{E_\text{k}}{2}$
+C. between $\frac{E_\text{k}}{2}$ and $E_\text{k}$
+D. $E_\text{k}$
 
 <details class="answer-panel"><summary>Show answer and explanation</summary>
 
-**Answer: B.** By conservation of momentum, the total momentum before decay is zero, so the α-particle and the daughter nucleus must have equal and opposite momenta. The kinetic energy is shared between them, with the lighter α-particle carrying most of the energy. The kinetic energy of the α-particle is a fixed value determined by the mass difference between the parent and daughter nuclei.
+**Answer: B.** By conservation of momentum the total momentum before the decay is zero, so the α-particle and the daughter nucleus have equal and opposite momenta ($M_\text{Pb}V = m_\alpha v$). Because kinetic energy is $p^2/2m$, the heavier daughter nucleus carries only a small fraction of the energy: $\frac{E_\text{Pb}}{E_\alpha} = \frac{m_\alpha}{m_\text{Pb}} \approx \frac{4}{206} \approx 0.019$. Hence $E_\text{Pb} \approx 0.019\,E_\text{k}$, which lies between $0$ and $\frac{E_\text{k}}{2}$.
 </details>
 :::
 
