@@ -1,0 +1,155 @@
+---
+title: "10 D.C. circuits"
+subtitle: "Practical circuits, Kirchhoff's laws and potential dividers"
+---
+
+## Learning objectives
+
+By the end of this chapter, you should be able to:
+
+- recall and use the circuit symbols shown in the syllabus;
+- define and use the electromotive force (e.m.f.) of a source as the energy transferred per unit charge in driving charge around a complete circuit;
+- distinguish between e.m.f. and potential difference (p.d.) in terms of energy considerations;
+- understand the effect of the internal resistance of a source on the terminal potential difference;
+- recall Kirchhoff's first law (charge conservation) and second law (energy conservation);
+- derive and use the formulas for combined resistance in series and in parallel;
+- use Kirchhoff's laws to solve simple circuit problems;
+- understand the principle of a potential divider and the potentiometer;
+- understand the use of a galvanometer in null methods;
+- explain the use of thermistors and LDRs in potential dividers.
+
+## 10.1 Practical circuits
+
+::: {.study-card}
+### Electromotive force and potential difference
+
+The **electromotive force (e.m.f.)** of a source is the energy transferred per unit charge in driving charge around a complete circuit:
+
+$$E=\frac{W}{Q}.$$
+
+The **potential difference (p.d.)** across a component is the energy transferred (to other forms) per unit charge as charge moves through that component.
+
+Key distinction:
+
+- **e.m.f.** involves changing *other* forms of energy (chemical, mechanical) into electrical energy.
+- **p.d.** involves changing electrical energy into other forms (thermal, light, sound).
+
+The e.m.f. is the total energy per unit charge supplied by the source; the p.d. across the external circuit is the energy per unit charge delivered to the external components.
+:::
+
+::: {.study-card}
+### Internal resistance
+
+A real source of e.m.f. has **internal resistance** $r$. When a current $I$ flows, some energy is dissipated inside the source, so the **terminal potential difference** $V$ across the source is less than the e.m.f. $E$:
+
+$$E=V+Ir \qquad \text{or} \qquad V=E-Ir.$$
+
+For a circuit containing a source of e.m.f. $E$ and internal resistance $r$ connected to an external resistance $R$:
+
+$$E=I(R+r).$$
+
+The "lost volts" $Ir$ increase as the current increases.
+:::
+
+::: {.formula-panel}
+### Power and energy
+
+The power dissipated in a resistor can be written as
+
+$$P=VI=I^2R=\frac{V^2}{R}.$$
+
+The electrical energy transferred is $W=VIt$ (or $W=EQ$ for a source of e.m.f. $E$).
+:::
+
+## 10.2 Kirchhoff's laws
+
+::: {.study-card}
+### Kirchhoff's first and second laws
+
+**Kirchhoff's first law:** the sum of the currents entering a junction equals the sum of the currents leaving it. This is a consequence of the **conservation of charge**.
+
+**Kirchhoff's second law:** the sum of the e.m.f.s around a closed loop equals the sum of the products of current and resistance (p.d.s) around the loop:
+
+$$\sum E = \sum IR.$$
+
+This is a consequence of the **conservation of energy**.
+:::
+
+::: {.formula-panel}
+### Combined resistance
+
+For resistors in **series**, the same current flows through each resistor and the p.d.s add:
+
+$$R_{\text{total}}=R_1+R_2+R_3+\dots$$
+
+For resistors in **parallel**, the same p.d. is across each resistor and the currents add:
+
+$$\frac{1}{R_{\text{total}}}=\frac{1}{R_1}+\frac{1}{R_2}+\frac{1}{R_3}+\dots$$
+
+For two resistors in parallel, $R_{\text{total}}=\dfrac{R_1R_2}{R_1+R_2}$.
+:::
+
+## 10.3 Potential dividers
+
+::: {.study-card}
+### The potential divider
+
+A potential divider uses two resistors in series to produce a fraction of the supply p.d. across one of them:
+
+$$V_{\text{out}}=V_{\text{in}}\times\frac{R_2}{R_1+R_2}.$$
+
+The output p.d. can be varied by using a variable resistor or a sliding contact (potentiometer).
+:::
+
+::: {.study-card}
+### The potentiometer
+
+A **potentiometer** is a wire or resistor with a sliding contact, used to compare potential differences or e.m.f.s.
+
+In a null method, the galvanometer reading is reduced to zero. At balance, the p.d. across the length of wire $l$ equals the unknown e.m.f.:
+
+$$\frac{E_1}{E_2}=\frac{l_1}{l_2}.$$
+
+A **galvanometer** is used in null methods by adjusting the contact until there is no deflection (no current / no p.d. across it).
+:::
+
+::: {.study-card}
+### Thermistors and LDRs
+
+A **thermistor** has a resistance that decreases as temperature increases. In a potential divider, an increase in temperature decreases the thermistor's p.d. and increases the p.d. across the fixed resistor.
+
+An **LDR (light-dependent resistor)** has a resistance that decreases as light intensity increases. In a potential divider, the output p.d. therefore depends on the light intensity.
+
+These devices are used in temperature sensors, light sensors, alarms and automatic switches.
+:::
+
+## Multiple Choice Questions
+
+{{< include 10-dc-circuits-mc.qmd >}}
+
+## Structured Questions
+
+{{< include 10-dc-circuits-structured.qmd >}}
+
+## Chapter checklist
+
+- [ ] I can distinguish between e.m.f. and p.d. in terms of energy.
+- [ ] I can use $E=I(R+r)$ and explain the effect of internal resistance on terminal p.d.
+- [ ] I can state and apply Kirchhoff's first and second laws.
+- [ ] I can derive and use the combined-resistance formulas for series and parallel.
+- [ ] I can use the potential divider formula $V_{\text{out}}=V_{\text{in}}\frac{R_2}{R_1+R_2}$.
+- [ ] I can use a potentiometer and a galvanometer in null methods.
+- [ ] I can explain the use of thermistors and LDRs in potential dividers.
+
+### Original question PDFs
+
+- [10.1 DC Practical Circuits & Kirchhoff's Laws - MC Easy](https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/dc-circuits/10.1-dc-practical-circuits-kirchhoffs-laws-c-easy.pdf)
+- [10.1 DC Practical Circuits & Kirchhoff's Laws - MC Medium](https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/dc-circuits/10.1-dc-practical-circuits-kirchhoffs-laws-c-medium.pdf)
+- [10.1 DC Practical Circuits & Kirchhoff's Laws - MC Hard](https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/dc-circuits/10.1-dc-practical-circuits-kirchhoffs-laws-c-hard.pdf)
+- [10.1 DC Practical Circuits & Kirchhoff's Laws - SQ Easy](https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/dc-circuits/10.1-dc-practical-circuits-kirchhoffs-laws-sq-easy.pdf)
+- [10.1 DC Practical Circuits & Kirchhoff's Laws - SQ Medium](https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/dc-circuits/10.1-dc-practical-circuits-kirchhoffs-laws-sq-medium.pdf)
+- [10.2 DC Potential Dividers - MC Easy](https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/dc-circuits/10.2-dc-potential-dividers-c-easy.pdf)
+- [10.2 DC Potential Dividers - MC Medium](https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/dc-circuits/10.2-dc-potential-dividers-c-medium.pdf)
+- [10.2 DC Potential Dividers - MC Hard](https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/dc-circuits/10.2-dc-potential-dividers-c-hard.pdf)
+- [10.2 DC Potential Dividers - SQ Easy](https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/dc-circuits/10.2-dc-potential-dividers-sq-easy.pdf)
+- [10.2 DC Potential Dividers - SQ Medium](https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/dc-circuits/10.2-dc-potential-dividers-sq-medium.pdf)

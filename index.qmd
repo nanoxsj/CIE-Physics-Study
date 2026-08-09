@@ -81,6 +81,15 @@ subtitle: "2025–2027 syllabus · 9702"
 :::
 
 ::: {.topic-card}
+### [10 D.C. circuits](as-level/10-dc-circuits.qmd)
+
+- 10.1 Practical circuits: e.m.f. vs p.d., internal resistance and power
+- 10.2 Kirchhoff's laws: charge and energy conservation, series and parallel resistance
+- 10.3 Potential dividers: potentiometer, galvanometer null methods, thermistors and LDRs
+- 20 Multiple Choice and 10 Structured Questions with independently extracted circuit diagrams
+:::
+
+::: {.topic-card}
 ### [12 Motion in a circle](a-level/12-motion-in-a-circle.qmd)
 
 - 12.1 Kinematics of uniform circular motion: radians, angular speed, period, frequency and $v=r\omega$
