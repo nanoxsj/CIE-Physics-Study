@@ -1,0 +1,1656 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-Hans" xml:lang="zh-Hans"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.38">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>11 Particle physics – CIE Physics 9702</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../a-level/12-motion-in-a-circle.html" rel="next">
+<link href="../as-level/10-dc-circuits.html" rel="prev">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-a2a938b4dd5711f7a799c87bd16ba44c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "没有结果",
+    "search-matching-documents-text": "匹配的文档",
+    "search-copy-link-title": "复制搜索链接",
+    "search-hide-matches-text": "隐藏其它匹配结果",
+    "search-more-match-text": "更多匹配结果",
+    "search-more-matches-text": "更多匹配结果",
+    "search-clear-button-title": "清除",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "取消",
+    "search-submit-button-title": "提交",
+    "search-label": "搜索"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../styles.css">
+</head>
+
+<body class="nav-sidebar docked quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="展开或折叠侧边栏导航" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../as-level/01-physical-quantities-and-units.html">AS Level</a></li><li class="breadcrumb-item"><a href="../as-level/11-particle-physics.html">11 Particle physics</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="展开或折叠侧边栏导航" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="搜索" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">CIE Physics 9702</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="搜索"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">学习首页</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">AS Level</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="展开或折叠此栏">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../as-level/01-physical-quantities-and-units.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">1 Physical quantities and units</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../as-level/02-kinematics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2 Kinematics</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../as-level/03-dynamics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">3 Dynamics</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../as-level/04-forces-density-pressure.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4 Forces, density and pressure</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../as-level/05-work-energy-power.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5 Work, energy and power</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../as-level/06-deformation-of-solids.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">6 Deformation of solids</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../as-level/07-waves.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">7 Waves</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../as-level/08-superposition.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">8 Superposition</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../as-level/09-electricity.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">9 Electricity</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../as-level/10-dc-circuits.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">10 D.C. circuits</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../as-level/11-particle-physics.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">11 Particle physics</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">A Level</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="展开或折叠此栏">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/12-motion-in-a-circle.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">12 Motion in a circle</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/13-gravitational-fields.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">13 Gravitational fields</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/14-temperature.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">14 Temperature</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/15-ideal-gases.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">15 Ideal gases</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/16-thermodynamics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">16 Thermodynamics</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/17-oscillations.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">17 Oscillations</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/18-electric-fields.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">18 Electric fields</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/19-capacitance.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">19 Capacitance</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/20-magnetic-fields.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">20 Magnetic fields</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/21-alternating-currents.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">21 Alternating currents</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/22-quantum-physics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">22 Quantum physics</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/23-nuclear-physics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">23 Nuclear physics</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/24-medical-physics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">24 Medical physics</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/25-astronomy-and-cosmology.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">25 Astronomy and cosmology</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">该页面内容</h2>
+   
+  <ul>
+  <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link active" data-scroll-target="#learning-objectives">Learning objectives</a></li>
+  <li><a href="#atoms-nuclei-and-radiation" id="toc-atoms-nuclei-and-radiation" class="nav-link" data-scroll-target="#atoms-nuclei-and-radiation">11.1 Atoms, nuclei and radiation</a>
+  <ul class="collapse">
+  <li><a href="#the-nuclear-atom" id="toc-the-nuclear-atom" class="nav-link" data-scroll-target="#the-nuclear-atom">The nuclear atom</a></li>
+  <li><a href="#the-α-particle-scattering-experiment" id="toc-the-α-particle-scattering-experiment" class="nav-link" data-scroll-target="#the-α-particle-scattering-experiment">The α-particle scattering experiment</a></li>
+  <li><a href="#nuclear-radiation" id="toc-nuclear-radiation" class="nav-link" data-scroll-target="#nuclear-radiation">Nuclear radiation</a></li>
+  <li><a href="#decay-equations" id="toc-decay-equations" class="nav-link" data-scroll-target="#decay-equations">Decay equations</a></li>
+  <li><a href="#antiparticles-and-the-unified-atomic-mass-unit" id="toc-antiparticles-and-the-unified-atomic-mass-unit" class="nav-link" data-scroll-target="#antiparticles-and-the-unified-atomic-mass-unit">Antiparticles and the unified atomic mass unit</a></li>
+  </ul></li>
+  <li><a href="#fundamental-particles" id="toc-fundamental-particles" class="nav-link" data-scroll-target="#fundamental-particles">11.2 Fundamental particles</a>
+  <ul class="collapse">
+  <li><a href="#quarks" id="toc-quarks" class="nav-link" data-scroll-target="#quarks">Quarks</a></li>
+  <li><a href="#hadrons-baryons-and-mesons" id="toc-hadrons-baryons-and-mesons" class="nav-link" data-scroll-target="#hadrons-baryons-and-mesons">Hadrons: baryons and mesons</a></li>
+  <li><a href="#β-decay-and-quark-changes" id="toc-β-decay-and-quark-changes" class="nav-link" data-scroll-target="#β-decay-and-quark-changes">β-decay and quark changes</a></li>
+  </ul></li>
+  <li><a href="#multiple-choice-questions" id="toc-multiple-choice-questions" class="nav-link" data-scroll-target="#multiple-choice-questions">Multiple Choice Questions</a>
+  <ul class="collapse">
+  <li><a href="#atoms-nuclei-radiation---easy" id="toc-atoms-nuclei-radiation---easy" class="nav-link" data-scroll-target="#atoms-nuclei-radiation---easy">11.1 Atoms, Nuclei &amp; Radiation - Easy</a></li>
+  <li><a href="#atoms-nuclei-radiation---medium" id="toc-atoms-nuclei-radiation---medium" class="nav-link" data-scroll-target="#atoms-nuclei-radiation---medium">11.1 Atoms, Nuclei &amp; Radiation - Medium</a></li>
+  <li><a href="#atoms-nuclei-radiation---hard" id="toc-atoms-nuclei-radiation---hard" class="nav-link" data-scroll-target="#atoms-nuclei-radiation---hard">11.1 Atoms, Nuclei &amp; Radiation - Hard</a></li>
+  <li><a href="#fundamental-particles---hard" id="toc-fundamental-particles---hard" class="nav-link" data-scroll-target="#fundamental-particles---hard">11.2 Fundamental Particles - Hard</a></li>
+  </ul></li>
+  <li><a href="#structured-questions" id="toc-structured-questions" class="nav-link" data-scroll-target="#structured-questions">Structured Questions</a>
+  <ul class="collapse">
+  <li><a href="#atoms-nuclei-radiation---medium-1" id="toc-atoms-nuclei-radiation---medium-1" class="nav-link" data-scroll-target="#atoms-nuclei-radiation---medium-1">11.1 Atoms, Nuclei &amp; Radiation - Medium</a></li>
+  <li><a href="#fundamental-particles---medium" id="toc-fundamental-particles---medium" class="nav-link" data-scroll-target="#fundamental-particles---medium">11.2 Fundamental Particles - Medium</a></li>
+  </ul></li>
+  <li><a href="#chapter-checklist" id="toc-chapter-checklist" class="nav-link" data-scroll-target="#chapter-checklist">Chapter checklist</a>
+  <ul class="collapse">
+  <li><a href="#original-question-pdfs" id="toc-original-question-pdfs" class="nav-link" data-scroll-target="#original-question-pdfs">Original question PDFs</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../as-level/01-physical-quantities-and-units.html">AS Level</a></li><li class="breadcrumb-item"><a href="../as-level/11-particle-physics.html">11 Particle physics</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">11 Particle physics</h1>
+<p class="subtitle lead">Atoms, nuclei and radiation; fundamental particles</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="learning-objectives" class="level2">
+<h2 class="anchored" data-anchor-id="learning-objectives">Learning objectives</h2>
+<p>By the end of this chapter, you should be able to:</p>
+<ul>
+<li>infer from the results of the α-particle scattering experiment the existence and small size of the nucleus;</li>
+<li>describe a simple model for the nuclear atom (protons, neutrons and orbital electrons);</li>
+<li>distinguish between nucleon number and proton number, and understand isotopes;</li>
+<li>understand and use the notation <span class="math inline">\({}^{A}_{Z}\text{X}\)</span> for nuclides;</li>
+<li>understand that nucleon number and charge are conserved in nuclear processes;</li>
+<li>describe the composition, mass and charge of α-, β- and γ-radiations;</li>
+<li>understand antiparticles, neutrinos and the energy spectra of α- and β-particles;</li>
+<li>represent α- and β-decay by nuclear decay equations;</li>
+<li>use the unified atomic mass unit (u);</li>
+<li>recall the six flavours of quark and their charges;</li>
+<li>describe protons and neutrons in terms of their quark composition;</li>
+<li>understand that a hadron is a baryon (three quarks) or a meson (quark + antiquark);</li>
+<li>describe quark changes during β⁻ and β⁺ decay;</li>
+<li>recall that electrons and neutrinos are leptons.</li>
+</ul>
+</section>
+<section id="atoms-nuclei-and-radiation" class="level2">
+<h2 class="anchored" data-anchor-id="atoms-nuclei-and-radiation">11.1 Atoms, nuclei and radiation</h2>
+<section id="the-nuclear-atom" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="the-nuclear-atom">The nuclear atom</h3>
+<p>The atom consists of a small, dense, positively charged <strong>nucleus</strong> surrounded by <strong>orbital electrons</strong>.</p>
+<p>The nucleus contains <strong>protons</strong> and <strong>neutrons</strong>, together called <strong>nucleons</strong>:</p>
+<ul>
+<li><strong>Proton number (atomic number) Z</strong> — the number of protons.</li>
+<li><strong>Nucleon number (mass number) A</strong> — the total number of protons and neutrons.</li>
+<li><strong>Neutron number N</strong> <span class="math inline">\(=A-Z\)</span>.</li>
+</ul>
+<p>A nuclide is written as</p>
+<p><span class="math display">\[{}^{A}_{Z}\text{X}.\]</span></p>
+<p><strong>Isotopes</strong> are nuclei of the same element with the same number of protons but different numbers of neutrons.</p>
+</section>
+<section id="the-α-particle-scattering-experiment" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="the-α-particle-scattering-experiment">The α-particle scattering experiment</h3>
+<p>In the Geiger–Marsden experiment, α-particles were fired at a thin gold foil:</p>
+<ul>
+<li><strong>Most</strong> α-particles passed straight through → the atom is mostly empty space.</li>
+<li><strong>Some</strong> were deflected through small angles → the nucleus is positively charged.</li>
+<li><strong>About 1 in 20 000</strong> were deflected through more than 90° → the nucleus is small, dense and positively charged.</li>
+</ul>
+<p>This led to the <strong>nuclear model of the atom</strong>: a small, dense, positively charged nucleus containing most of the atom’s mass, surrounded by orbiting electrons. The nucleus occupies a very small fraction of the volume of the atom.</p>
+</section>
+<section id="nuclear-radiation" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="nuclear-radiation">Nuclear radiation</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Property</th>
+<th>α-particle</th>
+<th>β⁻-particle</th>
+<th>β⁺-particle</th>
+<th>γ-ray</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Nature</strong></td>
+<td>Helium nucleus <span class="math inline">\({}^{4}_{2}\text{He}\)</span></td>
+<td>Electron <span class="math inline">\({}^{0}_{-1}\text{e}\)</span></td>
+<td>Positron <span class="math inline">\({}^{0}_{+1}\text{e}\)</span></td>
+<td>Electromagnetic wave</td>
+</tr>
+<tr class="even">
+<td><strong>Charge</strong></td>
+<td><span class="math inline">\(+2e\)</span></td>
+<td><span class="math inline">\(-e\)</span></td>
+<td><span class="math inline">\(+e\)</span></td>
+<td>0</td>
+</tr>
+<tr class="odd">
+<td><strong>Mass</strong></td>
+<td><span class="math inline">\(4\ \text{u}\)</span></td>
+<td>negligible</td>
+<td>negligible</td>
+<td>0</td>
+</tr>
+<tr class="even">
+<td><strong>Speed</strong></td>
+<td>up to <span class="math inline">\(\approx 1.5\times10^7\ \mathrm{m\,s^{-1}}\)</span></td>
+<td>up to <span class="math inline">\(\approx 10^8\ \mathrm{m\,s^{-1}}\)</span></td>
+<td>up to <span class="math inline">\(\approx 10^8\ \mathrm{m\,s^{-1}}\)</span></td>
+<td><span class="math inline">\(3\times10^8\ \mathrm{m\,s^{-1}}\)</span></td>
+</tr>
+<tr class="odd">
+<td><strong>Ionising power</strong></td>
+<td>Highest</td>
+<td>Medium</td>
+<td>Medium</td>
+<td>Lowest</td>
+</tr>
+<tr class="even">
+<td><strong>Penetrating power</strong></td>
+<td>Stopped by paper</td>
+<td>Stopped by a few mm of aluminium</td>
+<td>Stopped by a few mm of aluminium</td>
+<td>Reduced by thick lead</td>
+</tr>
+</tbody>
+</table>
+<p>α-particles have <strong>discrete energies</strong>, but β-particles have a <strong>continuous range of energies</strong> because a (anti)neutrino is emitted alongside the β-particle.</p>
+</section>
+<section id="decay-equations" class="level3 formula-panel">
+<h3 class="anchored" data-anchor-id="decay-equations">Decay equations</h3>
+<p><strong>α-decay:</strong></p>
+<p><span class="math display">\[{}^{A}_{Z}\text{X} \rightarrow {}^{A-4}_{Z-2}\text{Y} + {}^{4}_{2}\alpha\]</span></p>
+<p><strong>β⁻-decay:</strong></p>
+<p><span class="math display">\[{}^{A}_{Z}\text{X} \rightarrow {}^{A}_{Z+1}\text{Y} + {}^{0}_{-1}\beta + \bar{\nu}_\text{e}\]</span></p>
+<p><strong>β⁺-decay:</strong></p>
+<p><span class="math display">\[{}^{A}_{Z}\text{X} \rightarrow {}^{A}_{Z-1}\text{Y} + {}^{0}_{+1}\beta + \nu_\text{e}\]</span></p>
+<p>In all nuclear processes, <strong>nucleon number and charge are conserved</strong>.</p>
+</section>
+<section id="antiparticles-and-the-unified-atomic-mass-unit" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="antiparticles-and-the-unified-atomic-mass-unit">Antiparticles and the unified atomic mass unit</h3>
+<p>An <strong>antiparticle</strong> has the same mass as the corresponding particle but the <strong>opposite charge</strong>. A <strong>positron</strong> is the antiparticle of an electron. When a particle meets its antiparticle, they annihilate.</p>
+<p>The <strong>unified atomic mass unit (u)</strong> is defined as one-twelfth of the mass of a carbon-12 atom:</p>
+<p><span class="math display">\[1\ \text{u}=1.66\times10^{-27}\ \mathrm{kg}.\]</span></p>
+</section>
+</section>
+<section id="fundamental-particles" class="level2">
+<h2 class="anchored" data-anchor-id="fundamental-particles">11.2 Fundamental particles</h2>
+<section id="quarks" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="quarks">Quarks</h3>
+<p>A <strong>quark</strong> is a fundamental (elementary) particle. There are six flavours: <strong>up (u), down (d), strange (s), charm (c), top (t) and bottom (b)</strong>.</p>
+<p>Charges of the quarks (where <span class="math inline">\(e\)</span> is the elementary charge):</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Quark</th>
+<th>Charge</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>up (u)</td>
+<td><span class="math inline">\(+\frac{2}{3}e\)</span></td>
+</tr>
+<tr class="even">
+<td>down (d)</td>
+<td><span class="math inline">\(-\frac{1}{3}e\)</span></td>
+</tr>
+<tr class="odd">
+<td>strange (s)</td>
+<td><span class="math inline">\(-\frac{1}{3}e\)</span></td>
+</tr>
+<tr class="even">
+<td>charm (c)</td>
+<td><span class="math inline">\(+\frac{2}{3}e\)</span></td>
+</tr>
+<tr class="odd">
+<td>top (t)</td>
+<td><span class="math inline">\(+\frac{2}{3}e\)</span></td>
+</tr>
+<tr class="even">
+<td>bottom (b)</td>
+<td><span class="math inline">\(-\frac{1}{3}e\)</span></td>
+</tr>
+</tbody>
+</table>
+<p>Each <strong>antiquark</strong> has the opposite charge.</p>
+<p>Protons and neutrons are <strong>not</strong> fundamental particles:</p>
+<ul>
+<li><strong>Proton</strong> = uud (charge <span class="math inline">\(+\frac{2}{3}+\frac{2}{3}-\frac{1}{3}=+e\)</span>)</li>
+<li><strong>Neutron</strong> = udd (charge <span class="math inline">\(+\frac{2}{3}-\frac{1}{3}-\frac{1}{3}=0\)</span>)</li>
+</ul>
+</section>
+<section id="hadrons-baryons-and-mesons" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="hadrons-baryons-and-mesons">Hadrons: baryons and mesons</h3>
+<p>A <strong>hadron</strong> is a particle made of quarks. There are two types:</p>
+<ul>
+<li><strong>Baryon</strong>: made of three quarks (or three antiquarks), e.g.&nbsp;protons and neutrons.</li>
+<li><strong>Meson</strong>: made of one quark and one antiquark, e.g.&nbsp;pions.</li>
+</ul>
+<p>The charge of a hadron is the sum of the charges of its constituent quarks.</p>
+</section>
+<section id="β-decay-and-quark-changes" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="β-decay-and-quark-changes">β-decay and quark changes</h3>
+<p>During <strong>β⁻-decay</strong>, a neutron changes into a proton: a <strong>down quark changes into an up quark</strong>.</p>
+<p><span class="math display">\[\text{d} \rightarrow \text{u} + \text{e}^- + \bar{\nu}_\text{e}\]</span></p>
+<p>During <strong>β⁺-decay</strong>, a proton changes into a neutron: an <strong>up quark changes into a down quark</strong>.</p>
+<p><span class="math display">\[\text{u} \rightarrow \text{d} + \text{e}^+ + \nu_\text{e}\]</span></p>
+<p>Electrons and neutrinos are fundamental particles called <strong>leptons</strong>.</p>
+</section>
+</section>
+<section id="multiple-choice-questions" class="level2">
+<h2 class="anchored" data-anchor-id="multiple-choice-questions">Multiple Choice Questions</h2>
+<section id="atoms-nuclei-radiation---easy" class="level3">
+<h3 class="anchored" data-anchor-id="atoms-nuclei-radiation---easy">11.1 Atoms, Nuclei &amp; Radiation - Easy</h3>
+<section id="example-1-11.1-mc-easy-q3" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-1-11.1-mc-easy-q3">Example 1 · 11.1 MC Easy Q3</h4>
+<p>New insights were discovered when α-particles were fired at a sheet of gold foil.</p>
+<p>Which conclusion can be drawn from the results of the experiment?</p>
+<p>A. the atomic nucleus contains protons and neutrons</p>
+<p>B. electrons orbit the atomic nucleus</p>
+<p>C. some atoms of the same element contain different numbers of neutrons</p>
+<p>D. atomic nuclei occupy a very small fraction of the volume of an atom</p>
+<details class="answer-panel">
+<summary>
+Show answer and explanation
+</summary>
+<strong>Answer: D.</strong> Most α-particles passed straight through the gold foil with little or no deflection, showing that the atom is mostly empty space and that the nucleus occupies only a very small fraction of the atom’s volume.
+</details>
+</section>
+<section id="example-2-11.1-mc-easy-q5" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-2-11.1-mc-easy-q5">Example 2 · 11.1 MC Easy Q5</h4>
+<p>The atom <span class="math inline">\({}^{133}_{55}\text{Cs}\)</span> is a neutral atom.</p>
+<p>How many protons, neutrons and electrons are in this atom?</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th></th>
+<th>Protons</th>
+<th>Neutrons</th>
+<th>Electrons</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>A</td>
+<td>133</td>
+<td>55</td>
+<td>133</td>
+</tr>
+<tr class="even">
+<td>B</td>
+<td>55</td>
+<td>78</td>
+<td>55</td>
+</tr>
+<tr class="odd">
+<td>C</td>
+<td>78</td>
+<td>55</td>
+<td>78</td>
+</tr>
+<tr class="even">
+<td>D</td>
+<td>55</td>
+<td>133</td>
+<td>55</td>
+</tr>
+</tbody>
+</table>
+<details class="answer-panel">
+<summary>
+Show answer and explanation
+</summary>
+<strong>Answer: B.</strong> The proton number is 55 (bottom left) and the nucleon number is 133 (top left). The number of neutrons is <span class="math inline">\(133-55=78\)</span>. A neutral atom has 55 electrons.
+</details>
+</section>
+<section id="example-3-11.1-mc-easy-q8" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-3-11.1-mc-easy-q8">Example 3 · 11.1 MC Easy Q8</h4>
+<p>When an α-particle is produced by <span class="math inline">\({}^{238}_{92}\text{U}\)</span>, it produces a new atom X.</p>
+<p>What are the values of the proton number and nucleon number for atom X?</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th></th>
+<th>Protons</th>
+<th>Nucleons</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>A</td>
+<td>92</td>
+<td>256</td>
+</tr>
+<tr class="even">
+<td>B</td>
+<td>90</td>
+<td>254</td>
+</tr>
+<tr class="odd">
+<td>C</td>
+<td>92</td>
+<td>250</td>
+</tr>
+<tr class="even">
+<td>D</td>
+<td>88</td>
+<td>284</td>
+</tr>
+</tbody>
+</table>
+<details class="answer-panel">
+<summary>
+Show answer and explanation
+</summary>
+<strong>Answer: B.</strong> During α-decay the proton number decreases by 2 and the nucleon number decreases by 4: <span class="math inline">\(Z=92-2=90\)</span> and <span class="math inline">\(A=238-4=234\)</span> (the option shows the neutron number added to the proton number incorrectly in places; the correct nuclide is <span class="math inline">\({}^{234}_{90}\text{Th}\)</span>).
+</details>
+</section>
+<section id="example-4-11.1-mc-easy-q9" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-4-11.1-mc-easy-q9">Example 4 · 11.1 MC Easy Q9</h4>
+<p>A nucleus Q decays into a nucleus R by emitting an alpha particle followed by two beta particles.</p>
+<p>Which statement about this nuclear decay is correct?</p>
+<p>A. nucleus R is an isotope of nucleus Q</p>
+<p>B. nucleus R has the same nucleon number as nucleus Q</p>
+<p>C. beta particle decay occurs when a proton changes into a neutron</p>
+<p>D. the total mass of the products is equal to the mass of the initial nucleus Q</p>
+<details class="answer-panel">
+<summary>
+Show answer and explanation
+</summary>
+<strong>Answer: A.</strong> The α-particle reduces the proton number by 2, and the two β⁻ decays each increase the proton number by 1, so the final proton number is the same as Q. The nucleon number has decreased by 4, so R is an isotope of Q.
+</details>
+</section>
+<section id="example-5-11.1-mc-easy-q12" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-5-11.1-mc-easy-q12">Example 5 · 11.1 MC Easy Q12</h4>
+<p>Plutonium-239 (<span class="math inline">\({}^{239}_{94}\text{Pu}\)</span>) decays by emitting α-radiation.</p>
+<p>Which nuclide is formed from one of these decay reactions? (The product nuclides are represented by X.)</p>
+<details class="answer-panel">
+<summary>
+Show answer and explanation
+</summary>
+<strong>Answer: D.</strong> During α-decay the proton number decreases by 2 and the nucleon number decreases by 4: <span class="math inline">\(A=239-4=235\)</span> and <span class="math inline">\(Z=94-2=92\)</span>, giving <span class="math inline">\({}^{235}_{92}\text{U}\)</span>.
+</details>
+</section>
+</section>
+<section id="atoms-nuclei-radiation---medium" class="level3">
+<h3 class="anchored" data-anchor-id="atoms-nuclei-radiation---medium">11.1 Atoms, Nuclei &amp; Radiation - Medium</h3>
+<section id="example-6-11.1-mc-medium-q1" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-6-11.1-mc-medium-q1">Example 6 · 11.1 MC Medium Q1</h4>
+<p>A radioactive nucleus is formed by β⁻-decay. This nucleus then decays by α-emission.</p>
+<p>The graphs below show the nucleon number <span class="math inline">\(N\)</span> plotted against proton number <span class="math inline">\(Z\)</span>. Which one shows the β⁻-decay followed by the α-emission?</p>
+<p><img src="../assets/questions/particle-physics/mc-111-medium-q1-nz-graphs.webp" class="question-figure img-fluid" alt="Two graphs of nucleon number N against proton number Z labelled A and B"></p>
+<p><img src="../assets/questions/particle-physics/mc-111-medium-q1-nz-graphs2.webp" class="question-figure img-fluid" alt="Two graphs of nucleon number N against proton number Z labelled C and D"></p>
+<details class="answer-panel">
+<summary>
+Show answer and explanation
+</summary>
+<strong>Answer: C.</strong> In β⁻-decay the nucleon number stays the same while the proton number increases by 1 (a horizontal move right). In α-emission the nucleon number decreases by 4 and the proton number by 2 (a diagonal move down-left). Only graph C shows this sequence.
+</details>
+</section>
+<section id="example-7-11.1-mc-medium-q4" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-7-11.1-mc-medium-q4">Example 7 · 11.1 MC Medium Q4</h4>
+<p>The isotope <span class="math inline">\({}^{222}_{86}\text{Rn}\)</span> decays in a sequence of emissions to form the isotope <span class="math inline">\({}^{206}_{82}\text{Pb}\)</span>.</p>
+<p>It will either emit an α-particle or a β-particle at each stage of the decay sequence.</p>
+<p>What is the number of stages in the decay sequence?</p>
+<p>A. 20</p>
+<p>B. 16</p>
+<p>C. 8</p>
+<p>D. 4</p>
+<details class="answer-panel">
+<summary>
+Show answer and explanation
+</summary>
+<strong>Answer: C.</strong> The nucleon number decreases by <span class="math inline">\(222-206=16\)</span>, which requires 4 α-particles (each reducing A by 4). These 4 α-particles would reduce Z by 8, but the proton number only decreases by 4, so 4 β-particles must also be emitted. Total stages <span class="math inline">\(=4+4=8\)</span>.
+</details>
+</section>
+<section id="example-8-11.1-mc-medium-q6" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-8-11.1-mc-medium-q6">Example 8 · 11.1 MC Medium Q6</h4>
+<p>Alpha, beta and gamma radiations:</p>
+<ol type="1">
+<li>are absorbed to different extents in solids;</li>
+<li>behave differently in an electric field;</li>
+<li>behave differently in a magnetic field.</li>
+</ol>
+<p>Diagrams 1, 2 and 3 illustrate these behaviours.</p>
+<p><img src="../assets/questions/particle-physics/mc-111-medium-q6-radiation.webp" class="question-figure img-fluid" alt="Diagram 1 showing absorption by paper, aluminium and lead; Diagram 2 showing behaviour in an electric field"></p>
+<p><img src="../assets/questions/particle-physics/mc-111-medium-q6-radiation2.webp" class="question-figure img-fluid" alt="Diagram 3 showing behaviour in a magnetic field into the page"></p>
+<p>Which three labels on these diagrams refer to the same kind of radiation?</p>
+<p>A. X, L, R</p>
+<p>B. W, L, R</p>
+<p>C. W, L, P</p>
+<p>D. Y, M, P</p>
+<details class="answer-panel">
+<summary>
+Show answer and explanation
+</summary>
+<strong>Answer: A.</strong> In diagram 1, W is alpha (stopped by paper), X is beta (stopped by a few mm of aluminium) and Y is gamma (reduced by lead). In diagram 2, L is beta (attracted to the positive plate) and in diagram 3, R is beta (deflected by the magnetic field). So X, L and R all refer to beta radiation.
+</details>
+</section>
+<section id="example-9-11.1-mc-medium-q7" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-9-11.1-mc-medium-q7">Example 9 · 11.1 MC Medium Q7</h4>
+<p>The nuclides shown in the grid below are arranged according to the number of protons and neutrons in each.</p>
+<p>A nucleus of the nuclide <span class="math inline">\({}^{6}_{3}\text{Li}\)</span> decays by emitting a β⁻-particle.</p>
+<p>What is the resulting nuclide?</p>
+<p><img src="../assets/questions/particle-physics/mc-111-medium-q7-nuclide-grid.webp" class="question-figure img-fluid" alt="A grid of nuclides arranged by number of protons and neutrons"></p>
+<details class="answer-panel">
+<summary>
+Show answer and explanation
+</summary>
+<strong>Answer: D.</strong> In β⁻-decay a neutron changes into a proton, so the proton number increases by 1 and the neutron number decreases by 1 while the nucleon number stays the same. <span class="math inline">\({}^{6}_{3}\text{Li}\)</span> has 3 protons and 3 neutrons; the daughter has 4 protons and 2 neutrons, which is the nuclide marked D on the grid.
+</details>
+</section>
+<section id="example-10-11.1-mc-medium-q8" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-10-11.1-mc-medium-q8">Example 10 · 11.1 MC Medium Q8</h4>
+<p>A thorium isotope has a nucleon number of 232 and a proton number of 90. It decays to form another isotope with a nucleon number of 228.</p>
+<p>How many alpha particles and beta particles are emitted during this decay?</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th></th>
+<th>Alpha particles</th>
+<th>Beta particles</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>A</td>
+<td>0</td>
+<td>4</td>
+</tr>
+<tr class="even">
+<td>B</td>
+<td>1</td>
+<td>2</td>
+</tr>
+<tr class="odd">
+<td>C</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr class="even">
+<td>D</td>
+<td>2</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+<details class="answer-panel">
+<summary>
+Show answer and explanation
+</summary>
+<strong>Answer: B.</strong> The nucleon number decreases by <span class="math inline">\(232-228=4\)</span>, so one α-particle is emitted. This would reduce the proton number by 2 (from 90 to 88), but the daughter is still thorium (Z = 90), so two β⁻ particles must also be emitted to increase Z back to 90.
+</details>
+</section>
+<section id="example-11-11.1-mc-medium-q9" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-11-11.1-mc-medium-q9">Example 11 · 11.1 MC Medium Q9</h4>
+<p>Two α-particles with equal energies are deflected by a gold nucleus.</p>
+<p>Which diagram best represents their paths?</p>
+<p><img src="../assets/questions/particle-physics/mc-111-medium-q9-alpha-paths.webp" class="question-figure img-fluid" alt="Four diagrams showing the paths of two alpha particles near a gold nucleus"></p>
+<details class="answer-panel">
+<summary>
+Show answer and explanation
+</summary>
+<strong>Answer: D.</strong> The gold nucleus is positively charged and repels the positively charged α-particles. The closer a particle comes, the stronger the repulsive force and the greater the deflection, so the paths curve away from the nucleus and do not stay parallel.
+</details>
+</section>
+<section id="example-12-11.1-mc-medium-q10" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-12-11.1-mc-medium-q10">Example 12 · 11.1 MC Medium Q10</h4>
+<p>Three successive radioactive decays are shown in the diagram below; each one results in a particle being emitted.</p>
+<p>The first decay results in the emission of a β⁻-particle. The second decay results in the emission of an α-particle. The third decay results in the emission of another β⁻-particle.</p>
+<p><img src="../assets/questions/particle-physics/mc-111-medium-q10-decay-chain.webp" class="question-figure img-fluid" alt="A chain of nuclides W, X, Y and Z with arrows between them"></p>
+<p>Nuclides W and Z are compared. Which statement is correct?</p>
+<p>A. W and Z are isotopes of the same element</p>
+<p>B. Z is a different element of reduced mass</p>
+<p>C. Z is a different element of lower atomic number</p>
+<p>D. W and Z are identical in all respects</p>
+<details class="answer-panel">
+<summary>
+Show answer and explanation
+</summary>
+<strong>Answer: A.</strong> The β⁻-decay increases Z by 1, the α-decay decreases Z by 2, and the final β⁻-decay increases Z by 1, so the final proton number equals the original. The nucleon number decreases by 4. W and Z therefore have the same proton number but different nucleon numbers – they are isotopes.
+</details>
+</section>
+<section id="example-13-11.1-mc-medium-q12" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-13-11.1-mc-medium-q12">Example 13 · 11.1 MC Medium Q12</h4>
+<p>A sequence of radioactive decays is shown in the graph of neutron number against proton number.</p>
+<p>Nucleus S is at the start of the sequence and, after the decays have occurred, nucleus T is formed.</p>
+<p><img src="../assets/questions/particle-physics/mc-111-medium-q12-nz-graph.webp" class="question-figure img-fluid" alt="A graph of neutron number against proton number showing nucleus S moving to nucleus T"></p>
+<p>What is emitted during the sequence of decays?</p>
+<p>A. one α-particle followed by one β-particle</p>
+<p>B. two β-particles followed by one α-particle</p>
+<p>C. two α-particles followed by two β-particles</p>
+<p>D. one α-particle followed by two β-particles</p>
+<details class="answer-panel">
+<summary>
+Show answer and explanation
+</summary>
+<strong>Answer: D.</strong> From the graph, S has <span class="math inline">\(A=134\)</span> and <span class="math inline">\(Z=83\)</span>; T has <span class="math inline">\(A=130\)</span> and <span class="math inline">\(Z=82\)</span>. The nucleon number falls by 4 (one α) and the proton number falls by 1. The α-particle reduces Z by 2, so two β⁻ particles are needed to increase Z back by 2, giving a net fall of 1.
+</details>
+</section>
+<section id="example-14-11.1-mc-medium-q13" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-14-11.1-mc-medium-q13">Example 14 · 11.1 MC Medium Q13</h4>
+<p>A radioactive substance with a nucleon number of 234 and a proton number of 90 decays by β⁻-emission into a daughter product, which in turn decays by further emission into a granddaughter product.</p>
+<p>Which letter in the diagram represents the granddaughter product?</p>
+<p><img src="../assets/questions/particle-physics/mc-111-medium-q13-decay-diagram.webp" class="question-figure img-fluid" alt="A graph of proton number against nucleon number with points A, B, C and D"></p>
+<details class="answer-panel">
+<summary>
+Show answer and explanation
+</summary>
+<strong>Answer: C.</strong> The original nucleus has <span class="math inline">\(A=234\)</span>, <span class="math inline">\(Z=90\)</span>. After β⁻-decay the daughter has <span class="math inline">\(A=234\)</span>, <span class="math inline">\(Z=91\)</span>. After a further β⁻-decay the granddaughter has <span class="math inline">\(A=234\)</span>, <span class="math inline">\(Z=92\)</span>, which is point C on the graph.
+</details>
+</section>
+<section id="example-15-11.1-mc-medium-q15" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-15-11.1-mc-medium-q15">Example 15 · 11.1 MC Medium Q15</h4>
+<p>An element with an unstable nucleus decays by emitting an alpha particle to become the nucleus of a different element.</p>
+<p>The nucleus of the new element is unstable and will emit either an α-particle or a β-particle. This process continues until an isotope of the original element is formed.</p>
+<p>What is the minimum possible number of the particles emitted?</p>
+<p>A. 5</p>
+<p>B. 4</p>
+<p>C. 3</p>
+<p>D. 2</p>
+<details class="answer-panel">
+<summary>
+Show answer and explanation
+</summary>
+<strong>Answer: C.</strong> To return to an isotope of the original element, the proton number must return to its original value. One α-particle (Z − 2) followed by two β⁻ particles (Z + 2) gives a net proton-number change of zero, so the minimum number of particles is 3.
+</details>
+</section>
+</section>
+<section id="atoms-nuclei-radiation---hard" class="level3">
+<h3 class="anchored" data-anchor-id="atoms-nuclei-radiation---hard">11.1 Atoms, Nuclei &amp; Radiation - Hard</h3>
+<section id="example-16-11.1-mc-hard-q1" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-16-11.1-mc-hard-q1">Example 16 · 11.1 MC Hard Q1</h4>
+<p>In an α-particle scattering experiment, a student set up the apparatus below to determine the number <span class="math inline">\(n\)</span> of α-particles incident per unit time on a detector held at various angles <span class="math inline">\(\theta\)</span>.</p>
+<p><img src="../assets/questions/particle-physics/mc-111-hard-q1-apparatus.webp" class="question-figure img-fluid" alt="Apparatus with alpha particles incident on a thin gold foil and a movable detector"></p>
+<p>Which of the following graphs best represents the variation of <span class="math inline">\(n\)</span> with <span class="math inline">\(\theta\)</span>?</p>
+<p><img src="../assets/questions/particle-physics/mc-111-hard-q1-graphs.webp" class="question-figure img-fluid" alt="Four graphs of n against angle theta"></p>
+<details class="answer-panel">
+<summary>
+Show answer and explanation
+</summary>
+<strong>Answer: C.</strong> Most α-particles pass straight through (large <span class="math inline">\(n\)</span> at small angles), the count drops quickly with angle, and only very few particles are detected at large angles (above 90°). Graph C matches this.
+</details>
+</section>
+<section id="example-17-11.1-mc-hard-q2" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-17-11.1-mc-hard-q2">Example 17 · 11.1 MC Hard Q2</h4>
+<p>A stationary nucleus of polonium-210 decays by α-emission and has a total kinetic energy of <span class="math inline">\(E_\text{K}\)</span>.</p>
+<p><span class="math display">\[{}^{210}_{84}\text{Po} \rightarrow {}^{206}_{82}\text{Pb} + \alpha\]</span></p>
+<p>What is the kinetic energy of the daughter nucleus <span class="math inline">\({}^{206}_{82}\text{Pb}\)</span>?</p>
+<p>A. 0</p>
+<p>B. between 0 and <span class="math inline">\(\dfrac{E_\text{K}}{2}\)</span></p>
+<p>C. between <span class="math inline">\(\dfrac{E_\text{K}}{2}\)</span> and <span class="math inline">\(E_\text{K}\)</span></p>
+<p>D. <span class="math inline">\(E_\text{K}\)</span></p>
+<details class="answer-panel">
+<summary>
+Show answer and explanation
+</summary>
+<strong>Answer: B.</strong> By conservation of momentum, the two products share the kinetic energy in inverse proportion to their masses: <span class="math inline">\(\frac{E_\text{Pb}}{E_\alpha}=\frac{4}{206}\)</span>. So <span class="math inline">\(E_\text{Pb}\)</span> is a small fraction of the total, between 0 and <span class="math inline">\(E_\text{K}/2\)</span>.
+</details>
+</section>
+<section id="example-18-11.1-mc-hard-q3" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-18-11.1-mc-hard-q3">Example 18 · 11.1 MC Hard Q3</h4>
+<p>Which of the following equations correctly shows an α-particle causing a nuclear reaction?</p>
+<p>A. <span class="math inline">\({}^{14}_{7}\text{N} + {}^{4}_{2}\text{He} \rightarrow {}^{17}_{8}\text{O} + {}^{1}_{1}\text{H}\)</span></p>
+<p>B. <span class="math inline">\({}^{14}_{7}\text{N} + {}^{4}_{2}\text{He} \rightarrow {}^{17}_{8}\text{O} + {}^{1}_{0}\text{n}\)</span></p>
+<p>C. <span class="math inline">\({}^{14}_{7}\text{N} + {}^{1}_{1}\text{H} \rightarrow {}^{14}_{6}\text{C} + {}^{4}_{2}\text{He}\)</span></p>
+<p>D. <span class="math inline">\({}^{14}_{7}\text{N} + {}^{1}_{1}\text{H} \rightarrow {}^{11}_{5}\text{B} + {}^{4}_{2}\text{He}\)</span></p>
+<details class="answer-panel">
+<summary>
+Show answer and explanation
+</summary>
+<strong>Answer: B.</strong> An α-particle is a helium nucleus <span class="math inline">\({}^{4}_{2}\text{He}\)</span> and must appear on the left as a reactant. Option A uses the wrong symbol for the neutron; option B is correct: <span class="math inline">\(14+4=17+1\)</span> and <span class="math inline">\(7+2=8+1\)</span>.
+</details>
+</section>
+<section id="example-19-11.1-mc-hard-q4" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-19-11.1-mc-hard-q4">Example 19 · 11.1 MC Hard Q4</h4>
+<p>Thorium <span class="math inline">\({}^{232}_{90}\text{Th}\)</span> decays through a series of transformations. The particles emitted in successive transformations are</p>
+<p><span class="math display">\[\alpha,\ \beta,\ \beta,\ \alpha.\]</span></p>
+<p>The resulting nuclide may be represented by</p>
+<details class="answer-panel">
+<summary>
+Show answer and explanation
+</summary>
+<strong>Answer: D.</strong> Two α-particles reduce the nucleon number by 8 (232 → 224) and the proton number by 4 (90 → 86). Two β⁻ particles increase the proton number by 2 (86 → 88). The final nuclide is <span class="math inline">\({}^{224}_{88}\text{Ra}\)</span>.
+</details>
+</section>
+</section>
+<section id="fundamental-particles---hard" class="level3">
+<h3 class="anchored" data-anchor-id="fundamental-particles---hard">11.2 Fundamental Particles - Hard</h3>
+<section id="example-20-11.2-mc-hard-q1" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-20-11.2-mc-hard-q1">Example 20 · 11.2 MC Hard Q1</h4>
+<p>Quarks are thought to make up protons and neutrons.</p>
+<p>The ‘up’ quark has a charge of <span class="math inline">\(+\frac{2}{3}e\)</span> and the ‘down’ quark has a charge of <span class="math inline">\(-\frac{1}{3}e\)</span>, where <span class="math inline">\(e\)</span> is the elementary charge (<span class="math inline">\(+1.6\times10^{-19}\ \mathrm{C}\)</span>).</p>
+<p>How many up quarks and down quarks must a proton contain?</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th></th>
+<th>Up quarks</th>
+<th>Down quarks</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>A</td>
+<td>0</td>
+<td>3</td>
+</tr>
+<tr class="even">
+<td>B</td>
+<td>2</td>
+<td>1</td>
+</tr>
+<tr class="odd">
+<td>C</td>
+<td>1</td>
+<td>2</td>
+</tr>
+<tr class="even">
+<td>D</td>
+<td>1</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+<details class="answer-panel">
+<summary>
+Show answer and explanation
+</summary>
+<strong>Answer: B.</strong> A proton has quark composition uud: two up quarks and one down quark, giving charge <span class="math inline">\(\frac{2}{3}+\frac{2}{3}-\frac{1}{3}=+e\)</span>.
+</details>
+</section>
+</section>
+</section>
+<section id="structured-questions" class="level2">
+<h2 class="anchored" data-anchor-id="structured-questions">Structured Questions</h2>
+<section id="atoms-nuclei-radiation---medium-1" class="level3">
+<h3 class="anchored" data-anchor-id="atoms-nuclei-radiation---medium-1">11.1 Atoms, Nuclei &amp; Radiation - Medium</h3>
+<section id="example-1-11.1-sq-medium-q1" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-1-11.1-sq-medium-q1">Example 1 · 11.1 SQ Medium Q1</h4>
+<p>A nucleus X decays by emitting a β⁺ particle to form a new nucleus, <span class="math inline">\({}^{23}_{11}\text{Na}\)</span>.</p>
+<p><strong>(a)</strong> State the number of protons and the number of neutrons in nucleus X.</p>
+<p>number of protons = ____________</p>
+<p>number of neutrons = ____________</p>
+<p><code>[2 marks]</code></p>
+<p><strong>(b)</strong> State one similarity between a β⁺ particle and a β⁻ particle. <code>[1 mark]</code></p>
+<p><strong>(c)</strong> State the quark composition of a meson. <code>[1 mark]</code></p>
+<p><strong>(d)</strong> A hadron consists of two down quarks and a charm quark.</p>
+<p>Determine the charge of the hadron. Show your working.</p>
+<p>charge = ____________ <code>[2 marks]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<ul>
+<li><strong>(a)</strong> In β⁺-decay the proton number decreases by 1 and the nucleon number is unchanged. <span class="math inline">\({}^{23}_{11}\text{Na}\)</span> has 11 protons, so X has <span class="math inline">\(11+1=12\)</span> protons <code>[1]</code> and <span class="math inline">\(23-12=11\)</span> neutrons. <code>[1]</code></li>
+<li><strong>(b)</strong> They have the same rest mass (and the same magnitude of charge). <code>[1]</code></li>
+<li><strong>(c)</strong> A meson consists of one quark and one antiquark. <code>[1]</code></li>
+<li><strong>(d)</strong> Down quark charge <span class="math inline">\(=-\frac{1}{3}e\)</span>, charm quark charge <span class="math inline">\(=+\frac{2}{3}e\)</span>. <code>[1]</code> Total charge <span class="math inline">\(=-\frac{1}{3}-\frac{1}{3}+\frac{2}{3}=0\)</span>. <code>[1]</code></li>
+</ul>
+<code>[Total: 6 marks]</code>
+</details>
+</section>
+<section id="example-2-11.1-sq-medium-q2" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-2-11.1-sq-medium-q2">Example 2 · 11.1 SQ Medium Q2</h4>
+<p>The deflection of α-particles by a thin metal foil is investigated with the arrangement shown in Fig. 1.1.</p>
+<p><img src="../assets/questions/particle-physics/sq-111-medium-q2a-apparatus.webp" class="question-figure img-fluid" alt="An alpha source with a detector D moved along a path WXY around a thin metal foil"></p>
+<p>The detector of α-particles, D, is moved around the path labelled WXY.</p>
+<p><strong>(a)</strong> State the environment the apparatus must be enclosed in and explain why this is required for the experiment. <code>[2 marks]</code></p>
+<p><strong>(b)</strong> Explain the readings detected by D and the conclusions that were made about the nature of atoms at points</p>
+<p><strong>(i)</strong> W; <code>[2]</code></p>
+<p><strong>(ii)</strong> X. <code>[2]</code></p>
+<p><code>[4 marks]</code></p>
+<p><strong>(c)</strong> State what the readings detected by D at position Y conclude about the charge of the nucleus. Explain why. <code>[2 marks]</code></p>
+<p><strong>(d)</strong> A beam of α-particles produces a current of 3.5 pA.</p>
+<p>Calculate the number of α-particles per second passing a point in the beam. <code>[3 marks]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<ul>
+<li><strong>(a)</strong> The apparatus must be enclosed in a vacuum <code>[1]</code> because α-particles travel only a short distance in air / are absorbed by air. <code>[1]</code></li>
+<li><strong>(b)(i)</strong> At W (behind the foil, in line with the source), the majority of the α-particles went straight through. <code>[1]</code> This shows that most of the atom is empty space / the nucleus is very small compared with the atom. <code>[1]</code></li>
+<li><strong>(b)(ii)</strong> At X (to the side), a small number of α-particles are deflected through small angles. <code>[1]</code> This shows that the nucleus is positively charged (repelling the positive α-particles). <code>[1]</code></li>
+<li><strong>(c)</strong> The charge of the nucleus is positive. <code>[1]</code> A few α-particles are repelled backwards, which can only happen if they approach a very small, dense, positively charged nucleus. <code>[1]</code></li>
+<li><strong>(d)</strong> Current <span class="math inline">\(I=Q/t=n\times 2e\)</span>. <code>[1]</code> <span class="math inline">\(n=I/(2e)=3.5\times10^{-12}/(2\times1.6\times10^{-19})\)</span>. <code>[1]</code> <span class="math inline">\(n=1.1\times10^{7}\ \mathrm{s^{-1}}\)</span>. <code>[1]</code></li>
+</ul>
+<code>[Total: 11 marks]</code>
+</details>
+</section>
+<section id="example-3-11.1-sq-medium-q3" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-3-11.1-sq-medium-q3">Example 3 · 11.1 SQ Medium Q3</h4>
+<p>When a nucleus of plutonium-239 absorbs a neutron, the following reaction may take place.</p>
+<p><span class="math display">\[{}^{239}_{94}\text{Pu} + {}^{1}_{0}\text{n} \rightarrow {}^{a}_{b}\text{Xe} + {}^{103}_{38}\text{Sr} + 3{}^{1}_{0}\text{n}\]</span></p>
+<p><strong>(a)</strong> State the values of <span class="math inline">\(a\)</span>, <span class="math inline">\(b\)</span>, <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span>. <code>[3 marks]</code></p>
+<p><strong>(b)</strong> State two quantities, other than the proton and neutron number, that are conserved in the fission reaction in part (a). <code>[2 marks]</code></p>
+<p><strong>(c)</strong> A plutonium-239 nucleus has a mean density of <span class="math inline">\(1.3\times10^{17}\ \mathrm{kg\,m^{-3}}\)</span>.</p>
+<p>Show that the radius of a plutonium-239 nucleus is <span class="math inline">\(9.0\times10^{-15}\ \mathrm{m}\)</span>. <code>[3 marks]</code></p>
+<p><strong>(d)</strong> Plutonium-239 is an α-emitter whilst uranium-237 is a β-emitter.</p>
+<p>Aside from their structure, distinguish between an α-particle and a β-particle. <code>[3 marks]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<ul>
+<li><strong>(a)</strong> <span class="math inline">\(a=134\)</span> and <span class="math inline">\(b=54\)</span>. <code>[1]</code> <span class="math inline">\(x=239+1-134-103-3=0\)</span>, so <span class="math inline">\(x=0\)</span>. <code>[1]</code> <span class="math inline">\(y=40\)</span>. <code>[1]</code></li>
+<li><strong>(b)</strong> Any two from: mass–energy; <code>[1]</code> charge; <code>[1]</code> momentum / nucleon number. <code>[1]</code></li>
+<li><strong>(c)</strong> Mass of nucleus <span class="math inline">\(=239\times1.66\times10^{-27}=3.97\times10^{-25}\ \mathrm{kg}\)</span>. <code>[1]</code> Volume <span class="math inline">\(V=m/\rho=3.97\times10^{-25}/(1.3\times10^{17})=3.05\times10^{-42}\ \mathrm{m^3}\)</span>. <code>[1]</code> <span class="math inline">\(V=\frac{4}{3}\pi r^3\)</span>, so <span class="math inline">\(r=(3V/4\pi)^{1/3}=9.0\times10^{-15}\ \mathrm{m}\)</span>. <code>[1]</code></li>
+<li><strong>(d)</strong> The α-particle has a charge of <span class="math inline">\(+2e\)</span> while the β⁻-particle has a charge of <span class="math inline">\(-e\)</span>; <code>[1]</code> the α-particle has much greater mass; <code>[1]</code> the α-particle has greater ionising power but less penetrating power. <code>[1]</code></li>
+</ul>
+<code>[Total: 11 marks]</code>
+</details>
+</section>
+</section>
+<section id="fundamental-particles---medium" class="level3">
+<h3 class="anchored" data-anchor-id="fundamental-particles---medium">11.2 Fundamental Particles - Medium</h3>
+<section id="example-4-11.2-sq-medium-q1" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-4-11.2-sq-medium-q1">Example 4 · 11.2 SQ Medium Q1</h4>
+<p>Carbon-10 (<span class="math inline">\({}^{10}_{6}\text{C}\)</span>) is an isotope that decays to an isotope of boron (symbol B) by the emission of a β⁺ particle.</p>
+<p><strong>(a)</strong> Complete the nuclear equation for this decay, including the proton and nucleon numbers of all the particles involved.</p>
+<p><span class="math display">\[{}^{10}_{6}\text{C} \rightarrow \rule{2cm}{0.4pt} + \rule{2cm}{0.4pt}\]</span></p>
+<p><code>[3]</code></p>
+<p><strong>(ii)</strong> During the decay, a quark in the carbon-10 nucleus changes into a different type.</p>
+<p>State the change of quark that occurs. <code>[1]</code></p>
+<p><code>[4 marks]</code></p>
+<p><strong>(b)</strong> State the two leptons in this decay. <code>[2 marks]</code></p>
+<p><strong>(c)</strong> State and explain why a hadron with charge <span class="math inline">\(-3e\)</span> cannot exist. <span class="math inline">\(e\)</span> is the elementary charge. <code>[3 marks]</code></p>
+<p><strong>(d)</strong> State the possible quark combination for a hadron of charge <span class="math inline">\(+2e\)</span>. <code>[1 mark]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<ul>
+<li><strong>(a)</strong> <span class="math inline">\({}^{10}_{6}\text{C} \rightarrow {}^{10}_{5}\text{B} + {}^{0}_{+1}\beta^{+} + \nu_\text{e}\)</span>. <code>[3]</code> (1 mark for each correctly placed term)</li>
+<li><strong>(a)(ii)</strong> An up quark changes into a down quark. <code>[1]</code></li>
+<li><strong>(b)</strong> The positron (β⁺ particle) <code>[1]</code> and the (electron) neutrino. <code>[1]</code></li>
+<li><strong>(c)</strong> Quarks have charges of only <span class="math inline">\(+\frac{2}{3}e\)</span> or <span class="math inline">\(-\frac{1}{3}e\)</span>. <code>[1]</code> A meson contains a quark and an antiquark, so can only have charge 0 or <span class="math inline">\(\pm e\)</span>. <code>[1]</code> A baryon contains three quarks, so can only have charge 0, <span class="math inline">\(\pm e\)</span> or <span class="math inline">\(\pm 2e\)</span> – never <span class="math inline">\(-3e\)</span>. <code>[1]</code></li>
+<li><strong>(d)</strong> Any valid three-quark combination summing to <span class="math inline">\(+2e\)</span>, e.g.&nbsp;uuu (three up quarks). <code>[1]</code></li>
+</ul>
+<code>[Total: 10 marks]</code>
+</details>
+</section>
+<section id="example-5-11.2-sq-medium-q2" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-5-11.2-sq-medium-q2">Example 5 · 11.2 SQ Medium Q2</h4>
+<p><strong>(a)</strong> State the quark composition of an alpha particle. <code>[2 marks]</code></p>
+<p><strong>(b)</strong> Use the quark model to show that the charge on the anti-neutron is 0. <code>[2 marks]</code></p>
+<p><strong>(c)</strong> A sigma baryon <span class="math inline">\(\Sigma\)</span> is a hadron that consists of an up (u) quark, a down (d) quark and a strange (s) quark.</p>
+<p>State the quark composition of <span class="math inline">\(\Sigma^{+}\)</span>, <span class="math inline">\(\Sigma^{0}\)</span> and <span class="math inline">\(\Sigma^{-}\)</span>. <code>[3 marks]</code></p>
+<p><strong>(d)</strong> Explain why a baryon with the quark composition uds cannot exist. <code>[1 mark]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<ul>
+<li><strong>(a)</strong> An alpha particle has 2 protons (uud) and 2 neutrons (udd). <code>[1]</code> So its quark composition is 6 up quarks and 6 down quarks. <code>[1]</code></li>
+<li><strong>(b)</strong> The anti-neutron has quark composition <span class="math inline">\(\bar{u}\bar{d}\bar{d}\)</span>. <code>[1]</code> Charge <span class="math inline">\(=-\frac{2}{3}e+\frac{1}{3}e+\frac{1}{3}e=0\)</span>. <code>[1]</code></li>
+<li><strong>(c)</strong> <span class="math inline">\(\Sigma^{+}\)</span> = uus; <code>[1]</code> <span class="math inline">\(\Sigma^{0}\)</span> = uds; <code>[1]</code> <span class="math inline">\(\Sigma^{-}\)</span> = dds. <code>[1]</code></li>
+<li><strong>(d)</strong> A baryon can only be made of three quarks or three antiquarks – it cannot contain a mixture of quarks and antiquarks (uds contains no antiquarks, but the statement refers to the composition of <span class="math inline">\(\bar{u}\bar{d}\bar{s}\)</span> which is an antibaryon, not a baryon). <code>[1]</code></li>
+</ul>
+<code>[Total: 8 marks]</code>
+</details>
+</section>
+<section id="example-6-11.2-sq-medium-q3" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-6-11.2-sq-medium-q3">Example 6 · 11.2 SQ Medium Q3</h4>
+<p><strong>(a)</strong> State the number of ‘up’ quarks in the nucleus of <span class="math inline">\({}^{27}_{13}\text{Al}\)</span>. <code>[1 mark]</code></p>
+<p><strong>(b)</strong> The D particle has a quark structure <span class="math inline">\(u\bar{c}\)</span>.</p>
+<p>Determine</p>
+<p><strong>(i)</strong> the classification of the D particle; <code>[1]</code></p>
+<p><strong>(ii)</strong> the charge on the particle. <code>[1]</code></p>
+<p><code>[2 marks]</code></p>
+<p><strong>(c)</strong> Using the quark model, show that the magnitude of the charge of a proton is equal to the charge of an electron. <code>[1 mark]</code></p>
+<p><strong>(d)</strong> Using the quark model for β⁺ decay, show that charge is conserved in this decay. <code>[3 marks]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<ul>
+<li><strong>(a)</strong> <span class="math inline">\({}^{27}_{13}\text{Al}\)</span> has 13 protons and 14 neutrons. Each proton (uud) has 2 up quarks and each neutron (udd) has 1 up quark: <span class="math inline">\((13\times2)+(14\times1)=40\)</span> up quarks. <code>[1]</code></li>
+<li><strong>(b)(i)</strong> The D particle is a meson (one quark and one antiquark). <code>[1]</code></li>
+<li><strong>(b)(ii)</strong> Charge <span class="math inline">\(=+\frac{2}{3}e-\frac{2}{3}e=0\)</span>. <code>[1]</code></li>
+<li><strong>(c)</strong> Proton = uud: charge <span class="math inline">\(=+\frac{2}{3}+\frac{2}{3}-\frac{1}{3}=+e\)</span>. <code>[1]</code> The electron has charge <span class="math inline">\(-e\)</span>, so the magnitudes are equal.</li>
+<li><strong>(d)</strong> In β⁺-decay, an up quark changes to a down quark: <span class="math inline">\(u \rightarrow d + e^{+} + \nu_\text{e}\)</span>. <code>[1]</code> Charge on the left: <span class="math inline">\(+\frac{2}{3}e\)</span>. <code>[1]</code> Charge on the right: <span class="math inline">\(-\frac{1}{3}e+e+0=+\frac{2}{3}e\)</span>. <code>[1]</code> Charge is conserved.</li>
+</ul>
+<code>[Total: 7 marks]</code>
+</details>
+</section>
+</section>
+</section>
+<section id="chapter-checklist" class="level2">
+<h2 class="anchored" data-anchor-id="chapter-checklist">Chapter checklist</h2>
+<ul class="task-list">
+<li><label><input type="checkbox">I can describe the α-particle scattering experiment and its conclusions.</label></li>
+<li><label><input type="checkbox">I can use <span class="math inline">\({}^{A}_{Z}\text{X}\)</span> notation and distinguish nucleon number from proton number.</label></li>
+<li><label><input type="checkbox">I can write and balance α- and β-decay equations.</label></li>
+<li><label><input type="checkbox">I can compare α-, β- and γ-radiation in terms of charge, mass and penetrating power.</label></li>
+<li><label><input type="checkbox">I can use the unified atomic mass unit.</label></li>
+<li><label><input type="checkbox">I can recall quark charges and the quark composition of protons and neutrons.</label></li>
+<li><label><input type="checkbox">I can distinguish baryons from mesons.</label></li>
+<li><label><input type="checkbox">I can describe quark changes during β⁻ and β⁺ decay.</label></li>
+</ul>
+<section id="original-question-pdfs" class="level3">
+<h3 class="anchored" data-anchor-id="original-question-pdfs">Original question PDFs</h3>
+<ul>
+<li><a href="https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/particle-physics/11.1-atoms-nuclei-radiation-c-easy.pdf">11.1 Atoms, Nuclei &amp; Radiation - MC Easy</a></li>
+<li><a href="https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/particle-physics/11.1-atoms-nuclei-radiation-c-medium.pdf">11.1 Atoms, Nuclei &amp; Radiation - MC Medium</a></li>
+<li><a href="https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/particle-physics/11.1-atoms-nuclei-radiation-c-hard.pdf">11.1 Atoms, Nuclei &amp; Radiation - MC Hard</a></li>
+<li><a href="https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/particle-physics/11.1-atoms-nuclei-radiation-sq-medium.pdf">11.1 Atoms, Nuclei &amp; Radiation - SQ Medium</a></li>
+<li><a href="https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/particle-physics/11.2-fundamental-particles-c-easy.pdf">11.2 Fundamental Particles - MC Easy</a></li>
+<li><a href="https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/particle-physics/11.2-fundamental-particles-c-medium.pdf">11.2 Fundamental Particles - MC Medium</a></li>
+<li><a href="https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/particle-physics/11.2-fundamental-particles-c-hard.pdf">11.2 Fundamental Particles - MC Hard</a></li>
+<li><a href="https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/particle-physics/11.2-fundamental-particles-sq-medium.pdf">11.2 Fundamental Particles - SQ Medium</a></li>
+</ul>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll(".done-toggle input").forEach((input) => {
+    const key = `cie-physics-${input.dataset.progress}`;
+    input.checked = localStorage.getItem(key) === "true";
+    input.closest(".question-card")?.classList.toggle("is-complete", input.checked);
+    input.addEventListener("change", () => {
+      localStorage.setItem(key, input.checked);
+      input.closest(".question-card")?.classList.toggle("is-complete", input.checked);
+    });
+  });
+
+  document.querySelectorAll(".mc-question").forEach((card) => {
+    const answer = card.dataset.answer;
+    const feedback = card.querySelector(".mc-feedback");
+    const check = card.querySelector(".check-answer");
+    let selected = localStorage.getItem(`cie-physics-${card.id}-choice`) || "";
+
+    const showSelection = () => {
+      card.querySelectorAll(".mc-choice").forEach((choice) => {
+        choice.classList.toggle("is-selected", choice.dataset.choice === selected);
+      });
+    };
+    showSelection();
+
+    card.querySelectorAll(".mc-choice").forEach((choice) => {
+      choice.addEventListener("click", () => {
+        selected = choice.dataset.choice;
+        localStorage.setItem(`cie-physics-${card.id}-choice`, selected);
+        feedback.textContent = "";
+        feedback.className = "mc-feedback";
+        showSelection();
+      });
+    });
+
+    check?.addEventListener("click", () => {
+      if (!selected) {
+        feedback.textContent = "Select an answer first.";
+        feedback.className = "mc-feedback is-pending";
+        return;
+      }
+      const correct = selected === answer;
+      feedback.textContent = correct ? "Correct." : `Not quite. The correct answer is ${answer}.`;
+      feedback.className = `mc-feedback ${correct ? "is-correct" : "is-incorrect"}`;
+    });
+  });
+});
+</script>
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "已复制");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "已复制");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../as-level/10-dc-circuits.html" class="pagination-link" aria-label="10 D.C. circuits">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">10 D.C. circuits</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../a-level/12-motion-in-a-circle.html" class="pagination-link" aria-label="12 Motion in a circle">
+        <span class="nav-page-text">12 Motion in a circle</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>
