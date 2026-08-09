@@ -1,0 +1,1826 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-Hans" xml:lang="zh-Hans"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.38">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>10 D.C. circuits – CIE Physics 9702</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../a-level/12-motion-in-a-circle.html" rel="next">
+<link href="../as-level/09-electricity.html" rel="prev">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-a2a938b4dd5711f7a799c87bd16ba44c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "没有结果",
+    "search-matching-documents-text": "匹配的文档",
+    "search-copy-link-title": "复制搜索链接",
+    "search-hide-matches-text": "隐藏其它匹配结果",
+    "search-more-match-text": "更多匹配结果",
+    "search-more-matches-text": "更多匹配结果",
+    "search-clear-button-title": "清除",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "取消",
+    "search-submit-button-title": "提交",
+    "search-label": "搜索"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../styles.css">
+</head>
+
+<body class="nav-sidebar docked quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="展开或折叠侧边栏导航" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../as-level/01-physical-quantities-and-units.html">AS Level</a></li><li class="breadcrumb-item"><a href="../as-level/10-dc-circuits.html">10 D.C. circuits</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="展开或折叠侧边栏导航" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="搜索" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">CIE Physics 9702</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="搜索"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">学习首页</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">AS Level</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="展开或折叠此栏">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../as-level/01-physical-quantities-and-units.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">1 Physical quantities and units</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../as-level/02-kinematics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2 Kinematics</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../as-level/03-dynamics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">3 Dynamics</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../as-level/04-forces-density-pressure.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4 Forces, density and pressure</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../as-level/05-work-energy-power.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5 Work, energy and power</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../as-level/06-deformation-of-solids.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">6 Deformation of solids</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../as-level/07-waves.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">7 Waves</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../as-level/08-superposition.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">8 Superposition</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../as-level/09-electricity.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">9 Electricity</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../as-level/10-dc-circuits.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">10 D.C. circuits</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">A Level</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="展开或折叠此栏">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/12-motion-in-a-circle.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">12 Motion in a circle</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/13-gravitational-fields.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">13 Gravitational fields</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/14-temperature.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">14 Temperature</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/15-ideal-gases.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">15 Ideal gases</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/16-thermodynamics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">16 Thermodynamics</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/17-oscillations.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">17 Oscillations</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/18-electric-fields.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">18 Electric fields</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/19-capacitance.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">19 Capacitance</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/20-magnetic-fields.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">20 Magnetic fields</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/21-alternating-currents.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">21 Alternating currents</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/22-quantum-physics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">22 Quantum physics</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/23-nuclear-physics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">23 Nuclear physics</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/24-medical-physics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">24 Medical physics</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/25-astronomy-and-cosmology.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">25 Astronomy and cosmology</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">该页面内容</h2>
+   
+  <ul>
+  <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link active" data-scroll-target="#learning-objectives">Learning objectives</a></li>
+  <li><a href="#practical-circuits" id="toc-practical-circuits" class="nav-link" data-scroll-target="#practical-circuits">10.1 Practical circuits</a>
+  <ul class="collapse">
+  <li><a href="#electromotive-force-and-potential-difference" id="toc-electromotive-force-and-potential-difference" class="nav-link" data-scroll-target="#electromotive-force-and-potential-difference">Electromotive force and potential difference</a></li>
+  <li><a href="#internal-resistance" id="toc-internal-resistance" class="nav-link" data-scroll-target="#internal-resistance">Internal resistance</a></li>
+  <li><a href="#power-and-energy" id="toc-power-and-energy" class="nav-link" data-scroll-target="#power-and-energy">Power and energy</a></li>
+  </ul></li>
+  <li><a href="#kirchhoffs-laws" id="toc-kirchhoffs-laws" class="nav-link" data-scroll-target="#kirchhoffs-laws">10.2 Kirchhoff’s laws</a>
+  <ul class="collapse">
+  <li><a href="#kirchhoffs-first-and-second-laws" id="toc-kirchhoffs-first-and-second-laws" class="nav-link" data-scroll-target="#kirchhoffs-first-and-second-laws">Kirchhoff’s first and second laws</a></li>
+  <li><a href="#combined-resistance" id="toc-combined-resistance" class="nav-link" data-scroll-target="#combined-resistance">Combined resistance</a></li>
+  </ul></li>
+  <li><a href="#potential-dividers" id="toc-potential-dividers" class="nav-link" data-scroll-target="#potential-dividers">10.3 Potential dividers</a>
+  <ul class="collapse">
+  <li><a href="#the-potential-divider" id="toc-the-potential-divider" class="nav-link" data-scroll-target="#the-potential-divider">The potential divider</a></li>
+  <li><a href="#the-potentiometer" id="toc-the-potentiometer" class="nav-link" data-scroll-target="#the-potentiometer">The potentiometer</a></li>
+  <li><a href="#thermistors-and-ldrs" id="toc-thermistors-and-ldrs" class="nav-link" data-scroll-target="#thermistors-and-ldrs">Thermistors and LDRs</a></li>
+  </ul></li>
+  <li><a href="#multiple-choice-questions" id="toc-multiple-choice-questions" class="nav-link" data-scroll-target="#multiple-choice-questions">Multiple Choice Questions</a>
+  <ul class="collapse">
+  <li><a href="#dc-practical-circuits-kirchhoffs-laws---easy" id="toc-dc-practical-circuits-kirchhoffs-laws---easy" class="nav-link" data-scroll-target="#dc-practical-circuits-kirchhoffs-laws---easy">10.1 DC Practical Circuits &amp; Kirchhoff’s Laws - Easy</a></li>
+  <li><a href="#dc-practical-circuits-kirchhoffs-laws---medium" id="toc-dc-practical-circuits-kirchhoffs-laws---medium" class="nav-link" data-scroll-target="#dc-practical-circuits-kirchhoffs-laws---medium">10.1 DC Practical Circuits &amp; Kirchhoff’s Laws - Medium</a></li>
+  <li><a href="#dc-practical-circuits-kirchhoffs-laws---hard" id="toc-dc-practical-circuits-kirchhoffs-laws---hard" class="nav-link" data-scroll-target="#dc-practical-circuits-kirchhoffs-laws---hard">10.1 DC Practical Circuits &amp; Kirchhoff’s Laws - Hard</a></li>
+  <li><a href="#dc-potential-dividers---easy" id="toc-dc-potential-dividers---easy" class="nav-link" data-scroll-target="#dc-potential-dividers---easy">10.2 DC Potential Dividers - Easy</a></li>
+  </ul></li>
+  <li><a href="#structured-questions" id="toc-structured-questions" class="nav-link" data-scroll-target="#structured-questions">Structured Questions</a>
+  <ul class="collapse">
+  <li><a href="#dc-practical-circuits-kirchhoffs-laws---easy-1" id="toc-dc-practical-circuits-kirchhoffs-laws---easy-1" class="nav-link" data-scroll-target="#dc-practical-circuits-kirchhoffs-laws---easy-1">10.1 DC Practical Circuits &amp; Kirchhoff’s Laws - Easy</a></li>
+  <li><a href="#dc-practical-circuits-kirchhoffs-laws---medium-1" id="toc-dc-practical-circuits-kirchhoffs-laws---medium-1" class="nav-link" data-scroll-target="#dc-practical-circuits-kirchhoffs-laws---medium-1">10.1 DC Practical Circuits &amp; Kirchhoff’s Laws - Medium</a></li>
+  <li><a href="#dc-potential-dividers---easy-1" id="toc-dc-potential-dividers---easy-1" class="nav-link" data-scroll-target="#dc-potential-dividers---easy-1">10.2 DC Potential Dividers - Easy</a></li>
+  <li><a href="#dc-potential-dividers---medium" id="toc-dc-potential-dividers---medium" class="nav-link" data-scroll-target="#dc-potential-dividers---medium">10.2 DC Potential Dividers - Medium</a></li>
+  </ul></li>
+  <li><a href="#chapter-checklist" id="toc-chapter-checklist" class="nav-link" data-scroll-target="#chapter-checklist">Chapter checklist</a>
+  <ul class="collapse">
+  <li><a href="#original-question-pdfs" id="toc-original-question-pdfs" class="nav-link" data-scroll-target="#original-question-pdfs">Original question PDFs</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../as-level/01-physical-quantities-and-units.html">AS Level</a></li><li class="breadcrumb-item"><a href="../as-level/10-dc-circuits.html">10 D.C. circuits</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">10 D.C. circuits</h1>
+<p class="subtitle lead">Practical circuits, Kirchhoff’s laws and potential dividers</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="learning-objectives" class="level2">
+<h2 class="anchored" data-anchor-id="learning-objectives">Learning objectives</h2>
+<p>By the end of this chapter, you should be able to:</p>
+<ul>
+<li>recall and use the circuit symbols shown in the syllabus;</li>
+<li>define and use the electromotive force (e.m.f.) of a source as the energy transferred per unit charge in driving charge around a complete circuit;</li>
+<li>distinguish between e.m.f. and potential difference (p.d.) in terms of energy considerations;</li>
+<li>understand the effect of the internal resistance of a source on the terminal potential difference;</li>
+<li>recall Kirchhoff’s first law (charge conservation) and second law (energy conservation);</li>
+<li>derive and use the formulas for combined resistance in series and in parallel;</li>
+<li>use Kirchhoff’s laws to solve simple circuit problems;</li>
+<li>understand the principle of a potential divider and the potentiometer;</li>
+<li>understand the use of a galvanometer in null methods;</li>
+<li>explain the use of thermistors and LDRs in potential dividers.</li>
+</ul>
+</section>
+<section id="practical-circuits" class="level2">
+<h2 class="anchored" data-anchor-id="practical-circuits">10.1 Practical circuits</h2>
+<section id="electromotive-force-and-potential-difference" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="electromotive-force-and-potential-difference">Electromotive force and potential difference</h3>
+<p>The <strong>electromotive force (e.m.f.)</strong> of a source is the energy transferred per unit charge in driving charge around a complete circuit:</p>
+<p><span class="math display">\[E=\frac{W}{Q}.\]</span></p>
+<p>The <strong>potential difference (p.d.)</strong> across a component is the energy transferred (to other forms) per unit charge as charge moves through that component.</p>
+<p>Key distinction:</p>
+<ul>
+<li><strong>e.m.f.</strong> involves changing <em>other</em> forms of energy (chemical, mechanical) into electrical energy.</li>
+<li><strong>p.d.</strong> involves changing electrical energy into other forms (thermal, light, sound).</li>
+</ul>
+<p>The e.m.f. is the total energy per unit charge supplied by the source; the p.d. across the external circuit is the energy per unit charge delivered to the external components.</p>
+</section>
+<section id="internal-resistance" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="internal-resistance">Internal resistance</h3>
+<p>A real source of e.m.f. has <strong>internal resistance</strong> <span class="math inline">\(r\)</span>. When a current <span class="math inline">\(I\)</span> flows, some energy is dissipated inside the source, so the <strong>terminal potential difference</strong> <span class="math inline">\(V\)</span> across the source is less than the e.m.f. <span class="math inline">\(E\)</span>:</p>
+<p><span class="math display">\[E=V+Ir \qquad \text{or} \qquad V=E-Ir.\]</span></p>
+<p>For a circuit containing a source of e.m.f. <span class="math inline">\(E\)</span> and internal resistance <span class="math inline">\(r\)</span> connected to an external resistance <span class="math inline">\(R\)</span>:</p>
+<p><span class="math display">\[E=I(R+r).\]</span></p>
+<p>The “lost volts” <span class="math inline">\(Ir\)</span> increase as the current increases.</p>
+</section>
+<section id="power-and-energy" class="level3 formula-panel">
+<h3 class="anchored" data-anchor-id="power-and-energy">Power and energy</h3>
+<p>The power dissipated in a resistor can be written as</p>
+<p><span class="math display">\[P=VI=I^2R=\frac{V^2}{R}.\]</span></p>
+<p>The electrical energy transferred is <span class="math inline">\(W=VIt\)</span> (or <span class="math inline">\(W=EQ\)</span> for a source of e.m.f. <span class="math inline">\(E\)</span>).</p>
+</section>
+</section>
+<section id="kirchhoffs-laws" class="level2">
+<h2 class="anchored" data-anchor-id="kirchhoffs-laws">10.2 Kirchhoff’s laws</h2>
+<section id="kirchhoffs-first-and-second-laws" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="kirchhoffs-first-and-second-laws">Kirchhoff’s first and second laws</h3>
+<p><strong>Kirchhoff’s first law:</strong> the sum of the currents entering a junction equals the sum of the currents leaving it. This is a consequence of the <strong>conservation of charge</strong>.</p>
+<p><strong>Kirchhoff’s second law:</strong> the sum of the e.m.f.s around a closed loop equals the sum of the products of current and resistance (p.d.s) around the loop:</p>
+<p><span class="math display">\[\sum E = \sum IR.\]</span></p>
+<p>This is a consequence of the <strong>conservation of energy</strong>.</p>
+</section>
+<section id="combined-resistance" class="level3 formula-panel">
+<h3 class="anchored" data-anchor-id="combined-resistance">Combined resistance</h3>
+<p>For resistors in <strong>series</strong>, the same current flows through each resistor and the p.d.s add:</p>
+<p><span class="math display">\[R_{\text{total}}=R_1+R_2+R_3+\dots\]</span></p>
+<p>For resistors in <strong>parallel</strong>, the same p.d. is across each resistor and the currents add:</p>
+<p><span class="math display">\[\frac{1}{R_{\text{total}}}=\frac{1}{R_1}+\frac{1}{R_2}+\frac{1}{R_3}+\dots\]</span></p>
+<p>For two resistors in parallel, <span class="math inline">\(R_{\text{total}}=\dfrac{R_1R_2}{R_1+R_2}\)</span>.</p>
+</section>
+</section>
+<section id="potential-dividers" class="level2">
+<h2 class="anchored" data-anchor-id="potential-dividers">10.3 Potential dividers</h2>
+<section id="the-potential-divider" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="the-potential-divider">The potential divider</h3>
+<p>A potential divider uses two resistors in series to produce a fraction of the supply p.d. across one of them:</p>
+<p><span class="math display">\[V_{\text{out}}=V_{\text{in}}\times\frac{R_2}{R_1+R_2}.\]</span></p>
+<p>The output p.d. can be varied by using a variable resistor or a sliding contact (potentiometer).</p>
+</section>
+<section id="the-potentiometer" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="the-potentiometer">The potentiometer</h3>
+<p>A <strong>potentiometer</strong> is a wire or resistor with a sliding contact, used to compare potential differences or e.m.f.s.</p>
+<p>In a null method, the galvanometer reading is reduced to zero. At balance, the p.d. across the length of wire <span class="math inline">\(l\)</span> equals the unknown e.m.f.:</p>
+<p><span class="math display">\[\frac{E_1}{E_2}=\frac{l_1}{l_2}.\]</span></p>
+<p>A <strong>galvanometer</strong> is used in null methods by adjusting the contact until there is no deflection (no current / no p.d. across it).</p>
+</section>
+<section id="thermistors-and-ldrs" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="thermistors-and-ldrs">Thermistors and LDRs</h3>
+<p>A <strong>thermistor</strong> has a resistance that decreases as temperature increases. In a potential divider, an increase in temperature decreases the thermistor’s p.d. and increases the p.d. across the fixed resistor.</p>
+<p>An <strong>LDR (light-dependent resistor)</strong> has a resistance that decreases as light intensity increases. In a potential divider, the output p.d. therefore depends on the light intensity.</p>
+<p>These devices are used in temperature sensors, light sensors, alarms and automatic switches.</p>
+</section>
+</section>
+<section id="multiple-choice-questions" class="level2">
+<h2 class="anchored" data-anchor-id="multiple-choice-questions">Multiple Choice Questions</h2>
+<section id="dc-practical-circuits-kirchhoffs-laws---easy" class="level3">
+<h3 class="anchored" data-anchor-id="dc-practical-circuits-kirchhoffs-laws---easy">10.1 DC Practical Circuits &amp; Kirchhoff’s Laws - Easy</h3>
+<section id="example-1-10.1-mc-easy-q2" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-1-10.1-mc-easy-q2">Example 1 · 10.1 MC Easy Q2</h4>
+<p>Which symbol represents a component whose resistance is designed to change with temperature?</p>
+<p><img src="../assets/questions/dc-circuits/mc-101-easy-q2-symbols.webp" class="question-figure img-fluid" alt="Four circuit symbols labelled A, B, C and D"></p>
+<details class="answer-panel">
+<summary>
+Show answer and explanation
+</summary>
+<strong>Answer: B.</strong> A component whose resistance changes with temperature is a thermistor; its symbol is option B. Option A is a potentiometer, C is a diode and D is an LDR.
+</details>
+</section>
+<section id="example-2-10.1-mc-easy-q3" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-2-10.1-mc-easy-q3">Example 2 · 10.1 MC Easy Q3</h4>
+<p>In the circuit shown, a light-dependent resistor (LDR) is connected to two resistors <span class="math inline">\(R_1\)</span> and <span class="math inline">\(R_2\)</span>.</p>
+<p>The potential difference (p.d.) across <span class="math inline">\(R_1\)</span> is <span class="math inline">\(V_1\)</span> and the p.d. across <span class="math inline">\(R_2\)</span> is <span class="math inline">\(V_2\)</span>. The current in the circuit is <span class="math inline">\(I\)</span>.</p>
+<p><img src="../assets/questions/dc-circuits/mc-101-easy-q3-ldr.webp" class="question-figure img-fluid" alt="A light-dependent resistor connected in series with two resistors R1 and R2"></p>
+<p>Which statement about this circuit is correct?</p>
+<p>A. the current <span class="math inline">\(I\)</span> increases when the light intensity decreases</p>
+<p>B. the LDR is an ohmic conductor</p>
+<p>C. the p.d. <span class="math inline">\(V_2\)</span> increases when the light intensity decreases</p>
+<p>D. the ratio <span class="math inline">\(\dfrac{V_1}{V_2}\)</span> is independent of light intensity</p>
+<details class="answer-panel">
+<summary>
+Show answer and explanation
+</summary>
+<strong>Answer: D.</strong> The resistance of an LDR decreases as light intensity increases. In a series circuit the same current flows through every component, and <span class="math inline">\(\dfrac{V_1}{V_2}=\dfrac{R_1}{R_2}\)</span>, which depends only on the resistances, not on the current. So the ratio is independent of light intensity.
+</details>
+</section>
+<section id="example-3-10.1-mc-easy-q7" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-3-10.1-mc-easy-q7">Example 3 · 10.1 MC Easy Q7</h4>
+<p>A cell is connected to a resistor.</p>
+<p><img src="../assets/questions/dc-circuits/mc-101-easy-q7-cell-resistor.webp" class="question-figure img-fluid" alt="A cell connected to a resistor"></p>
+<p>At any given moment, the potential difference across the cell is less than its electromotive force.</p>
+<p>Which statement explains this?</p>
+<p>A. the cell is continually discharging</p>
+<p>B. the connecting wire has some resistance</p>
+<p>C. energy is needed to drive charge through the cell</p>
+<p>D. power is used when there is a current in the resistor</p>
+<details class="answer-panel">
+<summary>
+Show answer and explanation
+</summary>
+<strong>Answer: C.</strong> Most cells have some internal resistance, so energy is needed to drive charge through the cell. This energy is lost inside the cell, making the terminal p.d. lower than the e.m.f.
+</details>
+</section>
+</section>
+<section id="dc-practical-circuits-kirchhoffs-laws---medium" class="level3">
+<h3 class="anchored" data-anchor-id="dc-practical-circuits-kirchhoffs-laws---medium">10.1 DC Practical Circuits &amp; Kirchhoff’s Laws - Medium</h3>
+<section id="example-4-10.1-mc-medium-q1" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-4-10.1-mc-medium-q1">Example 4 · 10.1 MC Medium Q1</h4>
+<p>A cell of e.m.f. 2.0 V and negligible internal resistance is connected to a network of resistors as shown.</p>
+<p><img src="../assets/questions/dc-circuits/mc-101-medium-q1-network.webp" class="question-figure img-fluid" alt="A 2.0 V cell connected to a network of 2.0 ohm and 4.0 ohm resistors"></p>
+<p>What is the current <span class="math inline">\(I\)</span>?</p>
+<p>A. 0.25 A</p>
+<p>B. 0.33 A</p>
+<p>C. 0.50 A</p>
+<p>D. 1.5 A</p>
+<details class="answer-panel">
+<summary>
+Show answer and explanation
+</summary>
+<strong>Answer: A.</strong> The two 4.0 Ω resistors in parallel give 2.0 Ω, and this is in series with a 2.0 Ω resistor to give 4.0 Ω in one branch, which is in parallel with another 2.0 Ω. The total resistance is <span class="math inline">\(\frac{4}{3}\ \Omega\)</span>, so the current from the cell is <span class="math inline">\(I=E/R_{\text{total}}=2.0/(4/3)=1.5\ \mathrm{A}\)</span>. This 1.5 A splits equally between the two equal branches, and <span class="math inline">\(I\)</span> (through one 2.0 Ω resistor) <span class="math inline">\(=0.25\ \mathrm{A}\)</span>.
+</details>
+</section>
+<section id="example-5-10.1-mc-medium-q3" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-5-10.1-mc-medium-q3">Example 5 · 10.1 MC Medium Q3</h4>
+<p>The diagram shows part of a current-carrying circuit. The ammeter has negligible resistance.</p>
+<p><img src="../assets/questions/dc-circuits/mc-101-medium-q3-ammeter.webp" class="question-figure img-fluid" alt="Part of a circuit with 1.0 ohm, 2.0 ohm and 5.0 ohm resistors and an ammeter"></p>
+<p>What is the reading on the ammeter?</p>
+<p>A. 0.7 A</p>
+<p>B. 1.3 A</p>
+<p>C. 1.5 A</p>
+<p>D. 1.7 A</p>
+<details class="answer-panel">
+<summary>
+Show answer and explanation
+</summary>
+<strong>Answer: C.</strong> The three resistors are in parallel: <span class="math inline">\(\frac{1}{R}=\frac{1}{1}+\frac{1}{2}+\frac{1}{5}=1.7\)</span>, so <span class="math inline">\(R=0.588\ \Omega\)</span>. With 5.0 A flowing, the p.d. across the branches is <span class="math inline">\(V=IR=5.0\times0.588=2.94\ \mathrm{V}\)</span>. Since the resistors are in parallel, the p.d. across each branch is the same, so the current through the 2.0 Ω branch is <span class="math inline">\(I=V/R=2.94/2=1.5\ \mathrm{A}\)</span>.
+</details>
+</section>
+<section id="example-6-10.1-mc-medium-q4" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-6-10.1-mc-medium-q4">Example 6 · 10.1 MC Medium Q4</h4>
+<p>In the circuit shown, all the resistors are identical.</p>
+<p>The reading on voltmeter <span class="math inline">\(V_1\)</span> is 8.0 V and the reading on voltmeter <span class="math inline">\(V_2\)</span> is 1.0 V.</p>
+<p><img src="../assets/questions/dc-circuits/mc-101-medium-q4-voltmeters.webp" class="question-figure img-fluid" alt="Circuit of five identical resistors with voltmeters V1, V2, V3 and V4"></p>
+<p>What are the readings on the other voltmeters?</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th></th>
+<th>Reading on voltmeter <span class="math inline">\(V_4\)</span> / V</th>
+<th>Reading on voltmeter <span class="math inline">\(V_3\)</span> / V</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>A</td>
+<td>1.5</td>
+<td>1.0</td>
+</tr>
+<tr class="even">
+<td>B</td>
+<td>3.0</td>
+<td>2.0</td>
+</tr>
+<tr class="odd">
+<td>C</td>
+<td>4.5</td>
+<td>3.0</td>
+</tr>
+<tr class="even">
+<td>D</td>
+<td>6.0</td>
+<td>4.0</td>
+</tr>
+</tbody>
+</table>
+<details class="answer-panel">
+<summary>
+Show answer and explanation
+</summary>
+<strong>Answer: B.</strong> With identical resistors, the p.d. across the resistor left of <span class="math inline">\(V_2\)</span> is also 1.0 V, so the lower branch of the parallel combination carries 2.0 V. By Kirchhoff’s second law, the sum of p.d.s around the loop is the e.m.f.: <span class="math inline">\(V_4+V_4+2.0=8.0\)</span>, giving <span class="math inline">\(V_4=3.0\ \mathrm{V}\)</span> and <span class="math inline">\(V_3=2.0\ \mathrm{V}\)</span>.
+</details>
+</section>
+<section id="example-7-10.1-mc-medium-q6" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-7-10.1-mc-medium-q6">Example 7 · 10.1 MC Medium Q6</h4>
+<p>The diagram shows a circuit with four voltmeter readings <span class="math inline">\(V\)</span>, <span class="math inline">\(V_1\)</span>, <span class="math inline">\(V_2\)</span> and <span class="math inline">\(V_3\)</span>.</p>
+<p><img src="../assets/questions/dc-circuits/mc-101-medium-q6-voltmeters.webp" class="question-figure img-fluid" alt="A circuit with resistors and four voltmeters V, V1, V2 and V3"></p>
+<p>Which equation relating the voltmeter readings must be true?</p>
+<p>A. <span class="math inline">\(V=V_1+V_2+V_3\)</span></p>
+<p>B. <span class="math inline">\(V+V_1=V_2+V_3\)</span></p>
+<p>C. <span class="math inline">\(V_3=2(V_2)\)</span></p>
+<p>D. <span class="math inline">\(V-V_1=V_3\)</span></p>
+<details class="answer-panel">
+<summary>
+Show answer and explanation
+</summary>
+<strong>Answer: D.</strong> The circuit forms two loops. Applying Kirchhoff’s second law to each loop gives <span class="math inline">\(V=V_1+V_2\)</span> and <span class="math inline">\(V=V_2+V_3\)</span>, so <span class="math inline">\(V-V_1=V_3\)</span>.
+</details>
+</section>
+<section id="example-8-10.1-mc-medium-q7" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-8-10.1-mc-medium-q7">Example 8 · 10.1 MC Medium Q7</h4>
+<p>A simple circuit is formed by connecting a resistor of resistance <span class="math inline">\(R\)</span> between the terminals of a battery of electromotive force (e.m.f.) 9.0 V and constant internal resistance <span class="math inline">\(r\)</span>.</p>
+<p><img src="../assets/questions/dc-circuits/mc-101-medium-q7-internal-r.webp" class="question-figure img-fluid" alt="A 9.0 V battery with internal resistance r connected to a resistor R"></p>
+<p>A charge of 6.0 C flows through the resistor in a time of 2.0 minutes, causing it to dissipate 48 J of thermal energy.</p>
+<p>What is the internal resistance <span class="math inline">\(r\)</span> of the battery?</p>
+<p>A. 0.17 Ω</p>
+<p>B. 0.33 Ω</p>
+<p>C. 20 Ω</p>
+<p>D. 160 Ω</p>
+<details class="answer-panel">
+<summary>
+Show answer and explanation
+</summary>
+<strong>Answer: C.</strong> The current is <span class="math inline">\(I=Q/t=6.0/120=0.05\ \mathrm{A}\)</span>. The power dissipated in <span class="math inline">\(R\)</span> is <span class="math inline">\(P=48/120=0.4\ \mathrm{W}=I^2R\)</span>, so <span class="math inline">\(R=0.4/0.05^2=160\ \Omega\)</span>. From <span class="math inline">\(E=I(R+r)\)</span>, <span class="math inline">\(9.0=0.05(160+r)\)</span>, so <span class="math inline">\(r=20\ \Omega\)</span>.
+</details>
+</section>
+<section id="example-9-10.1-mc-medium-q8" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-9-10.1-mc-medium-q8">Example 9 · 10.1 MC Medium Q8</h4>
+<p>When four identical resistors are connected as shown in diagram 1, the ammeter reads 1.0 A, and the voltmeter reads zero.</p>
+<p>The resistors and meters are reconnected to the supply, as shown in diagram 2.</p>
+<p><img src="../assets/questions/dc-circuits/mc-101-medium-q8-meters.webp" class="question-figure img-fluid" alt="Two diagrams showing four identical resistors with an ammeter and voltmeter"></p>
+<p>What are the meter readings in diagram 2?</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th></th>
+<th>Voltmeter reading / V</th>
+<th>Ammeter reading / A</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>A</td>
+<td>1.0</td>
+<td>1.0</td>
+</tr>
+<tr class="even">
+<td>B</td>
+<td>3.0</td>
+<td>0.5</td>
+</tr>
+<tr class="odd">
+<td>C</td>
+<td>3.0</td>
+<td>1.0</td>
+</tr>
+<tr class="even">
+<td>D</td>
+<td>6.0</td>
+<td>0.5</td>
+</tr>
+</tbody>
+</table>
+<details class="answer-panel">
+<summary>
+Show answer and explanation
+</summary>
+<strong>Answer: A.</strong> In diagram 1 the voltmeter reads zero because both its junctions are at the same potential; the ammeter reads 1.0 A, so the total current is 2.0 A. In diagram 2 the resistors are arranged so that the voltmeter reads 1.0 V and the ammeter still reads 1.0 A (the p.d. and current pattern is the same as diagram 1).
+</details>
+</section>
+<section id="example-10-10.1-mc-medium-q10" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-10-10.1-mc-medium-q10">Example 10 · 10.1 MC Medium Q10</h4>
+<p>In the circuit shown, all the resistors are identical and all the ammeters have negligible resistance.</p>
+<p>The reading on ammeter <span class="math inline">\(A_1\)</span> is 0.6 A.</p>
+<p><img src="../assets/questions/dc-circuits/mc-101-medium-q10-ammeters.webp" class="question-figure img-fluid" alt="Circuit of identical resistors with four ammeters A1, A2, A3 and A4"></p>
+<p>What are the readings on the other ammeters?</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th></th>
+<th><span class="math inline">\(A_2\)</span> / A</th>
+<th><span class="math inline">\(A_3\)</span> / A</th>
+<th><span class="math inline">\(A_4\)</span> / A</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>A</td>
+<td>1.0</td>
+<td>0.3</td>
+<td>0.1</td>
+</tr>
+<tr class="even">
+<td>B</td>
+<td>1.4</td>
+<td>0.6</td>
+<td>0.2</td>
+</tr>
+<tr class="odd">
+<td>C</td>
+<td>1.8</td>
+<td>0.9</td>
+<td>0.3</td>
+</tr>
+<tr class="even">
+<td>D</td>
+<td>2.2</td>
+<td>1.2</td>
+<td>0.4</td>
+</tr>
+</tbody>
+</table>
+<details class="answer-panel">
+<summary>
+Show answer and explanation
+</summary>
+<strong>Answer: D.</strong> Current flows from the positive terminal of the battery, so the current in <span class="math inline">\(A_2\)</span> has the highest value. From the resistor arrangement, <span class="math inline">\(A_2=2.2\ \mathrm{A}\)</span>, <span class="math inline">\(A_3=1.2\ \mathrm{A}\)</span> and <span class="math inline">\(A_4=0.4\ \mathrm{A}\)</span>.
+</details>
+</section>
+</section>
+<section id="dc-practical-circuits-kirchhoffs-laws---hard" class="level3">
+<h3 class="anchored" data-anchor-id="dc-practical-circuits-kirchhoffs-laws---hard">10.1 DC Practical Circuits &amp; Kirchhoff’s Laws - Hard</h3>
+<section id="example-11-10.1-mc-hard-q1" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-11-10.1-mc-hard-q1">Example 11 · 10.1 MC Hard Q1</h4>
+<p>A power supply of electromotive force (e.m.f.) 12 V and internal resistance 2 Ω is connected in series with a load resistor. The value of the load resistor is varied from 0.5 Ω to 4 Ω.</p>
+<p>Which graph shows how the power <span class="math inline">\(P\)</span> dissipated in the load resistor varies with the resistance of the load resistor?</p>
+<p><img src="../assets/questions/dc-circuits/mc-101-hard-q1-power-graphs.webp" class="question-figure img-fluid" alt="Two graphs of power against load resistance labelled A and B"></p>
+<p><img src="../assets/questions/dc-circuits/mc-101-hard-q1-power-graphs2.webp" class="question-figure img-fluid" alt="Two graphs of power against load resistance labelled C and D"></p>
+<details class="answer-panel">
+<summary>
+Show answer and explanation
+</summary>
+<strong>Answer: A.</strong> The power in the load is <span class="math inline">\(P=I^2R=E^2R/(R+r)^2\)</span>. Maximum power is transferred when <span class="math inline">\(R=r=2\ \Omega\)</span>, so the graph rises to a peak at 2 Ω and then falls – graph A.
+</details>
+</section>
+<section id="example-12-10.1-mc-hard-q2" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-12-10.1-mc-hard-q2">Example 12 · 10.1 MC Hard Q2</h4>
+<p>Six resistors, each of resistance 5 Ω, are connected to a 2 V cell of negligible internal resistance.</p>
+<p><img src="../assets/questions/dc-circuits/mc-101-hard-q2-six-resistors.webp" class="question-figure img-fluid" alt="Six 5 ohm resistors connected to a 2 V cell with terminals X and Y"></p>
+<p>What is the potential difference between terminals X and Y?</p>
+<details class="answer-panel">
+<summary>
+Show answer and explanation
+</summary>
+<strong>Answer: A.</strong> The network is a balanced arrangement in which the potential at X equals the potential at Y, so the p.d. between X and Y is zero.
+</details>
+</section>
+<section id="example-13-10.1-mc-hard-q6" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-13-10.1-mc-hard-q6">Example 13 · 10.1 MC Hard Q6</h4>
+<p>A p.d. of 12 V is connected between P and Q.</p>
+<p><img src="../assets/questions/dc-circuits/mc-101-hard-q6-pd-wheatstone.webp" class="question-figure img-fluid" alt="Four resistors of 500, 1000, 2000 and 1000 ohms arranged with terminals P, Q, X and Y"></p>
+<p>What is the p.d. between X and Y?</p>
+<p>A. 0 V</p>
+<p>B. 4 V</p>
+<p>C. 6 V</p>
+<p>D. 8 V</p>
+<details class="answer-panel">
+<summary>
+Show answer and explanation
+</summary>
+<strong>Answer: B.</strong> The p.d. across the 500 Ω resistor is <span class="math inline">\(12\times\frac{500}{500+1000}=4\ \mathrm{V}\)</span> and the p.d. across the 2000 Ω resistor is <span class="math inline">\(12\times\frac{2000}{2000+1000}=8\ \mathrm{V}\)</span>. The p.d. between X and Y is the difference: <span class="math inline">\(8-4=4\ \mathrm{V}\)</span>.
+</details>
+</section>
+<section id="example-14-10.1-mc-hard-q9" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-14-10.1-mc-hard-q9">Example 14 · 10.1 MC Hard Q9</h4>
+<p>A 20 V d.c. supply is connected to a circuit consisting of five resistors L, M, N, P and Q.</p>
+<p>There is a potential drop of 7 V across L and a further 4 V potential drop across N.</p>
+<p><img src="../assets/questions/dc-circuits/mc-101-hard-q9-drops.webp" class="question-figure img-fluid" alt="A 20 V supply connected to five resistors L, M, N, P and Q with labelled potential drops"></p>
+<p>What are the potential drops across M, P and Q?</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th></th>
+<th>M / V</th>
+<th>P / V</th>
+<th>Q / V</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>A</td>
+<td>9</td>
+<td>7</td>
+<td>3</td>
+</tr>
+<tr class="even">
+<td>B</td>
+<td>13</td>
+<td>7</td>
+<td>13</td>
+</tr>
+<tr class="odd">
+<td>C</td>
+<td>13</td>
+<td>11</td>
+<td>9</td>
+</tr>
+<tr class="even">
+<td>D</td>
+<td>7</td>
+<td>3</td>
+<td>7</td>
+</tr>
+</tbody>
+</table>
+<details class="answer-panel">
+<summary>
+Show answer and explanation
+</summary>
+<strong>Answer: C.</strong> Around loop 1, the 7 V drop across L means a 13 V drop across M (20 − 7 = 13 V). Around loop 2, the p.d. between P and Q is 13 V − 4 V = 9 V, so the drop across Q is 9 V and the drop across P is 20 − 9 = 11 V.
+</details>
+</section>
+<section id="example-15-10.1-mc-hard-q10" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-15-10.1-mc-hard-q10">Example 15 · 10.1 MC Hard Q10</h4>
+<p>The diagram shows the electric motor for a garden pump connected to a 24 V power supply by an insulated two-core cable.</p>
+<p><img src="../assets/questions/dc-circuits/mc-101-hard-q10-motor-cable.webp" class="question-figure img-fluid" alt="A 24 V power supply connected to a pump motor by a two-core cable with terminals X and Y"></p>
+<p>The motor does not work, so to find the fault, the negative terminal of a voltmeter is connected to the negative terminal of the power supply, and its other end is connected in turn to terminals X and Y at the motor.</p>
+<p>Which row represents two readings and a correct conclusion?</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th></th>
+<th>Reading at X / V</th>
+<th>Reading at Y / V</th>
+<th>Conclusion</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>A</td>
+<td>24</td>
+<td>0</td>
+<td>break in positive wire of cable</td>
+</tr>
+<tr class="even">
+<td>B</td>
+<td>24</td>
+<td>12</td>
+<td>break in negative wire of cable</td>
+</tr>
+<tr class="odd">
+<td>C</td>
+<td>24</td>
+<td>24</td>
+<td>break in connection within the motor</td>
+</tr>
+<tr class="even">
+<td>D</td>
+<td>24</td>
+<td>24</td>
+<td>break in negative wire of cable</td>
+</tr>
+</tbody>
+</table>
+<details class="answer-panel">
+<summary>
+Show answer and explanation
+</summary>
+<strong>Answer: D.</strong> X is connected to the positive terminal, so the reading at X is 24 V, meaning there is no break in the positive wire. If the negative wire is broken, no current flows and Y is also at 24 V (same potential as X), so the reading at Y is 24 V.
+</details>
+</section>
+</section>
+<section id="dc-potential-dividers---easy" class="level3">
+<h3 class="anchored" data-anchor-id="dc-potential-dividers---easy">10.2 DC Potential Dividers - Easy</h3>
+<section id="example-16-10.2-mc-easy-q1" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-16-10.2-mc-easy-q1">Example 16 · 10.2 MC Easy Q1</h4>
+<p>A potential divider consists of a fixed resistor R and a light-dependent resistor (LDR).</p>
+<p><img src="../assets/questions/dc-circuits/mc-102-easy-q1-ldr-divider.webp" class="question-figure img-fluid" alt="A potential divider consisting of a fixed resistor R and an LDR with a voltmeter"></p>
+<p>What happens to the voltmeter reading, and why does it happen, when the intensity of light on the LDR increases?</p>
+<p>A. The voltmeter reading decreases because the LDR resistance decreases</p>
+<p>B. The voltmeter reading decreases because the LDR resistance increases</p>
+<p>C. The voltmeter reading increases because the LDR resistance decreases</p>
+<p>D. The voltmeter reading increases because the LDR resistance increases</p>
+<details class="answer-panel">
+<summary>
+Show answer and explanation
+</summary>
+<strong>Answer: A.</strong> The resistance of the LDR decreases as light intensity increases. From <span class="math inline">\(V=IR\)</span>, the potential difference across the LDR also decreases, so the voltmeter reading decreases.
+</details>
+</section>
+<section id="example-17-10.2-mc-easy-q2" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-17-10.2-mc-easy-q2">Example 17 · 10.2 MC Easy Q2</h4>
+<p>The diagram shows a potentiometer circuit.</p>
+<p>The contact T is placed on the wire and moved along the wire until the galvanometer reading is zero. The length XT is then noted.</p>
+<p><img src="../assets/questions/dc-circuits/mc-102-easy-q2-potentiometer.webp" class="question-figure img-fluid" alt="A potentiometer circuit with a wire XY, a galvanometer and two cells"></p>
+<p>In order to calculate the potential difference per unit length of the wire XY, which value must also be known?</p>
+<p>A. the e.m.f. of the cell <span class="math inline">\(E_1\)</span></p>
+<p>B. the e.m.f. of the cell <span class="math inline">\(E_2\)</span></p>
+<p>C. the resistance of resistor R</p>
+<p>D. the resistance of the wire XY</p>
+<details class="answer-panel">
+<summary>
+Show answer and explanation
+</summary>
+<strong>Answer: B.</strong> At balance, the p.d. across XT equals the e.m.f. of the cell <span class="math inline">\(E_2\)</span> connected to the galvanometer. To find the p.d. per unit length of the wire, we need the e.m.f. of <span class="math inline">\(E_2\)</span>.
+</details>
+</section>
+<section id="example-18-10.2-mc-easy-q5" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-18-10.2-mc-easy-q5">Example 18 · 10.2 MC Easy Q5</h4>
+<p>The diagram shows a potential divider circuit designed to provide a variable output p.d.</p>
+<p><img src="../assets/questions/dc-circuits/mc-102-easy-q5-variable-output.webp" class="question-figure img-fluid" alt="A 9.0 V supply connected to two 5.0 k ohm resistors with an output terminal"></p>
+<p>Which gives the available range of output p.d.?</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th></th>
+<th>Maximum output</th>
+<th>Minimum output</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>A</td>
+<td>3.0 V</td>
+<td>0</td>
+</tr>
+<tr class="even">
+<td>B</td>
+<td>4.5 V</td>
+<td>0</td>
+</tr>
+<tr class="odd">
+<td>C</td>
+<td>9.0 V</td>
+<td>0</td>
+</tr>
+<tr class="even">
+<td>D</td>
+<td>9.0 V</td>
+<td>4.5 V</td>
+</tr>
+</tbody>
+</table>
+<details class="answer-panel">
+<summary>
+Show answer and explanation
+</summary>
+<strong>Answer: B.</strong> With two equal 5.0 kΩ resistors across 9.0 V, the output can be varied from 0 V to <span class="math inline">\(9.0\times\frac{5.0}{5.0+5.0}=4.5\ \mathrm{V}\)</span>.
+</details>
+</section>
+<section id="example-19-10.2-mc-easy-q7" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-19-10.2-mc-easy-q7">Example 19 · 10.2 MC Easy Q7</h4>
+<p>In the circuit shown, the 6.0 V battery has negligible internal resistance. Resistors <span class="math inline">\(R_1\)</span> and <span class="math inline">\(R_2\)</span> and the voltmeter have resistance 100 kΩ.</p>
+<p><img src="../assets/questions/dc-circuits/mc-102-easy-q7-voltmeter-r.webp" class="question-figure img-fluid" alt="A 6.0 V battery connected to two 100 k ohm resistors and a 100 k ohm voltmeter"></p>
+<p>What is the current in the resistor <span class="math inline">\(R_2\)</span>?</p>
+<p>A. 20 μA</p>
+<p>B. 30 μA</p>
+<p>C. 40 μA</p>
+<p>D. 60 μA</p>
+<details class="answer-panel">
+<summary>
+Show answer and explanation
+</summary>
+<strong>Answer: A.</strong> <span class="math inline">\(R_2\)</span> and the voltmeter (both 100 kΩ) are in parallel, giving 50 kΩ, which is in series with <span class="math inline">\(R_1\)</span> (100 kΩ), so the total resistance is 150 kΩ. The total current is <span class="math inline">\(I=6.0/150000=40\ \mu\mathrm{A}\)</span>. This splits equally at the junction, so the current in <span class="math inline">\(R_2\)</span> is 20 μA.
+</details>
+</section>
+<section id="example-20-10.2-mc-easy-q9" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-20-10.2-mc-easy-q9">Example 20 · 10.2 MC Easy Q9</h4>
+<p>The circuit is designed to trigger an alarm system when the input voltage exceeds some preset value. It does this by comparing <span class="math inline">\(V_{\text{out}}\)</span> with a fixed reference voltage, which is set at 4.8 V.</p>
+<p><img src="../assets/questions/dc-circuits/mc-102-easy-q9-alarm.webp" class="question-figure img-fluid" alt="A potential divider with 15 k ohm and 10 k ohm resistors producing an output voltage Vout"></p>
+<p><span class="math inline">\(V_{\text{out}}\)</span> is equal to 4.8 V.</p>
+<p>What is the input voltage <span class="math inline">\(V_{\text{in}}\)</span>?</p>
+<p>A. 4.8 V</p>
+<p>B. 7.2 V</p>
+<p>C. 9.6 V</p>
+<p>D. 12 V</p>
+<details class="answer-panel">
+<summary>
+Show answer and explanation
+</summary>
+<strong>Answer: D.</strong> Using the potential divider equation, <span class="math inline">\(V_{\text{out}}=V_{\text{in}}\frac{R_2}{R_1+R_2}\)</span> with <span class="math inline">\(R_1=15\ \mathrm{k\Omega}\)</span> and <span class="math inline">\(R_2=10\ \mathrm{k\Omega}\)</span>: <span class="math inline">\(4.8=V_{\text{in}}\times\frac{10}{25}\)</span>, so <span class="math inline">\(V_{\text{in}}=12\ \mathrm{V}\)</span>.
+</details>
+</section>
+</section>
+</section>
+<section id="structured-questions" class="level2">
+<h2 class="anchored" data-anchor-id="structured-questions">Structured Questions</h2>
+<section id="dc-practical-circuits-kirchhoffs-laws---easy-1" class="level3">
+<h3 class="anchored" data-anchor-id="dc-practical-circuits-kirchhoffs-laws---easy-1">10.1 DC Practical Circuits &amp; Kirchhoff’s Laws - Easy</h3>
+<section id="example-1-10.1-sq-easy-q1" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-1-10.1-sq-easy-q1">Example 1 · 10.1 SQ Easy Q1</h4>
+<p>Three resistors of resistances <span class="math inline">\(R_1\)</span>, <span class="math inline">\(R_2\)</span> and <span class="math inline">\(R_3\)</span> are connected as shown in Fig. 1.1.</p>
+<p><img src="../assets/questions/dc-circuits/sq-101-easy-q1a-series.webp" class="question-figure img-fluid" alt="Three resistors R1, R2 and R3 connected in series with current I"></p>
+<p>The potential differences across the resistors are <span class="math inline">\(V_1\)</span>, <span class="math inline">\(V_2\)</span> and <span class="math inline">\(V_3\)</span>. The current in the combination of resistors is <span class="math inline">\(I\)</span>.</p>
+<p><strong>(a)</strong> Show that the total resistance <span class="math inline">\(R\)</span> of the combination is given by the equation</p>
+<p><span class="math display">\[R=R_1+R_2+R_3.\]</span></p>
+<p><code>[3 marks]</code></p>
+<p>Three resistors are placed in a circuit with a cell of 10 V and negligible internal resistance and two switches <span class="math inline">\(S_1\)</span> and <span class="math inline">\(S_2\)</span>. This is shown in Fig. 1.1.</p>
+<p><img src="../assets/questions/dc-circuits/sq-101-easy-q1b-switches.webp" class="question-figure img-fluid" alt="A 10 V cell with two switches S1 and S2 and three resistors of 3.0, 2.0 and 4.0 k ohm"></p>
+<p><strong>(b)</strong> Complete Table 1.1.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Position of switches</th>
+<th></th>
+<th>Total resistance / kΩ</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\(S_1\)</span></td>
+<td><span class="math inline">\(S_2\)</span></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>open</td>
+<td>closed</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>closed</td>
+<td>open</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>closed</td>
+<td>closed</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><code>[3 marks]</code></p>
+<p>The cell has an e.m.f. of 10 V and negligible internal resistance.</p>
+<p><strong>(c)</strong> Calculate the current from the cell when</p>
+<p><strong>(i)</strong> switch <span class="math inline">\(S_1\)</span> is closed; <code>[1]</code></p>
+<p><strong>(ii)</strong> both <span class="math inline">\(S_1\)</span> and <span class="math inline">\(S_2\)</span> are closed. <code>[1]</code></p>
+<p><code>[2 marks]</code></p>
+<p><strong>(d)</strong> Using your answers in part (c), determine the current from the cell if just switch <span class="math inline">\(S_2\)</span> is closed. <code>[3 marks]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<ul>
+<li><strong>(a)</strong> The total p.d. <span class="math inline">\(V\)</span> is the sum of the p.d.s across each resistor: <span class="math inline">\(V=V_1+V_2+V_3\)</span>. <code>[1]</code> Using Ohm’s law: <span class="math inline">\(IR=IR_1+IR_2+IR_3\)</span>. <code>[1]</code> Dividing by <span class="math inline">\(I\)</span>: <span class="math inline">\(R=R_1+R_2+R_3\)</span>. <code>[1]</code></li>
+<li><strong>(b)</strong> open/closed: 4.0 kΩ; <code>[1]</code> closed/open: 5.0 kΩ; <code>[1]</code> closed/closed: 2.2 kΩ. <code>[1]</code></li>
+<li><strong>(c)(i)</strong> With only <span class="math inline">\(S_1\)</span> closed, <span class="math inline">\(R=5.0\ \mathrm{k\Omega}\)</span>, so <span class="math inline">\(I=V/R=10/5000=2.0\times10^{-3}\ \mathrm{A}\)</span> (2 mA). <code>[1]</code></li>
+<li><strong>(c)(ii)</strong> With both switches closed, <span class="math inline">\(R=2.2\ \mathrm{k\Omega}\)</span>, so <span class="math inline">\(I=10/2200=4.5\times10^{-3}\ \mathrm{A}\)</span> (4.5 mA). <code>[1]</code></li>
+<li><strong>(d)</strong> By Kirchhoff’s first law, the total current equals the sum of the branch currents: <span class="math inline">\(I=I_1+I_2\)</span>. <code>[1]</code> <span class="math inline">\(I_2=I-I_1=(4.5-2.0)\times10^{-3}\)</span>. <code>[1]</code> <span class="math inline">\(I_2=2.5\times10^{-3}\ \mathrm{A}\)</span> (2.5 mA). <code>[1]</code></li>
+</ul>
+<code>[Total: 11 marks]</code>
+</details>
+</section>
+<section id="example-2-10.1-sq-easy-q2" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-2-10.1-sq-easy-q2">Example 2 · 10.1 SQ Easy Q2</h4>
+<p><strong>(a)</strong> Explain why the electromotive force (e.m.f.) of a cell with internal resistance may be more than the terminal potential difference (p.d.) of the cell. <code>[2 marks]</code></p>
+<p><strong>(b)</strong> Compare the definitions of e.m.f. and p.d. <code>[3 marks]</code></p>
+<p><strong>(c)</strong> For a cell, explain the term internal resistance. <code>[1 mark]</code></p>
+<p>A battery of e.m.f. 1508 V and internal resistance <span class="math inline">\(r\)</span> is connected to a resistor A, as shown in Fig. 1.1.</p>
+<p><img src="../assets/questions/dc-circuits/sq-101-easy-q2d-battery.webp" class="question-figure img-fluid" alt="A battery of e.m.f. 1508 V and internal resistance r connected to a resistor A"></p>
+<p>The current in resistor A is 400 mA and the power dissipated by it is 600 W.</p>
+<p><strong>(d)</strong> Calculate <span class="math inline">\(r\)</span> of the battery. <code>[3 marks]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<ul>
+<li><strong>(a)</strong> There are lost volts within the cell, or energy is used / spent on the internal resistance. <code>[1]</code> This happens when the cell supplies a current. <code>[1]</code></li>
+<li><strong>(b)</strong> E.m.f. is the transfer of chemical energy into electrical energy. <code>[1]</code> p.d. is the transfer of electrical energy into other (thermal) forms. <code>[1]</code> Both are energy per unit charge. <code>[1]</code></li>
+<li><strong>(c)</strong> Internal resistance is the resistance of a cell causing a loss of voltage / energy loss. <code>[1]</code></li>
+<li><strong>(d)</strong> <span class="math inline">\(P=VI\)</span>, so <span class="math inline">\(V=P/I=600/0.4=1500\ \mathrm{V}\)</span>. <code>[1]</code> From <span class="math inline">\(E=V+Ir\)</span>: <span class="math inline">\(r=(E-V)/I\)</span>. <code>[1]</code> <span class="math inline">\(r=(1508-1500)/0.4=20\ \Omega\)</span>. <code>[1]</code></li>
+</ul>
+<code>[Total: 9 marks]</code>
+</details>
+</section>
+<section id="example-3-10.1-sq-easy-q3" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-3-10.1-sq-easy-q3">Example 3 · 10.1 SQ Easy Q3</h4>
+<p><strong>(a)</strong> State Kirchhoff’s first law. <code>[1]</code></p>
+<p><strong>(ii)</strong> State the quantity that is conserved by this law. <code>[1]</code></p>
+<p><code>[2 marks]</code></p>
+<p><strong>(b)</strong> State Kirchhoff’s second law. <code>[1]</code></p>
+<p><strong>(ii)</strong> State the quantity that is conserved by this law. <code>[1]</code></p>
+<p><code>[2 marks]</code></p>
+<p>Fig. 1.1 shows a list of circuit components.</p>
+<p><img src="../assets/questions/dc-circuits/sq-101-easy-q3c-symbols.webp" class="question-figure img-fluid" alt="A list of circuit components: Earth, Variable resistor, Heater, LED, Thermistor and Microphone"></p>
+<p><strong>(c)</strong> In the right-hand column, sketch the circuit symbol for the component in the left-hand column of Fig. 1.1. <code>[6 marks]</code></p>
+<p>Two cells of e.m.f. <span class="math inline">\(E_1\)</span> and <span class="math inline">\(E_2\)</span> of negligible internal resistance are connected to resistors R in a circuit shown in Fig. 1.2.</p>
+<p><img src="../assets/questions/dc-circuits/sq-101-easy-q3d-two-cells.webp" class="question-figure img-fluid" alt="Two cells E1 and E2 connected to resistors R in a circuit with currents I1, I2 and I3"></p>
+<p><strong>(d)</strong> Use Kirchhoff’s laws to state the relation between</p>
+<p><strong>(i)</strong> <span class="math inline">\(I_1\)</span>, <span class="math inline">\(I_2\)</span> and <span class="math inline">\(I_3\)</span>; <code>[1]</code></p>
+<p><strong>(ii)</strong> <span class="math inline">\(E_1\)</span>, R, <span class="math inline">\(I_3\)</span> and <span class="math inline">\(I_1\)</span> in loop YZABY. <code>[1]</code></p>
+<p><code>[2 marks]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<ul>
+<li><strong>(a)(i)</strong> The sum of the currents into a junction equals the sum of the currents out of the junction. <code>[1]</code></li>
+<li><strong>(a)(ii)</strong> Charge is conserved. <code>[1]</code></li>
+<li><strong>(b)(i)</strong> The sum of the e.m.f.s around a loop equals the sum of the p.d.s around the loop. <code>[1]</code></li>
+<li><strong>(b)(ii)</strong> Energy is conserved. <code>[1]</code></li>
+<li><strong>(c)</strong> One mark for each correct circuit symbol (Earth, variable resistor, heater, LED, thermistor, microphone). <code>[6]</code></li>
+<li><strong>(d)(i)</strong> <span class="math inline">\(I_1+I_2=I_3\)</span>. <code>[1]</code></li>
+<li><strong>(d)(ii)</strong> <span class="math inline">\(E_1=I_3R+I_1R\)</span>. <code>[1]</code></li>
+</ul>
+<code>[Total: 12 marks]</code>
+</details>
+</section>
+</section>
+<section id="dc-practical-circuits-kirchhoffs-laws---medium-1" class="level3">
+<h3 class="anchored" data-anchor-id="dc-practical-circuits-kirchhoffs-laws---medium-1">10.1 DC Practical Circuits &amp; Kirchhoff’s Laws - Medium</h3>
+<section id="example-4-10.1-sq-medium-q1" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-4-10.1-sq-medium-q1">Example 4 · 10.1 SQ Medium Q1</h4>
+<p>Three resistors of resistances <span class="math inline">\(R_1\)</span>, <span class="math inline">\(R_2\)</span> and <span class="math inline">\(R_3\)</span> are connected as shown in Fig. 1.1.</p>
+<p><img src="../assets/questions/dc-circuits/sq-101-medium-q1a-parallel.webp" class="question-figure img-fluid" alt="Three resistors R1, R2 and R3 connected in parallel"></p>
+<p>The currents in the resistors are <span class="math inline">\(I_1\)</span>, <span class="math inline">\(I_2\)</span> and <span class="math inline">\(I_3\)</span>. The total current in the combination of resistors is <span class="math inline">\(I\)</span> and the potential difference across the combination is <span class="math inline">\(V\)</span>.</p>
+<p><strong>(a)</strong> Show that the total resistance <span class="math inline">\(R\)</span> of the combination is given by the equation</p>
+<p><span class="math display">\[\frac{1}{R}=\frac{1}{R_1}+\frac{1}{R_2}+\frac{1}{R_3}.\]</span></p>
+<p><code>[2 marks]</code></p>
+<p>A battery of electromotive force (e.m.f.) 6.0 V and internal resistance <span class="math inline">\(r\)</span> is connected to an external resistor of resistance 12 Ω and a thermistor, as shown in Fig. 1.2.</p>
+<p><img src="../assets/questions/dc-circuits/sq-101-medium-q1b-thermistor.webp" class="question-figure img-fluid" alt="A 6.0 V battery with internal resistance r connected to a 12 ohm resistor and a thermistor X"></p>
+<p><strong>(b)</strong> The combined resistance of the external resistor and thermistor X connected in parallel is 4.8 Ω.</p>
+<p>Calculate the resistance of X.</p>
+<p>resistance = ____________ <code>[3]</code></p>
+<p><strong>(c)</strong> A charge of 2.5 kC passes through the battery.</p>
+<p>Calculate:</p>
+<p><strong>(i)</strong> the total energy transferred by the battery;</p>
+<p>energy = ____________ <code>[2]</code></p>
+<p><strong>(ii)</strong> the number of electrons that pass through the battery.</p>
+<p>number = ____________ <code>[1]</code></p>
+<p><code>[3 marks]</code></p>
+<p><strong>(d)</strong> The temperature of the thermistor is now decreased.</p>
+<p>State and explain the effect, if any, of this temperature change on the total power produced by the battery. <code>[3 marks]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<ul>
+<li><strong>(a)</strong> The total current is the sum of the currents: <span class="math inline">\(I=I_1+I_2+I_3\)</span>. <code>[1]</code> Using <span class="math inline">\(I=V/R\)</span>: <span class="math inline">\(\frac{V}{R}=\frac{V}{R_1}+\frac{V}{R_2}+\frac{V}{R_3}\)</span>, so <span class="math inline">\(\frac{1}{R}=\frac{1}{R_1}+\frac{1}{R_2}+\frac{1}{R_3}\)</span>. <code>[1]</code></li>
+<li><strong>(b)</strong> <span class="math inline">\(\frac{1}{4.8}=\frac{1}{12}+\frac{1}{R_X}\)</span>. <code>[1]</code> <span class="math inline">\(\frac{1}{R_X}=\frac{1}{4.8}-\frac{1}{12}=\frac{1}{8}\)</span>. <code>[1]</code> <span class="math inline">\(R_X=8\ \Omega\)</span>. <code>[1]</code></li>
+<li><strong>(c)(i)</strong> <span class="math inline">\(W=VQ=6\times2.5\times10^3\)</span>. <code>[1]</code> <span class="math inline">\(W=1.5\times10^4\ \mathrm{J}\)</span>. `[1]$</li>
+<li><strong>(c)(ii)</strong> Number of electrons <span class="math inline">\(=Q/e=2.5\times10^3/(1.6\times10^{-19})\)</span>. <code>[1]</code> <span class="math inline">\(=1.6\times10^{22}\)</span>. <code>[1]</code></li>
+<li><strong>(d)</strong> When the temperature decreases, the thermistor resistance increases. <code>[1]</code> The total circuit resistance increases, so the total current decreases. <code>[1]</code> Since <span class="math inline">\(P=VI\)</span> and <span class="math inline">\(V\)</span> is constant, the total power decreases. <code>[1]</code></li>
+</ul>
+<code>[Total: 11 marks]</code>
+</details>
+</section>
+<section id="example-5-10.1-sq-medium-q2" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-5-10.1-sq-medium-q2">Example 5 · 10.1 SQ Medium Q2</h4>
+<p><strong>(a)</strong> Explain why the terminal potential difference (p.d.) of a cell with internal resistance may differ from the electromotive force (e.m.f.) of the cell. <code>[3 marks]</code></p>
+<p>A battery of e.m.f. 6.2 V and internal resistance 7.0 Ω is connected in series with a resistor of resistance 11 Ω, as shown in Fig. 1.1.</p>
+<p><img src="../assets/questions/dc-circuits/sq-101-medium-q2b-circuit.webp" class="question-figure img-fluid" alt="A 6.2 V battery with internal resistance 7.0 ohm connected in series with an 11 ohm resistor"></p>
+<p>The current <span class="math inline">\(I\)</span> flows through the circuit.</p>
+<p><strong>(b)</strong> Determine</p>
+<p><strong>(i)</strong> the current <span class="math inline">\(I\)</span> in the circuit; <code>[2]</code></p>
+<p><strong>(ii)</strong> the terminal p.d. of the battery. <code>[2]</code></p>
+<p><code>[5 marks]</code></p>
+<p><strong>(c)</strong> A second identical resistor is added in series with the resistor in Fig. 1.1.</p>
+<p>Quantitatively explain the change in the current in the circuit. <code>[2 marks]</code></p>
+<p><strong>(d)</strong> The second 11 Ω resistor is now connected in parallel to the initial 11 Ω resistor in Fig. 1.1.</p>
+<p>Qualitatively explain the effect this has on the battery. <code>[3 marks]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<ul>
+<li><strong>(a)</strong> The terminal p.d. is less than the e.m.f. <code>[1]</code> because there are lost volts, or energy is used / dissipated within the cell. <code>[1]</code> This is due to the internal resistance when a current is supplied. <code>[1]</code></li>
+<li><strong>(b)(i)</strong> <span class="math inline">\(E=I(R+r)\)</span>. <code>[1]</code> <span class="math inline">\(I=6.2/(11+7)=0.34\ \mathrm{A}\)</span>. <code>[1]</code></li>
+<li><strong>(b)(ii)</strong> <span class="math inline">\(V=IR=0.34\times11=3.7\ \mathrm{V}\)</span>. <code>[2]</code></li>
+<li><strong>(c)</strong> The current is halved, decreasing from 0.34 A to 0.17 A. <code>[1]</code> because the resistance in the circuit has doubled from 11 Ω to 22 Ω. <code>[1]</code></li>
+<li><strong>(d)</strong> The battery heats up / gets hotter. <code>[1]</code> because the circuit resistance decreases. <code>[1]</code> so the current increases. <code>[1]</code></li>
+</ul>
+<code>[Total: 13 marks]</code>
+</details>
+</section>
+</section>
+<section id="dc-potential-dividers---easy-1" class="level3">
+<h3 class="anchored" data-anchor-id="dc-potential-dividers---easy-1">10.2 DC Potential Dividers - Easy</h3>
+<section id="example-6-10.2-sq-easy-q1" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-6-10.2-sq-easy-q1">Example 6 · 10.2 SQ Easy Q1</h4>
+<p><strong>(a)</strong> Sketch the circuit symbols for</p>
+<p><strong>(i)</strong> the potentiometer; <code>[1]</code></p>
+<p><strong>(ii)</strong> the galvanometer. <code>[1]</code></p>
+<p><code>[2 marks]</code></p>
+<p>Fig. 1.1 shows a circuit with a potentiometer.</p>
+<p><img src="../assets/questions/dc-circuits/sq-102-easy-q1b-potentiometer.webp" class="question-figure img-fluid" alt="A potentiometer with fixed ends A and C connected across a battery with a sliding contact"></p>
+<p>Fixed ends AC are connected across the battery so that there is a full battery voltage across the whole resistor.</p>
+<p><strong>(b)</strong> State the voltage output, <span class="math inline">\(V_{\text{out}}\)</span>, when the sliding contact is at</p>
+<p><strong>(i)</strong> A; <code>[1]</code></p>
+<p><strong>(ii)</strong> the midpoint B; <code>[1]</code></p>
+<p><strong>(iii)</strong> C. <code>[1]</code></p>
+<p><code>[3 marks]</code></p>
+<p>The resistor is now replaced with a uniform resistance wire connected between ends AC, as shown in Fig. 1.2a. The 28 V cell is replaced with a cell of unknown e.m.f.</p>
+<p><img src="../assets/questions/dc-circuits/sq-102-easy-q1c-wire.webp" class="question-figure img-fluid" alt="A uniform resistance wire between ends A and C with a jockey"></p>
+<p><strong>(c)</strong> Sketch a graph of Fig. 1.2b to show the voltmeter reading <span class="math inline">\(V\)</span> against length <span class="math inline">\(l\)</span> as the jockey is moved from point A to point C.</p>
+<p><img src="../assets/questions/dc-circuits/sq-102-easy-q1c-axes.webp" class="question-figure img-fluid" alt="Axes labelled V in volts against l in cm"></p>
+<p><code>[2 marks]</code></p>
+<p>A potentiometer can be used to compare e.m.f.s of cells or potential differences.</p>
+<p>A test cell is added to the circuit in Fig. 1.2a. A student sets up the circuit shown in Fig. 1.3.</p>
+<p><img src="../assets/questions/dc-circuits/sq-102-easy-q1d-test-cell.webp" class="question-figure img-fluid" alt="A standard cell and a test cell connected to a potentiometer circuit"></p>
+<p><strong>(d)</strong> State why the student will not be able to find a point where the current is zero. <code>[1]</code></p>
+<p><strong>(ii)</strong> The student fixes the issue from part (i) and achieves a balance point when the length of the wire AB is 25.6 cm.</p>
+<p>They repeat the experiment with a standard cell of e.m.f. 1.545 V. The balance point using this cell is 37.2 cm.</p>
+<p>Calculate the e.m.f. of the test cell. <code>[2]</code></p>
+<p><code>[4 marks]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<ul>
+<li><strong>(a)(i)</strong> Correct circuit symbol for a potentiometer (resistor with sliding arrow). <code>[1]</code></li>
+<li><strong>(a)(ii)</strong> Correct circuit symbol for a galvanometer. <code>[1]</code></li>
+<li><strong>(b)(i)</strong> 0 V. <code>[1]</code></li>
+<li><strong>(b)(ii)</strong> 14 V. <code>[1]</code></li>
+<li><strong>(b)(iii)</strong> 28 V. <code>[1]</code></li>
+<li><strong>(c)</strong> Straight line with a positive gradient through the origin. <code>[2]</code></li>
+<li><strong>(d)(i)</strong> The test cell is the wrong way round / the test cell needs to be reversed. <code>[1]</code></li>
+<li><strong>(d)(ii)</strong> <span class="math inline">\(\frac{E_{\text{test}}}{E_{\text{standard}}}=\frac{l_1}{l_2}\)</span>. <code>[1]</code> <span class="math inline">\(E_{\text{test}}=1.545\times\frac{25.6}{37.2}=1.06\ \mathrm{V}\)</span>. <code>[1]</code></li>
+</ul>
+<code>[Total: 11 marks]</code>
+</details>
+</section>
+<section id="example-7-10.2-sq-easy-q2" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-7-10.2-sq-easy-q2">Example 7 · 10.2 SQ Easy Q2</h4>
+<p>Fig. 1.1 shows a potential divider circuit containing a fixed resistor and thermistor.</p>
+<p><img src="../assets/questions/dc-circuits/sq-102-easy-q2a-thermistor-divider.webp" class="question-figure img-fluid" alt="A potential divider circuit containing a fixed resistor and a thermistor"></p>
+<p><strong>(a)</strong> Explain what happens as the temperature increases. <code>[2 marks]</code></p>
+<p>The thermistor is now replaced with an LDR and the output voltage is now taken from the LDR, as shown in Fig. 1.2a.</p>
+<p><img src="../assets/questions/dc-circuits/sq-102-easy-q2b-ldr.webp" class="question-figure img-fluid" alt="A 32 V supply connected to a 6.0 k ohm resistor and an LDR with output voltage Vout"></p>
+<p><strong>(b)</strong> Using Fig. 1.2b, determine the resistance of the LDR when the light intensity is 120 lux.</p>
+<p><img src="../assets/questions/dc-circuits/sq-102-easy-q2b-ldr-graph.webp" class="question-figure img-fluid" alt="A graph of LDR resistance against light intensity"></p>
+<p>resistance = ____________ <code>[1 mark]</code></p>
+<p><strong>(c)</strong> Using your answer to part (b), calculate <span class="math inline">\(V_{\text{out}}\)</span> when the light intensity is 120 lux. <code>[3 marks]</code></p>
+<p><strong>(d)</strong> Using your answer to part (c), determine the voltage across the 6.0 kΩ resistor at a light intensity of 120 lux. <code>[2 marks]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<ul>
+<li><strong>(a)</strong> The resistance of the thermistor decreases. <code>[1]</code> So <span class="math inline">\(V_{\text{out}}\)</span> increases. <code>[1]</code></li>
+<li><strong>(b)</strong> 8 kΩ (read from the graph at 120 lux). <code>[1]</code></li>
+<li><strong>(c)</strong> <span class="math inline">\(V_{\text{out}}=V_{\text{in}}\frac{R_{\text{LDR}}}{R_1+R_{\text{LDR}}}\)</span>. <code>[1]</code> <span class="math inline">\(V_{\text{out}}=32\times\frac{8.0}{6.0+8.0}\)</span>. <code>[1]</code> <span class="math inline">\(V_{\text{out}}=18\ \mathrm{V}\)</span>. <code>[1]</code></li>
+<li><strong>(d)</strong> <span class="math inline">\(V_{6.0}=V_{\text{in}}-V_{\text{out}}=32-18\)</span>. <code>[1]</code> <span class="math inline">\(V_{6.0}=14\ \mathrm{V}\)</span>. <code>[1]</code></li>
+</ul>
+<code>[Total: 8 marks]</code>
+</details>
+</section>
+<section id="example-8-10.2-sq-easy-q3" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-8-10.2-sq-easy-q3">Example 8 · 10.2 SQ Easy Q3</h4>
+<p>A variable resistor is used to control the circuit shown in Fig. 1.1.</p>
+<p><img src="../assets/questions/dc-circuits/sq-102-easy-q3a-variable-r.webp" class="question-figure img-fluid" alt="A 16 V power supply connected in series with an ammeter, an 8.0 ohm resistor and a variable resistor R"></p>
+<p>The variable resistor is connected in series with a 16 V power supply of negligible internal resistance, an ammeter and an 8.0 Ω resistor.</p>
+<p>The resistance R of the variable resistor can be varied between 0 to 12 Ω.</p>
+<p><strong>(a)</strong> Calculate</p>
+<p><strong>(i)</strong> the minimum possible current; <code>[2]</code></p>
+<p><strong>(ii)</strong> the maximum possible current. <code>[2]</code></p>
+<p><code>[4 marks]</code></p>
+<p><strong>(b)</strong> On Fig. 1.2, sketch the variation with R of current <span class="math inline">\(I\)</span> in the circuit.</p>
+<p><img src="../assets/questions/dc-circuits/sq-102-easy-q3b-graph.webp" class="question-figure img-fluid" alt="Axes labelled current I in amperes against resistance R in ohms"></p>
+<p><code>[2 marks]</code></p>
+<p><strong>(c)</strong> Galvanometers are used in null methods.</p>
+<p>Explain how a galvanometer is used in null methods. <code>[2 marks]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<ul>
+<li><strong>(a)(i)</strong> Minimum current occurs with maximum resistance: <span class="math inline">\(R_{\max}=8+12=20\ \Omega\)</span>. <code>[1]</code> <span class="math inline">\(I_{\min}=16/20=0.8\ \mathrm{A}\)</span>. <code>[1]</code></li>
+<li><strong>(a)(ii)</strong> Maximum current occurs with minimum resistance: <span class="math inline">\(R_{\min}=8\ \Omega\)</span>. <code>[1]</code> <span class="math inline">\(I_{\max}=16/8=2.0\ \mathrm{A}\)</span>. <code>[1]</code></li>
+<li><strong>(b)</strong> The graph starts at <span class="math inline">\((0,\ 2.0)\)</span> and ends at <span class="math inline">\((16,\ 0.8)\)</span> with a curve of decreasing gradient. <code>[2]</code></li>
+<li><strong>(c)</strong> The galvanometer has no deflection. <code>[1]</code> when there is no current flow / no potential difference. <code>[1]</code></li>
+</ul>
+<code>[Total: 8 marks]</code>
+</details>
+</section>
+</section>
+<section id="dc-potential-dividers---medium" class="level3">
+<h3 class="anchored" data-anchor-id="dc-potential-dividers---medium">10.2 DC Potential Dividers - Medium</h3>
+<section id="example-9-10.2-sq-medium-q1" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-9-10.2-sq-medium-q1">Example 9 · 10.2 SQ Medium Q1</h4>
+<p>A battery is connected in series with resistors P and Q, as shown in Fig. 1.1.</p>
+<p><img src="../assets/questions/dc-circuits/sq-102-medium-q1a-battery-pq.webp" class="question-figure img-fluid" alt="A 32 V battery connected in series with resistors P and Q, with a variable resistor R in parallel with Q"></p>
+<p>The resistance of P is 7.5 Ω. The resistance of Q is constant. A variable resistor of resistance R is connected in parallel with Q.</p>
+<p>The current <span class="math inline">\(I\)</span> from the battery is changed by varying R from 5 to 20 Ω. The variation with R of I is shown in Fig. 1.2.</p>
+<p><img src="../assets/questions/dc-circuits/sq-102-medium-q1a-current-graph.webp" class="question-figure img-fluid" alt="A graph of current I against resistance R, decreasing from about 2.5 A at R = 5 ohm to about 1.8 A at R = 20 ohm"></p>
+<p><strong>(a)</strong> Use Fig. 1.2 to state and explain the variation of the p.d. across resistor P as R is decreased. Numerical values are not required. <code>[2 marks]</code></p>
+<p><strong>(b)</strong> For R = 7.0 Ω, calculate the p.d. between points Y and Z. <code>[2 marks]</code></p>
+<p><strong>(c)</strong> Show that the resistance of Q is 9.5 Ω. <code>[3 marks]</code></p>
+<p><strong>(d)</strong> State and explain qualitatively how the power provided by the battery changes as the resistance R is decreased. <code>[1 mark]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<ul>
+<li><strong>(a)</strong> As R decreases, the current <span class="math inline">\(I\)</span> increases. <code>[1]</code> so the p.d. across P (given by <span class="math inline">\(V_P=IR_P\)</span>) increases. <code>[1]</code></li>
+<li><strong>(b)</strong> From the graph, <span class="math inline">\(I=2.3\ \mathrm{A}\)</span> at R = 7.0 Ω. <code>[1]</code> P.d. across YZ <span class="math inline">\(=32-(2.3\times7.5)=14.75\approx15\ \mathrm{V}\)</span>. <code>[1]</code></li>
+<li><strong>(c)</strong> Resistance of the Q–R parallel combination <span class="math inline">\(R_{QR}=15/2.3=6.52\ \Omega\)</span>. <code>[1]</code> <span class="math inline">\(\frac{1}{R_{QR}}=\frac{1}{R_Q}+\frac{1}{R}\)</span>. <code>[1]</code> <span class="math inline">\(\frac{1}{R_Q}=\frac{1}{6.52}-\frac{1}{7.0}\)</span>, so <span class="math inline">\(R_Q=9.5\ \Omega\)</span>. <code>[1]</code></li>
+<li><strong>(d)</strong> The power increases. <code>[1]</code> because the current increases while the e.m.f. is constant (<span class="math inline">\(P=VI\)</span>).</li>
+</ul>
+<code>[Total: 8 marks]</code>
+</details>
+</section>
+<section id="example-10-10.2-sq-medium-q2" class="level4 question-card">
+<h4 class="anchored" data-anchor-id="example-10-10.2-sq-medium-q2">Example 10 · 10.2 SQ Medium Q2</h4>
+<p>Fig. 1.1 shows a potential divider circuit with a battery of electromotive force (e.m.f.) 24.0 V connected to two resistors <span class="math inline">\(R_1\)</span> and <span class="math inline">\(R_2\)</span>.</p>
+<p><img src="../assets/questions/dc-circuits/sq-102-medium-q2a-divider.webp" class="question-figure img-fluid" alt="A 24.0 V battery connected to two resistors R1 and R2 in series"></p>
+<p><strong>(a)</strong> When the resistance of <span class="math inline">\(R_1\)</span> is 6.5 Ω, the voltage across it is 7.0 V.</p>
+<p>Show that the resistance of <span class="math inline">\(R_2\)</span> is 16 Ω. <code>[2 marks]</code></p>
+<p>The resistors are replaced with identical filament lamps A and B and the battery is connected in parallel to a linear potentiometer XY, as shown in Fig. 1.2.</p>
+<p><img src="../assets/questions/dc-circuits/sq-102-medium-q2b-lamps.webp" class="question-figure img-fluid" alt="A 24.0 V battery connected to a linear potentiometer XY and two filament lamps A and B"></p>
+<p>The lamps each have the same I–V characteristic shown in Fig. 1.3.</p>
+<p><img src="../assets/questions/dc-circuits/sq-102-medium-q2b-lamp-graph.webp" class="question-figure img-fluid" alt="An I-V graph for a filament lamp, rising to about 3.1 A at 12 V and 4.0 A at 24 V"></p>
+<p>When the slider of the potentiometer is at its midpoint, as shown in Fig. 1.2, the current <span class="math inline">\(I\)</span> in the battery is 4.12 A.</p>
+<p><strong>(b)</strong> Determine the current in lamp B. <code>[1 mark]</code></p>
+<p><strong>(c)</strong> Calculate the total resistance in the circuit. <code>[3 marks]</code></p>
+<p><strong>(d)</strong> The slider of the potentiometer in (c) is moved to end X.</p>
+<p>State and explain the effect on the current of lamps A and B. <code>[2 marks]</code></p>
+<details class="answer-panel">
+<summary>
+Show mark scheme / model answer
+</summary>
+<ul>
+<li><strong>(a)</strong> <span class="math inline">\(V_{\text{out}}=V_{\text{in}}\frac{R_1}{R_1+R_2}\)</span>. <code>[1]</code> <span class="math inline">\(7.0=24.0\times\frac{6.5}{6.5+R_2}\)</span>, giving <span class="math inline">\(R_2=15.8\approx16\ \Omega\)</span>. <code>[1]</code></li>
+<li><strong>(b)</strong> With the slider at the midpoint, each lamp has a p.d. of 12 V. From the graph, the current in lamp B is 3.10 A. <code>[1]</code></li>
+<li><strong>(c)</strong> Current through XY: <span class="math inline">\(I_{XY}=4.12-3.10=1.02\ \mathrm{A}\)</span>. <code>[1]</code> <span class="math inline">\(R_{XY}=24.0/1.02=23.5\ \Omega\)</span>; each lamp has <span class="math inline">\(R=12/3.10=3.87\ \Omega\)</span>. <code>[1]</code> Combined resistance <span class="math inline">\(R_T=\frac{1}{\frac{1}{7.74}+\frac{1}{23.5}}=5.8\ \Omega\)</span>. <code>[1]</code></li>
+<li><strong>(d)</strong> For lamp A, the p.d. decreases to zero, so its current is 0. <code>[1]</code> For lamp B, the p.d. increases to 24.0 V, so its current is 4.0 A (read from the graph). <code>[1]</code></li>
+</ul>
+<code>[Total: 8 marks]</code>
+</details>
+</section>
+</section>
+</section>
+<section id="chapter-checklist" class="level2">
+<h2 class="anchored" data-anchor-id="chapter-checklist">Chapter checklist</h2>
+<ul class="task-list">
+<li><label><input type="checkbox">I can distinguish between e.m.f. and p.d. in terms of energy.</label></li>
+<li><label><input type="checkbox">I can use <span class="math inline">\(E=I(R+r)\)</span> and explain the effect of internal resistance on terminal p.d.</label></li>
+<li><label><input type="checkbox">I can state and apply Kirchhoff’s first and second laws.</label></li>
+<li><label><input type="checkbox">I can derive and use the combined-resistance formulas for series and parallel.</label></li>
+<li><label><input type="checkbox">I can use the potential divider formula <span class="math inline">\(V_{\text{out}}=V_{\text{in}}\frac{R_2}{R_1+R_2}\)</span>.</label></li>
+<li><label><input type="checkbox">I can use a potentiometer and a galvanometer in null methods.</label></li>
+<li><label><input type="checkbox">I can explain the use of thermistors and LDRs in potential dividers.</label></li>
+</ul>
+<section id="original-question-pdfs" class="level3">
+<h3 class="anchored" data-anchor-id="original-question-pdfs">Original question PDFs</h3>
+<ul>
+<li><a href="https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/dc-circuits/10.1-dc-practical-circuits-kirchhoffs-laws-c-easy.pdf">10.1 DC Practical Circuits &amp; Kirchhoff’s Laws - MC Easy</a></li>
+<li><a href="https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/dc-circuits/10.1-dc-practical-circuits-kirchhoffs-laws-c-medium.pdf">10.1 DC Practical Circuits &amp; Kirchhoff’s Laws - MC Medium</a></li>
+<li><a href="https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/dc-circuits/10.1-dc-practical-circuits-kirchhoffs-laws-c-hard.pdf">10.1 DC Practical Circuits &amp; Kirchhoff’s Laws - MC Hard</a></li>
+<li><a href="https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/dc-circuits/10.1-dc-practical-circuits-kirchhoffs-laws-sq-easy.pdf">10.1 DC Practical Circuits &amp; Kirchhoff’s Laws - SQ Easy</a></li>
+<li><a href="https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/dc-circuits/10.1-dc-practical-circuits-kirchhoffs-laws-sq-medium.pdf">10.1 DC Practical Circuits &amp; Kirchhoff’s Laws - SQ Medium</a></li>
+<li><a href="https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/dc-circuits/10.2-dc-potential-dividers-c-easy.pdf">10.2 DC Potential Dividers - MC Easy</a></li>
+<li><a href="https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/dc-circuits/10.2-dc-potential-dividers-c-medium.pdf">10.2 DC Potential Dividers - MC Medium</a></li>
+<li><a href="https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/dc-circuits/10.2-dc-potential-dividers-c-hard.pdf">10.2 DC Potential Dividers - MC Hard</a></li>
+<li><a href="https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/dc-circuits/10.2-dc-potential-dividers-sq-easy.pdf">10.2 DC Potential Dividers - SQ Easy</a></li>
+<li><a href="https://raw.githubusercontent.com/nanoxsj/CIE-Physics-Study/main/resources/original-papers/dc-circuits/10.2-dc-potential-dividers-sq-medium.pdf">10.2 DC Potential Dividers - SQ Medium</a></li>
+</ul>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll(".done-toggle input").forEach((input) => {
+    const key = `cie-physics-${input.dataset.progress}`;
+    input.checked = localStorage.getItem(key) === "true";
+    input.closest(".question-card")?.classList.toggle("is-complete", input.checked);
+    input.addEventListener("change", () => {
+      localStorage.setItem(key, input.checked);
+      input.closest(".question-card")?.classList.toggle("is-complete", input.checked);
+    });
+  });
+
+  document.querySelectorAll(".mc-question").forEach((card) => {
+    const answer = card.dataset.answer;
+    const feedback = card.querySelector(".mc-feedback");
+    const check = card.querySelector(".check-answer");
+    let selected = localStorage.getItem(`cie-physics-${card.id}-choice`) || "";
+
+    const showSelection = () => {
+      card.querySelectorAll(".mc-choice").forEach((choice) => {
+        choice.classList.toggle("is-selected", choice.dataset.choice === selected);
+      });
+    };
+    showSelection();
+
+    card.querySelectorAll(".mc-choice").forEach((choice) => {
+      choice.addEventListener("click", () => {
+        selected = choice.dataset.choice;
+        localStorage.setItem(`cie-physics-${card.id}-choice`, selected);
+        feedback.textContent = "";
+        feedback.className = "mc-feedback";
+        showSelection();
+      });
+    });
+
+    check?.addEventListener("click", () => {
+      if (!selected) {
+        feedback.textContent = "Select an answer first.";
+        feedback.className = "mc-feedback is-pending";
+        return;
+      }
+      const correct = selected === answer;
+      feedback.textContent = correct ? "Correct." : `Not quite. The correct answer is ${answer}.`;
+      feedback.className = `mc-feedback ${correct ? "is-correct" : "is-incorrect"}`;
+    });
+  });
+});
+</script>
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "已复制");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "已复制");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../as-level/09-electricity.html" class="pagination-link" aria-label="9 Electricity">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">9 Electricity</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../a-level/12-motion-in-a-circle.html" class="pagination-link" aria-label="12 Motion in a circle">
+        <span class="nav-page-text">12 Motion in a circle</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>
