@@ -13,6 +13,7 @@ project:
     - as-level/08-superposition.qmd
     - as-level/09-electricity.qmd
     - as-level/10-dc-circuits.qmd
+    - as-level/11-particle-physics.qmd
 
     - a-level/12-motion-in-a-circle.qmd
     - a-level/13-gravitational-fields.qmd
@@ -59,6 +60,8 @@ website:
             text: "9 Electricity"
           - href: as-level/10-dc-circuits.qmd
             text: "10 D.C. circuits"
+          - href: as-level/11-particle-physics.qmd
+            text: "11 Particle physics"
 
       - section: "A Level"
         contents:
