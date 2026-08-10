@@ -1,200 +1,238 @@
 ---
-title: "CIE Physics 学习页面"
+title: "CIE Physics Study Hub"
 subtitle: "2025–2027 syllabus · 9702"
+page-layout: full
+body-class: home-page
 ---
 
-本网站按 Cambridge International AS & A Level Physics 9702 考纲组织。每一章把考纲、核心概念、例题和专题真题放在同一学习路径中。
+::: {.home-hero}
+<div class="home-kicker">Cambridge International AS & A Level · 9702</div>
 
-## 已完成内容
+# Physics Study Hub
+
+One study path for syllabus knowledge, worked examples and topical past-paper questions. Every chapter combines core concepts, original question images and point-by-point answers with official mark schemes.
+
+<div class="home-actions">
+<a class="home-action primary" href="as-level/01-physical-quantities-and-units.html">Explore AS Level</a>
+<a class="home-action" href="a-level/12-motion-in-a-circle.html">Explore A Level</a>
+<a class="home-action" href="as-level/11-particle-physics.html">New: Particle physics</a>
+</div>
+:::
+
+## AS Level · Chapters 1–11
+
+Choose a chapter to begin. Each page keeps the original English wording and diagrams, with answers from the official mark schemes.
+
+::: {.course-grid .as-level}
 
 ::: {.topic-card}
 ### [1 Physical quantities and units](as-level/01-physical-quantities-and-units.qmd)
 
-- 1.1 Physical quantities：数值、单位与数量级估算
-- 1.2 SI units：五个指定基本单位、导出单位、量纲齐次性及词头
-- 同一章节页面内的 Multiple Choice 与 Structured Questions；题目保持原始英文与图像，原始专题 PDF 可直接打开
-:::
-
-::: {.topic-card}
-### [3 Dynamics](as-level/03-dynamics.qmd)
-
-- Newton's laws、force and momentum、terminal velocity、momentum conservation and collisions
-- 题量扩展为 30 道 Multiple Choice 与 15 道完整 Structured Questions
+- 1.1 Physical quantities: values, units and orders of magnitude
+- 1.2 SI units: base units, derived units, dimensional consistency and prefixes
+- Multiple Choice and Structured Questions with original images and PDF links
 :::
 
 ::: {.topic-card}
 ### [2 Kinematics](as-level/02-kinematics.qmd)
 
-- 2.1 Equations of Motion：位移、速度与加速度；运动图像；SUVAT；自由落体与抛体运动
-- 同一章节页面内的 Multiple Choice 与 Structured Questions；原始专题 PDF 可直接打开
+- 2.1 Equations of motion: displacement, velocity, acceleration and motion graphs
+- SUVAT equations, free fall and projectile motion
+- Multiple Choice and Structured Questions with original topical PDFs
+:::
+
+::: {.topic-card}
+### [3 Dynamics](as-level/03-dynamics.qmd)
+
+- Newton's laws, force and momentum, terminal velocity
+- Momentum conservation and collisions
+- 30 Multiple Choice and 15 Structured Questions
 :::
 
 ::: {.topic-card}
 ### [4 Forces, density and pressure](as-level/04-forces-density-pressure.qmd)
 
-- 4.1 Turning effects of forces: centre of gravity, moment, couple and torque
+- 4.1 Turning effects: centre of gravity, moment, couple and torque
 - 4.2 Equilibrium of forces: principle of moments and vector triangles
 - 4.3 Density and pressure: hydrostatic pressure, upthrust and Archimedes' principle
-- 20 Multiple Choice and 10 Structured Questions with independently extracted diagrams and point-by-point answers
+- 20 MC and 10 SQ with independently extracted diagrams
 :::
 
 ::: {.topic-card}
 ### [5 Work, energy and power](as-level/05-work-energy-power.qmd)
 
-- 5.1 Energy conservation: work done, conservation of energy, efficiency and power
+- 5.1 Energy conservation: work done, efficiency and power
 - 5.2 Gravitational potential energy and kinetic energy
-- 20 Multiple Choice and 8 Structured Questions; all Structured Questions and four MC questions use independently extracted diagrams
+- 20 MC and 8 SQ; all SQ and four MC use extracted diagrams
 :::
 
 ::: {.topic-card}
 ### [6 Deformation of solids](as-level/06-deformation-of-solids.qmd)
 
-- 6.1 Stress and strain: Hooke's law, spring constant, stress, strain and the Young modulus
-- 6.2 Elastic and plastic behaviour: stress-strain graphs and elastic strain energy
-- 20 Multiple Choice and 10 Structured Questions; all 20 MC and 12 SQ figures use independently extracted images
+- 6.1 Stress and strain: Hooke's law, spring constant and the Young modulus
+- 6.2 Elastic and plastic behaviour: stress-strain graphs and strain energy
+- 20 MC and 10 SQ; all 20 MC and 12 SQ figures extracted
 :::
 
 ::: {.topic-card}
 ### [7 Waves](as-level/07-waves.qmd)
 
-- 7.1 Progressive waves: wave equation, phase difference, intensity and CRO traces
-- 7.2 Transverse and longitudinal waves: wave types and the Doppler effect for sound
-- 7.3 Electromagnetic spectrum: regions, wavelength ranges and polarisation with Malus's law
-- 20 Multiple Choice and 6 Structured Questions; 18 of the MC and all 12 SQ figures use independently extracted images
+- 7.1 Progressive waves: wave equation, phase difference, intensity and CRO
+- 7.2 Transverse and longitudinal waves, Doppler effect for sound
+- 7.3 Electromagnetic spectrum, polarisation and Malus's law
+- 20 MC and 6 SQ; 18 MC and 12 SQ figures extracted
 :::
 
 ::: {.topic-card}
 ### [8 Superposition](as-level/08-superposition.qmd)
 
-- 8.1 Stationary waves: superposition, nodes and antinodes, strings and tubes
-- 8.2 Diffraction and interference: double-slit interference and the diffraction grating
-- 20 Multiple Choice and 6 Structured Questions; all 20 MC and all SQ figures use independently extracted images
+- 8.1 Stationary waves: nodes, antinodes, strings and tubes
+- 8.2 Diffraction and interference: double-slit and diffraction grating
+- 20 MC and 6 SQ; all figures extracted
 :::
 
 ::: {.topic-card}
 ### [9 Electricity](as-level/09-electricity.qmd)
 
-- 9.1 Electric current and potential difference: charge, current, drift velocity and power
+- 9.1 Electric current and p.d.: charge, current, drift velocity and power
 - 9.2 Resistance: Ohm's law and I-V characteristics
-- 9.3 Resistivity: $\rho=RA/L$ and how resistance changes with temperature, illumination and strain
-- 20 Multiple Choice and 10 Structured Questions; all 20 MC and 10 SQ figures use independently extracted images
+- 9.3 Resistivity: $\rho=RA/L$ and temperature, illumination and strain
+- 20 MC and 10 SQ; all figures extracted
 :::
 
 ::: {.topic-card}
 ### [10 D.C. circuits](as-level/10-dc-circuits.qmd)
 
 - 10.1 Practical circuits: e.m.f. vs p.d., internal resistance and power
-- 10.2 Kirchhoff's laws: charge and energy conservation, series and parallel resistance
-- 10.3 Potential dividers: potentiometer, galvanometer null methods, thermistors and LDRs
-- 20 Multiple Choice and 10 Structured Questions with independently extracted circuit diagrams
+- 10.2 Kirchhoff's laws: charge and energy conservation, series and parallel
+- 10.3 Potential dividers: potentiometer, null methods, thermistors and LDRs
+- 20 MC and 10 SQ with extracted circuit diagrams
 :::
 
 ::: {.topic-card}
 ### [11 Particle physics](as-level/11-particle-physics.qmd)
 
-- 11.1 Atoms, nuclei and radiation: the nuclear atom, α-scattering, α/β/γ decay and the atomic mass unit
-- 11.2 Fundamental particles: quarks and their charges, baryons and mesons, β-decay quark changes and leptons
-- 20 Multiple Choice and 6 Structured Questions; 10 MC and 1 SQ figure use independently extracted images
+- 11.1 Atoms, nuclei and radiation: α-scattering, α/β/γ decay and the atomic mass unit
+- 11.2 Fundamental particles: quarks, baryons, mesons and leptons
+- 20 MC and 6 SQ; 10 MC and 1 SQ figure extracted
 :::
+
+:::
+
+## A Level · Chapters 12–25
+
+::: {.course-grid .a-level}
 
 ::: {.topic-card}
 ### [12 Motion in a circle](a-level/12-motion-in-a-circle.qmd)
 
-- 12.1 Kinematics of uniform circular motion: radians, angular speed, period, frequency and $v=r\omega$
-- 12.2 Centripetal acceleration: inward acceleration, centripetal force and circular-motion applications
-- 8 complete Structured Questions with independently extracted diagrams and PDF-based mark schemes
+- 12.1 Kinematics of uniform circular motion: radians, angular speed and $v=r\omega$
+- 12.2 Centripetal acceleration and centripetal force
+- 8 Structured Questions with extracted diagrams
 :::
 
 ::: {.topic-card}
 ### [13 Gravitational fields](a-level/13-gravitational-fields.qmd)
 
-- 13.1–13.4: gravitational fields, Newtonian gravitation, point-mass fields and gravitational potential
-- Circular and geostationary orbits, potential-energy changes and orbital-energy calculations
-- 15 complete Structured Questions, 9 independently extracted diagrams and point-by-point PDF-based answers
+- 13.1–13.4: fields, Newtonian gravitation, point-mass fields and potential
+- Circular and geostationary orbits, potential-energy changes
+- 15 Structured Questions, 9 extracted diagrams
 :::
 
 ::: {.topic-card}
 ### [14 Temperature](a-level/14-temperature.qmd)
 
-- 14.1-14.3: thermal equilibrium, thermometric properties, thermodynamic temperature, specific heat capacity and latent heat
-- 12 selected Structured Questions with independently extracted diagrams and point-by-point PDF-based answers
+- 14.1–14.3: thermal equilibrium, thermometric properties and thermodynamic temperature
+- Specific heat capacity and latent heat
+- 12 Structured Questions with extracted diagrams
 :::
 
 ::: {.topic-card}
 ### [15 Ideal gases](a-level/15-ideal-gases.qmd)
 
-- 15.1-15.3: the mole, ideal-gas equations, kinetic-theory assumptions, molecular pressure, r.m.s. speed and translational kinetic energy
-- 12 selected Structured Questions with independently extracted diagrams and point-by-point PDF-based answers
+- 15.1–15.3: the mole, ideal-gas equations and kinetic-theory assumptions
+- Molecular pressure, r.m.s. speed and translational kinetic energy
+- 12 Structured Questions with extracted diagrams
 :::
 
 ::: {.topic-card}
 ### [16 Thermodynamics](a-level/16-thermodynamics.qmd)
 
-- 16.1-16.2: internal energy, molecular kinetic and potential energies, constant-pressure work and the first law
-- All 5 available Structured Questions with independently extracted diagrams and point-by-point PDF-based answers
+- 16.1–16.2: internal energy, molecular kinetic and potential energies
+- Constant-pressure work and the first law
+- All 5 Structured Questions with extracted diagrams
 :::
 
 ::: {.topic-card}
 ### [17 Oscillations](a-level/17-oscillations.qmd)
 
-- 17.1-17.3: simple harmonic motion, SHM energy, damping, forced oscillations and resonance
-- All 8 available Structured Questions, 12 independently extracted figures and point-by-point PDF-based answers
+- 17.1–17.3: simple harmonic motion, SHM energy, damping and resonance
+- Forced oscillations and resonance
+- All 8 Structured Questions, 12 extracted figures
 :::
 
 ::: {.topic-card}
 ### [18 Electric fields](a-level/18-electric-fields.qmd)
 
-- 18.1-18.5: field lines, uniform fields, Coulomb's law, point-charge fields, electric potential and potential energy
-- All 6 available Structured Questions, 9 independently extracted figures and point-by-point PDF-based answers
+- 18.1–18.5: field lines, uniform fields, Coulomb's law and point-charge fields
+- Electric potential and potential energy
+- All 6 Structured Questions, 9 extracted figures
 :::
 
 ::: {.topic-card}
 ### [19 Capacitance](a-level/19-capacitance.qmd)
 
-- 19.1-19.3: capacitance, capacitor combinations, stored energy, time constant and exponential discharge
-- All 6 available Structured Questions, 13 independently extracted figures and point-by-point PDF-based answers
+- 19.1–19.3: capacitance, capacitor combinations and stored energy
+- Time constant and exponential discharge
+- All 6 Structured Questions, 13 extracted figures
 :::
 
 ::: {.topic-card}
 ### [20 Magnetic fields](a-level/20-magnetic-fields.qmd)
 
-- 20.1-20.5: magnetic fields and forces, Hall effect, fields due to currents, flux and electromagnetic induction
-- All 12 available Structured Questions, 21 independently extracted figures and point-by-point PDF-based answers
+- 20.1–20.5: magnetic forces, Hall effect, fields due to currents and flux
+- Electromagnetic induction
+- All 12 Structured Questions, 21 extracted figures
 :::
 
 ::: {.topic-card}
 ### [21 Alternating currents](a-level/21-alternating-currents.qmd)
 
-- 21.1-21.2: sinusoidal supplies, r.m.s. values, power, rectification and smoothing
-- All 6 available Structured Questions, 14 independently extracted figures and point-by-point PDF-based answers
+- 21.1–21.2: sinusoidal supplies, r.m.s. values and power
+- Rectification and smoothing
+- All 6 Structured Questions, 14 extracted figures
 :::
 
 ::: {.topic-card}
 ### [22 Quantum physics](a-level/22-quantum-physics.qmd)
 
-- 22.1-22.4: photons, the photoelectric effect, wave-particle duality, atomic energy levels and line spectra
-- All 9 available Structured Questions, 10 independently extracted figures and point-by-point PDF-based answers
+- 22.1–22.4: photons, the photoelectric effect and wave-particle duality
+- Atomic energy levels and line spectra
+- All 9 Structured Questions, 10 extracted figures
 :::
 
 ::: {.topic-card}
 ### [23 Nuclear physics](a-level/23-nuclear-physics.qmd)
 
-- 23.1-23.2: mass defect, binding energy, fission, fusion and radioactive decay
-- All 12 available Structured Questions, 12 independently extracted figures and point-by-point PDF-based answers
+- 23.1–23.2: mass defect, binding energy, fission and fusion
+- Radioactive decay
+- All 12 Structured Questions, 12 extracted figures
 :::
 
 ::: {.topic-card}
 ### [24 Medical physics](a-level/24-medical-physics.qmd)
 
-- 24.1-24.3: ultrasound transducers and imaging, X-ray production and CT, and PET scanning
-- 8 selected Structured Questions, 10 independently extracted figures and point-by-point PDF-based answers
+- 24.1–24.3: ultrasound transducers and imaging, X-ray production and CT
+- PET scanning
+- 8 Structured Questions, 10 extracted figures
 :::
 
 ::: {.topic-card}
 ### [25 Astronomy and cosmology](a-level/25-astronomy-and-cosmology.qmd)
 
-- 25.1-25.3: standard candles, stellar radii, redshift, Hubble's law and the Big Bang theory
-- 8 selected Structured Questions, 5 independently extracted figures and point-by-point PDF-based answers
+- 25.1–25.3: standard candles, stellar radii, redshift and Hubble's law
+- The Big Bang theory
+- 8 Structured Questions, 5 extracted figures
 :::
 
-后续 AS 与 A2 章节将沿用相同结构制作。
+:::
