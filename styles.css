@@ -131,6 +131,10 @@ body:has(.home-hero) .topic-card li + li { margin-top: .38rem; }
 .example-card > :first-child { margin-top: 0; }
 .example-card h3, .example-card h4 { margin-top: .25rem; color: #123b78; }
 .example-card table { background: rgba(255, 255, 255, .72); }
+.knowledge-figure { margin: 1.2rem auto 1.6rem; padding: 1rem 1.15rem .75rem; border: 1px solid #dbeafe; border-radius: 14px; background: #fff; text-align: center; box-shadow: 0 7px 18px rgba(37, 99, 235, .06); }
+.knowledge-figure img { display: block; width: min(100%, 760px); max-height: 760px; object-fit: contain; margin: 0 auto; }
+.knowledge-figure p:last-child { margin: .7rem 0 .1rem; color: #52657f; font-size: .9rem; line-height: 1.5; }
+.compact-figure img { max-height: 620px; }
 .question-card { scroll-margin-top: 5rem; }
 .question-card h3 { margin-top: 0; }
 .question-card .subparts { margin: 0.7rem 0 0.85rem 1.15rem; padding-left: 1.25rem; }

@@ -360,6 +360,7 @@ window.Quarto = {
   <li><a href="#homogeneity-of-physical-equations" id="toc-homogeneity-of-physical-equations" class="nav-link" data-scroll-target="#homogeneity-of-physical-equations">Homogeneity of physical equations</a></li>
   <li><a href="#example-check-prho-gh" id="toc-example-check-prho-gh" class="nav-link" data-scroll-target="#example-check-prho-gh">Example: check <span class="math inline">\(p=\rho gh\)</span></a></li>
   <li><a href="#si-prefixes" id="toc-si-prefixes" class="nav-link" data-scroll-target="#si-prefixes">SI prefixes</a></li>
+  <li><a href="#converting-a-cubed-unit" id="toc-converting-a-cubed-unit" class="nav-link" data-scroll-target="#converting-a-cubed-unit">Converting a cubed unit</a></li>
   </ul></li>
   <li><a href="#errors-and-uncertainties" id="toc-errors-and-uncertainties" class="nav-link" data-scroll-target="#errors-and-uncertainties">1.3 Errors and uncertainties</a>
   <ul class="collapse">
@@ -374,7 +375,9 @@ window.Quarto = {
   <li><a href="#scalar-or-vector" id="toc-scalar-or-vector" class="nav-link" data-scroll-target="#scalar-or-vector">Scalar or vector?</a></li>
   <li><a href="#adding-and-subtracting-coplanar-vectors" id="toc-adding-and-subtracting-coplanar-vectors" class="nav-link" data-scroll-target="#adding-and-subtracting-coplanar-vectors">Adding and subtracting coplanar vectors</a></li>
   <li><a href="#triangle-method" id="toc-triangle-method" class="nav-link" data-scroll-target="#triangle-method">Triangle method</a></li>
+  <li><a href="#vector-addition-with-perpendicular-components" id="toc-vector-addition-with-perpendicular-components" class="nav-link" data-scroll-target="#vector-addition-with-perpendicular-components">Vector addition with perpendicular components</a></li>
   <li><a href="#components-of-a-vector" id="toc-components-of-a-vector" class="nav-link" data-scroll-target="#components-of-a-vector">Components of a vector</a></li>
+  <li><a href="#resolving-a-vector" id="toc-resolving-a-vector" class="nav-link" data-scroll-target="#resolving-a-vector">Resolving a vector</a></li>
   </ul></li>
   <li><a href="#专题真题" id="toc-专题真题" class="nav-link" data-scroll-target="#专题真题">专题真题</a>
   <ul class="collapse">
@@ -598,6 +601,14 @@ window.Quarto = {
 </tr>
 </tbody>
 </table>
+<div class="knowledge-figure">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/notes/physical-quantities-and-units/quantity-estimates.png" class="img-fluid figure-img" alt="A runner, a beaker and a bottle labelled with unknown values in m s^-1, cm^3 and A"></p>
+<figcaption>Examples of familiar physical quantities: running speed, volume and electric current.</figcaption>
+</figure>
+</div>
+</div>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -614,7 +625,7 @@ window.Quarto = {
 </div>
 </div>
 </section>
-<section id="worked-example-walking-upstairs" class="level3 formula-panel">
+<section id="worked-example-walking-upstairs" class="level3 example-card">
 <h3 class="anchored" data-anchor-id="worked-example-walking-upstairs">Worked example: walking upstairs</h3>
 <p>估算质量为 <span class="math inline">\(70\ \mathrm{kg}\)</span> 的人上升 <span class="math inline">\(3\ \mathrm{m}\)</span> 所需的能量。取 <span class="math inline">\(g\approx10\ \mathrm{N\,kg^{-1}}\)</span>：</p>
 <p><span class="math display">\[
@@ -623,6 +634,14 @@ window.Quarto = {
 \]</span></p>
 <p>这个答案写成 <span class="math inline">\(2\times10^3\ \mathrm{J}\)</span> 同样合理；估算的重点是数量级。</p>
 </section>
+<div class="knowledge-figure">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/notes/physical-quantities-and-units/energy-stairs.png" class="img-fluid figure-img" alt="A person beside a staircase with a height of 3 m"></p>
+<figcaption>Estimating gravitational potential energy by modelling a person climbing stairs.</figcaption>
+</figure>
+</div>
+</div>
 </section>
 <section id="si-units" class="level2">
 <h2 class="anchored" data-anchor-id="si-units">1.2 SI units</h2>
@@ -815,6 +834,19 @@ window.Quarto = {
 </div>
 </div>
 </section>
+<section id="converting-a-cubed-unit" class="level3 example-card">
+<h3 class="anchored" data-anchor-id="converting-a-cubed-unit">Converting a cubed unit</h3>
+<p>Convert <span class="math inline">\(2.5\ \mathrm{cm^3}\)</span> to <span class="math inline">\(\mathrm{m^3}\)</span>.</p>
+<p>Because <span class="math inline">\(1\ \mathrm{cm}=10^{-2}\ \mathrm{m}\)</span>, the conversion factor must be cubed:</p>
+<p><span class="math display">\[
+1\ \mathrm{cm^3}=(10^{-2}\ \mathrm{m})^3=10^{-6}\ \mathrm{m^3}.
+\]</span></p>
+<p>Therefore,</p>
+<p><span class="math display">\[
+2.5\ \mathrm{cm^3}=2.5\times10^{-6}\ \mathrm{m^3}.
+\]</span></p>
+<p>The power on the prefix changes with the power on the unit.</p>
+</section>
 </section>
 <section id="errors-and-uncertainties" class="level2">
 <h2 class="anchored" data-anchor-id="errors-and-uncertainties">1.3 Errors and uncertainties</h2>
@@ -863,6 +895,22 @@ window.Quarto = {
 <li><strong>Resolution</strong> is the smallest change an instrument can show. High resolution does not by itself guarantee accuracy.</li>
 </ul>
 </div>
+<div class="knowledge-figure">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/notes/physical-quantities-and-units/accuracy-precision-curves.png" class="img-fluid figure-img" alt="Four distributions labelled precise not accurate, inaccurate imprecise, accurate precise and accurate not precise"></p>
+<figcaption>Accuracy and precision shown by four distributions of repeated measurements.</figcaption>
+</figure>
+</div>
+</div>
+<div class="knowledge-figure">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/notes/physical-quantities-and-units/accuracy-precision-targets.png" class="img-fluid figure-img" alt="Four target patterns labelled accurate and precise, accurate but not precise, precise but not accurate, and neither accurate nor precise"></p>
+<figcaption>Target patterns illustrating accuracy and precision.</figcaption>
+</figure>
+</div>
+</div>
 </section>
 <section id="expressing-uncertainty" class="level3">
 <h3 class="anchored" data-anchor-id="expressing-uncertainty">Expressing uncertainty</h3>
@@ -872,7 +920,7 @@ window.Quarto = {
 \text{percentage uncertainty}=\frac{\Delta x}{x}\times100\%.
 \]</span></p>
 </section>
-<section id="finding-an-absolute-uncertainty" class="level3 formula-panel">
+<section id="finding-an-absolute-uncertainty" class="level3 example-card">
 <h3 class="anchored" data-anchor-id="finding-an-absolute-uncertainty">Finding an absolute uncertainty</h3>
 <ul>
 <li>Analogue scale reading: usually <span class="math inline">\(\pm\)</span> half the smallest division.</li>
@@ -882,6 +930,14 @@ window.Quarto = {
 </ul>
 <p>Example: readings <span class="math inline">\(12.55\)</span>, <span class="math inline">\(12.45\)</span> and <span class="math inline">\(12.51\ \mathrm{cm}\)</span> give a mean of about <span class="math inline">\(12.50\ \mathrm{cm}\)</span> and half-range uncertainty of <span class="math inline">\(\pm0.05\ \mathrm{cm}\)</span>.</p>
 </section>
+<div class="knowledge-figure">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/notes/physical-quantities-and-units/analogue-meter-uncertainty.png" class="img-fluid figure-img" alt="A milliammeter scale with a reading of 1.6 mA and calculations for uncertainty"></p>
+<figcaption>Analogue milliammeter reading used to determine absolute, fractional and percentage uncertainty.</figcaption>
+</figure>
+</div>
+</div>
 <section id="combining-uncertainties" class="level3">
 <h3 class="anchored" data-anchor-id="combining-uncertainties">Combining uncertainties</h3>
 <div class="study-card">
@@ -914,7 +970,7 @@ window.Quarto = {
 <p>For multiplication/division, calculate the resulting percentage uncertainty first; convert it to an absolute uncertainty only if the final answer needs to be written as <span class="math inline">\(z\pm\Delta z\)</span>.</p>
 </div>
 </section>
-<section id="worked-examples" class="level3 formula-panel">
+<section id="worked-examples" class="level3 example-card">
 <h3 class="anchored" data-anchor-id="worked-examples">Worked examples</h3>
 <ol type="1">
 <li><span class="math inline">\(d_1=55.0\pm0.5\ \mathrm{cm}\)</span> and <span class="math inline">\(d_2=21.0\pm0.7\ \mathrm{cm}\)</span>:</li>
@@ -953,6 +1009,14 @@ window.Quarto = {
 </table>
 <p>The reliable test is not whether a quantity may be written with a plus or minus sign; vectors must obey vector addition and can be resolved into components. For example, electric current is treated as a scalar quantity in this course.</p>
 </div>
+<div class="knowledge-figure">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/notes/physical-quantities-and-units/distance-displacement.png" class="img-fluid figure-img" alt="A winding route from start to finish with the direct displacement shown separately from the travelled distance"></p>
+<figcaption>A route showing the difference between distance and displacement.</figcaption>
+</figure>
+</div>
+</div>
 </section>
 <section id="adding-and-subtracting-coplanar-vectors" class="level3">
 <h3 class="anchored" data-anchor-id="adding-and-subtracting-coplanar-vectors">Adding and subtracting coplanar vectors</h3>
@@ -963,11 +1027,57 @@ window.Quarto = {
 <p>To subtract, rewrite <span class="math inline">\(\mathbf{a}-\mathbf{b}\)</span> as <span class="math inline">\(\mathbf{a}+(-\mathbf{b})\)</span>: reverse the direction of <span class="math inline">\(\mathbf{b}\)</span> first, then add head-to-tail.</p>
 <p>The parallelogram method gives the same resultant: draw both vectors tail-to-tail and use the diagonal from the common tail.</p>
 </section>
+<div class="knowledge-figure">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/notes/physical-quantities-and-units/vector-addition.png" class="img-fluid figure-img" alt="Step-by-step triangle and parallelogram methods for adding vectors a and b"></p>
+<figcaption>Triangle and parallelogram methods for vector addition.</figcaption>
+</figure>
+</div>
+</div>
+<div class="knowledge-figure compact-figure">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/notes/physical-quantities-and-units/vector-subtraction.png" class="img-fluid figure-img" alt="Step-by-step triangle and parallelogram methods for subtracting vector b from vector a"></p>
+<figcaption>Vector subtraction by reversing vector b before addition.</figcaption>
+</figure>
+</div>
+</div>
+<section id="vector-addition-with-perpendicular-components" class="level3 example-card">
+<h3 class="anchored" data-anchor-id="vector-addition-with-perpendicular-components">Vector addition with perpendicular components</h3>
+<p>A <span class="math inline">\(4.0\ \mathrm{N}\)</span> force acts east and a <span class="math inline">\(3.0\ \mathrm{N}\)</span> force acts north. The resultant magnitude is</p>
+<p><span class="math display">\[
+R=\sqrt{4.0^2+3.0^2}=5.0\ \mathrm{N}.
+\]</span></p>
+<p>The direction measured north of east is</p>
+<p><span class="math display">\[
+\theta=\tan^{-1}\left(\frac{3.0}{4.0}\right)=36.9^\circ.
+\]</span></p>
+<p>So the resultant is <span class="math inline">\(5.0\ \mathrm{N}\)</span> at <span class="math inline">\(36.9^\circ\)</span> north of east.</p>
+</section>
 <section id="components-of-a-vector" class="level3">
 <h3 class="anchored" data-anchor-id="components-of-a-vector">Components of a vector</h3>
 <p>For a vector <span class="math inline">\(F\)</span> at an angle <span class="math inline">\(\theta\)</span> above the positive horizontal:</p>
 <p><span class="math display">\[F_x=F\cos\theta,\qquad F_y=F\sin\theta.\]</span></p>
 <p>Choose signs from the direction. A component towards the left or downward is negative if right/up are defined as positive. If the angle is measured from the vertical, identify opposite and adjacent sides first rather than memorising a different rule.</p>
+<div class="knowledge-figure">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/notes/physical-quantities-and-units/vector-components.png" class="img-fluid figure-img" alt="A vector F resolved into horizontal component Fx and vertical component Fy"></p>
+<figcaption>A force vector resolved into horizontal and vertical components.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section id="resolving-a-vector" class="level3 example-card">
+<h3 class="anchored" data-anchor-id="resolving-a-vector">Resolving a vector</h3>
+<p>A force <span class="math inline">\(F=10.0\ \mathrm{N}\)</span> acts at <span class="math inline">\(30.0^\circ\)</span> above the positive horizontal.</p>
+<p><span class="math display">\[
+F_x=F\cos30.0^\circ=8.66\ \mathrm{N},\qquad
+F_y=F\sin30.0^\circ=5.00\ \mathrm{N}.
+\]</span></p>
+<p>If the force points below the horizontal instead, the vertical component is <span class="math inline">\(-5.00\ \mathrm{N}\)</span> when upward is positive.</p>
+</section>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -981,7 +1091,14 @@ window.Quarto = {
 <p>For coplanar forces in equilibrium, the resultant force is zero. Draw the vectors head-to-tail: they form a <strong>closed vector triangle</strong> (or closed polygon for more forces).</p>
 </div>
 </div>
-</section>
+<div class="knowledge-figure">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/notes/physical-quantities-and-units/force-resultant-triangle.png" class="img-fluid figure-img" alt="Three forces of 4 N, 3 N and 5 N arranged head-to-tail to form a closed triangle"></p>
+<figcaption>Three forces forming a closed vector triangle.</figcaption>
+</figure>
+</div>
+</div>
 </section>
 <section id="专题真题" class="level2">
 <h2 class="anchored" data-anchor-id="专题真题">专题真题</h2>
