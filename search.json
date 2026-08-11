@@ -528,6 +528,193 @@
     ]
   },
   {
+    "objectID": "as-level/31-paper-5-planning-analysis-evaluation.html",
+    "href": "as-level/31-paper-5-planning-analysis-evaluation.html",
+    "title": "Paper 5 Planning, Analysis and Evaluation / 实验设计与数据分析",
+    "section": "",
+    "text": "Paper 5 是书面形式的 Planning, Analysis and Evaluation。它不要求在考试现场操作 laboratory apparatus，但要求考生能够像做真实实验一样设计方法、处理 data、估计 uncertainty 和评价 evidence。\n本章根据：\n\ncurrent syllabus 的 Paper 5 requirements；\navailable 2020–2023 和 2025 Paper 5 Question Papers / Mark Schemes；\nCambridge 9702 常用的 practical terminology；\n自拟 worked examples，不冒充真题。\n\n\n\nPaper 5 tests whether an experiment is workable, measurable and analyzable. 不是写出“看起来科学”的方案，而是要说明 apparatus 如何摆放、每个 quantity 如何测量、哪些 variables 保持 constant、data 如何转换成 graph，以及如何由 graph 得到 physical constant。",
+    "crumbs": [
+      "AS Level",
+      "Paper 5 Planning, Analysis and Evaluation"
+    ]
+  },
+  {
+    "objectID": "as-level/31-paper-5-planning-analysis-evaluation.html#使用说明-how-to-use-this-chapter",
+    "href": "as-level/31-paper-5-planning-analysis-evaluation.html#使用说明-how-to-use-this-chapter",
+    "title": "Paper 5 Planning, Analysis and Evaluation / 实验设计与数据分析",
+    "section": "",
+    "text": "Paper 5 是书面形式的 Planning, Analysis and Evaluation。它不要求在考试现场操作 laboratory apparatus，但要求考生能够像做真实实验一样设计方法、处理 data、估计 uncertainty 和评价 evidence。\n本章根据：\n\ncurrent syllabus 的 Paper 5 requirements；\navailable 2020–2023 和 2025 Paper 5 Question Papers / Mark Schemes；\nCambridge 9702 常用的 practical terminology；\n自拟 worked examples，不冒充真题。\n\n\n\nPaper 5 tests whether an experiment is workable, measurable and analyzable. 不是写出“看起来科学”的方案，而是要说明 apparatus 如何摆放、每个 quantity 如何测量、哪些 variables 保持 constant、data 如何转换成 graph，以及如何由 graph 得到 physical constant。",
+    "crumbs": [
+      "AS Level",
+      "Paper 5 Planning, Analysis and Evaluation"
+    ]
+  },
+  {
+    "objectID": "as-level/31-paper-5-planning-analysis-evaluation.html#examination-structure-考试结构",
+    "href": "as-level/31-paper-5-planning-analysis-evaluation.html#examination-structure-考试结构",
+    "title": "Paper 5 Planning, Analysis and Evaluation / 实验设计与数据分析",
+    "section": "1. Examination structure / 考试结构",
+    "text": "1. Examination structure / 考试结构\n\n\n\n\n\n\n\nFeature\nRequirement\n\n\n\n\nComponent\nPaper 5 Planning, Analysis and Evaluation\n\n\nDuration\n1 hour 15 minutes\n\n\nTotal marks\n30 marks\n\n\nQuestions\nTwo compulsory questions, normally 15 marks each\n\n\nQuestion 1\nPlanning an experimental investigation\n\n\nQuestion 2\nAnalysis, conclusions and evaluation of supplied data\n\n\nLaboratory\nNo laboratory facilities are required\n\n\nContext\nMay include physics outside the familiar classroom experiments；necessary information will be provided\n\n\n\n\nQuestion 1：Planning\nQuestion 1 normally asks you to design an experiment to test a suggested relationship. The answer should normally include：\n\nthe independent variable；\nthe dependent variable；\nthe control variables；\na labelled and workable apparatus diagram；\na method for changing and measuring variables；\na method for collecting enough data；\na method of analysis；\nrelevant additional details and safety precautions。\n\n\n\nQuestion 2：Analysis, conclusions and evaluation\nQuestion 2 normally provides an equation and experimental data. You may need to：\n\nrearrange or interpret the equation；\ncalculate derived quantities；\ncalculate logarithms or reciprocal quantities；\ncomplete a table；\nplot data and error bars；\ndraw a line of best fit and a worst acceptable line；\ndetermine gradient and y-intercept；\ndetermine uncertainties in gradient、intercept and constants；\ndraw a conclusion or make a prediction。",
+    "crumbs": [
+      "AS Level",
+      "Paper 5 Planning, Analysis and Evaluation"
+    ]
+  },
+  {
+    "objectID": "as-level/31-paper-5-planning-analysis-evaluation.html#complete-skill-map-完整考点地图",
+    "href": "as-level/31-paper-5-planning-analysis-evaluation.html#complete-skill-map-完整考点地图",
+    "title": "Paper 5 Planning, Analysis and Evaluation / 实验设计与数据分析",
+    "section": "2. Complete skill map / 完整考点地图",
+    "text": "2. Complete skill map / 完整考点地图\n\n\n\n\n\n\n\n\nSkill\n中文重点\nWhat the examiner looks for\n\n\n\n\nDefining the problem\n明确研究什么\nCorrect independent、dependent and control variables\n\n\nData collection\n说明如何取得 data\nA workable arrangement and suitable measuring instruments\n\n\nControl of variables\n控制其他影响因素\nExplicit method, not just a list of variables\n\n\nApparatus diagram\n画能实际工作的图\nClear labels、connections、positions and direction\n\n\nMethod of analysis\n说明如何验证 relationship\nCorrect graph axes and meaning of gradient/intercept\n\n\nSafety\n识别 risk 并降低 risk\nPrecaution linked to a real hazard\n\n\nDerived data\n从 raw data 计算新量\nCorrect equation、units and significant figures\n\n\nLogarithms\n处理 exponential/power laws\nCorrect log base、units and decimal places\n\n\nError bars\n表示 data uncertainty\nCorrect size、direction、symmetry and scale\n\n\nBest-fit line\n表示 central trend\nBalanced line through the data\n\n\nWorst acceptable line\n估计 graph uncertainty\nExtreme line passing through all relevant error bars\n\n\nConclusion\n从 evidence 得出结论\nQuantitative and logically consistent statement",
+    "crumbs": [
+      "AS Level",
+      "Paper 5 Planning, Analysis and Evaluation"
+    ]
+  },
+  {
+    "objectID": "as-level/31-paper-5-planning-analysis-evaluation.html#question-1-planning-实验设计题",
+    "href": "as-level/31-paper-5-planning-analysis-evaluation.html#question-1-planning-实验设计题",
+    "title": "Paper 5 Planning, Analysis and Evaluation / 实验设计与数据分析",
+    "section": "3. Question 1 Planning / 实验设计题",
+    "text": "3. Question 1 Planning / 实验设计题\n\n3.1 Define the problem / 定义问题\n首先把题目中的 relationship 转换成 variables：\n\nindependent variable：你主动改变的 quantity；\ndependent variable：随 independent variable 改变而测量的 quantity；\ncontrol variables：必须保持 constant 的 quantities。\n\n\nExample / 示例：spring experiment\n若要研究 spring constant \\(k\\) 如何随 wire diameter \\(d\\) 改变：\n\nindependent variable：\\(d\\) 或由 \\(d\\) 得到的 cross-sectional area \\(A\\)；\ndependent variable：\\(k\\)；\ncontrol variables：wire material、number of turns、initial length 和 temperature。\n\n只写“change diameter”不够；还要说明用 micrometer screw gauge 测量 diameter，并用 force-extension method 求 \\(k\\)。\n\n\n\n3.2 Methods of data collection / 数据收集方法\n完整 method 应回答：\n\n如何改变 independent variable；\n如何测量 independent variable；\n如何测量 dependent variable；\n如何保持 control variables constant；\n如何获得 enough readings；\n如何提高 repeatability 和 precision。\n\n\nExample / 示例：研究 \\(v\\) 与 \\(r\\)\n若题目给出：\n\\[\nv=Y r^{-n},\n\\]\n可以写：\n\n使用不同 radius 的 balls，改变 \\(r\\)；\n用 micrometer screw gauge 或 Vernier calipers 测量 diameter，再计算 \\(r=d/2\\)；\n用 light gate 测量 ball 通过 beam 的时间；\n用 ball diameter 除以 blocking time 得到 \\(v\\)；\n保持 spring compression \\(x\\)、spring constant \\(k\\) 和 ball density \\(\\rho\\) constant；\n对每个 \\(r\\) 重复 experiment，并取 mean \\(v\\)。\n\n\n\n\n3.3 Workable apparatus diagram / 可工作的装置图\ndiagram 不需要艺术化，但必须让 examiner 看出 experiment 可以真正完成。应包括：\n\napparatus 的相对位置；\n必要的 wires、switches、supports 和 connections；\nmeasuring instrument 的位置；\nindependent/dependent quantity 的 measurement point；\n至少足够的 labels；\nrelevant direction、distance 或 reference point。\n\n\nExample / 示例：circuit diagram\n如果要测量 resistor 的 \\(R\\)：\n\nammeter 应与 resistor in series；\nvoltmeter 应与 resistor in parallel；\ncircuit 应有 power supply 和 switch；\n需要改变 \\(R\\) 时，应说明使用 different resistors 或 variable resistor；\n若要测量很短的 time interval，应使用 oscilloscope 或 data logger，不能只写 stopwatch。\n\n\n\n\n3.4 Measuring instruments / 仪器选择\nInstrument 必须适合被测量的 quantity 和 expected range。\n\n\n\n\n\n\n\n\nQuantity\nSuitable instrument\nExample of use\n\n\n\n\nSmall diameter\nMicrometer screw gauge、Vernier calipers\nWire、ball、tube 或 spring diameter\n\n\nLength\nMetre rule、ruler、calipers\nExtension、distance、height\n\n\nMass\nTop-pan balance\nMass of a ball、load 或 liquid\n\n\nForce\nNewton meter、force sensor\nForce-extension relationship\n\n\nShort time\nLight gate、oscilloscope、data logger\nCollision、oscillation、pulse width\n\n\nCurrent\nAmmeter、digital multimeter\nCircuit current\n\n\nPotential difference\nVoltmeter、digital multimeter\nCapacitor discharge 或 resistor p.d.\n\n\nTemperature\nThermometer、temperature probe\nCooling、viscosity 或 heating\n\n\n\n\nExample / 示例：instrument precision\n若 diameter 只有约 \\(2\\ \\mathrm{mm}\\)，用 metre rule 可能产生很大的 percentage uncertainty；应选择 micrometer screw gauge 或 Vernier calipers。如果 measured change 很小，也应考虑更高 resolution 的 sensor。\n\n\n\n3.5 Range、repeats and averages / 范围、重复和平均\n规划时应明确：\n\n至少 five or six different values，具体按题目要求；\nindependent variable 覆盖 as large a range as practical；\n每一个点是否 repeat；\n是否使用 mean value；\n如何处理 anomalous result。\n\n\nExample / 示例：stationary waves\n研究 frequency \\(f\\) 与 tube diameter \\(d\\) 的关系时，可以：\n\n选择 \\(d\\) 覆盖较大的 range；\n对每个 \\(d\\) 找到 resonance condition；\n重复测量 resonant frequency；\n取 mean \\(f\\)；\n记录 \\(d\\)、\\(f\\) 和之后 graph 所需的 \\(1/d\\) 或 \\(\\lg d\\)。\n\n\n\n\n3.6 Control variables / 控制变量\n控制变量必须写出实际方法，不能只列名称。\n\n\n\n\n\n\n\n\nControl variable\nWeak statement\nStrong statement\n\n\n\n\nTemperature\nKeep temperature constant\nPlace apparatus in a water bath and monitor temperature with a thermometer\n\n\nLength\nKeep length constant\nUse a fixed marker and measure from the same reference point each time\n\n\nAmplitude\nKeep amplitude constant\nUse a marked release position and release without a push\n\n\nArea\nKeep area constant\nUse the same plate overlap or mark the fixed area on the apparatus\n\n\nLight level\nKeep light constant\nUse a dark enclosure and keep LED current constant\n\n\nNumber of turns\nKeep \\(N\\) constant\nUse the same coil and do not change its winding\n\n\n\n\nExample / 示例：control variable must be operational\n在 floating cylinder experiment 中，若研究 period \\(T\\) 随 mass \\(m\\) 的变化，不能只写“keep temperature constant”；应写“use the same liquid at the same room temperature and allow the cylinder to reach thermal equilibrium before timing”。\n\n\n\n3.7 Method of analysis / 数据分析方法\nPlanning answer 必须说明 data 如何验证 relationship。至少应包含：\n\n要计算哪些 derived quantities；\nplot 哪个 quantity against 哪个 quantity；\nrelationship 成立时 graph 应具有什么特征；\ngradient 或 intercept 如何得到 required constant。\n\n\nExample / 示例：power law\n若：\n\\[\ny=ax^n,\n\\]\n则：\n\\[\n\\lg y=\\lg a+n\\lg x.\n\\]\n因此应：\n\ncalculate \\(\\lg y\\) 和 \\(\\lg x\\)；\nplot \\(\\lg y\\) against \\(\\lg x\\)；\nrelationship valid if a straight line is produced；\ngradient gives \\(n\\)；\ny-intercept gives \\(\\lg a\\)，所以 \\(a=10^{\\text{intercept}}\\)。\n\n\n\n\n3.8 Safety and additional detail / 安全与补充细节\nSafety mark 不是写一句“wear safety goggles”就一定得到。必须把 precaution 和 risk 联系起来。\n\n\n\n\n\n\n\nHazard\nSuitable precaution\n\n\n\n\nFalling mass or ball\nUse a cushion、sand box、screen or stop to prevent injury/damage\n\n\nHigh voltage\nSwitch off before changing connections；avoid touching bare conductors；use insulated leads\n\n\nHeated liquid or metal\nUse heat-resistant gloves、tongs and allow apparatus to cool\n\n\nSharp wire or spring\nWear eye protection；use a safety screen；secure the spring\n\n\nGlass tube or container\nClamp securely and keep the apparatus away from the bench edge\n\n\nStrong magnet\nKeep magnetic materials and electronic devices away；avoid trapping fingers\n\n\nWater near electricity\nKeep the power supply away from the liquid and dry hands before touching equipment\n\n\n\n\nExample / 示例：specific safety statement\n\nUse a safety screen and a cushion beneath the spring because the spring or load may detach and move rapidly towards the candidate.\n\n这比单独写 wear goggles 更具体，因为它说明了 hazard 和 precaution 的 connection。",
+    "crumbs": [
+      "AS Level",
+      "Paper 5 Planning, Analysis and Evaluation"
+    ]
+  },
+  {
+    "objectID": "as-level/31-paper-5-planning-analysis-evaluation.html#planning-answer-structure-q1-答题结构",
+    "href": "as-level/31-paper-5-planning-analysis-evaluation.html#planning-answer-structure-q1-答题结构",
+    "title": "Paper 5 Planning, Analysis and Evaluation / 实验设计与数据分析",
+    "section": "4. Planning answer structure / Q1 答题结构",
+    "text": "4. Planning answer structure / Q1 答题结构\n可以按以下顺序写，避免漏掉 mark scheme sections：\n\nA. Defining the problem\n\nstate independent variable；\nstate dependent variable；\nstate control variables。\n\n\n\nB. Method and apparatus\n\ndraw labelled diagram；\ndescribe how to vary independent variable；\ndescribe how to measure both variables；\ndescribe how to keep controls constant；\nstate range、number of readings 和 repeats。\n\n\n\nC. Method of analysis\n\nwrite rearranged equation；\nstate graph axes；\nstate relationship expected if valid；\nidentify gradient/intercept and constant。\n\n\n\nD. Additional detail and safety\n\nreduce major uncertainty；\nimprove signal size；\ninclude calibration or preliminary measurement；\nexplain safety precautions。\n\n\n\nPlanning sentence template / 规划答题模板\n\nVary ___ and measure . Keep , ___ and ___ constant. Use ___ to measure ___ and ___ to measure . Take at least  readings over a range of . Repeat each reading and calculate a mean. Plot  against . If the relationship is valid, the graph should be . The gradient/intercept represents ___.",
+    "crumbs": [
+      "AS Level",
+      "Paper 5 Planning, Analysis and Evaluation"
+    ]
+  },
+  {
+    "objectID": "as-level/31-paper-5-planning-analysis-evaluation.html#question-2-data-analysis-数据分析题",
+    "href": "as-level/31-paper-5-planning-analysis-evaluation.html#question-2-data-analysis-数据分析题",
+    "title": "Paper 5 Planning, Analysis and Evaluation / 实验设计与数据分析",
+    "section": "5. Question 2 Data Analysis / 数据分析题",
+    "text": "5. Question 2 Data Analysis / 数据分析题\n\n5.1 Read the equation first / 先读 equation\n在计算前先确定：\n\nequation 中哪个 quantity 是 \\(x\\)；\n哪个 quantity 是 \\(y\\)；\n是否需要 reciprocal、square、square root、\\(\\ln\\) 或 \\(\\lg\\)；\ngradient 和 intercept 分别代表什么；\n哪些 quantities 的 uncertainty 需要进入 graph。\n\n\n\n5.2 Common graph transformations / 常见图像变换\n\n\n\n\n\n\n\n\nRelationship\nGraph\nGradient / intercept\n\n\n\n\n\\(y=mx+c\\)\n\\(y\\) against \\(x\\)\nGradient \\(m\\)、intercept \\(c\\)\n\n\n\\(y=a+bx\\)\n\\(y\\) against \\(x\\)\nGradient \\(b\\)、intercept \\(a\\)\n\n\n\\(y=ae^{kx}\\)\n\\(\\ln y\\) against \\(x\\)\nGradient \\(k\\)、intercept \\(\\ln a\\)\n\n\n\\(y=ax^n\\)\n\\(\\lg y\\) against \\(\\lg x\\)\nGradient \\(n\\)、intercept \\(\\lg a\\)\n\n\n\\(y=a/x+b\\)\n\\(y\\) against \\(1/x\\)\nGradient/intercept after rearrangement\n\n\n\\(y=a+bx^2\\)\n\\(y\\) against \\(x^2\\)\nGradient \\(b\\)、intercept \\(a\\)\n\n\n\n\nExample / 示例：exponential relationship\n若：\n\\[\nV=V_0e^{-t/RC},\n\\]\n取 natural logarithm：\n\\[\n\\ln V=\\ln V_0-\\frac{t}{RC}.\n\\]\n因此 plot \\(\\ln V\\) against \\(t\\)：\n\ngradient \\(=-1/(RC)\\)；\ny-intercept \\(=\\ln V_0\\)；\ngradient 应为 negative；\nrelationship valid if points form a straight line。\n\n\n\n\n5.3 Logarithms and units / 对数和单位\n对数的 argument 应写成 dimensionless ratio，例如：\n\\[\n\\ln\\left(\\frac{V}{\\mathrm{V}}\\right),\n\\qquad\n\\lg\\left(\\frac{M}{10^{30}\\ \\mathrm{kg}}\\right).\n\\]\n正确写法的重点：\n\nquantity 和 unit 一起出现在 ratio 中；\nlogarithm 本身没有 unit；\nln 和 lg 不能混用；\ntable 中的 log values 要保持合适 decimal places；\n不要写 \\(\\ln V / \\mathrm{V}\\) 来代替 \\(\\ln(V/\\mathrm{V})\\)。\n\n\nExample / 示例：log calculation\n若 \\(V=0.250\\ \\mathrm{V}\\)，则可以计算：\n\\[\n\\ln\\left(\\frac{V}{\\mathrm{V}}\\right)=\\ln(0.250)=-1.386.\n\\]\n这里 \\(\\ln(V/\\mathrm{V})\\) 是 dimensionless，log value 没有 unit。\n\n\n\n5.4 Completing a table / 完成数据表\nPaper 5 的 table 通常要求计算：\n\nreciprocal quantities；\nsquares or square roots；\nsums such as \\(R_1+R_2\\)；\naverages such as \\((t_1+t_2)/2\\)；\n\\(\\ln\\) 或 \\(\\lg\\) values；\ntransformed uncertainties。\n\n\nExample / 示例：derived table\n若 \\(R_1=2.0\\ \\mathrm{k\\Omega}\\)、\\(R_2=3.0\\ \\mathrm{k\\Omega}\\)，则 table 中可记录：\n\\[\nR_1+R_2=5.0\\ \\mathrm{k\\Omega},\n\\qquad\n\\frac{1}{R_1+R_2}=0.200\\ \\mathrm{k\\Omega^{-1}}.\n\\]\n不要把 \\(1/(R_1+R_2)\\) 错算成 \\(1/R_1+1/R_2\\)。",
+    "crumbs": [
+      "AS Level",
+      "Paper 5 Planning, Analysis and Evaluation"
+    ]
+  },
+  {
+    "objectID": "as-level/31-paper-5-planning-analysis-evaluation.html#graphs-with-uncertainty-带-uncertainty-的-graph",
+    "href": "as-level/31-paper-5-planning-analysis-evaluation.html#graphs-with-uncertainty-带-uncertainty-的-graph",
+    "title": "Paper 5 Planning, Analysis and Evaluation / 实验设计与数据分析",
+    "section": "6. Graphs with uncertainty / 带 uncertainty 的 graph",
+    "text": "6. Graphs with uncertainty / 带 uncertainty 的 graph\n\n6.1 Error bars\nPaper 5 mark scheme 经常要求为每一个 point 画 error bars。应做到：\n\n所有 points 都有 error bars；\nerror bar 方向与 quantity 的 uncertainty 一致；\nvertical uncertainty 用 vertical bar，horizontal uncertainty 用 horizontal bar；\nerror bar 两侧对称，除非题目明确给 asymmetric uncertainty；\nbar 的长度按 graph scale 正确；\npoint 和 error bar 都要清晰可见。\n\n\nExample / 示例：error bar\n若 \\(y=2.40\\pm0.10\\)，graph 的 vertical scale 为 \\(0.20\\) per large square，则 error bar 总高度应代表 \\(0.20\\)，即 point 上下各 \\(0.10\\)。\n\n\n\n6.2 Line of best fit\nLine of best fit 表示 data 的 central trend：\n\npoints 大致均匀分布在两侧；\n不应简单连接相邻 points；\n不要强行通过 origin，除非 equation 或题目要求；\n若 points 呈明显 curve，不要强行画 straight line。\n\n\n\n6.3 Worst acceptable line\nWorst acceptable line 用于估计 graph-derived quantity 的 uncertainty。它应是：\n\n能通过所有 relevant error bars 的 straight line；\n最 steep 或最 shallow 的 acceptable line；\n与 line of best fit 明确区分，例如用 dashed line 或 label；\n不能只通过 data points 而忽略 error bars。\n\n\nExample / 示例：choosing the worst acceptable line\n若所有 error bars 都允许一组正斜率 lines，则选择仍能通过全部 error bars 的最 steep line 或最 shallow line。不能选择一条只通过中间 points、但漏掉两端 error bars 的 line。",
+    "crumbs": [
+      "AS Level",
+      "Paper 5 Planning, Analysis and Evaluation"
+    ]
+  },
+  {
+    "objectID": "as-level/31-paper-5-planning-analysis-evaluation.html#gradientintercept-and-graph-uncertainty",
+    "href": "as-level/31-paper-5-planning-analysis-evaluation.html#gradientintercept-and-graph-uncertainty",
+    "title": "Paper 5 Planning, Analysis and Evaluation / 实验设计与数据分析",
+    "section": "7. Gradient、intercept and graph uncertainty",
+    "text": "7. Gradient、intercept and graph uncertainty\n\n7.1 Gradient\n使用 line 上相距较远的 two points：\n\\[\nm=\\frac{\\Delta y}{\\Delta x}.\n\\]\n答案应显示 substitution，例如：\n\\[\nm=\\frac{3.20-1.10}{0.80-0.20}=3.50.\n\\]\n\n\n7.2 Absolute uncertainty in gradient\nPaper 5 常用：\n\\[\n\\Delta m\n=|m_{\\mathrm{best}}-m_{\\mathrm{worst}}|.\n\\]\n某些 mark scheme 也接受以 steepest 和 shallowest lines 的 half-range 表示：\n\\[\n\\Delta m\n=\\frac{m_{\\mathrm{steepest}}-m_{\\mathrm{shallowest}}}{2}.\n\\]\n以题目和 mark scheme 指定的 convention 为准。\n\n\n7.3 y-intercept and its uncertainty\n可以直接从 \\(x=0\\) read off，或使用：\n\\[\nc=y-mx.\n\\]\n若题目要求 intercept uncertainty：\n\\[\n\\Delta c=|c_{\\mathrm{best}}-c_{\\mathrm{worst}}|.\n\\]\n\nExample / 示例：gradient uncertainty\n若 \\(m_{\\mathrm{best}}=4.20\\) 且 \\(m_{\\mathrm{worst}}=3.80\\)，则：\n\\[\n\\Delta m=4.20-3.80=0.40.\n\\]\n最后应按题目要求写成 value、uncertainty 和 unit，例如 \\(m=4.2\\pm0.4\\ \\mathrm{s^{-1}}\\)。",
+    "crumbs": [
+      "AS Level",
+      "Paper 5 Planning, Analysis and Evaluation"
+    ]
+  },
+  {
+    "objectID": "as-level/31-paper-5-planning-analysis-evaluation.html#uncertainty-propagation-不确定度传播",
+    "href": "as-level/31-paper-5-planning-analysis-evaluation.html#uncertainty-propagation-不确定度传播",
+    "title": "Paper 5 Planning, Analysis and Evaluation / 实验设计与数据分析",
+    "section": "8. Uncertainty propagation / 不确定度传播",
+    "text": "8. Uncertainty propagation / 不确定度传播\n\n8.1 Basic rules\n\naddition/subtraction：add absolute uncertainties；\nmultiplication/division：add fractional or percentage uncertainties；\npowers：multiply fractional or percentage uncertainty by the power；\ngraph gradient/intercept：use best-fit and worst-acceptable lines。\n\n\n\n8.2 Uncertainty in a logarithm\nFor small uncertainties：\n\\[\n\\Delta(\\ln x)\\approx\\frac{\\Delta x}{x},\n\\]\nand：\n\\[\n\\Delta(\\lg x)\\approx\\frac{\\Delta x}{x\\ln10}.\n\\]\n\nExample / 示例：uncertainty in \\(\\ln V\\)\n若 \\(V=2.00\\pm0.10\\ \\mathrm{V}\\)，则：\n\\[\n\\Delta(\\ln V)\\approx\\frac{0.10}{2.00}=0.05.\n\\]\n在 graph 上，\\(\\ln V\\) 的 vertical error bar 应使用约 \\(\\pm0.05\\)。\n\n\n\n8.3 Uncertainty in a constant from gradient\n若 \\(C\\) 与 gradient \\(m\\) 成正比：\n\\[\nC=Km,\n\\]\n则：\n\\[\n\\frac{\\Delta C}{C}=\\frac{\\Delta m}{m}.\n\\]\n若 \\(C\\) 与 \\(m\\)、\\(c\\) 都有关，则按照 equation 中的 multiplication、division 和 powers 合并 percentage uncertainties。\n\nExample / 示例：constant from gradient\n若 \\(C=2.00m\\)，\\(m=3.0\\pm0.3\\)，则：\n\\[\nC=6.0,\n\\qquad\n\\frac{\\Delta C}{C}=\\frac{0.3}{3.0}=10\\%,\n\\]\n所以 \\(\\Delta C=0.6\\)。",
+    "crumbs": [
+      "AS Level",
+      "Paper 5 Planning, Analysis and Evaluation"
+    ]
+  },
+  {
+    "objectID": "as-level/31-paper-5-planning-analysis-evaluation.html#conclusions-and-predictions-结论与预测",
+    "href": "as-level/31-paper-5-planning-analysis-evaluation.html#conclusions-and-predictions-结论与预测",
+    "title": "Paper 5 Planning, Analysis and Evaluation / 实验设计与数据分析",
+    "section": "9. Conclusions and predictions / 结论与预测",
+    "text": "9. Conclusions and predictions / 结论与预测\n\n9.1 Conclusion from a graph\n结论要包含：\n\ngraph 是否呈现 expected straight line；\ngradient/intercept 的 numerical value；\nunits；\nuncertainty；\nrelationship 是否得到 support；\n若不支持，说明 evidence 的具体问题。\n\n\nExample / 示例：conclusion\n\nThe graph is approximately a straight line, so the data support the suggested linear relationship. The gradient is \\(3.5\\pm0.4\\ \\mathrm{s\\,kg^{-1}}\\).\n\n\n\n\n9.2 Prediction / 外推\n有些 Paper 5 会要求使用 graph 或 derived equation 预测新的 quantity。步骤是：\n\nidentify whether the value lies inside or outside the measured range；\nuse the best-fit line or equation；\nread the graph accurately；\ninclude unit；\nif required，include uncertainty。\n\nInterpolation（测量范围内）通常比 extrapolation（测量范围外）更可靠。若是 extrapolation，应在 conclusion 中说明 reliability 较低。\n\nExample / 示例：interpolation and extrapolation\n若 measured \\(x\\) range 是 \\(2\\)–\\(8\\ \\mathrm{cm}\\)，预测 \\(x=5\\ \\mathrm{cm}\\) 属于 interpolation；预测 \\(x=15\\ \\mathrm{cm}\\) 属于 extrapolation，需要谨慎说明。",
+    "crumbs": [
+      "AS Level",
+      "Paper 5 Planning, Analysis and Evaluation"
+    ]
+  },
+  {
+    "objectID": "as-level/31-paper-5-planning-analysis-evaluation.html#high-frequency-paper-5-contexts-高频情境",
+    "href": "as-level/31-paper-5-planning-analysis-evaluation.html#high-frequency-paper-5-contexts-高频情境",
+    "title": "Paper 5 Planning, Analysis and Evaluation / 实验设计与数据分析",
+    "section": "10. High-frequency Paper 5 contexts / 高频情境",
+    "text": "10. High-frequency Paper 5 contexts / 高频情境\nPaper 5 的 context 可能跨越 AS、A Level 和 unfamiliar applications，但 skill pattern 不变。\n\n10.1 Electrical and capacitor experiments\nCommon contexts：capacitor discharge、resistor networks、coil、parallel plates、wind turbine generator。\n常见 transformations：\n\n\\(\\ln V\\) against \\(t\\)；\n\\(\\ln V\\) against \\(1/(R_1+R_2)\\)；\n\\(1/V\\) against plate separation \\(d\\)；\n\\(\\lg I\\) against \\(\\lg v\\)。\n\n\nExample / 示例：capacitor discharge\n若 capacitor discharge equation 为 \\(V=V_0e^{-t/RC}\\)，Q2 通常要求计算 \\(\\ln V\\)、画 graph、由 negative gradient 求 \\(RC\\)，再处理 gradient uncertainty。应检查 gradient 的 sign、error bars 和 worst acceptable line。\n\n\n\n10.2 Waves and oscillations\nCommon contexts：stationary waves in strings/tubes、oscillating cylinder、power supply frequency。\n重点：\n\nfrequency、period 和 wavelength 的转换；\n使用 oscilloscope 或 time-base；\n控制 tension、length、diameter、mass 或 amplitude；\n由 graph gradient 求 wave constant。\n\n\nExample / 示例：stationary waves\n若 \\(f\\) 与 tube diameter \\(d\\) 的关系为 \\(f\\propto1/d\\)，应 plot \\(f\\) against \\(1/d\\)，并说明 relationship valid if a straight line is produced。若题目要求 constant，则进一步说明由 gradient 如何得到该 constant。\n\n\n\n10.3 Mechanics and collisions\nCommon contexts：gliders on an air track、spring compression、inclined plane、modelling clay、floating cylinder。\n重点：\n\nlight gates、velocity、mass 和 time；\nrelease position；\nfriction 和 alignment；\ncontrol of distance、mass、spring compression 或 material。\n\n\nExample / 示例：collision analysis\ncollision experiment 中，若 \\(v\\) 与 \\(M+m\\) 有 suggested equation，应先由 light gate data 得到 \\(v\\)，再 plot \\(v\\) against \\(M+m\\)，而不是直接 plot raw time。若 mass 有 uncertainty，需在 transformed quantity 上画相应 error bars。\n\n\n\n10.4 Thermal and fluid experiments\nCommon contexts：viscous force、heating metal cylinder、cooling、liquid flow。\n重点：\n\ntemperature measurement；\nheat loss；\nviscosity、flow time、surface area；\nconstant temperature 或 controlled heating。\n\n\nExample / 示例：viscosity and temperature\n若研究 viscosity \\(\\eta\\) 随 temperature \\(T\\) 的变化，题目可能给出 \\(\\ln\\eta\\) 与 \\(1/T\\) 的 equation，要求完成 reciprocal temperature、log calculation 和 graph。注意 temperature 应使用 kelvin，不能直接使用摄氏温度。\n\n\n\n10.5 Astronomy、nuclear and unfamiliar contexts\nPast Paper 5 也会使用 stars、galaxies、moons、radioactive count rate 等 context。不要因为情境陌生就停止；题目会给出必要 equation 和 definitions。\n\nExample / 示例：astronomy power law\n若给出 \\(L\\propto M^n\\)，即使 star luminosity 不是已熟悉的 laboratory experiment，也可以使用 \\(\\lg L\\) against \\(\\lg M\\) 的 method，gradient 仍代表 \\(n\\)。若 graph 的 intercept 还包含 scale factor，则需使用题目给出的 normalized quantities 处理 unit。",
+    "crumbs": [
+      "AS Level",
+      "Paper 5 Planning, Analysis and Evaluation"
+    ]
+  },
+  {
+    "objectID": "as-level/31-paper-5-planning-analysis-evaluation.html#common-mark-scheme-traps-高频失分点",
+    "href": "as-level/31-paper-5-planning-analysis-evaluation.html#common-mark-scheme-traps-高频失分点",
+    "title": "Paper 5 Planning, Analysis and Evaluation / 实验设计与数据分析",
+    "section": "11. Common mark-scheme traps / 高频失分点",
+    "text": "11. Common mark-scheme traps / 高频失分点\n\nPlanning\n\n只列 control variables，不说明如何控制；\ndiagram 缺少关键 labels 或无法实际操作；\n选择不适合 expected range 的 instrument；\n只写 take more readings，没有说明 range、repeats 或 analysis；\n只写 plot a graph，没有说明 axes 和 expected graph feature；\nsafety precaution 没有对应 hazard；\n没有说明如何得到 dependent variable；\n忘记 measurement of constants needed in the equation。\n\n\n\nData analysis\n\nplot wrong transformed quantity；\n把 ln 和 lg 混用；\nlog argument 没有 unit ratio；\n只画 data points，不画 error bars；\nerror bars 不对称或长度不符合 scale；\nworst acceptable line 没有通过 all error bars；\n把 best-fit gradient 当作 uncertainty；\ngradient 写成 \\(\\Delta x/\\Delta y\\)；\ny-intercept uncertainty 漏掉；\nfinal constant 没有 unit 或 significant figures 不合理；\n在 equation 不要求时强行让 line pass through origin；\n只写“data support relationship”，没有 quantitative evidence。",
+    "crumbs": [
+      "AS Level",
+      "Paper 5 Planning, Analysis and Evaluation"
+    ]
+  },
+  {
+    "objectID": "as-level/31-paper-5-planning-analysis-evaluation.html#complete-question-2-workflow-q2-完整流程",
+    "href": "as-level/31-paper-5-planning-analysis-evaluation.html#complete-question-2-workflow-q2-完整流程",
+    "title": "Paper 5 Planning, Analysis and Evaluation / 实验设计与数据分析",
+    "section": "12. Complete Question 2 workflow / Q2 完整流程",
+    "text": "12. Complete Question 2 workflow / Q2 完整流程\n\nRead the suggested equation。\nIdentify graph \\(x\\) and \\(y\\) quantities。\nCheck whether a reciprocal、square、log or square root is needed。\nCalculate all derived data with units and suitable significant figures。\nCalculate uncertainties in transformed quantities。\nComplete the table。\nPlot all points。\nPlot all error bars。\nDraw line of best fit。\nDraw and label worst acceptable line。\nDetermine best-fit gradient and intercept。\nDetermine gradient/intercept uncertainties。\nUse gradient/intercept to calculate constants。\nPropagate uncertainty into the constants。\nWrite a quantitative conclusion or prediction。",
+    "crumbs": [
+      "AS Level",
+      "Paper 5 Planning, Analysis and Evaluation"
+    ]
+  },
+  {
+    "objectID": "as-level/31-paper-5-planning-analysis-evaluation.html#revision-checklist-复习清单",
+    "href": "as-level/31-paper-5-planning-analysis-evaluation.html#revision-checklist-复习清单",
+    "title": "Paper 5 Planning, Analysis and Evaluation / 实验设计与数据分析",
+    "section": "13. Revision checklist / 复习清单",
+    "text": "13. Revision checklist / 复习清单\n\nPlanning\n\nI can identify independent、dependent and control variables。\nI can describe how each variable is changed or measured。\nI can draw a labelled and workable apparatus diagram。\nI can select instruments with suitable range and precision。\nI can specify a sensible range and number of readings。\nI can explain repeats、averaging and control of variables。\nI can state graph axes and the expected relationship。\nI can connect safety precautions to real hazards。\n\n\n\nAnalysis\n\nI can linearise exponential and power relationships。\nI can calculate reciprocal、squared、square-root、\\(\\ln\\) and \\(\\lg\\) quantities。\nI can include units correctly inside logarithm arguments。\nI can calculate uncertainty in a transformed quantity。\nI can draw symmetrical error bars。\nI can draw a line of best fit and a worst acceptable line。\nI can determine gradient、intercept and their uncertainties。\nI can calculate a final constant with unit and uncertainty。\nI can write a conclusion supported by numerical evidence。",
+    "crumbs": [
+      "AS Level",
+      "Paper 5 Planning, Analysis and Evaluation"
+    ]
+  },
+  {
+    "objectID": "as-level/31-paper-5-planning-analysis-evaluation.html#past-paper-evidence-appendix-历年真题证据",
+    "href": "as-level/31-paper-5-planning-analysis-evaluation.html#past-paper-evidence-appendix-历年真题证据",
+    "title": "Paper 5 Planning, Analysis and Evaluation / 实验设计与数据分析",
+    "section": "14. Past-paper evidence appendix / 历年真题证据",
+    "text": "14. Past-paper evidence appendix / 历年真题证据\n本地目前可用的 Paper 5 资料覆盖 2020–2023 和 2025 O/N；2024 目录中没有找到 Paper 5 文件。典型 pattern 如下：\n\n\n\n\n\n\n\n\n\nSession\nTypical Question 1 planning context\nTypical Question 2 analysis context\nMain analysis skill\n\n\n\n\n2020\nSprings、stationary waves\nCapacitor discharge、viscosity\n\\(\\ln y\\)、gradient uncertainty\n\n\n2021\nCoil、heating cylinder、floating cylinder\nCollisions、G-M tube、circuits\nError bars、worst acceptable line\n\n\n2022\nParallel plates、conductors、copper sheet\nStars、stationary waves、circuits\n\\(\\lg y\\)、reciprocal variables、prediction\n\n\n2023\nCoils、inclined plane、beakers\nCapacitors、standing waves\nPlanning controls、log analysis\n\n\n2025 O/N\nSpring compression、wind turbine\nGalaxies、moons\nPower-law graph、extrapolation、uncertainty",
+    "crumbs": [
+      "AS Level",
+      "Paper 5 Planning, Analysis and Evaluation"
+    ]
+  },
+  {
+    "objectID": "as-level/31-paper-5-planning-analysis-evaluation.html#source-basis-参考资料",
+    "href": "as-level/31-paper-5-planning-analysis-evaluation.html#source-basis-参考资料",
+    "title": "Paper 5 Planning, Analysis and Evaluation / 实验设计与数据分析",
+    "section": "Source basis / 参考资料",
+    "text": "Source basis / 参考资料\n\nCambridge 9702 syllabus for 2025–2027；\navailable Paper 5 Question Papers and Mark Schemes in PastPaper/2020、PastPaper/2021、PastPaper/2022、PastPaper/2023 和 PastPaper/2025；\ncaie-a2-level-physics-9702-theory-v2.pdf：预留为 supplementary theory reference；当前生成时未能在用户提供的路径找到该文件，因此本版本未引用其具体内容。\n\n具体考试要求和最新 wording 仍以 current syllabus、question paper 和 official mark scheme 为准。",
+    "crumbs": [
+      "AS Level",
+      "Paper 5 Planning, Analysis and Evaluation"
+    ]
+  },
+  {
     "objectID": "as-level/11-particle-physics.html",
     "href": "as-level/11-particle-physics.html",
     "title": "11 Particle physics",
@@ -1026,7 +1213,7 @@
     "href": "index.html#as-level-chapters-111",
     "title": "CIE Physics Study Hub",
     "section": "AS Level · Chapters 1–11",
-    "text": "AS Level · Chapters 1–11\nChoose a chapter to begin. Each page keeps the original English wording and diagrams, with answers from the official mark schemes.\n\n\n1 Physical quantities and units\n\n1.1 Physical quantities: values, units and orders of magnitude\n1.2 SI units: base units, derived units, dimensional consistency and prefixes\n\n\n\n2 Kinematics\n\n2.1 Equations of motion: displacement, velocity, acceleration and motion graphs\nSUVAT equations, free fall and projectile motion\n\n\n\n3 Dynamics\n\nNewton’s laws, force and momentum, terminal velocity\nMomentum conservation and collisions\n\n\n\n4 Forces, density and pressure\n\n4.1 Turning effects: centre of gravity, moment, couple and torque\n4.2 Equilibrium of forces: principle of moments and vector triangles\n4.3 Density and pressure: hydrostatic pressure, upthrust and Archimedes’ principle\n\n\n\n5 Work, energy and power\n\n5.1 Energy conservation: work done, efficiency and power\n5.2 Gravitational potential energy and kinetic energy\n\n\n\n6 Deformation of solids\n\n6.1 Stress and strain: Hooke’s law, spring constant and the Young modulus\n6.2 Elastic and plastic behaviour: stress-strain graphs and strain energy\n\n\n\n7 Waves\n\n7.1 Progressive waves: wave equation, phase difference, intensity and CRO\n7.2 Transverse and longitudinal waves, Doppler effect for sound\n7.3 Electromagnetic spectrum, polarisation and Malus’s law\n\n\n\n8 Superposition\n\n8.1 Stationary waves: nodes, antinodes, strings and tubes\n8.2 Diffraction and interference: double-slit and diffraction grating\n\n\n\n9 Electricity\n\n9.1 Electric current and p.d.: charge, current, drift velocity and power\n9.2 Resistance: Ohm’s law and I-V characteristics\n9.3 Resistivity: \\(\\rho=RA/L\\) and temperature, illumination and strain\n\n\n\n10 D.C. circuits\n\n10.1 Practical circuits: e.m.f. vs p.d., internal resistance and power\n10.2 Kirchhoff’s laws: charge and energy conservation, series and parallel\n10.3 Potential dividers: potentiometer, null methods, thermistors and LDRs\n\n\n\n11 Particle physics\n\n11.1 Atoms, nuclei and radiation: α-scattering, α/β/γ decay and the atomic mass unit\n11.2 Fundamental particles: quarks, baryons, mesons and leptons",
+    "text": "AS Level · Chapters 1–11\nChoose a chapter to begin. Each page keeps the original English wording and diagrams, with answers from the official mark schemes.\n\n\n1 Physical quantities and units\n\n1.1 Physical quantities: values, units and orders of magnitude\n1.2 SI units: base units, derived units, dimensional consistency and prefixes\n\n\n\n2 Kinematics\n\n2.1 Equations of motion: displacement, velocity, acceleration and motion graphs\nSUVAT equations, free fall and projectile motion\n\n\n\n3 Dynamics\n\nNewton’s laws, force and momentum, terminal velocity\nMomentum conservation and collisions\n\n\n\n4 Forces, density and pressure\n\n4.1 Turning effects: centre of gravity, moment, couple and torque\n4.2 Equilibrium of forces: principle of moments and vector triangles\n4.3 Density and pressure: hydrostatic pressure, upthrust and Archimedes’ principle\n\n\n\n5 Work, energy and power\n\n5.1 Energy conservation: work done, efficiency and power\n5.2 Gravitational potential energy and kinetic energy\n\n\n\n6 Deformation of solids\n\n6.1 Stress and strain: Hooke’s law, spring constant and the Young modulus\n6.2 Elastic and plastic behaviour: stress-strain graphs and strain energy\n\n\n\n7 Waves\n\n7.1 Progressive waves: wave equation, phase difference, intensity and CRO\n7.2 Transverse and longitudinal waves, Doppler effect for sound\n7.3 Electromagnetic spectrum, polarisation and Malus’s law\n\n\n\n8 Superposition\n\n8.1 Stationary waves: nodes, antinodes, strings and tubes\n8.2 Diffraction and interference: double-slit and diffraction grating\n\n\n\n9 Electricity\n\n9.1 Electric current and p.d.: charge, current, drift velocity and power\n9.2 Resistance: Ohm’s law and I-V characteristics\n9.3 Resistivity: \\(\\rho=RA/L\\) and temperature, illumination and strain\n\n\n\n10 D.C. circuits\n\n10.1 Practical circuits: e.m.f. vs p.d., internal resistance and power\n10.2 Kirchhoff’s laws: charge and energy conservation, series and parallel\n10.3 Potential dividers: potentiometer, null methods, thermistors and LDRs\n\n\n\n11 Particle physics\n\n11.1 Atoms, nuclei and radiation: α-scattering, α/β/γ decay and the atomic mass unit\n11.2 Fundamental particles: quarks, baryons, mesons and leptons\n\n\n\nPaper 3 Advanced Practical Skills\n\nManipulation, measurement, observation and data collection\nTables, graphs, uncertainty, conclusions, limitations and improvements\n\n\n\nPaper 5 Planning, Analysis and Evaluation\n\nExperimental planning: variables, apparatus, controls, analysis and safety\nGraph transformations, error bars, uncertainties, conclusions and predictions",
     "crumbs": [
       "学习首页"
     ]
@@ -1424,6 +1611,226 @@
     "crumbs": [
       "AS Level",
       "10 D.C. circuits"
+    ]
+  },
+  {
+    "objectID": "as-level/30-paper-3-advanced-practical-skills.html",
+    "href": "as-level/30-paper-3-advanced-practical-skills.html",
+    "title": "Paper 3 Advanced Practical Skills / 实验技能",
+    "section": "",
+    "text": "本章把 Paper 3 的考点按 skill 组织，而不是按某一个固定实验组织。考试会更换 physical context、apparatus 和 equation，但评分点通常集中在以下能力：\n\n正确操作 apparatus 并遵守 written instructions；\n收集足够数量、足够范围和质量良好的 data；\n规范记录 raw data 和 derived quantities；\n完成 table of results 和 graph；\n从 graph 得到 gradient、y-intercept 和 constants；\n处理 uncertainty、significant figures 和 units；\n写出 evidence-based conclusion；\n识别 limitation 并提出 realistic improvement。\n\n\n\nPaper 3 rewards reliable experimental practice. 最终数值正确只是其中一个方面；mark scheme 还会分别评价 measurement quality、data range、table conventions、graph conventions、uncertainty 和 evaluation。",
+    "crumbs": [
+      "AS Level",
+      "Paper 3 Advanced Practical Skills"
+    ]
+  },
+  {
+    "objectID": "as-level/30-paper-3-advanced-practical-skills.html#使用说明-how-to-use-this-chapter",
+    "href": "as-level/30-paper-3-advanced-practical-skills.html#使用说明-how-to-use-this-chapter",
+    "title": "Paper 3 Advanced Practical Skills / 实验技能",
+    "section": "",
+    "text": "本章把 Paper 3 的考点按 skill 组织，而不是按某一个固定实验组织。考试会更换 physical context、apparatus 和 equation，但评分点通常集中在以下能力：\n\n正确操作 apparatus 并遵守 written instructions；\n收集足够数量、足够范围和质量良好的 data；\n规范记录 raw data 和 derived quantities；\n完成 table of results 和 graph；\n从 graph 得到 gradient、y-intercept 和 constants；\n处理 uncertainty、significant figures 和 units；\n写出 evidence-based conclusion；\n识别 limitation 并提出 realistic improvement。\n\n\n\nPaper 3 rewards reliable experimental practice. 最终数值正确只是其中一个方面；mark scheme 还会分别评价 measurement quality、data range、table conventions、graph conventions、uncertainty 和 evaluation。",
+    "crumbs": [
+      "AS Level",
+      "Paper 3 Advanced Practical Skills"
+    ]
+  },
+  {
+    "objectID": "as-level/30-paper-3-advanced-practical-skills.html#考试结构-examination-structure",
+    "href": "as-level/30-paper-3-advanced-practical-skills.html#考试结构-examination-structure",
+    "title": "Paper 3 Advanced Practical Skills / 实验技能",
+    "section": "1. 考试结构 / Examination structure",
+    "text": "1. 考试结构 / Examination structure\n\n\n\n\n\n\n\n项目 / Feature\n要求 / Requirement\n\n\n\n\nComponent\nPaper 3 Advanced Practical Skills\n\n\nDuration\n2 hours\n\n\nTotal marks\n40 marks\n\n\nQuestions\nTwo questions, normally 20 marks each\n\n\nQuestion 1\nData collection、table、graph、analysis 和 conclusion\n\n\nQuestion 2\nMeasurement、uncertainty、comparison、limitations 和 improvements\n\n\nExamination setting\nLaboratory-based practical examination\n\n\nSpecific theory\n不要求预先知道该实验的具体理论；题目会提供必要 information\n\n\n\n\nQuestion 1：Graph-based experiment\n通常需要完成：\n\nset up apparatus；\ncollect several sets of readings；\ncalculate derived quantities；\ncomplete a table of results；\nplot a graph；\ndraw a line of best fit；\ndetermine gradient and y-intercept；\nuse the graph to find constants or other quantities。\n\n\n\nQuestion 2：Uncertainty and evaluation experiment\n通常需要完成：\n\ntake one or more initial measurements；\nestimate absolute uncertainty and percentage uncertainty；\ncalculate a derived quantity or constant；\nrepeat under a changed condition；\ncompare two calculated values；\ndecide whether a suggested relationship is supported；\ndescribe four limitations or sources of uncertainty；\nsuggest four realistic improvements。",
+    "crumbs": [
+      "AS Level",
+      "Paper 3 Advanced Practical Skills"
+    ]
+  },
+  {
+    "objectID": "as-level/30-paper-3-advanced-practical-skills.html#完整-skill-map-complete-skill-map",
+    "href": "as-level/30-paper-3-advanced-practical-skills.html#完整-skill-map-complete-skill-map",
+    "title": "Paper 3 Advanced Practical Skills / 实验技能",
+    "section": "2. 完整 skill map / Complete skill map",
+    "text": "2. 完整 skill map / Complete skill map\n\n\n\n\n\n\n\n\nSkill area\n中文重点\nTypical evidence in the answer\n\n\n\n\nManipulation\n组装、调整和安全操作 apparatus\nCorrect circuit、support、alignment 或 arrangement\n\n\nMeasurement\n使用 scales、meters、balances、timers 和 sensors\nReadings with correct units and precision\n\n\nObservation\n观察 movement、balance、oscillation、change 和 trend\nRecorded observations and qualitative comments\n\n\nData collection\n获得足够 readings 和足够大 range\nFive or six distinct data sets with the correct trend\n\n\nData presentation\n规范整理 raw 和 calculated data\nComplete table with correct headings\n\n\nGraphing\n遵守 graph conventions\nCorrect axes、scale、points 和 best-fit line\n\n\nAnalysis\n求 gradient、intercept 和 constants\nCorrect rearrangement and calculation\n\n\nUncertainty\n估计并传播 measurement uncertainty\nAbsolute、fractional 和 percentage uncertainty\n\n\nConclusion\n用 data 检验 suggested relationship\nQuantitative and consistent conclusion\n\n\nEvaluation\n找出 limitation 并提出 improvement\nSpecific limitation plus matching improvement",
+    "crumbs": [
+      "AS Level",
+      "Paper 3 Advanced Practical Skills"
+    ]
+  },
+  {
+    "objectID": "as-level/30-paper-3-advanced-practical-skills.html#general-tips-general-examination-habits",
+    "href": "as-level/30-paper-3-advanced-practical-skills.html#general-tips-general-examination-habits",
+    "title": "Paper 3 Advanced Practical Skills / 实验技能",
+    "section": "3. General tips / General examination habits",
+    "text": "3. General tips / General examination habits\n下面三条 general tips 与近年 mark scheme 高度一致：\n\n3.1 Use a large spread / 使用较大的 range\n如果题目给出 range，例如 0 to 20，应尽量让 measurements 分布在较大的范围内，而不是集中在中间很小的一段。这样可以：\n\nimprove the quality of data；\nmake the trend clearer；\nreduce the relative effect of random uncertainty；\nmake the gradient more reliable。\n\n\n\n3.2 Record all intermediate measurements / 记录所有中间量\n如果最终量由中间步骤得到，table 中应记录完成 calculation 所需的 raw measurements 和 intermediate quantities。\n例如：\n\\[\nl=l_2-l_1\n\\]\n那么 l_1 和 l_2 都应出现在 table 中，而不是只记录最后的 l。\n\n\n3.3 Label every column / 每列写清楚 quantity 和 unit\nTable heading 应包含 physical quantity、symbol 和 unit，例如：\n\n\\(I / \\mathrm{A}\\)\n\\(R / \\Omega\\)\n\\(t / \\mathrm{s}\\)\n\\(1/R / \\Omega^{-1}\\)\n\n不要只写 A、s、current 或 R ohm。\n\n\nExample / 示例：recording intermediate quantities\n若实验需要测量一根 rod 的长度 \\(l\\)，其中\n\\[\nl=l_2-l_1,\n\\]\n则 table 应记录 l₁ / cm、l₂ / cm 和 l / cm。只记录最后的 \\(l\\) 会使 calculation 过程无法检查，也可能失去 data-recording mark。",
+    "crumbs": [
+      "AS Level",
+      "Paper 3 Advanced Practical Skills"
+    ]
+  },
+  {
+    "objectID": "as-level/30-paper-3-advanced-practical-skills.html#manipulationmeasurement-and-observation",
+    "href": "as-level/30-paper-3-advanced-practical-skills.html#manipulationmeasurement-and-observation",
+    "title": "Paper 3 Advanced Practical Skills / 实验技能",
+    "section": "4. Manipulation、measurement and observation",
+    "text": "4. Manipulation、measurement and observation\n\n4.1 Setting up apparatus / 组装和调整\nCandidates should be able to：\n\nfollow written instructions and apparatus diagrams；\nset up a circuit without supervisor assistance；\nconnect an ammeter in series and a voltmeter in parallel；\nuse a switch safely and open the circuit when readings are not being taken；\nposition clamps、stands、pulleys、springs、rulers 和 masses correctly；\nmake a system horizontal or vertical when required；\nalign moving objects、light sources、sensors、rulers 和 strings；\nadjust the apparatus gradually until the required condition is reached；\navoid disturbing the apparatus during a reading。\n\n\n\n4.2 Common measuring instruments / 常见仪器\n\n\n\n\n\n\n\n\nQuantity\nApparatus\nKey technique\n\n\n\n\nLength / distance\nMillimetre ruler、metre rule\nEye-level reading、avoid parallax\n\n\nSmall diameter / thickness\nVernier calipers、micrometer screw gauge\nMeasure at suitable positions；do not over-tighten\n\n\nMass\nTop-pan balance\nZero or tare the balance；wait for a stable display\n\n\nForce\nNewton meter、masses and hanger\nCheck zero；read at eye level；keep force in the required direction\n\n\nTime\nStopwatch、digital timer\nTime several cycles or repeated events\n\n\nCurrent\nAmmeter、digital multimeter\nConnect in series；choose a suitable range\n\n\nPotential difference\nVoltmeter、digital multimeter\nConnect in parallel；choose a suitable range\n\n\nTemperature\nThermometer、temperature probe\nKeep the bulb or probe at the correct position\n\n\nAngle\nProtractor\nAlign baseline and avoid parallax\n\n\n\n\n\n4.3 Micrometer screw gauge / 螺旋测微器\n基本操作：\n\nPlace the object between the anvil and spindle；\nrotate the thimble until the object is held firmly but not compressed；\nread the main scale；\nread the rotating or thimble scale；\nadd the two scale readings；\ncheck zero error before using the instrument。\n\n适合测量 small thickness 或 diameter。若单个物体太薄，可以测量一叠 objects，再除以数量，但必须说明这种方法的 logic。\n\n\nExample / 示例：micrometer screw gauge\n假设 main scale 读数为 \\(5.50\\ \\mathrm{mm}\\)，thimble scale 读数为 \\(0.24\\ \\mathrm{mm}\\)，则：\n\\[\nd=5.50+0.24=5.74\\ \\mathrm{mm}.\n\\]\n实际考试还要检查 zero error，并按照题目要求记录合适的 significant figures。\n\n\n4.4 Vernier scale / 游标卡尺\n基本操作：\n\nplace the object between the jaws；\nmove the sliding scale until it just touches the object；\nread the main scale；\nidentify the vernier division that aligns with a main-scale division；\ncombine the main-scale reading and vernier reading；\ncheck for zero error。\n\n\n\nExample / 示例：Vernier calipers\n若 main scale 为 \\(12.0\\ \\mathrm{mm}\\)，而与 main-scale mark 对齐的 vernier division 对应 \\(0.6\\ \\mathrm{mm}\\)，则直径为：\n\\[\nd=12.0+0.6=12.6\\ \\mathrm{mm}.\n\\]\n不要把 vernier reading 单独当作最终读数。\n\n\n4.5 Timing oscillations / 振动计时\n对于 spring、pendulum、chain 或 wooden strip：\n\ndisplace the system through a small and repeatable amplitude；\nrelease without an additional push；\ncount \\(n\\) complete oscillations；\nmeasure total time \\(t\\)；\ncalculate\n\n\\[\nT=\\frac{t}{n};\n\\]\n\nrepeat the timing where appropriate；\nkeep the amplitude and initial condition consistent。\n\nTiming many oscillations reduces the relative effect of reaction time。\n\n\nExample / 示例：period measurement\n若 \\(n=10\\) 个 oscillations 的总时间为 \\(t=12.6\\ \\mathrm{s}\\)，则：\n\\[\nT=\\frac{12.6}{10}=1.26\\ \\mathrm{s}.\n\\]\n相比只计时一个周期，计时十个周期会减小 start/stop reaction time 对最终 \\(T\\) 的相对影响。",
+    "crumbs": [
+      "AS Level",
+      "Paper 3 Advanced Practical Skills"
+    ]
+  },
+  {
+    "objectID": "as-level/30-paper-3-advanced-practical-skills.html#data-collection-and-data-quality",
+    "href": "as-level/30-paper-3-advanced-practical-skills.html#data-collection-and-data-quality",
+    "title": "Paper 3 Advanced Practical Skills / 实验技能",
+    "section": "5. Data collection and data quality",
+    "text": "5. Data collection and data quality\n高分 data collection 通常需要：\n\nreadings physically reasonable；\nenough distinct values of the independent variable；\na large usable range；\ncorrect trend；\nrepeated readings where random variation is important；\nconsistent measurement technique；\nsufficient precision for the instrument；\nno unnecessary supervisor assistance。\n\n\n\n\n\n\n\n警告Narrow range is a common loss of marks\n\n\n\nSix readings in a narrow interval do not automatically receive full credit. Mark schemes often specify a minimum range for mass、length、resistance 或 other independent variables。\n\n\n\nExample / 示例：data range\n研究 mass \\(m\\) 对 period \\(T\\) 的影响时，六组 \\(m=280,285,290,295,300,305\\ \\mathrm{g}\\) 的 readings range 太窄；若 apparatus 允许，更好的设计是覆盖例如 \\(100\\)–\\(500\\ \\mathrm{g}\\)，并保持其他 variables constant。",
+    "crumbs": [
+      "AS Level",
+      "Paper 3 Advanced Practical Skills"
+    ]
+  },
+  {
+    "objectID": "as-level/30-paper-3-advanced-practical-skills.html#table-of-results-数据表",
+    "href": "as-level/30-paper-3-advanced-practical-skills.html#table-of-results-数据表",
+    "title": "Paper 3 Advanced Practical Skills / 实验技能",
+    "section": "6. Table of results / 数据表",
+    "text": "6. Table of results / 数据表\n\n6.1 Required contents\nTable should include：\n\nevery raw measurement；\nevery required derived quantity；\nintermediate quantities used in the calculation；\nall quantities needed for the graph；\nquantity/unit headings；\nconsistent decimal places；\njustified significant figures。\n\n\n\n6.2 Accepted headings\n\n\n\n\n\n\n\nQuantity\nAccepted heading\n\n\n\n\nCurrent in amperes\n\\(I / \\mathrm{A}\\)\n\n\nResistance in ohms\n\\(R / \\Omega\\)\n\n\nTime in seconds\n\\(t / \\mathrm{s}\\)\n\n\nReciprocal resistance\n\\(1/R / \\Omega^{-1}\\)\n\n\nSquared period\n\\(T^2 / \\mathrm{s^2}\\)\n\n\nSquare root of period\n\\(\\sqrt{T} / \\mathrm{s^{1/2}}\\)\n\n\nTemperature change\n\\(\\Delta\\theta / \\mathrm{K}\\) or \\(\\Delta\\theta / ^\\circ\\mathrm{C}\\), as appropriate\n\n\n\n\n\n6.3 Raw data consistency\n\n同一 column 的 raw readings 保持相同 decimal places。\nMillimetre ruler 的 reading 不应写成 whole centimetres。\nStopwatch 若读到 0.1 s，整列都要保持 0.1 s；不能混用 0.01 s。\nCalculated quantity 的 precision 不能超过 raw data 所支持的 precision。\n\n\n\nExample / 示例：table of results\n\n\n\n\\(m / \\mathrm{g}\\)\n\\(t / \\mathrm{s}\\)\n\\(T=t/n / \\mathrm{s}\\)\n\n\n\n\n100\n12.4\n1.24\n\n\n200\n15.8\n1.58\n\n\n\n这里 raw time 统一记录到 \\(0.1\\ \\mathrm{s}\\)，而 calculated \\(T\\) 保留到 \\(0.01\\ \\mathrm{s}\\)，因为 \\(T\\) 是由 \\(t/n\\) 得到的 derived quantity。",
+    "crumbs": [
+      "AS Level",
+      "Paper 3 Advanced Practical Skills"
+    ]
+  },
+  {
+    "objectID": "as-level/30-paper-3-advanced-practical-skills.html#graph-skills-作图技能",
+    "href": "as-level/30-paper-3-advanced-practical-skills.html#graph-skills-作图技能",
+    "title": "Paper 3 Advanced Practical Skills / 实验技能",
+    "section": "7. Graph skills / 作图技能",
+    "text": "7. Graph skills / 作图技能\n\n7.1 Axes and scale\n作图前先判断 equation 需要的 variables。然后：\n\n写正确的 \\(x\\)-axis 和 \\(y\\)-axis quantities；\n写 units；\n选择 simple scale，例如 1、2 或 5 units per large square；\n让 points 在两个方向都占 graph grid 的至少一半；\n必要时使用 false origin；\nscale labels 保持规律；\n避免 awkward scale，例如 3 units per large square。\n\n\n\n7.2 Plotting points\n\nPlot every observation in the table。\nUse a small cross or fine encircled dot。\nAccuracy should be better than half a small square where possible。\nDo not join points dot-to-dot。\nIf a point is anomalous，circle or label it clearly。\n\n\n\n7.3 Line of best fit\n合格的 line of best fit 应：\n\nfollow the overall trend；\nhave an approximately even distribution of points on both sides；\nbe straight for a linear relationship；\nbe thin、continuous and not kinked；\ncover the full data range；\nnot be forced through every point。\n\n\n\n7.4 Gradient and y-intercept\n对于：\n\\[\ny=mx+c\n\\]\n其中 \\(m\\) 是 gradient，\\(c\\) 是 y-intercept。\n使用 line 上两个相距较远的 points：\n\\[\nm=\\frac{\\Delta y}{\\Delta x}.\n\\]\n注意：\n\n必须是 \\(\\Delta y/\\Delta x\\)，不能倒置；\n两点间距最好超过 drawn line 长度的一半；\nread-off 应准确到 half a small square；\ngradient 和 intercept 都要有正确 units；\nfalse origin 下不能把图纸边界误认为 \\(x=0\\)。\n\n如果 intercept 不能直接读出，可使用：\n\\[\nc=y-mx.\n\\]\n\n\nExample / 示例：gradient and intercept\n若 line of best fit 上取两点 \\((x_1,y_1)=(0.20,1.10)\\) 和 \\((x_2,y_2)=(0.80,2.90)\\)，则：\n\\[\nm=\\frac{2.90-1.10}{0.80-0.20}=3.0.\n\\]\n再用 \\(y=mx+c\\) 代入 \\((0.20,1.10)\\)：\n\\[\nc=1.10-3.0\\times0.20=0.50.\n\\]\n实际答案必须根据 graph 的 units 写出 gradient 和 intercept 的单位。",
+    "crumbs": [
+      "AS Level",
+      "Paper 3 Advanced Practical Skills"
+    ]
+  },
+  {
+    "objectID": "as-level/30-paper-3-advanced-practical-skills.html#data-analysis-and-physical-relationships",
+    "href": "as-level/30-paper-3-advanced-practical-skills.html#data-analysis-and-physical-relationships",
+    "title": "Paper 3 Advanced Practical Skills / 实验技能",
+    "section": "8. Data analysis and physical relationships",
+    "text": "8. Data analysis and physical relationships\n\n8.1 Linearisation / 线性化\n许多 Paper 3 equation 会要求先计算 derived quantity，再画 linear graph。\n\n\n\n\n\n\n\n\nGiven relationship\nGraph\nInterpretation\n\n\n\n\n\\(y=mx+c\\)\n\\(y\\) against \\(x\\)\nGradient \\(m\\)、intercept \\(c\\)\n\n\n\\(y=a+bx\\)\n\\(y\\) against \\(x\\)\nGradient \\(b\\)、intercept \\(a\\)\n\n\n\\(y=a/x+b\\)\n\\(y\\) against \\(1/x\\)\nGradient/intercept from rearranged equation\n\n\n\\(y=ax^2+b\\)\n\\(y\\) against \\(x^2\\)\nGradient \\(a\\)、intercept \\(b\\)\n\n\n\\(y=a\\sqrt{x}+b\\)\n\\(y\\) against \\(\\sqrt{x}\\)\nGradient \\(a\\)、intercept \\(b\\)\n\n\n\\(y=a/x^2+b\\)\n\\(y\\) against \\(1/x^2\\)\nGradient/intercept from rearranged equation\n\n\n\n\n\n8.2 Analysis routine\n\nWrite the suggested equation。\nRearrange into \\(y=mx+c\\) form。\nIdentify graph axes。\nIdentify the physical meaning of gradient。\nIdentify the physical meaning of intercept。\nSubstitute measured gradient/intercept。\nInclude units。\nRound only at the end。\n\n\n\nExample / 示例：choosing a graph\n若题目给出\n\\[\nT^2=am+b,\n\\]\n应计算 \\(T^2\\)，画 \\(T^2\\) against \\(m\\)。此时 gradient 是 \\(a\\)，y-intercept 是 \\(b\\)。不能直接画 \\(T\\) against \\(m\\) 后再使用同一个 interpretation。\n\n\n8.3 Conclusion from a graph\nConclusion should state：\n\nobserved relationship；\nvalue of the relevant constant；\nunit；\nwhether the data support the suggested relationship；\nquantitative evidence used for the decision。",
+    "crumbs": [
+      "AS Level",
+      "Paper 3 Advanced Practical Skills"
+    ]
+  },
+  {
+    "objectID": "as-level/30-paper-3-advanced-practical-skills.html#errors-and-uncertainty-errors-and-uncertainty",
+    "href": "as-level/30-paper-3-advanced-practical-skills.html#errors-and-uncertainty-errors-and-uncertainty",
+    "title": "Paper 3 Advanced Practical Skills / 实验技能",
+    "section": "9. Errors and uncertainty / Errors and uncertainty",
+    "text": "9. Errors and uncertainty / Errors and uncertainty\n\n9.1 Systematic error vs random error\n\n\n\n\n\n\n\n\nTerm\nMeaning\nTreatment\n\n\n\n\nSystematic error\nreadings are shifted consistently too high or too low\nCannot be removed by repeating or averaging；check zero、calibration and method\n\n\nRandom error\nreadings fluctuate unpredictably around a mean\nCan be reduced by repeat readings and averaging\n\n\nAccuracy\nagreement with the true or accepted value\nAffected strongly by systematic error\n\n\nPrecision\nagreement between repeated readings\nAffected strongly by random scatter\n\n\n\n一个 result 可以 precise but not accurate：重复值很接近，但整体受到 systematic error 的影响。\n\n\nExample / 示例：systematic vs random error\n若 voltmeter 在 zero input 时仍读出 \\(+0.20\\ \\mathrm{V}\\)，这是 zero error，会让 readings 整体偏高，属于 systematic error；重复测量和 averaging 不能消除它。\n若 stopwatch 的 readings 为 \\(12.4\\)、\\(12.8\\)、\\(12.5\\ \\mathrm{s}\\)，这种 scatter 主要表现为 random error，可以通过 timing more oscillations 和 repeated readings 减小影响。\n\n\n9.2 Absolute、fractional and percentage uncertainty\n若：\n\\[\nx=(2.0\\pm0.1)\\ \\mathrm{mm}\n\\]\n则：\n\\[\n\\Delta x=\\pm0.1\\ \\mathrm{mm}\n\\]\n\\[\n\\text{fractional uncertainty}=\\frac{\\Delta x}{x}\n\\]\n\\[\n\\text{percentage uncertainty}=\\frac{\\Delta x}{x}\\times100\\%.\n\\]\n\n\n9.3 Typical instrument uncertainty\n常见的 practical estimates 包括：\n\n\n\n\n\n\n\nInstrument\nTypical uncertainty used in practice\n\n\n\n\nRuler\nApproximately \\(0.1\\ \\mathrm{cm}\\), depending on the scale and reading method\n\n\nProtractor\nApproximately \\(2^\\circ\\), depending on the apparatus\n\n\nStopwatch\nHalf the range of repeated readings, where appropriate\n\n\nDigital meter\nBased on display resolution and stability\n\n\n\n考试时应以题目、apparatus 和 mark scheme 的 context 为准，不要机械套用一个固定 uncertainty。\n\n\nExample / 示例：percentage uncertainty\n若 ruler measurement 为 \\(L=25.0\\pm0.5\\ \\mathrm{cm}\\)，则：\n\\[\n\\text{percentage uncertainty}=\\frac{0.5}{25.0}\\times100\\%=2.0\\%.\n\\]\n\n\n9.4 Repeated readings\n若 repeated readings 合适：\n\\[\n\\text{absolute uncertainty}\n\\approx\n\\frac{\\text{maximum}-\\text{minimum}}{2}.\n\\]\n即使 repeated readings 相同，uncertainty 也不能随意写成 zero，因为 instrument resolution 和 technique 仍然存在。\n\n\nExample / 示例：half-range uncertainty\n若 repeated readings 为 \\(1.24\\)、\\(1.30\\)、\\(1.28\\ \\mathrm{s}\\)，则：\n\\[\n\\Delta t=\\frac{1.30-1.24}{2}=0.03\\ \\mathrm{s}.\n\\]\n\n\n9.5 Combining uncertainties\n在本课程常见的简单规则中：\n\nadded/subtracted quantities：add absolute uncertainties；\nmultiplied/divided quantities：add percentage or fractional uncertainties；\npowered quantities：percentage uncertainty multiplied by the power。\n\n例如：\n\\[\np=2x+y\n\\quad\\Rightarrow\\quad\n\\Delta p=2\\Delta x+\\Delta y\n\\]\n而如果：\n\\[\nr=2xy^3\n\\]\n则 fractional 或 percentage uncertainty 应按各 quantity 的 power 处理。\n\n\nExample / 示例：combining uncertainty\n若 \\(p=x+y\\)，且 \\(x=4.0\\pm0.1\\) 和 \\(y=6.0\\pm0.2\\)，则：\n\\[\np=10.0,\n\\qquad\n\\Delta p=0.1+0.2=0.3.\n\\]\n因此可写为 \\(p=10.0\\pm0.3\\)，具体 rounding 仍应遵循题目要求。",
+    "crumbs": [
+      "AS Level",
+      "Paper 3 Advanced Practical Skills"
+    ]
+  },
+  {
+    "objectID": "as-level/30-paper-3-advanced-practical-skills.html#testing-a-suggested-relationship",
+    "href": "as-level/30-paper-3-advanced-practical-skills.html#testing-a-suggested-relationship",
+    "title": "Paper 3 Advanced Practical Skills / 实验技能",
+    "section": "10. Testing a suggested relationship",
+    "text": "10. Testing a suggested relationship\nQ2 常要求在两个不同 conditions 下求 \\(k_1\\) 和 \\(k_2\\)。建议按以下顺序：\n\ncalculate \\(k_1\\)；\ncalculate \\(k_2\\)；\ncalculate percentage difference；\ncompare with given uncertainty or tolerance；\nwrite a consistent conclusion。\n\n常用形式：\n\\[\n\\text{percentage difference}\n=\n\\frac{|k_1-k_2|}{\\text{mean of }k_1\\text{ and }k_2}\n\\times100\\%.\n\\]\n\nModel conclusion\n\nThe percentage difference between the two values of \\(k\\) is %. This is smaller/larger than the stated uncertainty of %, so the results do/do not support the suggested relationship.\n\n不要只写 the values are close 或 the experiment is accurate；必须进行 numerical comparison。\n\n\nExample / 示例：testing a relationship\n若 \\(k_1=2.10\\)、\\(k_2=2.16\\)，则 percentage difference 约为 \\(2.8\\%\\)。若题目给出的 uncertainty 为 \\(5\\%\\)，因为 \\(2.8\\%&lt;5\\%\\)，可以说 data support the suggested relationship。",
+    "crumbs": [
+      "AS Level",
+      "Paper 3 Advanced Practical Skills"
+    ]
+  },
+  {
+    "objectID": "as-level/30-paper-3-advanced-practical-skills.html#evaluation-limitations-and-improvements",
+    "href": "as-level/30-paper-3-advanced-practical-skills.html#evaluation-limitations-and-improvements",
+    "title": "Paper 3 Advanced Practical Skills / 实验技能",
+    "section": "11. Evaluation / Limitations and improvements",
+    "text": "11. Evaluation / Limitations and improvements\n\n11.1 Four-mark limitation strategy\n每一个有效 point 通常给1 mark，最多4 marks。建议采用：\n\nMeasured quantity + specific difficulty + effect on uncertainty or reliability\n\n例如：\n\nIt is difficult to measure \\(h\\) because the ruler moves when it is touched, giving a large uncertainty in \\(h\\).\n\n对应的 improvement 可以写成：\n\nClamp the ruler in a stand so that it remains vertical and does not move during the reading.\n\n\n\n11.2 Common limitation categories\n\nReading and parallax\n\nscale cannot be viewed perpendicularly；\npointer、liquid level 或 object edge is difficult to identify；\nruler moves during the reading；\nmeniscus 或 refraction makes the surface unclear。\n\n\n\nTiming\n\nreaction time affects start/stop；\ndifficult to judge when an object reaches a marker；\nperiod changes because amplitude decreases；\ntotal timing interval is too short。\n\n\n\nAlignment and geometry\n\nobject is not circular、straight or uniform；\nrulers are not parallel；\nstring、rod or mass is not in the required plane；\nsystem is not horizontal or vertical；\ncylinder、tube or board is not aligned。\n\n\n\nMovement and stability\n\npointer oscillates；\nsupport、clamp or stand moves；\nobject slips、rolls sideways or hits apparatus；\nspring or string does not remain in the same position。\n\n\n\nElectrical measurements\n\ncrocodile clips make poor contact；\nwire short-circuits；\nresistance changes due to heating；\nambient light affects an LDR；\ncurrent or voltage reading fluctuates。\n\n\n\nThermal and fluid effects\n\nheat is lost through the sides or bottom；\nthermometer bulb is not fully immersed；\ntemperature continues changing after the switch is opened；\ntemperature change is small compared with thermometer resolution；\nrefraction or curved container makes depth difficult to measure。\n\n\n\nInsufficient data\n\ntwo readings are not enough to draw a valid conclusion；\ntoo few values of the independent variable are available；\nno reliable trend or graph can be established。\n\n\n\n\n11.3 Specific Error → Improvement bank\n下面整理了可以迁移到 Paper 3 的 Error → Improvement patterns：\n\n\n\n\n\n\n\nError / limitation\nSpecific improvement\n\n\n\n\nParallax when reading a ruler\nRead at eye level；use a mirror scale、shadow projection or a fixed pointer\n\n\nDifficult to locate the centre of a ball\nMark the centre with a fiducial marker\n\n\nFast-moving object makes the end point difficult to judge\nUse a sensor or record with a camera frame by frame\n\n\nWater surface is unclear because of meniscus/refraction\nUse coloured liquid or a transparent pointer arrangement\n\n\nLabels get wet or ink runs\nUse waterproof labels or waterproof ink\n\n\nBounce is inconsistent\nUse a flat surface and fixed release position\n\n\nOscillation time is too short\nTime more oscillations；use video or a motion sensor\n\n\nObject does not swing freely\nReduce friction；make the pivot hole larger or use a suitable bush\n\n\nOscillation dies out quickly\nReduce air movement；use a heavier or more suitable object\n\n\nRetort stand moves\nAdd weights、clamp or fix the stand to the bench\n\n\nResistance/current fluctuates\nClean contacts and secure the wires\n\n\nVoltmeter resolution is insufficient\nUse a more sensitive or digital voltmeter\n\n\nForce rises suddenly\nUse a force sensor with a data logger\n\n\nWeights move off the intended path\nFix the loop or hanger with tape/glue；use a guide\n\n\nMasses hit each other in a pulley experiment\nUse a larger pulley or improve alignment\n\n\nFriction at the pulley\nLubricate the pulley or use a lower-friction arrangement\n\n\nHeat loss through sides/bottom\nLag or insulate the container；use a polystyrene cup\n\n\nThermometer bulb not fully immersed\nUse a larger volume or a temperature probe/thermocouple\n\n\nResistor continues heating after switch-off\nWait for a stable maximum/minimum temperature before reading\n\n\nObject has not reached terminal velocity\nMeasure time over several markers or a longer distance\n\n\nExternal light affects an LDR\nConduct the experiment in a dark room or use an enclosure\n\n\nTube length changes when material is added\nMake pre-slots or fixed marks on the tube\n\n\nCylinders are not aligned\nAlign them on a ruler or bench；use tape/clamps\n\n\nRuler slips on a support\nGlue or tape the support to a fixed block\n\n\nNewton meter is not parallel to the ruler\nUse a long string、pulley and weights；ensure the force is parallel\n\n\nCircular object has non-uniform diameter\nUse Vernier calipers or micrometer screw gauge at several positions\n\n\nProtractor wobbles\nClamp it or use a fixed protractor with a horizontal reference line\n\n\nTwo readings are insufficient\nTake several readings over a range and plot a graph，or calculate more values of the constant\n\n\n\n\n\n\n\n\n\n警告Avoid vague improvements\n\n\n\nRepeat the experiment、use a more accurate instrument 或 reduce errors alone is usually too vague. The improvement must state what changes, how it is implemented and which limitation it addresses。",
+    "crumbs": [
+      "AS Level",
+      "Paper 3 Advanced Practical Skills"
+    ]
+  },
+  {
+    "objectID": "as-level/30-paper-3-advanced-practical-skills.html#high-frequency-experimental-contexts",
+    "href": "as-level/30-paper-3-advanced-practical-skills.html#high-frequency-experimental-contexts",
+    "title": "Paper 3 Advanced Practical Skills / 实验技能",
+    "section": "12. High-frequency experimental contexts",
+    "text": "12. High-frequency experimental contexts\n\n12.1 Oscillations\nCommon variables：\\(T\\)、\\(T^2\\)、\\(\\sqrt{T}\\)、mass、length、amplitude。\nKey skills：\n\ntime many oscillations；\nmaintain small and consistent amplitude；\navoid pushing the object when releasing；\ncontrol pivot、friction、air movement and support stability；\ncalculate period and linearise the relationship。\n\n\n\nExample / 示例：oscillation graph\n改变 suspended mass \\(m\\)，测量 \\(T\\)，计算 \\(T^2\\)，画 \\(T^2\\) against \\(m\\)，再由 gradient 求 spring constant 或其他 given constant。每一个 mass 应重复 timing，并保持 amplitude 和 release method constant。\n\n\n12.2 Equilibrium、moments and deformation\nCommon variables：mass、force、distance、angle、extension、deflection。\nKey skills：\n\nestablish horizontal or vertical alignment；\nidentify the correct pivot or reference point；\nmeasure small changes with suitable precision；\nprevent the ruler、rod、support or mass from moving；\nuse moments、force relationships or a graph to find a constant。\n\n\n\nExample / 示例：equilibrium and moments\n在 metre rule 上改变 hanging mass，调节 position 直到 rule horizontal，再记录 distance 和 mass，用 principle of moments 检验 suggested relationship。应使用 set square 或 spirit level 判断 horizontal，并从同一个 pivot/reference point 测量 distance。\n\n\n12.3 Electrical circuits\nCommon variables：\\(V\\)、\\(I\\)、\\(R\\)、distance、light level、wire length。\nKey skills：\n\ncorrect series/parallel connections；\navoid short circuits；\nsecure crocodile clips；\ncontrol heating and ambient light；\nuse reciprocal quantities when required；\ninclude correct electrical units。\n\n\n\nExample / 示例：electrical measurement\n改变 LDR 与 LED 的 distance \\(d\\)，记录 resistance \\(R\\)，控制 ambient light，并用 graph 检查 \\(R\\) 与 \\(d\\) 的关系。应固定 LED current、保持 LDR 和 LED 对齐，并检查 crocodile clips 的 contact。\n\n\n12.4 Thermal and fluid experiments\nCommon variables：temperature、temperature change、volume、depth、mass、flow time。\nKey skills：\n\nreduce heat loss；\nposition the thermometer correctly；\nread temperature and time consistently；\nmeasure liquid depth and volume without parallax or refraction problems；\nrecognise large percentage uncertainty when the change is small。\n\n\n\nExample / 示例：cooling experiment\n测量 hot water 的 cooling rate 时，使用 polystyrene cup、stirrer 和 fixed time interval，减少 heat loss 和 temperature-reading uncertainty。thermometer bulb 应完全浸入，并在每个 fixed time 读取 temperature。\n\n\n12.5 Optics and geometry\nCommon variables：angle、distance、height、sine/cosine/tangent quantities。\nKey skills：\n\nalign normal、ruler and protractor；\nprevent protractor movement；\nread angles consistently；\njustify significant figures in trigonometric quantities。\n\n\n\nExample / 示例：angle and significant figures\n测量 angle \\(\\theta\\) 后计算 \\(\\sin\\theta\\) 时，raw angle 只读到 nearest degree，因此不能给 \\(\\sin\\theta\\) 过多 significant figures。protractor 应固定并从 eye level 读取，以减少 parallax。",
+    "crumbs": [
+      "AS Level",
+      "Paper 3 Advanced Practical Skills"
+    ]
+  },
+  {
+    "objectID": "as-level/30-paper-3-advanced-practical-skills.html#complete-question-1-workflow",
+    "href": "as-level/30-paper-3-advanced-practical-skills.html#complete-question-1-workflow",
+    "title": "Paper 3 Advanced Practical Skills / 实验技能",
+    "section": "13. Complete Question 1 workflow",
+    "text": "13. Complete Question 1 workflow\n\nBefore taking readings\n\nRead the whole question。\nIdentify independent and dependent variables。\nCheck the apparatus diagram。\nNote the required range and number of readings。\nPrepare the table headings。\nDecide which readings need repeats。\n\n\n\nDuring data collection\n\nSet up carefully and ask for help only if genuinely necessary。\nRecord raw readings immediately。\nUse consistent units and precision。\nRepeat timing or unstable measurements。\nCheck that the trend is physically sensible。\nSpread the independent variable across the largest useful range。\n\n\n\nDuring data processing\n\nCalculate all required derived quantities。\nCheck significant figures and units。\nPlot every data point。\nUse sensible graph scales。\nDraw a balanced line of best fit。\nUse widely separated points for gradient。\nDetermine intercept correctly。\nConvert gradient/intercept into the required constants。",
+    "crumbs": [
+      "AS Level",
+      "Paper 3 Advanced Practical Skills"
+    ]
+  },
+  {
+    "objectID": "as-level/30-paper-3-advanced-practical-skills.html#complete-question-2-workflow",
+    "href": "as-level/30-paper-3-advanced-practical-skills.html#complete-question-2-workflow",
+    "title": "Paper 3 Advanced Practical Skills / 实验技能",
+    "section": "14. Complete Question 2 workflow",
+    "text": "14. Complete Question 2 workflow\n\nTake the first required measurement。\nRecord the raw value with suitable precision。\nEstimate absolute uncertainty。\nCalculate percentage uncertainty。\nCalculate the derived quantity or constant。\nJustify significant figures if asked。\nChange the specified variable and repeat。\nCalculate the second value of the constant。\nCalculate percentage difference。\nCompare with the given uncertainty or tolerance。\nWrite a quantitative conclusion。\nGive four specific limitations。\nGive four realistic improvements linked to those limitations。",
+    "crumbs": [
+      "AS Level",
+      "Paper 3 Advanced Practical Skills"
+    ]
+  },
+  {
+    "objectID": "as-level/30-paper-3-advanced-practical-skills.html#common-mark-scheme-traps",
+    "href": "as-level/30-paper-3-advanced-practical-skills.html#common-mark-scheme-traps",
+    "title": "Paper 3 Advanced Practical Skills / 实验技能",
+    "section": "15. Common mark-scheme traps",
+    "text": "15. Common mark-scheme traps\n\nData collection\n\nSix readings with an inadequate range may not receive full data-quality credit。\nRepeating one value without changing the independent variable does not create a useful range。\nSupervisor assistance can prevent full credit for successful data collection。\n\n\n\nTables\n\nA unit by itself is not a complete heading。\nMixed decimal places in one raw-data column can lose the consistency mark。\nCalculated values with unjustified precision can lose the significant-figures mark。\n\n\n\nGraphs\n\nA graph using only a small corner of the grid is weak even if the points are correct。\nA best-fit line is not a point-to-point join。\nThe gradient is \\(\\Delta y/\\Delta x\\)，not \\(\\Delta x/\\Delta y\\)。\nA gradient triangle that is too small gives an unreliable result。\n\n\n\nUncertainty and evaluation\n\nThe result is inaccurate is not a specific limitation。\nParallax error without naming the affected measurement is too vague。\nRepeat the experiment alone is usually insufficient as an improvement。\nThe final conclusion must be based on a numerical comparison。",
+    "crumbs": [
+      "AS Level",
+      "Paper 3 Advanced Practical Skills"
+    ]
+  },
+  {
+    "objectID": "as-level/30-paper-3-advanced-practical-skills.html#revision-checklist-复习清单",
+    "href": "as-level/30-paper-3-advanced-practical-skills.html#revision-checklist-复习清单",
+    "title": "Paper 3 Advanced Practical Skills / 实验技能",
+    "section": "16. Revision checklist / 复习清单",
+    "text": "16. Revision checklist / 复习清单\n\nPractical operation\n\nI can set up a circuit from a diagram。\nI can use a ruler、balance、stopwatch、meter、thermometer and calipers correctly。\nI can use a micrometer screw gauge and Vernier calipers。\nI can time several oscillations and calculate \\(T\\)。\nI can align apparatus and recognise unstable conditions。\n\n\n\nData presentation\n\nI can write table headings with quantity and unit。\nI can keep raw readings to consistent precision。\nI can record intermediate measurements。\nI can calculate derived quantities with justified significant figures。\n\n\n\nGraph and analysis\n\nI can choose suitable axes and scales。\nI can plot every point accurately。\nI can draw a line of best fit。\nI can determine gradient using widely separated points。\nI can determine y-intercept。\nI can identify the physical meaning and unit of gradient/intercept。\n\n\n\nUncertainty and evaluation\n\nI can distinguish systematic error and random error。\nI can calculate absolute、fractional and percentage uncertainty。\nI can use half-range uncertainty for repeated readings。\nI can compare two constants quantitatively。\nI can write four specific limitations。\nI can write four realistic improvements。",
+    "crumbs": [
+      "AS Level",
+      "Paper 3 Advanced Practical Skills"
+    ]
+  },
+  {
+    "objectID": "as-level/30-paper-3-advanced-practical-skills.html#past-paper-evidence-appendix-历年试卷证据附录",
+    "href": "as-level/30-paper-3-advanced-practical-skills.html#past-paper-evidence-appendix-历年试卷证据附录",
+    "title": "Paper 3 Advanced Practical Skills / 实验技能",
+    "section": "17. Past-paper evidence appendix / 历年试卷证据附录",
+    "text": "17. Past-paper evidence appendix / 历年试卷证据附录\n本框架基于 available Paper 3 papers and mark schemes，后续可继续填入逐卷 evidence matrix：\n\n\n\n\n\n\n\n\n\n\n\n\nYear/session\nVariant\nQuestion 1 context\nQuestion 1 graph\nQuestion 2 context\nMain uncertainty\nMain evaluation skill\n\n\n\n\n2020 S\n31\nElectrical circuit\nReciprocal graph\nMetre-rule equilibrium\nAngle uncertainty\nLimitations and improvements\n\n\n2021 S\n31\nEquilibrium\nReciprocal graph\nCooling liquid\nSmall temperature change\nMeasurement improvement\n\n\n2022 S\n31\nSpring oscillation\nLinearised period graph\nMetre-rule equilibrium\nLength/height uncertainty\nControl and alignment\n\n\n2025 O/N\n31\nOscillations\n\\(T_2\\) against \\(T_1\\)\nPaper-cylinder deformation\nLength and geometry\nSpecific apparatus improvements",
+    "crumbs": [
+      "AS Level",
+      "Paper 3 Advanced Practical Skills"
+    ]
+  },
+  {
+    "objectID": "as-level/30-paper-3-advanced-practical-skills.html#source-basis-参考资料",
+    "href": "as-level/30-paper-3-advanced-practical-skills.html#source-basis-参考资料",
+    "title": "Paper 3 Advanced Practical Skills / 实验技能",
+    "section": "Source basis / 参考资料",
+    "text": "Source basis / 参考资料\n本章的 primary reference 是：\n\nCambridge 9702 syllabus for 2025–2027（local syllabus PDF）；\ncurrent available Paper 3 Question Papers and Mark Schemes in PastPaper/2020、PastPaper/2021、PastPaper/2022 和 PastPaper/2025；\ncaie-as-level-physics-9702-practical-v1.pdf，a practical revision summary covering instrument reading、errors、uncertainty 和 error-improvement examples。\n\n具体考试要求和最新 wording 仍以 current syllabus、question paper 和 official mark scheme 为准。",
+    "crumbs": [
+      "AS Level",
+      "Paper 3 Advanced Practical Skills"
     ]
   },
   {

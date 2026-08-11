@@ -103,6 +103,34 @@ body:has(.home-hero) .topic-card li + li { margin-top: .38rem; }
 }
 .study-card > :first-child, .formula-panel > :first-child, .question-card > :first-child { margin-top: 0; }
 .formula-panel { background: #f8fbfe; }
+.example-card {
+  position: relative;
+  margin: 1.15rem 0 1.55rem;
+  padding: 1.35rem 1.35rem 1.15rem;
+  border: 1px solid #bfdbfe;
+  border-left: 5px solid #2563eb;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #eff6ff 0%, #f8fbff 58%, #ffffff 100%);
+  box-shadow: 0 8px 22px rgba(37, 99, 235, .09);
+}
+.example-card::before {
+  content: "Example " counter(practical-example, decimal-leading-zero) " / 示例 " counter(practical-example, decimal-leading-zero);
+  display: inline-block;
+  margin: 0 0 .55rem;
+  padding: .22rem .62rem;
+  border: 1px solid #93c5fd;
+  border-radius: 999px;
+  color: #1d4ed8;
+  background: #dbeafe;
+  font-size: .78rem;
+  font-weight: 800;
+  letter-spacing: .02em;
+}
+#quarto-document-content { counter-reset: practical-example; }
+.example-card { counter-increment: practical-example; }
+.example-card > :first-child { margin-top: 0; }
+.example-card h3, .example-card h4 { margin-top: .25rem; color: #123b78; }
+.example-card table { background: rgba(255, 255, 255, .72); }
 .question-card { scroll-margin-top: 5rem; }
 .question-card h3 { margin-top: 0; }
 .question-card .subparts { margin: 0.7rem 0 0.85rem 1.15rem; padding-left: 1.25rem; }
@@ -157,6 +185,6 @@ mjx-container[display="true"] { overflow-x: auto; overflow-y: hidden; padding: 0
   .home-hero { border-radius: 17px; }
   body:has(.home-hero) h2 { margin-top: 2.35rem; }
   .course-grid { grid-template-columns: 1fr; }
-  .topic-card, .study-card, .formula-panel, .question-card { padding: 0.9rem; }
+  .topic-card, .study-card, .formula-panel, .question-card, .example-card { padding: 0.9rem; }
   .target-grid { grid-template-columns: repeat(2, minmax(130px, 1fr)); }
 }

@@ -1,0 +1,1957 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-Hans" xml:lang="zh-Hans"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.38">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Paper 5 Planning, Analysis and Evaluation / 实验设计与数据分析 – CIE Physics 9702</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../a-level/12-motion-in-a-circle.html" rel="next">
+<link href="../as-level/30-paper-3-advanced-practical-skills.html" rel="prev">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-a2a938b4dd5711f7a799c87bd16ba44c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "没有结果",
+    "search-matching-documents-text": "匹配的文档",
+    "search-copy-link-title": "复制搜索链接",
+    "search-hide-matches-text": "隐藏其它匹配结果",
+    "search-more-match-text": "更多匹配结果",
+    "search-more-matches-text": "更多匹配结果",
+    "search-clear-button-title": "清除",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "取消",
+    "search-submit-button-title": "提交",
+    "search-label": "搜索"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../styles.css">
+</head>
+
+<body class="nav-sidebar docked quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="展开或折叠侧边栏导航" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../as-level/01-physical-quantities-and-units.html">AS Level</a></li><li class="breadcrumb-item"><a href="../as-level/31-paper-5-planning-analysis-evaluation.html">Paper 5 Planning, Analysis and Evaluation</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="展开或折叠侧边栏导航" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="搜索" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">CIE Physics 9702</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="搜索"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">学习首页</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">AS Level</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="展开或折叠此栏">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../as-level/01-physical-quantities-and-units.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">1 Physical quantities and units</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../as-level/02-kinematics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2 Kinematics</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../as-level/03-dynamics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">3 Dynamics</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../as-level/04-forces-density-pressure.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4 Forces, density and pressure</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../as-level/05-work-energy-power.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5 Work, energy and power</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../as-level/06-deformation-of-solids.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">6 Deformation of solids</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../as-level/07-waves.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">7 Waves</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../as-level/08-superposition.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">8 Superposition</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../as-level/09-electricity.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">9 Electricity</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../as-level/10-dc-circuits.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">10 D.C. circuits</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../as-level/11-particle-physics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">11 Particle physics</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../as-level/30-paper-3-advanced-practical-skills.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Paper 3 Advanced Practical Skills</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../as-level/31-paper-5-planning-analysis-evaluation.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Paper 5 Planning, Analysis and Evaluation</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">A Level</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="展开或折叠此栏">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/12-motion-in-a-circle.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">12 Motion in a circle</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/13-gravitational-fields.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">13 Gravitational fields</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/14-temperature.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">14 Temperature</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/15-ideal-gases.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">15 Ideal gases</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/16-thermodynamics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">16 Thermodynamics</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/17-oscillations.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">17 Oscillations</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/18-electric-fields.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">18 Electric fields</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/19-capacitance.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">19 Capacitance</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/20-magnetic-fields.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">20 Magnetic fields</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/21-alternating-currents.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">21 Alternating currents</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/22-quantum-physics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">22 Quantum physics</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/23-nuclear-physics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">23 Nuclear physics</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/24-medical-physics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">24 Medical physics</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../a-level/25-astronomy-and-cosmology.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">25 Astronomy and cosmology</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">该页面内容</h2>
+   
+  <ul>
+  <li><a href="#使用说明-how-to-use-this-chapter" id="toc-使用说明-how-to-use-this-chapter" class="nav-link active" data-scroll-target="#使用说明-how-to-use-this-chapter">使用说明 / How to use this chapter</a>
+  <ul class="collapse">
+  <li><a href="#核心原则-core-principle" id="toc-核心原则-core-principle" class="nav-link" data-scroll-target="#核心原则-core-principle">核心原则 / Core principle</a></li>
+  </ul></li>
+  <li><a href="#examination-structure-考试结构" id="toc-examination-structure-考试结构" class="nav-link" data-scroll-target="#examination-structure-考试结构">1. Examination structure / 考试结构</a>
+  <ul class="collapse">
+  <li><a href="#question-1planning" id="toc-question-1planning" class="nav-link" data-scroll-target="#question-1planning">Question 1：Planning</a></li>
+  <li><a href="#question-2analysis-conclusions-and-evaluation" id="toc-question-2analysis-conclusions-and-evaluation" class="nav-link" data-scroll-target="#question-2analysis-conclusions-and-evaluation">Question 2：Analysis, conclusions and evaluation</a></li>
+  </ul></li>
+  <li><a href="#complete-skill-map-完整考点地图" id="toc-complete-skill-map-完整考点地图" class="nav-link" data-scroll-target="#complete-skill-map-完整考点地图">2. Complete skill map / 完整考点地图</a></li>
+  <li><a href="#question-1-planning-实验设计题" id="toc-question-1-planning-实验设计题" class="nav-link" data-scroll-target="#question-1-planning-实验设计题">3. Question 1 Planning / 实验设计题</a>
+  <ul class="collapse">
+  <li><a href="#define-the-problem-定义问题" id="toc-define-the-problem-定义问题" class="nav-link" data-scroll-target="#define-the-problem-定义问题">3.1 Define the problem / 定义问题</a></li>
+  <li><a href="#methods-of-data-collection-数据收集方法" id="toc-methods-of-data-collection-数据收集方法" class="nav-link" data-scroll-target="#methods-of-data-collection-数据收集方法">3.2 Methods of data collection / 数据收集方法</a></li>
+  <li><a href="#workable-apparatus-diagram-可工作的装置图" id="toc-workable-apparatus-diagram-可工作的装置图" class="nav-link" data-scroll-target="#workable-apparatus-diagram-可工作的装置图">3.3 Workable apparatus diagram / 可工作的装置图</a></li>
+  <li><a href="#measuring-instruments-仪器选择" id="toc-measuring-instruments-仪器选择" class="nav-link" data-scroll-target="#measuring-instruments-仪器选择">3.4 Measuring instruments / 仪器选择</a></li>
+  <li><a href="#rangerepeats-and-averages-范围重复和平均" id="toc-rangerepeats-and-averages-范围重复和平均" class="nav-link" data-scroll-target="#rangerepeats-and-averages-范围重复和平均">3.5 Range、repeats and averages / 范围、重复和平均</a></li>
+  <li><a href="#control-variables-控制变量" id="toc-control-variables-控制变量" class="nav-link" data-scroll-target="#control-variables-控制变量">3.6 Control variables / 控制变量</a></li>
+  <li><a href="#method-of-analysis-数据分析方法" id="toc-method-of-analysis-数据分析方法" class="nav-link" data-scroll-target="#method-of-analysis-数据分析方法">3.7 Method of analysis / 数据分析方法</a></li>
+  <li><a href="#safety-and-additional-detail-安全与补充细节" id="toc-safety-and-additional-detail-安全与补充细节" class="nav-link" data-scroll-target="#safety-and-additional-detail-安全与补充细节">3.8 Safety and additional detail / 安全与补充细节</a></li>
+  </ul></li>
+  <li><a href="#planning-answer-structure-q1-答题结构" id="toc-planning-answer-structure-q1-答题结构" class="nav-link" data-scroll-target="#planning-answer-structure-q1-答题结构">4. Planning answer structure / Q1 答题结构</a>
+  <ul class="collapse">
+  <li><a href="#a.-defining-the-problem" id="toc-a.-defining-the-problem" class="nav-link" data-scroll-target="#a.-defining-the-problem">A. Defining the problem</a></li>
+  <li><a href="#b.-method-and-apparatus" id="toc-b.-method-and-apparatus" class="nav-link" data-scroll-target="#b.-method-and-apparatus">B. Method and apparatus</a></li>
+  <li><a href="#c.-method-of-analysis" id="toc-c.-method-of-analysis" class="nav-link" data-scroll-target="#c.-method-of-analysis">C. Method of analysis</a></li>
+  <li><a href="#d.-additional-detail-and-safety" id="toc-d.-additional-detail-and-safety" class="nav-link" data-scroll-target="#d.-additional-detail-and-safety">D. Additional detail and safety</a></li>
+  <li><a href="#planning-sentence-template-规划答题模板" id="toc-planning-sentence-template-规划答题模板" class="nav-link" data-scroll-target="#planning-sentence-template-规划答题模板">Planning sentence template / 规划答题模板</a></li>
+  </ul></li>
+  <li><a href="#question-2-data-analysis-数据分析题" id="toc-question-2-data-analysis-数据分析题" class="nav-link" data-scroll-target="#question-2-data-analysis-数据分析题">5. Question 2 Data Analysis / 数据分析题</a>
+  <ul class="collapse">
+  <li><a href="#read-the-equation-first-先读-equation" id="toc-read-the-equation-first-先读-equation" class="nav-link" data-scroll-target="#read-the-equation-first-先读-equation">5.1 Read the equation first / 先读 equation</a></li>
+  <li><a href="#common-graph-transformations-常见图像变换" id="toc-common-graph-transformations-常见图像变换" class="nav-link" data-scroll-target="#common-graph-transformations-常见图像变换">5.2 Common graph transformations / 常见图像变换</a></li>
+  <li><a href="#logarithms-and-units-对数和单位" id="toc-logarithms-and-units-对数和单位" class="nav-link" data-scroll-target="#logarithms-and-units-对数和单位">5.3 Logarithms and units / 对数和单位</a></li>
+  <li><a href="#completing-a-table-完成数据表" id="toc-completing-a-table-完成数据表" class="nav-link" data-scroll-target="#completing-a-table-完成数据表">5.4 Completing a table / 完成数据表</a></li>
+  </ul></li>
+  <li><a href="#graphs-with-uncertainty-带-uncertainty-的-graph" id="toc-graphs-with-uncertainty-带-uncertainty-的-graph" class="nav-link" data-scroll-target="#graphs-with-uncertainty-带-uncertainty-的-graph">6. Graphs with uncertainty / 带 uncertainty 的 graph</a>
+  <ul class="collapse">
+  <li><a href="#error-bars" id="toc-error-bars" class="nav-link" data-scroll-target="#error-bars">6.1 Error bars</a></li>
+  <li><a href="#line-of-best-fit" id="toc-line-of-best-fit" class="nav-link" data-scroll-target="#line-of-best-fit">6.2 Line of best fit</a></li>
+  <li><a href="#worst-acceptable-line" id="toc-worst-acceptable-line" class="nav-link" data-scroll-target="#worst-acceptable-line">6.3 Worst acceptable line</a></li>
+  </ul></li>
+  <li><a href="#gradientintercept-and-graph-uncertainty" id="toc-gradientintercept-and-graph-uncertainty" class="nav-link" data-scroll-target="#gradientintercept-and-graph-uncertainty">7. Gradient、intercept and graph uncertainty</a>
+  <ul class="collapse">
+  <li><a href="#gradient" id="toc-gradient" class="nav-link" data-scroll-target="#gradient">7.1 Gradient</a></li>
+  <li><a href="#absolute-uncertainty-in-gradient" id="toc-absolute-uncertainty-in-gradient" class="nav-link" data-scroll-target="#absolute-uncertainty-in-gradient">7.2 Absolute uncertainty in gradient</a></li>
+  <li><a href="#y-intercept-and-its-uncertainty" id="toc-y-intercept-and-its-uncertainty" class="nav-link" data-scroll-target="#y-intercept-and-its-uncertainty">7.3 y-intercept and its uncertainty</a></li>
+  </ul></li>
+  <li><a href="#uncertainty-propagation-不确定度传播" id="toc-uncertainty-propagation-不确定度传播" class="nav-link" data-scroll-target="#uncertainty-propagation-不确定度传播">8. Uncertainty propagation / 不确定度传播</a>
+  <ul class="collapse">
+  <li><a href="#basic-rules" id="toc-basic-rules" class="nav-link" data-scroll-target="#basic-rules">8.1 Basic rules</a></li>
+  <li><a href="#uncertainty-in-a-logarithm" id="toc-uncertainty-in-a-logarithm" class="nav-link" data-scroll-target="#uncertainty-in-a-logarithm">8.2 Uncertainty in a logarithm</a></li>
+  <li><a href="#uncertainty-in-a-constant-from-gradient" id="toc-uncertainty-in-a-constant-from-gradient" class="nav-link" data-scroll-target="#uncertainty-in-a-constant-from-gradient">8.3 Uncertainty in a constant from gradient</a></li>
+  </ul></li>
+  <li><a href="#conclusions-and-predictions-结论与预测" id="toc-conclusions-and-predictions-结论与预测" class="nav-link" data-scroll-target="#conclusions-and-predictions-结论与预测">9. Conclusions and predictions / 结论与预测</a>
+  <ul class="collapse">
+  <li><a href="#conclusion-from-a-graph" id="toc-conclusion-from-a-graph" class="nav-link" data-scroll-target="#conclusion-from-a-graph">9.1 Conclusion from a graph</a></li>
+  <li><a href="#prediction-外推" id="toc-prediction-外推" class="nav-link" data-scroll-target="#prediction-外推">9.2 Prediction / 外推</a></li>
+  </ul></li>
+  <li><a href="#high-frequency-paper-5-contexts-高频情境" id="toc-high-frequency-paper-5-contexts-高频情境" class="nav-link" data-scroll-target="#high-frequency-paper-5-contexts-高频情境">10. High-frequency Paper 5 contexts / 高频情境</a>
+  <ul class="collapse">
+  <li><a href="#electrical-and-capacitor-experiments" id="toc-electrical-and-capacitor-experiments" class="nav-link" data-scroll-target="#electrical-and-capacitor-experiments">10.1 Electrical and capacitor experiments</a></li>
+  <li><a href="#waves-and-oscillations" id="toc-waves-and-oscillations" class="nav-link" data-scroll-target="#waves-and-oscillations">10.2 Waves and oscillations</a></li>
+  <li><a href="#mechanics-and-collisions" id="toc-mechanics-and-collisions" class="nav-link" data-scroll-target="#mechanics-and-collisions">10.3 Mechanics and collisions</a></li>
+  <li><a href="#thermal-and-fluid-experiments" id="toc-thermal-and-fluid-experiments" class="nav-link" data-scroll-target="#thermal-and-fluid-experiments">10.4 Thermal and fluid experiments</a></li>
+  <li><a href="#astronomynuclear-and-unfamiliar-contexts" id="toc-astronomynuclear-and-unfamiliar-contexts" class="nav-link" data-scroll-target="#astronomynuclear-and-unfamiliar-contexts">10.5 Astronomy、nuclear and unfamiliar contexts</a></li>
+  </ul></li>
+  <li><a href="#common-mark-scheme-traps-高频失分点" id="toc-common-mark-scheme-traps-高频失分点" class="nav-link" data-scroll-target="#common-mark-scheme-traps-高频失分点">11. Common mark-scheme traps / 高频失分点</a>
+  <ul class="collapse">
+  <li><a href="#planning" id="toc-planning" class="nav-link" data-scroll-target="#planning">Planning</a></li>
+  <li><a href="#data-analysis" id="toc-data-analysis" class="nav-link" data-scroll-target="#data-analysis">Data analysis</a></li>
+  </ul></li>
+  <li><a href="#complete-question-2-workflow-q2-完整流程" id="toc-complete-question-2-workflow-q2-完整流程" class="nav-link" data-scroll-target="#complete-question-2-workflow-q2-完整流程">12. Complete Question 2 workflow / Q2 完整流程</a></li>
+  <li><a href="#revision-checklist-复习清单" id="toc-revision-checklist-复习清单" class="nav-link" data-scroll-target="#revision-checklist-复习清单">13. Revision checklist / 复习清单</a>
+  <ul class="collapse">
+  <li><a href="#planning-1" id="toc-planning-1" class="nav-link" data-scroll-target="#planning-1">Planning</a></li>
+  <li><a href="#analysis" id="toc-analysis" class="nav-link" data-scroll-target="#analysis">Analysis</a></li>
+  </ul></li>
+  <li><a href="#past-paper-evidence-appendix-历年真题证据" id="toc-past-paper-evidence-appendix-历年真题证据" class="nav-link" data-scroll-target="#past-paper-evidence-appendix-历年真题证据">14. Past-paper evidence appendix / 历年真题证据</a></li>
+  <li><a href="#source-basis-参考资料" id="toc-source-basis-参考资料" class="nav-link" data-scroll-target="#source-basis-参考资料">Source basis / 参考资料</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content column-body" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../as-level/01-physical-quantities-and-units.html">AS Level</a></li><li class="breadcrumb-item"><a href="../as-level/31-paper-5-planning-analysis-evaluation.html">Paper 5 Planning, Analysis and Evaluation</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">Paper 5 Planning, Analysis and Evaluation / 实验设计与数据分析</h1>
+<p class="subtitle lead">Complete examination framework / 完整考点框架 · Cambridge International AS &amp; A Level Physics 9702</p>
+</div>
+
+
+
+<div class="quarto-title-meta column-body">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="使用说明-how-to-use-this-chapter" class="level2">
+<h2 class="anchored" data-anchor-id="使用说明-how-to-use-this-chapter">使用说明 / How to use this chapter</h2>
+<p>Paper 5 是书面形式的 <code>Planning, Analysis and Evaluation</code>。它不要求在考试现场操作 laboratory apparatus，但要求考生能够像做真实实验一样设计方法、处理 data、估计 uncertainty 和评价 evidence。</p>
+<p>本章根据：</p>
+<ul>
+<li>current syllabus 的 Paper 5 requirements；</li>
+<li>available 2020–2023 和 2025 Paper 5 Question Papers / Mark Schemes；</li>
+<li>Cambridge 9702 常用的 practical terminology；</li>
+<li>自拟 worked examples，不冒充真题。</li>
+</ul>
+<section id="核心原则-core-principle" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="核心原则-core-principle">核心原则 / Core principle</h3>
+<p><strong>Paper 5 tests whether an experiment is workable, measurable and analyzable.</strong> 不是写出“看起来科学”的方案，而是要说明 apparatus 如何摆放、每个 quantity 如何测量、哪些 variables 保持 constant、data 如何转换成 graph，以及如何由 graph 得到 physical constant。</p>
+</section>
+</section>
+<section id="examination-structure-考试结构" class="level2">
+<h2 class="anchored" data-anchor-id="examination-structure-考试结构">1. Examination structure / 考试结构</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Feature</th>
+<th>Requirement</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Component</td>
+<td>Paper 5 Planning, Analysis and Evaluation</td>
+</tr>
+<tr class="even">
+<td>Duration</td>
+<td>1 hour 15 minutes</td>
+</tr>
+<tr class="odd">
+<td>Total marks</td>
+<td>30 marks</td>
+</tr>
+<tr class="even">
+<td>Questions</td>
+<td>Two compulsory questions, normally 15 marks each</td>
+</tr>
+<tr class="odd">
+<td>Question 1</td>
+<td>Planning an experimental investigation</td>
+</tr>
+<tr class="even">
+<td>Question 2</td>
+<td>Analysis, conclusions and evaluation of supplied data</td>
+</tr>
+<tr class="odd">
+<td>Laboratory</td>
+<td>No laboratory facilities are required</td>
+</tr>
+<tr class="even">
+<td>Context</td>
+<td>May include physics outside the familiar classroom experiments；necessary information will be provided</td>
+</tr>
+</tbody>
+</table>
+<section id="question-1planning" class="level3">
+<h3 class="anchored" data-anchor-id="question-1planning">Question 1：Planning</h3>
+<p>Question 1 normally asks you to design an experiment to test a suggested relationship. The answer should normally include：</p>
+<ol type="1">
+<li>the independent variable；</li>
+<li>the dependent variable；</li>
+<li>the control variables；</li>
+<li>a labelled and workable apparatus diagram；</li>
+<li>a method for changing and measuring variables；</li>
+<li>a method for collecting enough data；</li>
+<li>a method of analysis；</li>
+<li>relevant additional details and safety precautions。</li>
+</ol>
+</section>
+<section id="question-2analysis-conclusions-and-evaluation" class="level3">
+<h3 class="anchored" data-anchor-id="question-2analysis-conclusions-and-evaluation">Question 2：Analysis, conclusions and evaluation</h3>
+<p>Question 2 normally provides an equation and experimental data. You may need to：</p>
+<ol type="1">
+<li>rearrange or interpret the equation；</li>
+<li>calculate derived quantities；</li>
+<li>calculate logarithms or reciprocal quantities；</li>
+<li>complete a table；</li>
+<li>plot data and error bars；</li>
+<li>draw a line of best fit and a worst acceptable line；</li>
+<li>determine gradient and y-intercept；</li>
+<li>determine uncertainties in gradient、intercept and constants；</li>
+<li>draw a conclusion or make a prediction。</li>
+</ol>
+</section>
+</section>
+<section id="complete-skill-map-完整考点地图" class="level2">
+<h2 class="anchored" data-anchor-id="complete-skill-map-完整考点地图">2. Complete skill map / 完整考点地图</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Skill</th>
+<th>中文重点</th>
+<th>What the examiner looks for</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Defining the problem</td>
+<td>明确研究什么</td>
+<td>Correct independent、dependent and control variables</td>
+</tr>
+<tr class="even">
+<td>Data collection</td>
+<td>说明如何取得 data</td>
+<td>A workable arrangement and suitable measuring instruments</td>
+</tr>
+<tr class="odd">
+<td>Control of variables</td>
+<td>控制其他影响因素</td>
+<td>Explicit method, not just a list of variables</td>
+</tr>
+<tr class="even">
+<td>Apparatus diagram</td>
+<td>画能实际工作的图</td>
+<td>Clear labels、connections、positions and direction</td>
+</tr>
+<tr class="odd">
+<td>Method of analysis</td>
+<td>说明如何验证 relationship</td>
+<td>Correct graph axes and meaning of gradient/intercept</td>
+</tr>
+<tr class="even">
+<td>Safety</td>
+<td>识别 risk 并降低 risk</td>
+<td>Precaution linked to a real hazard</td>
+</tr>
+<tr class="odd">
+<td>Derived data</td>
+<td>从 raw data 计算新量</td>
+<td>Correct equation、units and significant figures</td>
+</tr>
+<tr class="even">
+<td>Logarithms</td>
+<td>处理 exponential/power laws</td>
+<td>Correct log base、units and decimal places</td>
+</tr>
+<tr class="odd">
+<td>Error bars</td>
+<td>表示 data uncertainty</td>
+<td>Correct size、direction、symmetry and scale</td>
+</tr>
+<tr class="even">
+<td>Best-fit line</td>
+<td>表示 central trend</td>
+<td>Balanced line through the data</td>
+</tr>
+<tr class="odd">
+<td>Worst acceptable line</td>
+<td>估计 graph uncertainty</td>
+<td>Extreme line passing through all relevant error bars</td>
+</tr>
+<tr class="even">
+<td>Conclusion</td>
+<td>从 evidence 得出结论</td>
+<td>Quantitative and logically consistent statement</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="question-1-planning-实验设计题" class="level2">
+<h2 class="anchored" data-anchor-id="question-1-planning-实验设计题">3. Question 1 Planning / 实验设计题</h2>
+<section id="define-the-problem-定义问题" class="level3">
+<h3 class="anchored" data-anchor-id="define-the-problem-定义问题">3.1 Define the problem / 定义问题</h3>
+<p>首先把题目中的 relationship 转换成 variables：</p>
+<ul>
+<li><code>independent variable</code>：你主动改变的 quantity；</li>
+<li><code>dependent variable</code>：随 independent variable 改变而测量的 quantity；</li>
+<li><code>control variables</code>：必须保持 constant 的 quantities。</li>
+</ul>
+<section id="example-示例spring-experiment" class="level4 example-card">
+<h4 class="anchored" data-anchor-id="example-示例spring-experiment">Example / 示例：spring experiment</h4>
+<p>若要研究 spring constant <span class="math inline">\(k\)</span> 如何随 wire diameter <span class="math inline">\(d\)</span> 改变：</p>
+<ul>
+<li>independent variable：<span class="math inline">\(d\)</span> 或由 <span class="math inline">\(d\)</span> 得到的 cross-sectional area <span class="math inline">\(A\)</span>；</li>
+<li>dependent variable：<span class="math inline">\(k\)</span>；</li>
+<li>control variables：wire material、number of turns、initial length 和 temperature。</li>
+</ul>
+<p>只写“change diameter”不够；还要说明用 <code>micrometer screw gauge</code> 测量 diameter，并用 force-extension method 求 <span class="math inline">\(k\)</span>。</p>
+</section>
+</section>
+<section id="methods-of-data-collection-数据收集方法" class="level3">
+<h3 class="anchored" data-anchor-id="methods-of-data-collection-数据收集方法">3.2 Methods of data collection / 数据收集方法</h3>
+<p>完整 method 应回答：</p>
+<ol type="1">
+<li>如何改变 independent variable；</li>
+<li>如何测量 independent variable；</li>
+<li>如何测量 dependent variable；</li>
+<li>如何保持 control variables constant；</li>
+<li>如何获得 enough readings；</li>
+<li>如何提高 repeatability 和 precision。</li>
+</ol>
+<section id="example-示例研究-v-与-r" class="level4 example-card">
+<h4 class="anchored" data-anchor-id="example-示例研究-v-与-r">Example / 示例：研究 <span class="math inline">\(v\)</span> 与 <span class="math inline">\(r\)</span></h4>
+<p>若题目给出：</p>
+<p><span class="math display">\[
+v=Y r^{-n},
+\]</span></p>
+<p>可以写：</p>
+<ul>
+<li>使用不同 radius 的 balls，改变 <span class="math inline">\(r\)</span>；</li>
+<li>用 <code>micrometer screw gauge</code> 或 <code>Vernier calipers</code> 测量 diameter，再计算 <span class="math inline">\(r=d/2\)</span>；</li>
+<li>用 <code>light gate</code> 测量 ball 通过 beam 的时间；</li>
+<li>用 ball diameter 除以 blocking time 得到 <span class="math inline">\(v\)</span>；</li>
+<li>保持 spring compression <span class="math inline">\(x\)</span>、spring constant <span class="math inline">\(k\)</span> 和 ball density <span class="math inline">\(\rho\)</span> constant；</li>
+<li>对每个 <span class="math inline">\(r\)</span> 重复 experiment，并取 mean <span class="math inline">\(v\)</span>。</li>
+</ul>
+</section>
+</section>
+<section id="workable-apparatus-diagram-可工作的装置图" class="level3">
+<h3 class="anchored" data-anchor-id="workable-apparatus-diagram-可工作的装置图">3.3 Workable apparatus diagram / 可工作的装置图</h3>
+<p>diagram 不需要艺术化，但必须让 examiner 看出 experiment 可以真正完成。应包括：</p>
+<ul>
+<li>apparatus 的相对位置；</li>
+<li>必要的 wires、switches、supports 和 connections；</li>
+<li>measuring instrument 的位置；</li>
+<li>independent/dependent quantity 的 measurement point；</li>
+<li>至少足够的 labels；</li>
+<li>relevant direction、distance 或 reference point。</li>
+</ul>
+<section id="example-示例circuit-diagram" class="level4 example-card">
+<h4 class="anchored" data-anchor-id="example-示例circuit-diagram">Example / 示例：circuit diagram</h4>
+<p>如果要测量 resistor 的 <span class="math inline">\(R\)</span>：</p>
+<ul>
+<li>ammeter 应与 resistor <code>in series</code>；</li>
+<li>voltmeter 应与 resistor <code>in parallel</code>；</li>
+<li>circuit 应有 power supply 和 switch；</li>
+<li>需要改变 <span class="math inline">\(R\)</span> 时，应说明使用 different resistors 或 variable resistor；</li>
+<li>若要测量很短的 time interval，应使用 <code>oscilloscope</code> 或 <code>data logger</code>，不能只写 stopwatch。</li>
+</ul>
+</section>
+</section>
+<section id="measuring-instruments-仪器选择" class="level3">
+<h3 class="anchored" data-anchor-id="measuring-instruments-仪器选择">3.4 Measuring instruments / 仪器选择</h3>
+<p>Instrument 必须适合被测量的 quantity 和 expected range。</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Quantity</th>
+<th>Suitable instrument</th>
+<th>Example of use</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Small diameter</td>
+<td>Micrometer screw gauge、Vernier calipers</td>
+<td>Wire、ball、tube 或 spring diameter</td>
+</tr>
+<tr class="even">
+<td>Length</td>
+<td>Metre rule、ruler、calipers</td>
+<td>Extension、distance、height</td>
+</tr>
+<tr class="odd">
+<td>Mass</td>
+<td>Top-pan balance</td>
+<td>Mass of a ball、load 或 liquid</td>
+</tr>
+<tr class="even">
+<td>Force</td>
+<td>Newton meter、force sensor</td>
+<td>Force-extension relationship</td>
+</tr>
+<tr class="odd">
+<td>Short time</td>
+<td>Light gate、oscilloscope、data logger</td>
+<td>Collision、oscillation、pulse width</td>
+</tr>
+<tr class="even">
+<td>Current</td>
+<td>Ammeter、digital multimeter</td>
+<td>Circuit current</td>
+</tr>
+<tr class="odd">
+<td>Potential difference</td>
+<td>Voltmeter、digital multimeter</td>
+<td>Capacitor discharge 或 resistor p.d.</td>
+</tr>
+<tr class="even">
+<td>Temperature</td>
+<td>Thermometer、temperature probe</td>
+<td>Cooling、viscosity 或 heating</td>
+</tr>
+</tbody>
+</table>
+<section id="example-示例instrument-precision" class="level4 example-card">
+<h4 class="anchored" data-anchor-id="example-示例instrument-precision">Example / 示例：instrument precision</h4>
+<p>若 diameter 只有约 <span class="math inline">\(2\ \mathrm{mm}\)</span>，用 metre rule 可能产生很大的 percentage uncertainty；应选择 <code>micrometer screw gauge</code> 或 <code>Vernier calipers</code>。如果 measured change 很小，也应考虑更高 resolution 的 sensor。</p>
+</section>
+</section>
+<section id="rangerepeats-and-averages-范围重复和平均" class="level3">
+<h3 class="anchored" data-anchor-id="rangerepeats-and-averages-范围重复和平均">3.5 Range、repeats and averages / 范围、重复和平均</h3>
+<p>规划时应明确：</p>
+<ul>
+<li>至少 five or six different values，具体按题目要求；</li>
+<li>independent variable 覆盖 as large a range as practical；</li>
+<li>每一个点是否 repeat；</li>
+<li>是否使用 mean value；</li>
+<li>如何处理 anomalous result。</li>
+</ul>
+<section id="example-示例stationary-waves" class="level4 example-card">
+<h4 class="anchored" data-anchor-id="example-示例stationary-waves">Example / 示例：stationary waves</h4>
+<p>研究 frequency <span class="math inline">\(f\)</span> 与 tube diameter <span class="math inline">\(d\)</span> 的关系时，可以：</p>
+<ul>
+<li>选择 <span class="math inline">\(d\)</span> 覆盖较大的 range；</li>
+<li>对每个 <span class="math inline">\(d\)</span> 找到 resonance condition；</li>
+<li>重复测量 resonant frequency；</li>
+<li>取 mean <span class="math inline">\(f\)</span>；</li>
+<li>记录 <span class="math inline">\(d\)</span>、<span class="math inline">\(f\)</span> 和之后 graph 所需的 <span class="math inline">\(1/d\)</span> 或 <span class="math inline">\(\lg d\)</span>。</li>
+</ul>
+</section>
+</section>
+<section id="control-variables-控制变量" class="level3">
+<h3 class="anchored" data-anchor-id="control-variables-控制变量">3.6 Control variables / 控制变量</h3>
+<p>控制变量必须写出实际方法，不能只列名称。</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Control variable</th>
+<th>Weak statement</th>
+<th>Strong statement</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Temperature</td>
+<td>Keep temperature constant</td>
+<td>Place apparatus in a water bath and monitor temperature with a thermometer</td>
+</tr>
+<tr class="even">
+<td>Length</td>
+<td>Keep length constant</td>
+<td>Use a fixed marker and measure from the same reference point each time</td>
+</tr>
+<tr class="odd">
+<td>Amplitude</td>
+<td>Keep amplitude constant</td>
+<td>Use a marked release position and release without a push</td>
+</tr>
+<tr class="even">
+<td>Area</td>
+<td>Keep area constant</td>
+<td>Use the same plate overlap or mark the fixed area on the apparatus</td>
+</tr>
+<tr class="odd">
+<td>Light level</td>
+<td>Keep light constant</td>
+<td>Use a dark enclosure and keep LED current constant</td>
+</tr>
+<tr class="even">
+<td>Number of turns</td>
+<td>Keep <span class="math inline">\(N\)</span> constant</td>
+<td>Use the same coil and do not change its winding</td>
+</tr>
+</tbody>
+</table>
+<section id="example-示例control-variable-must-be-operational" class="level4 example-card">
+<h4 class="anchored" data-anchor-id="example-示例control-variable-must-be-operational">Example / 示例：control variable must be operational</h4>
+<p>在 floating cylinder experiment 中，若研究 period <span class="math inline">\(T\)</span> 随 mass <span class="math inline">\(m\)</span> 的变化，不能只写“keep temperature constant”；应写“use the same liquid at the same room temperature and allow the cylinder to reach thermal equilibrium before timing”。</p>
+</section>
+</section>
+<section id="method-of-analysis-数据分析方法" class="level3">
+<h3 class="anchored" data-anchor-id="method-of-analysis-数据分析方法">3.7 Method of analysis / 数据分析方法</h3>
+<p>Planning answer 必须说明 data 如何验证 relationship。至少应包含：</p>
+<ol type="1">
+<li>要计算哪些 derived quantities；</li>
+<li>plot 哪个 quantity against 哪个 quantity；</li>
+<li>relationship 成立时 graph 应具有什么特征；</li>
+<li>gradient 或 intercept 如何得到 required constant。</li>
+</ol>
+<section id="example-示例power-law" class="level4 example-card">
+<h4 class="anchored" data-anchor-id="example-示例power-law">Example / 示例：power law</h4>
+<p>若：</p>
+<p><span class="math display">\[
+y=ax^n,
+\]</span></p>
+<p>则：</p>
+<p><span class="math display">\[
+\lg y=\lg a+n\lg x.
+\]</span></p>
+<p>因此应：</p>
+<ul>
+<li>calculate <span class="math inline">\(\lg y\)</span> 和 <span class="math inline">\(\lg x\)</span>；</li>
+<li>plot <span class="math inline">\(\lg y\)</span> against <span class="math inline">\(\lg x\)</span>；</li>
+<li>relationship valid if a straight line is produced；</li>
+<li>gradient gives <span class="math inline">\(n\)</span>；</li>
+<li>y-intercept gives <span class="math inline">\(\lg a\)</span>，所以 <span class="math inline">\(a=10^{\text{intercept}}\)</span>。</li>
+</ul>
+</section>
+</section>
+<section id="safety-and-additional-detail-安全与补充细节" class="level3">
+<h3 class="anchored" data-anchor-id="safety-and-additional-detail-安全与补充细节">3.8 Safety and additional detail / 安全与补充细节</h3>
+<p>Safety mark 不是写一句“wear safety goggles”就一定得到。必须把 precaution 和 risk 联系起来。</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Hazard</th>
+<th>Suitable precaution</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Falling mass or ball</td>
+<td>Use a cushion、sand box、screen or stop to prevent injury/damage</td>
+</tr>
+<tr class="even">
+<td>High voltage</td>
+<td>Switch off before changing connections；avoid touching bare conductors；use insulated leads</td>
+</tr>
+<tr class="odd">
+<td>Heated liquid or metal</td>
+<td>Use heat-resistant gloves、tongs and allow apparatus to cool</td>
+</tr>
+<tr class="even">
+<td>Sharp wire or spring</td>
+<td>Wear eye protection；use a safety screen；secure the spring</td>
+</tr>
+<tr class="odd">
+<td>Glass tube or container</td>
+<td>Clamp securely and keep the apparatus away from the bench edge</td>
+</tr>
+<tr class="even">
+<td>Strong magnet</td>
+<td>Keep magnetic materials and electronic devices away；avoid trapping fingers</td>
+</tr>
+<tr class="odd">
+<td>Water near electricity</td>
+<td>Keep the power supply away from the liquid and dry hands before touching equipment</td>
+</tr>
+</tbody>
+</table>
+<section id="example-示例specific-safety-statement" class="level4 example-card">
+<h4 class="anchored" data-anchor-id="example-示例specific-safety-statement">Example / 示例：specific safety statement</h4>
+<blockquote class="blockquote">
+<p>Use a safety screen and a cushion beneath the spring because the spring or load may detach and move rapidly towards the candidate.</p>
+</blockquote>
+<p>这比单独写 <code>wear goggles</code> 更具体，因为它说明了 hazard 和 precaution 的 connection。</p>
+</section>
+</section>
+</section>
+<section id="planning-answer-structure-q1-答题结构" class="level2">
+<h2 class="anchored" data-anchor-id="planning-answer-structure-q1-答题结构">4. Planning answer structure / Q1 答题结构</h2>
+<p>可以按以下顺序写，避免漏掉 mark scheme sections：</p>
+<section id="a.-defining-the-problem" class="level3">
+<h3 class="anchored" data-anchor-id="a.-defining-the-problem">A. Defining the problem</h3>
+<ul>
+<li>state independent variable；</li>
+<li>state dependent variable；</li>
+<li>state control variables。</li>
+</ul>
+</section>
+<section id="b.-method-and-apparatus" class="level3">
+<h3 class="anchored" data-anchor-id="b.-method-and-apparatus">B. Method and apparatus</h3>
+<ul>
+<li>draw labelled diagram；</li>
+<li>describe how to vary independent variable；</li>
+<li>describe how to measure both variables；</li>
+<li>describe how to keep controls constant；</li>
+<li>state range、number of readings 和 repeats。</li>
+</ul>
+</section>
+<section id="c.-method-of-analysis" class="level3">
+<h3 class="anchored" data-anchor-id="c.-method-of-analysis">C. Method of analysis</h3>
+<ul>
+<li>write rearranged equation；</li>
+<li>state graph axes；</li>
+<li>state relationship expected if valid；</li>
+<li>identify gradient/intercept and constant。</li>
+</ul>
+</section>
+<section id="d.-additional-detail-and-safety" class="level3">
+<h3 class="anchored" data-anchor-id="d.-additional-detail-and-safety">D. Additional detail and safety</h3>
+<ul>
+<li>reduce major uncertainty；</li>
+<li>improve signal size；</li>
+<li>include calibration or preliminary measurement；</li>
+<li>explain safety precautions。</li>
+</ul>
+</section>
+<section id="planning-sentence-template-规划答题模板" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="planning-sentence-template-规划答题模板">Planning sentence template / 规划答题模板</h3>
+<blockquote class="blockquote">
+<p>Vary ___ and measure <strong><em>. Keep </em></strong>, ___ and ___ constant. Use ___ to measure ___ and ___ to measure <strong><em>. Take at least </em></strong> readings over a range of <strong><em>. Repeat each reading and calculate a mean. Plot </em></strong> against <strong><em>. If the relationship is valid, the graph should be </em></strong>. The gradient/intercept represents ___.</p>
+</blockquote>
+</section>
+</section>
+<section id="question-2-data-analysis-数据分析题" class="level2">
+<h2 class="anchored" data-anchor-id="question-2-data-analysis-数据分析题">5. Question 2 Data Analysis / 数据分析题</h2>
+<section id="read-the-equation-first-先读-equation" class="level3">
+<h3 class="anchored" data-anchor-id="read-the-equation-first-先读-equation">5.1 Read the equation first / 先读 equation</h3>
+<p>在计算前先确定：</p>
+<ul>
+<li>equation 中哪个 quantity 是 <span class="math inline">\(x\)</span>；</li>
+<li>哪个 quantity 是 <span class="math inline">\(y\)</span>；</li>
+<li>是否需要 reciprocal、square、square root、<span class="math inline">\(\ln\)</span> 或 <span class="math inline">\(\lg\)</span>；</li>
+<li>gradient 和 intercept 分别代表什么；</li>
+<li>哪些 quantities 的 uncertainty 需要进入 graph。</li>
+</ul>
+</section>
+<section id="common-graph-transformations-常见图像变换" class="level3">
+<h3 class="anchored" data-anchor-id="common-graph-transformations-常见图像变换">5.2 Common graph transformations / 常见图像变换</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Relationship</th>
+<th>Graph</th>
+<th>Gradient / intercept</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\(y=mx+c\)</span></td>
+<td><span class="math inline">\(y\)</span> against <span class="math inline">\(x\)</span></td>
+<td>Gradient <span class="math inline">\(m\)</span>、intercept <span class="math inline">\(c\)</span></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(y=a+bx\)</span></td>
+<td><span class="math inline">\(y\)</span> against <span class="math inline">\(x\)</span></td>
+<td>Gradient <span class="math inline">\(b\)</span>、intercept <span class="math inline">\(a\)</span></td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(y=ae^{kx}\)</span></td>
+<td><span class="math inline">\(\ln y\)</span> against <span class="math inline">\(x\)</span></td>
+<td>Gradient <span class="math inline">\(k\)</span>、intercept <span class="math inline">\(\ln a\)</span></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(y=ax^n\)</span></td>
+<td><span class="math inline">\(\lg y\)</span> against <span class="math inline">\(\lg x\)</span></td>
+<td>Gradient <span class="math inline">\(n\)</span>、intercept <span class="math inline">\(\lg a\)</span></td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(y=a/x+b\)</span></td>
+<td><span class="math inline">\(y\)</span> against <span class="math inline">\(1/x\)</span></td>
+<td>Gradient/intercept after rearrangement</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(y=a+bx^2\)</span></td>
+<td><span class="math inline">\(y\)</span> against <span class="math inline">\(x^2\)</span></td>
+<td>Gradient <span class="math inline">\(b\)</span>、intercept <span class="math inline">\(a\)</span></td>
+</tr>
+</tbody>
+</table>
+<section id="example-示例exponential-relationship" class="level4 example-card">
+<h4 class="anchored" data-anchor-id="example-示例exponential-relationship">Example / 示例：exponential relationship</h4>
+<p>若：</p>
+<p><span class="math display">\[
+V=V_0e^{-t/RC},
+\]</span></p>
+<p>取 natural logarithm：</p>
+<p><span class="math display">\[
+\ln V=\ln V_0-\frac{t}{RC}.
+\]</span></p>
+<p>因此 plot <span class="math inline">\(\ln V\)</span> against <span class="math inline">\(t\)</span>：</p>
+<ul>
+<li>gradient <span class="math inline">\(=-1/(RC)\)</span>；</li>
+<li>y-intercept <span class="math inline">\(=\ln V_0\)</span>；</li>
+<li>gradient 应为 negative；</li>
+<li>relationship valid if points form a straight line。</li>
+</ul>
+</section>
+</section>
+<section id="logarithms-and-units-对数和单位" class="level3">
+<h3 class="anchored" data-anchor-id="logarithms-and-units-对数和单位">5.3 Logarithms and units / 对数和单位</h3>
+<p>对数的 argument 应写成 dimensionless ratio，例如：</p>
+<p><span class="math display">\[
+\ln\left(\frac{V}{\mathrm{V}}\right),
+\qquad
+\lg\left(\frac{M}{10^{30}\ \mathrm{kg}}\right).
+\]</span></p>
+<p>正确写法的重点：</p>
+<ul>
+<li>quantity 和 unit 一起出现在 ratio 中；</li>
+<li>logarithm 本身没有 unit；</li>
+<li><code>ln</code> 和 <code>lg</code> 不能混用；</li>
+<li>table 中的 log values 要保持合适 decimal places；</li>
+<li>不要写 <span class="math inline">\(\ln V / \mathrm{V}\)</span> 来代替 <span class="math inline">\(\ln(V/\mathrm{V})\)</span>。</li>
+</ul>
+<section id="example-示例log-calculation" class="level4 example-card">
+<h4 class="anchored" data-anchor-id="example-示例log-calculation">Example / 示例：log calculation</h4>
+<p>若 <span class="math inline">\(V=0.250\ \mathrm{V}\)</span>，则可以计算：</p>
+<p><span class="math display">\[
+\ln\left(\frac{V}{\mathrm{V}}\right)=\ln(0.250)=-1.386.
+\]</span></p>
+<p>这里 <span class="math inline">\(\ln(V/\mathrm{V})\)</span> 是 dimensionless，log value 没有 unit。</p>
+</section>
+</section>
+<section id="completing-a-table-完成数据表" class="level3">
+<h3 class="anchored" data-anchor-id="completing-a-table-完成数据表">5.4 Completing a table / 完成数据表</h3>
+<p>Paper 5 的 table 通常要求计算：</p>
+<ul>
+<li>reciprocal quantities；</li>
+<li>squares or square roots；</li>
+<li>sums such as <span class="math inline">\(R_1+R_2\)</span>；</li>
+<li>averages such as <span class="math inline">\((t_1+t_2)/2\)</span>；</li>
+<li><span class="math inline">\(\ln\)</span> 或 <span class="math inline">\(\lg\)</span> values；</li>
+<li>transformed uncertainties。</li>
+</ul>
+<section id="example-示例derived-table" class="level4 example-card">
+<h4 class="anchored" data-anchor-id="example-示例derived-table">Example / 示例：derived table</h4>
+<p>若 <span class="math inline">\(R_1=2.0\ \mathrm{k\Omega}\)</span>、<span class="math inline">\(R_2=3.0\ \mathrm{k\Omega}\)</span>，则 table 中可记录：</p>
+<p><span class="math display">\[
+R_1+R_2=5.0\ \mathrm{k\Omega},
+\qquad
+\frac{1}{R_1+R_2}=0.200\ \mathrm{k\Omega^{-1}}.
+\]</span></p>
+<p>不要把 <span class="math inline">\(1/(R_1+R_2)\)</span> 错算成 <span class="math inline">\(1/R_1+1/R_2\)</span>。</p>
+</section>
+</section>
+</section>
+<section id="graphs-with-uncertainty-带-uncertainty-的-graph" class="level2">
+<h2 class="anchored" data-anchor-id="graphs-with-uncertainty-带-uncertainty-的-graph">6. Graphs with uncertainty / 带 uncertainty 的 graph</h2>
+<section id="error-bars" class="level3">
+<h3 class="anchored" data-anchor-id="error-bars">6.1 Error bars</h3>
+<p>Paper 5 mark scheme 经常要求为每一个 point 画 <code>error bars</code>。应做到：</p>
+<ul>
+<li>所有 points 都有 error bars；</li>
+<li>error bar 方向与 quantity 的 uncertainty 一致；</li>
+<li>vertical uncertainty 用 vertical bar，horizontal uncertainty 用 horizontal bar；</li>
+<li>error bar 两侧对称，除非题目明确给 asymmetric uncertainty；</li>
+<li>bar 的长度按 graph scale 正确；</li>
+<li>point 和 error bar 都要清晰可见。</li>
+</ul>
+<section id="example-示例error-bar" class="level4 example-card">
+<h4 class="anchored" data-anchor-id="example-示例error-bar">Example / 示例：error bar</h4>
+<p>若 <span class="math inline">\(y=2.40\pm0.10\)</span>，graph 的 vertical scale 为 <span class="math inline">\(0.20\)</span> per large square，则 error bar 总高度应代表 <span class="math inline">\(0.20\)</span>，即 point 上下各 <span class="math inline">\(0.10\)</span>。</p>
+</section>
+</section>
+<section id="line-of-best-fit" class="level3">
+<h3 class="anchored" data-anchor-id="line-of-best-fit">6.2 Line of best fit</h3>
+<p><code>Line of best fit</code> 表示 data 的 central trend：</p>
+<ul>
+<li>points 大致均匀分布在两侧；</li>
+<li>不应简单连接相邻 points；</li>
+<li>不要强行通过 origin，除非 equation 或题目要求；</li>
+<li>若 points 呈明显 curve，不要强行画 straight line。</li>
+</ul>
+</section>
+<section id="worst-acceptable-line" class="level3">
+<h3 class="anchored" data-anchor-id="worst-acceptable-line">6.3 Worst acceptable line</h3>
+<p><code>Worst acceptable line</code> 用于估计 graph-derived quantity 的 uncertainty。它应是：</p>
+<ul>
+<li>能通过所有 relevant error bars 的 straight line；</li>
+<li>最 steep 或最 shallow 的 acceptable line；</li>
+<li>与 line of best fit 明确区分，例如用 dashed line 或 label；</li>
+<li>不能只通过 data points 而忽略 error bars。</li>
+</ul>
+<section id="example-示例choosing-the-worst-acceptable-line" class="level4 example-card">
+<h4 class="anchored" data-anchor-id="example-示例choosing-the-worst-acceptable-line">Example / 示例：choosing the worst acceptable line</h4>
+<p>若所有 error bars 都允许一组正斜率 lines，则选择仍能通过全部 error bars 的最 steep line 或最 shallow line。不能选择一条只通过中间 points、但漏掉两端 error bars 的 line。</p>
+</section>
+</section>
+</section>
+<section id="gradientintercept-and-graph-uncertainty" class="level2">
+<h2 class="anchored" data-anchor-id="gradientintercept-and-graph-uncertainty">7. Gradient、intercept and graph uncertainty</h2>
+<section id="gradient" class="level3">
+<h3 class="anchored" data-anchor-id="gradient">7.1 Gradient</h3>
+<p>使用 line 上相距较远的 two points：</p>
+<p><span class="math display">\[
+m=\frac{\Delta y}{\Delta x}.
+\]</span></p>
+<p>答案应显示 substitution，例如：</p>
+<p><span class="math display">\[
+m=\frac{3.20-1.10}{0.80-0.20}=3.50.
+\]</span></p>
+</section>
+<section id="absolute-uncertainty-in-gradient" class="level3">
+<h3 class="anchored" data-anchor-id="absolute-uncertainty-in-gradient">7.2 Absolute uncertainty in gradient</h3>
+<p>Paper 5 常用：</p>
+<p><span class="math display">\[
+\Delta m
+=|m_{\mathrm{best}}-m_{\mathrm{worst}}|.
+\]</span></p>
+<p>某些 mark scheme 也接受以 steepest 和 shallowest lines 的 half-range 表示：</p>
+<p><span class="math display">\[
+\Delta m
+=\frac{m_{\mathrm{steepest}}-m_{\mathrm{shallowest}}}{2}.
+\]</span></p>
+<p>以题目和 mark scheme 指定的 convention 为准。</p>
+</section>
+<section id="y-intercept-and-its-uncertainty" class="level3">
+<h3 class="anchored" data-anchor-id="y-intercept-and-its-uncertainty">7.3 y-intercept and its uncertainty</h3>
+<p>可以直接从 <span class="math inline">\(x=0\)</span> read off，或使用：</p>
+<p><span class="math display">\[
+c=y-mx.
+\]</span></p>
+<p>若题目要求 intercept uncertainty：</p>
+<p><span class="math display">\[
+\Delta c=|c_{\mathrm{best}}-c_{\mathrm{worst}}|.
+\]</span></p>
+<section id="example-示例gradient-uncertainty" class="level4 example-card">
+<h4 class="anchored" data-anchor-id="example-示例gradient-uncertainty">Example / 示例：gradient uncertainty</h4>
+<p>若 <span class="math inline">\(m_{\mathrm{best}}=4.20\)</span> 且 <span class="math inline">\(m_{\mathrm{worst}}=3.80\)</span>，则：</p>
+<p><span class="math display">\[
+\Delta m=4.20-3.80=0.40.
+\]</span></p>
+<p>最后应按题目要求写成 value、uncertainty 和 unit，例如 <span class="math inline">\(m=4.2\pm0.4\ \mathrm{s^{-1}}\)</span>。</p>
+</section>
+</section>
+</section>
+<section id="uncertainty-propagation-不确定度传播" class="level2">
+<h2 class="anchored" data-anchor-id="uncertainty-propagation-不确定度传播">8. Uncertainty propagation / 不确定度传播</h2>
+<section id="basic-rules" class="level3">
+<h3 class="anchored" data-anchor-id="basic-rules">8.1 Basic rules</h3>
+<ul>
+<li>addition/subtraction：add absolute uncertainties；</li>
+<li>multiplication/division：add fractional or percentage uncertainties；</li>
+<li>powers：multiply fractional or percentage uncertainty by the power；</li>
+<li>graph gradient/intercept：use best-fit and worst-acceptable lines。</li>
+</ul>
+</section>
+<section id="uncertainty-in-a-logarithm" class="level3">
+<h3 class="anchored" data-anchor-id="uncertainty-in-a-logarithm">8.2 Uncertainty in a logarithm</h3>
+<p>For small uncertainties：</p>
+<p><span class="math display">\[
+\Delta(\ln x)\approx\frac{\Delta x}{x},
+\]</span></p>
+<p>and：</p>
+<p><span class="math display">\[
+\Delta(\lg x)\approx\frac{\Delta x}{x\ln10}.
+\]</span></p>
+<section id="example-示例uncertainty-in-ln-v" class="level4 example-card">
+<h4 class="anchored" data-anchor-id="example-示例uncertainty-in-ln-v">Example / 示例：uncertainty in <span class="math inline">\(\ln V\)</span></h4>
+<p>若 <span class="math inline">\(V=2.00\pm0.10\ \mathrm{V}\)</span>，则：</p>
+<p><span class="math display">\[
+\Delta(\ln V)\approx\frac{0.10}{2.00}=0.05.
+\]</span></p>
+<p>在 graph 上，<span class="math inline">\(\ln V\)</span> 的 vertical error bar 应使用约 <span class="math inline">\(\pm0.05\)</span>。</p>
+</section>
+</section>
+<section id="uncertainty-in-a-constant-from-gradient" class="level3">
+<h3 class="anchored" data-anchor-id="uncertainty-in-a-constant-from-gradient">8.3 Uncertainty in a constant from gradient</h3>
+<p>若 <span class="math inline">\(C\)</span> 与 gradient <span class="math inline">\(m\)</span> 成正比：</p>
+<p><span class="math display">\[
+C=Km,
+\]</span></p>
+<p>则：</p>
+<p><span class="math display">\[
+\frac{\Delta C}{C}=\frac{\Delta m}{m}.
+\]</span></p>
+<p>若 <span class="math inline">\(C\)</span> 与 <span class="math inline">\(m\)</span>、<span class="math inline">\(c\)</span> 都有关，则按照 equation 中的 multiplication、division 和 powers 合并 percentage uncertainties。</p>
+<section id="example-示例constant-from-gradient" class="level4 example-card">
+<h4 class="anchored" data-anchor-id="example-示例constant-from-gradient">Example / 示例：constant from gradient</h4>
+<p>若 <span class="math inline">\(C=2.00m\)</span>，<span class="math inline">\(m=3.0\pm0.3\)</span>，则：</p>
+<p><span class="math display">\[
+C=6.0,
+\qquad
+\frac{\Delta C}{C}=\frac{0.3}{3.0}=10\%,
+\]</span></p>
+<p>所以 <span class="math inline">\(\Delta C=0.6\)</span>。</p>
+</section>
+</section>
+</section>
+<section id="conclusions-and-predictions-结论与预测" class="level2">
+<h2 class="anchored" data-anchor-id="conclusions-and-predictions-结论与预测">9. Conclusions and predictions / 结论与预测</h2>
+<section id="conclusion-from-a-graph" class="level3">
+<h3 class="anchored" data-anchor-id="conclusion-from-a-graph">9.1 Conclusion from a graph</h3>
+<p>结论要包含：</p>
+<ul>
+<li>graph 是否呈现 expected straight line；</li>
+<li>gradient/intercept 的 numerical value；</li>
+<li>units；</li>
+<li>uncertainty；</li>
+<li>relationship 是否得到 support；</li>
+<li>若不支持，说明 evidence 的具体问题。</li>
+</ul>
+<section id="example-示例conclusion" class="level4 example-card">
+<h4 class="anchored" data-anchor-id="example-示例conclusion">Example / 示例：conclusion</h4>
+<blockquote class="blockquote">
+<p>The graph is approximately a straight line, so the data support the suggested linear relationship. The gradient is <span class="math inline">\(3.5\pm0.4\ \mathrm{s\,kg^{-1}}\)</span>.</p>
+</blockquote>
+</section>
+</section>
+<section id="prediction-外推" class="level3">
+<h3 class="anchored" data-anchor-id="prediction-外推">9.2 Prediction / 外推</h3>
+<p>有些 Paper 5 会要求使用 graph 或 derived equation 预测新的 quantity。步骤是：</p>
+<ol type="1">
+<li>identify whether the value lies inside or outside the measured range；</li>
+<li>use the best-fit line or equation；</li>
+<li>read the graph accurately；</li>
+<li>include unit；</li>
+<li>if required，include uncertainty。</li>
+</ol>
+<p><code>Interpolation</code>（测量范围内）通常比 <code>extrapolation</code>（测量范围外）更可靠。若是 extrapolation，应在 conclusion 中说明 reliability 较低。</p>
+<section id="example-示例interpolation-and-extrapolation" class="level4 example-card">
+<h4 class="anchored" data-anchor-id="example-示例interpolation-and-extrapolation">Example / 示例：interpolation and extrapolation</h4>
+<p>若 measured <span class="math inline">\(x\)</span> range 是 <span class="math inline">\(2\)</span>–<span class="math inline">\(8\ \mathrm{cm}\)</span>，预测 <span class="math inline">\(x=5\ \mathrm{cm}\)</span> 属于 interpolation；预测 <span class="math inline">\(x=15\ \mathrm{cm}\)</span> 属于 extrapolation，需要谨慎说明。</p>
+</section>
+</section>
+</section>
+<section id="high-frequency-paper-5-contexts-高频情境" class="level2">
+<h2 class="anchored" data-anchor-id="high-frequency-paper-5-contexts-高频情境">10. High-frequency Paper 5 contexts / 高频情境</h2>
+<p>Paper 5 的 context 可能跨越 AS、A Level 和 unfamiliar applications，但 skill pattern 不变。</p>
+<section id="electrical-and-capacitor-experiments" class="level3">
+<h3 class="anchored" data-anchor-id="electrical-and-capacitor-experiments">10.1 Electrical and capacitor experiments</h3>
+<p>Common contexts：capacitor discharge、resistor networks、coil、parallel plates、wind turbine generator。</p>
+<p>常见 transformations：</p>
+<ul>
+<li><span class="math inline">\(\ln V\)</span> against <span class="math inline">\(t\)</span>；</li>
+<li><span class="math inline">\(\ln V\)</span> against <span class="math inline">\(1/(R_1+R_2)\)</span>；</li>
+<li><span class="math inline">\(1/V\)</span> against plate separation <span class="math inline">\(d\)</span>；</li>
+<li><span class="math inline">\(\lg I\)</span> against <span class="math inline">\(\lg v\)</span>。</li>
+</ul>
+<section id="example-示例capacitor-discharge" class="level4 example-card">
+<h4 class="anchored" data-anchor-id="example-示例capacitor-discharge">Example / 示例：capacitor discharge</h4>
+<p>若 capacitor discharge equation 为 <span class="math inline">\(V=V_0e^{-t/RC}\)</span>，Q2 通常要求计算 <span class="math inline">\(\ln V\)</span>、画 graph、由 negative gradient 求 <span class="math inline">\(RC\)</span>，再处理 gradient uncertainty。应检查 gradient 的 sign、error bars 和 worst acceptable line。</p>
+</section>
+</section>
+<section id="waves-and-oscillations" class="level3">
+<h3 class="anchored" data-anchor-id="waves-and-oscillations">10.2 Waves and oscillations</h3>
+<p>Common contexts：stationary waves in strings/tubes、oscillating cylinder、power supply frequency。</p>
+<p>重点：</p>
+<ul>
+<li>frequency、period 和 wavelength 的转换；</li>
+<li>使用 oscilloscope 或 time-base；</li>
+<li>控制 tension、length、diameter、mass 或 amplitude；</li>
+<li>由 graph gradient 求 wave constant。</li>
+</ul>
+<section id="example-示例stationary-waves-1" class="level4 example-card">
+<h4 class="anchored" data-anchor-id="example-示例stationary-waves-1">Example / 示例：stationary waves</h4>
+<p>若 <span class="math inline">\(f\)</span> 与 tube diameter <span class="math inline">\(d\)</span> 的关系为 <span class="math inline">\(f\propto1/d\)</span>，应 plot <span class="math inline">\(f\)</span> against <span class="math inline">\(1/d\)</span>，并说明 relationship valid if a straight line is produced。若题目要求 constant，则进一步说明由 gradient 如何得到该 constant。</p>
+</section>
+</section>
+<section id="mechanics-and-collisions" class="level3">
+<h3 class="anchored" data-anchor-id="mechanics-and-collisions">10.3 Mechanics and collisions</h3>
+<p>Common contexts：gliders on an air track、spring compression、inclined plane、modelling clay、floating cylinder。</p>
+<p>重点：</p>
+<ul>
+<li>light gates、velocity、mass 和 time；</li>
+<li>release position；</li>
+<li>friction 和 alignment；</li>
+<li>control of distance、mass、spring compression 或 material。</li>
+</ul>
+<section id="example-示例collision-analysis" class="level4 example-card">
+<h4 class="anchored" data-anchor-id="example-示例collision-analysis">Example / 示例：collision analysis</h4>
+<p>collision experiment 中，若 <span class="math inline">\(v\)</span> 与 <span class="math inline">\(M+m\)</span> 有 suggested equation，应先由 light gate data 得到 <span class="math inline">\(v\)</span>，再 plot <span class="math inline">\(v\)</span> against <span class="math inline">\(M+m\)</span>，而不是直接 plot raw time。若 mass 有 uncertainty，需在 transformed quantity 上画相应 error bars。</p>
+</section>
+</section>
+<section id="thermal-and-fluid-experiments" class="level3">
+<h3 class="anchored" data-anchor-id="thermal-and-fluid-experiments">10.4 Thermal and fluid experiments</h3>
+<p>Common contexts：viscous force、heating metal cylinder、cooling、liquid flow。</p>
+<p>重点：</p>
+<ul>
+<li>temperature measurement；</li>
+<li>heat loss；</li>
+<li>viscosity、flow time、surface area；</li>
+<li>constant temperature 或 controlled heating。</li>
+</ul>
+<section id="example-示例viscosity-and-temperature" class="level4 example-card">
+<h4 class="anchored" data-anchor-id="example-示例viscosity-and-temperature">Example / 示例：viscosity and temperature</h4>
+<p>若研究 viscosity <span class="math inline">\(\eta\)</span> 随 temperature <span class="math inline">\(T\)</span> 的变化，题目可能给出 <span class="math inline">\(\ln\eta\)</span> 与 <span class="math inline">\(1/T\)</span> 的 equation，要求完成 reciprocal temperature、log calculation 和 graph。注意 temperature 应使用 kelvin，不能直接使用摄氏温度。</p>
+</section>
+</section>
+<section id="astronomynuclear-and-unfamiliar-contexts" class="level3">
+<h3 class="anchored" data-anchor-id="astronomynuclear-and-unfamiliar-contexts">10.5 Astronomy、nuclear and unfamiliar contexts</h3>
+<p>Past Paper 5 也会使用 stars、galaxies、moons、radioactive count rate 等 context。不要因为情境陌生就停止；题目会给出必要 equation 和 definitions。</p>
+<section id="example-示例astronomy-power-law" class="level4 example-card">
+<h4 class="anchored" data-anchor-id="example-示例astronomy-power-law">Example / 示例：astronomy power law</h4>
+<p>若给出 <span class="math inline">\(L\propto M^n\)</span>，即使 star luminosity 不是已熟悉的 laboratory experiment，也可以使用 <span class="math inline">\(\lg L\)</span> against <span class="math inline">\(\lg M\)</span> 的 method，gradient 仍代表 <span class="math inline">\(n\)</span>。若 graph 的 intercept 还包含 scale factor，则需使用题目给出的 normalized quantities 处理 unit。</p>
+</section>
+</section>
+</section>
+<section id="common-mark-scheme-traps-高频失分点" class="level2">
+<h2 class="anchored" data-anchor-id="common-mark-scheme-traps-高频失分点">11. Common mark-scheme traps / 高频失分点</h2>
+<section id="planning" class="level3">
+<h3 class="anchored" data-anchor-id="planning">Planning</h3>
+<ul>
+<li>只列 control variables，不说明如何控制；</li>
+<li>diagram 缺少关键 labels 或无法实际操作；</li>
+<li>选择不适合 expected range 的 instrument；</li>
+<li>只写 <code>take more readings</code>，没有说明 range、repeats 或 analysis；</li>
+<li>只写 <code>plot a graph</code>，没有说明 axes 和 expected graph feature；</li>
+<li>safety precaution 没有对应 hazard；</li>
+<li>没有说明如何得到 dependent variable；</li>
+<li>忘记 measurement of constants needed in the equation。</li>
+</ul>
+</section>
+<section id="data-analysis" class="level3">
+<h3 class="anchored" data-anchor-id="data-analysis">Data analysis</h3>
+<ul>
+<li>plot wrong transformed quantity；</li>
+<li>把 <code>ln</code> 和 <code>lg</code> 混用；</li>
+<li>log argument 没有 unit ratio；</li>
+<li>只画 data points，不画 error bars；</li>
+<li>error bars 不对称或长度不符合 scale；</li>
+<li>worst acceptable line 没有通过 all error bars；</li>
+<li>把 best-fit gradient 当作 uncertainty；</li>
+<li>gradient 写成 <span class="math inline">\(\Delta x/\Delta y\)</span>；</li>
+<li>y-intercept uncertainty 漏掉；</li>
+<li>final constant 没有 unit 或 significant figures 不合理；</li>
+<li>在 equation 不要求时强行让 line pass through origin；</li>
+<li>只写“data support relationship”，没有 quantitative evidence。</li>
+</ul>
+</section>
+</section>
+<section id="complete-question-2-workflow-q2-完整流程" class="level2">
+<h2 class="anchored" data-anchor-id="complete-question-2-workflow-q2-完整流程">12. Complete Question 2 workflow / Q2 完整流程</h2>
+<ol type="1">
+<li>Read the suggested equation。</li>
+<li>Identify graph <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span> quantities。</li>
+<li>Check whether a reciprocal、square、log or square root is needed。</li>
+<li>Calculate all derived data with units and suitable significant figures。</li>
+<li>Calculate uncertainties in transformed quantities。</li>
+<li>Complete the table。</li>
+<li>Plot all points。</li>
+<li>Plot all error bars。</li>
+<li>Draw line of best fit。</li>
+<li>Draw and label worst acceptable line。</li>
+<li>Determine best-fit gradient and intercept。</li>
+<li>Determine gradient/intercept uncertainties。</li>
+<li>Use gradient/intercept to calculate constants。</li>
+<li>Propagate uncertainty into the constants。</li>
+<li>Write a quantitative conclusion or prediction。</li>
+</ol>
+</section>
+<section id="revision-checklist-复习清单" class="level2">
+<h2 class="anchored" data-anchor-id="revision-checklist-复习清单">13. Revision checklist / 复习清单</h2>
+<section id="planning-1" class="level3">
+<h3 class="anchored" data-anchor-id="planning-1">Planning</h3>
+<ul class="task-list">
+<li><label><input type="checkbox">I can identify independent、dependent and control variables。</label></li>
+<li><label><input type="checkbox">I can describe how each variable is changed or measured。</label></li>
+<li><label><input type="checkbox">I can draw a labelled and workable apparatus diagram。</label></li>
+<li><label><input type="checkbox">I can select instruments with suitable range and precision。</label></li>
+<li><label><input type="checkbox">I can specify a sensible range and number of readings。</label></li>
+<li><label><input type="checkbox">I can explain repeats、averaging and control of variables。</label></li>
+<li><label><input type="checkbox">I can state graph axes and the expected relationship。</label></li>
+<li><label><input type="checkbox">I can connect safety precautions to real hazards。</label></li>
+</ul>
+</section>
+<section id="analysis" class="level3">
+<h3 class="anchored" data-anchor-id="analysis">Analysis</h3>
+<ul class="task-list">
+<li><label><input type="checkbox">I can linearise exponential and power relationships。</label></li>
+<li><label><input type="checkbox">I can calculate reciprocal、squared、square-root、<span class="math inline">\(\ln\)</span> and <span class="math inline">\(\lg\)</span> quantities。</label></li>
+<li><label><input type="checkbox">I can include units correctly inside logarithm arguments。</label></li>
+<li><label><input type="checkbox">I can calculate uncertainty in a transformed quantity。</label></li>
+<li><label><input type="checkbox">I can draw symmetrical error bars。</label></li>
+<li><label><input type="checkbox">I can draw a line of best fit and a worst acceptable line。</label></li>
+<li><label><input type="checkbox">I can determine gradient、intercept and their uncertainties。</label></li>
+<li><label><input type="checkbox">I can calculate a final constant with unit and uncertainty。</label></li>
+<li><label><input type="checkbox">I can write a conclusion supported by numerical evidence。</label></li>
+</ul>
+</section>
+</section>
+<section id="past-paper-evidence-appendix-历年真题证据" class="level2">
+<h2 class="anchored" data-anchor-id="past-paper-evidence-appendix-历年真题证据">14. Past-paper evidence appendix / 历年真题证据</h2>
+<p>本地目前可用的 Paper 5 资料覆盖 2020–2023 和 2025 O/N；2024 目录中没有找到 Paper 5 文件。典型 pattern 如下：</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Session</th>
+<th>Typical Question 1 planning context</th>
+<th>Typical Question 2 analysis context</th>
+<th>Main analysis skill</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>2020</td>
+<td>Springs、stationary waves</td>
+<td>Capacitor discharge、viscosity</td>
+<td><span class="math inline">\(\ln y\)</span>、gradient uncertainty</td>
+</tr>
+<tr class="even">
+<td>2021</td>
+<td>Coil、heating cylinder、floating cylinder</td>
+<td>Collisions、G-M tube、circuits</td>
+<td>Error bars、worst acceptable line</td>
+</tr>
+<tr class="odd">
+<td>2022</td>
+<td>Parallel plates、conductors、copper sheet</td>
+<td>Stars、stationary waves、circuits</td>
+<td><span class="math inline">\(\lg y\)</span>、reciprocal variables、prediction</td>
+</tr>
+<tr class="even">
+<td>2023</td>
+<td>Coils、inclined plane、beakers</td>
+<td>Capacitors、standing waves</td>
+<td>Planning controls、log analysis</td>
+</tr>
+<tr class="odd">
+<td>2025 O/N</td>
+<td>Spring compression、wind turbine</td>
+<td>Galaxies、moons</td>
+<td>Power-law graph、extrapolation、uncertainty</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="source-basis-参考资料" class="level2">
+<h2 class="anchored" data-anchor-id="source-basis-参考资料">Source basis / 参考资料</h2>
+<ul>
+<li>Cambridge 9702 syllabus for 2025–2027；</li>
+<li>available Paper 5 Question Papers and Mark Schemes in <code>PastPaper/2020</code>、<code>PastPaper/2021</code>、<code>PastPaper/2022</code>、<code>PastPaper/2023</code> 和 <code>PastPaper/2025</code>；</li>
+<li><code>caie-a2-level-physics-9702-theory-v2.pdf</code>：预留为 supplementary theory reference；当前生成时未能在用户提供的路径找到该文件，因此本版本未引用其具体内容。</li>
+</ul>
+<p>具体考试要求和最新 wording 仍以 current syllabus、question paper 和 official mark scheme 为准。</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll(".done-toggle input").forEach((input) => {
+    const key = `cie-physics-${input.dataset.progress}`;
+    input.checked = localStorage.getItem(key) === "true";
+    input.closest(".question-card")?.classList.toggle("is-complete", input.checked);
+    input.addEventListener("change", () => {
+      localStorage.setItem(key, input.checked);
+      input.closest(".question-card")?.classList.toggle("is-complete", input.checked);
+    });
+  });
+
+  document.querySelectorAll(".mc-question").forEach((card) => {
+    const answer = card.dataset.answer;
+    const feedback = card.querySelector(".mc-feedback");
+    const check = card.querySelector(".check-answer");
+    let selected = localStorage.getItem(`cie-physics-${card.id}-choice`) || "";
+
+    const showSelection = () => {
+      card.querySelectorAll(".mc-choice").forEach((choice) => {
+        choice.classList.toggle("is-selected", choice.dataset.choice === selected);
+      });
+    };
+    showSelection();
+
+    card.querySelectorAll(".mc-choice").forEach((choice) => {
+      choice.addEventListener("click", () => {
+        selected = choice.dataset.choice;
+        localStorage.setItem(`cie-physics-${card.id}-choice`, selected);
+        feedback.textContent = "";
+        feedback.className = "mc-feedback";
+        showSelection();
+      });
+    });
+
+    check?.addEventListener("click", () => {
+      if (!selected) {
+        feedback.textContent = "Select an answer first.";
+        feedback.className = "mc-feedback is-pending";
+        return;
+      }
+      const correct = selected === answer;
+      feedback.textContent = correct ? "Correct." : `Not quite. The correct answer is ${answer}.`;
+      feedback.className = `mc-feedback ${correct ? "is-correct" : "is-incorrect"}`;
+    });
+  });
+});
+</script>
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "已复制");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "已复制");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/nanoxsj\.github\.io\/CIE-Physics-Study\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation column-body">
+  <div class="nav-page nav-page-previous">
+      <a href="../as-level/30-paper-3-advanced-practical-skills.html" class="pagination-link" aria-label="Paper 3 Advanced Practical Skills">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Paper 3 Advanced Practical Skills</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../a-level/12-motion-in-a-circle.html" class="pagination-link" aria-label="12 Motion in a circle">
+        <span class="nav-page-text">12 Motion in a circle</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>
