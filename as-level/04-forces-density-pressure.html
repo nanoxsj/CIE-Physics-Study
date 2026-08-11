@@ -346,20 +346,25 @@ window.Quarto = {
   <ul class="collapse">
   <li><a href="#centre-of-gravity" id="toc-centre-of-gravity" class="nav-link" data-scroll-target="#centre-of-gravity">Centre of gravity</a></li>
   <li><a href="#moment-of-a-force" id="toc-moment-of-a-force" class="nav-link" data-scroll-target="#moment-of-a-force">Moment of a force</a></li>
+  <li><a href="#worked-example-1-moment-about-a-pivot" id="toc-worked-example-1-moment-about-a-pivot" class="nav-link" data-scroll-target="#worked-example-1-moment-about-a-pivot">Worked Example 1 — moment about a pivot</a></li>
   <li><a href="#couples-and-torque" id="toc-couples-and-torque" class="nav-link" data-scroll-target="#couples-and-torque">Couples and torque</a></li>
   <li><a href="#combining-moments" id="toc-combining-moments" class="nav-link" data-scroll-target="#combining-moments">Combining moments</a></li>
+  <li><a href="#worked-example-2-principle-of-moments" id="toc-worked-example-2-principle-of-moments" class="nav-link" data-scroll-target="#worked-example-2-principle-of-moments">Worked Example 2 — principle of moments</a></li>
   </ul></li>
   <li><a href="#equilibrium-of-forces" id="toc-equilibrium-of-forces" class="nav-link" data-scroll-target="#equilibrium-of-forces">4.2 Equilibrium of forces</a>
   <ul class="collapse">
   <li><a href="#conditions-for-equilibrium" id="toc-conditions-for-equilibrium" class="nav-link" data-scroll-target="#conditions-for-equilibrium">Conditions for equilibrium</a></li>
   <li><a href="#coplanar-forces-and-vector-triangles" id="toc-coplanar-forces-and-vector-triangles" class="nav-link" data-scroll-target="#coplanar-forces-and-vector-triangles">Coplanar forces and vector triangles</a></li>
+  <li><a href="#worked-example-3-resolving-forces-in-equilibrium" id="toc-worked-example-3-resolving-forces-in-equilibrium" class="nav-link" data-scroll-target="#worked-example-3-resolving-forces-in-equilibrium">Worked Example 3 — resolving forces in equilibrium</a></li>
   </ul></li>
   <li><a href="#density-and-pressure" id="toc-density-and-pressure" class="nav-link" data-scroll-target="#density-and-pressure">4.3 Density and pressure</a>
   <ul class="collapse">
   <li><a href="#density" id="toc-density" class="nav-link" data-scroll-target="#density">Density</a></li>
   <li><a href="#pressure-in-a-solid" id="toc-pressure-in-a-solid" class="nav-link" data-scroll-target="#pressure-in-a-solid">Pressure in a solid</a></li>
   <li><a href="#hydrostatic-pressure" id="toc-hydrostatic-pressure" class="nav-link" data-scroll-target="#hydrostatic-pressure">Hydrostatic pressure</a></li>
+  <li><a href="#worked-example-4-density-pressure-and-liquid-pressure" id="toc-worked-example-4-density-pressure-and-liquid-pressure" class="nav-link" data-scroll-target="#worked-example-4-density-pressure-and-liquid-pressure">Worked Example 4 — density, pressure and liquid pressure</a></li>
   <li><a href="#upthrust-and-archimedes-principle" id="toc-upthrust-and-archimedes-principle" class="nav-link" data-scroll-target="#upthrust-and-archimedes-principle">Upthrust and Archimedes’ principle</a></li>
+  <li><a href="#worked-example-5-upthrust-using-archimedes-principle" id="toc-worked-example-5-upthrust-using-archimedes-principle" class="nav-link" data-scroll-target="#worked-example-5-upthrust-using-archimedes-principle">Worked Example 5 — upthrust using Archimedes’ principle</a></li>
   </ul></li>
   <li><a href="#multiple-choice-questions" id="toc-multiple-choice-questions" class="nav-link" data-scroll-target="#multiple-choice-questions">Multiple Choice Questions</a>
   <ul class="collapse">
@@ -430,12 +435,37 @@ window.Quarto = {
 <p>The <strong>centre of gravity</strong> of an object is the single point at which the whole weight of the object may be considered to act. For a uniform, symmetrical object it is at the geometric centre. For an irregular object the centre of gravity may lie outside the material of the object.</p>
 <p>The centre of gravity is not the same as the centre of mass. The centre of mass is the point at which the whole mass may be considered to act; the centre of gravity is where the weight acts. For a uniform gravitational field the two points coincide.</p>
 </section>
+<div class="knowledge-figure">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/notes/forces-density-pressure/stability-centre-of-gravity.png" class="img-fluid figure-img" alt="Diagrams showing centre of gravity, narrow and wide bases, and stability"></p>
+<figcaption>Centre of gravity and stability for objects with different shapes and bases.</figcaption>
+</figure>
+</div>
+</div>
 <section id="moment-of-a-force" class="level3 formula-panel">
 <h3 class="anchored" data-anchor-id="moment-of-a-force">Moment of a force</h3>
 <p>The <strong>moment of a force</strong> about a point is the turning effect of the force. It is defined as</p>
 <p><span class="math display">\[\text{moment}=Fd,\]</span></p>
 <p>where <span class="math inline">\(F\)</span> is the force and <span class="math inline">\(d\)</span> is the perpendicular distance from the line of action of the force to the point.</p>
 <p>The moment has units <span class="math inline">\(\mathrm{N\,m}\)</span>. Moments may be taken as clockwise or anticlockwise about a chosen pivot.</p>
+</section>
+<div class="knowledge-figure">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/notes/forces-density-pressure/moment-perpendicular-distance.png" class="img-fluid figure-img" alt="Moment about a pivot using perpendicular distance"></p>
+<figcaption>Moment is calculated using the perpendicular distance from the pivot to the line of action of the force.</figcaption>
+</figure>
+</div>
+</div>
+<section id="worked-example-1-moment-about-a-pivot" class="level3 example-card">
+<h3 class="anchored" data-anchor-id="worked-example-1-moment-about-a-pivot">Worked Example 1 — moment about a pivot</h3>
+<p>A force of <span class="math inline">\(40\ \mathrm{N}\)</span> acts at a perpendicular distance of <span class="math inline">\(0.25\ \mathrm{m}\)</span> from a pivot. Calculate the moment.</p>
+<p><strong>Solution</strong></p>
+<p><span class="math display">\[
+M=Fd=(40)(0.25)=10.0\ \mathrm{N\,m}
+\]</span></p>
+<p>The answer should include the direction, <strong>clockwise</strong> or <strong>anticlockwise</strong>, if the diagram gives a definite sense of rotation. The distance must be perpendicular to the force’s line of action, not necessarily the distance along the object.</p>
 </section>
 <section id="couples-and-torque" class="level3 study-card">
 <h3 class="anchored" data-anchor-id="couples-and-torque">Couples and torque</h3>
@@ -444,11 +474,32 @@ window.Quarto = {
 <p><span class="math display">\[\tau=Fd,\]</span></p>
 <p>where <span class="math inline">\(F\)</span> is the magnitude of one of the forces and <span class="math inline">\(d\)</span> is the perpendicular distance between the two lines of action. The torque has units <span class="math inline">\(\mathrm{N\,m}\)</span>.</p>
 </section>
+<div class="knowledge-figure">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/notes/forces-density-pressure/couple-torque.png" class="img-fluid figure-img" alt="Equal and opposite forces forming a couple"></p>
+<figcaption>A couple consists of two equal and opposite forces separated by a perpendicular distance.</figcaption>
+</figure>
+</div>
+</div>
 <section id="combining-moments" class="level3 study-card">
 <h3 class="anchored" data-anchor-id="combining-moments">Combining moments</h3>
 <p>When several forces act on a body, the resultant moment about a pivot is the algebraic sum of the individual moments. Taking one direction as positive:</p>
 <p><span class="math display">\[\sum \text{clockwise moments} = \sum \text{anticlockwise moments}\]</span></p>
 <p>when the body is in rotational equilibrium. Always use the perpendicular distance to the line of action, not the distance along the object.</p>
+</section>
+<section id="worked-example-2-principle-of-moments" class="level3 example-card">
+<h3 class="anchored" data-anchor-id="worked-example-2-principle-of-moments">Worked Example 2 — principle of moments</h3>
+<p>A uniform beam is balanced on a pivot. A downward force of <span class="math inline">\(30\ \mathrm{N}\)</span> acts <span class="math inline">\(0.40\ \mathrm{m}\)</span> to the left of the pivot. An unknown downward force <span class="math inline">\(F\)</span> acts <span class="math inline">\(0.60\ \mathrm{m}\)</span> to the right. Find <span class="math inline">\(F\)</span>, assuming the beam’s own weight acts through the pivot.</p>
+<p><strong>Solution</strong></p>
+<p>For rotational equilibrium, clockwise moments equal anticlockwise moments:</p>
+<p><span class="math display">\[
+(30)(0.40)=F(0.60)
+\]</span></p>
+<p><span class="math display">\[
+F=\frac{12.0}{0.60}=20.0\ \mathrm{N}
+\]</span></p>
+<p>The pivot is a useful choice because any force whose line of action passes through it has zero moment about that point.</p>
 </section>
 </section>
 <section id="equilibrium-of-forces" class="level2">
@@ -470,6 +521,24 @@ window.Quarto = {
 <p><span class="math display">\[\sum F_x=0, \qquad \sum F_y=0.\]</span></p>
 <p>If the lines of action of three non-parallel forces do not meet at a single point, the body will have a resultant moment and cannot be in equilibrium.</p>
 </section>
+<div class="knowledge-figure">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/notes/forces-density-pressure/vector-triangle-equilibrium.png" class="img-fluid figure-img" alt="Free-body diagram and closed vector triangle for equilibrium"></p>
+<figcaption>Three coplanar forces are rearranged head-to-tail to form a closed vector triangle.</figcaption>
+</figure>
+</div>
+</div>
+<section id="worked-example-3-resolving-forces-in-equilibrium" class="level3 example-card">
+<h3 class="anchored" data-anchor-id="worked-example-3-resolving-forces-in-equilibrium">Worked Example 3 — resolving forces in equilibrium</h3>
+<p>An object is in equilibrium under a horizontal force of <span class="math inline">\(12\ \mathrm{N}\)</span> and a vertical weight of <span class="math inline">\(16\ \mathrm{N}\)</span>. Find the magnitude of the third force needed to balance the object.</p>
+<p><strong>Solution</strong></p>
+<p>The third force must be equal and opposite to the resultant of the first two forces. Using components:</p>
+<p><span class="math display">\[
+R=\sqrt{12^2+16^2}=20\ \mathrm{N}
+\]</span></p>
+<p>Therefore the balancing force has magnitude <span class="math inline">\(20\ \mathrm{N}\)</span> and acts in the opposite direction to <span class="math inline">\(R\)</span>. In a force diagram, the three vectors form a closed triangle.</p>
+</section>
 </section>
 <section id="density-and-pressure" class="level2">
 <h2 class="anchored" data-anchor-id="density-and-pressure">4.3 Density and pressure</h2>
@@ -480,6 +549,14 @@ window.Quarto = {
 <p>The SI unit of density is <span class="math inline">\(\mathrm{kg\,m^{-3}}\)</span>. A common non-SI unit is <span class="math inline">\(\mathrm{g\,cm^{-3}}\)</span>, where</p>
 <p><span class="math display">\[1\ \mathrm{g\,cm^{-3}}=1000\ \mathrm{kg\,m^{-3}}.\]</span></p>
 </section>
+<div class="knowledge-figure">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/notes/forces-density-pressure/density-particle-model.png" class="img-fluid figure-img" alt="Particle model showing different densities"></p>
+<figcaption>Particle model comparing a less dense substance with a more dense substance in equal volumes.</figcaption>
+</figure>
+</div>
+</div>
 <section id="pressure-in-a-solid" class="level3 formula-panel">
 <h3 class="anchored" data-anchor-id="pressure-in-a-solid">Pressure in a solid</h3>
 <p><strong>Pressure</strong> is the normal force acting per unit area:</p>
@@ -488,6 +565,14 @@ window.Quarto = {
 <p><span class="math display">\[1\ \mathrm{Pa}=1\ \mathrm{N\,m^{-2}}.\]</span></p>
 <p>Pressure is a scalar quantity. The force used in the definition is the force acting perpendicular to the surface.</p>
 </section>
+<div class="knowledge-figure">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/notes/forces-density-pressure/pressure-contact-area.png" class="img-fluid figure-img" alt="High and low pressure from different contact areas"></p>
+<figcaption>The same weight produces different pressures when distributed over different contact areas.</figcaption>
+</figure>
+</div>
+</div>
 <section id="hydrostatic-pressure" class="level3 formula-panel">
 <h3 class="anchored" data-anchor-id="hydrostatic-pressure">Hydrostatic pressure</h3>
 <p>Consider a column of liquid of cross-sectional area <span class="math inline">\(A\)</span>, height <span class="math inline">\(\Delta h\)</span> and density <span class="math inline">\(\rho\)</span>. The weight of the column is</p>
@@ -497,12 +582,55 @@ window.Quarto = {
 <p>The <strong>hydrostatic pressure</strong> increases with depth and with liquid density. Total pressure at a depth is the sum of the atmospheric pressure and <span class="math inline">\(\rho g\Delta h\)</span>:</p>
 <p><span class="math display">\[p=p_{\text{atm}}+\rho g\Delta h.\]</span></p>
 </section>
+<div class="knowledge-figure">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/notes/forces-density-pressure/hydrostatic-pressure-depth.png" class="img-fluid figure-img" alt="Hydrostatic pressure and manometer height difference"></p>
+<figcaption>A manometer shows that a pressure difference is related to liquid density and height difference.</figcaption>
+</figure>
+</div>
+</div>
+<section id="worked-example-4-density-pressure-and-liquid-pressure" class="level3 example-card">
+<h3 class="anchored" data-anchor-id="worked-example-4-density-pressure-and-liquid-pressure">Worked Example 4 — density, pressure and liquid pressure</h3>
+<p>A metal block has mass <span class="math inline">\(2.70\ \mathrm{kg}\)</span> and volume <span class="math inline">\(1.00\times10^{-3}\ \mathrm{m^3}\)</span>. It rests on a face of area <span class="math inline">\(2.00\times10^{-2}\ \mathrm{m^2}\)</span>. Take <span class="math inline">\(g=9.81\ \mathrm{m\,s^{-2}}\)</span>.</p>
+<p><strong>Solution</strong></p>
+<p>First calculate the density:</p>
+<p><span class="math display">\[
+\rho=\frac{m}{V}=\frac{2.70}{1.00\times10^{-3}}=2.70\times10^3\ \mathrm{kg\,m^{-3}}
+\]</span></p>
+<p>Its weight is <span class="math inline">\(W=mg=(2.70)(9.81)=26.5\ \mathrm{N}\)</span>. Therefore the pressure on the surface is</p>
+<p><span class="math display">\[
+p=\frac{F}{A}=\frac{26.5}{2.00\times10^{-2}}=1.32\times10^3\ \mathrm{Pa}
+\]</span></p>
+<p>For water at a depth of <span class="math inline">\(0.50\ \mathrm{m}\)</span>, the gauge pressure is</p>
+<p><span class="math display">\[
+\Delta p=\rho g\Delta h=(1000)(9.81)(0.50)=4.91\times10^3\ \mathrm{Pa}.
+\]</span></p>
+</section>
 <section id="upthrust-and-archimedes-principle" class="level3 study-card">
 <h3 class="anchored" data-anchor-id="upthrust-and-archimedes-principle">Upthrust and Archimedes’ principle</h3>
 <p>Pressure in a fluid increases with depth, so the upward force on the bottom of a submerged object is greater than the downward force on its top. The resultant upward force is the <strong>upthrust</strong>.</p>
 <p>The magnitude of the upthrust is equal to the weight of fluid displaced:</p>
 <p><span class="math display">\[F=\rho_{\text{fluid}}gV,\]</span></p>
 <p>where <span class="math inline">\(V\)</span> is the volume of the object below the fluid surface. This is Archimedes’ principle. A floating object is in equilibrium when the upthrust equals its weight.</p>
+</section>
+<div class="knowledge-figure">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/notes/forces-density-pressure/archimedes-upthrust.png" class="img-fluid figure-img" alt="Floating boat and displaced water showing upthrust"></p>
+<figcaption>A floating boat displaces water and experiences an upthrust equal to its weight.</figcaption>
+</figure>
+</div>
+</div>
+<section id="worked-example-5-upthrust-using-archimedes-principle" class="level3 example-card">
+<h3 class="anchored" data-anchor-id="worked-example-5-upthrust-using-archimedes-principle">Worked Example 5 — upthrust using Archimedes’ principle</h3>
+<p>An object is completely submerged in water and displaces <span class="math inline">\(2.0\times10^{-4}\ \mathrm{m^3}\)</span> of water. Calculate the upthrust. Take <span class="math inline">\(\rho_{\text{water}}=1000\ \mathrm{kg\,m^{-3}}\)</span> and <span class="math inline">\(g=9.81\ \mathrm{m\,s^{-2}}\)</span>.</p>
+<p><strong>Solution</strong></p>
+<p>The upthrust equals the weight of the displaced water:</p>
+<p><span class="math display">\[
+F=\rho_{\text{fluid}}gV=(1000)(9.81)(2.0\times10^{-4})=1.96\ \mathrm{N}.
+\]</span></p>
+<p>If the object is floating freely, its weight is also <span class="math inline">\(1.96\ \mathrm{N}\)</span>. If it is held fully submerged, compare this upthrust with the object’s weight to determine the tension or resultant force.</p>
 </section>
 </section>
 <section id="multiple-choice-questions" class="level2">
