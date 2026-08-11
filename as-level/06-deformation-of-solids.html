@@ -345,15 +345,20 @@ window.Quarto = {
   <li><a href="#stress-and-strain" id="toc-stress-and-strain" class="nav-link" data-scroll-target="#stress-and-strain">6.1 Stress and strain</a>
   <ul class="collapse">
   <li><a href="#deformation-and-hookes-law" id="toc-deformation-and-hookes-law" class="nav-link" data-scroll-target="#deformation-and-hookes-law">Deformation and Hooke’s law</a></li>
+  <li><a href="#worked-example-1---spring-constant" id="toc-worked-example-1---spring-constant" class="nav-link" data-scroll-target="#worked-example-1---spring-constant">Worked Example 1 - spring constant</a></li>
   <li><a href="#stress-and-strain-1" id="toc-stress-and-strain-1" class="nav-link" data-scroll-target="#stress-and-strain-1">Stress and strain</a></li>
+  <li><a href="#worked-example-2---stress-and-strain" id="toc-worked-example-2---stress-and-strain" class="nav-link" data-scroll-target="#worked-example-2---stress-and-strain">Worked Example 2 - stress and strain</a></li>
   <li><a href="#young-modulus" id="toc-young-modulus" class="nav-link" data-scroll-target="#young-modulus">Young modulus</a></li>
+  <li><a href="#worked-example-3---young-modulus-from-a-wire-experiment" id="toc-worked-example-3---young-modulus-from-a-wire-experiment" class="nav-link" data-scroll-target="#worked-example-3---young-modulus-from-a-wire-experiment">Worked Example 3 - Young modulus from a wire experiment</a></li>
   <li><a href="#determining-the-young-modulus-of-a-wire" id="toc-determining-the-young-modulus-of-a-wire" class="nav-link" data-scroll-target="#determining-the-young-modulus-of-a-wire">Determining the Young modulus of a wire</a></li>
   </ul></li>
   <li><a href="#elastic-and-plastic-behaviour" id="toc-elastic-and-plastic-behaviour" class="nav-link" data-scroll-target="#elastic-and-plastic-behaviour">6.2 Elastic and plastic behaviour</a>
   <ul class="collapse">
   <li><a href="#elastic-and-plastic-deformation" id="toc-elastic-and-plastic-deformation" class="nav-link" data-scroll-target="#elastic-and-plastic-deformation">Elastic and plastic deformation</a></li>
+  <li><a href="#worked-example-4---identifying-elastic-and-plastic-behaviour" id="toc-worked-example-4---identifying-elastic-and-plastic-behaviour" class="nav-link" data-scroll-target="#worked-example-4---identifying-elastic-and-plastic-behaviour">Worked Example 4 - identifying elastic and plastic behaviour</a></li>
   <li><a href="#stress-strain-graphs-for-different-materials" id="toc-stress-strain-graphs-for-different-materials" class="nav-link" data-scroll-target="#stress-strain-graphs-for-different-materials">Stress-strain graphs for different materials</a></li>
   <li><a href="#elastic-strain-energy" id="toc-elastic-strain-energy" class="nav-link" data-scroll-target="#elastic-strain-energy">Elastic strain energy</a></li>
+  <li><a href="#worked-example-5---elastic-strain-energy" id="toc-worked-example-5---elastic-strain-energy" class="nav-link" data-scroll-target="#worked-example-5---elastic-strain-energy">Worked Example 5 - elastic strain energy</a></li>
   </ul></li>
   <li><a href="#multiple-choice-questions" id="toc-multiple-choice-questions" class="nav-link" data-scroll-target="#multiple-choice-questions">Multiple Choice Questions</a>
   <ul class="collapse">
@@ -423,6 +428,36 @@ window.Quarto = {
 <p><span class="math display">\[F=kx,\]</span></p>
 <p>where <span class="math inline">\(k\)</span> is the spring constant in <span class="math inline">\(\mathrm{N\,m^{-1}}\)</span>.</p>
 </section>
+<div class="knowledge-figure">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/notes/deformation-of-solids/tensile-compressive-forces.png" class="img-fluid figure-img" alt="Tensile and compressive forces acting on a cylinder"></p>
+<figcaption>Tensile forces stretch a cylinder while compressive forces squash it.</figcaption>
+</figure>
+</div>
+</div>
+<div class="knowledge-figure">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/notes/deformation-of-solids/hookes-law-limit.png" class="img-fluid figure-img" alt="Force-extension graph showing Hooke's law region and limit of proportionality"></p>
+<figcaption>A force-extension graph shows the straight-line Hooke’s law region and the limit of proportionality.</figcaption>
+</figure>
+</div>
+</div>
+<section id="worked-example-1---spring-constant" class="level3 example-card">
+<h3 class="anchored" data-anchor-id="worked-example-1---spring-constant">Worked Example 1 - spring constant</h3>
+<p>A spring extends by <span class="math inline">\(4.0\ \mathrm{cm}\)</span> when a force of <span class="math inline">\(12\ \mathrm{N}\)</span> is applied. Assuming the limit of proportionality is not exceeded, calculate the spring constant.</p>
+<p><strong>Solution</strong></p>
+<p>Convert the extension to metres:</p>
+<p><span class="math display">\[
+x=4.0\ \mathrm{cm}=0.040\ \mathrm{m}
+\]</span></p>
+<p>Then</p>
+<p><span class="math display">\[
+k=\frac{F}{x}=\frac{12}{0.040}=3.0\times10^2\ \mathrm{N\,m^{-1}}.
+\]</span></p>
+<p>The gradient must be calculated using extension in metres, not centimetres.</p>
+</section>
 <section id="stress-and-strain-1" class="level3 formula-panel">
 <h3 class="anchored" data-anchor-id="stress-and-strain-1">Stress and strain</h3>
 <p><strong>Tensile stress</strong> is the force per unit cross-sectional area:</p>
@@ -432,6 +467,39 @@ window.Quarto = {
 <p><span class="math display">\[\varepsilon=\frac{x}{L},\]</span></p>
 <p>which is dimensionless.</p>
 </section>
+<div class="knowledge-figure">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/notes/deformation-of-solids/extension-apparatus.png" class="img-fluid figure-img" alt="Apparatus for measuring extension of a wire"></p>
+<figcaption>An extension apparatus uses a fixed support, a wire, a load and a scale to measure extension.</figcaption>
+</figure>
+</div>
+</div>
+<section id="worked-example-2---stress-and-strain" class="level3 example-card">
+<h3 class="anchored" data-anchor-id="worked-example-2---stress-and-strain">Worked Example 2 - stress and strain</h3>
+<p>A wire of original length <span class="math inline">\(2.0\ \mathrm{m}\)</span> and cross-sectional area <span class="math inline">\(1.5\times10^{-6}\ \mathrm{m^2}\)</span> is stretched by a force of <span class="math inline">\(90\ \mathrm{N}\)</span>. Its extension is <span class="math inline">\(3.0\ \mathrm{mm}\)</span>. Calculate the tensile stress, tensile strain and Young modulus.</p>
+<p><strong>Solution</strong></p>
+<p>Convert the extension:</p>
+<p><span class="math display">\[
+x=3.0\ \mathrm{mm}=3.0\times10^{-3}\ \mathrm{m}
+\]</span></p>
+<p>Stress:</p>
+<p><span class="math display">\[
+\sigma=\frac{F}{A}=\frac{90}{1.5\times10^{-6}}
+=6.0\times10^7\ \mathrm{Pa}
+\]</span></p>
+<p>Strain:</p>
+<p><span class="math display">\[
+\varepsilon=\frac{x}{L}=\frac{3.0\times10^{-3}}{2.0}
+=1.5\times10^{-3}
+\]</span></p>
+<p>Young modulus:</p>
+<p><span class="math display">\[
+E=\frac{\sigma}{\varepsilon}
+=\frac{6.0\times10^7}{1.5\times10^{-3}}
+=4.0\times10^{10}\ \mathrm{Pa}.
+\]</span></p>
+</section>
 <section id="young-modulus" class="level3 formula-panel">
 <h3 class="anchored" data-anchor-id="young-modulus">Young modulus</h3>
 <p>The <strong>Young modulus</strong> is the ratio of stress to strain in the elastic region:</p>
@@ -439,6 +507,24 @@ window.Quarto = {
 <p>The unit is <span class="math inline">\(\mathrm{Pa}\)</span> (or <span class="math inline">\(\mathrm{N\,m^{-2}}\)</span>). On a stress-strain graph, the Young modulus is the gradient of the straight-line (elastic) region.</p>
 <p>For a wire, the force per unit extension <span class="math inline">\(k\)</span> is related to the Young modulus by</p>
 <p><span class="math display">\[k=\frac{EA}{L}.\]</span></p>
+</section>
+<section id="worked-example-3---young-modulus-from-a-wire-experiment" class="level3 example-card">
+<h3 class="anchored" data-anchor-id="worked-example-3---young-modulus-from-a-wire-experiment">Worked Example 3 - Young modulus from a wire experiment</h3>
+<p>A wire has length <span class="math inline">\(1.20\ \mathrm{m}\)</span> and diameter <span class="math inline">\(0.50\ \mathrm{mm}\)</span>. A force of <span class="math inline">\(25\ \mathrm{N}\)</span> produces an extension of <span class="math inline">\(0.80\ \mathrm{mm}\)</span>. Calculate the Young modulus.</p>
+<p><strong>Solution</strong></p>
+<p>The cross-sectional area is</p>
+<p><span class="math display">\[
+A=\pi\left(\frac{d}{2}\right)^2
+=\pi\left(\frac{0.50\times10^{-3}}{2}\right)^2
+=1.96\times10^{-7}\ \mathrm{m^2}.
+\]</span></p>
+<p>Therefore</p>
+<p><span class="math display">\[
+E=\frac{FL}{Ax}
+=\frac{(25)(1.20)}{(1.96\times10^{-7})(0.80\times10^{-3})}
+=1.91\times10^{11}\ \mathrm{Pa}.
+\]</span></p>
+<p>Because area depends on the square of the diameter, measure the diameter carefully at several positions and use a mean value.</p>
 </section>
 <section id="determining-the-young-modulus-of-a-wire" class="level3 study-card">
 <h3 class="anchored" data-anchor-id="determining-the-young-modulus-of-a-wire">Determining the Young modulus of a wire</h3>
@@ -452,6 +538,14 @@ window.Quarto = {
 </ul>
 <p>Safety: wear safety glasses because the wire may snap, and ensure masses cannot fall onto feet.</p>
 </section>
+<div class="knowledge-figure">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/notes/deformation-of-solids/material-force-extension.png" class="img-fluid figure-img" alt="Force-extension curves for rubber steel and glass"></p>
+<figcaption>Force-extension curves for rubber, steel and glass show different deformation behaviour.</figcaption>
+</figure>
+</div>
+</div>
 </section>
 <section id="elastic-and-plastic-behaviour" class="level2">
 <h2 class="anchored" data-anchor-id="elastic-and-plastic-behaviour">6.2 Elastic and plastic behaviour</h2>
@@ -460,6 +554,20 @@ window.Quarto = {
 <p><strong>Elastic deformation</strong>: the material returns to its original shape and size when the deforming force is removed. The behaviour is reversible.</p>
 <p><strong>Plastic deformation</strong>: the material suffers permanent deformation; it does not return to its original shape when the force is removed.</p>
 <p>The <strong>limit of proportionality</strong> is the point beyond which force is no longer proportional to extension. The <strong>elastic limit</strong> is the point beyond which the material no longer returns to its original length when unloaded.</p>
+</section>
+<div class="knowledge-figure">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/notes/deformation-of-solids/elastic-plastic-regions.png" class="img-fluid figure-img" alt="Load-extension graph showing elastic and plastic regions"></p>
+<figcaption>A load-extension graph marks the limit of proportionality, elastic limit and plastic region.</figcaption>
+</figure>
+</div>
+</div>
+<section id="worked-example-4---identifying-elastic-and-plastic-behaviour" class="level3 example-card">
+<h3 class="anchored" data-anchor-id="worked-example-4---identifying-elastic-and-plastic-behaviour">Worked Example 4 - identifying elastic and plastic behaviour</h3>
+<p>A wire is loaded until its force-extension graph becomes curved. It is then unloaded, but the wire is <span class="math inline">\(2.0\ \mathrm{mm}\)</span> longer than before loading. State whether the wire has exceeded the limit of proportionality and whether it has exceeded the elastic limit.</p>
+<p><strong>Solution</strong></p>
+<p>The curved part shows that force is no longer proportional to extension, so the <strong>limit of proportionality</strong> has been exceeded. The permanent extension after unloading shows that the <strong>elastic limit</strong> has also been exceeded and plastic deformation has occurred.</p>
 </section>
 <section id="stress-strain-graphs-for-different-materials" class="level3 study-card">
 <h3 class="anchored" data-anchor-id="stress-strain-graphs-for-different-materials">Stress-strain graphs for different materials</h3>
@@ -470,6 +578,14 @@ window.Quarto = {
 </ul>
 <p>The <strong>ultimate tensile stress (UTS)</strong> is the maximum stress a material can withstand before it breaks.</p>
 </section>
+<div class="knowledge-figure">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/notes/deformation-of-solids/brittle-ductile-materials.png" class="img-fluid figure-img" alt="Brittle and ductile stress-strain curves"></p>
+<figcaption>Stress-strain curves compare a brittle material with a ductile material.</figcaption>
+</figure>
+</div>
+</div>
 <section id="elastic-strain-energy" class="level3 formula-panel">
 <h3 class="anchored" data-anchor-id="elastic-strain-energy">Elastic strain energy</h3>
 <p>The work done in stretching a spring or wire elastically is the area under the force-extension graph:</p>
@@ -477,6 +593,33 @@ window.Quarto = {
 <p>The strain energy per unit volume of a material with tensile stress <span class="math inline">\(\sigma\)</span> and Young modulus <span class="math inline">\(E\)</span> is</p>
 <p><span class="math display">\[\frac{\text{strain energy}}{\text{volume}}=\frac{\sigma^2}{2E}.\]</span></p>
 <p>If a material is loaded beyond its elastic limit and then unloaded, the unloading curve lies below the loading curve. The area between the two curves is the energy dissipated as thermal energy.</p>
+</section>
+<div class="knowledge-figure">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/notes/deformation-of-solids/work-area-force-extension.png" class="img-fluid figure-img" alt="Work done as area under a force-extension graph"></p>
+<figcaption>The area under a force-extension graph represents work done.</figcaption>
+</figure>
+</div>
+</div>
+<div class="knowledge-figure">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/notes/deformation-of-solids/hysteresis-loading-unloading.png" class="img-fluid figure-img" alt="Hysteresis loop for loading and unloading"></p>
+<figcaption>A loading and unloading graph forms a hysteresis loop for a material that dissipates energy.</figcaption>
+</figure>
+</div>
+</div>
+<section id="worked-example-5---elastic-strain-energy" class="level3 example-card">
+<h3 class="anchored" data-anchor-id="worked-example-5---elastic-strain-energy">Worked Example 5 - elastic strain energy</h3>
+<p>A spring obeys Hooke’s law and reaches a force of <span class="math inline">\(18\ \mathrm{N}\)</span> when its extension is <span class="math inline">\(0.12\ \mathrm{m}\)</span>. Calculate the elastic strain energy stored.</p>
+<p><strong>Solution</strong></p>
+<p>The force-extension graph is a straight line through the origin, so the stored energy is the area of a triangle:</p>
+<p><span class="math display">\[
+E_{\text{elastic}}=\frac{1}{2}Fx
+=\frac{1}{2}(18)(0.12)=1.08\ \mathrm{J}.
+\]</span></p>
+<p>The spring constant would be <span class="math inline">\(k=F/x=150\ \mathrm{N\,m^{-1}}\)</span>, giving the same result from <span class="math inline">\(E_{\text{elastic}}=\frac{1}{2}kx^2\)</span>.</p>
 </section>
 </section>
 <section id="multiple-choice-questions" class="level2">
