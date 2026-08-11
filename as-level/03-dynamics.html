@@ -344,7 +344,11 @@ window.Quarto = {
   <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link active" data-scroll-target="#learning-objectives">Learning objectives</a>
   <ul class="collapse">
   <li><a href="#force-mass-and-acceleration" id="toc-force-mass-and-acceleration" class="nav-link" data-scroll-target="#force-mass-and-acceleration">Force, mass and acceleration</a></li>
+  <li><a href="#resultant-force-with-resistance" id="toc-resultant-force-with-resistance" class="nav-link" data-scroll-target="#resultant-force-with-resistance">Resultant force with resistance</a></li>
   <li><a href="#newtons-laws-and-terminal-velocity" id="toc-newtons-laws-and-terminal-velocity" class="nav-link" data-scroll-target="#newtons-laws-and-terminal-velocity">Newton’s laws and terminal velocity</a></li>
+  <li><a href="#terminal-velocity" id="toc-terminal-velocity" class="nav-link" data-scroll-target="#terminal-velocity">Terminal velocity</a></li>
+  <li><a href="#impulse-and-change-in-momentum" id="toc-impulse-and-change-in-momentum" class="nav-link" data-scroll-target="#impulse-and-change-in-momentum">Impulse and change in momentum</a></li>
+  <li><a href="#inelastic-collision" id="toc-inelastic-collision" class="nav-link" data-scroll-target="#inelastic-collision">Inelastic collision</a></li>
   </ul></li>
   <li><a href="#multiple-choice" id="toc-multiple-choice" class="nav-link" data-scroll-target="#multiple-choice">Multiple Choice</a>
   <ul class="collapse">
@@ -436,6 +440,34 @@ window.Quarto = {
 <p>Mass is a measure of inertia: the greater the mass, the more difficult it is to change an object’s velocity. Weight is the gravitational force on an object, so <span class="math inline">\(W=mg\)</span>. Mass is constant for an object, whereas weight changes if the gravitational field strength changes.</p>
 <p>A free-body diagram contains only forces acting <strong>on</strong> the chosen object. Typical forces are weight, normal contact force, tension, friction, drag, upthrust and an applied driving force. Resolve forces into components only after choosing axes, usually parallel and perpendicular to the motion or surface.</p>
 </section>
+<div class="knowledge-figure">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/notes/dynamics/mass-weight-field-strength.png" class="img-fluid figure-img" alt="The same person has the same mass but different weights on Earth and the Moon"></p>
+<figcaption>Mass and weight for the same person on Earth and the Moon.</figcaption>
+</figure>
+</div>
+</div>
+<div class="knowledge-figure">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/notes/dynamics/free-body-diagram.png" class="img-fluid figure-img" alt="A book on a table with upward reaction force and downward weight"></p>
+<figcaption>A free-body diagram showing the weight and normal reaction on a book.</figcaption>
+</figure>
+</div>
+</div>
+<section id="resultant-force-with-resistance" class="level3 example-card">
+<h3 class="anchored" data-anchor-id="resultant-force-with-resistance">Resultant force with resistance</h3>
+<p>A car has a driving force of <span class="math inline">\(600\ \mathrm{N}\)</span> and a resistive force of <span class="math inline">\(150\ \mathrm{N}\)</span>. Its mass is <span class="math inline">\(75\ \mathrm{kg}\)</span>. Find its acceleration.</p>
+<p>Take the direction of motion as positive:</p>
+<p><span class="math display">\[
+F_\mathrm{R}=600-150=450\ \mathrm{N},
+\]</span></p>
+<p><span class="math display">\[
+a=\frac{F_\mathrm{R}}{m}=\frac{450}{75}=6.0\ \mathrm{m\,s^{-2}}.
+\]</span></p>
+<p>The resistive force reduces the resultant force; it is not included in the mass term.</p>
+</section>
 <section id="newtons-laws-and-terminal-velocity" class="level3 study-card">
 <h3 class="anchored" data-anchor-id="newtons-laws-and-terminal-velocity">Newton’s laws and terminal velocity</h3>
 <ul>
@@ -444,6 +476,39 @@ window.Quarto = {
 <li><strong>Third law:</strong> when body A exerts a force on body B, body B exerts an equal-magnitude, opposite-direction force of the same type on body A. The two forces act on different objects and must never be cancelled on a single free-body diagram.</li>
 <li>For a falling object, weight is approximately constant. Drag increases as speed increases, so the resultant downward force and acceleration decrease. At terminal velocity, drag equals weight; the resultant force and acceleration are zero, but the velocity is not zero.</li>
 </ul>
+</section>
+<div class="knowledge-figure">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/notes/dynamics/newtons-third-law.png" class="img-fluid figure-img" alt="Examples of Newton's third-law pairs acting on different objects"></p>
+<figcaption>Newton’s third-law force pairs involving a book, Earth, table and person.</figcaption>
+</figure>
+</div>
+</div>
+<div class="knowledge-figure">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/notes/dynamics/terminal-velocity-stages.png" class="img-fluid figure-img" alt="A skydiver at stages where weight is greater than drag and where weight equals drag"></p>
+<figcaption>Stages of a falling skydiver as drag increases.</figcaption>
+</figure>
+</div>
+</div>
+<div class="knowledge-figure">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/notes/dynamics/terminal-velocity-graph.png" class="img-fluid figure-img" alt="A velocity-time curve that approaches a horizontal terminal-velocity line"></p>
+<figcaption>Velocity-time graph showing approach to terminal velocity.</figcaption>
+</figure>
+</div>
+</div>
+<section id="terminal-velocity" class="level3 example-card">
+<h3 class="anchored" data-anchor-id="terminal-velocity">Terminal velocity</h3>
+<p>A skydiver has mass <span class="math inline">\(70.0\ \mathrm{kg}\)</span>. At terminal velocity, determine the drag force. Take <span class="math inline">\(g=9.81\ \mathrm{m\,s^{-2}}\)</span>.</p>
+<p>At terminal velocity, <span class="math inline">\(a=0\)</span>, so the resultant force is zero:</p>
+<p><span class="math display">\[
+F_\mathrm{drag}=W=mg=70.0\times9.81=687\ \mathrm{N}.
+\]</span></p>
+<p>The drag force acts upward while the velocity is downward.</p>
 </section>
 <div class="formula-panel">
 <section id="momentum-impulse-and-conservation" class="level3">
@@ -463,6 +528,49 @@ window.Quarto = {
 </ol>
 </section>
 </div>
+<div class="knowledge-figure">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/notes/dynamics/momentum-sign.png" class="img-fluid figure-img" alt="A ball moving right with positive velocity and then moving left with negative velocity"></p>
+<figcaption>Momentum changes sign when a ball reverses direction.</figcaption>
+</figure>
+</div>
+</div>
+<div class="knowledge-figure compact-figure">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/notes/dynamics/momentum-collision.png" class="img-fluid figure-img" alt="Separate objects X and Y before collision and joined objects after collision"></p>
+<figcaption>Two objects before and after a perfectly inelastic collision.</figcaption>
+</figure>
+</div>
+</div>
+<section id="impulse-and-change-in-momentum" class="level3 example-card">
+<h3 class="anchored" data-anchor-id="impulse-and-change-in-momentum">Impulse and change in momentum</h3>
+<p>A <span class="math inline">\(0.200\ \mathrm{kg}\)</span> ball changes velocity from <span class="math inline">\(+15.0\ \mathrm{m\,s^{-1}}\)</span> to <span class="math inline">\(-10.0\ \mathrm{m\,s^{-1}}\)</span> in <span class="math inline">\(0.0500\ \mathrm{s}\)</span>. Find the average force.</p>
+<p><span class="math display">\[
+\Delta p=m(v-u)=0.200(-10.0-15.0)=-5.00\ \mathrm{kg\,m\,s^{-1}}.
+\]</span></p>
+<p>Therefore,</p>
+<p><span class="math display">\[
+F_\mathrm{avg}=\frac{\Delta p}{\Delta t}=\frac{-5.00}{0.0500}=-100\ \mathrm{N}.
+\]</span></p>
+<p>The negative sign means that the average force acts opposite to the chosen positive direction.</p>
+</section>
+<section id="inelastic-collision" class="level3 example-card">
+<h3 class="anchored" data-anchor-id="inelastic-collision">Inelastic collision</h3>
+<p>A <span class="math inline">\(0.800\ \mathrm{kg}\)</span> trolley moving at <span class="math inline">\(4.00\ \mathrm{m\,s^{-1}}\)</span> collides with a stationary <span class="math inline">\(1.20\ \mathrm{kg}\)</span> trolley. They stick together. Find their common velocity and the kinetic energy lost.</p>
+<p>Momentum conservation gives</p>
+<p><span class="math display">\[
+(0.800)(4.00)+(1.20)(0)=(0.800+1.20)v,
+\]</span></p>
+<p>so <span class="math inline">\(v=1.60\ \mathrm{m\,s^{-1}}\)</span>.</p>
+<p>The kinetic energy lost is</p>
+<p><span class="math display">\[
+\Delta E_\mathrm{k}=\frac12(0.800)(4.00)^2-\frac12(2.00)(1.60)^2
+=3.84\ \mathrm{J}.
+\]</span></p>
+<p>Momentum is conserved, but kinetic energy is not conserved because the collision is inelastic.</p>
+</section>
 </section>
 <section id="multiple-choice" class="level2">
 <h2 class="anchored" data-anchor-id="multiple-choice">Multiple Choice</h2>
