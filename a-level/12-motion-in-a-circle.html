@@ -345,14 +345,20 @@ window.Quarto = {
   <li><a href="#kinematics-of-uniform-circular-motion" id="toc-kinematics-of-uniform-circular-motion" class="nav-link" data-scroll-target="#kinematics-of-uniform-circular-motion">12.1 Kinematics of uniform circular motion</a>
   <ul class="collapse">
   <li><a href="#angular-displacement-and-the-radian" id="toc-angular-displacement-and-the-radian" class="nav-link" data-scroll-target="#angular-displacement-and-the-radian">Angular displacement and the radian</a></li>
+  <li><a href="#worked-example-1-arc-length-and-angular-displacement" id="toc-worked-example-1-arc-length-and-angular-displacement" class="nav-link" data-scroll-target="#worked-example-1-arc-length-and-angular-displacement">Worked Example 1 · Arc length and angular displacement</a></li>
   <li><a href="#angular-speed-period-and-frequency" id="toc-angular-speed-period-and-frequency" class="nav-link" data-scroll-target="#angular-speed-period-and-frequency">Angular speed, period and frequency</a></li>
   <li><a href="#linear-speed-and-angular-speed" id="toc-linear-speed-and-angular-speed" class="nav-link" data-scroll-target="#linear-speed-and-angular-speed">Linear speed and angular speed</a></li>
+  <li><a href="#worked-example-2-from-frequency-to-linear-speed" id="toc-worked-example-2-from-frequency-to-linear-speed" class="nav-link" data-scroll-target="#worked-example-2-from-frequency-to-linear-speed">Worked Example 2 · From frequency to linear speed</a></li>
   </ul></li>
   <li><a href="#centripetal-acceleration" id="toc-centripetal-acceleration" class="nav-link" data-scroll-target="#centripetal-acceleration">12.2 Centripetal acceleration</a>
   <ul class="collapse">
   <li><a href="#why-circular-motion-is-accelerated-motion" id="toc-why-circular-motion-is-accelerated-motion" class="nav-link" data-scroll-target="#why-circular-motion-is-accelerated-motion">Why circular motion is accelerated motion</a></li>
+  <li><a href="#worked-example-3-centripetal-acceleration-from-frequency" id="toc-worked-example-3-centripetal-acceleration-from-frequency" class="nav-link" data-scroll-target="#worked-example-3-centripetal-acceleration-from-frequency">Worked Example 3 · Centripetal acceleration from frequency</a></li>
   <li><a href="#centripetal-force" id="toc-centripetal-force" class="nav-link" data-scroll-target="#centripetal-force">Centripetal force</a></li>
+  <li><a href="#worked-example-4-identifying-and-calculating-centripetal-force" id="toc-worked-example-4-identifying-and-calculating-centripetal-force" class="nav-link" data-scroll-target="#worked-example-4-identifying-and-calculating-centripetal-force">Worked Example 4 · Identifying and calculating centripetal force</a></li>
+  <li><a href="#worked-example-5-orbital-radius-versus-altitude" id="toc-worked-example-5-orbital-radius-versus-altitude" class="nav-link" data-scroll-target="#worked-example-5-orbital-radius-versus-altitude">Worked Example 5 · Orbital radius versus altitude</a></li>
   <li><a href="#reliable-calculation-routine" id="toc-reliable-calculation-routine" class="nav-link" data-scroll-target="#reliable-calculation-routine">Reliable calculation routine</a></li>
+  <li><a href="#worked-example-6-scaling-relationships" id="toc-worked-example-6-scaling-relationships" class="nav-link" data-scroll-target="#worked-example-6-scaling-relationships">Worked Example 6 · Scaling relationships</a></li>
   </ul></li>
   <li><a href="#structured-questions" id="toc-structured-questions" class="nav-link" data-scroll-target="#structured-questions">Structured Questions</a>
   <ul class="collapse">
@@ -424,6 +430,22 @@ window.Quarto = {
 \qquad
 \theta(^\circ)=\theta(\mathrm{rad})\frac{180}{\pi}.\]</span></p>
 <p>Radians are dimensionless, but writing <code>rad</code> is useful because it identifies an angular quantity. Circular-motion equations such as <span class="math inline">\(s=r\theta\)</span> require <span class="math inline">\(\theta\)</span> in radians.</p>
+<div class="knowledge-figure">
+<p><img src="../assets/notes/motion-in-a-circle/radian-arc-length.png" class="img-fluid" alt="A circle showing radius r, arc length s and angular displacement theta"></p>
+<p>The definition of the radian: when <span class="math inline">\(s=r\)</span>, the central angle is <span class="math inline">\(\theta=1\ \mathrm{rad}\)</span>.</p>
+</div>
+</section>
+<section id="worked-example-1-arc-length-and-angular-displacement" class="level3 example-card">
+<h3 class="anchored" data-anchor-id="worked-example-1-arc-length-and-angular-displacement">Worked Example 1 · Arc length and angular displacement</h3>
+<p>A point on a wheel is <span class="math inline">\(0.18\ \mathrm{m}\)</span> from the axis. It moves through an angle of <span class="math inline">\(1.40\ \mathrm{rad}\)</span>. Calculate the arc length travelled and express the angle in degrees.</p>
+<p><strong>Solution</strong></p>
+<ol type="1">
+<li><p>Use <span class="math inline">\(s=r\theta\)</span> with <span class="math inline">\(\theta\)</span> in radians:</p>
+<p><span class="math display">\[s=(0.18)(1.40)=0.252\ \mathrm{m}.\]</span></p></li>
+<li><p>Convert the angular displacement to degrees:</p>
+<p><span class="math display">\[\theta=1.40\times\frac{180}{\pi}=80.2^\circ.\]</span></p></li>
+</ol>
+<p><strong>Answer:</strong> <span class="math inline">\(s=0.252\ \mathrm{m}\)</span> and <span class="math inline">\(\theta\approx80.2^\circ\)</span>.</p>
 </section>
 <section id="angular-speed-period-and-frequency" class="level3 study-card">
 <h3 class="anchored" data-anchor-id="angular-speed-period-and-frequency">Angular speed, period and frequency</h3>
@@ -442,6 +464,25 @@ window.Quarto = {
 <p>Useful equivalent forms are</p>
 <p><span class="math display">\[v=\frac{2\pi r}{T}=2\pi rf.\]</span></p>
 </section>
+<div class="knowledge-figure">
+<p><img src="../assets/notes/motion-in-a-circle/angular-and-linear-motion.png" class="img-fluid" alt="A point on a circle showing radius, angular displacement, angular speed and tangential linear speed"></p>
+<p>The radius defines the angular quantities; the instantaneous linear velocity is tangent to the path.</p>
+</div>
+<section id="worked-example-2-from-frequency-to-linear-speed" class="level3 example-card">
+<h3 class="anchored" data-anchor-id="worked-example-2-from-frequency-to-linear-speed">Worked Example 2 · From frequency to linear speed</h3>
+<p>A point on the rim of a turntable of radius <span class="math inline">\(0.25\ \mathrm{m}\)</span> makes <span class="math inline">\(1.5\)</span> revolutions each second. Determine its period, angular speed and linear speed.</p>
+<p><strong>Solution</strong></p>
+<ol type="1">
+<li><p>The frequency is already given: <span class="math inline">\(f=1.5\ \mathrm{Hz}\)</span>.</p></li>
+<li><p>Find the period:</p>
+<p><span class="math display">\[T=\frac{1}{f}=\frac{1}{1.5}=0.667\ \mathrm{s}.\]</span></p></li>
+<li><p>Find the angular speed:</p>
+<p><span class="math display">\[\omega=2\pi f=2\pi(1.5)=9.42\ \mathrm{rad\,s^{-1}}.\]</span></p></li>
+<li><p>Find the tangential linear speed:</p>
+<p><span class="math display">\[v=r\omega=(0.25)(9.42)=2.36\ \mathrm{m\,s^{-1}}.\]</span></p></li>
+</ol>
+<p><strong>Answer:</strong> <span class="math inline">\(T=0.667\ \mathrm{s}\)</span>, <span class="math inline">\(\omega=9.42\ \mathrm{rad\,s^{-1}}\)</span> and <span class="math inline">\(v=2.36\ \mathrm{m\,s^{-1}}\)</span>.</p>
+</section>
 </section>
 <section id="centripetal-acceleration" class="level2">
 <h2 class="anchored" data-anchor-id="centripetal-acceleration">12.2 Centripetal acceleration</h2>
@@ -458,6 +499,25 @@ window.Quarto = {
 <p><span class="math display">\[a=\frac{v^2}{r}=r\omega^2=v\omega.\]</span></p>
 <p>For fixed <span class="math inline">\(r\)</span>, doubling <span class="math inline">\(v\)</span> makes <span class="math inline">\(a\)</span> four times larger. For fixed <span class="math inline">\(\omega\)</span>, doubling <span class="math inline">\(r\)</span> doubles <span class="math inline">\(a\)</span>. Always decide which quantity is being held constant before comparing two motions.</p>
 </section>
+<div class="knowledge-figure">
+<p><img src="../assets/notes/motion-in-a-circle/centripetal-acceleration.png" class="img-fluid" alt="A circular path showing tangential velocity and inward centripetal acceleration at several positions"></p>
+<p>At every point, <span class="math inline">\(v\)</span> is tangent to the circle while <span class="math inline">\(a\)</span> points towards the centre, so <span class="math inline">\(a\)</span> is perpendicular to <span class="math inline">\(v\)</span>.</p>
+</div>
+<section id="worked-example-3-centripetal-acceleration-from-frequency" class="level3 example-card">
+<h3 class="anchored" data-anchor-id="worked-example-3-centripetal-acceleration-from-frequency">Worked Example 3 · Centripetal acceleration from frequency</h3>
+<p>A <span class="math inline">\(0.60\ \mathrm{m}\)</span> radius platform rotates at <span class="math inline">\(2.0\ \mathrm{Hz}\)</span>. Calculate the angular speed, linear speed at the rim and centripetal acceleration of a point on the rim.</p>
+<p><strong>Solution</strong></p>
+<ol type="1">
+<li><p>Convert frequency to angular speed:</p>
+<p><span class="math display">\[\omega=2\pi f=2\pi(2.0)=12.6\ \mathrm{rad\,s^{-1}}.\]</span></p></li>
+<li><p>Find the linear speed:</p>
+<p><span class="math display">\[v=r\omega=(0.60)(12.6)=7.54\ \mathrm{m\,s^{-1}}.\]</span></p></li>
+<li><p>Use either form of the centripetal acceleration:</p>
+<p><span class="math display">\[a=r\omega^2=(0.60)(12.6)^2=95.0\ \mathrm{m\,s^{-2}}.\]</span></p>
+<p>This agrees with <span class="math inline">\(a=v^2/r\)</span> apart from rounding.</p></li>
+</ol>
+<p><strong>Answer:</strong> <span class="math inline">\(\omega=12.6\ \mathrm{rad\,s^{-1}}\)</span>, <span class="math inline">\(v=7.54\ \mathrm{m\,s^{-1}}\)</span> and <span class="math inline">\(a\approx95.0\ \mathrm{m\,s^{-2}}\)</span>.</p>
+</section>
 <section id="centripetal-force" class="level3 study-card">
 <h3 class="anchored" data-anchor-id="centripetal-force">Centripetal force</h3>
 <p>The centripetal force is the resultant inward force required for circular motion:</p>
@@ -471,6 +531,37 @@ window.Quarto = {
 </ul>
 <p>In a force diagram, draw the real forces first. Resolve them, then identify their resultant towards the centre as the centripetal force.</p>
 </section>
+<div class="knowledge-figure">
+<p><img src="../assets/notes/motion-in-a-circle/centripetal-force.png" class="img-fluid" alt="A circular path showing tangential velocity and inward centripetal force and acceleration"></p>
+<p><code>Centripetal force</code> labels the inward resultant; it is not a fifth force added to the force diagram.</p>
+</div>
+<section id="worked-example-4-identifying-and-calculating-centripetal-force" class="level3 example-card">
+<h3 class="anchored" data-anchor-id="worked-example-4-identifying-and-calculating-centripetal-force">Worked Example 4 · Identifying and calculating centripetal force</h3>
+<p>A <span class="math inline">\(0.80\ \mathrm{kg}\)</span> object is attached to a string and moves in a horizontal circle of radius <span class="math inline">\(0.50\ \mathrm{m}\)</span> at a constant speed of <span class="math inline">\(1.2\ \mathrm{m\,s^{-1}}\)</span>. Calculate the required centripetal force and state which real force provides it.</p>
+<p><strong>Solution</strong></p>
+<ol type="1">
+<li><p>Use the known mass, speed and radius:</p>
+<p><span class="math display">\[F=\frac{mv^2}{r}=\frac{(0.80)(1.2)^2}{0.50}=2.304\ \mathrm{N}.\]</span></p></li>
+<li><p>The inward force is provided by the tension in the string, so the tension is <span class="math inline">\(2.3\ \mathrm{N}\)</span> if the string is the only radial force.</p></li>
+</ol>
+<p><strong>Answer:</strong> <span class="math inline">\(F=2.3\ \mathrm{N}\)</span> towards the centre; the real force is string tension.</p>
+</section>
+<section id="worked-example-5-orbital-radius-versus-altitude" class="level3 example-card">
+<h3 class="anchored" data-anchor-id="worked-example-5-orbital-radius-versus-altitude">Worked Example 5 · Orbital radius versus altitude</h3>
+<p>A satellite is in a circular orbit at an altitude of <span class="math inline">\(3.60\times10^7\ \mathrm{m}\)</span> above Earth. Take Earth’s radius as <span class="math inline">\(6.40\times10^6\ \mathrm{m}\)</span> and the orbital period as <span class="math inline">\(24.0\ \mathrm{h}\)</span>. Calculate its centripetal acceleration.</p>
+<p><strong>Solution</strong></p>
+<ol type="1">
+<li><p>Add the altitude to Earth’s radius to obtain the distance from Earth’s centre:</p>
+<p><span class="math display">\[r=6.40\times10^6+3.60\times10^7=4.24\times10^7\ \mathrm{m}.\]</span></p></li>
+<li><p>Convert the period to seconds and find angular speed:</p>
+<p><span class="math display">\[T=24.0\times3600=86400\ \mathrm{s},\qquad
+\omega=\frac{2\pi}{T}=7.27\times10^{-5}\ \mathrm{rad\,s^{-1}}.\]</span></p></li>
+<li><p>Use <span class="math inline">\(a=r\omega^2\)</span>:</p>
+<p><span class="math display">\[a=(4.24\times10^7)(7.27\times10^{-5})^2
+=0.224\ \mathrm{m\,s^{-2}}.\]</span></p></li>
+</ol>
+<p><strong>Answer:</strong> <span class="math inline">\(a\approx0.22\ \mathrm{m\,s^{-2}}\)</span>. The altitude is not the orbital radius.</p>
+</section>
 <section id="reliable-calculation-routine" class="level3 formula-panel">
 <h3 class="anchored" data-anchor-id="reliable-calculation-routine">Reliable calculation routine</h3>
 <ol type="1">
@@ -480,6 +571,18 @@ window.Quarto = {
 <li>For orbital altitude, distinguish altitude above the surface from orbital radius measured from the planet’s centre.</li>
 <li>Check direction as well as magnitude: velocity is tangential; acceleration and resultant force are radial and inward.</li>
 </ol>
+</section>
+<section id="worked-example-6-scaling-relationships" class="level3 example-card">
+<h3 class="anchored" data-anchor-id="worked-example-6-scaling-relationships">Worked Example 6 · Scaling relationships</h3>
+<p>An object moves in a circle with fixed mass <span class="math inline">\(m\)</span> and radius <span class="math inline">\(r\)</span>. Compare the centripetal acceleration and centripetal force when its angular speed changes from <span class="math inline">\(\omega\)</span> to <span class="math inline">\(2\omega\)</span>.</p>
+<p><strong>Solution</strong></p>
+<ol type="1">
+<li><p>From <span class="math inline">\(a=r\omega^2\)</span>:</p>
+<p><span class="math display">\[a'=r(2\omega)^2=4r\omega^2=4a.\]</span></p></li>
+<li><p>From <span class="math inline">\(F=mr\omega^2\)</span>:</p>
+<p><span class="math display">\[F'=mr(2\omega)^2=4mr\omega^2=4F.\]</span></p></li>
+</ol>
+<p><strong>Answer:</strong> both the centripetal acceleration and the centripetal force become four times larger. The square applies because <span class="math inline">\(r\)</span> and <span class="math inline">\(m\)</span> are fixed while <span class="math inline">\(\omega\)</span> doubles.</p>
 </section>
 </section>
 <section id="structured-questions" class="level2">
