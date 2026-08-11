@@ -346,24 +346,32 @@ window.Quarto = {
   <ul class="collapse">
   <li><a href="#what-a-capacitor-does" id="toc-what-a-capacitor-does" class="nav-link" data-scroll-target="#what-a-capacitor-does">What a capacitor does</a></li>
   <li><a href="#definition-of-capacitance" id="toc-definition-of-capacitance" class="nav-link" data-scroll-target="#definition-of-capacitance">Definition of capacitance</a></li>
-  <li><a href="#isolated-spherical-conductor-and-parallel-plates" id="toc-isolated-spherical-conductor-and-parallel-plates" class="nav-link" data-scroll-target="#isolated-spherical-conductor-and-parallel-plates">Isolated spherical conductor and parallel plates</a></li>
+  <li><a href="#reading-a-charge-or-current-graph" id="toc-reading-a-charge-or-current-graph" class="nav-link" data-scroll-target="#reading-a-charge-or-current-graph">Reading a charge or current graph</a></li>
+  <li><a href="#worked-example-1-charge-and-capacitance" id="toc-worked-example-1-charge-and-capacitance" class="nav-link" data-scroll-target="#worked-example-1-charge-and-capacitance">Worked Example 1 · Charge and capacitance</a></li>
+  <li><a href="#capacitance-of-common-conductors" id="toc-capacitance-of-common-conductors" class="nav-link" data-scroll-target="#capacitance-of-common-conductors">Capacitance of common conductors</a></li>
+  <li><a href="#worked-example-2-capacitance-from-charge-and-potential-difference" id="toc-worked-example-2-capacitance-from-charge-and-potential-difference" class="nav-link" data-scroll-target="#worked-example-2-capacitance-from-charge-and-potential-difference">Worked Example 2 · Capacitance from charge and potential difference</a></li>
   <li><a href="#capacitors-in-parallel" id="toc-capacitors-in-parallel" class="nav-link" data-scroll-target="#capacitors-in-parallel">Capacitors in parallel</a></li>
   <li><a href="#capacitors-in-series" id="toc-capacitors-in-series" class="nav-link" data-scroll-target="#capacitors-in-series">Capacitors in series</a></li>
   <li><a href="#network-strategy-and-voltage-ratings" id="toc-network-strategy-and-voltage-ratings" class="nav-link" data-scroll-target="#network-strategy-and-voltage-ratings">Network strategy and voltage ratings</a></li>
+  <li><a href="#worked-example-3-a-mixed-capacitor-network" id="toc-worked-example-3-a-mixed-capacitor-network" class="nav-link" data-scroll-target="#worked-example-3-a-mixed-capacitor-network">Worked Example 3 · A mixed capacitor network</a></li>
   </ul></li>
   <li><a href="#energy-stored-in-a-capacitor" id="toc-energy-stored-in-a-capacitor" class="nav-link" data-scroll-target="#energy-stored-in-a-capacitor">19.2 Energy stored in a capacitor</a>
   <ul class="collapse">
   <li><a href="#work-done-during-charging" id="toc-work-done-during-charging" class="nav-link" data-scroll-target="#work-done-during-charging">Work done during charging</a></li>
   <li><a href="#energy-equations" id="toc-energy-equations" class="nav-link" data-scroll-target="#energy-equations">Energy equations</a></li>
+  <li><a href="#worked-example-4-energy-from-a-v-q-graph" id="toc-worked-example-4-energy-from-a-v-q-graph" class="nav-link" data-scroll-target="#worked-example-4-energy-from-a-v-q-graph">Worked Example 4 · Energy from a <span class="math inline">\(V\)</span>-<span class="math inline">\(Q\)</span> graph</a></li>
   <li><a href="#changes-in-stored-energy" id="toc-changes-in-stored-energy" class="nav-link" data-scroll-target="#changes-in-stored-energy">Changes in stored energy</a></li>
+  <li><a href="#worked-example-5-change-in-stored-energy" id="toc-worked-example-5-change-in-stored-energy" class="nav-link" data-scroll-target="#worked-example-5-change-in-stored-energy">Worked Example 5 · Change in stored energy</a></li>
   </ul></li>
   <li><a href="#discharging-a-capacitor" id="toc-discharging-a-capacitor" class="nav-link" data-scroll-target="#discharging-a-capacitor">19.3 Discharging a capacitor</a>
   <ul class="collapse">
   <li><a href="#exponential-discharge" id="toc-exponential-discharge" class="nav-link" data-scroll-target="#exponential-discharge">Exponential discharge</a></li>
   <li><a href="#time-constant" id="toc-time-constant" class="nav-link" data-scroll-target="#time-constant">Time constant</a></li>
   <li><a href="#discharge-equations" id="toc-discharge-equations" class="nav-link" data-scroll-target="#discharge-equations">Discharge equations</a></li>
+  <li><a href="#worked-example-6-time-constant-of-an-rc-circuit" id="toc-worked-example-6-time-constant-of-an-rc-circuit" class="nav-link" data-scroll-target="#worked-example-6-time-constant-of-an-rc-circuit">Worked Example 6 · Time constant of an RC circuit</a></li>
   <li><a href="#graph-checks" id="toc-graph-checks" class="nav-link" data-scroll-target="#graph-checks">Graph checks</a></li>
   <li><a href="#charging-compared-with-discharging" id="toc-charging-compared-with-discharging" class="nav-link" data-scroll-target="#charging-compared-with-discharging">Charging compared with discharging</a></li>
+  <li><a href="#worked-example-7-time-from-a-voltage-ratio" id="toc-worked-example-7-time-from-a-voltage-ratio" class="nav-link" data-scroll-target="#worked-example-7-time-from-a-voltage-ratio">Worked Example 7 · Time from a voltage ratio</a></li>
   </ul></li>
   <li><a href="#structured-questions" id="toc-structured-questions" class="nav-link" data-scroll-target="#structured-questions">Structured Questions</a>
   <ul class="collapse">
@@ -410,35 +418,81 @@ window.Quarto = {
 <h2 class="anchored" data-anchor-id="learning-objectives">Learning objectives</h2>
 <p>By the end of this chapter, you should be able to:</p>
 <ul>
-<li>define capacitance for an isolated spherical conductor and a parallel-plate capacitor;</li>
-<li>use <span class="math inline">\(C=Q/V\)</span> and interpret a charge-potential difference graph;</li>
+<li>explain how a capacitor stores separated charge and energy in an electric field;</li>
+<li>define capacitance and use <span class="math inline">\(C=Q/V\)</span> for isolated conductors and capacitors;</li>
+<li>use <span class="math inline">\(Q=It\)</span> for charge transferred by a constant current;</li>
 <li>derive and use the rules for capacitors in series and parallel;</li>
-<li>determine stored energy from the area under a potential-charge graph;</li>
+<li>determine stored energy from the area under a <span class="math inline">\(V\)</span>-<span class="math inline">\(Q\)</span> graph;</li>
 <li>use <span class="math inline">\(W=\tfrac12QV=\tfrac12CV^2=Q^2/(2C)\)</span>;</li>
-<li>interpret current-time, charge-time and potential difference-time discharge graphs;</li>
-<li>use the time constant <span class="math inline">\(\tau=RC\)</span>;</li>
-<li>use exponential discharge equations for <span class="math inline">\(I\)</span>, <span class="math inline">\(Q\)</span> and <span class="math inline">\(V\)</span>.</li>
+<li>interpret charging and discharging current, charge and potential-difference graphs;</li>
+<li>use the time constant <span class="math inline">\(\tau=RC\)</span> and exponential discharge equations.</li>
 </ul>
 </section>
 <section id="capacitors-and-capacitance" class="level2">
 <h2 class="anchored" data-anchor-id="capacitors-and-capacitance">19.1 Capacitors and capacitance</h2>
 <section id="what-a-capacitor-does" class="level3 study-card">
 <h3 class="anchored" data-anchor-id="what-a-capacitor-does">What a capacitor does</h3>
-<p>A capacitor consists of two conductors separated by an insulator or dielectric. Connecting it to a source transfers electrons from one conductor to the other, producing charges <span class="math inline">\(+Q\)</span> and <span class="math inline">\(-Q\)</span> and a potential difference <span class="math inline">\(V\)</span>.</p>
-<p>The capacitor as a whole has zero net charge because its plates carry equal and opposite charges. The phrase <strong>charge stored</strong> means the magnitude <span class="math inline">\(Q\)</span> on either plate. Energy is stored in the electric field between the conductors.</p>
+<p>A capacitor consists of two conducting plates separated by an insulator or dielectric. Connecting it to a source transfers electrons from one plate to the other, producing equal and opposite charges <span class="math inline">\(+Q\)</span> and <span class="math inline">\(-Q\)</span> and a potential difference <span class="math inline">\(V\)</span>.</p>
+<p>The capacitor as a whole has zero net charge because its plates carry equal and opposite charges. <strong>Charge stored</strong> means the magnitude <span class="math inline">\(Q\)</span> on either plate. The capacitor stores energy in the electric field between the plates; it does not store a steady current.</p>
 </section>
+<div class="knowledge-figure">
+<p><img src="../assets/notes/capacitance/parallel-plate-capacitor.png" class="img-fluid" alt="Parallel-plate capacitor with a dielectric, equal and opposite charges and electron flow during charging"></p>
+<p>During charging, electrons are removed from one plate and transferred to the other. The dielectric prevents charge from crossing directly between the plates.</p>
+</div>
 <section id="definition-of-capacitance" class="level3 formula-panel">
 <h3 class="anchored" data-anchor-id="definition-of-capacitance">Definition of capacitance</h3>
 <p>Capacitance is the charge stored per unit potential difference:</p>
 <p><span class="math display">\[C=\frac{Q}{V}, \qquad Q=CV.\]</span></p>
 <p>The farad is defined by</p>
 <p><span class="math display">\[1\ \mathrm{F}=1\ \mathrm{C\ V^{-1}}.\]</span></p>
-<p>Common submultiples are <span class="math inline">\(\mathrm{\mu F}\)</span>, <span class="math inline">\(\mathrm{nF}\)</span> and <span class="math inline">\(\mathrm{pF}\)</span>. For a linear capacitor, <span class="math inline">\(Q\propto V\)</span> and the gradient of a graph of <span class="math inline">\(Q\)</span> against <span class="math inline">\(V\)</span> is <span class="math inline">\(C\)</span>.</p>
+<p>Common submultiples are <span class="math inline">\(\mathrm{\mu F}\)</span>, <span class="math inline">\(\mathrm{nF}\)</span> and <span class="math inline">\(\mathrm{pF}\)</span>. For a linear capacitor, <span class="math inline">\(Q\propto V\)</span>. Capacitance is a property of the conductor geometry and dielectric; it is not changed simply by charging the capacitor.</p>
 </section>
-<section id="isolated-spherical-conductor-and-parallel-plates" class="level3 study-card">
-<h3 class="anchored" data-anchor-id="isolated-spherical-conductor-and-parallel-plates">Isolated spherical conductor and parallel plates</h3>
-<p>For an isolated spherical conductor, <span class="math inline">\(Q\)</span> is the charge on the conductor and <span class="math inline">\(V\)</span> is its potential relative to infinity. For a parallel-plate capacitor, <span class="math inline">\(Q\)</span> is the magnitude of charge on either plate and <span class="math inline">\(V\)</span> is the potential difference between the plates.</p>
-<p>Capacitance depends on geometry and the dielectric. For parallel plates, greater plate area and a higher-permittivity dielectric increase capacitance, while greater plate separation decreases it.</p>
+<section id="reading-a-charge-or-current-graph" class="level3 study-card">
+<h3 class="anchored" data-anchor-id="reading-a-charge-or-current-graph">Reading a charge or current graph</h3>
+<p>The charge transferred by a current is the area under an <span class="math inline">\(I\)</span>-<span class="math inline">\(t\)</span> graph:</p>
+<p><span class="math display">\[Q=\int I\,dt.\]</span></p>
+<p>For a constant current, this becomes <span class="math inline">\(Q=It\)</span>. On a linear <span class="math inline">\(Q\)</span>-<span class="math inline">\(V\)</span> graph, the gradient of <span class="math inline">\(Q\)</span> against <span class="math inline">\(V\)</span> is <span class="math inline">\(C\)</span>; if the axes are reversed, the gradient of <span class="math inline">\(V\)</span> against <span class="math inline">\(Q\)</span> is <span class="math inline">\(1/C\)</span>.</p>
+</section>
+<div class="knowledge-figure">
+<p><img src="../assets/notes/capacitance/charging-current-area.png" class="img-fluid" alt="Current-time graph showing that the area under the graph gives charge transferred"></p>
+<p>The area under a current-time graph gives the charge transferred to or from the capacitor.</p>
+</div>
+<section id="worked-example-1-charge-and-capacitance" class="level3 example-card">
+<h3 class="anchored" data-anchor-id="worked-example-1-charge-and-capacitance">Worked Example 1 · Charge and capacitance</h3>
+<p>A <span class="math inline">\(220\ \mathrm{\mu F}\)</span> capacitor is connected to a <span class="math inline">\(12\ \mathrm{V}\)</span> supply. Calculate the charge on either plate. Then find the charge transferred if a constant current of <span class="math inline">\(4.0\ \mathrm{mA}\)</span> flows for <span class="math inline">\(0.50\ \mathrm{s}\)</span>.</p>
+<p><strong>Solution</strong></p>
+<ol type="1">
+<li><p>Charge stored:</p>
+<p><span class="math display">\[Q=CV=(220\times10^{-6})(12)=2.64\times10^{-3}\ \mathrm{C}.\]</span></p></li>
+<li><p>Charge transferred by the current:</p>
+<p><span class="math display">\[Q=It=(4.0\times10^{-3})(0.50)=2.0\times10^{-3}\ \mathrm{C}.\]</span></p></li>
+</ol>
+<p><strong>Answer:</strong> the fully charged capacitor has <span class="math inline">\(Q=2.64\ \mathrm{mC}\)</span> on either plate, and the stated current transfers <span class="math inline">\(2.0\ \mathrm{mC}\)</span>.</p>
+</section>
+<section id="capacitance-of-common-conductors" class="level3 formula-panel">
+<h3 class="anchored" data-anchor-id="capacitance-of-common-conductors">Capacitance of common conductors</h3>
+<p>For an isolated spherical conductor of radius <span class="math inline">\(r\)</span> in free space,</p>
+<p><span class="math display">\[C=4\pi\varepsilon_0r.\]</span></p>
+<p>Here <span class="math inline">\(V\)</span> is measured relative to infinity. For a parallel-plate capacitor, neglecting edge effects,</p>
+<p><span class="math display">\[C=\frac{\varepsilon A}{d}=\frac{\varepsilon_0\varepsilon_r A}{d},\]</span></p>
+<p>where <span class="math inline">\(A\)</span> is the overlapping plate area, <span class="math inline">\(d\)</span> is the separation and <span class="math inline">\(\varepsilon_r\)</span> is the relative permittivity of the dielectric.</p>
+<p>Increasing <span class="math inline">\(A\)</span> or <span class="math inline">\(\varepsilon_r\)</span> increases <span class="math inline">\(C\)</span>; increasing <span class="math inline">\(d\)</span> decreases <span class="math inline">\(C\)</span>.</p>
+</section>
+<div class="knowledge-figure">
+<p><img src="../assets/notes/capacitance/charge-voltage-graph.png" class="img-fluid" alt="Straight-line potential difference against charge graph for a linear capacitor"></p>
+<p>For a linear capacitor, <span class="math inline">\(V\)</span> is directly proportional to <span class="math inline">\(Q\)</span>. The gradient of a <span class="math inline">\(V\)</span>-<span class="math inline">\(Q\)</span> graph is <span class="math inline">\(1/C\)</span>.</p>
+</div>
+<section id="worked-example-2-capacitance-from-charge-and-potential-difference" class="level3 example-card">
+<h3 class="anchored" data-anchor-id="worked-example-2-capacitance-from-charge-and-potential-difference">Worked Example 2 · Capacitance from charge and potential difference</h3>
+<p>A capacitor has charge <span class="math inline">\(3.6\ \mathrm{\mu C}\)</span> when its potential difference is <span class="math inline">\(200\ \mathrm{V}\)</span>. Calculate its capacitance and the charge it carries at <span class="math inline">\(500\ \mathrm{V}\)</span>, assuming it remains linear.</p>
+<p><strong>Solution</strong></p>
+<ol type="1">
+<li><p>Capacitance:</p>
+<p><span class="math display">\[C=\frac{Q}{V}=\frac{3.6\times10^{-6}}{200}=18\ \mathrm{nF}.\]</span></p></li>
+<li><p>At <span class="math inline">\(500\ \mathrm{V}\)</span>:</p>
+<p><span class="math display">\[Q=CV=(18\times10^{-9})(500)=9.0\times10^{-6}\ \mathrm{C}.\]</span></p></li>
+</ol>
+<p><strong>Answer:</strong> <span class="math inline">\(C=18\ \mathrm{nF}\)</span> and <span class="math inline">\(Q=9.0\ \mathrm{\mu C}\)</span>.</p>
 </section>
 <section id="capacitors-in-parallel" class="level3 formula-panel">
 <h3 class="anchored" data-anchor-id="capacitors-in-parallel">Capacitors in parallel</h3>
@@ -450,6 +504,10 @@ window.Quarto = {
 <p><span class="math display">\[C_{\mathrm{total}}=C_1+C_2+\cdots.\]</span></p>
 <p>Parallel connection increases the effective conducting area, so combined capacitance is greater than any individual capacitance.</p>
 </section>
+<div class="knowledge-figure">
+<p><img src="../assets/notes/capacitance/parallel-capacitors.png" class="img-fluid" alt="Several capacitors connected in parallel with the same potential difference"></p>
+<p>In parallel, the charge supplied by the source is shared between branches, but the potential difference across every branch is the same.</p>
+</div>
 <section id="capacitors-in-series" class="level3 formula-panel">
 <h3 class="anchored" data-anchor-id="capacitors-in-series">Capacitors in series</h3>
 <p>Capacitors in series acquire equal charge magnitudes:</p>
@@ -460,10 +518,36 @@ window.Quarto = {
 <p><span class="math display">\[\frac{1}{C_{\mathrm{total}}}=\frac{1}{C_1}+\frac{1}{C_2}+\cdots.\]</span></p>
 <p>The combined capacitance is smaller than the smallest individual capacitance. In series, voltage divides inversely with capacitance: the smaller capacitor has the larger potential difference.</p>
 </section>
+<div class="knowledge-figure">
+<p><img src="../assets/notes/capacitance/series-capacitors.png" class="img-fluid" alt="Two capacitors in series with equal charge and potential differences adding"></p>
+<p>In series, the charge magnitude on each capacitor is the same, while the total potential difference is the sum of the individual potential differences.</p>
+</div>
 <section id="network-strategy-and-voltage-ratings" class="level3 study-card">
 <h3 class="anchored" data-anchor-id="network-strategy-and-voltage-ratings">Network strategy and voltage ratings</h3>
 <p>Reduce a mixed network one stage at a time. Mark groups that are definitely in parallel or series before calculating.</p>
 <p>For capacitors in series, the same <span class="math inline">\(Q\)</span> appears on every capacitor and <span class="math inline">\(V_i=Q/C_i\)</span>. To check a maximum safe supply voltage, calculate the voltage across each capacitor rather than assuming equal voltage unless the series capacitances are equal.</p>
+</section>
+<div class="knowledge-figure">
+<p><img src="../assets/notes/capacitance/mixed-capacitor-network.png" class="img-fluid" alt="A mixed network of capacitors reduced using series and parallel rules"></p>
+<p>For a mixed network, identify one unambiguous series or parallel group first, replace it by its equivalent capacitance, and continue until one capacitance remains.</p>
+</div>
+<section id="worked-example-3-a-mixed-capacitor-network" class="level3 example-card">
+<h3 class="anchored" data-anchor-id="worked-example-3-a-mixed-capacitor-network">Worked Example 3 · A mixed capacitor network</h3>
+<p>A <span class="math inline">\(6.0\ \mathrm{\mu F}\)</span> capacitor and a <span class="math inline">\(3.0\ \mathrm{\mu F}\)</span> capacitor are connected in series. This series combination is connected in parallel with a <span class="math inline">\(4.0\ \mathrm{\mu F}\)</span> capacitor across a <span class="math inline">\(12\ \mathrm{V}\)</span> supply. Find the total capacitance, the charge on the <span class="math inline">\(4.0\ \mathrm{\mu F}\)</span> capacitor and the potential difference across each series capacitor.</p>
+<p><strong>Solution</strong></p>
+<ol type="1">
+<li><p>Equivalent capacitance of the series pair:</p>
+<p><span class="math display">\[\frac{1}{C_s}=\frac{1}{6.0}+\frac{1}{3.0},\qquad C_s=2.0\ \mathrm{\mu F}.\]</span></p></li>
+<li><p>The series pair is in parallel with <span class="math inline">\(4.0\ \mathrm{\mu F}\)</span>:</p>
+<p><span class="math display">\[C_{\mathrm{total}}=C_s+4.0=6.0\ \mathrm{\mu F}.\]</span></p></li>
+<li><p>The <span class="math inline">\(4.0\ \mathrm{\mu F}\)</span> capacitor has the full <span class="math inline">\(12\ \mathrm{V}\)</span>:</p>
+<p><span class="math display">\[Q_4=CV=(4.0\times10^{-6})(12)=48\ \mathrm{\mu C}.\]</span></p></li>
+<li><p>The series pair also has <span class="math inline">\(12\ \mathrm{V}\)</span> across it. Its charge is</p>
+<p><span class="math display">\[Q_s=C_sV=(2.0\times10^{-6})(12)=24\ \mathrm{\mu C}.\]</span></p>
+<p>This is the charge on both series capacitors. Therefore,</p>
+<p><span class="math display">\[V_{6}=\frac{24\ \mathrm{\mu C}}{6.0\ \mathrm{\mu F}}=4.0\ \mathrm{V},\qquad V_{3}=\frac{24\ \mathrm{\mu C}}{3.0\ \mathrm{\mu F}}=8.0\ \mathrm{V}.\]</span></p></li>
+</ol>
+<p><strong>Answer:</strong> <span class="math inline">\(C_{\mathrm{total}}=6.0\ \mathrm{\mu F}\)</span>, <span class="math inline">\(Q_4=48\ \mathrm{\mu C}\)</span>, and the series capacitors have <span class="math inline">\(4.0\ \mathrm{V}\)</span> and <span class="math inline">\(8.0\ \mathrm{V}\)</span> respectively.</p>
 </section>
 </section>
 <section id="energy-stored-in-a-capacitor" class="level2">
@@ -476,6 +560,10 @@ window.Quarto = {
 <p><span class="math display">\[W=\int_0^Q V\,dQ.\]</span></p>
 <p>For a linear capacitor, <span class="math inline">\(V=Q/C\)</span> and this area is a triangle.</p>
 </section>
+<div class="knowledge-figure">
+<p><img src="../assets/notes/capacitance/energy-vq-area.png" class="img-fluid" alt="Potential difference against charge graph with the triangular area representing energy stored"></p>
+<p>The area under the <span class="math inline">\(V\)</span>-<span class="math inline">\(Q\)</span> graph is the electrical work done in charging the capacitor, so it equals the energy stored.</p>
+</div>
 <section id="energy-equations" class="level3 formula-panel">
 <h3 class="anchored" data-anchor-id="energy-equations">Energy equations</h3>
 <p>The energy stored in a capacitor is</p>
@@ -484,6 +572,18 @@ window.Quarto = {
 <p><span class="math display">\[W=\frac12CV^2=\frac{Q^2}{2C}.\]</span></p>
 <p>Choose the form that matches the known quantities. Energy is measured in joules.</p>
 </section>
+<section id="worked-example-4-energy-from-a-v-q-graph" class="level3 example-card">
+<h3 class="anchored" data-anchor-id="worked-example-4-energy-from-a-v-q-graph">Worked Example 4 · Energy from a <span class="math inline">\(V\)</span>-<span class="math inline">\(Q\)</span> graph</h3>
+<p>A capacitor reaches a charge of <span class="math inline">\(1.8\ \mathrm{\mu C}\)</span> when its potential difference is <span class="math inline">\(100\ \mathrm{kV}\)</span>. Assume the capacitor is linear. Find the capacitance and the energy stored.</p>
+<p><strong>Solution</strong></p>
+<ol type="1">
+<li><p>The capacitance is</p>
+<p><span class="math display">\[C=\frac{Q}{V}=\frac{1.8\times10^{-6}}{100\times10^3}=18\ \mathrm{pF}.\]</span></p></li>
+<li><p>The energy is the triangular area under the <span class="math inline">\(V\)</span>-<span class="math inline">\(Q\)</span> graph:</p>
+<p><span class="math display">\[W=\frac12QV=\frac12(1.8\times10^{-6})(100\times10^3)=0.090\ \mathrm{J}.\]</span></p></li>
+</ol>
+<p><strong>Answer:</strong> <span class="math inline">\(C=18\ \mathrm{pF}\)</span> and <span class="math inline">\(W=0.090\ \mathrm{J}\)</span>.</p>
+</section>
 <section id="changes-in-stored-energy" class="level3 study-card">
 <h3 class="anchored" data-anchor-id="changes-in-stored-energy">Changes in stored energy</h3>
 <p>For a fixed capacitor, <span class="math inline">\(W\propto V^2\)</span> and <span class="math inline">\(W\propto Q^2\)</span>. Halving <span class="math inline">\(V\)</span> or <span class="math inline">\(Q\)</span> reduces stored energy to one quarter.</p>
@@ -491,14 +591,27 @@ window.Quarto = {
 <p><span class="math display">\[\Delta W=\frac12C(V_1^2-V_2^2).\]</span></p>
 <p>On a <span class="math inline">\(Q\)</span>-<span class="math inline">\(V\)</span> graph, the corresponding energy change is the area under the line between the two voltage values.</p>
 </section>
+<section id="worked-example-5-change-in-stored-energy" class="level3 example-card">
+<h3 class="anchored" data-anchor-id="worked-example-5-change-in-stored-energy">Worked Example 5 · Change in stored energy</h3>
+<p>A <span class="math inline">\(1500\ \mathrm{\mu F}\)</span> capacitor changes from <span class="math inline">\(10\ \mathrm{V}\)</span> to <span class="math inline">\(30\ \mathrm{V}\)</span>. Calculate the increase in stored energy.</p>
+<p><strong>Solution</strong></p>
+<p><span class="math display">\[\Delta W=\frac12C\left(V_2^2-V_1^2\right)
+=\frac12(1500\times10^{-6})(30^2-10^2)
+=0.60\ \mathrm{J}.\]</span></p>
+<p><strong>Answer:</strong> the stored energy increases by <span class="math inline">\(0.60\ \mathrm{J}\)</span>.</p>
+</section>
 </section>
 <section id="discharging-a-capacitor" class="level2">
 <h2 class="anchored" data-anchor-id="discharging-a-capacitor">19.3 Discharging a capacitor</h2>
 <section id="exponential-discharge" class="level3 study-card">
 <h3 class="anchored" data-anchor-id="exponential-discharge">Exponential discharge</h3>
-<p>When a charged capacitor discharges through a resistor, charge flows from one plate to the other. As <span class="math inline">\(Q\)</span> decreases, the capacitor voltage <span class="math inline">\(V=Q/C\)</span> decreases, so the current <span class="math inline">\(I=V/R\)</span> also decreases.</p>
+<p>When a charged capacitor discharges through a resistor, charge flows through the external circuit from one plate to the other. As <span class="math inline">\(Q\)</span> decreases, the capacitor voltage <span class="math inline">\(V=Q/C\)</span> decreases, so the current magnitude <span class="math inline">\(I=V/R\)</span> also decreases.</p>
 <p>Therefore <span class="math inline">\(Q\)</span>, <span class="math inline">\(V\)</span> and the magnitude of <span class="math inline">\(I\)</span> all decay exponentially. Their graphs start at an initial value, have a steep negative gradient at first and approach zero asymptotically.</p>
 </section>
+<div class="knowledge-figure">
+<p><img src="../assets/notes/capacitance/discharge-circuit.png" class="img-fluid" alt="Switching circuit used to charge a capacitor from a battery and then discharge it through a resistor and microammeter"></p>
+<p>With the switch at P the battery charges the capacitor; with the switch at Q the battery is disconnected and the capacitor discharges through the resistor.</p>
+</div>
 <section id="time-constant" class="level3 formula-panel">
 <h3 class="anchored" data-anchor-id="time-constant">Time constant</h3>
 <p>The time constant of an RC discharge circuit is</p>
@@ -507,6 +620,10 @@ window.Quarto = {
 <p><span class="math display">\[\frac{x}{x_0}=e^{-1}\approx0.37,\]</span></p>
 <p>where <span class="math inline">\(x\)</span> may be charge, potential difference or current magnitude. A larger resistance or capacitance produces a slower discharge.</p>
 </section>
+<div class="knowledge-figure">
+<p><img src="../assets/notes/capacitance/time-constant.png" class="img-fluid" alt="Exponential capacitor voltage discharge curve showing that one time constant leaves 0.37 of the initial voltage"></p>
+<p>At <span class="math inline">\(t=\tau\)</span>, the remaining charge, potential difference and current magnitude are all about <span class="math inline">\(37\%\)</span> of their initial values.</p>
+</div>
 <section id="discharge-equations" class="level3 formula-panel">
 <h3 class="anchored" data-anchor-id="discharge-equations">Discharge equations</h3>
 <p>For a capacitor discharging through a resistor,</p>
@@ -516,6 +633,18 @@ window.Quarto = {
 <p>for current magnitude. If current direction is defined relative to the charging direction, a minus sign may be required.</p>
 <p>To solve for time,</p>
 <p><span class="math display">\[t=-RC\ln\left(\frac{x}{x_0}\right).\]</span></p>
+</section>
+<section id="worked-example-6-time-constant-of-an-rc-circuit" class="level3 example-card">
+<h3 class="anchored" data-anchor-id="worked-example-6-time-constant-of-an-rc-circuit">Worked Example 6 · Time constant of an RC circuit</h3>
+<p>A <span class="math inline">\(7.0\ \mathrm{nF}\)</span> capacitor discharges through an <span class="math inline">\(800\ \mathrm{k\Omega}\)</span> resistor. Calculate the time constant and the fraction of the initial voltage remaining after <span class="math inline">\(5.6\ \mathrm{ms}\)</span>.</p>
+<p><strong>Solution</strong></p>
+<ol type="1">
+<li><p>Time constant:</p>
+<p><span class="math display">\[\tau=RC=(800\times10^3)(7.0\times10^{-9})=5.6\times10^{-3}\ \mathrm{s}.\]</span></p></li>
+<li><p>Since <span class="math inline">\(t=\tau\)</span>,</p>
+<p><span class="math display">\[\frac{V}{V_0}=e^{-t/\tau}=e^{-1}=0.37.\]</span></p></li>
+</ol>
+<p><strong>Answer:</strong> <span class="math inline">\(\tau=5.6\ \mathrm{ms}\)</span> and <span class="math inline">\(37\%\)</span> of the initial voltage remains.</p>
 </section>
 <section id="graph-checks" class="level3 study-card">
 <h3 class="anchored" data-anchor-id="graph-checks">Graph checks</h3>
@@ -527,12 +656,30 @@ window.Quarto = {
 <li>Since <span class="math inline">\(W=\tfrac12CV^2\)</span>, stored energy decays as <span class="math inline">\(W=W_0e^{-2t/(RC)}\)</span>.</li>
 </ul>
 </section>
+<div class="knowledge-figure">
+<p><img src="../assets/notes/capacitance/discharge-curve.png" class="img-fluid" alt="Exponential discharge curve showing a capacitor variable falling rapidly at first and then approaching zero"></p>
+<p>The curve is not a straight line: the rate of decrease is proportional to the value still remaining.</p>
+</div>
 <section id="charging-compared-with-discharging" class="level3 study-card">
 <h3 class="anchored" data-anchor-id="charging-compared-with-discharging">Charging compared with discharging</h3>
 <p>During charging from a constant supply <span class="math inline">\(V_0\)</span>,</p>
 <p><span class="math display">\[V_C=V_0\left(1-e^{-t/(RC)}\right),\]</span></p>
 <p>while current decreases from <span class="math inline">\(V_0/R\)</span> to zero. During discharge, both capacitor voltage and current magnitude decrease from their initial values to zero.</p>
 <p>Smoothing circuits repeatedly charge a capacitor near peaks of a rectified input and discharge it through the load between peaks, reducing output ripple.</p>
+</section>
+<section id="worked-example-7-time-from-a-voltage-ratio" class="level3 example-card">
+<h3 class="anchored" data-anchor-id="worked-example-7-time-from-a-voltage-ratio">Worked Example 7 · Time from a voltage ratio</h3>
+<p>A capacitor initially has a potential difference of <span class="math inline">\(12\ \mathrm{V}\)</span> and discharges through a <span class="math inline">\(100\ \mathrm{k\Omega}\)</span> resistor. Its capacitance is <span class="math inline">\(47\ \mathrm{\mu F}\)</span>. Find the time for the voltage to fall to <span class="math inline">\(3.0\ \mathrm{V}\)</span>.</p>
+<p><strong>Solution</strong></p>
+<ol type="1">
+<li><p>Calculate the time constant:</p>
+<p><span class="math display">\[\tau=RC=(100\times10^3)(47\times10^{-6})=4.7\ \mathrm{s}.\]</span></p></li>
+<li><p>Use the voltage equation:</p>
+<p><span class="math display">\[t=-\tau\ln\left(\frac{V}{V_0}\right)
+=-4.7\ln\left(\frac{3.0}{12}\right)
+=6.52\ \mathrm{s}.\]</span></p></li>
+</ol>
+<p><strong>Answer:</strong> the voltage falls to <span class="math inline">\(3.0\ \mathrm{V}\)</span> after approximately <span class="math inline">\(6.5\ \mathrm{s}\)</span>.</p>
 </section>
 </section>
 <section id="structured-questions" class="level2">
