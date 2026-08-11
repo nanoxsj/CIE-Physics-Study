@@ -346,9 +346,13 @@ window.Quarto = {
   <li><a href="#distance-displacement-speed-and-velocity" id="toc-distance-displacement-speed-and-velocity" class="nav-link" data-scroll-target="#distance-displacement-speed-and-velocity">2.1.1 Distance, displacement, speed and velocity</a></li>
   <li><a href="#acceleration-and-sign-conventions" id="toc-acceleration-and-sign-conventions" class="nav-link" data-scroll-target="#acceleration-and-sign-conventions">2.1.2 Acceleration and sign conventions</a></li>
   <li><a href="#uniformly-accelerated-motion" id="toc-uniformly-accelerated-motion" class="nav-link" data-scroll-target="#uniformly-accelerated-motion">2.1.3 Uniformly accelerated motion</a></li>
+  <li><a href="#choosing-and-using-a-kinematics-equation" id="toc-choosing-and-using-a-kinematics-equation" class="nav-link" data-scroll-target="#choosing-and-using-a-kinematics-equation">Choosing and using a kinematics equation</a></li>
   <li><a href="#motion-graphs" id="toc-motion-graphs" class="nav-link" data-scroll-target="#motion-graphs">2.1.4 Motion graphs</a></li>
+  <li><a href="#reading-a-velocity-time-graph" id="toc-reading-a-velocity-time-graph" class="nav-link" data-scroll-target="#reading-a-velocity-time-graph">Reading a velocity-time graph</a></li>
   <li><a href="#free-fall-and-vertical-motion" id="toc-free-fall-and-vertical-motion" class="nav-link" data-scroll-target="#free-fall-and-vertical-motion">2.1.5 Free fall and vertical motion</a></li>
+  <li><a href="#free-fall-calculation" id="toc-free-fall-calculation" class="nav-link" data-scroll-target="#free-fall-calculation">Free-fall calculation</a></li>
   <li><a href="#projectile-motion" id="toc-projectile-motion" class="nav-link" data-scroll-target="#projectile-motion">2.1.6 Projectile motion</a></li>
+  <li><a href="#projectile-motion-from-level-ground" id="toc-projectile-motion-from-level-ground" class="nav-link" data-scroll-target="#projectile-motion-from-level-ground">Projectile motion from level ground</a></li>
   <li><a href="#problem-solving-checklist" id="toc-problem-solving-checklist" class="nav-link" data-scroll-target="#problem-solving-checklist">2.1.7 Problem-solving checklist</a></li>
   </ul></li>
   <li><a href="#multiple-choice" id="toc-multiple-choice" class="nav-link" data-scroll-target="#multiple-choice">Multiple Choice</a>
@@ -484,6 +488,14 @@ window.Quarto = {
 \text{average velocity}=\frac{\text{total displacement}}{\text{total time}}.\]</span></p>
 <p>A journey can have a non-zero average speed but zero average velocity, for example when an object returns to its starting point.</p>
 </section>
+<div class="knowledge-figure">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/notes/kinematics/kinematics-definitions.png" class="img-fluid figure-img" alt="Velocity is change in displacement divided by time, and acceleration is change in velocity divided by time"></p>
+<figcaption>Definitions of velocity and acceleration.</figcaption>
+</figure>
+</div>
+</div>
 <section id="acceleration-and-sign-conventions" class="level3 study-card">
 <h3 class="anchored" data-anchor-id="acceleration-and-sign-conventions">2.1.2 Acceleration and sign conventions</h3>
 <p>Acceleration is the rate of change of velocity:</p>
@@ -530,6 +542,19 @@ window.Quarto = {
 </table>
 <p>Do not use these equations when acceleration varies. In that situation, use graphs, calculus, numerical data or an explicitly stated model.</p>
 </section>
+<section id="choosing-and-using-a-kinematics-equation" class="level3 example-card">
+<h3 class="anchored" data-anchor-id="choosing-and-using-a-kinematics-equation">Choosing and using a kinematics equation</h3>
+<p>A car increases its velocity uniformly from <span class="math inline">\(12.0\ \mathrm{m\,s^{-1}}\)</span> to <span class="math inline">\(30.0\ \mathrm{m\,s^{-1}}\)</span> in <span class="math inline">\(6.0\ \mathrm{s}\)</span>. Find its acceleration and displacement.</p>
+<p>First find the acceleration:</p>
+<p><span class="math display">\[
+a=\frac{v-u}{t}=\frac{30.0-12.0}{6.0}=3.0\ \mathrm{m\,s^{-2}}.
+\]</span></p>
+<p>Then use the average velocity for constant acceleration:</p>
+<p><span class="math display">\[
+s=\frac{u+v}{2}t=\frac{12.0+30.0}{2}\times6.0=126\ \mathrm{m}.
+\]</span></p>
+<p>The equation is valid because the acceleration is stated to be uniform.</p>
+</section>
 <section id="motion-graphs" class="level3 study-card">
 <h3 class="anchored" data-anchor-id="motion-graphs">2.1.4 Motion graphs</h3>
 <p><strong>Displacement-time graphs</strong></p>
@@ -553,6 +578,51 @@ window.Quarto = {
 </ul>
 <p>Always read the axis label carefully: a speed-time graph cannot show direction, whereas a velocity-time graph can contain negative values.</p>
 </section>
+<div class="knowledge-figure">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/notes/kinematics/displacement-time-graphs.png" class="img-fluid figure-img" alt="Three displacement-time graphs showing a straight line, a curve with increasing gradient and a curve with increasingly steep gradient"></p>
+<figcaption>Displacement-time graphs for constant velocity, increasing velocity and increasing acceleration.</figcaption>
+</figure>
+</div>
+</div>
+<div class="knowledge-figure">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/notes/kinematics/velocity-time-graphs.png" class="img-fluid figure-img" alt="Three velocity-time graphs showing a horizontal line, a straight rising line and a curve"></p>
+<figcaption>Velocity-time graphs for constant velocity, increasing velocity and increasing acceleration.</figcaption>
+</figure>
+</div>
+</div>
+<div class="knowledge-figure">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/notes/kinematics/acceleration-time-graphs.png" class="img-fluid figure-img" alt="Three acceleration-time graphs showing zero acceleration, constant acceleration and increasing acceleration"></p>
+<figcaption>Acceleration-time graphs for constant velocity, increasing velocity and increasing acceleration.</figcaption>
+</figure>
+</div>
+</div>
+<div class="knowledge-figure">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/notes/kinematics/velocity-time-area.png" class="img-fluid figure-img" alt="A velocity-time graph with a triangular area labelled base and height"></p>
+<figcaption>A velocity-time graph with its triangular area highlighted.</figcaption>
+</figure>
+</div>
+</div>
+<section id="reading-a-velocity-time-graph" class="level3 example-card">
+<h3 class="anchored" data-anchor-id="reading-a-velocity-time-graph">Reading a velocity-time graph</h3>
+<p>An object accelerates uniformly from rest to <span class="math inline">\(20.0\ \mathrm{m\,s^{-1}}\)</span> in <span class="math inline">\(8.0\ \mathrm{s}\)</span> and then travels at <span class="math inline">\(20.0\ \mathrm{m\,s^{-1}}\)</span> for a further <span class="math inline">\(4.0\ \mathrm{s}\)</span>.</p>
+<p>The acceleration is the gradient of the first section:</p>
+<p><span class="math display">\[
+a=\frac{20.0-0}{8.0}=2.50\ \mathrm{m\,s^{-2}}.
+\]</span></p>
+<p>The displacement is the total area under the graph:</p>
+<p><span class="math display">\[
+s=\frac12(8.0)(20.0)+(4.0)(20.0)=160\ \mathrm{m}.
+\]</span></p>
+<p>If the graph crossed below the time axis, that section would contribute negative displacement but positive distance equal to its area magnitude.</p>
+</section>
 <section id="free-fall-and-vertical-motion" class="level3 study-card">
 <h3 class="anchored" data-anchor-id="free-fall-and-vertical-motion">2.1.5 Free fall and vertical motion</h3>
 <p>In free fall, gravity is the only significant force. Near the Earth’s surface and with air resistance neglected, acceleration is constant and downward.</p>
@@ -563,6 +633,28 @@ window.Quarto = {
 <li>the object immediately begins to gain downward velocity.</li>
 </ul>
 <p>For an object returning to its launch height with negligible air resistance, the time of ascent equals the time of descent and the final speed equals the launch speed, but the velocity has the opposite sign.</p>
+</section>
+<div class="knowledge-figure">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/notes/kinematics/free-fall-vacuum.png" class="img-fluid figure-img" alt="A feather inside a vertical vacuum tube with the tube length labelled L"></p>
+<figcaption>A feather and a vacuum tube illustrating free fall without air resistance.</figcaption>
+</figure>
+</div>
+</div>
+<section id="free-fall-calculation" class="level3 example-card">
+<h3 class="anchored" data-anchor-id="free-fall-calculation">Free-fall calculation</h3>
+<p>A stone is dropped from rest from a height of <span class="math inline">\(20.0\ \mathrm{m}\)</span>. Take <span class="math inline">\(g=9.81\ \mathrm{m\,s^{-2}}\)</span>. Find the time to reach the ground and the impact speed.</p>
+<p>Choose downward as positive, so <span class="math inline">\(u=0\)</span>, <span class="math inline">\(s=20.0\ \mathrm{m}\)</span> and <span class="math inline">\(a=g\)</span>.</p>
+<p><span class="math display">\[
+s=ut+\frac12gt^2\quad\Rightarrow\quad
+t=\sqrt{\frac{2s}{g}}=\sqrt{\frac{40.0}{9.81}}=2.02\ \mathrm{s}.
+\]</span></p>
+<p>Then,</p>
+<p><span class="math display">\[
+v^2=u^2+2gs=2(9.81)(20.0),\qquad v=19.8\ \mathrm{m\,s^{-1}}.
+\]</span></p>
+<p>The velocity is downward; the speed is the positive magnitude <span class="math inline">\(19.8\ \mathrm{m\,s^{-1}}\)</span>.</p>
 </section>
 <section id="projectile-motion" class="level3 study-card">
 <h3 class="anchored" data-anchor-id="projectile-motion">2.1.6 Projectile motion</h3>
@@ -576,6 +668,30 @@ window.Quarto = {
 <li>the resultant velocity is found from <span class="math inline">\(v=\sqrt{v_x^2+v_y^2}\)</span> and its direction from trigonometry.</li>
 </ul>
 <p>The curved trajectory is produced by constant horizontal velocity combined with uniformly accelerated vertical motion.</p>
+</section>
+<div class="knowledge-figure">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/notes/kinematics/projectile-motion.png" class="img-fluid figure-img" alt="A projectile trajectory showing initial components u cos theta, u sin theta, maximum height and range"></p>
+<figcaption>A projectile launched at an angle with horizontal and vertical components.</figcaption>
+</figure>
+</div>
+</div>
+<section id="projectile-motion-from-level-ground" class="level3 example-card">
+<h3 class="anchored" data-anchor-id="projectile-motion-from-level-ground">Projectile motion from level ground</h3>
+<p>A ball is projected at <span class="math inline">\(20.0\ \mathrm{m\,s^{-1}}\)</span> at an angle of <span class="math inline">\(30.0^\circ\)</span> above the horizontal. Ignore air resistance. Find the time of flight, maximum height and horizontal range.</p>
+<p>The vertical component is <span class="math inline">\(u_y=u\sin30.0^\circ=10.0\ \mathrm{m\,s^{-1}}\)</span>.</p>
+<p>At maximum height, <span class="math inline">\(v_y=0\)</span>:</p>
+<p><span class="math display">\[
+t_\mathrm{flight}=\frac{2u\sin\theta}{g}=\frac{2(20.0)\sin30.0^\circ}{9.81}=2.04\ \mathrm{s},
+\]</span></p>
+<p><span class="math display">\[
+H=\frac{u^2\sin^2\theta}{2g}=\frac{(20.0)^2\sin^2 30.0^\circ}{2(9.81)}=5.10\ \mathrm{m}.
+\]</span></p>
+<p>The horizontal range is</p>
+<p><span class="math display">\[
+R=\frac{u^2\sin2\theta}{g}=\frac{(20.0)^2\sin60.0^\circ}{9.81}=35.3\ \mathrm{m}.
+\]</span></p>
 </section>
 <section id="problem-solving-checklist" class="level3 study-card">
 <h3 class="anchored" data-anchor-id="problem-solving-checklist">2.1.7 Problem-solving checklist</h3>
