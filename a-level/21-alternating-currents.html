@@ -346,14 +346,21 @@ window.Quarto = {
   <ul class="collapse">
   <li><a href="#alternating-current-and-voltage" id="toc-alternating-current-and-voltage" class="nav-link" data-scroll-target="#alternating-current-and-voltage">Alternating current and voltage</a></li>
   <li><a href="#sinusoidal-representation" id="toc-sinusoidal-representation" class="nav-link" data-scroll-target="#sinusoidal-representation">Sinusoidal representation</a></li>
+  <li><a href="#worked-example-1-reading-a-sinusoidal-waveform" id="toc-worked-example-1-reading-a-sinusoidal-waveform" class="nav-link" data-scroll-target="#worked-example-1-reading-a-sinusoidal-waveform">Worked Example 1 · Reading a sinusoidal waveform</a></li>
+  <li><a href="#worked-example-2-using-a-sinusoidal-equation" id="toc-worked-example-2-using-a-sinusoidal-equation" class="nav-link" data-scroll-target="#worked-example-2-using-a-sinusoidal-equation">Worked Example 2 · Using a sinusoidal equation</a></li>
   <li><a href="#root-mean-square-values" id="toc-root-mean-square-values" class="nav-link" data-scroll-target="#root-mean-square-values">Root-mean-square values</a></li>
   <li><a href="#power-in-a-resistive-load" id="toc-power-in-a-resistive-load" class="nav-link" data-scroll-target="#power-in-a-resistive-load">Power in a resistive load</a></li>
+  <li><a href="#worked-example-3-r.m.s.-voltage-and-mean-power" id="toc-worked-example-3-r.m.s.-voltage-and-mean-power" class="nav-link" data-scroll-target="#worked-example-3-r.m.s.-voltage-and-mean-power">Worked Example 3 · r.m.s. voltage and mean power</a></li>
   </ul></li>
   <li><a href="#rectification-and-smoothing" id="toc-rectification-and-smoothing" class="nav-link" data-scroll-target="#rectification-and-smoothing">21.2 Rectification and smoothing</a>
   <ul class="collapse">
   <li><a href="#rectification" id="toc-rectification" class="nav-link" data-scroll-target="#rectification">Rectification</a></li>
+  <li><a href="#worked-example-4-rectified-frequency" id="toc-worked-example-4-rectified-frequency" class="nav-link" data-scroll-target="#worked-example-4-rectified-frequency">Worked Example 4 · Rectified frequency</a></li>
   <li><a href="#bridge-rectifier" id="toc-bridge-rectifier" class="nav-link" data-scroll-target="#bridge-rectifier">Bridge rectifier</a></li>
+  <li><a href="#worked-example-5-current-in-an-ideal-bridge-rectifier" id="toc-worked-example-5-current-in-an-ideal-bridge-rectifier" class="nav-link" data-scroll-target="#worked-example-5-current-in-an-ideal-bridge-rectifier">Worked Example 5 · Current in an ideal bridge rectifier</a></li>
   <li><a href="#capacitor-smoothing" id="toc-capacitor-smoothing" class="nav-link" data-scroll-target="#capacitor-smoothing">Capacitor smoothing</a></li>
+  <li><a href="#worked-example-6-choosing-a-smoothing-capacitor" id="toc-worked-example-6-choosing-a-smoothing-capacitor" class="nav-link" data-scroll-target="#worked-example-6-choosing-a-smoothing-capacitor">Worked Example 6 · Choosing a smoothing capacitor</a></li>
+  <li><a href="#worked-example-7-improving-the-smoothing" id="toc-worked-example-7-improving-the-smoothing" class="nav-link" data-scroll-target="#worked-example-7-improving-the-smoothing">Worked Example 7 · Improving the smoothing</a></li>
   </ul></li>
   <li><a href="#structured-questions" id="toc-structured-questions" class="nav-link" data-scroll-target="#structured-questions">Structured Questions</a>
   <ul class="collapse">
@@ -416,15 +423,49 @@ window.Quarto = {
 <p>An alternating current (a.c.) changes continuously in magnitude and reverses direction every half-cycle. An alternating voltage reverses polarity in the same way. A sinusoidal supply is represented by a sine curve centred on zero.</p>
 <p>The <strong>peak value</strong> <span class="math inline">\(I_0\)</span> or <span class="math inline">\(V_0\)</span> is the maximum magnitude. The <strong>period</strong> <span class="math inline">\(T\)</span> is the time for one complete cycle, and the <strong>frequency</strong> <span class="math inline">\(f\)</span> is the number of cycles per second:</p>
 <p><span class="math display">\[f=\frac{1}{T}.\]</span></p>
-<p>Always convert graph time units to seconds before calculating frequency.</p>
+<p>The period is measured between equivalent points on successive cycles, such as peak to peak or zero crossing to zero crossing in the same direction. Always convert graph time units to seconds before calculating frequency.</p>
 </section>
+<div class="knowledge-figure">
+<p><img src="../assets/notes/alternating-currents/alternating-waveform-period.png" class="img-fluid" alt="Alternating current waveform showing peak current and the time period between successive peaks"></p>
+<p>The amplitude is the distance from the zero line to a peak. The period is the horizontal distance between matching points on neighbouring cycles.</p>
+</div>
 <section id="sinusoidal-representation" class="level3 formula-panel">
 <h3 class="anchored" data-anchor-id="sinusoidal-representation">Sinusoidal representation</h3>
 <p>For a sinusoidal current or voltage,</p>
 <p><span class="math display">\[I=I_0\sin(\omega t), \qquad V=V_0\sin(\omega t),\]</span></p>
 <p>where <span class="math inline">\(\omega\)</span> is angular frequency in <span class="math inline">\(\mathrm{rad\ s^{-1}}\)</span>:</p>
 <p><span class="math display">\[\omega=2\pi f=\frac{2\pi}{T}.\]</span></p>
-<p>The sign gives the instantaneous direction or polarity. Use radians when evaluating the sine function.</p>
+<p>The sign gives the instantaneous direction or polarity. At <span class="math inline">\(t=0\)</span>, the form above starts at zero and initially increases. A phase shift can be included when the waveform does not start at a zero crossing. Use radians when evaluating the sine function.</p>
+</section>
+<div class="knowledge-figure">
+<p><img src="../assets/notes/alternating-currents/sinusoidal-voltage-waveform.png" class="img-fluid" alt="Sinusoidal alternating voltage waveform plotted against time"></p>
+<p>For a sinusoidal waveform, the maximum value is the amplitude and the angular frequency controls how rapidly the cycles repeat.</p>
+</div>
+<section id="worked-example-1-reading-a-sinusoidal-waveform" class="level3 example-card">
+<h3 class="anchored" data-anchor-id="worked-example-1-reading-a-sinusoidal-waveform">Worked Example 1 · Reading a sinusoidal waveform</h3>
+<p>An alternating current graph has a peak current of <span class="math inline">\(2.0\ \mathrm{A}\)</span>. Successive positive peaks are <span class="math inline">\(20\ \mathrm{ms}\)</span> apart. Determine the period and frequency.</p>
+<p><strong>Solution</strong></p>
+<p>The peak-to-peak separation is one complete cycle:</p>
+<p><span class="math display">\[T=20\times10^{-3}=2.0\times10^{-2}\ \mathrm{s}.\]</span></p>
+<p>Therefore,</p>
+<p><span class="math display">\[f=\frac{1}{T}=\frac{1}{2.0\times10^{-2}}=50\ \mathrm{Hz}.\]</span></p>
+<p><strong>Answer:</strong> <span class="math inline">\(T=20\ \mathrm{ms}\)</span> and <span class="math inline">\(f=50\ \mathrm{Hz}\)</span>.</p>
+</section>
+<section id="worked-example-2-using-a-sinusoidal-equation" class="level3 example-card">
+<h3 class="anchored" data-anchor-id="worked-example-2-using-a-sinusoidal-equation">Worked Example 2 · Using a sinusoidal equation</h3>
+<p>The current in a circuit is</p>
+<p><span class="math display">\[I=4.0\sin(100\pi t),\]</span></p>
+<p>where <span class="math inline">\(I\)</span> is in amperes and <span class="math inline">\(t\)</span> is in seconds. Find the peak current, frequency and current at <span class="math inline">\(t=3.0\ \mathrm{ms}\)</span>.</p>
+<p><strong>Solution</strong></p>
+<p>Comparing with <span class="math inline">\(I=I_0\sin(\omega t)\)</span> gives</p>
+<p><span class="math display">\[I_0=4.0\ \mathrm{A},\qquad \omega=100\pi\ \mathrm{rad\ s^{-1}}.\]</span></p>
+<p>Hence,</p>
+<p><span class="math display">\[f=\frac{\omega}{2\pi}=50\ \mathrm{Hz}.\]</span></p>
+<p>At <span class="math inline">\(t=3.0\times10^{-3}\ \mathrm{s}\)</span>,</p>
+<p><span class="math display">\[I=4.0\sin(100\pi\times3.0\times10^{-3})
+  =4.0\sin(0.3\pi)
+  =3.2\ \mathrm{A}.\]</span></p>
+<p><strong>Answer:</strong> <span class="math inline">\(I_0=4.0\ \mathrm{A}\)</span>, <span class="math inline">\(f=50\ \mathrm{Hz}\)</span> and <span class="math inline">\(I\approx3.2\ \mathrm{A}\)</span>.</p>
 </section>
 <section id="root-mean-square-values" class="level3 study-card">
 <h3 class="anchored" data-anchor-id="root-mean-square-values">Root-mean-square values</h3>
@@ -433,6 +474,10 @@ window.Quarto = {
 <p><span class="math display">\[I_{\mathrm{rms}}=\frac{I_0}{\sqrt2}, \qquad V_{\mathrm{rms}}=\frac{V_0}{\sqrt2}.\]</span></p>
 <p>Thus an r.m.s. value is approximately <span class="math inline">\(0.707\)</span> of its peak value. It is not the simple arithmetic mean of the positive and negative values, which would be zero over a complete cycle.</p>
 </section>
+<div class="knowledge-figure">
+<p><img src="../assets/notes/alternating-currents/rms-voltage.png" class="img-fluid" alt="Sinusoidal voltage waveform showing peak voltage and root-mean-square voltage"></p>
+<p>The r.m.s. level is below the peak level but represents the equivalent steady d.c. value for heating or power calculations in a resistor.</p>
+</div>
 <section id="power-in-a-resistive-load" class="level3 formula-panel">
 <h3 class="anchored" data-anchor-id="power-in-a-resistive-load">Power in a resistive load</h3>
 <p>The instantaneous power is always non-negative because <span class="math inline">\(P=I^2R=V^2/R\)</span>. For a sinusoidal supply,</p>
@@ -441,7 +486,24 @@ window.Quarto = {
 =\frac{V_{\mathrm{rms}}^2}{R}.\]</span></p>
 <p>Since <span class="math inline">\(I_{\mathrm{rms}}=I_0/\sqrt2\)</span> and <span class="math inline">\(V_{\mathrm{rms}}=V_0/\sqrt2\)</span>,</p>
 <p><span class="math display">\[P_{\mathrm{mean}}=\frac12P_0.\]</span></p>
-<p>The power waveform has twice the frequency of the current or voltage waveform: it reaches zero twice in each electrical cycle.</p>
+<p>The power waveform has twice the frequency of the current or voltage waveform because <span class="math inline">\(I^2\)</span> and <span class="math inline">\(V^2\)</span> are unchanged when the current or voltage reverses direction. It reaches zero twice in each electrical cycle.</p>
+</section>
+<div class="knowledge-figure">
+<p><img src="../assets/notes/alternating-currents/power-waveform.png" class="img-fluid" alt="Instantaneous power waveform for an alternating supply showing peak and mean power"></p>
+<p>Power is never negative in a purely resistive load. The mean power is the average height of the power waveform over a complete cycle.</p>
+</div>
+<section id="worked-example-3-r.m.s.-voltage-and-mean-power" class="level3 example-card">
+<h3 class="anchored" data-anchor-id="worked-example-3-r.m.s.-voltage-and-mean-power">Worked Example 3 · r.m.s. voltage and mean power</h3>
+<p>A sinusoidal supply has a peak voltage of <span class="math inline">\(325\ \mathrm{V}\)</span> and is connected to a <span class="math inline">\(50\ \Omega\)</span> resistor. Calculate the r.m.s. voltage, mean power and peak power.</p>
+<p><strong>Solution</strong></p>
+<p><span class="math display">\[V_{\mathrm{rms}}=\frac{V_0}{\sqrt2}
+  =\frac{325}{\sqrt2}=230\ \mathrm{V}.\]</span></p>
+<p>The mean power is</p>
+<p><span class="math display">\[P_{\mathrm{mean}}=\frac{V_{\mathrm{rms}}^2}{R}
+  =\frac{230^2}{50}=1.06\times10^3\ \mathrm{W}.\]</span></p>
+<p>The peak power is</p>
+<p><span class="math display">\[P_0=\frac{V_0^2}{R}=\frac{325^2}{50}=2.11\times10^3\ \mathrm{W}.\]</span></p>
+<p><strong>Answer:</strong> <span class="math inline">\(V_{\mathrm{rms}}=230\ \mathrm{V}\)</span>, <span class="math inline">\(P_{\mathrm{mean}}=1.06\ \mathrm{kW}\)</span> and <span class="math inline">\(P_0=2.11\ \mathrm{kW}\)</span>.</p>
 </section>
 </section>
 <section id="rectification-and-smoothing" class="level2">
@@ -453,12 +515,46 @@ window.Quarto = {
 <li><strong>Half-wave rectification:</strong> one diode conducts during one half-cycle and blocks the other. The load receives separated pulses at the input frequency.</li>
 <li><strong>Full-wave rectification:</strong> both half-cycles produce current through the load in the same direction. The output pulse frequency is twice the input frequency, so more mean power is available.</li>
 </ul>
-<p>A rectified output is unidirectional but is not yet a steady d.c. supply.</p>
+<p>A rectified output is unidirectional but is not yet a steady d.c. supply. The diode is forward biased when its anode is at a higher potential than its cathode, and reverse biased in the opposite half-cycle.</p>
+</section>
+<div class="knowledge-figure">
+<p><img src="../assets/notes/alternating-currents/rectification-waveforms.png" class="img-fluid" alt="Half-wave and full-wave rectified voltage waveforms"></p>
+<p>Half-wave rectification removes one half-cycle. Full-wave rectification flips the negative half-cycle so that both halves produce output of the same polarity.</p>
+</div>
+<section id="worked-example-4-rectified-frequency" class="level3 example-card">
+<h3 class="anchored" data-anchor-id="worked-example-4-rectified-frequency">Worked Example 4 · Rectified frequency</h3>
+<p>An a.c. supply has frequency <span class="math inline">\(50\ \mathrm{Hz}\)</span>. What is the pulse frequency after half-wave rectification and after full-wave rectification?</p>
+<p><strong>Solution</strong></p>
+<ul>
+<li><p>In half-wave rectification, one output pulse appears per input cycle, so</p>
+<p><span class="math display">\[f_{\mathrm{half}}=50\ \mathrm{Hz}.\]</span></p></li>
+<li><p>In full-wave rectification, both half-cycles are used, so two output pulses appear per input cycle:</p>
+<p><span class="math display">\[f_{\mathrm{full}}=2f=100\ \mathrm{Hz}.\]</span></p></li>
+</ul>
+<p><strong>Answer:</strong> <span class="math inline">\(50\ \mathrm{Hz}\)</span> for half-wave and <span class="math inline">\(100\ \mathrm{Hz}\)</span> for full-wave rectification.</p>
 </section>
 <section id="bridge-rectifier" class="level3 study-card">
 <h3 class="anchored" data-anchor-id="bridge-rectifier">Bridge rectifier</h3>
 <p>A bridge rectifier uses four diodes. During each half-cycle, one diagonally opposite pair is forward biased while the other pair is reverse biased. On the next half-cycle the conducting pair changes, but current through the load remains in the same direction.</p>
-<p>To analyse a bridge, mark the instantaneous positive input terminal, follow conventional current only through forward-biased diodes, and verify that it crosses the load in the required direction.</p>
+<p>To analyse a bridge, mark the instantaneous positive input terminal, follow conventional current only through forward-biased diodes, and verify that it crosses the load in the required direction. Two diodes conduct in each half-cycle, so an ideal bridge has two diode drops in series with the load when the diodes are not ideal.</p>
+</section>
+<div class="knowledge-figure">
+<p><img src="../assets/notes/alternating-currents/bridge-rectifier.png" class="img-fluid" alt="Four-diode bridge rectifier connected to an alternating supply and load resistor"></p>
+<p>The bridge arrangement makes the current through the load have the same direction during both half-cycles of the input.</p>
+</div>
+<div class="knowledge-figure">
+<p><img src="../assets/notes/alternating-currents/bridge-current-path.png" class="img-fluid" alt="Conventional current path through the conducting pair of a bridge rectifier"></p>
+<p>For a particular half-cycle, trace the path from the positive input terminal through one forward-biased diode, the load, the second forward-biased diode and back to the negative input terminal. The other two diodes are reverse biased.</p>
+</div>
+<section id="worked-example-5-current-in-an-ideal-bridge-rectifier" class="level3 example-card">
+<h3 class="anchored" data-anchor-id="worked-example-5-current-in-an-ideal-bridge-rectifier">Worked Example 5 · Current in an ideal bridge rectifier</h3>
+<p>An ideal bridge rectifier is supplied by a sinusoidal secondary voltage of <span class="math inline">\(12\ \mathrm{V}\)</span> r.m.s. and is connected to a <span class="math inline">\(100\ \Omega\)</span> resistor. Find the peak current in the load.</p>
+<p><strong>Solution</strong></p>
+<p>The peak input voltage is</p>
+<p><span class="math display">\[V_0=\sqrt2V_{\mathrm{rms}}=\sqrt2(12)=17.0\ \mathrm{V}.\]</span></p>
+<p>For ideal diodes, the peak load voltage is also <span class="math inline">\(17.0\ \mathrm{V}\)</span>. Therefore,</p>
+<p><span class="math display">\[I_0=\frac{V_0}{R}=\frac{17.0}{100}=0.170\ \mathrm{A}.\]</span></p>
+<p><strong>Answer:</strong> the peak load current is <span class="math inline">\(0.170\ \mathrm{A}\)</span>. The current direction through the resistor is the same for both half-cycles.</p>
 </section>
 <section id="capacitor-smoothing" class="level3 study-card">
 <h3 class="anchored" data-anchor-id="capacitor-smoothing">Capacitor smoothing</h3>
@@ -469,7 +565,38 @@ window.Quarto = {
 <li>increase load resistance <span class="math inline">\(R\)</span>;</li>
 <li>use full-wave rather than half-wave rectification, reducing the time between peaks.</li>
 </ul>
-<p>The relevant time constant is <span class="math inline">\(RC\)</span>. Small ripple requires <span class="math inline">\(RC\)</span> to be large compared with the interval between adjacent rectified peaks. Greater smoothing reduces ripple but does not make the output perfectly constant.</p>
+<p>The relevant time constant is <span class="math inline">\(\tau=RC\)</span>. Small ripple requires <span class="math inline">\(\tau\)</span> to be large compared with the interval between adjacent rectified peaks. Greater smoothing reduces ripple but does not make the output perfectly constant. For the same input frequency, full-wave rectification gives twice as many charging opportunities and usually produces less ripple than half-wave rectification.</p>
+</section>
+<div class="knowledge-figure">
+<p><img src="../assets/notes/alternating-currents/capacitor-smoothing.png" class="img-fluid" alt="Bridge rectifier with a capacitor connected across the load and a smoothed output waveform"></p>
+<p>The capacitor charges rapidly near each input peak and discharges more slowly through the load between peaks. The remaining variation is the ripple voltage.</p>
+</div>
+<section id="worked-example-6-choosing-a-smoothing-capacitor" class="level3 example-card">
+<h3 class="anchored" data-anchor-id="worked-example-6-choosing-a-smoothing-capacitor">Worked Example 6 · Choosing a smoothing capacitor</h3>
+<p>A rectifier supplies a <span class="math inline">\(2.6\ \mathrm{k\Omega}\)</span> load. A <span class="math inline">\(800\ \mathrm{\mu F}\)</span> capacitor is connected across the load. Calculate the time constant and explain whether the capacitor discharges substantially between full-wave peaks of a <span class="math inline">\(50\ \mathrm{Hz}\)</span> supply.</p>
+<p><strong>Solution</strong></p>
+<p><span class="math display">\[\tau=RC=(2.6\times10^3)(800\times10^{-6})=2.08\ \mathrm{s}.\]</span></p>
+<p>For full-wave rectification, the ripple frequency is</p>
+<p><span class="math display">\[f_{\mathrm{ripple}}=2(50)=100\ \mathrm{Hz},\]</span></p>
+<p>so the time between charging peaks is</p>
+<p><span class="math display">\[\Delta t=\frac{1}{100}=0.010\ \mathrm{s}.\]</span></p>
+<p>Since <span class="math inline">\(\tau=2.08\ \mathrm{s}\)</span> is much greater than <span class="math inline">\(\Delta t=0.010\ \mathrm{s}\)</span>, the voltage falls only a small amount between peaks. The output is therefore well smoothed, although not perfectly steady.</p>
+</section>
+<section id="worked-example-7-improving-the-smoothing" class="level3 example-card">
+<h3 class="anchored" data-anchor-id="worked-example-7-improving-the-smoothing">Worked Example 7 · Improving the smoothing</h3>
+<p>A smoothed output has excessive ripple. State the effect of each change:</p>
+<ol type="1">
+<li>doubling the capacitance;</li>
+<li>doubling the load resistance;</li>
+<li>changing from half-wave to full-wave rectification.</li>
+</ol>
+<p><strong>Solution</strong></p>
+<ol type="1">
+<li>Doubling <span class="math inline">\(C\)</span> doubles <span class="math inline">\(\tau=RC\)</span>, so the capacitor discharges more slowly and the ripple decreases.</li>
+<li>Doubling <span class="math inline">\(R\)</span> also doubles <span class="math inline">\(\tau\)</span>, so the load current is smaller and the ripple decreases.</li>
+<li>Full-wave rectification halves the time between successive peaks, giving the capacitor more frequent charging opportunities and reducing the ripple.</li>
+</ol>
+<p>In every case, the output remains pulsating d.c.; smoothing does not create a perfectly constant voltage.</p>
 </section>
 </section>
 <section id="structured-questions" class="level2">
@@ -810,7 +937,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/nanoxsj\.github\.io\/CIE-Physics-Study\/");
+        var filterRegex = new RegExp('/' + window.location.host + '/');
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
