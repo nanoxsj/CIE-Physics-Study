@@ -42,14 +42,6 @@ body:has(.home-hero) h2::before { content: ""; display: inline-block; width: 0.5
 .home-action:hover { color: #fff; background: rgba(255,255,255,.16); transform: translateY(-2px); }
 .home-action.primary { border-color: #fff; background: #fff; color: #0c4a6e; }
 .home-action.primary:hover { color: #082f49; background: #e0f2fe; }
-.exam-links { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; margin: 1rem 0 2.2rem; }
-.exam-link { display: flex; flex-direction: column; gap: .28rem; min-height: 9rem; padding: 1.25rem 1.35rem; border: 1px solid rgba(14, 116, 144, .2); border-left: 6px solid #0284c7; border-radius: 15px; background: linear-gradient(135deg, #f0f9ff 0%, #ffffff 100%); color: #17324d; text-decoration: none; box-shadow: 0 8px 20px rgba(15, 23, 42, .06); transition: transform .18s ease, box-shadow .18s ease; }
-.exam-link:hover { color: #17324d; transform: translateY(-3px); box-shadow: 0 14px 28px rgba(15, 23, 42, .1); }
-.exam-link.a-exam { border-left-color: #7c3aed; background: linear-gradient(135deg, #f5f3ff 0%, #ffffff 100%); }
-.exam-level { font-size: .76rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; color: #0369a1; }
-.a-exam .exam-level { color: #6d28d9; }
-.exam-link strong { font-size: 1.18rem; color: #102e5d; }
-.exam-link > span:last-child { margin-top: auto; color: #5a6b82; font-size: .92rem; line-height: 1.5; }
 .course-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.2rem; }
 body:has(.home-hero) .course-grid { --paper: #0369a1; --paper-rgb: 3, 105, 161; }
 body:has(.home-hero) .a-level { --paper: #6d28d9; --paper-rgb: 109, 40, 217; }
@@ -193,7 +185,6 @@ mjx-container[display="true"] { overflow-x: auto; overflow-y: hidden; padding: 0
   .home-hero { border-radius: 17px; }
   body:has(.home-hero) h2 { margin-top: 2.35rem; }
   .course-grid { grid-template-columns: 1fr; }
-  .exam-links { grid-template-columns: 1fr; }
   .topic-card, .study-card, .formula-panel, .question-card, .example-card { padding: 0.9rem; }
   .target-grid { grid-template-columns: repeat(2, minmax(130px, 1fr)); }
 }
